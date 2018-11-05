@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢号</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../../css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/station.css" />
+	<style type="text/css">
+	</style>
+</head>
+
+<body>
+	<audio controls="controls" id="mp3" style="display: none;">
+
+		<source src="money.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+	</audio>
+	<audio controls="controls" id="mp4" style="display: none;">
+
+		<source src="8378.mp3" type="audio/mpeg"> Your browser does not support the audio tag.
+	</audio>
+	<div class="mask"></div>
+	<div class="mui-content">
+		<div class="qsh_header">
+			<div class="notice">
+				<div id="gongao">
+					<div style="width:100%;height:30px;margin:0 auto;white-space: nowrap;overflow:hidden;" id="scroll_div" class="scroll_div">
+
+					</div>
+				</div>
+				<div class="invite">
+					<span>邀请好友</span>
+				</div>
+				<!---->
+
+
+			</div>
+			<!--开往。。。。-->
+			<!--<div class="to">
+	    			开往 南通站
+	    		</div>-->
+			<div class="here here_empty">
+				<!--<img src="image/station_fd@3x_31.png"/>-->
+				<div class="">
+					南通站
+					<span class="">nantong</span>
+				</div>
+			</div>
+			<div class="train">
+				<img src="image/train@3x.png" />
+			</div>
+			<div class="qsh_scores" data-amount='8.72'>
+				<img src="image/score@3x.png" alt="" /> 8.72
+			</div>
+			<div class="qsh_love" data-amount='1000'>
+				<img src="image/love@3x.png" alt="" /> 1000
+			</div>
+			<!--<div class="qsh_msg">
+	    			人们对美好生活的向往是我们奋斗的目标!
+	    		</div>-->
+			<!--背景-->
+			<div class="bg bg_ing "></div>
+		</div>
+		<div class="qsh_banner">
+			<div class="qsh_station_name">
+				<img src="image/qsh_map.png" class="map_p" />
+				<span>登陆轻奢号</span>
+				<img src="image/qsh_p.png" class="qsh_p" />
+			</div>
+			<div class="qsh_time">
+				<!--任务倒计时 22h:44m:20s-->
+			</div>
+			<div class="qsh_map">
+				<span>站点地图</span>
+			</div>
+		</div>
+		<div class="qsh_stations">
+			<div class="">
+				<ul>
+					<li class="qsh_station">
+						<div class="qsh_station_l">
+							<div class="">
+								开始出发
+							</div>
+							<div class="">
+								<ul>
+									<li class="qsh_station_l_list">
+										<div class="">
+											登录天数
+										</div>
+										<div class="">
+											<div>
+												<span style="width: 50%;"></span>
+											</div>
+										</div>
+										<div class="">
+											1/2天
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="qsh_station_r">
+							<span>攻略</span>
+							<!--<span class="qsh_station_end">已完成</span>-->
+						</div>
+					</li>
+
+					<li class="qsh_station">
+						<div class="qsh_station_l">
+							<div class="">
+								南通站（目标站点）
+							</div>
+
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="qsh_tongji">
+			<div class="">
+				<ul>
+					<li>黑钻
+						<img src="image/point_icon.png" />
+					</li>
+					<li class="jifen_total">3600</li>
+				</ul>
+			</div>
+			<div class="">
+				<ul>
+					<li>爱心钻
+						<img src="image/heart_icon.png" />
+					</li>
+					<li class="gongxianzhi_total">1000</li>
+				</ul>
+			</div>
+		</div>
+		<div class="qsh_status">
+			XX站红利释放中，每天记得收取哦!
+		</div>
+		<!--20180529 Begin-->
+		<div class="qsh-dingxiang" style="background-image: url(image/qsh_dingxiang_bg.jpg);">
+			<div class="qsh-dingxiang-box" style="background-image: url(image/icon_dingxiang@3x.png);">
+				<img src="../../image/qingshe_help.png" alt="" class="qingshe_help">
+				<h4 class="qsh-dingxiang-title">南通方特探险王国</h4>
+				<div class="qsh-dingxiang-msg">需定向消费100黑钻，已消费100黑钻</div>
+				<div class="qsh_slider">
+					<div>
+						<span style=""></span>
+					</div>
+				</div>
+				<div class="qsh-dingxiang-out">您的定向消费任务已超时，当前定向黑钻已自动进入定向商家账户</div>
+				
+				<div id="" class="qsh-dingxiang-btn">
+					<span>点击进入</span>
+				</div>
+			</div>
+		</div>
+		<!--20180529 End-->
+		<div class="qsh_score">
+			<!-- 黑钻排行榜 -->
+			<div class="balck_rank">
+				<img src="image/balck_rank.png">
+			</div>
+			<div class="qsh_score_list">
+				<ul>
+					<li>
+						<div>名次</div>
+						<div></div>
+						<div>黑钻</div>
+					</li>
+					<li class="active">
+						<div>101</div>
+						<div>
+							<img src="image/point_header1.png" class="qsh_user" />我
+						</div>
+						<div>10</div>
+					</li>
+					<li>
+						<div>
+							<img src="image/qs_no1.png" />
+						</div>
+						<div>
+							<img src="image/point_header2.png" class="qsh_user" />一片浮云
+						</div>
+						<div>3000</div>
+					</li>
+					<li>
+						<div>
+							<img src="image/qs_no2.png" />
+						</div>
+						<div>
+							<img src="image/point_header3.png" class="qsh_user" />上海次郎
+						</div>
+						<div>2000</div>
+					</li>
+					<li>
+						<div>
+							<img src="image/qs_no3.png" />
+						</div>
+						<div>
+							<img src="image/point_header4.png" class="qsh_user" />眉山太子
+						</div>
+						<div>200</div>
+					</li>
+					<li>
+						<div>4</div>
+						<div>
+							<img src="image/point_header5.png" class="qsh_user" />胡子haha
+						</div>
+						<div>80</div>
+					</li>
+					<li>
+						<div>5</div>
+						<div>
+							<img src="image/point_header1.png" class="qsh_user" />一片浮云
+						</div>
+						<div>5</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="popover" class="mui-popover">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view">
+					<li class="qsh_station passed">
+						<div class="qsh_station_l">
+							<div class="">
+								南通站(始发站)
+							</div>
+						</div>
+
+					</li>
+
+					<li class="qsh_station actived">
+						<div class="qsh_station_l">
+							<div class="">
+								加油站
+							</div>
+						</div>
+						<div class="qsh_station_r">
+							<span>攻略</span>
+						</div>
+					</li>
+					<li class="qsh_station future">
+						<div class="qsh_station_l">
+							<div class="">
+								初心站
+								<span>不忘初心，牢记使命，不忘初心，牢记使命</span>
+							</div>
+						</div>
+
+					</li>
+					<li class="qsh_station future">
+						<div class="qsh_station_l">
+							<div class="">
+								奋斗站
+								<span>幸福是奋斗出来的</span>
+							</div>
+						</div>
+
+					</li>
+
+					<li class="qsh_station future">
+						<div class="qsh_station_l">
+							<div class="">
+								幸福站
+								<span>小康路上一个都不能掉队</span>
+							</div>
+						</div>
+
+					</li>
+					<li class="qsh_station future">
+						<div class="qsh_station_l">
+							<div class="">
+								小康站(终点站)
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="popover_ry" class="mui-popover">
+		<div class="popover_box">
+			<div id="" class="popover_ry_cont">
+				<span class="ry_close">
+					<img src="image/ry_close_2@3x_53.png" />
+				</span>
+				<div class="popover_ry_body">
+					<div class="title">
+						尊敬的黑卡会员
+					</div>
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<p>恭喜您乘坐轻奢点评奔小康致富专列，进入到平台区块链阶段红利释放体系，享受平台阶段性分红。</p>
+							<p>为了凸显出我们首批黑卡会员的尊崇地位我们将在您第三站初心站任务失败时赠送您一张价值7888元“专列燃料”，以确保您能进入红利体系后获得更多相应分红收益。</p>
+							<p>该燃料可以帮助您在第三站帮助任务失败的时候自动通关！但智能合约将按照购买“专列燃料”的路径进行自动加密计算并释放选择该路径的红利收益，“专列燃料”只赠送给前500名不能完成任务三的黑卡会员，赠完为止。并且“专列燃料”不能手动使用只能在您任务周期结束时任务未完成的情况下自动使用，当您的第三站任务在规定时间内完成“专列燃料”赠券将不会生效。</p>
+							<p>您的总体收益不会受到影响。如果您对于该活动还存有疑虑可以致电官方服务电话0513-55093712，我们将会竭诚为您服务。</p>
+						</div>
+					</div>
+					<div class="ry_lq_btn_box">
+						<span class="ry_lq_btn">去领取</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 2018-07-05 添加提示 -->
+	<div class="help_box">
+		<span class="mui-icon mui-icon-closeempty" style="font-size: 2rem;"></span>
+		<p class="help_title">提示</p>
+		<p class="help_txt">1、若黑卡会员A是由黑卡签约商铺直接邀请的，则此黑卡会员的黑卡定向消费额度为该黑卡会员完成每周欺各阶段任务后获取的分红收益额的60%；
+			若黑卡会员是由A邀请的，则此黑卡会员的黑钻定向消费额度为该黑卡会员完成每周期各阶段任务后获取的分红收益额的30%。
+		</p>
+		<p class="help_txt">
+			2、定向消费黑卡会员需要在规定的时间内完成定向消费任务，如果规定时间内未完成，则这些定向黑钻将自动的划归到指定的商户，名下
+		</p>
+	</div>
+	<!-- end -->
+</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var list = [{
+			type: 'once',
+			content: '我是滚动消息1,只播放一次',
+		}, {
+			content: '这是一款非常简单的jQuery文字跑马灯特效插件。该跑马灯特效使文本从右向左不停循环，当鼠标放到跑马灯上的文字时，跑马灯会暂停运动。'
+		}, {
+			content: '虚拟记账系统原采用积分形式，现升级为黑钻形式，1黑钻等价于1人民币的消费价值。'
+		},
+
+	]
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	mui('body').on('tap', '#popover', function () {
+		console.log(1)
+		mui('#popover').popover('hide');
+	})
+	mui('body').on('tap', '.mui-scroll-wrapper', function (e) {
+		e.stopPropagation();
+	})
+	mui('.qsh_banner').on('tap', '.qsh_map', function () {
+		mui('#popover').popover('show');
+	})
+	mui('.invite').on('tap', 'span', function () {
+		callNative('goInvite')
+	})
+	mui('#popover_ry').on('tap', '.ry_close', function () {
+		mui('#popover_ry').popover('hide');
+	})
+
+	$('.qingshe_help').click(function(){
+		$('.help_box').css("display","inline")
+		$('.mask').css("display","inline")		
+	})
+	$('.mui-icon-closeempty').click(function(){
+		$('.help_box').css("display","none")
+		$('.mask').css("display","none")				
+	})
+	$('.mask').click(function(){
+		$('.help_box').css("display","none")
+		$('.mask').css("display","none")				
+	})
+	//	mui('#popover_ry').popover('show');
+	countDown(100)
+
+	function countDown(count) {
+
+		var timer = setInterval(function () {
+			var text = '';
+			if (count >= 0) {
+				var h = parseInt(count / 3600);
+				var m = parseInt((count % 3600) / 60);
+				var s = parseInt((count % 60) % 60);
+				text = "任务倒计时 " + h + "h:" + m + "m:" + s + "s";
+				count--
+			} else {
+				clearInterval(timer)
+				text = '';
+			}
+			mui('.qsh_time')[0].innerHTML = text;
+		}, 1000)
+	}
+
+	bannerTime(0)
+
+	function bannerTime(count) {
+
+		var timer = setInterval(function () {
+			var text = '';
+			if (count >= 0) {
+				var h = parseInt(count / 3600);
+				var m = parseInt((count % 3600) / 60);
+				var s = parseInt((count % 60) % 60);
+				if (m <= 9) {
+					m = '0' + m
+				};
+				if (s <= 9) {
+					s = '0' + s
+				};
+				text = " <img class='banner_t_img' src='../../image/time@3x.png'> " + h + ":" + m + ":" + s;
+				count--
+			} else {
+				clearInterval(timer)
+				// $('.banner_time').css("display","none")
+				text = " <img class='banner_t_img' src='../../image/time@3x.png'> " + "0:" + "00" + ":00";				
+			}
+			mui('.banner_time')[0].innerHTML = text;
+		}, 1000)
+	}
+
+
+	$(function () {
+		//<!--20180529 Begin-->
+		$('.qsh_slider span').css({
+			'width': '100%'
+		})
+		//<!--20180529 End-->
+		$('.qsh_header').on('tap', '.qsh_scores', function () {
+			$(this).fadeOut();
+			var count = $(this).attr('data-amount');
+			var step = parseFloat(count / 5).toFixed(2);
+			//$("#mp3")[0].play()
+			//$("#mp3")[0].stop()
+			$('#mp3')[0].currentTime = 0;
+			$("#mp3")[0].play()
+
+			var timer = setInterval(function () {
+				var total = parseFloat($('.jifen_total').html());
+				if (count - step <= 0) {
+					total += parseFloat(count);
+					clearInterval(timer)
+				} else {
+					total += parseFloat(step);
+				}
+				$('.jifen_total').html(parseFloat(total).toFixed(2));
+				count -= step;
+			}, 20)
+		})
+		$('.qsh_header').on('tap', '.qsh_love', function () {
+			$(this).fadeOut();
+			var count = $(this).attr('data-amount');
+			var step = parseFloat(count / 5).toFixed(2);
+			$('#mp4')[0].currentTime = 0;
+			$("#mp4")[0].play()
+			var timer = setInterval(function () {
+				var total = parseFloat($('.gongxianzhi_total').html());
+				if (count - step <= 0) {
+					total += parseFloat(count);
+					clearInterval(timer)
+				} else {
+					total += parseFloat(step);
+				}
+				$('.gongxianzhi_total').html(parseFloat(total).toFixed(2));
+				count -= step;
+			}, 20)
+		})
+
+		//排名li被点击
+		$(document).on('click','.qsh_score_list li',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+	})
+
+	function ScrollImgLeft() {
+		var speed = 50;
+		var scroll_begin = document.getElementById("scroll_begin");
+		var scroll_end = document.getElementById("scroll_end");
+		var scroll_div = document.getElementById("scroll_div");
+		//console.log(scroll_div.offsetWidth)
+		if (scroll_begin.offsetWidth > scroll_div.offsetWidth) {
+			scroll_end.innerHTML = scroll_begin.innerHTML;
+
+			function Marquee() {
+				if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
+					scroll_div.scrollLeft -= scroll_begin.offsetWidth;
+				else
+					scroll_div.scrollLeft++;
+			}
+			var MyMar = setInterval(Marquee, speed);
+			scroll_div.onmouseover = function () {
+				clearInterval(MyMar);
+			}
+			scroll_div.onmouseout = function () {
+				MyMar = setInterval(Marquee, speed);
+			}
+		}
+
+	}
+	loadMarquee(list);
+	var index = 0;
+
+	function loadMarquee(list) {
+		var item = list[index];
+		console.log(list)
+		var loop = ''
+		if (item.type == 'once') {
+			loop = 'loop="1"';
+			list.splice(index, 1);
+		} else {
+			index++;
+		}
+		var html = '<marquee direction=left  scrolldelay="10" scrollamount="2" ' + loop +
+			' behavior="scroll"   onMouseOver="this.stop()"   onMouseOut="this.start()" width="100%" height="100px" align="right"><span>' +
+			item.content + '</span></marquee>'
+		$('.scroll_div').html(html);
+		if (list.length > 0) {
+			var width = $('marquee').width() + $('marquee span').width();
+			var time = parseInt(width / 3);
+			setTimeout(function () {
+				loadMarquee(list)
+			}, time * 100)
+		}
+	}
+</script>

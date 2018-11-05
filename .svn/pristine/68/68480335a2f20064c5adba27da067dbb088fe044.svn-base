@@ -1,0 +1,1945 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>黑卡会员人物树</title>
+  <style>
+</style>
+<script src="../static/js/jquery-1.10.1.min.js"></script>
+<script src="../static/js/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 导出图谱 -->
+     <a class="export_img">
+         导出图片
+     </a>
+
+     <div class="change_ize">
+        <span class="minus">-</span>
+        <span class="add">+</span>
+     </div>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div style="width:100%;height:100%; background-color: #f3f3f3"> 
+     <div id="main" style="width: 1000px;height:1000px;">
+     </div>
+ </div>
+<script type="text/javascript">
+    var arr =[{
+    "id": "137",
+    "real_name": "黄新",
+    "mobile": "15006291888",
+    "regtime": 1526465241000,
+    "level_plus": "2",
+    "task_id": "641",
+    "task_name": "幸福站",
+    "task_flag": "7",
+    "invite_code": "1GAP",
+    "be_invite_code": "HS9B",
+    "shop_name": null,
+    "shop_mobile": null,
+    "shop_address": null,
+    "name": "黄新",
+    //子集边框样式
+    "itemStyle":{
+      "borderColor":'#f8a120'
+    },
+    //悬浮时样式
+    "emphasis": {
+        "itemStyle":{
+            "color": '#f8a120',
+            // borderColor: '#6bbcf5',
+            "label": {
+                "show": true
+            }
+        }
+    },
+    "children": [{
+        "name": "罗云",
+        "invite_code": "UGBS",
+        "be_invite_code": "1GAP",
+        //子集边框样式
+        "itemStyle":{
+          "borderColor":'#f8a120'
+        },
+        //悬浮时样式
+        "emphasis": {
+            "itemStyle":{
+                "color": '#f8a120',
+                // borderColor: '#6bbcf5',
+                "label": {
+                    "show": true
+                }
+            }
+        },
+        "children": [{
+            "name": "陈希",
+            "invite_code": "XV2K",
+            "be_invite_code": "UGBS",
+            "children": [{
+                "name": "徐杰",
+                "invite_code": "61YH",
+                "be_invite_code": "XV2K",
+                "children": [{
+                    "name": "钱霞",
+                    "invite_code": "V5D6",
+                    "be_invite_code": "61YH",
+                    "children": [{
+                        "name": "何鸿光",
+                        "invite_code": "BQN6",
+                        "be_invite_code": "V5D6",
+                        "children": [{
+                            "name": "徐铃铃",
+                            "invite_code": "P0U7",
+                            "be_invite_code": "BQN6",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "范宝宝",
+                        "invite_code": "CHRZ",
+                        "be_invite_code": "V5D6",
+                        "children": [{
+                            "name": "曾辰",
+                            "invite_code": "8TNW",
+                            "be_invite_code": "CHRZ",
+                            "children": []
+                        }, {
+                            "name": "袁陈轩",
+                            "invite_code": "SMEL",
+                            "be_invite_code": "CHRZ",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "贾娜娜",
+                        "invite_code": "WMKP",
+                        "be_invite_code": "V5D6",
+                        "children": []
+                    }]
+                }, {
+                    "name": "朱江伟",
+                    "invite_code": "Q9KP",
+                    "be_invite_code": "61YH",
+                    "children": [{
+                        "name": "许龙",
+                        "invite_code": "E1WS",
+                        "be_invite_code": "Q9KP",
+                        "children": []
+                    }, {
+                        "name": "许龙",
+                        "invite_code": "80XF",
+                        "be_invite_code": "Q9KP",
+                        "children": [{
+                            "name": "孙凯",
+                            "invite_code": "V50U",
+                            "be_invite_code": "80XF",
+                            "children": [{
+                                "name": "鲁妮妮",
+                                "invite_code": "J7Y4",
+                                "be_invite_code": "V50U",
+                                "children": [{
+                                    "name": "张钰",
+                                    "invite_code": "8C1E",
+                                    "be_invite_code": "J7Y4",
+                                    "children": []
+                                }, {
+                                    "name": "沈佳煊",
+                                    "invite_code": "PUVJ",
+                                    "be_invite_code": "J7Y4",
+                                    "children": []
+                                }]
+                            }, {
+                                "name": "王进南",
+                                "invite_code": "1UER",
+                                "be_invite_code": "V50U",
+                                "children": [{
+                                    "name": "周辉健",
+                                    "invite_code": "6C2E",
+                                    "be_invite_code": "1UER",
+                                    "children": [{
+                                        "name": "吴小龙",
+                                        "invite_code": "9YMR",
+                                        "be_invite_code": "6C2E",
+                                        "children": []
+                                    }, {
+                                        "name": "钱煜",
+                                        "invite_code": "H5TP",
+                                        "be_invite_code": "6C2E",
+                                        "children": []
+                                    }]
+                                }, {
+                                    "name": "姚尧",
+                                    "invite_code": "N496",
+                                    "be_invite_code": "1UER",
+                                    "children": [{
+                                        "name": "沙昀其",
+                                        "invite_code": "61ST",
+                                        "be_invite_code": "N496",
+                                        "children": []
+                                    }, {
+                                        "name": "李魁魁",
+                                        "invite_code": "D52U",
+                                        "be_invite_code": "N496",
+                                        "children": []
+                                    }, {
+                                        "name": "吴松林",
+                                        "invite_code": "HCVC",
+                                        "be_invite_code": "N496",
+                                        "children": [{
+                                            "name": "彭洪军",
+                                            "invite_code": "3X9K",
+                                            "be_invite_code": "HCVC",
+                                            "children": []
+                                        }, {
+                                            "name": "刘蛟龙",
+                                            "invite_code": "UUR5",
+                                            "be_invite_code": "HCVC",
+                                            "children": []
+                                        }, {
+                                            "name": "龚哲楠",
+                                            "invite_code": "BVR2",
+                                            "be_invite_code": "HCVC",
+                                            "children": [{
+                                                "name": "曹建清",
+                                                "invite_code": "TLCJ",
+                                                "be_invite_code": "BVR2",
+                                                "children": []
+                                            }, {
+                                                "name": "刘均",
+                                                "invite_code": "XTDD",
+                                                "be_invite_code": "BVR2",
+                                                "children": [{
+                                                    "name": "孙梦真",
+                                                    "invite_code": "EJUE",
+                                                    "be_invite_code": "XTDD",
+                                                    "children": []
+                                                }, {
+                                                    "name": "梁香堂",
+                                                    "invite_code": "8TGW",
+                                                    "be_invite_code": "XTDD",
+                                                    "children": []
+                                                }, {
+                                                    "name": "李金国",
+                                                    "invite_code": "QST3",
+                                                    "be_invite_code": "XTDD",
+                                                    "children": []
+                                                }]
+                                            }, {
+                                                "name": "卜鹏涛",
+                                                "invite_code": "CLXN",
+                                                "be_invite_code": "BVR2",
+                                                "children": []
+                                            }]
+                                        }]
+                                    }]
+                                }]
+                            }]
+                        }, {
+                            "name": "董冬梅",
+                            "invite_code": "36KK",
+                            "be_invite_code": "80XF",
+                            "children": [{
+                                "name": "伍贤海",
+                                "invite_code": "K9BW",
+                                "be_invite_code": "36KK",
+                                "children": []
+                            }, {
+                                "name": "陈姝霖",
+                                "invite_code": "79NK",
+                                "be_invite_code": "36KK",
+                                "children": []
+                            }]
+                        }]
+                    }, {
+                        "name": "任金凤",
+                        "invite_code": "J09E",
+                        "be_invite_code": "Q9KP",
+                        "children": [{
+                            "name": "张元凯",
+                            "invite_code": "J7XQ",
+                            "be_invite_code": "J09E",
+                            "children": []
+                        }, {
+                            "name": "龚俊帅",
+                            "invite_code": "WL56",
+                            "be_invite_code": "J09E",
+                            "children": []
+                        }]
+                    }]
+                }]
+            }, {
+                "name": "缪晓红",
+                "invite_code": "5HEX",
+                "be_invite_code": "XV2K",
+                "children": [{
+                    "name": "严平",
+                    "invite_code": "8R57",
+                    "be_invite_code": "5HEX",
+                    "children": [{
+                        "name": "姚红芳",
+                        "invite_code": "QWGZ",
+                        "be_invite_code": "8R57",
+                        "children": [{
+                            "name": "王付林",
+                            "invite_code": "VXH3",
+                            "be_invite_code": "QWGZ",
+                            "children": []
+                        }, {
+                            "name": "印丽华",
+                            "invite_code": "RBB8",
+                            "be_invite_code": "QWGZ",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "何玲莉",
+                        "invite_code": "Z1ND",
+                        "be_invite_code": "8R57",
+                        "children": [{
+                            "name": "邱训国",
+                            "invite_code": "MLZL",
+                            "be_invite_code": "Z1ND",
+                            "children": [{
+                                "name": "桑伟伟",
+                                "invite_code": "VCPQ",
+                                "be_invite_code": "MLZL",
+                                "children": [{
+                                    "name": "马俊伟",
+                                    "invite_code": "0VAJ",
+                                    "be_invite_code": "VCPQ",
+                                    "children": []
+                                }, {
+                                    "name": "鲁国振",
+                                    "invite_code": "VMH6",
+                                    "be_invite_code": "VCPQ",
+                                    "children": []
+                                }]
+                            }, {
+                                "name": "杨芳",
+                                "invite_code": "V99X",
+                                "be_invite_code": "MLZL",
+                                "children": [{
+                                    "name": "吕玉霞",
+                                    "invite_code": "S625",
+                                    "be_invite_code": "V99X",
+                                    "children": [{
+                                        "name": "薛世宏",
+                                        "invite_code": "ZKGK",
+                                        "be_invite_code": "S625",
+                                        "children": [{
+                                            "name": "朱连英",
+                                            "invite_code": "49VA",
+                                            "be_invite_code": "ZKGK",
+                                            "children": [{
+                                                "name": "吕昱均",
+                                                "invite_code": "CGWR",
+                                                "be_invite_code": "49VA",
+                                                "children": []
+                                            }, {
+                                                "name": "高艳丽",
+                                                "invite_code": "NK0L",
+                                                "be_invite_code": "49VA",
+                                                "children": []
+                                            }]
+                                        }, {
+                                            "name": "倪建",
+                                            "invite_code": "9UPA",
+                                            "be_invite_code": "ZKGK",
+                                            "children": [{
+                                                "name": "李丝丝",
+                                                "invite_code": "9A3V",
+                                                "be_invite_code": "9UPA",
+                                                "children": [{
+                                                    "name": "冯汉明",
+                                                    "invite_code": "ZDYL",
+                                                    "be_invite_code": "9A3V",
+                                                    "children": [{
+                                                        "name": "赵美红",
+                                                        "invite_code": "EPGG",
+                                                        "be_invite_code": "ZDYL",
+                                                        "children": [{
+                                                            "name": "陈丁豪",
+                                                            "invite_code": "21SG",
+                                                            "be_invite_code": "EPGG",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "张浩楠",
+                                                            "invite_code": "FRPF",
+                                                            "be_invite_code": "EPGG",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "韩娟",
+                                                            "invite_code": "LLDS",
+                                                            "be_invite_code": "EPGG",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "严玲丽",
+                                                            "invite_code": "58ZQ",
+                                                            "be_invite_code": "EPGG",
+                                                            "children": [{
+                                                                "name": "任春锋",
+                                                                "invite_code": "J4WV",
+                                                                "be_invite_code": "58ZQ",
+                                                                "children": [{
+                                                                    "name": "顾红英",
+                                                                    "invite_code": "P8H8",
+                                                                    "be_invite_code": "J4WV",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "周淑连",
+                                                                    "invite_code": "F5AP",
+                                                                    "be_invite_code": "J4WV",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "朱桂英",
+                                                                    "invite_code": "63GX",
+                                                                    "be_invite_code": "J4WV",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "马建波",
+                                                                    "invite_code": "R3H4",
+                                                                    "be_invite_code": "J4WV",
+                                                                    "children": [{
+                                                                        "name": "张文英",
+                                                                        "invite_code": "CXPP",
+                                                                        "be_invite_code": "R3H4",
+                                                                        "children": [{
+                                                                            "name": "王佩兰",
+                                                                            "invite_code": "DV58",
+                                                                            "be_invite_code": "CXPP",
+                                                                            "children": [{
+                                                                                "name": "何玉兰",
+                                                                                "invite_code": "1AZ8",
+                                                                                "be_invite_code": "DV58",
+                                                                                "children": [{
+                                                                                    "name": "刘余飞",
+                                                                                    "invite_code": "20HQ",
+                                                                                    "be_invite_code": "1AZ8",
+                                                                                    "children": [{
+                                                                                        "name": "何忠云",
+                                                                                        "invite_code": "ES4H",
+                                                                                        "be_invite_code": "20HQ",
+                                                                                        "children": [{
+                                                                                            "name": "李广春",
+                                                                                            "invite_code": "VLDR",
+                                                                                            "be_invite_code": "ES4H",
+                                                                                            "children": [{
+                                                                                                "name": "李树荣",
+                                                                                                "invite_code": "WFAC",
+                                                                                                "be_invite_code": "VLDR",
+                                                                                                "children": [{
+                                                                                                    "name": "曹佳丽",
+                                                                                                    "invite_code": "CZTJ",
+                                                                                                    "be_invite_code": "WFAC",
+                                                                                                    "children": [{
+                                                                                                        "name": "扈建军",
+                                                                                                        "invite_code": "QEZX",
+                                                                                                        "be_invite_code": "CZTJ",
+                                                                                                        "children": [{
+                                                                                                            "name": "吴小锁",
+                                                                                                            "invite_code": "7SN0",
+                                                                                                            "be_invite_code": "QEZX",
+                                                                                                            "children": [{
+                                                                                                                "name": "杨建兵",
+                                                                                                                "invite_code": "20VC",
+                                                                                                                "be_invite_code": "7SN0",
+                                                                                                                "children": [{
+                                                                                                                    "name": "张学新",
+                                                                                                                    "invite_code": "RRE1",
+                                                                                                                    "be_invite_code": "20VC",
+                                                                                                                    "children": []
+                                                                                                                }, {
+                                                                                                                    "name": "戴宝刚",
+                                                                                                                    "invite_code": "KGVR",
+                                                                                                                    "be_invite_code": "20VC",
+                                                                                                                    "children": []
+                                                                                                                }, {
+                                                                                                                    "name": "王明霞",
+                                                                                                                    "invite_code": "6Z7F",
+                                                                                                                    "be_invite_code": "20VC",
+                                                                                                                    "children": []
+                                                                                                                }, {
+                                                                                                                    "name": "张文刚",
+                                                                                                                    "invite_code": "X96Q",
+                                                                                                                    "be_invite_code": "20VC",
+                                                                                                                    "children": [{
+                                                                                                                        "name": "钟国秀",
+                                                                                                                        "invite_code": "ZL4F",
+                                                                                                                        "be_invite_code": "X96Q",
+                                                                                                                        "children": [{
+                                                                                                                            "name": "张鹏",
+                                                                                                                            "invite_code": "LJ4U",
+                                                                                                                            "be_invite_code": "ZL4F",
+                                                                                                                            "children": []
+                                                                                                                        }, {
+                                                                                                                            "name": "范永布",
+                                                                                                                            "invite_code": "T6YD",
+                                                                                                                            "be_invite_code": "ZL4F",
+                                                                                                                            "children": [{
+                                                                                                                                "name": "曹永利",
+                                                                                                                                "invite_code": "CM78",
+                                                                                                                                "be_invite_code": "T6YD",
+                                                                                                                                "children": []
+                                                                                                                            }, {
+                                                                                                                                "name": "杨文权",
+                                                                                                                                "invite_code": "CAYR",
+                                                                                                                                "be_invite_code": "T6YD",
+                                                                                                                                "children": []
+                                                                                                                            }]
+                                                                                                                        }, {
+                                                                                                                            "name": "段辉",
+                                                                                                                            "invite_code": "921G",
+                                                                                                                            "be_invite_code": "ZL4F",
+                                                                                                                            "children": []
+                                                                                                                        }, {
+                                                                                                                            "name": "朱益峰",
+                                                                                                                            "invite_code": "BZK2",
+                                                                                                                            "be_invite_code": "ZL4F",
+                                                                                                                            "children": []
+                                                                                                                        }]
+                                                                                                                    }, {
+                                                                                                                        "name": "张杰",
+                                                                                                                        "invite_code": "YSD5",
+                                                                                                                        "be_invite_code": "X96Q",
+                                                                                                                        "children": []
+                                                                                                                    }]
+                                                                                                                }]
+                                                                                                            }, {
+                                                                                                                "name": "李小月",
+                                                                                                                "invite_code": "BQ4G",
+                                                                                                                "be_invite_code": "7SN0",
+                                                                                                                "children": []
+                                                                                                            }]
+                                                                                                        }, {
+                                                                                                            "name": "杨蓉蓉",
+                                                                                                            "invite_code": "DUBK",
+                                                                                                            "be_invite_code": "QEZX",
+                                                                                                            "children": []
+                                                                                                        }, {
+                                                                                                            "name": "施佳楠",
+                                                                                                            "invite_code": "PE5U",
+                                                                                                            "be_invite_code": "QEZX",
+                                                                                                            "children": []
+                                                                                                        }, {
+                                                                                                            "name": "黄永",
+                                                                                                            "invite_code": "FUD7",
+                                                                                                            "be_invite_code": "QEZX",
+                                                                                                            "children": []
+                                                                                                        }]
+                                                                                                    }, {
+                                                                                                        "name": "陈红光",
+                                                                                                        "invite_code": "WS3A",
+                                                                                                        "be_invite_code": "CZTJ",
+                                                                                                        "children": []
+                                                                                                    }]
+                                                                                                }, {
+                                                                                                    "name": "纪兆栋",
+                                                                                                    "invite_code": "VQ1H",
+                                                                                                    "be_invite_code": "WFAC",
+                                                                                                    "children": []
+                                                                                                }, {
+                                                                                                    "name": "邢勇",
+                                                                                                    "invite_code": "AEP2",
+                                                                                                    "be_invite_code": "WFAC",
+                                                                                                    "children": []
+                                                                                                }, {
+                                                                                                    "name": "吕海兵",
+                                                                                                    "invite_code": "D600",
+                                                                                                    "be_invite_code": "WFAC",
+                                                                                                    "children": []
+                                                                                                }]
+                                                                                            }, {
+                                                                                                "name": "成小军",
+                                                                                                "invite_code": "7UU5",
+                                                                                                "be_invite_code": "VLDR",
+                                                                                                "children": []
+                                                                                            }]
+                                                                                        }, {
+                                                                                            "name": "葛兵",
+                                                                                            "invite_code": "DE7E",
+                                                                                            "be_invite_code": "ES4H",
+                                                                                            "children": []
+                                                                                        }, {
+                                                                                            "name": "周晓亮",
+                                                                                            "invite_code": "8HLK",
+                                                                                            "be_invite_code": "ES4H",
+                                                                                            "children": []
+                                                                                        }, {
+                                                                                            "name": "张培辉",
+                                                                                            "invite_code": "GM2L",
+                                                                                            "be_invite_code": "ES4H",
+                                                                                            "children": []
+                                                                                        }]
+                                                                                    }, {
+                                                                                        "name": "杨中华",
+                                                                                        "invite_code": "HWVA",
+                                                                                        "be_invite_code": "20HQ",
+                                                                                        "children": []
+                                                                                    }]
+                                                                                }, {
+                                                                                    "name": "侯春林",
+                                                                                    "invite_code": "G49H",
+                                                                                    "be_invite_code": "1AZ8",
+                                                                                    "children": []
+                                                                                }, {
+                                                                                    "name": "熊金艳",
+                                                                                    "invite_code": "BMME",
+                                                                                    "be_invite_code": "1AZ8",
+                                                                                    "children": []
+                                                                                }, {
+                                                                                    "name": "李杰凤",
+                                                                                    "invite_code": "7YTQ",
+                                                                                    "be_invite_code": "1AZ8",
+                                                                                    "children": []
+                                                                                }]
+                                                                            }, {
+                                                                                "name": "王琨",
+                                                                                "invite_code": "463Q",
+                                                                                "be_invite_code": "DV58",
+                                                                                "children": []
+                                                                            }]
+                                                                        }, {
+                                                                            "name": "盛志林",
+                                                                            "invite_code": "UF00",
+                                                                            "be_invite_code": "CXPP",
+                                                                            "children": []
+                                                                        }, {
+                                                                            "name": "肖劲忠",
+                                                                            "invite_code": "3LW0",
+                                                                            "be_invite_code": "CXPP",
+                                                                            "children": []
+                                                                        }, {
+                                                                            "name": "黄佳静",
+                                                                            "invite_code": "597X",
+                                                                            "be_invite_code": "CXPP",
+                                                                            "children": []
+                                                                        }]
+                                                                    }, {
+                                                                        "name": "高勇",
+                                                                        "invite_code": "PXTJ",
+                                                                        "be_invite_code": "R3H4",
+                                                                        "children": []
+                                                                    }]
+                                                                }, {
+                                                                    "name": "朱建华",
+                                                                    "invite_code": "HLBU",
+                                                                    "be_invite_code": "J4WV",
+                                                                    "children": []
+                                                                }]
+                                                            }, {
+                                                                "name": "陈小军",
+                                                                "invite_code": "QLBY",
+                                                                "be_invite_code": "58ZQ",
+                                                                "children": []
+                                                            }]
+                                                        }]
+                                                    }, {
+                                                        "name": "季云华",
+                                                        "invite_code": "GA2Y",
+                                                        "be_invite_code": "ZDYL",
+                                                        "children": []
+                                                    }]
+                                                }, {
+                                                    "name": "黄美瑢",
+                                                    "invite_code": "TMMJ",
+                                                    "be_invite_code": "9A3V",
+                                                    "children": []
+                                                }, {
+                                                    "name": "周燕飞",
+                                                    "invite_code": "B42T",
+                                                    "be_invite_code": "9A3V",
+                                                    "children": []
+                                                }, {
+                                                    "name": "李海娣",
+                                                    "invite_code": "BB7D",
+                                                    "be_invite_code": "9A3V",
+                                                    "children": []
+                                                }]
+                                            }, {
+                                                "name": "成祖云",
+                                                "invite_code": "M3T7",
+                                                "be_invite_code": "9UPA",
+                                                "children": []
+                                            }]
+                                        }]
+                                    }, {
+                                        "name": "朱年华",
+                                        "invite_code": "UUB2",
+                                        "be_invite_code": "S625",
+                                        "children": [{
+                                            "name": "曹建珍",
+                                            "invite_code": "TDW8",
+                                            "be_invite_code": "UUB2",
+                                            "children": []
+                                        }, {
+                                            "name": "武想",
+                                            "invite_code": "VKQ4",
+                                            "be_invite_code": "UUB2",
+                                            "children": []
+                                        }]
+                                    }]
+                                }, {
+                                    "name": "李珠兰",
+                                    "invite_code": "T9AW",
+                                    "be_invite_code": "V99X",
+                                    "children": [{
+                                        "name": "沈贤香",
+                                        "invite_code": "02EL",
+                                        "be_invite_code": "T9AW",
+                                        "children": []
+                                    }, {
+                                        "name": "陶宇轩",
+                                        "invite_code": "5ZGE",
+                                        "be_invite_code": "T9AW",
+                                        "children": []
+                                    }]
+                                }]
+                            }]
+                        }, {
+                            "name": "陈如英",
+                            "invite_code": "A4PZ",
+                            "be_invite_code": "Z1ND",
+                            "children": []
+                        }, {
+                            "name": "周胜平",
+                            "invite_code": "NJXM",
+                            "be_invite_code": "Z1ND",
+                            "children": [{
+                                "name": "范广志",
+                                "invite_code": "L1PB",
+                                "be_invite_code": "NJXM",
+                                "children": []
+                            }]
+                        }]
+                    }]
+                }, {
+                    "name": "陈文杰",
+                    "invite_code": "N9NH",
+                    "be_invite_code": "5HEX",
+                    "children": [{
+                        "name": "陈驰",
+                        "invite_code": "09NV",
+                        "be_invite_code": "N9NH",
+                        "children": [{
+                            "name": "汪海源",
+                            "invite_code": "3EJX",
+                            "be_invite_code": "09NV",
+                            "children": []
+                        }, {
+                            "name": "谭通",
+                            "invite_code": "KM2K",
+                            "be_invite_code": "09NV",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "李美英",
+                        "invite_code": "CL2W",
+                        "be_invite_code": "N9NH",
+                        "children": [{
+                            "name": "顾莲芳",
+                            "invite_code": "2MNK",
+                            "be_invite_code": "CL2W",
+                            "children": [{
+                                "name": "桂金莲",
+                                "invite_code": "G75W",
+                                "be_invite_code": "2MNK",
+                                "children": []
+                            }]
+                        }, {
+                            "name": "陶金才",
+                            "invite_code": "65LT",
+                            "be_invite_code": "CL2W",
+                            "children": []
+                        }, {
+                            "name": "赵小桥",
+                            "invite_code": "1U4D",
+                            "be_invite_code": "CL2W",
+                            "children": [{
+                                "name": "顾美均",
+                                "invite_code": "MHP9",
+                                "be_invite_code": "1U4D",
+                                "children": []
+                            }]
+                        }]
+                    }]
+                }]
+            }, {
+                "name": "任华",
+                "invite_code": "PQY2",
+                "be_invite_code": "XV2K",
+                "children": [{
+                    "name": "季夕丽",
+                    "invite_code": "DBJV",
+                    "be_invite_code": "PQY2",
+                    "children": []
+                }, {
+                    "name": "刘培军",
+                    "invite_code": "P5JR",
+                    "be_invite_code": "PQY2",
+                    "children": []
+                }, {
+                    "name": "顾建泉",
+                    "invite_code": "Z4YG",
+                    "be_invite_code": "PQY2",
+                    "children": [{
+                        "name": "李美林",
+                        "invite_code": "92EP",
+                        "be_invite_code": "Z4YG",
+                        "children": []
+                    }, {
+                        "name": "徐建",
+                        "invite_code": "SFAM",
+                        "be_invite_code": "Z4YG",
+                        "children": []
+                    }, {
+                        "name": "吴美林",
+                        "invite_code": "K3EP",
+                        "be_invite_code": "Z4YG",
+                        "children": [{
+                            "name": "曹金锋",
+                            "invite_code": "VLY0",
+                            "be_invite_code": "K3EP",
+                            "children": []
+                        }, {
+                            "name": "戴金珍",
+                            "invite_code": "PNYQ",
+                            "be_invite_code": "K3EP",
+                            "children": [{
+                                "name": "丁胜兵",
+                                "invite_code": "A71M",
+                                "be_invite_code": "PNYQ",
+                                "children": []
+                            }, {
+                                "name": "王兴",
+                                "invite_code": "XVV7",
+                                "be_invite_code": "PNYQ",
+                                "children": []
+                            }, {
+                                "name": "许璐",
+                                "invite_code": "QUZA",
+                                "be_invite_code": "PNYQ",
+                                "children": [{
+                                    "name": "黄振娟",
+                                    "invite_code": "V0X2",
+                                    "be_invite_code": "QUZA",
+                                    "children": []
+                                }, {
+                                    "name": "于雪磊",
+                                    "invite_code": "0HVW",
+                                    "be_invite_code": "QUZA",
+                                    "children": []
+                                }, {
+                                    "name": "王徐通",
+                                    "invite_code": "KVZ0",
+                                    "be_invite_code": "QUZA",
+                                    "children": [{
+                                        "name": "唐绍超",
+                                        "invite_code": "2982",
+                                        "be_invite_code": "KVZ0",
+                                        "children": []
+                                    }, {
+                                        "name": "罗登泉",
+                                        "invite_code": "QZQ6",
+                                        "be_invite_code": "KVZ0",
+                                        "children": [{
+                                            "name": "柏玉环",
+                                            "invite_code": "M8P0",
+                                            "be_invite_code": "QZQ6",
+                                            "children": []
+                                        }, {
+                                            "name": "张洁",
+                                            "invite_code": "Z32K",
+                                            "be_invite_code": "QZQ6",
+                                            "children": []
+                                        }, {
+                                            "name": "董卫乐",
+                                            "invite_code": "X00T",
+                                            "be_invite_code": "QZQ6",
+                                            "children": []
+                                        }]
+                                    }, {
+                                        "name": "刘明君",
+                                        "invite_code": "PL1C",
+                                        "be_invite_code": "KVZ0",
+                                        "children": []
+                                    }]
+                                }]
+                            }]
+                        }, {
+                            "name": "王立",
+                            "invite_code": "QV7H",
+                            "be_invite_code": "K3EP",
+                            "children": []
+                        }]
+                    }]
+                }]
+            }]
+        }, {
+            "name": "吴国强",
+            "invite_code": "2N4H",
+            "be_invite_code": "UGBS",
+            "children": [{
+                "name": "杨爱华",
+                "invite_code": "SKB7",
+                "be_invite_code": "2N4H",
+                "children": [{
+                    "name": "李海娣",
+                    "invite_code": "PZA6",
+                    "be_invite_code": "SKB7",
+                    "children": []
+                }, {
+                    "name": "许璐",
+                    "invite_code": "MET9",
+                    "be_invite_code": "SKB7",
+                    "children": []
+                }, {
+                    "name": "许璐",
+                    "invite_code": "HM35",
+                    "be_invite_code": "SKB7",
+                    "children": []
+                }, {
+                    "name": "李海娣",
+                    "invite_code": "4Y64",
+                    "be_invite_code": "SKB7",
+                    "children": []
+                }, {
+                    "name": "顾燕",
+                    "invite_code": "X0X2",
+                    "be_invite_code": "SKB7",
+                    "children": [{
+                        "name": "陶勇峰",
+                        "invite_code": "1NN5",
+                        "be_invite_code": "X0X2",
+                        "children": []
+                    }, {
+                        "name": "朱晓明",
+                        "invite_code": "W42K",
+                        "be_invite_code": "X0X2",
+                        "children": [{
+                            "name": "钱海军",
+                            "invite_code": "YKVE",
+                            "be_invite_code": "W42K",
+                            "children": [{
+                                "name": "何鸿光",
+                                "invite_code": "FGKF",
+                                "be_invite_code": "YKVE",
+                                "children": [{
+                                    "name": "吴新德",
+                                    "invite_code": "PTPF",
+                                    "be_invite_code": "FGKF",
+                                    "children": []
+                                }, {
+                                    "name": "黄宜成",
+                                    "invite_code": "33VL",
+                                    "be_invite_code": "FGKF",
+                                    "children": [{
+                                        "name": "丁卫",
+                                        "invite_code": "H0JW",
+                                        "be_invite_code": "33VL",
+                                        "children": []
+                                    }, {
+                                        "name": "王素珍",
+                                        "invite_code": "9E0V",
+                                        "be_invite_code": "33VL",
+                                        "children": [{
+                                            "name": "陆汉明",
+                                            "invite_code": "QUD6",
+                                            "be_invite_code": "9E0V",
+                                            "children": []
+                                        }, {
+                                            "name": "杨心如",
+                                            "invite_code": "YBEC",
+                                            "be_invite_code": "9E0V",
+                                            "children": []
+                                        }, {
+                                            "name": "张宇",
+                                            "invite_code": "6JGV",
+                                            "be_invite_code": "9E0V",
+                                            "children": [{
+                                                "name": "张艺海",
+                                                "invite_code": "WHQF",
+                                                "be_invite_code": "6JGV",
+                                                "children": [{
+                                                    "name": "周明明",
+                                                    "invite_code": "XHNS",
+                                                    "be_invite_code": "WHQF",
+                                                    "children": []
+                                                }, {
+                                                    "name": "蔡美华",
+                                                    "invite_code": "L7AH",
+                                                    "be_invite_code": "WHQF",
+                                                    "children": []
+                                                }, {
+                                                    "name": "高林",
+                                                    "invite_code": "FE3C",
+                                                    "be_invite_code": "WHQF",
+                                                    "children": []
+                                                }, {
+                                                    "name": "秦玲",
+                                                    "invite_code": "5XJG",
+                                                    "be_invite_code": "WHQF",
+                                                    "children": [{
+                                                        "name": "施也冲",
+                                                        "invite_code": "4VSA",
+                                                        "be_invite_code": "5XJG",
+                                                        "children": []
+                                                    }, {
+                                                        "name": "李卫东",
+                                                        "invite_code": "YK97",
+                                                        "be_invite_code": "5XJG",
+                                                        "children": [{
+                                                            "name": "曹佳",
+                                                            "invite_code": "1Z29",
+                                                            "be_invite_code": "YK97",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "尹小娟",
+                                                            "invite_code": "V0YD",
+                                                            "be_invite_code": "YK97",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "张斌",
+                                                            "invite_code": "UZ0F",
+                                                            "be_invite_code": "YK97",
+                                                            "children": []
+                                                        }, {
+                                                            "name": "吴建新",
+                                                            "invite_code": "4RTX",
+                                                            "be_invite_code": "YK97",
+                                                            "children": [{
+                                                                "name": "刘文康",
+                                                                "invite_code": "FTXT",
+                                                                "be_invite_code": "4RTX",
+                                                                "children": []
+                                                            }, {
+                                                                "name": "姜兴美",
+                                                                "invite_code": "UZCD",
+                                                                "be_invite_code": "4RTX",
+                                                                "children": []
+                                                            }]
+                                                        }]
+                                                    }]
+                                                }]
+                                            }, {
+                                                "name": "顾春宏",
+                                                "invite_code": "XUWP",
+                                                "be_invite_code": "6JGV",
+                                                "children": []
+                                            }]
+                                        }, {
+                                            "name": "陆美萍",
+                                            "invite_code": "UTG4",
+                                            "be_invite_code": "9E0V",
+                                            "children": []
+                                        }]
+                                    }]
+                                }, {
+                                    "name": "王光明",
+                                    "invite_code": "XPUN",
+                                    "be_invite_code": "FGKF",
+                                    "children": []
+                                }, {
+                                    "name": "蔡小芳",
+                                    "invite_code": "M27W",
+                                    "be_invite_code": "FGKF",
+                                    "children": []
+                                }]
+                            }, {
+                                "name": "邵明亮",
+                                "invite_code": "PFX6",
+                                "be_invite_code": "YKVE",
+                                "children": []
+                            }]
+                        }, {
+                            "name": "於雪峰",
+                            "invite_code": "A1EW",
+                            "be_invite_code": "W42K",
+                            "children": []
+                        }, {
+                            "name": "周琦",
+                            "invite_code": "T7E0",
+                            "be_invite_code": "W42K",
+                            "children": []
+                        }, {
+                            "name": "陆新明",
+                            "invite_code": "NZQ1",
+                            "be_invite_code": "W42K",
+                            "children": []
+                        }]
+                    }]
+                }, {
+                    "name": "耿银华",
+                    "invite_code": "GWXX",
+                    "be_invite_code": "SKB7",
+                    "children": [{
+                        "name": "耿桂华",
+                        "invite_code": "FHW4",
+                        "be_invite_code": "GWXX",
+                        "children": []
+                    }]
+                }]
+            }, {
+                "name": "罗坚",
+                "invite_code": "JTDE",
+                "be_invite_code": "2N4H",
+                "children": [{
+                    "name": "王瑜",
+                    "invite_code": "EX7P",
+                    "be_invite_code": "JTDE",
+                    "children": []
+                }, {
+                    "name": "宗丽丽",
+                    "invite_code": "RJ45",
+                    "be_invite_code": "JTDE",
+                    "children": []
+                }, {
+                    "name": "宗丽丽",
+                    "invite_code": "G1SV",
+                    "be_invite_code": "JTDE",
+                    "children": []
+                }, {
+                    "name": "王瑜",
+                    "invite_code": "GUJ2",
+                    "be_invite_code": "JTDE",
+                    "children": [{
+                        "name": "朱宝林",
+                        "invite_code": "9XTM",
+                        "be_invite_code": "GUJ2",
+                        "children": [{
+                            "name": "开昌毅",
+                            "invite_code": "N5CK",
+                            "be_invite_code": "9XTM",
+                            "children": []
+                        }, {
+                            "name": "孟子清",
+                            "invite_code": "UN15",
+                            "be_invite_code": "9XTM",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "李少华",
+                        "invite_code": "3FFQ",
+                        "be_invite_code": "GUJ2",
+                        "children": [{
+                            "name": "陈政璨",
+                            "invite_code": "EFWL",
+                            "be_invite_code": "3FFQ",
+                            "children": [{
+                                "name": "李安邦",
+                                "invite_code": "9WRN",
+                                "be_invite_code": "EFWL",
+                                "children": []
+                            }, {
+                                "name": "邓力源",
+                                "invite_code": "9GLK",
+                                "be_invite_code": "EFWL",
+                                "children": []
+                            }]
+                        }, {
+                            "name": "姚玉明",
+                            "invite_code": "7D02",
+                            "be_invite_code": "3FFQ",
+                            "children": [{
+                                "name": "李志芬",
+                                "invite_code": "T2VM",
+                                "be_invite_code": "7D02",
+                                "children": []
+                            }, {
+                                "name": "邱灵玉",
+                                "invite_code": "Z2KY",
+                                "be_invite_code": "7D02",
+                                "children": []
+                            }]
+                        }]
+                    }]
+                }, {
+                    "name": "孙光明",
+                    "invite_code": "WMGZ",
+                    "be_invite_code": "JTDE",
+                    "children": [{
+                        "name": "葛云",
+                        "invite_code": "QNA6",
+                        "be_invite_code": "WMGZ",
+                        "children": []
+                    }]
+                }]
+            }]
+        }]
+    }, {
+        "name": "薛宁冀",
+        "invite_code": "SL2Y",
+        "be_invite_code": "1GAP",
+        "children": [{
+            "name": "刘明",
+            "invite_code": "3BJL",
+            "be_invite_code": "SL2Y",
+            "children": [{
+                "name": "徐咏梅",
+                "invite_code": "NUUP",
+                "be_invite_code": "3BJL",
+                "children": [{
+                    "name": "王建",
+                    "invite_code": "MFST",
+                    "be_invite_code": "NUUP",
+                    "children": [{
+                        "name": "尹扇扇",
+                        "invite_code": "8FKR",
+                        "be_invite_code": "MFST",
+                        "children": [{
+                            "name": "张伟",
+                            "invite_code": "XXHL",
+                            "be_invite_code": "8FKR",
+                            "children": [{
+                                "name": "朱美华",
+                                "invite_code": "96NH",
+                                "be_invite_code": "XXHL",
+                                "children": [{
+                                    "name": "刘亚明",
+                                    "invite_code": "BR3E",
+                                    "be_invite_code": "96NH",
+                                    "children": []
+                                }, {
+                                    "name": "陈刚",
+                                    "invite_code": "E529",
+                                    "be_invite_code": "96NH",
+                                    "children": []
+                                }]
+                            }, {
+                                "name": "花晓丽",
+                                "invite_code": "88RC",
+                                "be_invite_code": "XXHL",
+                                "children": [{
+                                    "name": "黄荣",
+                                    "invite_code": "0XNT",
+                                    "be_invite_code": "88RC",
+                                    "children": []
+                                }, {
+                                    "name": "夏浩廷",
+                                    "invite_code": "D66P",
+                                    "be_invite_code": "88RC",
+                                    "children": []
+                                }]
+                            }]
+                        }, {
+                            "name": "黄志冠",
+                            "invite_code": "6VXP",
+                            "be_invite_code": "8FKR",
+                            "children": [{
+                                "name": "郭谦",
+                                "invite_code": "LSQS",
+                                "be_invite_code": "6VXP",
+                                "children": [{
+                                    "name": "高灵灵",
+                                    "invite_code": "HU9C",
+                                    "be_invite_code": "LSQS",
+                                    "children": []
+                                }, {
+                                    "name": "王欠欠",
+                                    "invite_code": "A5RD",
+                                    "be_invite_code": "LSQS",
+                                    "children": []
+                                }]
+                            }, {
+                                "name": "陶然",
+                                "invite_code": "XKY9",
+                                "be_invite_code": "6VXP",
+                                "children": [{
+                                    "name": "李可华",
+                                    "invite_code": "5RX2",
+                                    "be_invite_code": "XKY9",
+                                    "children": []
+                                }, {
+                                    "name": "王茜",
+                                    "invite_code": "3AVB",
+                                    "be_invite_code": "XKY9",
+                                    "children": []
+                                }]
+                            }]
+                        }]
+                    }, {
+                        "name": "王锦华",
+                        "invite_code": "11P8",
+                        "be_invite_code": "MFST",
+                        "children": [{
+                            "name": "李红磊",
+                            "invite_code": "ED22",
+                            "be_invite_code": "11P8",
+                            "children": []
+                        }, {
+                            "name": "吉晓庆",
+                            "invite_code": "LRFH",
+                            "be_invite_code": "11P8",
+                            "children": []
+                        }]
+                    }]
+                }, {
+                    "name": "吴美芳",
+                    "invite_code": "9AV0",
+                    "be_invite_code": "NUUP",
+                    "children": [{
+                        "name": "浦少兵",
+                        "invite_code": "2HD5",
+                        "be_invite_code": "9AV0",
+                        "children": []
+                    }, {
+                        "name": "苏超",
+                        "invite_code": "KT9J",
+                        "be_invite_code": "9AV0",
+                        "children": []
+                    }]
+                }]
+            }, {
+                "name": "吴玉华",
+                "invite_code": "LAHL",
+                "be_invite_code": "3BJL",
+                "children": [{
+                    "name": "吴国平",
+                    "invite_code": "SP4R",
+                    "be_invite_code": "LAHL",
+                    "children": [{
+                        "name": "黄芳",
+                        "invite_code": "UTEJ",
+                        "be_invite_code": "SP4R",
+                        "children": [{
+                            "name": "顾永建",
+                            "invite_code": "HDSU",
+                            "be_invite_code": "UTEJ",
+                            "children": [{
+                                "name": "陈亚苏",
+                                "invite_code": "8EPL",
+                                "be_invite_code": "HDSU",
+                                "children": [{
+                                    "name": "朱华",
+                                    "invite_code": "UREQ",
+                                    "be_invite_code": "8EPL",
+                                    "children": [{
+                                        "name": "郭光中",
+                                        "invite_code": "6FP8",
+                                        "be_invite_code": "UREQ",
+                                        "children": []
+                                    }, {
+                                        "name": "周峰",
+                                        "invite_code": "FQLT",
+                                        "be_invite_code": "UREQ",
+                                        "children": []
+                                    }]
+                                }, {
+                                    "name": "王伟祥",
+                                    "invite_code": "NBVQ",
+                                    "be_invite_code": "8EPL",
+                                    "children": [{
+                                        "name": "顾景焰",
+                                        "invite_code": "4LBH",
+                                        "be_invite_code": "NBVQ",
+                                        "children": [{
+                                            "name": "陈卫兵",
+                                            "invite_code": "4ZJK",
+                                            "be_invite_code": "4LBH",
+                                            "children": [{
+                                                "name": "邵金荣",
+                                                "invite_code": "C8YJ",
+                                                "be_invite_code": "4ZJK",
+                                                "children": [{
+                                                    "name": "王宏",
+                                                    "invite_code": "S6YQ",
+                                                    "be_invite_code": "C8YJ",
+                                                    "children": [{
+                                                        "name": "赵建春",
+                                                        "invite_code": "6RQV",
+                                                        "be_invite_code": "S6YQ",
+                                                        "children": []
+                                                    }, {
+                                                        "name": "邵松华",
+                                                        "invite_code": "CEA3",
+                                                        "be_invite_code": "S6YQ",
+                                                        "children": []
+                                                    }]
+                                                }, {
+                                                    "name": "张凤英",
+                                                    "invite_code": "WLTP",
+                                                    "be_invite_code": "C8YJ",
+                                                    "children": [{
+                                                        "name": "黄志玉",
+                                                        "invite_code": "R1YQ",
+                                                        "be_invite_code": "WLTP",
+                                                        "children": []
+                                                    }, {
+                                                        "name": "秦如英",
+                                                        "invite_code": "T2ZW",
+                                                        "be_invite_code": "WLTP",
+                                                        "children": []
+                                                    }]
+                                                }]
+                                            }, {
+                                                "name": "张艳",
+                                                "invite_code": "7GLM",
+                                                "be_invite_code": "4ZJK",
+                                                "children": []
+                                            }, {
+                                                "name": "陈建中",
+                                                "invite_code": "WG9U",
+                                                "be_invite_code": "4ZJK",
+                                                "children": []
+                                            }, {
+                                                "name": "殷文杰",
+                                                "invite_code": "ZQGT",
+                                                "be_invite_code": "4ZJK",
+                                                "children": []
+                                            }]
+                                        }, {
+                                            "name": "沙建云",
+                                            "invite_code": "8YMG",
+                                            "be_invite_code": "4LBH",
+                                            "children": []
+                                        }]
+                                    }, {
+                                        "name": "吴新明",
+                                        "invite_code": "NYN2",
+                                        "be_invite_code": "NBVQ",
+                                        "children": [{
+                                            "name": "陈金萍",
+                                            "invite_code": "N0ZB",
+                                            "be_invite_code": "NYN2",
+                                            "children": []
+                                        }, {
+                                            "name": "徐渭华",
+                                            "invite_code": "3PTB",
+                                            "be_invite_code": "NYN2",
+                                            "children": [{
+                                                "name": "陆海红",
+                                                "invite_code": "WD2W",
+                                                "be_invite_code": "3PTB",
+                                                "children": []
+                                            }, {
+                                                "name": "瞿锦松",
+                                                "invite_code": "MD6C",
+                                                "be_invite_code": "3PTB",
+                                                "children": [{
+                                                    "name": "王松云",
+                                                    "invite_code": "GLKC",
+                                                    "be_invite_code": "MD6C",
+                                                    "children": [{
+                                                        "name": "陆建冲",
+                                                        "invite_code": "8RKK",
+                                                        "be_invite_code": "GLKC",
+                                                        "children": [{
+                                                            "name": "李建新",
+                                                            "invite_code": "7N71",
+                                                            "be_invite_code": "8RKK",
+                                                            "children": [{
+                                                                "name": "佘明华",
+                                                                "invite_code": "EFQ2",
+                                                                "be_invite_code": "7N71",
+                                                                "children": [{
+                                                                    "name": "钱渊明",
+                                                                    "invite_code": "H938",
+                                                                    "be_invite_code": "EFQ2",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "吴锦山",
+                                                                    "invite_code": "CCN3",
+                                                                    "be_invite_code": "EFQ2",
+                                                                    "children": []
+                                                                }]
+                                                            }, {
+                                                                "name": "缪小军",
+                                                                "invite_code": "QBE6",
+                                                                "be_invite_code": "7N71",
+                                                                "children": [{
+                                                                    "name": "田瑞连",
+                                                                    "invite_code": "QF3U",
+                                                                    "be_invite_code": "QBE6",
+                                                                    "children": [{
+                                                                        "name": "高宗涛",
+                                                                        "invite_code": "DQ8X",
+                                                                        "be_invite_code": "QF3U",
+                                                                        "children": []
+                                                                    }, {
+                                                                        "name": "万守华",
+                                                                        "invite_code": "B9BH",
+                                                                        "be_invite_code": "QF3U",
+                                                                        "children": []
+                                                                    }]
+                                                                }, {
+                                                                    "name": "黄飞",
+                                                                    "invite_code": "5575",
+                                                                    "be_invite_code": "QBE6",
+                                                                    "children": [{
+                                                                        "name": "茅海东",
+                                                                        "invite_code": "RVF9",
+                                                                        "be_invite_code": "5575",
+                                                                        "children": []
+                                                                    }, {
+                                                                        "name": "杨宏霞",
+                                                                        "invite_code": "NKHY",
+                                                                        "be_invite_code": "5575",
+                                                                        "children": [{
+                                                                            "name": "邓小荣",
+                                                                            "invite_code": "UEDR",
+                                                                            "be_invite_code": "NKHY",
+                                                                            "children": [{
+                                                                                "name": "张银凤",
+                                                                                "invite_code": "8GNY",
+                                                                                "be_invite_code": "UEDR",
+                                                                                "children": []
+                                                                            }]
+                                                                        }, {
+                                                                            "name": "孙建兵",
+                                                                            "invite_code": "L1Q2",
+                                                                            "be_invite_code": "NKHY",
+                                                                            "children": []
+                                                                        }]
+                                                                    }]
+                                                                }]
+                                                            }]
+                                                        }, {
+                                                            "name": "周美芳",
+                                                            "invite_code": "J1AJ",
+                                                            "be_invite_code": "8RKK",
+                                                            "children": [{
+                                                                "name": "吴建飞",
+                                                                "invite_code": "CK8R",
+                                                                "be_invite_code": "J1AJ",
+                                                                "children": [{
+                                                                    "name": "陈继娟",
+                                                                    "invite_code": "A9K0",
+                                                                    "be_invite_code": "CK8R",
+                                                                    "children": [{
+                                                                        "name": "秦烨",
+                                                                        "invite_code": "WW8A",
+                                                                        "be_invite_code": "A9K0",
+                                                                        "children": [{
+                                                                            "name": "黄志英",
+                                                                            "invite_code": "PXDS",
+                                                                            "be_invite_code": "WW8A",
+                                                                            "children": [{
+                                                                                "name": "张超",
+                                                                                "invite_code": "HA84",
+                                                                                "be_invite_code": "PXDS",
+                                                                                "children": []
+                                                                            }, {
+                                                                                "name": "周焰",
+                                                                                "invite_code": "A5HT",
+                                                                                "be_invite_code": "PXDS",
+                                                                                "children": [{
+                                                                                    "name": "钱峰",
+                                                                                    "invite_code": "MSD9",
+                                                                                    "be_invite_code": "A5HT",
+                                                                                    "children": [{
+                                                                                        "name": "张云峰",
+                                                                                        "invite_code": "9AUT",
+                                                                                        "be_invite_code": "MSD9",
+                                                                                        "children": [{
+                                                                                            "name": "刘官林",
+                                                                                            "invite_code": "ZZZS",
+                                                                                            "be_invite_code": "9AUT",
+                                                                                            "children": []
+                                                                                        }, {
+                                                                                            "name": "朱建兵",
+                                                                                            "invite_code": "AK6F",
+                                                                                            "be_invite_code": "9AUT",
+                                                                                            "children": [{
+                                                                                                "name": "郁卫霞",
+                                                                                                "invite_code": "K5K8",
+                                                                                                "be_invite_code": "AK6F",
+                                                                                                "children": [{
+                                                                                                    "name": "郁卫红",
+                                                                                                    "invite_code": "NS3S",
+                                                                                                    "be_invite_code": "K5K8",
+                                                                                                    "children": []
+                                                                                                }, {
+                                                                                                    "name": "杨剑兵",
+                                                                                                    "invite_code": "KVWF",
+                                                                                                    "be_invite_code": "K5K8",
+                                                                                                    "children": []
+                                                                                                }]
+                                                                                            }, {
+                                                                                                "name": "张淑",
+                                                                                                "invite_code": "X97Z",
+                                                                                                "be_invite_code": "AK6F",
+                                                                                                "children": []
+                                                                                            }]
+                                                                                        }, {
+                                                                                            "name": "李长福",
+                                                                                            "invite_code": "HKHM",
+                                                                                            "be_invite_code": "9AUT",
+                                                                                            "children": []
+                                                                                        }, {
+                                                                                            "name": "满百云",
+                                                                                            "invite_code": "D39Q",
+                                                                                            "be_invite_code": "9AUT",
+                                                                                            "children": []
+                                                                                        }]
+                                                                                    }, {
+                                                                                        "name": "李成凤",
+                                                                                        "invite_code": "X0PD",
+                                                                                        "be_invite_code": "MSD9",
+                                                                                        "children": []
+                                                                                    }]
+                                                                                }, {
+                                                                                    "name": "吴清磊",
+                                                                                    "invite_code": "0D1E",
+                                                                                    "be_invite_code": "A5HT",
+                                                                                    "children": []
+                                                                                }, {
+                                                                                    "name": "周生合",
+                                                                                    "invite_code": "4HGR",
+                                                                                    "be_invite_code": "A5HT",
+                                                                                    "children": []
+                                                                                }, {
+                                                                                    "name": "孟丽",
+                                                                                    "invite_code": "DKMN",
+                                                                                    "be_invite_code": "A5HT",
+                                                                                    "children": []
+                                                                                }]
+                                                                            }]
+                                                                        }, {
+                                                                            "name": "张春鹏",
+                                                                            "invite_code": "LV8Q",
+                                                                            "be_invite_code": "WW8A",
+                                                                            "children": []
+                                                                        }, {
+                                                                            "name": "王汉明",
+                                                                            "invite_code": "EWWN",
+                                                                            "be_invite_code": "WW8A",
+                                                                            "children": []
+                                                                        }, {
+                                                                            "name": "吴卫",
+                                                                            "invite_code": "QAAK",
+                                                                            "be_invite_code": "WW8A",
+                                                                            "children": []
+                                                                        }]
+                                                                    }, {
+                                                                        "name": "张强",
+                                                                        "invite_code": "A80V",
+                                                                        "be_invite_code": "A9K0",
+                                                                        "children": []
+                                                                    }]
+                                                                }, {
+                                                                    "name": "刘静",
+                                                                    "invite_code": "H4W6",
+                                                                    "be_invite_code": "CK8R",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "霍家伟",
+                                                                    "invite_code": "FD8H",
+                                                                    "be_invite_code": "CK8R",
+                                                                    "children": []
+                                                                }, {
+                                                                    "name": "胡长远",
+                                                                    "invite_code": "X3BU",
+                                                                    "be_invite_code": "CK8R",
+                                                                    "children": []
+                                                                }]
+                                                            }, {
+                                                                "name": "黄惠贤",
+                                                                "invite_code": "5YAZ",
+                                                                "be_invite_code": "J1AJ",
+                                                                "children": []
+                                                            }]
+                                                        }]
+                                                    }, {
+                                                        "name": "顾粟子",
+                                                        "invite_code": "7UN3",
+                                                        "be_invite_code": "GLKC",
+                                                        "children": []
+                                                    }, {
+                                                        "name": "董汉琴",
+                                                        "invite_code": "JJ4N",
+                                                        "be_invite_code": "GLKC",
+                                                        "children": []
+                                                    }, {
+                                                        "name": "陈圩",
+                                                        "invite_code": "7FC8",
+                                                        "be_invite_code": "GLKC",
+                                                        "children": []
+                                                    }]
+                                                }, {
+                                                    "name": "宋群花",
+                                                    "invite_code": "TCNA",
+                                                    "be_invite_code": "MD6C",
+                                                    "children": []
+                                                }]
+                                            }, {
+                                                "name": "沈得银",
+                                                "invite_code": "EPUP",
+                                                "be_invite_code": "3PTB",
+                                                "children": []
+                                            }, {
+                                                "name": "黄水忠",
+                                                "invite_code": "QD7A",
+                                                "be_invite_code": "3PTB",
+                                                "children": []
+                                            }]
+                                        }]
+                                    }]
+                                }]
+                            }, {
+                                "name": "黄飞",
+                                "invite_code": "7SCN",
+                                "be_invite_code": "HDSU",
+                                "children": []
+                            }]
+                        }, {
+                            "name": "姚树益",
+                            "invite_code": "7TKK",
+                            "be_invite_code": "UTEJ",
+                            "children": [{
+                                "name": "秦利",
+                                "invite_code": "B1FG",
+                                "be_invite_code": "7TKK",
+                                "children": []
+                            }, {
+                                "name": "石柏",
+                                "invite_code": "MKBY",
+                                "be_invite_code": "7TKK",
+                                "children": []
+                            }]
+                        }]
+                    }, {
+                        "name": "顾永梅",
+                        "invite_code": "ABLX",
+                        "be_invite_code": "SP4R",
+                        "children": [{
+                            "name": "姚旭",
+                            "invite_code": "BXPK",
+                            "be_invite_code": "ABLX",
+                            "children": []
+                        }, {
+                            "name": "葛卫华",
+                            "invite_code": "XS3Y",
+                            "be_invite_code": "ABLX",
+                            "children": []
+                        }]
+                    }]
+                }, {
+                    "name": "孟爱玲",
+                    "invite_code": "61H0",
+                    "be_invite_code": "LAHL",
+                    "children": [{
+                        "name": "朱建生",
+                        "invite_code": "05UH",
+                        "be_invite_code": "61H0",
+                        "children": [{
+                            "name": "韩美红",
+                            "invite_code": "3HXV",
+                            "be_invite_code": "05UH",
+                            "children": []
+                        }, {
+                            "name": "许云飞",
+                            "invite_code": "Q4YE",
+                            "be_invite_code": "05UH",
+                            "children": []
+                        }]
+                    }, {
+                        "name": "顾建东",
+                        "invite_code": "UKPX",
+                        "be_invite_code": "61H0",
+                        "children": [{
+                            "name": "王红",
+                            "invite_code": "PH3G",
+                            "be_invite_code": "UKPX",
+                            "children": []
+                        }, {
+                            "name": "渠立楠",
+                            "invite_code": "QEAM",
+                            "be_invite_code": "UKPX",
+                            "children": []
+                        }]
+                    }]
+                }]
+            }]
+        }, {
+            "name": "黄荣荣",
+            "invite_code": "54R4",
+            "be_invite_code": "SL2Y",
+            "children": [{
+                "name": "薛建林",
+                "invite_code": "GFMN",
+                "be_invite_code": "54R4",
+                "children": [{
+                    "name": "成单",
+                    "invite_code": "6XKE",
+                    "be_invite_code": "GFMN",
+                    "children": [{
+                        "name": "刘勇斌",
+                        "invite_code": "X2XD",
+                        "be_invite_code": "6XKE",
+                        "children": []
+                    }]
+                }, {
+                    "name": "孙佳伟",
+                    "invite_code": "5L0M",
+                    "be_invite_code": "GFMN",
+                    "children": []
+                }]
+            }, {
+                "name": "孙晓燕",
+                "invite_code": "HPZH",
+                "be_invite_code": "54R4",
+                "children": [{
+                    "name": "张海东",
+                    "invite_code": "LFJY",
+                    "be_invite_code": "HPZH",
+                    "children": [{
+                        "name": "高雷",
+                        "invite_code": "48DX",
+                        "be_invite_code": "LFJY",
+                        "children": []
+                    }, {
+                        "name": "王冰",
+                        "invite_code": "LV6Z",
+                        "be_invite_code": "LFJY",
+                        "children": []
+                    }]
+                }, {
+                    "name": "曹敏",
+                    "invite_code": "ZEQL",
+                    "be_invite_code": "HPZH",
+                    "children": [{
+                        "name": "魏敏杰",
+                        "invite_code": "8HCN",
+                        "be_invite_code": "ZEQL",
+                        "children": []
+                    }, {
+                        "name": "芦忠宝",
+                        "invite_code": "NWK8",
+                        "be_invite_code": "ZEQL",
+                        "children": []
+                    }]
+                }]
+            }]
+        }]
+    }]
+    }]
+
+
+    //定义echarts容器
+    var myChart = echarts.init(document.getElementById('main'), 'macarons');
+    option = {
+        backgroundColor: '#f3f3f3',
+        title : {
+            text: '轻奢点评用户关系图谱',
+            x:'center',
+            textStyle:{
+                fontSize: 26,
+                color: '#333333',
+                align: 'center'
+            }
+        },//标题
+        calculable : false,
+        tooltip : {
+            trigger: 'item',
+            triggerOn: 'mousemove',
+            formatter: function(params){
+                return '姓名： '+params.name+'<br />'+'联系电话： 63232312132'
+            }
+        },//移动上去提示框
+        series : [
+            {
+                name:'树图',
+                type:'tree',
+                orient: 'vertical',  // vertical horizontal
+                left: 50,
+                right: 50,
+                bottom: 50,
+                rootLocation: {x: 'center', y: '100'}, // 根节点位置  {x: 'center',y: 10}
+                nodePadding: 10, //节点间的间距
+                symbol: 'emptyCircle',
+                layerPadding: 30, //层间距
+                symbolSize: 40, //节点大小
+                expandAndCollapse: true, //默认展开
+                initialTreeDepth: -1, //展开的层级
+                itemStyle: {
+                    normal: {
+                        //圆形的样式
+                        color: '#f8a120',
+                        borderColor: '#6bbcf5',
+                        label: {
+                            show: true,
+                            position: 'inside',
+                            textStyle: {
+                                color: '#000000',
+                                fontSize: 12,
+                                fontWeight:  'normal'
+                            }
+                        },
+                        lineStyle: {
+                            color: '#cccccc',
+                            curveness: 1,
+                            width: 2,
+                            type: 'solid' // 'curve'|'broken'|'solid'|'dotted'|'dashed'
+                        }
+                    },
+                },
+                data: arr
+            }
+        ]
+};
+          
+myChart.setOption(option);
+</script>  
+
+<script type="text/javascript">
+
+    //导出图片
+    $(document).on('click','.export_img',function(){     
+        var canvas = $("#main").find("canvas").first()[0];
+
+        var imgsrc = getBase64Image(canvas);
+
+        var url = imgsrc;
+        var a = document.createElement('a');  
+        var event = new MouseEvent('click');  
+          
+        a.download = '轻奢点评用户关系图';  
+        a.href = url;  
+          
+        a.dispatchEvent(event); 
+    })
+
+    //canvas转base64
+    function getBase64Image(img) {
+      var canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, img.width, img.height);
+
+      var dataURL = canvas.toDataURL("image/png");
+      return dataURL
+    }
+
+    //得到main的宽和高
+    var width  = $('#main').outerWidth();
+    var height  = $('#main').outerHeight();
+
+    //canvas大小的调整
+    $(document).on('click','.change_ize span',function(){
+        var status = $(this).attr('class');
+        //判断是需要放大还是缩小
+        if(status == 'add'){
+            width = width + 500;
+            height = height + 250;
+        }else{
+            //如果宽高都小于最低值
+            if (width < 500 && height < 250) {
+                return false;
+            }
+            width = width - 500;
+            height = height - 250;
+        }
+
+        $('#main').css({
+            width: width+ 'px',
+            height: height+ 'px'
+        })
+
+        //清除原先的echarts
+        myChart.dispose();
+
+        //重新生成canvas
+        myChart = echarts.init(document.getElementById('main'), 'macarons');
+        myChart.setOption(option);
+    })
+
+</script>    
+</body>
+</html>

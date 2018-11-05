@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>邀请码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+		  /*8.24新增*/
+			html,body{
+				height: 100%;
+			}
+		  .all_mian,.all_maincon,.all_yq{
+		  	min-height: 100%;
+		  }
+		  .all_mian{
+		  	position: relative;
+		  }
+		  .footer_train{
+  	    background: url(images/huoche.png) no-repeat bottom;
+		    background-size: 100% auto;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 30rem;
+		    z-index: 1;
+		  }
+
+		  .content_div{
+		  	z-index: 2;
+		  	max-width: 25rem;
+		  }
+
+		  /*8.24新增end*/
+			.all_mian{
+				background-image: url(images/yq_bg.png);
+				background-repeat: no-repeat;
+				background-size:100% 100%;
+			}
+			.all_maincon{
+				background: url(images/starmoon.png) no-repeat;
+    			background-size: 100% auto;
+			}
+			*{margin: 0;padding: 0;list-style: none;}
+			.all_yq{
+				position: relative;
+			}
+			.mui-content{
+				background: none;
+				}
+			.header{
+				max-height: 20%;text-align: center;color:#97c5e8 ;display: flex;flex-direction: column;justify-content: flex-end;padding-bottom: .5rem;
+				}
+			.header>div:first-child{
+				color: #fff;font-size: 2rem;line-height: 1.8;padding-top: 20px;
+			}
+			.content{
+				display: flex;
+				/*background: url(images/huoche.png) no-repeat bottom;
+				background-size:100% auto;*/
+				justify-content: center;
+			}
+			.content_div{background: #fff;border-radius: 6px;flex: 1;margin: 0.75rem 2.5rem 7.4rem 2.5rem;box-shadow: 0 0 .3rem #999;display: flex;flex-direction: column;padding: 1rem;}
+			.content_div>div{border-bottom: 1px dashed #259cf9;}
+			.content_div>div:first-child{padding-bottom: 10px;margin-bottom: 5px;}
+			.content_div>div:last-child{border: 0px }
+			.content_div ul{flex: 1;display: flex;flex-direction: column;font-size: .875rem;justify-content: space-around;}
+			.content_div li {line-height: 2;color: #666;text-align: center;}
+			.content_div>div:first-child ul{padding-bottom: .3rem;}
+			.content_div>div:first-child li{line-height: 2;}
+			.content_div li img{max-width: 38%;margin: .875rem auto;margin-bottom: .5rem;width: 45%;}
+			.content_div li span{
+				background: -webkit-linear-gradient(left, #48d2ff , #2095f8); /* Safari 5.1 - 6.0 */
+				background: -o-linear-gradient(right, #48d2ff, #2095f8); /* Opera 11.1 - 12.0 */
+				background: -moz-linear-gradient(right, #48d2ff, #2095f8); /* Firefox 3.6 - 15 */
+				background: linear-gradient(to right, #48d2ff , #2095f8); /* 鏍囧噯鐨勮娉� */
+				color: #fff;
+				font-size: .8rem;
+				border-radius:1rem ;
+				padding: .25rem .75rem;
+				text-align: center;
+				display: inline-block;
+				min-width:4rem;
+			}
+			.code{color: #3687c6!important;font-size: 2rem;}
+			.content_div_center{
+				padding-bottom: 22px;
+    			margin-bottom: 15px;
+			}
+			.mui-bar{
+				background: none;
+			}
+			.mui-bar-nav{
+				box-shadow: none;
+			}
+			.star_moon img{
+				max-width: 100%;
+				position: absolute;
+				z-index: 2;
+			}
+			.fontli{
+				font-size: 0.8125rem;
+				line-height: 1.8!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="all_mian">
+			<div class="all_maincon">
+				<header class="mui-bar mui-bar-nav">
+				</header>
+				<div class="mui-content  all_yq">
+					
+					<div class="header">
+						<div class="">轻奢号</div>
+						<div>带您进入小康时代</div>
+					</div>
+				    <div class="content">
+				    	<div class="content_div">
+				    		<div class="">
+				    			<ul>
+				    				<li style="color: #333333;font-size: 1rem;">您的邀请码</li>
+				    				<li class="code" style="line-height:1.2">45P9</li>
+				    				<li><span>复制</span></li>
+				    				<li>剩余邀请码次数9次</li>
+				    				<li>您的邀请码总次数 10次</li>
+				    			</ul>
+				    		</div>
+				    		<div class="content_div_center">
+				    			<ul>
+		    				<li style="font-size: 0;"><img src="images/yq_code.png"/></li>
+		    				<li>或扫码邀请加入</li>
+		    				<li><span>分享二维码</span></li>
+		    			</ul>
+				    		</div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+			<!-- 底部火车 -->
+		  <div class="footer_train"></div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

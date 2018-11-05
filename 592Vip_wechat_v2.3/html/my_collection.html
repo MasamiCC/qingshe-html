@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		
+		<style type="text/css">
+			.collect_item{padding-right: 15px!important;}
+			.collect_item:after{left: 0;}
+			.collect_item .mui-slider-handle{position: relative;}
+			.collect_img{position: absolute;width: 120px;}
+			.collect_img img{max-width: 100%;}
+			.collect_msg{margin-left: 120px;line-height: 1.5;}
+			.collect_msg div{margin-left:8px;}
+			.collect_name{font-size: 0.875rem;color: #333;}
+			.collect_resume{font-size: 0.875rem;color: #999;line-height:2;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+			.collect_score{font-size: 0.75rem; color: #333;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron" id="collect_list">
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+			container: '#pullrefresh',
+			down : {
+		      callback: function(){
+		      	mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+		      }
+		   	},
+			up: {
+				auto:true,
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	})
+	var btnArray = ['确认', '取消'];
+	mui('#collect_list').on('tap', '.mui-btn', function(event) {
+		var elem = this;
+		var li = elem.parentNode.parentNode;
+		mui.confirm('确认取消收藏？', '提示', btnArray, function(e) {
+			if (e.index == 0) {
+				li.parentNode.removeChild(li);
+			} else {
+				setTimeout(function() {
+					mui.swipeoutClose(li);
+				}, 0);
+			}
+		});
+	});
+	var page = 1;
+	/**
+	 * 上拉加载具体业务实现
+	 */
+	function pullupRefresh() {
+		setTimeout(function() {
+			getCollect(page)
+		}, 1500);
+	}
+	function getCollect(page){
+		//ajax
+		var data=   {
+		    	success: true,
+		        result: {
+			        page: 1,
+			        totalRecords: 1,
+			        totalPages: 2,
+			        pageSize: 10,
+			        items: [
+			        {
+			        shopid: "10001",
+			        shop_name: "轻奢沙龙",
+			        shop_img: "shop/1.png",
+			        resume: "轻奢沙龙好地方1轻奢沙龙好地方1轻奢沙龙好地方1轻奢沙龙好地方1",
+			        status: "0",
+			        scores: "5.0",
+			        distance: "0.0",
+			        open_time: "08:00~12:00#12:00~24:00",
+			        type: "0"
+			        },{
+			        shopid: "10002",
+			        shop_name: "轻奢沙龙2",
+			        shop_img: "shop/1.png",
+			        resume: "轻奢沙龙好地方3",
+			        status: "0",
+			        scores: "5.0",
+			        distance: "0.0",
+			        open_time: "08:00~12:00#12:00~24:00",
+			        type: "0"
+			        }
+			        ]
+		        },
+		        status: null,
+		        map: null
+		    };
+		mui('#pullrefresh').pullRefresh().endPullupToRefresh((++page > data.result.totalPages)); //参数为true代表没有更多数据了。
+		
+		getCollectCallback(data.result.items);
+		
+	}
+	function getCollectCallback(data){
+		for (var  i  in data) {
+			var table = document.body.querySelector('.mui-table-view');
+			var li = document.createElement('li');
+			li.className = 'mui-table-view-cell collect_item ';
+			li.innerHTML = '<div class="mui-slider-right mui-disabled">'
+						+		'<a class="mui-btn mui-btn-red" data-id="'+data[i]['shopid']+'">取消收藏</a>'
+						+	'</div>'
+						+	'<div class="mui-slider-handle ">'
+						+		'<div class="collect_img">'
+						+			'<img src="../image/near_shop-04.png"/>'
+						+		'</div>'
+						+		'<div class="collect_msg">'
+						+			'<div class="collect_name">'
+						+				data[i]['shop_name']
+						+			'</div>'
+						+			'<div class="collect_resume">'
+						+				data[i]['resume']
+						+			'</div>'
+						+			'<div class="collect_score">'
+						+				'评分 '+data[i]['scores']
+						+			'</div>'
+						+		'</div>'
+						+	'</div>';
+			table.appendChild(li);
+			
+		}
+		page++;
+	}
+	
+	
+</script>

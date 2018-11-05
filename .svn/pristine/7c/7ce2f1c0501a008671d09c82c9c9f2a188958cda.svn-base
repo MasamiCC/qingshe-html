@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+      	<link href="../css/select2.min.css" rel="stylesheet" />
+      	<link href="../css/bootstrap.min.csss" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/changecity.css"/>
+	</head>
+	<style>
+		.select2-container--default .select2-selection--single .select2-selection__arrow{
+			    right: -75px;
+		}
+		.select2-container .select2-selection--single {
+		    height: 30px;
+		    width: 155px;
+		}
+		.select2-container--open .select2-dropdown--below {
+		    border-top-right-radius: 0;
+		    width: 155px!important;
+		}
+		.changecityheader1right{
+			vertical-align: top;
+		}
+		.select2-selection__arrow{
+			display: none;
+		}
+		.center{
+			margin-top: 80px;
+			margin-bottom: 30px;
+		}
+	</style>
+	<body>
+		
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<div class="">
+								<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+							</div>
+							<!--erweima-->
+							<div class=" header_ma">
+								<div class="white  appcode appmr margintop35 relat">
+									<div class=" " id="qsapp">
+										轻奢APP
+									</div>
+									<div class="mashow" id="maiph">
+										<img class="" src="../imgs/app.png"/>
+									</div>
+								</div>
+								<div class="white wechatcode margintop35 relat">
+									<div class="" id="qswc">
+										轻奢微信
+									</div>
+									<div class="mashow" id="mawechat">
+										<img class="" src="../imgs/592vipma.png"/>
+									</div>
+								</div>
+							</div>
+							<!--erweima-->
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login ">
+									<!--登录前-->
+									
+									<!--<div class="beforelogin">
+										<span class="white"><a href="login.html">登录</a></span>&nbsp;&nbsp;&nbsp;<span class="white"><a href="register.html">注册</a></span>
+									</div>-->
+									
+									<!--登录后-->
+									<div class="loginmine">
+										<div class="minecon minecontainer relat linefont">
+											<div class="mineconta ">
+												<div class="inline myheader" style="vertical-align: middle;"><img src="../imgs/my.png"/></div>&nbsp;<div class="inline" id="xiala" style="vertical-align: middle;"><img src="../imgs/sel.png"/></div>
+											</div>	
+											<div class="showcon" id="showcon">
+												<div class="mineshow">
+												<div class="">
+													<a href="">
+														我的评价
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														优惠券
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														会员中心
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														账户设置
+													</a>
+												</div>
+												<div class="" id="out">
+													退出
+												</div>
+											</div>	
+											</div>
+												
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="usercenter.html">
+												我的订单
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="my_collection.html">
+												我的收藏
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="">
+												<div class="inlineblockcon">
+													消息
+												</div>
+												<div class="inlineblockcon num">
+													<div class="inlineblockcon tip_num">
+														122
+													</div>
+												</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				
+				<div class="changecitymain">
+		 <div class="changecitymain_container">
+			<div class="changecityheader">
+				<div class="changecityheader1 inline_container">
+					<div class="changecityheader1left inline_container">
+						<div class="changecityleft1 ">
+							最近访问：
+						</div>
+						<div class="changecityright1">
+							<a href="">南通</a>
+						</div>
+					</div>
+					<div class="changecityheader1right">
+						<!--<label for="changecitysel">直接搜索：
+							<input type="hidden" name="select-boxes" id="changecitysel" value="1,2,4,6" placeholder="请输入城市中文或拼音"/>
+						</label>-->
+						<!--<span class="select">搜索</span>-->
+						 <!--<span class="zjss">直接搜索：</span>-->
+						 <select id="sel_menu3" class="js-data-example-ajax form-control">
+						      <option value="3620194" selected="selected">请选择</option>
+						 </select>
+					</div>
+					
+				</div>
+				<div class="changecityheader2 inline_container">
+					<div class="changecityleft">
+						常用城市：
+					</div>
+					<div class="changecityright">
+						<ul class="changecityul">
+							<li><a href="">北京</a></li>
+							<li><a href="">上海</a></li>
+							<li><a href="">广州</a></li>
+							<li><a href="">深圳</a></li>
+							<li><a href="">天津</a></li>
+							<li><a href="">西安</a></li>
+							<li><a href="">重庆</a></li>
+							<li><a href="">杭州</a></li>
+							<li><a href="">南京</a></li>
+							<li><a href="">武汉</a></li>
+							<li><a href="">成都</a></li>
+							<li><a href="">南通</a></li>
+							<li><a href="">海门</a></li>
+							<li><a href="">苏州</a></li>
+							<li><a href="">如皋</a></li>
+							<li><a href="">启东</a></li>
+							<li><a href="">无锡</a></li>
+							<li><a href="">常州</a></li>
+							<li><a href="">海安</a></li>
+							<li><a href="">扬州</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="changecitymiddle">
+				<div class="changecitymiddleheader">
+					<div class="pinyin">
+						按拼音首字母选择
+					</div>
+				</div>
+				<div class="changecitymiddlemiddle inline_container">
+					<div class="changecitymiddlemiddleleft">
+						<div class="headericon">A</div>
+					</div>
+					<div class="changecitymiddlemiddleright">
+						<ul class="changecitymiddlemiddlerightul">
+							<li><a href="">鞍山</a></li>
+							<li><a href="">阿拉善盟</a></li>
+							<li><a href="">安福</a></li>
+							<li><a href="">阿图什市</a></li>
+							<li><a href="">安宁</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="changecitymiddlemiddle inline_container">
+					<div class="changecitymiddlemiddleleft">
+						<div class="headericon">B</div>
+					</div>
+					<div class="changecitymiddlemiddleright">
+						<ul class="changecitymiddlemiddlerightul">
+							<li><a href="">鞍山</a></li>
+							<li><a href="">阿拉善盟</a></li>
+							<li><a href="">安福</a></li>
+							<li><a href="">阿图什市</a></li>
+							<li><a href="">安宁</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="changecitymiddlemiddle inline_container">
+					<div class="changecitymiddlemiddleleft">
+						<div class="headericon">C</div>
+					</div>
+					<div class="changecitymiddlemiddleright">
+						<ul class="changecitymiddlemiddlerightul">
+							<li><a href="">鞍山</a></li>
+							<li><a href="">阿拉善盟</a></li>
+							<li><a href="">安福</a></li>
+							<li><a href="">阿图什市</a></li>
+							<li><a href="">安宁</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							<li><a href="">安化</a></li>
+							<li><a href="">阿荣旗</a></li>
+							<li><a href="">安吉</a></li>
+							<li><a href="">安顺</a></li>
+							<li><a href="">阿里</a></li>
+							<li><a href="">阿克苏</a></li>
+							<li><a href="">安溪</a></li>
+							<li><a href="">安岳</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="changecitymiddlemiddle inline_container">
+					<div class="changecitymiddlemiddleleft">
+						<div class="headericon">D</div>
+					</div>
+					<div class="changecitymiddlemiddleright">
+						<ul class="changecitymiddlemiddlerightul">
+							<li><a href="">鞍山</a></li>
+							<li><a href="">阿拉善盟</a></li>
+							<li><a href="">安福</a></li>
+							<li><a href="">阿图什市</a></li>
+							<li><a href="">安宁</a></li>
+							<li><a href="">安康</a></li>
+							<li><a href="">安阳</a></li>
+							<li><a href="">阿拉尔</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="changecityfooter">
+				
+			</div>
+		 </div>
+		</div>
+				
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+		
+		
+	</body>
+      <script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="../js/select2.full.min.js"></script>
+      <script type="text/javascript">
+      	$(".changecitymiddlemiddle").each(function(){
+      		$(this).bind({
+      			"mouseover":function(){
+      				$(this).children().find(".headericon").css({"color":"#fff","background":"#edb94a","border":"1px solid #edb94a"});
+      			},
+      			"mouseout":function(){
+      				$(this).children().find(".headericon").css({"color":"#666","background":"#F7F7F7","border":"1px solid #ddd"});
+      			}
+      		});
+      	});
+      	
+      	
+$(function () {
+	
+//	var html=$("#select2-sel_menu3-container div").html("请选择选择城市");
+//	console.log(html);
+
+/*    //远程筛选
+    $("#sel_menu3").select2({
+        ajax: {
+            url: "/Home/GetProvinces",
+            dataType: 'json',
+            delay: 250,
+            data: function (params) {
+                return {
+                    q: params.term, // search term
+                    page: params.page
+                };
+            },
+            processResults: function (data, params) {
+                params.page = params.page || 1;
+
+                return {
+                    results: data.items,
+                    pagination: {
+                        more: (params.page * 10) < data.total_count
+                    }
+                };
+            },
+            cache: true
+        },
+        escapeMarkup: function (markup) { return markup; }, // let our custom formatter work
+        minimumInputLength: 1,
+        templateResult: formatRepoProvince, // omitted for brevity, see the source of this page
+        templateSelection: formatRepoProvince // omitted for brevity, see the source of this page
+    });
+});
+function formatRepoProvince(repo) {
+    if (repo.loading) return repo.text;
+    var markup = "<div>"+repo.name+"</div>";
+    return markup;
+}*/
+
+var data =[{"initial":"B","name":"北京市","id":101,"cityId":100001,"type":"2","delflag":"0","parentId":100},{"initial":"","name":"天津市","id":121,"cityId":101001,"type":"2","delflag":"0","parentId":101},{"initial":"","name":"石家庄市","id":141,"cityId":102001,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"唐山市","id":166,"cityId":102002,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"邯郸市","id":191,"cityId":102004,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"保定市","id":233,"cityId":102006,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"沧州市","id":292,"cityId":102009,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"廊坊市","id":310,"cityId":102010,"type":"2","delflag":"0","parentId":102},{"initial":"","name":"太原市","id":336,"cityId":103001,"type":"2","delflag":"0","parentId":103},{"initial":"","name":"呼和浩特市","id":478,"cityId":104001,"type":"2","delflag":"0","parentId":104},{"initial":"","name":"包头市","id":489,"cityId":104002,"type":"2","delflag":"0","parentId":104},{"initial":"","name":"通辽市","id":519,"cityId":104005,"type":"2","delflag":"0","parentId":104},{"initial":"","name":"鄂尔多斯市","id":529,"cityId":104006,"type":"2","delflag":"0","parentId":104},{"initial":"","name":"沈阳市","id":600,"cityId":105001,"type":"2","delflag":"0","parentId":105},{"initial":"","name":"大连市","id":615,"cityId":105002,"type":"2","delflag":"0","parentId":105},{"initial":"","name":"长春市","id":729,"cityId":106001,"type":"2","delflag":"0","parentId":106},{"initial":"","name":"吉林市","id":741,"cityId":106002,"type":"2","delflag":"0","parentId":106},{"initial":"","name":"哈尔滨市","id":807,"cityId":107001,"type":"2","delflag":"0","parentId":107},{"initial":"","name":"大庆市","id":877,"cityId":107006,"type":"2","delflag":"0","parentId":107},{"initial":"S","name":"上海市","id":963,"cityId":108001,"type":"2","delflag":"0","parentId":108},{"initial":"","name":"南京市","id":985,"cityId":109001,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"无锡市","id":1000,"cityId":109002,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"徐州市","id":1010,"cityId":109003,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"常州市","id":1023,"cityId":109004,"type":"2","delflag":"0","parentId":109},{"initial":"S","name":"苏州市","id":1032,"cityId":109005,"type":"2","delflag":"0","parentId":109},{"initial":"N","name":"南通市","id":1045,"cityId":109006,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"连云港市","id":1055,"cityId":109007,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"淮安市","id":1064,"cityId":109008,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"盐城市","id":1074,"cityId":109009,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"扬州市","id":1085,"cityId":109010,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"镇江市","id":1094,"cityId":109011,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"泰州市","id":1102,"cityId":109012,"type":"2","delflag":"0","parentId":109},{"initial":"","name":"宿迁市","id":1110,"cityId":109013,"type":"2","delflag":"0","parentId":109},{"initial":"H","name":"杭州市","id":1118,"cityId":110001,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"宁波市","id":1133,"cityId":110002,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"温州市","id":1146,"cityId":110003,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"嘉兴市","id":1159,"cityId":110004,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"湖州市","id":1168,"cityId":110005,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"绍兴市","id":1175,"cityId":110006,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"金华市","id":1183,"cityId":110007,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"台州市","id":1208,"cityId":110010,"type":"2","delflag":"0","parentId":110},{"initial":"","name":"合肥市","id":1231,"cityId":111001,"type":"2","delflag":"0","parentId":111},{"initial":"","name":"芜湖市","id":1240,"cityId":111002,"type":"2","delflag":"0","parentId":111},{"initial":"","name":"福州市","id":1371,"cityId":112001,"type":"2","delflag":"0","parentId":112},{"initial":"","name":"厦门市","id":1386,"cityId":112002,"type":"2","delflag":"0","parentId":112},{"initial":"","name":"泉州市","id":1415,"cityId":112005,"type":"2","delflag":"0","parentId":112},{"initial":"","name":"漳州市","id":1429,"cityId":112006,"type":"2","delflag":"0","parentId":112},{"initial":"","name":"南昌市","id":1475,"cityId":113001,"type":"2","delflag":"0","parentId":113},{"initial":"","name":"济南市","id":1597,"cityId":114001,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"青岛市","id":1609,"cityId":114002,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"淄博市","id":1623,"cityId":114003,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"枣庄市","id":1633,"cityId":114004,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"东营市","id":1641,"cityId":114005,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"烟台市","id":1648,"cityId":114006,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"潍坊市","id":1662,"cityId":114007,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"济宁市","id":1676,"cityId":114008,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"泰安市","id":1690,"cityId":114009,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"威海市","id":1698,"cityId":114010,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"临沂市","id":1714,"cityId":114013,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"德州市","id":1728,"cityId":114014,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"聊城市","id":1741,"cityId":114015,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"滨州市","id":1751,"cityId":114016,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"菏泽市","id":1760,"cityId":114017,"type":"2","delflag":"0","parentId":114},{"initial":"","name":"郑州市","id":1772,"cityId":115001,"type":"2","delflag":"0","parentId":115},{"initial":"","name":"洛阳市","id":1798,"cityId":115003,"type":"2","delflag":"0","parentId":115},{"initial":"","name":"新乡市","id":1845,"cityId":115007,"type":"2","delflag":"0","parentId":115},{"initial":"","name":"许昌市","id":1880,"cityId":115010,"type":"2","delflag":"0","parentId":115},{"initial":"","name":"周口市","id":1941,"cityId":115016,"type":"2","delflag":"0","parentId":115},{"initial":"","name":"武汉市","id":1966,"cityId":116001,"type":"2","delflag":"0","parentId":116},{"initial":"","name":"宜昌市","id":1999,"cityId":116004,"type":"2","delflag":"0","parentId":116},{"initial":"","name":"长沙市","id":2095,"cityId":117001,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"株洲市","id":2106,"cityId":117002,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"衡阳市","id":2124,"cityId":117004,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"岳阳市","id":2152,"cityId":117006,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"常德市","id":2163,"cityId":117007,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"郴州市","id":2188,"cityId":117010,"type":"2","delflag":"0","parentId":117},{"initial":"","name":"广州市","id":2245,"cityId":118001,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"韶关市","id":2259,"cityId":118002,"type":"2","delflag":"0","parentId":118},{"initial":"S","name":"深圳市","id":2271,"cityId":118003,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"珠海市","id":2279,"cityId":118004,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"汕头市","id":2284,"cityId":118005,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"佛山市","id":2293,"cityId":118006,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"江门市","id":2300,"cityId":118007,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"湛江市","id":2309,"cityId":118008,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"茂名市","id":2320,"cityId":118009,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"肇庆市","id":2328,"cityId":118010,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"惠州市","id":2338,"cityId":118011,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"梅州市","id":2345,"cityId":118012,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"汕尾市","id":2355,"cityId":118013,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"河源市","id":2361,"cityId":118014,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"阳江市","id":2369,"cityId":118015,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"清远市","id":2375,"cityId":118016,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"东莞市","id":2385,"cityId":118017,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"中山市","id":2386,"cityId":118018,"type":"2","delflag":"0","parentId":118},{"initial":"","name":"南宁市","id":2407,"cityId":119001,"type":"2","delflag":"0","parentId":119},{"initial":"","name":"柳州市","id":2421,"cityId":119002,"type":"2","delflag":"0","parentId":119},{"initial":"","name":"重庆市","id":2574,"cityId":121001,"type":"2","delflag":"0","parentId":121},{"initial":"","name":"成都市","id":2618,"cityId":122001,"type":"2","delflag":"0","parentId":122},{"initial":"","name":"贵阳市","id":2839,"cityId":123001,"type":"2","delflag":"0","parentId":123},{"initial":"","name":"遵义市","id":2856,"cityId":123003,"type":"2","delflag":"0","parentId":123},{"initial":"","name":"昆明市","id":2940,"cityId":124001,"type":"2","delflag":"0","parentId":124},{"initial":"","name":"西安市","id":3176,"cityId":126001,"type":"2","delflag":"0","parentId":126},{"initial":"","name":"咸阳市","id":3211,"cityId":126004,"type":"2","delflag":"0","parentId":126},{"initial":"","name":"榆林市","id":3268,"cityId":126008,"type":"2","delflag":"0","parentId":126},{"initial":"","name":"兰州市","id":3304,"cityId":127001,"type":"2","delflag":"0","parentId":127},{"initial":"","name":"乌鲁木齐市","id":3502,"cityId":130001,"type":"2","delflag":"0","parentId":130},{"name":"襄阳市","id":3631,"cityId":116015,"type":"2","delflag":"0","parentId":116}]
+;
+$("#sel_menu3").select2({
+  data: reCreateDate(data),
+  placeholder:'请选择',
+  allowClear:true,
+
+}).on('change',function(e){
+//	console.log($(this).val());
+	parent.window.location.href='http://localhost:8080/VipPcWeb/index/changeCity?cityName='+$(this).val();
+})
+
+})
+
+function reCreateDate(data){
+	var a=[];
+	for (var i in data) {
+		var temp={};
+		temp['id']=data[i]['name'];
+		temp['text']=data[i]['name'];
+		a.push(temp);
+	}
+	console.log(a)
+	return a;
+}
+      </script>
+</html>

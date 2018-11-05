@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分享收益</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/share_get.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<style type="text/css">
+		.share_foot_item{
+			background: #fff!important;
+			top: 320px;
+		}
+	</style>
+	<body>
+		<div class="mui-content mbbody">
+				<div class="sg_head">
+					<div class="sg_head_yfonts">
+						总收益<span class="sg_pic"><img src="../image/zongshouyi.png"/></span>
+					</div>
+					<div class="sg_head_money_item">
+						<span class="sg_head_money">5000</span><span class="sg_head_sfont">元</span>
+					</div>
+					<div class="sg_head_regular">
+						<a href=""><img src="../image/regular.png"/></a>
+					</div>
+				</div>
+				<div class="mbheaditems">
+					<div class="mbheaditem">
+						<div class="firstline">
+							累计分享商户数
+						</div>
+						<div class="sg_green">
+							<span class="sg_icon"><img src="../image/sg_shop.png"/>15</span><span class="mbsmall">家</span>
+						</div>
+					</div>
+					<div class="mbheaditem">
+						<div class="firstline">
+							累计分享商户数
+						</div>
+						<div class="sg_yellow">
+							<span class="sg_icon"><img src="../image/sg_people.png"/>500</span><span class="mbsmall">人</span>
+						</div>
+					</div>
+				</div>
+				<div class="mbmiddlecon">
+					<div class="mbmiddlehead">
+						账户余额
+					</div>
+					<div class="sg_head_money sg_black">
+						
+					</div>
+					<span class="font_balck">元</span>
+					<div class="sg_yellow_icon">
+						提现
+					</div>
+				</div>
+				<div class="share_foot_con">
+					<div class="share_foot_title">
+						分享足迹
+					</div>
+					<div id="pullrefresh" class="share_foot_item mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+						<div class="share_foot_item_item_con">
+							<div class="share_foot_item_item_content">
+								<div class="sg_time">
+									12-10
+								</div>
+								<div class="sg_time_bottom">
+									<div class="sg_time_bottom_item">
+										<div class="share_foot_item_item">
+											<span class="sg_title"><img src="../image/sg_sharehand.png"/>分享</span><span class="sg_content">井岩映画<span class="marginr5">10</span>人</span>
+										</div>
+										<div class="share_foot_item_item">
+											<span class="sg_title">获得返利</span><span class="sg_content"><span class="marginr5">10.00</span>元</span>
+										</div>
+									</div>
+									<div class="sg_time_bottom_item">
+										<div class="share_foot_item_item">
+											<span class="sg_title"><img src="../image/sg_sharehand.png"/>分享</span><span class="sg_content">井岩映画<span class="marginr5">10</span>人</span>
+										</div>
+										<div class="share_foot_item_item">
+											<span class="sg_title">获得返利</span><span class="sg_content"><span class="marginr5">10.00</span>元</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="share_foot_item_item_content">
+								<div class="sg_time">
+									12-11
+								</div>
+								<div class="sg_time_bottom">
+									<div class="sg_time_bottom_item">
+										<div class="share_foot_item_item">
+											<span class="sg_title"><img src="../image/sg_sharehand.png"/>分享</span><span class="sg_content">井岩映画<span class="marginr5">10</span>人</span>
+										</div>
+										<div class="share_foot_item_item">
+											<span class="sg_title">获得返利</span><span class="sg_content"><span class="marginr5">10.00</span>元</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="share_foot_item_item_content">
+								<div class="sg_time">
+									12-10
+								</div>
+								<div class="sg_time_bottom">
+									<div class="sg_time_bottom_item">
+										<div class="share_foot_item_item">
+											<span class="sg_title"><img src="../image/sg_sharehand.png"/>分享</span><span class="sg_content">井岩映画<span class="marginr5">10</span>人</span>
+										</div>
+										<div class="share_foot_item_item">
+											<span class="sg_title">获得返利</span><span class="sg_content"><span class="marginr5">10.00</span>元</span>
+										</div>
+									</div>
+									<div class="sg_time_bottom_item">
+										<div class="share_foot_item_item">
+											<span class="sg_title"><img src="../image/sg_sharehand.png"/>分享</span><span class="sg_content">井岩映画<span class="marginr5">10</span>人</span>
+										</div>
+										<div class="share_foot_item_item">
+											<span class="sg_title">获得返利</span><span class="sg_content"><span class="marginr5">10.00</span>元</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				
+			
+		</div>
+		
+	
+		
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/mui.pullToRefresh.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.material.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/share_get.js"></script>
+
+

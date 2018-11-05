@@ -1,0 +1,64 @@
+.mui-content{
+				position: absolute;top: 44px;bottom: 0;width: 100%;
+			}
+			.mui-table-view{
+				background: none;
+			}
+			.collect_item{
+				margin: 0.3rem 0;background: #fff;padding-bottom: 5px;
+			}
+			.collect_item.mui-active{
+				background: #fff;
+			}
+			.collect_item:after{
+				height: 0;
+			}
+			.collection_shop{
+				font-size: 0.875rem;color: #333;font-weight: 400;
+			}
+			.collection_shop i{
+				color: #daba75;font-size: 1.3rem;margin-top: 0.25rem;
+			}
+			.collection_shop img{
+				max-width: 2rem;vertical-align: middle;margin-right: 0.2rem;
+			}
+			.collection_title{
+				font-size: 0.75rem;color: #666;padding: 0.2rem 0;
+			    overflow: hidden;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    word-break: break-all;
+			    text-overflow: ellipsis;
+			}
+			.collection_intro{
+				font-size: 0.70rem;color: #999;padding: 0.2rem 0;line-height: 1.6;
+			    overflow: hidden;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 3;
+			    -webkit-box-orient: vertical;
+			    word-break: break-all;
+			    text-overflow: ellipsis;
+			}
+			.collection_img{
+				font-size: 0;line-height: 0;padding: 0.3rem 0;
+			}
+			.collection_img img{
+				max-width: 30%;margin-right: 1.5%;margin-left: 1.5%;
+			}
+			.collection_count{
+				color: #999;font-size: 0.75rem;line-height: 2;
+			}
+			.collection_count .mui-pull-left span{
+				margin-right: 0.3rem;
+			}
+			.mui-bar-nav~.mui-content .mui-pull-top-pocket{
+				top: 0;
+			}
+			.nodata{
+				text-align: center;margin-top: 20%;
+			}
+			.seesee{
+				border-radius: 50px;border: 1px solid #daba75;font-size: 0.75em;padding: 0.2rem 0.8rem;color: #d4ac57;
+				margin: 20px 0;display: inline-block;
+			}

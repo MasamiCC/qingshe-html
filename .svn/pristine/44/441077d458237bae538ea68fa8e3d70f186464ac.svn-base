@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			
+			header.mui-bar{
+				background: #fff;
+			}
+			.mui-bar .mui-title{
+				color: #d4ac57;
+			}
+			header .mui-icon-left-nav{
+				color: #999;
+			}
+			
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.help_title{
+				white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+		    <ul class="mui-table-view">
+		    	<li class="mui-table-view-cell mui-media">
+		            <a href="help_register.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		 轻奢点评平台服务及用户注册协议
+		                	</div>
+		               
+		                    <p class="mui-ellipsis">轻奢点评平台服务及用户注册协议</p>
+		                </div>
+		            </a>
+		        </li>
+		        
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_rule.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                 <div class="help_title">
+		                 	轻奢点评规则
+		                 </div>   
+		                    <p class="mui-ellipsis">第一条为促进开放、透明、分享、责任的新商业文明，保障轻奢点评用户合法权益，维护轻奢点评正常经营秩序，根据《轻奢点评平台服务与用户注册协议》制定本规则。 </p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_dianpu.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                   
+		                   <div class="help_title">
+		                   	会员名(店铺名)注册的规则与实施细则
+		                   </div>
+		                    <p class="mui-ellipsis">会员应当严格遵循轻奢点评系统设置的注册流程完成注册。
+会员在选择其轻奢点评会员名、轻奢点评店铺名或域名时应遵守国</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_chufa.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		 不当注册的认定和处罚的规则与实施细则
+		                	</div>
+		                  
+		                    <p class="mui-ellipsis">轻奢点评规则第五十八条 不当注册，是指用户通过软件、程序等方式，批量注册轻奢点评账户的行为。不当注册的，轻奢点评对使用软</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_huiyuan.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		  会员定义的实施细则
+		                	</div>
+		                
+		                    <p class="mui-ellipsis">会员，指与轻奢点评签订《轻奢点评平台服务协议》并完成注册流程的用户（含商家、消费者、合格资本方）。一个会员可以拥有多个账户，每个账户对应唯一的会员名。</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_pingjia.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                   
+		                   <div class="help_title">
+		                   	不当评价的规则与实施细则
+		                   </div>
+		                    <p class="mui-ellipsis">轻奢点评规则第三十九条轻奢点评有权删除或屏蔽评论内容中所包含的污言秽语、广告信息、无实际意义信息及其他有违公序良俗的信息。</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_love_point.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                  
+		                   <div class="help_title">
+		                   	 轻奢点评爱心积分通用规则
+		                   </div>
+		                    <p class="mui-ellipsis">1.1 “爱心积分服务”，是指轻奢点评为了答谢会员在轻奢点评成交商品或服务，或满足其他轻奢点评事先公示/认可的积分获取条件，而特意推出的专属会员的积分奖励服务。</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_love.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		爱心信用评价计分、修改删除规则与实施细则
+		                	</div>
+		                
+		                    <p class="mui-ellipsis">在爱心信用评价中，评价人若给予好评，则被评价人信用积分增加100分；若给予差评，则被评价人爱心信用积分减少200分；</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_bank.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		 爱心银行贡献值获取方式及兑换孵化
+		                	</div>
+		               
+		                    <p class="mui-ellipsis">交易功能开放后，商家在平台每成功成交一笔交易，商家便会获得由平台自动按照交易比例补贴的相应善款进入商家的爱心银行专户，商家在平台交易量越多，则补贴也会越多。平台按照单笔交易额度最低补贴单笔善款不低于一元钱，</p>
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="help_low.html" class="mui-navigate-right">
+		                <div class="mui-media-body">
+		                	<div class="help_title">
+		                		 法律声明
+		                	</div>
+		                   
+		                    <p class="mui-ellipsis">轻奢点评提醒您：在使用轻奢点评平台各项服务前，请您务必仔细阅读并透彻理解本声明。如对本声明内容有任何疑问，您可向轻奢点评平台客服咨询。</p>
+		                </div>
+		            </a>
+		        </li>
+		    </ul>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>

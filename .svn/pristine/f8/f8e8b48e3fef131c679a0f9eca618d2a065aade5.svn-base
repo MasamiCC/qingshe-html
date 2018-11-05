@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=5b4c94fd81c57ce0b38c605771edc43a"></script>
+		 <script type="text/javascript" src="http://cache.amap.com/lbs/static/CloudDataSearchRender1230.js"></script>
+   		<script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+   		<style type="text/css">
+   			*{
+   				padding: 0;margin: 0;list-style: none;
+   			}
+   			.mui-content{
+   				position: absolute;
+   				width: 100%;
+   				height: 100%;
+   				padding-top:0!important ;
+   				
+   			}
+   			.mui-search .mui-placeholder{
+   				line-height: 1;
+   				text-align: left;
+   				margin-top: 12px;
+   				color: #ccc;
+   			}
+   			.mui-search .mui-placeholder .mui-icon{
+   				margin-left: 5px;
+   				color: #ccc;
+   			}
+   			.mui-search input[type=search]{
+   				border-radius: 30px;
+   				color: #ccc;
+   				font-weight: normal;
+   			}
+   			.mui-search.mui-active:before{
+   				line-height: 1;
+   				top: 12px;
+   				margin-top: 0;
+   				color: #ccc;
+   			}
+   			#mapContainer{
+   				position: absolute;
+   				height: 40%;
+   				width: 100%;
+   			}
+   			.result_list{
+   				position: absolute;top:40%;
+   				bottom: 0;
+   				left: 0;right: 0;
+   				background: #fff;
+   			}
+   			.result_list_ul{
+   				font-size: 0;
+   				border-bottom: 1px solid #eee;
+   				padding: 0 20px;
+   			}
+   			.result_list_ul li{
+   				display: inline-block;font-size: 1rem;
+   				width: 25%;
+   				text-align: center;
+   			}
+   			.result_list_ul li span{
+   				color: #75787f;border-bottom: 2px solid #fff;padding: 5px 8px;
+   				display: inline-block;
+   				font-weight: 500;
+   			}
+   			.result_list_ul li.active{
+   				color: #f8a120;
+   			}
+   			.result_list_ul li.active span{
+   				border-bottom: 2px solid #f8a120;color:#f8a120 ;
+   			}
+   			.search_li{padding: 8px 0;font-size: 0.875rem;position: relative;margin-left: 15px;}
+   			.search_li:after{
+   				position: absolute;
+   				height: 1px;
+   				background: #eeeeee;
+   				content: '';
+   				left: 0;
+   				right: 0;
+   				bottom: 0;
+   			}
+   			.search_li:last-child:after{
+   				height: 0;
+   			}
+   			.search_li>div{vertical-align: top;margin-left: 20px;margin-right: 15px;}
+   			
+   			.search_address{
+   				color: #999;font-size: 0.8rem;margin-bottom: 0;
+   				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+   			}
+   			.search_li img{width: 12px;vertical-align: middle;margin-right: 8px;position: absolute;top: 11px;}
+   			.search_name{
+   				color: #333;
+   				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+   			}
+   			.mui-bar .mui-input-row .mui-input-clear~.mui-icon-clear{
+   				top:12px;
+   				right: 0px!important;
+   			}
+   		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #666;font-size: 25px;"></a>
+		    <h1 class="mui-title" style="right: 10px;">
+		    	<!--<form action="" method="post">-->
+		    		<div class="mui-input-row mui-search">
+					    <input type="search" class="mui-input-clear" placeholder="小区/写字楼/学校等" id="input_id">
+					</div>
+		    	<!--</form>-->
+		    	
+		    </h1>
+		</header>
+		<div class="mui-content">
+	    	<div id="mapContainer"></div>
+		    <div class="result_list">
+		    	<ul class="result_list_ul">
+		    		<li class="active"><span>全部</span></li>
+		    		<li data-keywords='120201'><span>写字楼</span></li>
+		    		<li data-keywords='120302'><span>小区</span></li>
+		    		<li data-keywords='141200'><span>学校</span></li>
+		    	</ul>
+		    	<div class="">
+		    		<div class="mui-scroll-wrapper" style="top: 34px;">
+		    		    <div class="mui-scroll">
+		    		        <!--这里放置真实显示的DOM内容-->
+		    		        <ul class="result_list_c">
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">屈臣氏(南通开发区星湖101广场店)</div>
+										<p class="search_address">南通市崇川区星湖大道1101号星湖101广场首层1101号星湖101广场首层</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼南通金南翼南通金南翼南通金南翼南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通金南翼</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        	<li class="search_li">
+		    		        		<img src="../image/map_search_marker.png"/>
+		    		        		<div class="">
+										<div class="search_name">南通市东方中学(西南门)</div>
+										<p class="search_address">南通市崇川区新开南路与方兴路交叉口东200米</p>
+		    		        		</div>
+		    		        	</li>
+		    		        </ul>
+		    		    </div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	//初始化地图
+	var locations=[120.944565, 31.922909];
+	var map = new AMap.Map('mapContainer', {
+	        resizeEnable: true,
+	        zoom:11,
+	        center: locations
+	});
+	var keywords=$('#input_id').val();
+	
+	//自动匹配数据
+	AMap.plugin(['AMap.Autocomplete','AMap.PlaceSearch'],function(){
+	     var autoOptions = {
+	          city: "南通", //城市，默认全国
+	          input: "input_id"//使用联想输入的input的id
+	     };
+	     autocomplete= new AMap.Autocomplete(autoOptions);
+	     var placeSearch = new AMap.PlaceSearch({
+	              city:'南通',
+	     });
+	     AMap.event.addListener(autocomplete, "select", function(e){
+	           locations=[e.poi.location.lng,e.poi.location.lat];
+	           keywords=e.poi.name;
+	           PlaceSearch(keywords,locations,'');
+	           $('.result_list_ul li').removeClass('active').eq(0).addClass('active')
+	           
+	     });
+	});  
+    //根据自动检索数据进行周边搜索
+    function PlaceSearch(name,locations,type){
+    	var placeSearch = new AMap.PlaceSearch({ //构造地点查询类
+            pageSize: 10,
+            type: type,
+            pageIndex: 1,
+        });
+    	 AMap.service(["AMap.PlaceSearch"], function() {
+    	 	placeSearch.clear();
+	        placeSearch.searchNearBy(name, locations, 1000, function(status, result) {
+				if (status === 'complete' && result.info === 'OK') {
+			    	loadData(result.poiList.pois)
+			    }else{
+			    	$('.result_list_c').empty();
+			    	$('.result_list_c').append('<li class="search_li" style="line-height:3;text-align:center">暂无数据</li>')
+			    }
+	        });
+	    });
+    }
+    //加载查询数据到页面
+	function loadData(data){
+		$('.result_list_c').empty();
+		for (var i in data) {
+			var html='<li class="search_li" data-lng='+data[i]['location']['lng']+' data-lat='+data[i]['location']['lat']+'>'
+		        	+	'<img src="../image/map_search_marker.png">'
+		        	+	'<div class="">'
+					+		'<div class="search_name">'+data[i]['name']+'</div>'
+					+		'<p class="search_address">'+data[i]['address']+'</p>'
+		        	+	'</div>'
+		        	+'</li>';
+		    $('.result_list_c').append(html)
+		}
+		dataClick();
+		mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100)
+	}
+	function dataClick(){
+		$('.result_list_c').on('tap','li',function(){
+			var lng=$(this).attr('data-lng');
+			var lat=$(this).attr('data-lat');
+			location.href='nearby.html?lng='+lng+'lat='+lat
+		})
+	}
+	$(function(){
+		//分类tab点击事件
+    	$('.result_list_ul').on('tap','li',function(){
+    		$(this).siblings().removeClass('active');
+    		$(this).addClass('active');
+    		PlaceSearch(keywords,locations,$(this).attr('data-keywords'));
+    	})
+    	//初始加载当前附近数据
+    	PlaceSearch(keywords,locations,'');
+    })
+</script>

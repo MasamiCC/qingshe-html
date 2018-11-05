@@ -1,0 +1,305 @@
+/*后台布局的css*/
+html,body{
+	height: 100%;
+	min-height: 100%;
+}
+
+/*头部*/
+.lay_header{
+	position: fixed;
+	top: 0;
+    right: 0;
+    left: 0;
+    max-height: 100px;
+    z-index: 9;
+    background: #000000;
+    box-shadow: 0 1px 4px rgba(0,21,41,0.08);
+}
+
+.lay_header .navbar-custom-menu{
+    background: transparent;
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 35px 0 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.lay_header .navbar-custom-menu:hover{
+	background: rgba(255,255,255,0.1);
+    color: #f6f6f6;
+}
+
+.lay_header .navbar-custom-menu:hover{
+	background: rgba(255,255,255,0.1);
+    color: #f6f6f6;
+}
+
+.lay_header .navbar-custom-menu:hover .custom_op{
+	top: 60px;
+	visibility: visible;
+}
+
+.lay_header .navbar-custom-menu .custom_icon{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 7px;
+	margin-right: 5px;
+	background-image: url(../static/img/lay_index.png);
+	background-repeat: no-repeat;
+	background-position: 1px 0;
+}
+
+.lay_header .navbar-custom-menu .custom_name{
+	font-size: 14px;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.lay_header .navbar-custom-menu .custom_name:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../static/img/lay_index.png);
+    background-repeat: no-repeat;
+    background-position: -31px 4px;
+}
+
+.navbar-custom-menu .custom_op{
+	visibility: hidden;
+	position: absolute;
+	top: 80px;
+	left: 4px;
+	width: 125px;
+	padding: 0px 15px;
+	background-color: #000000;
+	border-radius: 0 0 5px 5px;
+	-webkit-transition: .5s 0s top;
+	-o-transition: .5s 0s top;
+	-moz-transition: .5s 0s top;
+	-ms-transition: .5s 0s top;
+	transition: .5s 0s top;
+}
+
+.navbar-custom-menu .custom_op > a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid #444444;
+}
+
+.navbar-custom-menu .custom_op > a:first-child{
+	border-top: none;
+}
+
+.navbar-custom-menu .custom_op > a:hover{
+    color: #dfbd76;
+}
+
+/*左侧*/
+.lay_left{
+	font-size: 14px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background: #000000;
+    min-height: 100%;
+    width: 240px;
+    z-index: 10;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out,width 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out,width 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out,width 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out,width 0.3s ease-in-out;
+}
+
+.lay_left .logo{
+	width: 175px;
+	display: inline-block;
+}
+
+.lay_left .logo > img{
+	width: auto;
+	height: auto;
+}
+
+.lay_left .sidebar-menu{
+	white-space: nowrap;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.sidebar-menu > li{
+	position: relative;
+}
+
+.sidebar-menu > li > a{
+	padding: 15px 45px;
+    display: block;
+    border-bottom: 1px solid #333333;
+    text-align: left;
+    position: relative;
+    background-color: transparent;
+    -webkit-transition: .5s 0s background-color;
+	-o-transition: .5s 0s background-color;
+	-moz-transition: .5s 0s background-color;
+	-ms-transition: .5s 0s background-color;
+	transition: .5s 0s background-color;
+}
+
+/*左侧菜单*/
+.sidebar-menu > li > a.active{
+	background-color: #333333;
+}
+
+.sidebar-menu > li > a.active:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	right: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #FFFFFF;
+}
+
+.sidebar-menu > li > a.active .sidebar_category{
+	color: #dfbd76;
+}
+
+.sidebar-menu > li > a:hover{
+	background-color: #333333;
+}
+
+.sidebar-menu > li > a:hover::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	right: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #FFFFFF;
+}
+
+.sidebar-menu > li > a:hover .sidebar_category{
+	color: #dfbd76;
+}
+
+.sidebar-menu .sidebar_icon{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../static/img/lay_index.png);
+	background-repeat: no-repeat;	
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+
+.sidebar-menu .sidebar_icon.icon_1{
+	background-position: 2px -29px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_1{
+	background-position: 2px -54px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_1{
+	background-position: 2px -54px;
+}
+
+.sidebar-menu .sidebar_icon.icon_2{
+	background-position: -23px -29px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_2{
+	background-position: -23px -54px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_2{
+	background-position: -23px -54px;
+}
+
+.sidebar-menu .sidebar_icon.icon_3{
+	background-position: -51px -29px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_3{
+	background-position: -51px -54px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_3{
+	background-position: -51px -54px;
+}
+
+.sidebar-menu .sidebar_icon.icon_4{
+    background-position: -79px -28px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_4{
+	background-position: -79px -53px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_4{
+	background-position: -79px -53px;
+}
+
+.sidebar-menu .sidebar_icon.icon_5{
+    background-position: -107px -29px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_5{
+	background-position: -107px -55px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_5{
+	background-position: -107px -55px;
+}
+
+.sidebar-menu .sidebar_icon.icon_6{
+	background-position: -136px -29px;
+}
+
+.sidebar-menu > li > a.active .sidebar_icon.icon_6{
+	background-position: -136px -54px;
+}
+
+.sidebar-menu > li > a:hover .sidebar_icon.icon_6{
+	background-position: -136px -54px;
+}
+
+.sidebar-menu .sidebar_category{
+	color: #FFFFFF;
+}
+
+/*主体*/
+.lay_body{
+    position: absolute;
+    left: 240px;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    z-index: 1;
+    width: auto;
+    overflow: auto;
+}

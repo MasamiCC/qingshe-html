@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shop_list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/find.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/imageView.css"/>
+		<style type="text/css">
+			.detail_service a{
+				color: #666;
+			}
+			.detail_service a:hover{
+				color: #666;
+			}
+			.shop_item{
+				padding: 0 10px!important;
+			}
+			.shop_pro {
+			    color: #666;
+			    font-size: 0.8rem;
+			    overflow: hidden;
+			    word-break: break-all;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    width: 95%;
+			}
+			.shop_juli{
+				margin-right: 5px;
+			}
+			.mui-table-view:before{
+				height: 0;
+			}
+			.icon{
+				display: block;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="">
+		    	<div class="detail_top">
+		    		<div class="detail_top_l">
+		    			<img src="image/shop_2.png"/>
+		    		</div>
+		    		<div class="detail_top_r">
+			    		<ul>
+			    			<li class="detail_shop_title">扬州富春园早茶</li>
+			    			<li class="detail_shop_xinyu">
+			    				<img src="image/icon1.png" alt="" />
+			    				<img src="image/icon1.png" alt="" />
+			    				<img src="image/icon1.png" alt="" />
+			    				<img src="image/icon1.png" alt="" />
+			    				<img src="image/icon2.png" alt="" />
+			    				<span class="shop_on">
+			    					营业中
+			    				</span>
+			    				<span class="shop_on shop_off">休息中</span>
+			    			</li>
+			    			<li class="detail_shop_type">美食</li>
+			    		</ul>
+			    	</div>
+		    		
+		    	</div>
+		    	
+		    	<div class="detail_service">
+		    		<ul>
+		    			<li class=""><a href="buy.html"><i class="icon iconfont icon-gaoxiaofei "></i>买单</a></li>
+		    			<li><a href="cart.html"><i class="icon iconfont icon-diancan"></i>点餐</a></li>
+		    			<li><i class="icon iconfont icon-youhuiquan"></i>优惠券</li>
+		    			<li onclick="showNj()"><i class="icon iconfont icon-neijing"></i>内景
+		    				<div class="" style="display: none;">
+		    					<img src="image/index_shop_log.png " data-preview-src="" data-preview-group="1" id="img1"/>
+		    					<img src="image/meishi_1.png" data-preview-src="" data-preview-group="1" id=""/>
+		    					<img src="image/meishi_3.png" data-preview-src="" data-preview-group="1" id=""/>
+		    				</div>
+		    			</li>
+		    			<li><i class="icon iconfont icon-shouji"></i>电话</li>
+		    		</ul>
+		    		<div class="clear">
+		    			
+		    		</div>
+		    	</div>
+		    	<div class="detai_daohang ">
+		    		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		    			<tr>
+		    				<td align="center"><img src="image/gprs.png"/></td>
+		    				<td id="shop_address">创意设计中心18楼，一行放不下行放不下行放不下省略...</td>
+		    				<td><span class="gprs_btn">导航</span></td>
+		    			</tr>
+		    		</table>
+		    		
+		    		<!--<div>创意设计中心18楼，一行放不下省略...</div>-->
+		    		
+		    	</div>
+		    	<div class="shop_detail_list">
+		    		<div class="shop_detail_title">
+		    			附近商户
+		    		</div>
+		    		<ul class="mui-table-view">
+		    		    <!--<li class="mui-table-view-cell mui-media detail_tj_list">
+		    		        <a href="javascript:;">
+		    		            <img class="mui-media-object mui-pull-left" src="image/shop_2.png" >
+		    		            <div class="mui-media-body tuijian_shop_list" >
+		    		                扬州富春园早茶
+		    		                <p class="mui-ellipsis goods_price">￥200 <span class="sale_count">已售:20</span></p>
+		    		            </div>
+		    		        </a>
+		    		    </li>-->
+		    		    <li class="mui-table-view-cell shop_item">
+								<div class="shop_item_i shop_img">
+									<img src="image/shop_2.png" class="shop_logo"/>
+								</div>
+								<div class="shop_item_i shop_msg">
+									<ul>
+										<li class="shop_title">这是一家全部店铺</li>
+										<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+										<li>
+											<span class="shop_status">营业中</span>
+											<span class="shop_juli">11.49km</span>
+										</li>
+										<li>
+											<div class="shop_pingfen">
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon2.png"/>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</li>
+						<li class="mui-table-view-cell shop_item">
+								<div class="shop_item_i shop_img">
+									<img src="image/shop_2.png" class="shop_logo"/>
+								</div>
+								<div class="shop_item_i shop_msg">
+									<ul>
+										<li class="shop_title">这是一家全部店铺</li>
+										<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+										<li>
+											<span class="shop_status">营业中</span>
+											<span class="shop_juli">11.49km</span>
+										</li>
+										<li>
+											<div class="shop_pingfen">
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon1.png"/>
+												<img src="image/icon2.png"/>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</li>
+		    		    
+		    		</ul>
+		    		
+		    	</div>
+		    	<div class="shop_detail_list">
+		    		<div class="shop_detail_title">
+		    			评价（5）
+		    			<a class="mui-pull-right view_all " href="pingjia.html">查看全部</a>
+		    		</div>
+		    		<div class="shop_detail_pj_item">
+		    			<div class="shop_detail_pj_left">
+		    				<img src="image/nohead.png"/>
+		    			</div>
+		    			<div class="shop_detail_pj_right">
+		    				<ul>
+		    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+		    					<li class="user_xinyu">
+		    						<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon2.png" alt="" />
+		    					</li>
+		    					<li class="pingjia">
+		    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+		    						
+		    						<div>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="shop_detail_pj_item">
+		    			<div class="shop_detail_pj_left">
+		    				<img src="image/nohead.png"/>
+		    			</div>
+		    			<div class="shop_detail_pj_right">
+		    				<ul>
+		    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+		    					<li class="user_xinyu">
+		    						<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon2.png" alt="" />
+		    					</li>
+		    					<li class="pingjia">
+		    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+		    						<div>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="shop_detail_pj_item">
+		    			<div class="shop_detail_pj_left">
+		    				<img src="image/nohead.png"/>
+		    			</div>
+		    			<div class="shop_detail_pj_right">
+		    				<ul>
+		    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+		    					<li class="user_xinyu">
+		    						<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon2.png" alt="" />
+		    					</li>
+		    					<li class="pingjia">
+		    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+		    						<div>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="shop_detail_pj_item">
+		    			<div class="shop_detail_pj_left">
+		    				<img src="image/nohead.png"/>
+		    			</div>
+		    			<div class="shop_detail_pj_right">
+		    				<ul>
+		    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+		    					<li class="user_xinyu">
+		    						<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon2.png" alt="" />
+		    					</li>
+		    					<li class="pingjia">
+		    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+		    						<div>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="shop_detail_pj_item">
+		    			<div class="shop_detail_pj_left">
+		    				<img src="image/nohead.png"/>
+		    			</div>
+		    			<div class="shop_detail_pj_right">
+		    				<ul>
+		    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+		    					<li class="user_xinyu">
+		    						<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon1.png" alt="" />
+				    				<img src="image/icon2.png" alt="" />
+		    					</li>
+		    					<li class="pingjia">
+		    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+		    						<div>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    							<img src="image/shop_2.png"/>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	function showNj(){
+		var previewImageApi = mui.previewImage();
+		previewImageApi.open(document.getElementById("img1"));
+	}
+</script>

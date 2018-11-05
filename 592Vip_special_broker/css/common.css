@@ -1,0 +1,279 @@
+/*
+ * 全局样式
+ */
+
+/*主体样式*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+}
+
+body, button, input, select, textarea{
+  font: 12px/1.5 "Microsoft YaHei",tahoma,arial,Hiragino Sans GB,\5b8b\4f53;
+  color: #333333;
+}
+
+ul, ol, li { 
+	list-style: none; 
+}
+
+fieldset, img { 
+	border: 0; 
+}
+
+a:hover,a:link,a:visited,a:active{
+  text-decoration: none;
+}
+
+table,tr,td { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+}
+
+
+/*距离*/
+.mt50{
+	margin-top: 50px;
+}
+
+.mt60{
+	margin-top: 60px;
+}
+
+.mt100{
+	margin-top: 100px;
+}
+
+.mb0{
+	margin-bottom: 0!important;
+}
+
+.pt190 {
+	padding-top: 190px;
+}
+
+/*宽高*/
+
+
+/*背景色*/
+.gray_bg{
+	background-color: #f4f4f4;
+}
+
+/*浮动*/
+.fr{
+	float: right;
+}
+
+.fl{
+	float: left;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/*
+ * 模态框对象
+ */
+.layui-layer{
+	border-radius: 10px!important;
+}
+
+.btn_area{
+	margin-top: 40px;
+	overflow: hidden;
+	
+}
+
+.btn_area .btn{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-transition: .5s 0s all;
+ 	-o-transition: .5s 0s all;
+ 	-moz-transition: .5s 0s all;
+ 	-ms-transition: .5s 0s all;
+ 	transition: .5s 0s all;
+}
+
+.btn_area .btn.confirm{
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.btn_area .btn.confirm:hover{
+	opacity: .8;
+}
+
+.btn_area .btn.cancel:hover{
+	background-color: #eaeaea;
+}
+
+/*退出登录弹框*/
+
+.login_out_nav{
+	width: 500px;
+	padding: 30px 75px;
+	background-color: #FFFFFF;
+	z-index: 99;
+	border-radius: 10px;
+}
+
+.login_out_nav > .title{
+	font-size: 18px;
+	color: #333333;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* 存在未填写信息 */
+.null_value_nav{
+	width: 360px;
+	padding: 30px 75px;
+	background-color: #FFFFFF;
+	z-index: 99;
+	border-radius: 10px;
+}
+
+.null_value_nav > .title{
+	font-size: 18px;
+	color: #333333;
+	font-weight: normal;
+	text-align: center;
+}
+.l_btn_area{
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #333333;
+	color: #ffffff;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+/*下拉提示*/
+.prompt_line{
+	height: 40px;
+	line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/*top*/
+.BCtop div{
+	display: inline-block;
+}
+.BCtop_right{
+	position: absolute;
+	right: 25px;
+	top: 20px;
+	font-size: 14px;
+}
+.BCtop{
+    position: relative;
+    background: #fff;
+    /* padding: 25px; */
+    color: #333;
+    height: 82px;
+}
+.BCtop_left{
+	padding: 25px 40px 25px 25px;
+    background: #333;
+}
+.BCtop span{
+	display: inline-block;
+}
+.BCtop_left span{
+	vertical-align: middle;
+	font-size: 18px;
+	color: #fff;
+}
+.BCtop_left span:first-child{
+	margin-right: 15px;
+}
+.BCtop_left span:first-child img{
+	vertical-align: middle;
+}
+.people{
+	padding-right: 10px;
+	position: relative;
+}
+.people:after{
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 6px;
+	width: 1px;
+	height: 15px;
+	background: #dfbd76;
+}
+.BCLv{
+	color: #dfbd76!important;
+	margin-left: 5px;
+	margin-right: 12px;
+}
+/*top right*/
+.BCtop_right span:first-child{
+	font-size: 16px;
+	margin-right: 15px;
+}
+.BCtop_right select{
+	width: 125px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	text-indent: 15px;
+}
+.BCtop_right input[type='text']{
+	width: 358px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.input_span ::-webkit-input-placeholder{
+	color: #ccc;
+	font-size: 14px;
+	text-indent: 20px;
+}
+.BCtop_icon{
+	padding: 10px 28px;
+	background: #000;
+	border-radius: 4px;
+	color: #ccc;
+}
+.BCtop_icon:hover{
+	cursor: pointer;
+}
+.hoverColor:hover,button:hover{
+	background-color: #333!important;
+	transition: .3s 0s all;
+}
+.hoverColor{
+	background-color: #000;
+	cursor: pointer;
+}

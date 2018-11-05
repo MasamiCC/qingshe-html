@@ -1,0 +1,134 @@
+/*total*/
+.center{
+	padding-top: 80px;
+	background: #F7F7F7;
+}
+.fff_bg{
+	background: #fff;
+	padding: 40px;
+}
+.inline_con{
+	line-height: 0;
+	font-size: 0;
+}
+.inline_con>div,.main_icons,.inline{
+	display: inline-block;
+	line-height: 1;
+}
+.vergital_middle,.garbage{
+	vertical-align: middle;
+}
+/*total*/
+/*head*/
+.msg_icon{
+	font-size: 30px;
+	color: #666;
+}
+.ts_icon{
+	padding: 7px 20px;
+	color: #999;
+	border: 1px solid #999;
+	border-radius: 50px;
+}
+.ts_icon a,.main_icons_con_right a{
+	text-decoration: none;
+	color: inherit;
+}
+.ts_icon_active{
+	background: #edb94a;
+	border: 1px solid #edb94a;
+	color: #fff;
+}
+.t_icon{
+	margin-right: 20px;
+}
+.ts_line{
+	margin: 45px 0 15px 0;
+}
+.trash{
+	float: right;
+}
+.garbage{
+	font-size: 22px;
+	color: #ccc;
+}
+.trash{
+	color: #666;
+}
+.trash:hover{
+	cursor: pointer;
+}
+/*head*/
+/*middle*/
+.main_icons{
+	padding: 15px 9px;
+	border-radius: 50%;
+	color: #fff;
+}
+.xt_icon{
+	background: #edb94a;
+}
+.hd_icon{
+	background: #ff9b6d;
+}
+.main_icons_con_left,.main_icons_con_right{
+	vertical-align: middle;
+}
+.main_icons_left_con{
+	margin-right: 15px;
+}
+.main_icons_con_title{
+	font-weight: bold;
+	color: #333;
+}
+.main_icons_con_con{
+	color: #999;
+}
+.main_icons_con_right>div{
+	line-height: 1.9;
+}
+.main_icons_con_con_right{
+	float: right;
+	/*padding-top: 18px;*/	
+	color: #999;
+	font-size: 12px;
+}
+.firsttime{
+	line-height: 3.5;
+}
+.message{
+	padding: 25px 0;
+	/*margin-bottom: 30px;*/
+	border-bottom: 1px solid #eeeeee;
+	position: relative;
+}
+.del{
+	position: absolute;
+	padding: 44px 15px;
+	background: #f84242;
+	top: 0px;
+	right: 0px;
+	color: #fff;
+	display: none;
+	max-width: 56px;
+}
+.del:hover{
+	cursor: pointer;
+}
+/*middle*/
+/*footer*/
+.msg_footer{
+	margin-top: 40px;
+	text-align: right;
+	color: #999;
+}
+.page li{
+	display: inline-block;
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	margin: 0 5px;
+}
+.page{
+	margin-right: 20px;
+}
+/*footer*/

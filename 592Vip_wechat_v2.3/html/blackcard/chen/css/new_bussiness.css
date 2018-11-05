@@ -1,0 +1,266 @@
+/*
+ * 设置基础样式
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.mui-content {
+	background-color: #FFFFFF;
+	padding-bottom: 20px;
+}
+
+.mui-input-group:before,
+.mui-input-group:after {
+	content: none;
+}
+
+/*.mui-navigate-location:after{
+	background-image: url(../img/location.png);
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
+
+/*----------------mui.showLoading---------------*/
+.mui-show-loading {
+    position: fixed;
+    padding: 5px;
+    width: 120px;
+    min-height: 120px;
+    top: 45%;
+    left: 50%;
+    margin-left: -60px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 5px;
+    color: #FFFFFF;
+    visibility: hidden;
+    margin: 0;
+    z-index: 2000;
+
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    opacity: 0;
+    -webkit-transform: scale(0.9) translate(-50%, -50%);
+    transform: scale(0.9) translate(-50%, -50%);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.mui-show-loading.loading-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+}
+.mui-show-loading .mui-spinner{
+    margin-top: 24px;
+    width: 36px;
+    height: 36px;
+}
+.mui-show-loading .text {
+    line-height: 1.6;
+    font-family: -apple-system-font,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+.mui-show-loading-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.mui-show-loading-mask-hidden{
+    display: none !important;
+}
+
+/*标题*/
+.content_title{
+  background: #fff;
+  line-height: 2;
+  padding-top: 30px;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.content_title .contact {
+  position: absolute;
+  top: 34px;
+  right: 15px;
+  color: #f8a120;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+
+
+/*form表单*/
+
+
+/*标题步骤*/
+
+.bussiness_form .step {
+	font-size: 1rem;
+	color: #333333;
+	font-weight: bold;
+	padding: 0 1rem;
+	margin: 1rem 0;
+	clear: both;
+}
+
+.bussiness_form .step>span {
+	color: #f8a120;
+}
+
+
+/*from中的输入框*/
+
+.from_field {
+	position: relative;
+}
+
+.bussiness_form input.field_import {
+	font-size: 15px;
+	padding-left: 1rem;
+	border-bottom: 1px solid #eeeeee;
+	height: 45px;
+}
+
+input::-webkit-input-placeholder {
+	color: #d3d3d3;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #d3d3d3;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #d3d3d3;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #d3d3d3;
+}
+
+/*提交图片区域*/
+
+.upload_area {
+	position: relative;
+	padding: 0 1rem;
+	width: 100%;
+	height: 12rem;
+	overflow: hidden;
+}
+
+.upload_area .no_pic {
+	background-color: #eeeeee;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.upload_area .no_pic > img{
+	margin-bottom: .3rem;
+}
+
+.upload_area .no_pic>p {
+	color: #a6a6a6;
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-top: .3rem;
+}
+
+.upload_area .file_input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=0);
+	/* IE */
+	-moz-opacity: 0;
+	/* 老版Mozilla */
+	-khtml-opacity: 0;
+	/* 老版Safari */
+	opacity: 0;
+	/* 支持opacity的浏览器*/
+}
+
+.upload_group{
+	overflow: hidden;
+}
+
+/*一半的区域*/
+.upload_area.half{
+	width: 50%;
+	float: left;
+	height: 7rem;
+}
+
+.upload_area.half:first-child{
+	padding-right: .5rem;
+}
+
+.upload_area.half:last-child{
+	padding-left: .5rem;
+}
+
+.upload_area .upload_img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*提交按钮区*/
+.btn_area {
+	padding: 0 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.mui-input-group .btn_area .btn {
+	display: block;
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 3rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #FFFFFF;
+	position: relative;
+	background: -webkit-linear-gradient(left, #ffcd48, #f8a120);
+	background: -o-linear-gradient(right, #ffcd48, #f8a120);
+	background: -moz-linear-gradient(right, #ffcd48, #f8a120);
+	background: linear-gradient(to right, #ffcd48, #f8a120);
+	padding: 0;
+}
+

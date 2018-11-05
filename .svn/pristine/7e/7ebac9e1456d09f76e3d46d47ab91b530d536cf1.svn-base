@@ -1,0 +1,162 @@
+.user_right {
+    background: none;
+}
+.user_right_middle_title{
+	font-size: 16px;
+	color: #666;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f7f7f7;
+}
+.user_part1{
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #EEEEEE;
+}
+.remainder{
+	display: inline-block;
+	float: right;
+}
+.money{
+	font-size: 24px;
+	color: #f84242;
+	position: relative;
+	top: -8px;
+}
+.user_right_middle_content{
+	padding-top: 5px;
+}
+.user_right_middle_content>div{
+	margin-top: 10px;
+}
+.user_right_middle_content div{
+	color: #666;
+}
+.zhif{
+	vertical-align: top;
+}
+.menu_detail ul li{
+	color: #999999;
+	line-height: 2.2;
+}
+.icon_up:hover{
+	cursor: pointer;
+}
+.icon_up .icons_v{
+	font-size: 28px;
+	vertical-align: middle;
+}
+.icon_up{
+	color: #edb94a;
+}
+.menu_detail{
+	display: none;
+}
+.money1{
+	color: #f84242;
+	font-size: 18px;
+}
+.user_title>div{
+	display: inline-block;
+}
+.smallfont{
+	font-size: 12px;
+}
+#cutdown{
+	color: #f84242;
+}
+.title{
+	font-size: 16px;
+	color: #333333;
+}
+.pay_wayoutdiv{
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid #dddddd;
+}
+.payway{
+	font-size: 16px;
+	color: #282828;
+}
+.paylogo{
+	margin-right: 10px;
+}
+.user_content>div{
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+.user_content{
+	border-bottom: 1px solid #F4F4F4;
+	padding-bottom: 30px;
+}
+.pay_wayout{
+	font-size: 0;
+	line-height: 0;
+}
+.wechat{
+	padding: 10px 16px;
+}
+.confirmpay{
+	display: inline-block;
+	padding: 10px 50px;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 16px;
+	background: grey;
+    cursor: not-allowed;
+}
+.confirmpay_abled:hover,.pay_wayoutdiv:hover{
+	cursor: pointer;
+}
+.confirmpaydiv{
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+.active{
+	background: url(../imgs/pay_active.png) no-repeat center bottom;
+	border: 1px solid #f84242;
+}
+.pay{
+	font-size:14px ;
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+.saoyisao>div,.saoyisao{
+	display: inline-block;
+}
+.pay1{
+	padding-top: 10px;
+}
+.pay3{
+	height: 0;
+	line-height: 0;
+}
+.sao{
+	margin-right: 10px;
+}
+.saoyisao{
+	background: #00a1e9;
+	padding: 20px 55px;
+}
+.sao_font li{
+	line-height: 1.5;
+}
+.sao_font{
+	color: #fff;
+}
+.pay1{
+	padding-bottom: 20px;
+
+}
+.pay2{
+	padding-bottom: 25px;
+
+}
+.layui-layer-title{
+background: none;
+}
+.confirmpay_abled{
+	background: #f84242;
+}

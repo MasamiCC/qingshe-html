@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>业务收益</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--引入css-->
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/earnings.css" />
+	</head>
+	<body>
+		<div class="mui-content mbbody">
+			<div class="sg_head">
+<!-- 				<div class="sg_head_yfonts">
+					业务收益
+				</div> -->
+				<div class="return_hints">
+					<!--累计收益-->
+					<div class="return_hints_section">
+						<div>
+							<p class="heading">累计收益</p>
+							<p class="money">0<span>黑钻</span></p>
+							<!--累计收益-->
+							<p class="heading"  style="margin-top: 15px;">提现到账中</p>
+							<p class="money">10000.00<span>黑钻</span></p>
+						</div>
+					</div>
+					<!--收益余额-->
+					<div class="return_hints_section">
+						<div>
+							<p class="heading">收益余额</p>
+							<p class="money">20000.00<span>黑钻</span></p>
+							<a class="go_binding">去绑定银行卡</a>
+						</div>
+					</div>
+				</div>
+				<div class="sg_head_regular">
+					<a href=""><img src="img/regular.png" /></a>
+				</div>
+			</div>
+			<!--提现和记录-->
+			<div class="operation_nav">
+				<!--提现-->
+				<div class="cash">
+					<div class="content">
+						<img src="img/cash.png" />
+						<p>收益提现</p>
+					</div>
+				</div>
+				<!--记录-->
+				<div class="reconrd">
+					<div class="content">
+						<img src="img/reconrd.png" />
+						<p>提现记录</p>
+					</div>
+				</div>
+			</div>
+			<div class="mbheaditems">
+				<a class="mbheaditem" href="my_tenant.html">
+					<div class="firstline">
+						已签约商户
+					</div>
+					<div class="sg_word">
+						<span class="sg_icon"><img src="img/sg_shop_yellow.png"/>15</span><span class="mbsmall">家</span>
+					</div>
+				</a>
+				<a class="mbheaditem" href="../blackAgent/signingShopList.html">
+					<div class="firstline">
+						签约中商户
+					</div>
+					<div class="sg_word">
+						<span class="sg_icon"><img src="img/sg_shop_yellow.png"/>500</span><span class="mbsmall">家</span>
+					</div>
+				</a>
+				<a class="mbheaditem" href="new_bussiness.html">
+					<div class="firstline">
+						去签约
+					</div>
+					<div class="sg_word">
+						<span class="sg_icon"><img src="img/sg_shop_yellow.png"/></span>
+					</div>
+				</a>
+			</div>
+
+			<!-- 推广码 -->
+			<div class="spread_nav">
+				<!-- 左侧 -->
+				<div class="spread_left">
+					<!-- 我的推广会员 -->
+					<a class="spread_area" href="my_spread_member.html">
+						<img src="img/my_spread.png" class="spread_img" />
+						<span class="content">
+							我的推广会员
+						</span>
+					</a>
+					<!-- 我的推广码 -->
+					<a class="spread_area" href="my_spread.html">
+						<img src="img/qd_spread.png" class="spread_img" />
+						<span class="content">
+							我的推广码
+						</span>
+					</a>
+				</div>
+				<!-- 右侧 -->
+				<div class="spread_right">
+					<!-- 总收益 -->
+					<div class="spread_total">
+						<h4 class="title">我的推广总收益</h4>
+						<img src="img/total_spread.png" class="spread_img">
+						<p class="money">￥20000</p>
+						<a class="check_spread" href="popularize.html">
+							查看详情
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="share_foot_con">
+				<div class="share_foot_title">
+					<span>
+						收支记录
+					</span>
+					<span class="time">
+						2018年07月23日
+					</span>
+					<img src="img/calendar.png" class="date_pick" />
+				</div>
+
+				<!--下拉-->
+				<div id="pullrefresh" class="share_foot_item mui-scroll-wrapper">
+					<div class="mui-scroll profit">
+						<div class="count_section">
+						</div>
+					</div>
+
+				</div>		    
+			    
+			    <!--当前无业务收益-->
+			    <div class="no_profit_nav date">
+			    	<div class="no_profit">
+			    		<img src="img/money_big.png"/>
+			    		<p>当前无业务收益</p>
+			    	</div>
+			    </div>
+			
+			</div>
+
+		</div>
+
+
+		<!--规则弹框-->
+		<div class="rule_modle modle_nav">
+			<!--关闭按钮-->
+			<div class="close">
+				<span class="close_btn">
+					
+				</span>
+			</div>
+			<!--规则内容-->
+			<div class="rule_area">
+				<h4 class="title">活动规则</h4>
+				<div class="rule_content">
+					<p>
+						1、黑卡经纪人必须签订智能合约，并且完成了前三个站点攻略任务；
+					</p>
+					<p>
+						2、黑卡经纪人要在法律规定的范围内，自行发展签约商户；
+					</p>
+					<p>
+						3、黑卡经纪人提供的相关商户资料必须真实有效，严禁提供虚假信息；
+					</p>
+					<p>
+						4、黑卡经纪人的收益结算按照“T+7”周期进行自动结算，即平台每天对经纪人七天前的业务黑钻账目进行自动结算；
+					</p>
+					<p>
+						5、黑卡经纪人应该遵守《轻奢黑卡经纪人商务合作协议》所约定的规则；
+					</p>
+					<p>
+						6、经纪人累计的业务收益黑钻大于等于1万黑钻时，可向平台申请黑钻兑现，税金自理；
+					</p>
+					<p>
+						7、若签约的商家连续2个月在平台低于10笔在线单笔成功交易或在轻奢点评平台无流水产生，则视为经纪人放弃该商家的平台管理权及收益权；
+					</p>
+					<p>
+						8、进行业务收益提现时，账户可提现收益余额应不低于10000黑钻；一天可进行一次提现；固定提现余额收益额为10000黑钻；只能在前次提现流程结束之后，才可以进行下一次提现；
+					</p>
+					<p>
+						9、本活动的最终解释权归江苏轻奢点评科技文化有限公司有。
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--收益提现弹窗-->
+		<div class="cash_modle modle_nav cash">
+			<!--关闭按钮-->
+			<div class="close">
+				<span class="close_btn"></span>
+			</div>
+			<div class="cash_area">
+				<h4 class="title">收益提现</h4>
+				<p>
+					您的累计收益未达到10000黑钻<br/> 无法进行提现
+				</p>
+			</div>
+		</div>
+		
+		<!--收益提现未绑定弹窗-->
+		<div class="cash_modle modle_nav no_cash">
+			<!--关闭按钮-->
+			<div class="close">
+				<span class="close_btn"></span>
+			</div>
+			<div class="cash_area">
+				<h4 class="title">安全认证</h4>
+				<!--绑定区域-->
+				<div class="binding_area">
+					<div class="binding">
+						<img src="img/binging_1.png"/>
+						<p>绑定银行卡</p>
+						<a>去绑定</a>
+					</div>
+					<div class="binding">
+						<img src="img/binging_2.png"/>
+						<p>设置交易密码</p>
+						<a>去设置</a>
+					</div>
+					<!--提示区域-->
+					<div class="binding_prompt">
+						注：需完成以上两个设置才可以进行黑钻兑现
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--提示去绑定弹窗-->
+		<!--<div class="go_binding_modle">
+			 关闭按钮 
+			<div class="close">
+				<span class="close_btn"></span>
+			</div>
+			<h4 class="title">
+				提示
+			</h4>
+			<p class="content">
+				您还未绑定银行卡，为了保证正常提现与推广收益的自动汇款，请绑定银行卡。
+			</p>
+			<a href="" class="go_binding">
+				去绑定
+			</a>
+		</div>-->
+		
+		<!--提示去绑定弹窗-->
+		<div class="go_binding_modle">
+			<p class="content">
+				您还未绑定银行卡，为了保证正常提现与推广收益的自动汇款，请绑定银行卡。
+			</p>
+			<div class="bindWindow">
+				<a href="" class="goBind">
+					去绑定
+				</a>
+				<div class="close1">知道了</div>
+				
+			</div>
+			
+		</div>
+
+	</body>
+	<!--定义一个模板js-->
+	<script type="text/html" id="temp">
+		<div class="count_nav">
+			<!--时间-->
+			<div class="time">[create_time]</div>
+			<div class="count_area">
+				<div class="count_top">
+					<img src="img/money.png"/>
+					<span class="gray">店铺流水</span>
+					<span class="shop_name">[shop_name]</span>
+					<span>[value]元</span>
+				</div>
+				<div class="count_bottom">
+					<span class="gray">获得收益</span>
+					<span>[income_shop]黑钻</span>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<!--定义一个没有时间的模板js-->
+	<script type="text/html" id="temp_notime">
+		<div class="count_nav no_time">
+			<!--时间-->
+			<div class="time">[create_time]</div>
+			<div class="count_area">
+				<div class="count_top">
+					<img src="img/money.png"/>
+					<span class="gray">店铺流水</span>
+					<span class="shop_name">[shop_name]</span>
+					<span>[value]元</span>
+				</div>
+				<div class="count_bottom">
+					<span class="gray">获得收益</span>
+					<span>[income_shop]黑钻</span>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<!--定义一个支出模板js-->
+	<script type="text/html" id="consume">
+		<div class="count_nav">
+			<!--时间-->
+			<div class="time">[create_time]</div>
+			<div class="count_area">
+				<div class="count_top">
+					<img src="img/consume.png"/>
+					<span class="gray">订单消费</span>
+					<span>[income_shop]黑钻</span>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<!--定义一个没有时间的支出模板js-->
+	<script type="text/html" id="consume_notime">
+		<div class="count_nav no_time">
+			<!--时间-->
+			<div class="time">[create_time]</div>
+			<div class="count_area">
+				<div class="count_top">
+					<img src="img/consume.png"/>
+					<span class="gray">订单消费</span>
+					<span>[income_shop]黑钻</span>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<script src="../../../js/jquery-1.10.1.min.js"></script>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="js/mui.own.picker.js"></script>
+	<script src="js/earnings.js"></script>
+
+</html>

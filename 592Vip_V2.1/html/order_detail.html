@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout_user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/order_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			#save{
+			    background-color: #edb94a;
+   				border: none;
+   				border-radius: 0;
+   				padding-left: 20px;
+   				padding-right: 20px;
+			}
+			#save:hover{
+				background: #d3a749;
+			}
+			#reset{
+				border: none;
+				border-radius: 0;
+				
+			}
+			#reset:hover{
+				background: none;border: none;
+			}
+		</style>
+		<script type="text/javascript">
+			var isUser=true,key='my_order';
+		</script>
+		<script src="../js/order_detail.js" type="text/javascript" charset="utf-8"></script>
+    	
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				<div class="user">
+					<div class="user_div user_left">
+						<div class="left_menu">
+						</div>
+					</div>
+					<div class="user_div user_right">
+						<div class="">
+							<div class="user_right_top">
+								<div class="user_right_title">
+									订单详情 
+								</div>
+								<div class="user_right_nav">
+									订单管理 &gt;订单详情
+								</div>
+							</div>
+							<div class="user_right_middle" ng-app='grouth' ng-controller="grouthCtrl" ng-init='getgrouthList()'>
+								<div class="order_d_status">
+									<ul>
+										<li class="active">
+											订单已提交 
+											<i class="fa fa-circle"></i>
+										</li>
+										<li>
+											商家已接单
+											<i class="fa fa-circle"></i>
+										</li>
+										<li>
+											订单已完成
+											<i class="fa fa-circle"></i>
+										</li>
+									</ul>
+								</div>
+								<div class="order_d_cont order_detail_s" >
+										<h5 class="" >订单已取消</h5>
+										<p class="" >
+											用户于15:27取消订单, 取消理由: 用户退单
+										</p>
+										<div class="orderprogress-statusbuttons">
+											<span  class="text-red">再来一单</span>
+											<span  class="">去支付</span>
+											<span class="text-red" >取消订单</span>
+										</div>
+									</div>
+								<div class="order_d_cont" >
+									<div class="order_d_shop">
+										<ul>
+											<li>
+												<img src="../imgs/commenttouxiang2.png"/>
+											</li>
+											<li>
+												<h3>江南厨房</h3>
+												<p>
+													订单编号：0000000000000000 商家电话：0513-84615000
+												</p>
+											</li>
+											<li>
+												<span class="collect collect_a"><i class="fa fa-star-o text-y"></i>已收藏</span>
+												<!--<span class="collect "><i class="fa fa-star-o "></i>收藏</span>-->
+												<span class="tousu"><i class="fa fa-exclamation-circle"></i> 投诉</span>
+												<div class="order_btns">
+													<button class="order_btn">取消订单</button>
+												</div>
+											</li>
+										</ul>
+									</div>
+									
+									<div class="order_d_detail">
+										<div class="order_d_detail_l">
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr class=""><th>菜名</th><th>数量</th><th style="text-align: right;">小计（元）</th></tr>
+												<tr>
+													<td>黄焖鸡米饭小芬-微辣</td><td class="text-center">1</td><td class="text-right">16.00</td>
+												</tr>
+												<tr>
+													<td>康师傅矿泉水-12*550ml</td><td class="text-center">1</td><td class="text-right">3.00</td>
+												</tr>
+												<tr>
+													<td>黄焖鸡米饭小芬-微辣</td><td class="text-center">1</td><td class="text-right">16.00</td>
+												</tr>
+												<tr>
+													<td>康师傅矿泉水-12*550ml</td><td class="text-center"> 1</td><td class="text-right">3.00</td>
+												</tr>
+												<tr class="tr_border">
+													<td>
+														餐盒
+													</td>
+													<td colspan="2" class="text-right ">
+														3.00
+													</td>
+												</tr>
+												<tr>
+													<td>
+														优惠券折扣
+													</td>
+													<td colspan="2" class="text-right text-red">
+														-3.00
+													</td>
+												</tr>
+												<tr>
+													<td>
+														配送费
+													</td>
+													<td colspan="2" class="text-right">
+														4.00
+													</td>
+												</tr>
+												<tr class="tr_border">
+													<td colspan="3" class="text-right">实际支付 ：<span class="text-red order_total">32.00</span></td>
+												</tr>
+											</table>
+										</div>
+										<div class="order_d_detail_r">
+											<h4>配送信息</h4>
+											<ul>
+												<li>配送方式：大大快送</li>
+												<li>送达时间：尽快送达</li>
+											</ul>
+											<ul>
+												<li>联系人：蒋爱军（先生）</li>
+												<li>联系电话：18806297146</li>
+												<li>收货地址：星湖101 设计创意中心8座18层</li>
+											</ul>
+											<ul>
+												<li>联系人：蒋爱军（先生）</li>
+												<li>联系电话：18806297146</li>
+												<li>收货地址：星湖101 设计创意中心8座18层</li>
+											</ul>
+											<ul>
+												<li>发票信息：无发票</li>
+												<li>备注：无备注</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="user_right_footer">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/user.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$('.collect_a').mouseover(function(){
+			$('.collect_a').html('<i class="fa fa-star-o text-y"></i>取消').addClass('text-y')
+		}).mouseleave(function(){
+			$('.collect_a').html('<i class="fa fa-star-o text-y"></i>已收藏').removeClass('text-y')
+		})
+		$('.collect').click(function(){
+			var hasC=$(this).hasClass('collect_a');
+			if(hasC){
+				alert('取消收藏')
+			}else{
+				alert('添加 收藏')
+			}
+		})
+		$(".tousu").click(function(){
+			alert('投诉')
+		})
+	})
+	
+</script>

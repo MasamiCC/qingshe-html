@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/goods_detail_new.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/imageView.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+	</head>
+
+	<body>
+
+		<style>
+			.mui-control-content {
+				min-height: 215px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active" data-id='1'>
+						<div class="detail_item">
+							<!--图片-->
+							<div class="detail_pic">
+								<img src="../image/carbck.png"/>
+								<div onclick="showNj(this,1)" data-id='1'>
+									5张
+									<div class="" style="display: none;">
+				    					<img src="../image/backtop.png" data-preview-src="" data-preview-group="1" id="img1">
+				    					<img src="../image/banner@2X.png" data-preview-src="" data-preview-group="1" id="">
+				    					<img src="../image/biaozhi.png" data-preview-src="" data-preview-group="1" id="">
+				    				</div>
+								</div>
+							</div>
+							<!--基本信息-->
+							<div class="detail_basic">
+								<div class="detail_goods_title">
+									<span class="detail_v detail_qs">轻奢会员专享</span>
+									<!--<span class="detail_v detail_hk">黑卡会员专享</span>-->
+									<span class="detail_goods_title_c">江南厨房熏鱼</span>
+								</div>
+								<div class="detail_sale">
+									月售100 剩余10份
+								</div>
+								<div class="detail_price">
+									<div class="mui-pull-left">
+										<span class="detail_price_n">￥166. <small>50</small> </span>
+										<span class="detail_price_o">￥300</span>
+									</div>
+									<div class="mui-pull-right">
+										<!--单规格-->
+										<!--<span class="cart_btn" data-id="1" data-title='江南厨房熏鱼' data-price='11.0'><i class="fa fa-shopping-cart"></i>加入购物车</span>-->
+										<!--多规格-->
+										<span class="cart_btn cart_gg" data-id="1" data-attr='1' ><i class="fa fa-shopping-cart"></i>选规格</span>
+									</div>
+									<div class="empty"></div>
+								</div>
+							</div>
+						</div>
+						<div class="detail_item">
+							<div class="detail_item_title">
+								商品其他属性
+							</div>
+							<div class="detail_item_c">
+								<ul>
+									<li>房间面积：20-50m2</li>
+									<li>房间设施：浴缸，免费WIFI，24小时热水</li>
+									<li>客房服务：叫醒服务</li>
+								</ul>
+							</div>
+						</div>
+						<!--<div class="detail_item">
+							<div class="detail_item_title">
+								商品其他属性
+							</div>
+							<div class="detail_item_c">
+								<ul>
+									<li>商家未填写</li>
+								</ul>
+							</div>
+						</div>-->
+						
+						<!--<div class="detail_item">
+							<div class="detail_item_title ">
+								商品评价<span class="detail_good">（好评率<span>100%</span>）</span>
+								<span  class="mui-pull-right ">
+									暂无评价
+								</span>
+							</div>
+						</div>-->
+						<div class="detail_item">
+							<div class="detail_item_title detail_item_title_b">
+								商品评价<span class="detail_good">（好评率<span>100%</span>）</span>
+								<span  class="mui-pull-right mui-navigate-right">
+									5条评论 
+								</span>
+							</div>
+							<div class="detail_item_c">
+								<div class="evaluation">
+									<div class="evaluation_user_pic">
+										<img src="../image/se_header1.png"/>
+									</div>
+									<div class="evaluation_con">
+										<div class="evaluation_user">
+											风吹屁屁凉
+											<span class="mui-pull-right">2017-11-02</span>
+										</div>
+										<div class="evaluation_up_down">
+											<i class="fa fa-thumbs-up"></i>赞了该商品
+										</div>
+										<div class="evaluation_content">
+											<span>#江南厨房熏鱼#</span>
+											不过最近我都是在吃台湾的比较多，例如张君雅小妹妹的甜甜圈，XO酱烤牛肉粒，还有越南的TIPO白巧克力面包干...
+										</div>
+										<div class="evaluation_imgs">
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+										</div>
+									</div>
+								</div>
+								<div class="evaluation">
+									<div class="evaluation_user_pic">
+										<img src="../image/se_header1.png"/>
+									</div>
+									<div class="evaluation_con">
+										<div class="evaluation_user">
+											风吹屁屁凉
+											<span class="mui-pull-right">2017-11-02</span>
+										</div>
+										<div class="evaluation_up_down">
+											<i class="fa fa-thumbs-down"></i>赞了该商品
+										</div>
+										<div class="evaluation_content">
+											<span>#江南厨房熏鱼#</span>
+											不过最近我都是在吃台湾的比较多，例如张君雅小妹妹的甜甜圈，XO酱烤牛肉粒，还有越南的TIPO白巧克力面包干...
+										</div>
+										<div class="evaluation_imgs">
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+										</div>
+									</div>
+								</div>
+								<div class="evaluation">
+									<div class="evaluation_user_pic">
+										<img src="../image/se_header1.png"/>
+									</div>
+									<div class="evaluation_con">
+										<div class="evaluation_user">
+											风吹屁屁凉
+											<span class="mui-pull-right">2017-11-02</span>
+										</div>
+										<div class="evaluation_up_down">
+											<i class="fa fa-thumbs-down"></i>赞了该商品
+										</div>
+										<div class="evaluation_content">
+											<span>#江南厨房熏鱼#</span>
+											不过最近我都是在吃台湾的比较多，例如张君雅小妹妹的甜甜圈，XO酱烤牛肉粒，还有越南的TIPO白巧克力面包干...
+										</div>
+									</div>
+								</div>
+								<div class="evaluation">
+									<div class="evaluation_user_pic">
+										<img src="../image/se_header1.png"/>
+									</div>
+									<div class="evaluation_con">
+										<div class="evaluation_user">
+											风吹屁屁凉
+											<span class="mui-pull-right">2017-11-02</span>
+										</div>
+										<div class="evaluation_content">
+											<span>#江南厨房熏鱼#</span>
+											不过最近我都是在吃台湾的比较多，例如张君雅小妹妹的甜甜圈，XO酱烤牛肉粒，还有越南的TIPO白巧克力面包干...
+										</div>
+										<div class="evaluation_imgs">
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+											<img src="../image/se_evaluation1.png"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail_item">
+							<div class="detail_item_title">
+								图文详情
+							</div>
+							<div class="detail_item_c detail_item_c_media">
+								<p>红色至尊版</p>
+								<img src="../image/at_js.png"/>
+								
+								
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content" data-id='2'>
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content" data-id='3'>
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--酒店类-->
+		<!--<nav class="mui-bar mui-bar-footer" id="">
+			<span class="detail_yd">立即预定</span>
+		</nav>-->
+		<!--美食类-->
+		<nav class="mui-bar mui-bar-footer" id="nav">
+			<div class="mui-pull-left">
+				<div id="" class="detail_cart">
+					<i class="fa fa-shopping-cart"></i>
+					购物车
+					<span >
+						12
+					</span>
+				</div>
+				<div class="total">
+					￥500.00
+				</div>
+				
+			</div>
+			<div class="mui-pull-right">
+				<div id="" class="js_btn  ">
+					请选择商品
+				</div>
+			</div>
+		</nav>
+		<div id="popover" class="mui-popover">
+			<div class="cart_list_title">购物车 <span class="mui-pull-right cart_clear" ><i class="mui-icon mui-icon-trash"></i>清空</span></div>
+			<div class="mui-content-padded" id="cart_goods_list">
+				<ul>
+					<li class="cart_g_list" data-goodsid="6" data-attr-id="5">
+						<div id="" class="cart_g_left">椒盐中虾 
+							<p class="goods_attr">小份,不辣</p>
+						</div>
+						<div class="cart_g_right" data-goodsid="6">
+							<span><small>￥</small><span class="price_c">44</span></span>
+							<img src="../image/min@2X.png" class="cart-btn cart-btn-numbox-minus" onclick="cartList(this,0,44)">
+							<span class="mui-input-numbox">1</span>
+							<img src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus" onclick="cartList(this,1,44)">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="attr" class="mui-popover">
+			<div class="attr_title">椒盐中虾  <span class="mui-icon mui-icon-closeempty mui-pull-right attr_close"></span></div>
+			<div class="mui-content-padded">
+				<ul>
+					<li class="attr_li" id="attr1">
+						
+					</li>
+					<li  class="attr_li" id="attr2">
+						
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="price" ><small>￥</small><span>321</span></div>
+				<input type="hidden" name="" id="cart_goods" value="" />
+				<input type="hidden" name="attr_id" id="attr_id" />
+				<div style="padding: 0 10px;">
+					<button  class="add_to_cart">加入购物车</button>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/goods_detail_new.js" type="text/javascript" charset="utf-8"></script>

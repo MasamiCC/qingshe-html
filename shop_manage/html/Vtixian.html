@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/Vcommon.css" />
+		<style type="text/css">
+			.list_handler{
+				padding-right: 0px;
+			}
+			.txt_tongji{
+				background: none;color: #333;
+			}
+			.tixian_now a{
+				background: #333;padding: 3px 10px;text-decoration: none;
+			}
+			.tixian_now input{
+				width: 100px;margin: 0 5px;padding: 2px 0;
+			}
+			.list_table td{
+				height: 55px;line-height: 55px;
+			}
+			.search_btn{
+				line-height: 1.5;font-size: 14px!important;
+			}
+			.edit_div{
+				padding: 10px 0;
+			}
+			.edit_div{
+				
+			}
+			.edit_div li{
+				padding: 10px 0;
+			}
+			.edit_div form{
+				width: 80%;margin: 0 auto;
+			}
+			.edit_div form input{
+				border:1px solid #ccc;
+				padding:3px ;border-radius: 3px;
+				width: 200px;
+			}
+			.edit_div a{
+				margin-left: 10px;cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+						</div>
+						<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心</i> 
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+						<!--正文-->
+						<div class="titleMes" style="font-weight: 600;margin:30px 0px 10px 20px"><i>个人中心</i>><i>提现记录</i></div>
+						<div class="txt_tongji">
+							<div>
+								可提现额度：<span style="color: #d4ac57;">2000.00</span>  元<span class="search_btn" onclick="tixian('6228 **** **** 1234','2000.00')">
+									立即提现
+								</span>
+							</div>
+							<div class="tixian_now">
+								<!--<a href="tixian_now.html">立即提现</a>-->
+								<input type="text" name="" id="" value="" />至<input type="text" /><a href="javascript:void(0)">筛选</a>
+							</div>
+						</div>
+						<!--<div class="txt_search">
+							<form action="">
+								<label for="">
+									交易号：<input type="text" />
+								</label>
+								<label for="">
+									提现状态：
+									<select name="" id="">
+										<option value="">已完成</option>
+										<option value="">未完成</option>
+										<option value="">已取消</option>
+									</select>
+								</label>
+								<span class="search_btn">
+									搜索
+								</span>
+							</form>
+							
+						</div>-->
+						<div class="txt_list">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%"  class="list_table">
+								<tr>
+									<th>交易号</th>
+									<th>提现金额</th>
+									<th>提现时间</th>
+									<th>提现状态</th>
+									<th>操作</th>
+									
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>已完成</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>处理中</span>
+									</td>
+									<td class="list_center list_handler">
+										<span class="list_cancel">取消</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>已完成</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>处理中</span>
+									</td>
+									<td class="list_center list_handler">
+										<span class="list_cancel">取消</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>已完成</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>处理中</span>
+									</td>
+									<td class="list_center list_handler">
+										<span class="list_cancel">取消</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>已完成</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>处理中</span>
+									</td>
+									<td class="list_center list_handler">
+										<span class="list_cancel">取消</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>已完成</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+								<tr>
+									<td class="list_center">QSDP_1245665544444</td>
+									<td class="list_center price_u">100.00</td>
+									<td class="list_center list_time">2017-12-01 12:00</td>
+									<td class="list_center list_status">
+										<span>提现失败</span>
+									</td>
+									<td class="list_center list_handler">
+										<!--<span class="list_cancel">取消</span>-->
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="txt_page">
+							<ul>
+								<!--<li class="page_item page_disabled">第一页</li>-->
+								<li class="page_item page_active">1</li>
+								<li class="page_item">2</li>
+								<li class="page_item">3</li>
+								<li class="page_item">4</li>
+								<li class="page_item">...</li>
+								<li class="page_item">7</li>
+								<li class="page_item">8</li>
+								<!--<li class="page_item">下一页</li>-->
+							</ul>
+						</div>
+						<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+			</div>
+	     </div>
+	     
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+	<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		function tixian(account,totalAmount){
+			layer.open({
+					title:'立即提现',
+				    type: 1,
+					skin: 'layui-layer-rim', //加上边框
+					area: ['420px', '240px'], //宽高
+					content: '<div class="edit_div" style="" >'
+							+'<form action="" method="post">'
+							+	'<ul>'
+							+		'<li>'
+							+			'<label for="">银行账户：</label><input type="text" value="'+account+'" disabled/>'
+							+		'</li>'
+							+		'<li>'
+							+			'<label for="">账户余额：</label>'+totalAmount
+							+		'</li>'
+							+		'<li>'
+							+			'<label for="">提现金额：</label><input type="text" value="" style="width:150px"/><a onclick="tixianAll(this,\''+totalAmount+'\')" style="color:red" ><small>全部提现</small></a>'
+							+		'</li>'
+							+		'<li style="text-align:center">'
+							+			'<span class="search_btn" id="save_edit_cat" style="padding: 5px 13px;" onclick="" >确定提现</span>'
+							+		'</li>'
+							+	'</ul>'
+							+'</form>'
+						+'</div>'
+				});
+		}
+		function tixianAll(me,totalAmount){
+			$(me).prev().val(totalAmount)
+		}
+	</script>
+</html>

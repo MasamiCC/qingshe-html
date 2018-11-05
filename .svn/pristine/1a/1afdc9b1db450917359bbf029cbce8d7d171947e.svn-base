@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>轻奢点评</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<style type="text/css">
+			header.mui-bar{
+			}
+			#city{
+				display: flex;align-items: center;
+			}
+			#city div:first-child {
+				white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    -webkit-text-overflow: ellipsis;
+			}
+			.mui-bar .mui-title{
+				left: 100px;
+				right: 10px;
+				top: 6px;
+				line-height: 1;
+			}
+			#msg{
+				padding-top: 3px;
+			}
+			
+			#hearder_search{
+				margin-top: 0;
+			}
+			.mui-search .mui-placeholder{
+				top: 0;
+			}
+			.mui-search.mui-active:before{
+				top: 15px;
+			}
+			.cat_li .mui-media-body{
+				font-size: 0.75rem!important;
+			}
+			.index_tui_item{
+				margin: 0 10px;
+			}
+			.mui-tab-label{
+			    font-size: 11px;
+			    display: block;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			}
+			.mui-bar-nav~.mui-content{
+				padding-top: 44px;
+			}
+			.swiper-wrapper{
+				display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: -webkit-flex;
+		        display: flex;
+		        -webkit-box-pack: center;
+		        -ms-flex-pack: center;
+		        -webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+		        -webkit-box-align: center;
+		        -ms-flex-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
+		        padding-bottom: 5px;
+			}
+			.swiper-slide {
+		        font-size: 18px;
+		        background: #fff;
+		        
+		        
+		    }
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <div class="" id="city">
+		    	<div id="" style="font-size: 0.75rem;color: #666;">
+		    		<i class="mui-icon mui-icon-location"></i>南通市
+		    	</div>
+		    	<div class="">
+		    		<i class="mui-icon mui-icon-arrowdown "></i>
+		    	</div>
+		    	
+		    	<!--<div class="mui-pull-right hot_search" style="flex:2;text-align: right;font-size: 0.75rem;">
+		    		<a href="">火锅</a>
+		    		<a href="">麻辣烫</a>
+		    		<a href="">烤山芋</a>
+		    	</div>
+		    	<div class="empty" style="flex:0;text-align: right;">
+		    		
+		    	</div>-->
+		    </div>
+			<!--<a class="mui-icon mui-icon-contact mui-pull-right" id="msg">
+			</a>-->
+		    <h1 class="mui-title">
+		    	<form action="near.html" method="post">
+		    		<div class="mui-input-row mui-search">
+			    	    <input type="search" class=" " placeholder="请输入关键字" id="hearder_search">
+			    	</div>
+		    	</form>
+		    	
+		    </h1>
+		</header>
+		<div class="mui-content">
+			<!--幻灯片开始-->
+		    <div id="slider" class="mui-slider" >
+		      <div class="mui-slider-group mui-slider-loop">
+		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="../image/icon/4.png">
+		          </a>
+		        </div>
+		        <!-- 第一张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="../image/icon/1.png">
+		          </a>
+		        </div>
+		        <!-- 第二张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="../image/icon/2.png">
+		          </a>
+		        </div>http://127.0.0.1:8020/592vip_wechat_new/html/index.html#
+		        <!-- 第三张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="../image/icon/3.png">
+		          </a>
+		        </div>
+		        <!-- 第四张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="../image/icon/4.png">
+		          </a>
+		        </div>
+		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="../image/icon/1.png">
+		          </a>
+		        </div>
+		      </div>
+		      <div class="mui-slider-indicator">
+		        <div class="mui-indicator mui-active"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		      </div>
+		    </div>
+		    <!--幻灯片结束-->
+			
+			<!--9宫格开始-->
+			
+			<div id="Gallery" class="mui-slider" style="margin-top:8px;">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_west.png"/>
+									</span>
+									<div class="mui-media-body">西餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_chinese.png"/>
+									</span>
+									<div class="mui-media-body">中餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_bar.png"/>
+									</span>
+									<div class="mui-media-body">酒吧</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_carservice.png"/>
+									</span>
+									<div class="mui-media-body">汽车服务</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_hair.png"/>
+									</span>
+									<div class="mui-media-body">美发</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_bowlder.png"/>
+									</span>
+									<div class="mui-media-body">珠宝玉石</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_coffee.png"/>
+									</span>
+									<div class="mui-media-body">咖啡</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_tea.png"/>
+									</span>
+									<div class="mui-media-body">茶道</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_train.png"/>
+									</span>
+									<div class="mui-media-body">培训</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/cat_all.png"/>
+									</span>
+									<div class="mui-media-body">全部分类</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/camera.png"/>
+									</span>
+									<div class="mui-media-body">摄影</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/travel.png"/>
+									</span>
+									<div class="mui-media-body">旅游</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/leval_hotel.png"/>
+									</span>
+									<div class="mui-media-body">星级酒店</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/gems.png"/>
+									</span>
+									<div class="mui-media-body">珠宝玉石</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/easten_food.png"/>
+									</span>
+									<div class="mui-media-body">西餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/chinese_food.png"/>
+									</span>
+									<div class="mui-media-body">中餐</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/bar.png"/>
+									</span>
+									<div class="mui-media-body">酒吧</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/coffee.png"/>
+									</span>
+									<div class="mui-media-body">咖啡</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/sweet_food.png"/>
+									</span>
+									<div class="mui-media-body">甜品</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media cat_li">
+								<a href="#">
+									<span class="">
+										<img src="../image/icon/pet.png"/>
+									</span>
+									<div class="mui-media-body">宠物</div>
+								</a>
+							</li>
+							
+						</ul>
+					</div>-->
+
+				</div>
+				<!--<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>-->
+			</div>
+			<!--9宫格结束-->
+
+
+			<!-- banner1开始 -->
+			<div class="index_banner1">
+				<ul>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6 ">
+						<div class="banner_li">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="empty">
+				</div>
+			</div>
+			<div class="index_banner1">
+				<ul>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6 ">
+						<div class="banner_li">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/life.png"/>
+							<div>
+								<h3>开心转生活</h3>
+								<p>您今天想HIGH啥？ </p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="empty">
+				</div>
+			</div>
+			<div class="index_banner1">
+				<ul>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6 ">
+						<div class="banner_li">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+					
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/life.png"/>
+							<div>
+								<h3>开心转生活</h3>
+								<p>您今天想HIGH啥？ </p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+						
+					</li>
+					
+				</ul>
+				<div class="empty">
+				</div>
+			</div>
+			<div class="index_banner1">
+				<ul>
+					<li class="mui-col-sm-6 mui-col-xs-6">
+						<div class="banner_li">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-6 mui-col-xs-6 ">
+						<div class="banner_li">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+					
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/life.png"/>
+							<div>
+								<h3>开心转生活</h3>
+								<p>您今天想HIGH啥？ </p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+						
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="empty">
+				</div>
+			</div>
+			<div class="index_banner1">
+				<ul>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/life.png"/>
+							<div>
+								<h3>开心转生活</h3>
+								<p>您今天想HIGH啥？ </p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/life.png"/>
+							<div>
+								<h3>开心转生活</h3>
+								<p>您今天想HIGH啥？ </p>
+							</div>
+						</div>
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/checkin.png"/>
+							<div>
+								<h3>每日签到</h3>
+								<p>签到有惊喜哦！</p>
+							</div>
+						</div>
+						
+					</li>
+					<li class="mui-col-sm-4 mui-col-xs-4">
+						<div class="banner_li banner_li_bg">
+							<img src="../image/icon/texuan.png">
+							<div>
+								<h3>劲爆折扣</h3>
+								<p>会员超值特选</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="empty">
+				</div>
+			</div>
+			
+			<!-- banner1结束 -->
+
+			<!-- 高端分类开始 -->
+			<div class="index_item">
+				<div class="index_item_title">
+					<h3>高端分类</h3>
+					<p>轻奢优质生活</p>
+				</div>
+				<div class="height_cat">
+					<div id="" class="height_cat_img">
+						<img src="../image/icon/2.png"/>
+					</div>
+					<div class="height_cat_content">
+						<ul>
+							<li class="height_cat_title">品牌汽车汇</li>
+							<li class="height_cat_pro">爱车养护，细致入微</li>
+							<li class="mui-table-view-cell height_cat_count">
+								<a href="#" class="mui-navigate-right">3个商户 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="height_cat">
+					<div id="" class="height_cat_img">
+						<img src="../image/icon/3.png"/>
+					</div>
+					<div class="height_cat_content">
+						<ul>
+							<li class="height_cat_title">假日休闲集结号</li>
+							<li class="height_cat_pro">星期天，高尔夫和游艇更配！</li>
+							<li class="mui-table-view-cell height_cat_count">
+								<a href="#" class="mui-navigate-right">3个商户 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="height_cat">
+					<div id="" class="height_cat_img">
+						<img src="../image/icon/4.png"/>
+					</div>
+					<div class="height_cat_content">
+						<ul>
+							<li class="height_cat_title">海鲜大派对</li>
+							<li class="height_cat_pro">躲不掉的海鲜大狂欢！</li>
+							<li class="mui-table-view-cell height_cat_count">
+								<a href="#" class="mui-navigate-right">3个商户 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="" style="text-align: center;color: #d4ac57;font-size: 0.75rem;">
+					更多高端分类>>
+				</div>
+			</div>
+			<!-- 高端分类结束 -->
+
+			<!-- 分类精选开始 -->
+			<div class="index_item">
+				<div class="index_item_title">
+					<h3>分类精选</h3>
+					<p>衣食住行 , 吃喝玩乐GO</p>
+				</div>
+				<div class="cat_sel">
+					<h3 class="cat_sel_title">592美食</h3>
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide cat_item">
+						           <div class="cat_logo">
+						           	<img src="../image/icon/vertial2.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial3.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial4.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial5.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial7.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/all@3x (2).png" class="cat_item_logo"/>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">&nbsp;</div>
+						           		<p class="cat_con_juli">&nbsp;</p>
+						           		<p class="cat_con_type">&nbsp;</p>
+						           </div>
+				            </div>
+				            
+				        </div>
+				    </div>
+				</div>
+				
+				<div class="cat_sel">
+					<h3 class="cat_sel_title">592酒店</h3>
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide cat_item">
+						           <div class="cat_logo">
+						           	<img src="../image/icon/vertial2.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial3.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial4.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial5.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial7.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/all@3x (2).png" class="cat_item_logo"/>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">&nbsp;</div>
+						           		<p class="cat_con_juli">&nbsp;</p>
+						           		<p class="cat_con_type">&nbsp;</p>
+						           </div>
+				            </div>
+				            
+				        </div>
+				    </div>
+				</div>
+				<div class="cat_sel">
+					<h3 class="cat_sel_title">592旅游</h3>
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide cat_item">
+						           <div class="cat_logo">
+						           	<img src="../image/icon/vertial2.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial3.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial4.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial5.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/icon/vertial7.png" class="cat_item_logo"/>
+						           	<div class="cat_pf">
+						           		<span>评分</span>
+						           		<span>4.5</span>
+						           	</div>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">豪食间中西餐厅</div>
+						           		<p class="cat_con_juli">南通市开发区 | 10.5km</p>
+						           		<p class="cat_con_type">西餐</p>
+						           </div>
+				            </div>
+				            <div class="swiper-slide cat_item">
+				            	<div class="cat_logo">
+						           	<img src="../image/all@3x (2).png" class="cat_item_logo"/>
+						           </div>
+						           <div class="cat_con">
+						           		<div class="cat_con_title">&nbsp;</div>
+						           		<p class="cat_con_juli">&nbsp;</p>
+						           		<p class="cat_con_type">&nbsp;</p>
+						           </div>
+				            </div>
+				            
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<!-- 分类精选结束 -->
+
+			<!-- 为您推荐开始 -->
+			<div class="index_item" id="tuijian_list">
+				<div class="index_item_title">
+					<h3>为您推荐</h3>
+					<p>专注寻找品质好店</p>
+				</div>
+				<div class="index_tui_item">
+					<div class="index_tui_shop_title" >
+						<img src="../image/tui_shop_1.png" class="index_shop_icon"/><span>黑森日耳曼餐厅</span>
+					</div>
+					<div class="index_tui_shop_logo">
+						<img src="../image/near_shop-04.png"/>
+						<div class="index_tui_pf">
+							<span>
+								评分
+							</span>
+							<span>
+								4.5
+							</span>
+						</div>
+					</div>
+					<div class="index_tui_shop_con">
+						<h3>价值96元的香肠单人套餐，提供免费WiF</h3>
+						<p>
+							南通市开发区 | 10.5KM | 西餐
+							<span class="mui-pull-right to_see">进去看看</span>
+						</p>
+					</div>
+				</div>
+				<div class="index_tui_item">
+					<div class="index_tui_shop_title" >
+						<img src="../image/tui_shop_2.png" class="index_shop_icon"/><span>豪食间中西餐厅（星湖店）</span>
+						
+					</div>
+					<div class="index_tui_shop_logo">
+						<img src="../image/near_shop-03.png"/>
+						<div class="index_tui_pf">
+							<span>
+								评分
+							</span>
+							<span>
+								4.5
+							</span>
+						</div>
+					</div>
+					<div class="index_tui_shop_con">
+						<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>
+						<p>
+							南通市开发区 | 10.5KM | 西餐
+							<span class="mui-pull-right to_see">进去看看</span>
+						</p>
+					</div>
+				</div>
+				<div class="index_tui_item">
+					<div class="index_tui_shop_title" >
+						<img src="../image/tui_shop_1.png" class="index_shop_icon"/>
+						<span>黑森日耳曼餐厅</span>
+					</div>
+					<div class="index_tui_shop_logo">
+						<img src="../image/near_shop-04.png"/>
+						<div class="index_tui_pf">
+							<span>
+								评分
+							</span>
+							<span>
+								4.5
+							</span>
+						</div>
+					</div>
+					<div class="index_tui_shop_con">
+						<h3>价值96元的香肠单人套餐，提供免费WiF</h3>
+						<p>
+							南通市开发区 | 10.5KM | 西餐
+							<span class="mui-pull-right to_see">进去看看</span>
+						</p>
+					</div>
+				</div>
+				<div class="index_tui_item">
+					<div class="index_tui_shop_title" >
+						<img src="../image/tui_shop_2.png" class="index_shop_icon"/>
+						<span>豪食间中西餐厅（星湖店）</span>
+					</div>
+					<div class="index_tui_shop_logo">
+						<img src="../image/near_shop-03.png"/>
+						<div class="index_tui_pf">
+							<span>
+								评分
+							</span>
+							<span>
+								4.5
+							</span>
+						</div>
+					</div>
+					<div class="index_tui_shop_con">
+						<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>
+						<p>
+							南通市开发区 | 10.5KM | 西餐
+							<span class="mui-pull-right to_see">进去看看</span>
+						</p>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!-- 为您推荐结束 -->
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active" href="index.html">
+		        <span class="fa fa-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <!--<a class="mui-tab-item" href="#">
+		        <span class="mui-icon mui-icon-bars"></span>
+		        <span class="mui-tab-label">订单</span>
+		    </a>
+		    <a class="mui-tab-item" href="#">
+		        <span class="mui-icon mui-icon-paperplane"></span>
+		        <span class="mui-tab-label">优惠券</span>
+		    </a>-->
+		    <a class="mui-tab-item " href='near.html'>
+		        <span class="fa fa-map-o"></span>
+		        <span class="mui-tab-label">附近</span>
+		    </a>
+		    <a class="mui-tab-item" href="#">
+		        <!--<span class="mui-icon-extra mui-icon-extra-card"></span>-->
+		        <span class="fa fa-credit-card"></span>
+		        <br />
+		        <span class="mui-tab-label">黑卡</span>
+		    </a>
+		    <a class="mui-tab-item " href='near.html'>
+		        <span class="fa fa-user-circle-o"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init();
+	var slider = mui("#slider");
+    slider.slider({
+        interval: 2000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    
+	
+	var ads=[
+	{
+		id:1,
+		image:'../image/icon/texuan.png',
+		name:'劲爆折扣',
+		pro:"会员超值特选"
+	},
+	{
+		id:2,
+		image:'../image/icon/life.png',
+		name:'开心转生活',
+		pro:"您今天想HI啥？"
+	},
+	{
+		id:3,
+		image:'../image/icon/checkin.png',
+		name:'每日签到',
+		pro:"签到有惊喜哦！"
+	}
+	]
+	$(function(){
+		loadPingjia();
+		loadCat();
+		loadAds();
+		
+	})
+	function loadPingjia(){
+		$(window).scroll(function(){
+			var top=$(window).scrollTop();
+			var height=$(window).height()
+			$(".index_tui_pf").each(function(){
+				var offsetTop=$(this).offset().top;
+				if (offsetTop-top<=height) {
+					$(this).addClass('active');
+				}
+			})
+			if ($(document).height()-top==height) {
+				loadMoreShop()
+			}
+		})
+	}
+	function loadAds(){
+		var length=ads.length;
+		if (length==2||length==4) {
+			for (var i in ads) {
+				var html='';
+			}
+		} else{
+			
+		}
+		console.log(length)
+	}
+	var shopCount=1;
+	var shopEnd=false;
+	function loadMoreShop(){
+		if (!shopEnd) {
+			
+			
+			if (shopCount>=2) {
+				shopEnd=true;
+				mui.toast('没有更多数据了')
+			}else{
+				for( var i =0;i<10;i++){
+					var html='<div class="index_tui_item">'
+							+	'<div class="index_tui_shop_title" >'
+							+		'<img src="../image/tui_shop_2.png" class="index_shop_icon"/>'
+							+		'<span>豪食间中西餐厅（星湖店）</span>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_logo">'
+							+		'<img src="../image/near_shop-03.png"/>'
+							+		'<div class="index_tui_pf">'
+							+			'<span>'
+							+				'评分'
+							+			'</span>'
+							+			'<span>'
+							+				'4.5'
+							+			'</span>'
+							+		'</div>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_con">'
+							+		'<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>'
+							+		'<p>'
+							+			'南通市开发区 | 10.5KM | 西餐'
+							+			'<span class="mui-pull-right to_see">进去看看</span>'
+							+		'</p>'
+							+	'</div>'
+							+'</div>'
+					$("#tuijian_list").append(html);
+					loadPingjia()
+				}
+				shopCount++;
+			}
+			
+		}else{
+			mui.toast('没有更多数据了')
+		}
+	}
+	function loadCat(){
+		var width=$(window).width();
+		console.log(width)
+		$(".cat_item").css({
+			width:parseInt(width*0.35),
+		})
+		var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        slidesPerView: 'auto',
+	        paginationClickable: true,
+	        spaceBetween: 0
+	    });
+	}
+</script>

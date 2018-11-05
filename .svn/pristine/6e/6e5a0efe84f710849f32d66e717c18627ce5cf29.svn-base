@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<style>
+			*{list-style: none;margin: 0;padding: 0;outline: none;}
+			html,
+			body {
+				background-color: #fff;
+			}
+			.mui-content{background: #fff;}
+			
+			.parameter{padding: .5rem 0;}
+			.parameter li{font-size: 0.92rem;margin: 0 1rem;color: #323333;line-height: 1.8;}
+			.parameter p{margin-bottom: 0;color: #323333;}
+			.parameter span{font-weight: 700;}
+			.parameter span.block{display: block;}
+			.title{font-size: 1rem;font-weight: 600;padding: .3rem .5rem;line-height: 2;}
+			.pic_detail{line-height: 0;}
+			.pic_detail img{max-width: 100%;}
+		</style>
+	</head>
+	<body>
+		
+		<div class="mui-content">
+			<div>
+				<div class="title">
+					商品信息
+				</div>
+				<div class="parameter">
+					<ul>
+						<li>
+							<span>品名：</span>空气净化器
+						</li>
+						<li>
+							<span>产品型号：</span>KJ220F-A01
+						</li>
+						<li>
+							<span>商品毛重：</span>6.5千克
+						</li>
+						<li>
+							<span>固态净化：</span>CARD220
+						</li>
+						<li>
+							<span>适用面积：</span>15-26平方米
+						</li>
+						<li>
+							<span>额定功率：</span>48W产品
+						</li>
+						<li>
+							<span>尺寸：</span>330*230*580mm
+						</li>
+						<li>
+							<span class="block">温馨提示</span>
+							<p>1、建议每3-6个月更换一次滤芯</p>
+							<p>2、在初次启动空气净化器前，请打开面板，拿到滤网的塑料外袋，合上面板后，在启动机器</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pic_detail">
+				<div class="title">图文详情</div>
+				<div class="">
+					<img src="images/goods_detail_1.png"/>
+					<img src="images/goods_detail_1-02.png"/>
+					<img src="images/goods_detail_3.png"/>
+					<img src="images/goods_detail_4.png"/>
+					<img src="images/goods_detail_5.png"/>
+				</div>
+				
+			</div>
+			
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init();
+		</script>
+	</body>
+
+</html>

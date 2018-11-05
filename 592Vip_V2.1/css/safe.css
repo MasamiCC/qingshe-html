@@ -1,0 +1,40 @@
+/*.form_choose{
+	text-align: right;
+}*/
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+.form_safe{
+	height: 0;
+	font-size: 0;
+	padding: 25px 0  50px 0;
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom:0px;
+}
+.form_safe:last-child{
+	border-bottom: 0px;
+}
+.form_safe div{
+	display: inline-block;
+}
+.form_choose{
+	padding-right: 10px;
+}
+.form_choose1{
+	padding-right: 65px;
+}
+.form_choose4{
+	float: right;
+	color: #edb94a;
+	padding-right: 10px;
+}
+.user_right >div {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+

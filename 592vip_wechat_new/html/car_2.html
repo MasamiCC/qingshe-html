@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
+		<style type="text/css">
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.mui-content{
+				position: absolute;top: 0;bottom: 50px;width: 100%;overflow: auto;background: #efeff4;
+			}
+			.empty{
+				clear: both;
+			}
+			.car_msg{
+				border-bottom: 1px solid #eee;overflow: auto;padding: 0 10px;line-height: 30px;
+			}
+			.car_item{
+				padding:0;margin: 10px auto;background: #fff;padding-top: 5px;
+			}
+			.car_item:first-child{
+				margin-top: 0;
+			}
+			.car_do{
+				line-height: 37px;color: #666;font-size: 0.75rem;vertical-align: middle;
+			}
+			input[type=checkbox]{
+				top: 8px!important;left: 10px!important;
+			}
+			input[type=checkbox]:before{
+				font-size: 18px!important;
+			}
+			.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+				padding-left: 32px;
+			}
+			.mui-table-view{
+				background: none;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+				    color: #d4ac57;
+			}
+			.car_item.mui-active{
+				background: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">车辆管理</h1>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view" id="car_list">
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>默认车辆</label>
+			                	  <input name="checkbox1" type="checkbox" checked >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"  >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"  >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"  >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"   >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"   >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"   >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"   >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		            <li class="mui-table-view-cell car_item" >
+		            	<div class="car_msg">
+		            		<div class="mui-pull-left">
+			                	车型：小轿车
+			                </div>
+			                <div class="mui-pull-right">
+			                	号牌：苏F88888
+			                </div>
+		            	</div>
+		            	<div class="empty"></div>
+		            	<div class="car_do">
+		            		<div class="mui-pull-left">
+			                	<div class="mui-input-row mui-checkbox mui-left">
+			                	  <label>设为默认</label>
+			                	  <input name="checkbox1" type="checkbox"   >
+			                	</div>
+			                </div>
+			                <div class="mui-pull-right">
+			                	<span class="car_edit"><i class="mui-icon mui-icon-compose"></i>编辑</span>
+			                	<span class="car_del"><i class="mui-icon mui-icon-trash"></i>删除</span>
+			                </div>
+		            	</div>
+		            </li>
+		        </ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<button type="button" class="mui-btn mui-btn-yellow mui-btn-block mui_btn_block" id="add_car">添加车辆</button>
+		</nav>
+	</body>
+
+</html>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+		mui('#car_list').on('tap','.car_edit',function(){
+			//console.log(1)
+			mui.toast('编辑操作')
+		})
+		mui('#car_list').on('tap','.car_del',function(){
+			//console.log(1)
+			mui.confirm('确定删除该车辆？');
+		})
+		mui("nav").on('tap','#add_car',function(){
+			location.href='add_car.html'
+		})
+//		$('input[type=checkbox]').on('tap',function(){
+//			console.log($(this).is(":checked"))
+//		})
+		$("input[name=checkbox1]").each(function(){
+			$(this).bind({
+				'click':function(){
+					var checked=$(this).prop('checked');
+					if (checked) {
+						$("input[name=checkbox1]").prop({
+							'checked':false,
+						})
+						$(this).prop({
+							'checked':true,
+						});
+					}
+				}
+			})
+		})
+	</script>

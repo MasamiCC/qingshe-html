@@ -1,0 +1,1257 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_detail1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/imageView.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<style type="text/css">
+			body,.mui-content{
+				background: #F4F4F4;
+			}
+			.blur{
+				overflow: hidden;
+			}
+			.blur img{
+				/*filter: url(blur.svg#blur); *//* FireFox, Chrome, Opera */  
+       			width: 100%;
+			    /*-webkit-filter: blur(50px); /* Chrome, Opera */  
+			       /*-moz-filter: blur(50px);   
+			        -ms-filter: blur(50px);       
+			            filter: blur(50px);   
+       
+    			filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=50, MakeShadow=false); /* IE6~IE9 */  
+			}
+			.cat_sel_title .mui-pull-right{
+				margin-right: 10px;
+				font-size: 0.75rem;
+				font-weight:normal ;
+				color: #d4ac57;
+				line-height: 2.5;
+			}
+			.cat_sel_title{
+				border-bottom:none;font-size: 0.9375rem;font-weight: 500;
+				margin-bottom: 0;
+				padding: 0.3rem 0;
+				text-align: center;
+			}
+			.mui-ellipsis{
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				white-space: normal;
+			}
+			.index_item{
+				padding: 0;
+			}
+			.pingjia{
+				font-size: 0;line-height: 0;
+			}
+			.pingjia img{
+				width: 22%;font-size: 0;margin-right: 3%;
+			}
+			.more{
+				position: relative;text-align: center; top: -6px;
+			}
+			.more1{
+				position: relative;text-align: center; 
+			}
+			
+			.more a {
+				display: inline-block;width: 25%;margin: 0 auto;position: relative;font-size: 0.75rem;text-align: center;color: #d4ac57;
+				line-height: 3;
+			}
+			.more1 a{
+				display: inline-block;width: 34%;margin: 0 auto;position: relative;font-size: 0.75rem;text-align: center;color: #d4ac57;
+				line-height: 3;
+			}
+			.more a:after{
+				/*position: relative;*/
+				right: 0;color: #d4ac57;top: 50%;
+			}
+			.pingjia p{
+				line-height: 1.5;
+			}
+			.mui-media-body{
+				position: relative;
+				left: 8px;
+			}
+			.line_p{
+				position: relative;
+				left: 1px;
+				font-weight:normal;
+				color: #B6B6B6;
+				font-size: 0.625rem;
+			}
+			.origin{
+				text-decoration: line-through;
+			}
+			.blur{
+				position: relative;
+			}
+			.pics{
+				position: absolute;
+				top: 140px;
+				right: 8px;
+			}
+			.pics img{
+				width: 30px;
+			}
+			.score{
+				text-align: center;
+				display: inline-block;
+				position: absolute;
+				top: 20px;
+				right: 5px;
+				background: rgba(50,42,35,0.9);
+				color: #D4AC57;
+				padding: 3px 13px;
+			}
+			.score li{
+				line-height: 32px;
+			}
+			.score1{
+				font-size: 0.8125rem;
+				border-bottom: 1px solid #D4AC57;
+			}
+			.score2{
+				font-size: 0.875rem;
+			}
+			.biaozhi{
+				position: absolute;
+				top: 162px;
+				left: 47%;
+				z-index: 1;
+			}
+			.biaozhi img{
+				width: 35px;border-radius:3rem;
+			}
+			.tickets{
+				position: absolute;
+				top: 145px;
+				left: 5px;
+			}
+			.ticket{
+				padding: 3px 8px;
+				background: #CDA454;
+				font-size: 0.625rem;
+				color: white;
+				border-radius: 12px;
+				
+			}
+			.title{
+				font-size: 0.625rem;
+			}
+			.keman,.theage{
+				font-size: 0.5625rem;
+			}
+			.keman{
+				padding: 2px 7px;
+				background: #3DA0F1;
+				color: white;
+				border-radius: 12px;
+				margin-right: 6px;
+			}
+			.theage{
+				padding: 2px 7px;
+				background: #70C38E;
+				color: white;
+				border-radius: 12px;
+			}
+			.lis{
+				padding: 2px 10px;
+			}
+			.mui-table-view-cell:after{
+				height: 0px;
+			}
+			.grey{
+				color: #E6E6E6;
+			}
+			.grey1{
+				color: #ADADAD;
+			}
+			.grey2{
+				color: #666;
+			}
+			.firstli{
+				padding-top:24px ;
+			}
+			.title2{
+				font-size: 0.9375rem;
+				color: #000;
+			}
+			.address{
+				font-size: 0.75rem;
+				color: #262626;
+				display: inline-block;width: 70%;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    -webkit-text-overflow: ellipsis;
+			    line-height: 30px;
+			}
+			.tubiao img{
+			    /*max-width: 2rem;*/
+			    width: 30px;
+			}
+			.tubiao{
+				vertical-align: bottom;
+			}
+			.lastli{
+				padding-bottom: 10px;text-align: left;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				border-bottom: 0px;
+			}
+			.allscroll .mui-segmented-control.mui-segmented-control-inverted{
+				/*padding-top: 12px;*/
+				height: 50px;
+			}
+			.allscroll1 .mui-segmented-control.mui-segmented-control-inverted{
+				/*padding-top: 12px;*/
+				height: 80px;
+			}
+			.mui-scroll a{
+				width: ;
+				color: #707070;!important;
+			}
+			/*.mui-scroll a div{
+				color: #A0A0A0;font-size: 0.8125rem;
+			}*/
+			
+			.scrollactive{
+				/*color: #707070;*/
+				/*color: red;*/
+			}
+			.mui-segmented-control .mui-control-item{
+				line-height: 21px;
+			}
+			.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				padding: 0 21px;
+			}
+			.name{
+				font-size: 0.625rem;
+			}
+			.index_item{
+				margin-top: 10px;
+				margin-bottom: 0px;
+			}
+			.allscroll{
+				padding-top: 12px;
+				background: #fff;
+				padding-bottom: 3px;
+			}
+			.medias img,.media1 img{
+				width: 70px;
+			}
+			.medias{
+				display: inline-block;
+				border-left: 1px solid #DFDFDF; padding-left: 10px;
+				/*border-left: 1px solid red;*/
+			}
+			.mui-table-view-cell>a:not(.mui-btn){
+				padding: 0px 23px;
+			}
+			.discount{
+				color: #D4AC57;
+				font-size: 0.9375rem;
+			}
+			.line{
+				position: absolute;
+				left: 56px;
+				top: -3px;
+			}
+			.last_line_title{
+				font-size: 0.875rem;
+				color: #333;
+				line-height: 1.5;
+			}
+			.allscroll1 .mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				padding: 0px 56px 0px 10px;
+				/*margin-right: 1px solid red!important;*/
+			}
+			.mui-segmented-control .mui-control-item{
+				overflow: inherit;
+			}
+			.last_line_intro{
+				font-size: 0.625rem;line-height: 1.8;
+			}
+			p{
+				margin-bottom: 0px;
+			}
+			.line_p{
+				padding-top: 5px;line-height: 1.8;position: absolute;bottom: 0;right: 0;
+			}
+			h5{
+				margin-bottom: 0px;
+			}
+			/*.mui-table-view-cell:active{
+				background: none!important;
+			}*/
+			.lis.mui-active{
+				background: #fff!important;
+			}
+			.cantingleft img {
+			    max-width: 45px;
+			    border-radius: 50px;
+			}
+			.cantingleft{
+				padding-left: 10px;
+			}
+			.canting div{
+				display: inline-block;
+			}
+			.canting{
+				margin-top: 10px;
+			}
+			.cantingright{
+				margin-left: 5px;
+				vertical-align: top;
+				height: 45px;
+    			line-height: 45px;
+    			font-size: 0.9rem;
+    			color: #333;
+    			font-weight: bold;
+			}
+			.index_tui_item{
+				/*padding-bottom: 15px;*/
+				/*border-bottom: 0px;*/
+			}
+			.pingjia_time{
+				font-size: 0.625rem;
+			}
+			.pingjia p{
+				font-size: 0.75rem;
+			}
+			.media1{
+				display: flex;text-align: left;border-left: 1px solid #dfdfdf; padding-left: 8px;padding-right: 5px;
+			}
+			.allscroll1 a:first-child .media1{
+				border-left: none;
+			}
+			.allscroll1 a{
+				padding-right: 0!important;
+			}
+			.media1 >div:first-child{
+				font-size: 0;line-height: 0;
+			}
+
+			/*#fujin_tui div{
+				display: inline-block;
+			}*/
+			.index_tui_item{
+				width: 7.5rem;
+			}
+			.index_tui_pf span{
+				/*writing-mode:lr-tb*/
+			}
+			.index_tui_pf span{
+				display: inline-block;
+				padding: 0 0;
+			}
+			.index_tui_pf span:first-child{
+				border-bottom:none;
+				border-right: 1px solid #d4ac57;
+				writing-mode:tb;
+				vertical-align: middle;
+			}
+			.index_tui_pf span:last-child{
+				vertical-align: middle;
+				padding: 1px 7px;
+			}
+			.index_tui_pf{
+				width: 50%;
+				padding: 5px 0px;
+				text-align: center;
+				right: 5px;
+    			bottom: 10px;
+    			top: inherit;
+    			font-size: 0.75rem;
+			}
+			.index_tui_shop_con h3{
+				white-space: normal; 
+			}
+			.user_xinyu img,.heart img{
+				width: 0.8125rem;
+			}
+
+			.index_tui_item{
+				/*margin:0 10px;*/
+				border-bottom:0;
+			}
+			.footer{
+				text-align: center;
+				font-size: 0.75rem;
+			}
+			.detail_footer{
+				color: #333;
+				text-align: center;
+				font-size: 0.75rem;
+			}
+			.index_tui_shop_con{
+				margin: 0 0;
+				text-align: left;
+			}
+			.index_tui_shop_con p{
+				line-height: 1.5;
+			}
+			#fujin_tui .mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				padding: 0 0.25rem!important;
+			}
+			#fujin_tui .mui-segmented-control.mui-scroll-wrapper {
+			    height: 16rem;
+			}
+			.tuijian{
+				    margin:0px 10px;
+			}
+			#fujin_tui{
+				    /*margin-bottom: 65px;*/
+			}
+			.grey{
+				color: #DDDDDD;
+			}
+			.keyuding{
+				position: absolute;
+				/*left: 0px;*/
+				top: 0px;
+			}
+			.keyuding img{
+				width: 2.375rem;
+			}
+			.buy_btn{
+				background: #d4ac57;color: #fff;line-height: 50px;display: inline-block;padding: 0 2rem;font-size: 0.875rem;
+			}
+			.detail_footer{
+				padding-left: 10px;
+			}
+			.detail_footer i{
+				font-size: 1rem;line-height: 1;margin-top: 0.5rem;display: block;
+			}
+			.fa-star{
+				color: #d4ac57;
+			}
+			/*2017-08-22*/
+			.allscroll1{
+				font-size: 0;margin: 0 3px;
+			}
+			.media1{
+				display: inline-block;width: 50%;
+				border-left: none;
+				text-align: center;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.media1 >div{
+				margin: 0 3px;
+			}	
+			.media1 .mui-media-body{
+				text-align: left;left: 0;
+			}
+			.media1 .line_p{
+				position: relative;
+				left: 0;
+				color: #999;
+				padding-top: 0;
+				line-height: 1;
+				font-size: 0.75rem;
+				width: 95%;
+			} 	
+			.last_line_intro {
+				font-size: 0.75rem;
+				line-height: 1.5;	
+				width: 95%;
+			}
+			.media1 img{
+				width: 100%;
+			}	
+			.discount{
+				font-size: 0.75rem;
+			}
+			.last_line_title{
+				line-height:1.5;font-weight: 500;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    -webkit-text-overflow: ellipsis;
+			}
+			.tuijian{
+				margin: 0;padding-bottom: 0.5rem;
+			}
+			.tuijian .mui-table-view:before,.tuijian .mui-table-view:after{
+				height: 0;
+			}
+			.tuijian li.mui-media{
+				display: flex;
+				align-items: flex-start;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+				padding-left: 0;
+				padding-right: 0;
+				border-bottom:1px solid  #eee;
+				font-size: 0.875rem;
+				color: #333;
+			}
+			.tuijian li.mui-media:last-child{
+				border-bottom: 0;
+			}
+			.tuijian li> div:first-child{
+				flex: 2;
+				max-width: 170px;
+				margin-right: 0.5rem;
+				margin-left: 10px;
+			}
+			.tuijian li> div:first-child img{
+				max-width: 100%;
+				height: inherit;
+				width: 100%;
+			}
+			.tuijian li> div:last-child{
+				flex: 3;
+			}
+			.tuijian_intro{
+				color: #666;
+				font-size: 0.75rem;
+			}
+			.tuijian_pingjia{
+				font-size: 0;
+				vertical-align: middle;
+			}
+			.tuijian_pingjia span{
+				font-size: 0.875rem;
+				vertical-align: middle;
+				font-weight: 500;
+				margin-left: 0.5rem;
+			}
+			.tuijian_pingjia img{
+				margin: 1.5px;
+				vertical-align: middle;
+				width: 0.8rem;
+			}
+			.tuijian_title{
+				line-height: 2;font-weight: 400;font-size: 0.9rem;
+			}
+			.shop_intro{
+				padding: 0 10px;padding-bottom: 10px;
+			}
+			.shop_intro img{
+				max-width: 100%;
+				
+			}
+			.shop_intro p{
+				text-indent: 1.5rem;font-size: 0.75rem;line-height: 1.8;color: #333;
+			}
+			.mui-navigate-right:after, .mui-push-right:after{
+				color: #d4ac57;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color: #333;
+			}
+			.mui-content {
+			    position: absolute;
+			    top: 0;
+			    bottom: 44px;
+			    width: 100%;
+			    overflow: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+			<div class="">
+				<div class="blur">
+					<img src="../image/carbck.png"/>
+				</div>
+				<div class="score">
+			  		<ul>
+			  			<li class="score1">评分</li>
+			  			<li class="score2">4.5</li>
+			  		</ul>
+		  		</div>
+		  		<div class="pics">
+			  			<img src="../image/pics.png" onclick="showNj()"/>
+			  			<div class="" style="display: none;">
+	    					<img src="../image/backtop.png" data-preview-src="" data-preview-group="1" id="img1">
+	    					<img src="../image/banner@2X.png" data-preview-src="" data-preview-group="1" id="">
+	    					<img src="../image/biaozhi.png" data-preview-src="" data-preview-group="1" id="">
+	    				</div>
+		  		</div>
+		  		<div class="tickets">
+			  			<span class="ticket">优惠券</span>
+		  		</div>
+		  		<div class="biaozhi">
+			  			<img src="../image/biaozhi.png"/>
+		  		</div>
+			</div>
+			<div class="" style="text-align: center;">
+				<ul class="mui-table-view ">
+					<li class="mui-table-view-cell lis firstli">
+				          <div class="title2">
+				          		保时捷体验中心	
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell lis">
+				          <div class="title">
+				          		<span class="grey1">开发区</span> <span class="grey">|</span> <span class="grey1">10.5KM</span> <span class="grey">|</span> <span class="grey1">汽车</span>  
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell  lis">
+				          <div class="title grey2">
+				          		营业时间 11:50 ~12:25	
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell lis">
+				          <span class="keman">
+				          		客满
+				          </span>
+				          <span class="theage">
+				          		可预订
+				          </span>
+				    </li>
+				    <li class="mui-table-view-cell lis lastli">
+				          <span class="address">
+				          		星湖101广创意设计中心18楼星湖101广创意设计中心18楼
+				          </span>
+				          <div class="mui-pull-right">
+				          	<span class="tubiao" style="padding-right: 10px;">
+				         	<img src="../image/lijizhidian.png"/>
+				        </span>
+				        <span class="tubiao">
+				        	<img src="../image/lijidaohang.png"/>
+				        </span>
+				          </div>
+				         
+				    </li>
+				</ul>
+				<div class="detail_scroll allscroll">
+		    		<div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+		    		    <div class="mui-scroll">
+		    		        
+		    		           
+				    				<a href="buy.html" class="mui-control-item">
+				    					<li class="lie scrollactive">
+						                <i class="icon iconfont icon-dingzhi2"></i>
+						                    <div class="name">定制</div>
+						                </li>
+				    				</a>
+				    		
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-diandan"></i>
+						                    <div class="name">点单</div>
+						                </li>
+				    				</a>
+				    			
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-yixihu"></i>
+						                    <div class="name">易洗护</div>
+						                </li>
+				    				</a>				    			
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-gouwu"></i>
+						                    <div class="name">购物</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-maidan"></i>
+						                    <div class="name">买单</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-lvyou1"></i>
+						                    <div class="name">旅游</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item " id="wifi">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-WiFi"></i>
+						                    <div class="name">wifi</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-tingche"></i>
+						                    <div class="name">停车</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-jiudian"></i>
+						                    <div class="name">酒店</div>
+						                </li>
+				    				</a>
+		    		    </div>
+		    		</div>
+		    		
+		    	</div>   
+			</div>
+			<div class="index_item shop_intro">
+				<h3 class="cat_sel_title">商户介绍</h3>
+				<div class="">
+					<img src="../image/banner@2X.png"/>
+					<p>
+						当我们谈到德国时，我想除了世界大战，也就是德国汽车了！以舒适、豪华著称的奔驰；以灵活操控著称的宝马了；以启迪创新自我标榜的奥迪；还有保时捷。每一个品牌都如雷贯耳般响亮！而保时捷无疑是他们中的异类，也最具传奇了！
+					</p>
+				</div>
+				<div class="more1 ">
+	    			<a href="commercial_tenant.html" class="mui-navigate-right">查看详情</a>
+	    		</div>
+			</div>
+			<div class="index_item shop_intro">
+				<h3 class="cat_sel_title">奢探评价</h3>
+				<div class="" style="text-indent: 1.5rem;color: #333;">
+						      当我们谈到德国时，我想除了世界大战，也就是德国汽车了！以舒适、豪华著称的奔驰；以灵活操控著称的宝马了；以启迪创新自我标榜的奥迪；还有保时捷。每一个品牌都如雷贯耳般响亮！而保时捷无疑是他们中的异类，也最具传奇了！
+
+				</div>
+			</div>
+			<div class="index_item" id="lasted_line">
+				<h3 class="cat_sel_title">店铺推荐</h3>
+				<div class="detail_scroll allscroll1">
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object " src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <h5 class="last_line_title">洗车</h5>
+			                <p class=" last_line_intro ">月售5例 <span class="mui-pull-right">好评率90%</span></p>
+			                <p class="line_p ">
+			                	原价：<small class="origin">￥600</small>
+			                	<span class="mui-pull-right discount">现价：￥500</span>
+			                </p>
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object" src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <h5 class="last_line_title">精致洗车</h5>
+			                <p class=" last_line_intro ">月售5例 <span class="mui-pull-right">好评率90%</span></p>
+			                <p class="line_p ">
+			                	原价：<small class="origin">￥600</small>
+			                	<span class="mui-pull-right discount">现价：￥500</span>
+			                </p>
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object" src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <h5 class="last_line_title">洗车</h5>
+			                <p class=" last_line_intro ">月售5例 <span class="mui-pull-right">好评率90%</span></p>
+			                <p class="line_p ">
+			                	原价：<small class="origin">￥600</small>
+			                	<span class="mui-pull-right discount">现价：￥500</span>
+			                </p>
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object " src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <h5 class="last_line_title">洗车</h5>
+			                <p class=" last_line_intro ">月售5例 <span class="mui-pull-right">好评率90%</span></p>
+			                <p class="line_p ">
+			                	原价：<small class="origin">￥600</small>
+			                	<span class="mui-pull-right discount">现价：￥500</span>
+			                </p>
+			            </div>
+					</div>
+		    		<!--<div class="mui-scroll mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+						<div class="mui-scroll">
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+							    <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						</div>
+				</div>-->
+				</div>
+				<div class="more">
+	    			<a href="" class="mui-navigate-right">所有商品</a>
+	    		</div>
+			</div>
+			<div class="index_item">
+				<h3 class="cat_sel_title">店铺评价</h3>
+				<div class="shop_detail_pj_item">
+	    			<div class="shop_detail_pj_left">
+	    				<img src="../image/nohead.png" onerror="this.src='../image/nohead.png'"/>
+	    			</div>
+	    			<div class="shop_detail_pj_right">
+	    				<ul>
+	    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time mui-pull-right">2017-03-21</span></li>
+	    					<li class="user_xinyu">
+	    						<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+	    					</li>
+	    					<li class="pingjia">
+	    						<p>
+	    							非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+	    						</p>
+	    						<div>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    						</div>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="more1 ">
+	    			<a href="" class="mui-navigate-right">更多评价</a>
+	    		</div>
+	    		
+			</div>
+			
+		   	<div class="index_item" id="fujin_tui">
+		   		<h3 class="cat_sel_title">附近推荐</h3>
+		   		<div class="detail_scroll tuijian">
+		   			<ul class="mui-table-view">
+		   			    <li class="mui-table-view-cell mui-media">
+		   			    	<div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			        
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			</ul>
+		    		<!--<div class="mui-scroll mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+						<div class="mui-scroll">
+							<a href="javascript:;" class="mui-control-item ">
+					   		<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	</a>
+				    	<a href="javascript:;" class="mui-control-item ">
+							<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	</a>
+				    	<a href="javascript:;" class="mui-control-item ">
+							<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	  </a>
+						 </div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		  
+		</div>
+		<nav class="mui-bar mui-bar-tab footer">
+		   <div class="mui-pull-left detail_footer" >
+		        <i class="fa fa-star-o"></i>
+		        <span class="mui-tab-label">收藏</span>
+		   </div>
+		   <div class="mui-pull-right">
+		   		<span class="buy_btn">买单</span>
+		   </div>
+		</nav>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.footer').on('tap','.detail_footer',function(){
+		
+		$(this).find('i').toggleClass('fa-star-o')
+		$(this).find('i').toggleClass('fa-star')
+		if ($(this).find('i').hasClass('fa-star-o')) {
+			$(this).find('span').html('收藏')
+		} else{
+			$(this).find('span').html('取消')
+		}
+	})
+	function showNj(){
+		var previewImageApi = mui.previewImage();
+		previewImageApi.open(document.getElementById("img1"));
+	}
+	$(function(){
+		$('#wifi').on('tap',function(){
+			mui.alert("<P style='text-align:left;width:80%;margin:0 auto'>wifi名称：1233\r\nwifi密码 ：123456</P>",'商家WIFI')
+		})
+		//loadPingjia()
+		
+		
+//		$('.lie').each(function(){
+//			$(this).bind({
+//				tap:function(){
+//					if(!$(this).hasClass('scrollactive')){
+//						$('.lie').removeClass('scrollactive');
+//						$(this).addClass('scrollactive');
+//					
+////					}else if($(this).hasClass('scrollactive')){
+//						
+//					}
+//				}
+//			})
+//		})
+		
+		
+	})
+	function loadPingjia(){
+		$(window).scroll(function(){
+			var top=$(window).scrollTop();
+			var height=$(window).height()
+			$(".index_tui_pf").each(function(){
+				var offsetTop=$(this).offset().top;
+				if (offsetTop-top<=height) {
+					$(this).addClass('active');
+				}
+			})
+			if ($(document).height()-top==height) {
+				loadMoreShop()
+			}
+		})
+	}
+	var shopCount=1;
+	var shopEnd=false;
+	function loadMoreShop(){
+		if (!shopEnd) {
+			if (shopCount>=2) {
+				shopEnd=true;
+				mui.toast('没有更多数据了')
+			}else{
+				for( var i =0;i<10;i++){
+					var html='<div class="index_tui_item">'
+							+	'<div class="index_tui_shop_title" >'
+							+		'<img src="../image/tui_shop_2.png" class="index_shop_icon"/>'
+							+		'<span>豪食间中西餐厅（星湖店）</span>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_logo">'
+							+		'<img src="../image/near_shop-03.png"/>'
+							+		'<div class="index_tui_pf">'
+							+			'<span>'
+							+				'评分'
+							+			'</span>'
+							+			'<span>'
+							+				'4.5'
+							+			'</span>'
+							+		'</div>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_con">'
+							+		'<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>'
+							+		'<p>'
+							+			'南通市开发区 | 10.5KM | 西餐'
+							+			'<span class="mui-pull-right to_see">进去看看</span>'
+							+		'</p>'
+							+	'</div>'
+							+'</div>'
+					$("#tuijian_list").append(html);
+					loadPingjia()
+				}
+				shopCount++;
+			}
+			
+		}else{
+			mui.toast('没有更多数据了')
+		}
+	}
+	
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+	scrollY: false, //是否竖向滚动
+	
+	scrollX: true, //是否横向滚动
+	
+	startX: 0, //初始化时滚动至x
+	
+	startY: 0, //初始化时滚动至y
+	
+	indicators: true, //是否显示滚动条
+	
+	deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	
+	bounce: true //是否启用回弹
+	
+	});
+//	mui('.mui-scroll-wrapper').scroll().setTranslate(200,0);//100毫秒滚动到顶
+</script>

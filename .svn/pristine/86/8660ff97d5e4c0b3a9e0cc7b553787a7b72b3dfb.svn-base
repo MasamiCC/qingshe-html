@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>活动说明</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			body{background: #fff;}
+			.mui-content{background: #fff;margin: 0 0.75rem;}
+			h4{color: #333;font-size: 0.9rem;line-height: 2;}
+			p{color: #666;line-height: 1.8;font-size: 0.8rem;margin-bottom: 0.5rem;}
+			p span{font-weight: 500;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<h4>商铺折扣券</h4>		  
+			<p><span>一、活动时间</span><br />2017年12月24日-2018年1月1日 </p>
+			<p><span>二、使用规则</span>
+				<br />1、具体内容：在轻奢点评APP或微信商城点击有字样的商户，进行砍价。会员可砍一次。邀请朋友帮忙砍价，分享的朋友越多，折扣力度越大，更有机会获得此商户消费的最低折扣优惠。
+				<br />2、使用条件：折扣不可叠加。优惠不可同时使用。
+				<br />3、使用范围：仅限参与此次砍价活动的商户使用。  
+</p>
+			
+			<h4>全平台轻奢神券</h4>
+			<p><span>一、活动时间</span><br />2017年12月24日-2018年1月1日 </p>
+			<p><span>二、参与方式</span>
+				<br />1、初始神券：会员进入活动砍初始折扣神券，黑卡会员免费再砍一次；
+				<br />2、砍券升级：用户可继续分享邀请好友帮助砍券（好友需为轻奢点评注册用户） ，砍券折扣额度随机，存在砍券失败的几率；
+				<br />3、激活生效：砍券结束后，需点击激活使用，才能获得轻奢折扣神券，若逾期未激活折扣神券，则视为自动放弃 。 
+</p>
+			<p><span>三、活动说明</span>
+				<br />1、获得折扣神券后，可在我的-优惠券中查看；
+				<br />2、该折扣神券仅限活动期间使用，活动期间每位账号仅有一次领取折扣神券的机会。每个设备/每个账号/每张订单仅限使用一次，不可与店铺券、满减等优惠券叠加使用，具体使用商品范围可在订单结算页面优惠中显示；
+				<br />3、折扣神券使用无门槛，全平台活动商户可用，具体使用范围见活动说明,活动最终解释权归轻奢点评。</p>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

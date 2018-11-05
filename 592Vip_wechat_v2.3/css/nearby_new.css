@@ -1,0 +1,425 @@
+/*all*/
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mui-content,.nearby_map,.index_item{
+	/*position: absolute;*/
+    left: 0;
+    right: 0;
+}
+.mui-content{
+	width: 100%;
+	overflow: hidden;
+	left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 50px;
+}
+.nearby_map{
+	width: 100%;
+	height: 150px;
+	left: 0;
+    right: 0;
+    top: 0px;
+}
+.index_item{
+	width: 100%;
+	/*height: 45%;*/
+	/*min-height: 375px;*/
+	left: 0;
+    right: 0;
+}
+/*.near_top{
+   	position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #F4F4F4;
+}*/
+.cat_sel{
+	width: 100%;
+    top: 0px;
+}
+/*all*/
+
+/*map*/
+#mapContainer{
+				width: 100%;height: 100%;position: absolute;overflow: hidden;
+			}
+			#mapContainer{
+				width: 100%px;
+				height: 150px;
+				display: inline-block;
+				position: static;
+			}
+	/*地图信息*/
+	   .info {
+            border: solid 1px silver;
+        }
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 42px;
+            text-align: center;
+        }
+       
+        div.info-middle {
+            font-size: 12px;
+            padding: 6px;
+            line-height: 20px;
+            text-align: left;
+            
+        }
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+           text-align: left;
+        }
+        .close{
+        	margin-bottom: 0;
+        	margin-right: 8px;
+        }
+	/*地图信息*/
+	.info{
+		border: 0;
+		background: url(../image/nearby_top_bg.png) no-repeat bottom center;
+		padding-bottom: 5px;
+	}
+	div.info-middle{
+		border-radius: 17px;
+	}
+	.near_title{
+		display: inline-block;
+		width: 120px;
+		text-overflow: ellipsis;
+			white-space: nowrap;
+		    overflow: hidden;
+	}
+	.info-middle>img{
+		width: 16px;
+		margin-right: 5px;
+	}
+	.info-middle .fa{
+	vertical-align: top;
+    font-size: 24px;
+    color: #ccc;
+	}
+	    
+/*map*/
+
+/*nearby_top*/
+
+.index_item_title h4{
+	font-size: 1rem;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+.index_item_title{
+	text-align: center;
+	background: #fff;
+	line-height: 1.2;
+}
+/*nearby_top*/
+
+/*swiper container*/
+p {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+.index_item_title{
+	border-top: 0;
+}
+.index_tui_shop_logo img {
+    max-width: 100%;
+    width: 100%;
+}
+.score img {
+    margin: 0 3px;
+    width: 0.875rem!important;
+}
+
+.mui-segmented-control.mui-scroll-wrapper {
+    height: 40px;
+}
+
+/*swiper container*/
+
+/*nearby*/
+.index_item{
+	background: #F4F4F4;
+}
+.new_top{
+	line-height: 0;
+	font-size: 0;
+}
+/*nearby*/
+
+/*type*/
+.cat_con_title{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    overflow: hidden;
+
+}
+.cat_sel{text-align: center;margin-bottom:0.625rem ;background: #fff;}
+.cat_sel_title{text-align: center;color: #fff;background: #333;margin: 0.875rem auto;font-size: 0.875rem;padding: 0.5rem 1rem;display: inline-block;}
+.cat_item{vertical-align: top;    padding: 0!important;    margin-left: 0.5rem;}
+.cat_item_logo{/*max-width: 100%;*/  width: 123px;height: 164px;}
+.cat_logo{
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+}
+.cat_con{text-align: left;}
+.cat_pf{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	width: 50%;
+	background: rgba(34,25,16,0.9);
+	color: #d4ac57;
+	text-align: center;
+	padding: 0.2rem 0  ;
+	font-size: 0.95rem;
+	overflow: hidden;
+	line-height: 2.5;
+}
+.cat_pf span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.85rem;
+}
+.cat_pf span:first-child{
+	width: 1rem;
+	display: inline-block;
+	white-space: normal;
+	line-height: 1.2;
+	border-right: 1px solid #d4ac57;
+	padding-right: 1.2rem;
+	font-size: 0.75rem;
+}
+.cat_con_title{font-size: 0.875rem;line-height: 2;}
+.cat_con_juli{font-size: 0.75rem;margin-bottom: 0;word-break: break-all;line-height: 1.5;}
+.cat_con_type{font-size: 0.75rem;margin-bottom: 0;line-height: 1.5;}
+/*tab container*/
+.mui-fullscreen{
+	top: 334px;
+	bottom: 0px;
+}
+#item1mobile .mui-fullscreen{
+	top: 0px;
+}
+.mui-slider-group{
+	position: absolute;
+	width: 100%;
+	/*height:500px;*/
+	/*overflow: auto;*/
+}
+
+	.mui-pull-top-tips {
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		margin-left: -25px;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		z-index: 1;
+	}
+	.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+		height: 100%;
+	
+	}
+	.mui-bar~.mui-pull-top-tips {
+		top: 24px;
+	}
+	.mui-pull-top-wrapper {
+		width: 42px;
+		height: 42px;
+		display: block;
+		text-align: center;
+		background-color: #efeff4;
+		border: 1px solid #ddd;
+		border-radius: 25px;
+		background-clip: padding-box;
+		box-shadow: 0 4px 10px #bbb;
+		overflow: hidden;
+	}
+	.mui-pull-top-tips.mui-transitioning {
+		-webkit-transition-duration: 200ms;
+		transition-duration: 200ms;
+	}
+	.mui-pull-top-tips .mui-pull-loading {
+		margin: 0;
+	}
+	.mui-pull-top-wrapper .mui-icon,
+	.mui-pull-top-wrapper .mui-spinner {
+		margin-top: 7px;
+	}
+	.mui-pull-bottom-tips {
+		text-align: center;
+		background-color: #fff;
+		font-size: 15px;
+		line-height: 40px;
+		color: #777;
+	}
+	.mui-pull-top-canvas {
+		overflow: hidden;
+		background-color: #fafafa;
+		border-radius: 40px;
+		box-shadow: 0 4px 10px #bbb;
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+	}
+	.mui-pull-top-canvas canvas {
+		width: 40px;
+	}
+	.mui-slider-indicator.mui-segmented-control {
+		background-color: #fff;
+	}
+.mui-slider-group .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #f8a120;
+    border-radius: 12px;
+    border: 1px solid #f8a120;
+    /*margin: 5px;*/
+    padding: 0px 13px;
+    font-size: 0.625rem;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+	font-size: 0.9375rem;
+	padding: 0px 16px;
+	/*margin: 0 10px;*/
+	color: #333;
+}
+.mui-slider-group .mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+	font-size: 0.625rem;
+	color: #666;
+	 border-radius: 12px;
+    border: 1px solid #ccc;
+}
+.mui-slider-group .mui-segmented-control .mui-control-item{
+	line-height: 22px;
+	height: 22px;
+	margin-top: 9px;
+}
+.nearby_item{
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+}
+.index_tui_pf{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 3rem;
+	background: rgba(34,25,16,0.9);
+	color: #d4ac57;
+	text-align: center;
+	padding: 0 0.4rem  ;
+	font-size: 0.95rem;
+	overflow: hidden;
+	/*display: none;*/
+}
+.index_tui_pf span{
+	line-height: 1.7;padding: 0.2rem 0;display: block;
+}
+.index_tui_pf span:first-child{
+	border-bottom: 1px solid #d4ac57;margin: 0 auto;
+	
+}
+/*tab container*/
+#sliderSegmentedControl{
+	background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-bottom: 0;border-top: 0;
+}
+#sliderSegmentedControl .mui-active{
+	color: #f8a120;
+	border-bottom: 2px solid #f8a120;
+}
+
+/*轻奢推荐*/
+.nearby_item_con{
+	background: #fff;
+	padding-bottom: 15px;
+}
+.nearby_item_first{
+	font-size: 0;
+	line-height: 0;
+	padding: 0 10px;
+	margin-bottom: 5px;
+}
+.nearby_item_first>div{
+	display: inline-block;
+}
+.nearby_item_item{
+	vertical-align: middle;
+}
+.nearby_item_item>img{
+	max-width: 3rem;
+	border-radius: 4rem;
+	margin-right: 0.75rem;
+}
+.nearby_item_item_title{
+	color: #333;
+	font-size: 0.9375rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.nearby_item_item_score img{
+	margin: 0 3px;
+    width: 0.875rem!important;
+}
+ .nearby_item_item_score {
+ 	width: 140px;
+ 	line-height: 1.5;
+}   
+.nearby_item_item_item{
+	color: #666;
+	font-size: 0.875rem;
+	line-height: 1.5;
+}
+.nearby_item_last{
+	color: #333;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin: 0 10px;
+}
+/*dibu */
+
+.score{font-size: 0;line-height: 0;padding-bottom: 5px;}
+.mui-tab-label{
+	font-size: 0.875rem;
+	color: #222;
+}
+.bottom_img img{
+	width: 20px;
+}
+.mui-bar{
+	background: #fff;
+	padding-top: 10px;
+}
+.bottom_active{
+	color: #f9b44d;
+}
+.mui-tab-item p{
+	text-align: center;
+	    padding-bottom: 0px;
+}
+

@@ -1,0 +1,1049 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_detail1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_detail_20171026.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/imageView.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<style type="text/css">
+			.mtickets{
+				text-align: left;border-top: 1px solid #eee;line-height: 2;font-size: 0.875rem;
+				color: #333;
+				padding: 15px 10px;
+			}
+			.mui-table-view-cell>a:not(.mui-btn){
+				padding-left: 15px;
+			}
+			.mtickets .confirm_r{
+				font-size: 0.875rem;color: #999;margin-right: 0.5rem;
+			}
+			.mtickets .micon{
+				color: #fff;
+				background: #c187e9;
+				font-size: 0.65rem;
+				border-radius: 3px;
+				display: inline-block;
+				width: 0.875rem;text-align: center;
+				height: 0.875rem;
+				line-height: 1.5;
+				vertical-align: middle;
+			}
+			.mtickets #ticket_list li{
+				padding-bottom: 0;
+				padding-top: 0;
+				padding-left: 15px;
+			}
+			.mtickets #ticket_list li:after{
+				left: 15px;
+			}
+			.mtickets label{
+				padding-left: 0;
+			}
+			#ticket_list .mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+				right: 0;
+			}
+			.shop_msg:after{
+				height: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+			<div class="shop_card">
+				<div class="blur">
+					<img src="../image/carbck.png"/>
+				</div>
+				<div class="score">
+			  		<ul>
+			  			<li class="score1">评分</li>
+			  			<li class="score2">4.5</li>
+			  		</ul>
+		  		</div>
+		  		<div class="pics">
+			  			<img src="../image/pics.png" onclick="showNj()"/>
+			  			<div class="" style="display: none;">
+	    					<img src="../image/backtop.png" data-preview-src="" data-preview-group="1" id="img1">
+	    					<img src="../image/banner@2X.png" data-preview-src="" data-preview-group="1" id="">
+	    					<img src="../image/biaozhi.png" data-preview-src="" data-preview-group="1" id="">
+	    				</div>
+		  		</div>
+		  		<!--<div class="tickets">
+			  			<span class="ticket">优惠券</span>
+		  		</div>-->
+		  		<div class="biaozhi">
+			  			<img src="../image/biaozhi.png"/>
+		  		</div>
+			</div>
+			<div class="" style="text-align: center;">
+				<ul class="mui-table-view shop_msg">
+					<li class="mui-table-view-cell lis firstli">
+				          <div class="title2">
+				          		保时捷体验中心	
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell lis">
+				          <div class="title">
+				          		<span class="grey1">开发区</span> <span class="grey">|</span> <span class="grey1">10.5KM</span> <span class="grey">|</span> <span class="grey1">汽车</span>  
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell  lis">
+				          <div class="title grey2">
+				          		营业时间 11:50 ~12:25	
+				          </div>
+				    </li>
+				    <li class="mui-table-view-cell lis">
+				          <span class="keman">
+				          		客满
+				          </span>
+				          <span class="theage">
+				          		可预订
+				          </span>
+				    </li>
+				    <li class="mui-table-view-cell lis lastli">
+				          <span class="address">
+				          		星湖101广创意设计中心18楼星湖101广创意设计中心18楼
+				          </span>
+				          <div class="mui-pull-right">
+				          	<span class="tubiao" style="padding-right: 10px;">
+				         	<img src="../image/lijizhidian.png"/>
+				        </span>
+				        <span class="tubiao">
+				        	<img src="../image/lijidaohang.png"/>
+				        </span>
+				          </div>
+				         
+				    </li>
+				    <li class="mui-table-view-cell   mtickets">
+				    	<a class="mui-navigate-right">
+				    		<span class="micon">折</span>
+				    			商户折扣券<span class="mui-pull-right confirm_r">3个活动</span>
+		                </a>
+				    </li>
+				</ul>
+				  
+			</div>
+			<div class="index_item">
+				<div class="detail_scroll allscroll">
+		    		<div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+		    		    <div class="mui-scroll">
+		    		        
+		    		           
+				    				<a href="buy.html" class="mui-control-item">
+				    					<li class="lie scrollactive">
+						                <i class="icon iconfont icon-dingzhi2"></i>
+						                    <div class="name">定制</div>
+						                </li>
+				    				</a>
+				    		
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-diandan"></i>
+						                    <div class="name">点单</div>
+						                </li>
+				    				</a>
+				    			
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-yixihu"></i>
+						                    <div class="name">易洗护</div>
+						                </li>
+				    				</a>				    			
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-gouwu"></i>
+						                    <div class="name">购物</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-maidan"></i>
+						                    <div class="name">买单</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-lvyou1"></i>
+						                    <div class="name">旅游</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item " id="wifi">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-WiFi"></i>
+						                    <div class="name">wifi</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-tingche"></i>
+						                    <div class="name">停车</div>
+						                </li>
+				    				</a>
+				    				<a href="buy.html" class="mui-control-item ">
+				    					<li class="lie">
+						                <i class="icon iconfont icon-jiudian"></i>
+						                    <div class="name">酒店</div>
+						                </li>
+				    				</a>
+		    		    </div>
+		    		</div>
+		    		
+		    	</div> 
+			</div>
+			<div class="index_item shop_intro">
+				<h3 class="cat_sel_title">商户介绍</h3>
+				<div class="">
+					<img src="../image/banner@2X.png"/>
+					<p>
+						当我们谈到德国时，我想除了世界大战，也就是德国汽车了！以舒适、豪华著称的奔驰；以灵活操控著称的宝马了；以启迪创新自我标榜的奥迪；还有保时捷。每一个品牌都如雷贯耳般响亮！而保时捷无疑是他们中的异类，也最具传奇了！
+					</p>
+				</div>
+				<div class="more1 ">
+	    			<a href="commercial_tenant.html" class="mui-navigate-right">查看详情</a>
+	    		</div>
+			</div>
+			<div class="index_item shop_intro">
+				<h3 class="cat_sel_title">奢探评价</h3>
+				<div class="" style="text-indent: 1.5rem;color: #333;">
+						      当我们谈到德国时，我想除了世界大战，也就是德国汽车了！以舒适、豪华著称的奔驰；以灵活操控著称的宝马了；以启迪创新自我标榜的奥迪；还有保时捷。每一个品牌都如雷贯耳般响亮！而保时捷无疑是他们中的异类，也最具传奇了！
+
+				</div>
+			</div>
+			<div class="index_item" id="lasted_line">
+				<div class="hotel_night" id="date1">
+					<div class="mui-pull-left">
+						入住 <span id="begin">10月19日</span> 今天  |  离店 <span id="end">10月19日</span> 
+					</div>
+					<div class="mui-pull-right" id="hotel_count">
+						共1晚 >
+					</div>
+					
+				</div>
+				<div class="detail_scroll allscroll1">
+					<div class="media1">
+						<div class=""><img class="mui-media-object " src="../image/icon/lasted_line.png"></div>
+			            <div class="mui-media-body">
+			                <div class="">
+			            		<h5 class="last_line_title">精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车</h5>
+				                <p class=" last_line_intro ">月售5例 &nbsp;&nbsp;好评率90%</p>
+				                <p class="vip vip_592"><span>轻奢会员专享</span></p>
+				                <p class="line_p ">
+				                	<small class="origin">￥600</small>
+				                	<span class="discount">￥500</span>
+				                </p>
+				                <button class="yuding—btn">预定</button>
+			            	</div>
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object" src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			            	<div class="">
+			            		<h5 class="last_line_title">精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车</h5>
+				                <p class=" last_line_intro ">月售5例 &nbsp;&nbsp;好评率90%</p>
+				                <p class="vip vip_black"><span>黑卡会员专享</span></p>
+				                <p class="line_p ">
+				                	<small class="origin">￥600</small>
+				                	<span class="discount">￥500</span>
+				                </p>
+				                <button class="yuding—btn">预定</button>
+			            	</div>
+			                
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object" src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <div class="">
+			            		<h5 class="last_line_title">精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车</h5>
+				                <p class=" last_line_intro ">月售5例 &nbsp;&nbsp;好评率90%</p>
+				                <p class="vip vip_592"><span>轻奢会员专享</span></p>
+				                <p class="line_p ">
+				                	<small class="origin">￥600</small>
+				                	<span class="discount">￥500</span>
+				                </p>
+				                <button class="yuding—btn">预定</button>
+			            	</div>
+			            </div>
+					</div>
+					<div class="media1">
+						<div class="">
+		        			<img class="mui-media-object " src="../image/icon/lasted_line.png">
+		        		</div>
+			            <div class="mui-media-body">
+			                <div class="">
+			            		<h5 class="last_line_title">精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车</h5>
+				                <p class=" last_line_intro ">月售5例&nbsp;&nbsp; 好评率90%</p>
+				                <p class="vip vip_black"><span>黑卡会员专享</span></p>
+				                <p class="line_p ">
+				                	<small class="origin">￥600</small>
+				                	<span class="discount">￥500</span>
+				                </p>
+				                <button class="yuding—btn">预定</button>
+			            	</div>
+			            </div>
+					</div>
+		    		<!--<div class="mui-scroll mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+						<div class="mui-scroll">
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+							    <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						        <a href="javascript:;" class="mui-control-item ">
+						        	<li class="media1">
+						        		<div class="">
+						        			<img class="mui-media-object mui-pull-left" src="../image/icon/lasted_line.png">
+						        		</div>
+							            <div class="mui-media-body">
+							                <h5 class="last_line_title">洗车</h5>
+							                <p class=" last_line_intro ">月售5例 好评率90%</p>
+							                <p class="line_p "><small class="origin">￥600</small><span class="discount">￥500</span></p>
+							            </div>
+							    	</li>
+						        </a>
+						</div>
+				</div>-->
+				</div>
+				<div class="more">
+	    			<a href="javascript:void(0)" class="">展开剩余5个房型 <i class="fa fa-angle-double-down"></i></a>
+	    		</div>
+			</div>
+			<div class="index_item">
+				<h3 class="cat_sel_title">店铺评价</h3>
+				<div class="shop_detail_pj_item">
+	    			<div class="shop_detail_pj_left">
+	    				<img src="../image/nohead.png" onerror="this.src='../image/nohead.png'"/>
+	    			</div>
+	    			<div class="shop_detail_pj_right">
+	    				<ul>
+	    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time mui-pull-right">2017-03-21</span></li>
+	    					<li class="user_xinyu">
+	    						<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+			    				<img src="../image/icon1.png" alt="" />
+	    					</li>
+	    					<li class="pingjia">
+	    						<p>
+	    							非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+	    						</p>
+	    						<div>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    							<img src="../image/icon/lasted_line.png"/>
+	    						</div>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="more1 ">
+	    			<a href="" class="mui-navigate-right">更多评价</a>
+	    		</div>
+	    		
+			</div>
+			
+		   	<div class="index_item" id="fujin_tui">
+		   		<h3 class="cat_sel_title">附近推荐</h3>
+		   		<div class="detail_scroll tuijian">
+		   			<ul class="mui-table-view">
+		   			    <li class="mui-table-view-cell mui-media">
+		   			    	<div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			        
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			    <li class="mui-table-view-cell mui-media">
+		   			        <div class="">
+		   			    		<img class="mui-media-object mui-pull-left shop_logo" src="../image/icon/2.png">
+		   			    	</div>
+		   			    	<div class="">
+		   			    		<ul>
+		   			    			<li class="tuijian_title">科尔马小镇海湾咖啡厅</li>
+		   			    			<li class="tuijian_intro">
+		   			    				南通市开发区 | 10.5KM | 西餐
+		   			    			</li>
+		   			    			<li class="tuijian_pingjia">
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon1.png"/>
+		   			    				<img src="../image/icon2.png"/>
+		   			    				<span>
+		   			    					4.5分
+		   			    				</span>
+		   			    			</li>
+		   			    		</ul>
+		   			    	</div>
+		   			    </li>
+		   			</ul>
+		    		<!--<div class="mui-scroll mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+						<div class="mui-scroll">
+							<a href="javascript:;" class="mui-control-item ">
+					   		<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	</a>
+				    	<a href="javascript:;" class="mui-control-item ">
+							<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	</a>
+				    	<a href="javascript:;" class="mui-control-item ">
+							<div class="index_tui_item">
+					   			<div class="canting">
+				    			</div>
+				    			<div class="index_tui_shop_logo">
+									<img src="../image/view.png"/>
+									<div class="index_tui_pf">
+										<span>
+											评 分
+										</span>
+										<span>
+											4.5
+										</span>
+									</div>
+									<div class="keyuding">
+									<img src="../image/keyuding.png"/>
+									</div>
+								</div>
+								<div class="index_tui_shop_con">
+									<h3>豪食间中西餐厅</h3>
+									<p class="heart">
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/redheart.png"/>
+										<img src="../image/greyheart.png"/>
+										<img src="../image/greyheart.png"/>
+									</p>
+									<p>
+										南通市开发区 <span class="grey">|</span>10.5KM
+									</p>
+									<p >西餐</p>
+								</div>
+				    		</div>
+				    	  </a>
+						 </div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		  
+		</div>
+		<nav class="mui-bar mui-bar-tab footer">
+		   <div class="mui-pull-left detail_footer" >
+		        <i class="fa fa-star-o"></i>
+		        <span class="mui-tab-label">收藏</span>
+		   </div>
+		   <div class="mui-pull-right">
+		   		<span class="buy_btn">买单</span>
+		   </div>
+		</nav>
+		<div id="t_popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+				    <div class="ticket_list">
+				    	<div class="ticket_item" data-couponid='1'>
+				    		<div class="ticket_c">
+				    			<div class="ticket_s">
+				    				<span><small>￥</small>1</span>
+				    				满500可用
+				    			</div>
+				    			<div class="ticket_content">
+				    				
+				    				<div id="">
+				    					<span class="pink">店铺券</span>江南厨房
+				    				</div>
+				    				有效期2017-06-25至2017-06-26
+				    			</div>
+				    		</div>
+				    		<div class="ticket_beizhu">
+				    			<div class="point point_left">
+				    				
+				    			</div>
+				    			本券仅供店铺使用
+				    			<div class="point point_right">
+				    				
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="ticket_item" data-couponid='2'>
+				    		<div class="ticket_c">
+				    			<div class="ticket_s">
+				    				<span><small>￥</small>1</span>
+				    				满500可用
+				    			</div>
+				    			<div class="ticket_content">
+				    				<div id="">
+				    					<span class="blue">体验券</span>江南厨房江南厨房江南厨房江南厨房
+				    				</div>
+				    				有效期2017-06-25至2017-06-26
+				    			</div>
+				    		</div>
+				    		<div class="ticket_beizhu">
+				    			<div class="point point_left">
+				    				
+				    			</div>
+				    			本券仅供店铺使用
+				    			<div class="point point_right">
+				    				
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="ticket_item" data-couponid='3'>
+				    		<div class="ticket_c">
+				    			<div class="ticket_s">
+				    				<span><small>￥</small>1</span>
+				    				满500可用
+				    			</div>
+				    			<div class="ticket_content">
+				    				<div id="">
+				    					<span class="org">单品券</span>江南厨房
+				    				</div>
+				    				有效期2017-06-25至2017-06-26
+				    			</div>
+				    		</div>
+				    		<div class="ticket_beizhu">
+				    			<div class="point point_left">
+				    				
+				    			</div>
+				    			本券仅供店铺使用
+				    			<div class="point point_right">
+				    				
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="ticket_item" data-couponid='3'>
+				    		<div class="ticket_c">
+				    			<div class="ticket_s">
+				    				<span><small>￥</small>1</span>
+				    				满500可用
+				    			</div>
+				    			<div class="ticket_content">
+				    				<div id="">
+				    					<span class="org">商品分类</span>江南厨房
+				    				</div>
+				    				有效期2017-06-25至2017-06-26
+				    			</div>
+				    		</div>
+				    		<div class="ticket_beizhu">
+				    			<div class="point point_left">
+				    				
+				    			</div>
+				    			本券仅供店铺使用
+				    			<div class="point point_right">
+				    				
+				    			</div>
+				    		</div>
+				    	</div>
+				    	
+				    	<div class="ticket_btn">
+				    		<span id="getAll">立即领取</span>
+				    	</div>
+				    </div>
+				    <div class="ticket_msg">
+				    	<div class="ticket_title">
+				    		其他活动优惠
+				    	</div>
+				    	<ul>
+				    		<li><span class="hui">会</span>轻奢会员全场88折优惠</li>
+				    		<li><span class="zeng">赠</span>轻奢会员全场88折优惠</li>
+				    		<li><span class="minu">减</span>轻奢会员全场88折优惠</li>
+				    	</ul>
+				    </div>
+				</div>
+			</div>
+			<i class="mui-icon mui-icon-close"></i>
+			
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/newYear.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll()
+	mui('.footer').on('tap','.detail_footer',function(){
+		
+		$(this).find('i').toggleClass('fa-star-o')
+		$(this).find('i').toggleClass('fa-star')
+		if ($(this).find('i').hasClass('fa-star-o')) {
+			$(this).find('span').html('收藏')
+		} else{
+			$(this).find('span').html('取消')
+		}
+	})
+	mui('.mtickets').on('tap','a',function(){
+		mui("#t_popover").popover('show');
+		ticketClick()
+		
+	})
+	mui('.ticket_list').on('tap','.ticket_btn',function(){
+		mui.alert('领取成功')
+		mui("#t_popover").popover('hide');
+		
+	})
+	mui('#t_popover').on('tap','.mui-icon-close',function(){
+		mui("#t_popover").popover('hide');
+		
+	})
+	function showNj(){
+		var previewImageApi = mui.previewImage();
+		previewImageApi.open(document.getElementById("img1"));
+	}
+	$(function(){
+		$('#wifi').on('tap',function(){
+			mui.alert("<P style='text-align:left;width:80%;margin:0 auto'>wifi名称：1233\r\nwifi密码 ：123456</P>",'商家WIFI')
+		})
+		/* 立即领取 */
+		$('#getAll').on('click',function(){
+			var shopid='${shopdetail.id}';
+			var res=[];
+			$('.ticket_item').each(function(){
+				res.push($(this).attr('data-couponid'))
+			})
+			console.log(res)
+		})
+		//loadPingjia()
+		
+		
+//		$('.lie').each(function(){
+//			$(this).bind({
+//				tap:function(){
+//					if(!$(this).hasClass('scrollactive')){
+//						$('.lie').removeClass('scrollactive');
+//						$(this).addClass('scrollactive');
+//					
+////					}else if($(this).hasClass('scrollactive')){
+//						
+//					}
+//				}
+//			})
+//		})
+		
+		
+	})
+	function loadPingjia(){
+		$(window).scroll(function(){
+			var top=$(window).scrollTop();
+			var height=$(window).height()
+			$(".index_tui_pf").each(function(){
+				var offsetTop=$(this).offset().top;
+				if (offsetTop-top<=height) {
+					$(this).addClass('active');
+				}
+			})
+			if ($(document).height()-top==height) {
+				loadMoreShop()
+			}
+		})
+	}
+	var shopCount=1;
+	var shopEnd=false;
+	function loadMoreShop(){
+		if (!shopEnd) {
+			if (shopCount>=2) {
+				shopEnd=true;
+				mui.toast('没有更多数据了')
+			}else{
+				for( var i =0;i<10;i++){
+					var html='<div class="index_tui_item">'
+							+	'<div class="index_tui_shop_title" >'
+							+		'<img src="../image/tui_shop_2.png" class="index_shop_icon"/>'
+							+		'<span>豪食间中西餐厅（星湖店）</span>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_logo">'
+							+		'<img src="../image/near_shop-03.png"/>'
+							+		'<div class="index_tui_pf">'
+							+			'<span>'
+							+				'评分'
+							+			'</span>'
+							+			'<span>'
+							+				'4.5'
+							+			'</span>'
+							+		'</div>'
+							+	'</div>'
+							+	'<div class="index_tui_shop_con">'
+							+		'<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>'
+							+		'<p>'
+							+			'南通市开发区 | 10.5KM | 西餐'
+							+			'<span class="mui-pull-right to_see">进去看看</span>'
+							+		'</p>'
+							+	'</div>'
+							+'</div>'
+					$("#tuijian_list").append(html);
+					loadPingjia()
+				}
+				shopCount++;
+			}
+			
+		}else{
+			mui.toast('没有更多数据了')
+		}
+	}
+	
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+	scrollY: false, //是否竖向滚动
+	
+	scrollX: true, //是否横向滚动
+	
+	startX: 0, //初始化时滚动至x
+	
+	startY: 0, //初始化时滚动至y
+	
+	indicators: true, //是否显示滚动条
+	
+	deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	
+	bounce: true //是否启用回弹
+	
+	});
+//	mui('.mui-scroll-wrapper').scroll().setTranslate(200,0);//100毫秒滚动到顶
+var inBeginTime,inEndDate,leaveBeginTime,leaveEndTime,inTime,leaveTime;
+ inBeginTime=new Date();
+ inEndDate=new Date(+inBeginTime+30*86400000);
+ leaveBeginTime=new Date(+inBeginTime+86400000);
+ leaveEndTime=new Date(+inBeginTime+30*86400000);
+var inTime=new Date();
+	
+$(function(){
+	preLoad();
+	$("#begin").on('tap',function(){
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+30));
+				if (leaveTime!='') {
+					newD=new Date(leaveTime);
+				}
+				var picker = new mui.DtPicker({
+					beginDate:inBeginTime,
+					endDate:inEndDate,
+					type:'date'
+				});
+				picker.show(function(rs){
+					inTime=rs.y.value+"-"+rs.m.value+"-"+rs.d.value;
+					$("#begin").html(rs.m.value+"月"+rs.d.value+'日');
+					leaveBeginTime=new Date(+new Date(rs.value)+86400000);
+					
+					leaveBeginTime_s=leaveBeginTime.getFullYear()+"-"+(leaveBeginTime.getMonth()+1)+"-"+leaveBeginTime.getDate();
+					$("#end").html((leaveBeginTime.getMonth()+1)+"月"+leaveBeginTime.getDate()+'日');
+					leaveTime=leaveBeginTime_s;
+					GetDateDiff()
+				})
+		})
+		$("#end").on('tap',function(){
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+30));
+				
+				var defaultValue=(leaveTime)?leaveTime:leaveBeginTime;
+				console.log(defaultValue)
+				var picker = new mui.DtPicker({
+					beginDate:leaveBeginTime,
+					endDate:leaveEndTime,
+					type:'date',
+					setSelectedValue:defaultValue,
+				});
+				picker.show(function(rs){
+					leaveTime=rs.y.value+"-"+rs.m.value+"-"+rs.d.value;
+					$("#end").html(rs.m.value+"月"+rs.d.value+'日');
+					inEndDate=new Date(+new Date(rs.value)-86400000);
+					
+					GetDateDiff()
+				})
+		})
+})
+function GetDateDiff()  
+	{  
+		console.log(inTime)
+	    var startTime = new Date(Date.parse(inTime.replace(/-/g,   "/"))).getTime();     
+	    var endTime = new Date(Date.parse(leaveTime.replace(/-/g,   "/"))).getTime();     
+	    var dates = Math.abs((startTime - endTime))/(1000*60*60*24);
+	    console.log(dates)
+	    $("#hotel_count").html("共"+dates+"晚 >")
+	    return  dates;    
+	}
+function preLoad(){
+	var bm=inBeginTime.getMonth()+1;
+	bm=bm<10?'0'+bm:bm;
+	var bd=inBeginTime.getDate();
+	bd=bd<10?'0'+bd:bd;
+	$("#begin").html(bm+'月'+bd+'日');
+	inTime=inBeginTime.getFullYear()+'-'+bm+'-'+bd;
+	var em=leaveBeginTime.getMonth()+1;
+	em=em<10?'0'+em:em;
+	var ed=leaveBeginTime.getDate();
+	ed=ed<10?'0'+ed:ed;
+	$("#end").html(em+'月'+ed+'日');
+	leaveTime=leaveBeginTime.getFullYear()+'-'+em+'-'+ed;
+}
+
+
+function loadDatas(data){
+	for (var i in data) {
+		var html='<div class="media1">'
+				+		'<div class=""><img class="mui-media-object " src="../image/icon/lasted_line.png"></div>'
+			    +        '<div class="mui-media-body">'
+			    +            '<div class="">'
+			    +        		'<h5 class="last_line_title">精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车精致洗车</h5>'
+				+                '<p class=" last_line_intro ">月售5例 &nbsp;&nbsp;好评率90%</p>'
+				+               ' <p class="vip vip_592"><span>轻奢会员专享</span></p>'
+				+                '<p class="line_p ">'
+				+                	'<small class="origin">￥600</small>'
+				+                	'<span class="discount">￥500</span>'
+				+                '</p>'
+				+                '<button class="yuding—btn">预定</button>'
+			    +        	'</div>'
+			    +        '</div>'
+				+	'</div>';
+		$(".allscroll1").append(html);
+	}
+}
+
+$(function(){
+	//
+	ticketClick()
+})
+function ticketClick(){
+	var wHeight=$(window).height()
+	var cHeight=$('#t_popover .mui-scroll').height();
+	var wWidth=$(window).width();
+	console.log(wHeight,cHeight)
+	if(wHeight*0.6>cHeight){
+		$('#t_popover').css({
+			top:parseInt((wHeight-cHeight)/2)-10,
+			bottom:parseInt((wHeight-cHeight)/2)+10,
+			height:cHeight+15,
+			width:wWidth*0.85
+		})
+	}else{
+		$('#t_popover').css({
+			top:'20%',
+			bottom:'20%',
+			height:parseInt(wHeight*0.6),
+			width:wWidth*0.85
+		})
+	}
+}
+
+</script>

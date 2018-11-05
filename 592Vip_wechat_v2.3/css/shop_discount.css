@@ -1,0 +1,110 @@
+.shop_discount_con{
+	position: relative;
+}
+.shop_discount{
+	position: absolute;
+	top: 0;
+	left: 0;right: 0;
+}
+.chy_main_con{
+	text-align: center;
+	background:#d6323b;
+}
+.sd_title{
+	color: #fff;
+	font-size: 1rem;
+	padding: 15px 0;
+}
+.discount{
+	background: none;
+}
+.sd_rule{
+	position: absolute;
+	top: 18px;
+    right: 20px;
+	display: inline-block;
+	font-size: 0.625rem;
+	color: #fff8f4;
+	padding: 1px 8px;
+	background:#f52345;
+	border-radius: 10px;
+	line-height: 1.5;
+}
+.chy_bottom{
+	padding-top: 45px;
+}
+.yellow_banner img{
+	max-width: 100%;
+}
+.yellow_banner{
+	margin: 0 15px;
+}
+.white_line{
+	position: relative;
+	border-bottom:1px solid #fff;
+	margin: 25px 57px 10px 57px;
+}
+.white_line_font_con{
+	/*line-height: 1;*/
+	position: absolute;
+	font-size: 0.9375rem;
+	color: #fff;
+	top: -10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+.white_line_font{
+	display: inline-block;
+	background: #d6323b;
+	padding: 0 25px;
+}
+
+.shop_lowest{
+	display: inline-block;
+	position: absolute;
+	bottom: -40px;
+	right: 10px;
+}
+.shop_lowest img{
+	width: 80px;
+}
+.sd_lowest{
+	position: absolute;
+    top: 61px;
+    font-size: 2.4rem;
+    color: #fff;
+    left: 1px;
+}
+.discount_fonts{
+	margin-top: 15px;
+}
+.sd_yellowbg{
+	margin-top: 10px;
+}
+@media only screen and  (max-width: 320px) {
+	.discount_con{
+		position: absolute;
+		top: 7%;
+	    left: 10%;
+	}
+}
+@media only screen and  (min-width: 375px) {
+	.discount_con{
+		position: absolute;
+		top: 14%;
+	    left: 14%;
+	}
+}
+@media only screen and  (min-width: 414px) {
+	.discount_con{
+		position: absolute;
+		top: 18%;
+	    left: 16%;
+	}
+}
+.invite_inline:first-child,.invite_inline:last-child,.invite_friend3{
+	color: #fff;
+}
+

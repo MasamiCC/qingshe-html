@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>捐赠公示</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body{
+				font-size: 0.875rem;
+				color: #333;
+			}
+			.topbg{
+				background: #F4F4F4;
+			}
+			.dpmain{
+				background: #fff;
+			}
+			.date{
+				text-align: center;
+				margin-right: 0.9375rem;
+				margin-left: 0.9375rem;
+				line-height: 2.5;
+			}
+			.time_choose{
+				width: 4%;
+			}
+			.time,.time_choose{
+				line-height: 2.5;
+			}
+			.time_choose img{
+				width: 100%;
+			}
+			.dp_banner{
+				font-size: 0;
+				line-height: 0;
+			}
+			.dp_banner{
+				padding: 5% 0;
+				border-top: 1px solid #eeeeee;
+				border-bottom: 1px solid #eeeeee;
+			}
+			.date>div,.dp_banner>div{
+				display: inline-block;
+			}
+			.dpmaintop{
+				padding-top: 5px;
+			}
+			.dp_banner_con{
+				width: 33%;
+				text-align: center;
+			}
+			.dp_banner_con_fonts{
+				font-size: 1.25rem;
+				font-family: arial;
+				color: #6bbcf5;
+			}
+			.dp_banner_con_con{
+				line-height: 1.5;
+			}
+			.dp_banner_con_con img{
+				width: 16%;
+			}
+			.dp_banner_con_con_btfonts{
+				font-size: 0.75rem;
+				color: #999;
+			}
+			.fonts_red{
+				color: #fc7875;
+			}
+			.fonts_green{
+				color: #70c38e;
+			}
+			.dpmainmain{
+				text-align: center;
+				padding-bottom: 25px;
+			}
+			
+			
+			.dpmainmain_headerr{
+				position: relative;
+				padding-bottom: 35px;
+			}
+			.w_circle{
+				width:105px;
+				height: 105px;
+				border-radius: 50%;
+				background: #ffc703;
+				position: relative;
+			}
+			.m_circle{
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width:95px;
+				height: 95px;
+				border-radius: 50%;
+				background: #ffe15b;
+			}
+			.c_circle img{
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width:85px;
+				height: 85px;
+				border-radius: 50%;
+			}
+			.dpmainmain_headerr div{
+				display: inline-block;
+			}
+			.headerimg img{
+				width: 188px;
+				height: 106px;
+			}
+			.headerimg{
+			    position: absolute;
+			    top: 28px;
+			    left: 0;
+			    right: 0;
+			    text-align: center;
+			    margin: 0 auto;
+			}
+			.headerimg_fonts{
+				position: absolute;
+				bottom: -10px;
+				
+			}
+			.headerimg_fonts{
+				position: absolute;
+				color: white;
+				left: 0;
+			    right: 0;
+			    text-align: center;
+			    margin: 0 auto;
+			    top: 72px;
+    			font-size: 1rem;
+			}
+			
+			.dpmainmain_first{
+				position: absolute;
+				left: 0;
+				display: inline-block;
+				padding: 5px 10px;
+				background: #f36767;
+				color: white;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+			}
+			.dpmainmain_topfonts{
+				font-size: 1rem;
+				line-height: 3.5;
+			}
+			.dpmainmain_smallfonts{
+				font-size: 0.75rem;
+				line-height: 2;
+			}
+			
+			
+			.purple{
+				background: #c187e9;
+			}
+			
+			.dpmainbottom{
+				margin-top: 10px;
+				background: #fff;
+				margin-bottom: 43px;
+				text-align: center;
+			}
+			.qita{
+				font-size: 1rem;
+				line-height: 3;
+			}
+			.table_con{
+				padding: 0 15px 40px 15px;
+			}
+			.table_con tr{
+				width: 100%;
+			}
+			.table_con tr td{
+				width: 50%;
+			}
+			.table_con table{
+				border:1px solid #eeeeee;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+			}
+			.table_con table td{
+				border-top: 1px solid #eeeeee;
+			}
+			.table_con table td:first-child,.table_con table th:first-child{
+				border-right: 1px solid #eeeeee;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbg">
+			<div class="dpmain">
+				<div class="dpmaintop">
+					<div class="date">
+							<div class="time show_m">
+								本月
+							</div>
+							<div class="time_choose mui-pull-right">
+								<img src="../image/black_bill.png"/>
+							</div>
+					</div>
+					<div class="dp_banner">
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/liushuizhuanhua.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts">528.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">流水转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/red_bill.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_red">520.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">爱心币转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/social_danate.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_green">525.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">社会捐赠</div>
+						</div>
+					</div>
+				</div>
+				<div class="dpmainmain">
+					<div class="dpmainmain_topfonts">月爱心用户</div>
+					<div class="dpmainmain_first">第一名</div>
+					<div class="dpmainmain_headerr">
+						<div class="w_circle"><div class="m_circle">
+							<div class="c_circle">
+								<img src="../image/morentpouxiang.png"/>
+								</div></div></div>
+						<div class="headerimg"><img src="../image/header_redbm.png"/><div class="headerimg_fonts">NO.1</div></div>
+					</div>
+					<div class="">吴亦凡888</div>
+					<div class="dpmainmain_smallfonts">爱心转化+现金捐赠：500元</div>
+				</div>
+				<div class="dpmainmain">
+					<div class="dpmainmain_topfonts">月爱心商户 </div>
+					<div class="dpmainmain_first purple">第一名</div>
+					<div class="dpmainmain_headerr">
+						<div class="w_circle"><div class="m_circle">
+							<div class="c_circle">
+								<img src="../image/morentpouxiang.png"/>
+								</div></div></div>
+						<div class="headerimg"><img src="../image/header_pbm.png"/><div class="headerimg_fonts">NO.1</div></div>
+					</div>
+					<div class="">吴亦凡888</div>
+					<div class="dpmainmain_smallfonts">爱心转化+现金捐赠：500元</div>
+				</div>
+			</div>
+			<div class="dpmainbottom">
+					<div class="qita">
+						其他捐赠
+					</div>
+					<div class="table_con">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tr><th>捐赠/群体</th><th>捐赠内容</th></tr>
+							<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>
+							<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>
+						</table>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+	
+	$(".time_choose").bind({
+		'click':function(e){
+			e.preventDefault();
+			var now=new Date();
+			var picker = new mui.DtPicker({
+				endDate:new Date(),
+				type:'month',
+			});
+			picker.show(function(rs){
+				console.log(rs.value)
+				var time=new Date(rs.value);
+				var year=time.getFullYear();
+				var month=time.getMonth()+1;
+				month=(month<10)?'0'+month:month;
+				console.log(month)
+				console.log(year)
+				$(".show_m").html(year+"年"+month+"月");
+//				mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100)
+			})
+			return false;
+		}
+		
+	})
+	
+	
+	var otherdonatehtml='<table border="0" cellspacing="0" cellpadding="0" width="100%">'
+						+	'<tr><th>捐赠/群体</th><th>捐赠内容</th></tr>'
+						+	'<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>'
+						+	'<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>'
+						+	'<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>'
+						+ '</table>'
+	$(".table_con").html("");
+	$(".table_con").append(otherdonatehtml);
+})
+</script>

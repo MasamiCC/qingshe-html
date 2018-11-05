@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/yh_new.css"/>
+		<style type="text/css">
+			#yh_scroll{
+				height: 9rem;
+			}
+			#step1_btn,#step2_btn,#step3_btn{
+				background: rgba(16,17,34,0.9)!important;
+				border: 1px solid #101122!important;
+				border-radius: 20px!important;
+				padding: 8px 0!important;
+				color: #d4ac57!important;
+				width: 80%!important;
+				margin: 15px auto;
+				font-size: 0.95rem;
+			}
+			#step3_btn{
+				background-color: #d4ac57!important;
+				color: #333!important;
+				margin: 3px auto;
+				border:none!important;
+			}
+			#step1_btn{
+				margin: 15px auto;
+			}
+			::-webkit-input-placeholder { /* WebKit browsers */ 
+			color: #9c741f; 
+			} 
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+			color: #9c741f; 
+			} 
+			::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+			color: #9c741f; 
+			} 
+			:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+			color: #9c741f; 
+			} 
+			.shake{
+				-webkit-animation: tada .5s  ease both;
+		  		-moz-animation: tada .5s  ease both;
+		  		animation-iteration-count:3;
+				-webkit-animation-iteration-count:3;
+			}
+			@-moz-keyframes tada{
+			    0%{-moz-transform:scale(1);}
+			    10%,20%{-moz-transform: rotate(-5deg);}
+			    30%,50%,70%,90%{-moz-transform: rotate(5deg);}
+			    40%,60%,80%{-moz-transform: rotate(-5deg);}
+			    100%{-moz-transform: rotate(0);}
+			   }
+			
+			  @-webkit-keyframes tada{
+			    0%{-webkit-transform:scale(1);}
+			    10%,20%{-webkit-transform: rotate(-5deg);}
+			    30%,50%,70%,90%{-webkit-transform: rotate(5deg);}
+			    40%,60%,80%{-webkit-transform: rotate(-5deg);}
+			    100%{-webkit-transform: rotate(0);}}
+			@media only screen and (max-width: 320px) {
+				#mobile, #code{
+					height: 30px;
+				}
+				.yh_first_con{
+					padding: 0.6rem;
+				}
+				#step1_btn, #step2_btn,#step3_btn{
+					padding: 5px 0!important;font-size: 0.75rem;letter-spacing: 1px;
+				}
+				#step2_btn{
+					margin: 0 auto;
+				}
+				#mobile_div{
+					margin: 5px 0;
+				}
+				.send_code{
+					line-height: 30px;
+				}
+				.yh_first_con{
+					min-height: 7.5rem;
+				}
+				#registed p{
+					margin-bottom: 0px;padding: 0;
+				}
+				#receive_success{
+					padding: 0.1rem;
+				}
+				#registed img {
+					max-width: 35px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="yh yh_first" style="overflow: hidden;">
+		    	<div class="">
+		    		<span class="mui-pull-right" id="rule">活动规则 >></span>
+		    	</div>
+		    	<div class="yh yh_count">
+		    		<span class="count"><img src="image/bag.png" style="vertical-align: middle;margin-right: 10px;max-width: 15px;"/>您有<span>0</span>次领取机会</span>
+		    		<span id="" class="share_p">
+		    			<!--分享<font style="color: #ff9900;">+1</font>-->
+		    			<a href="javascript:void(0)"  onclick="shareAction()" style="color: #d4ac57;margin-left: 3px;">分享活动</a>
+		    		</span>
+		    	</div>
+		    	<div class="yh yh_scorll" style="">
+		    		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="yh_scroll">
+		    		    <div class="mui-scroll">
+		    		    	<div id="yh_t_0">
+		    		    		 <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		       <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		       <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		<img src="image/yh_ico_1.png"/>
+			    		           	</li>
+			    		           	<li>
+			    		           		Iphone7
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+		    		    	</div>
+		    		       <div id="yh_t_1">
+		    		    		 <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		       <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		<img src="image/yh_ico_2.png"/>
+			    		           	</li>
+			    		           	<li>
+			    		           		IPad Pro
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		       <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+			    		        <a class="mui-control-item yh_t_item">
+			    		           <ul>
+			    		           	<li>
+			    		           		50元
+			    		           	</li>
+			    		           	<li>
+			    		           		乐昧铁板烧1
+			    		           	</li>
+			    		           </ul>
+			    		        </a>
+		    		    	</div>
+		    		    </div>
+		    		</div>
+		    	</div>
+		    	<div class="yh_first_con">
+		    		<div class="yh_first_content" id="step1">
+		    			<div class="mui-input-row" id="mobile_div">
+	    			        <input type="tel" class="" placeholder="请输入手机号码" maxlength="11" id="mobile">
+	    			        <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="step1_btn">绑定手机并抽奖</button>
+	    			    </div>
+	    			    
+	    			    <div id="un_registed">
+	    			    	<div class="mui-input-row" style="position: relative;">
+		    			        <input type="text" id="code" class="" placeholder="请输入验证码">
+		    			        <span class="send_code"  id="send_code">发送验证码</span>
+		    			    </div>
+		    			    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="step2_btn">绑定并领取</button>
+	    			    </div>
+	    			    <div id="registed" style="position: relative;">
+	    			    	<img src="image/yh_bag.png" id="choujiang" />
+	    			    	<i class="mui-pull-right" style="position: absolute; right: 10px;top: 5px;color: #d4ac57;font-style: normal;font-size: 0.75rem;" onclick="toMy()" >我的奖品</i>
+	    			    	<p style="color: #fff;">点击抽奖</p>
+	    			    	<p style="text-align: center;color: #fff;">已绑定手机：13056781234</p>
+			    			<div id="receive_success">
+			    				<!--<a href="javascript:void(0)" onclick="shareAction()">分享活动</a>-->
+			    				<!--<a href="javascript:void(0)" onclick="toMy()">我的奖品</a>-->
+			    				<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="step3_btn">立即使用</button>
+			    				<!--<button type="button" class="mui-btn mui-btn-blue mui-btn-block">立即使用</button>
+			    				<button type="button" class="mui-btn mui-btn-danger mui-btn-block">分享活动</button>-->
+			    			</div>
+	    			    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    
+		    <div class="yh yh_padding">
+		    	<div class="yh_title">
+		    		<span></span>中奖记录 
+		    		<!--<a href="yh_list.html" class="mui-pull-right my_yh">我的领取记录</a>-->
+		    	</div>
+		    	<div class="" style="overflow: hidden;height: 345px;">
+		    		<ul class="mui-table-view" id="yh_list">
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">137****4567</span>
+		    		                	<span class="yh_time">2017-06-19 12:00</span>
+		    		                	<p class="yh_name">长坂町</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">9.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">188****4785</span>
+		    		                	<span class="yh_time">2017-06-19 12:01</span>
+		    		                	<p class="yh_name">爱江山婚庆圆</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">5.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">177****3645</span>
+		    		                	<span class="yh_time">2017-06-19 12:02</span>
+		    		                	<p class="yh_name">长坂町</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">12.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">188****9770</span>
+		    		                	<span class="yh_time">2017-06-19 13:00</span>
+		    		                	<p class="yh_name">爱江山婚庆圆</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">20.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">132****0931</span>
+		    		                	<span class="yh_time">2017-06-19 13:05</span>
+		    		                	<p class="yh_name">长坂町</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">75.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">139****8828</span>
+		    		                	<span class="yh_time">2017-06-19 13:40</span>
+		    		                	<p class="yh_name">爱江山婚庆圆</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">14.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">156****3895</span>
+		    		                	<span class="yh_time">2017-06-19 13:40</span>
+		    		                	<p class="yh_name">长坂町</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">23.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">159****5672</span>
+		    		                	<span class="yh_time">2017-06-19 13:43</span>
+		    		                	<p class="yh_name">爱江山婚庆圆</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">35.00</span>
+		    		               	</div>
+		    		        </li>
+		    		        <li class="mui-table-view-cell yh_item" >
+		    		                <div class="yh_item_l">
+		    		                	<span class="yh_mobile">137****4937</span>
+		    		                	<span class="yh_time">2017-06-19 15:00</span>
+		    		                	<p class="yh_name">长坂町</p>
+		    		                </div>
+		    		               	<div class="yh_item_r">
+		    		               		<span class="mui-pull-right yh_amount">50.00</span>
+		    		               	</div>
+		    		        </li>
+		    		    </ul>
+		    	</div>
+		    </div>
+		    <div class="yh yh_banner">
+		    	<img src="image/yh_banner.png"/>
+		    </div>
+		  
+		</div>
+		<style type="text/css">
+		#popover{
+			height: 100%;
+			width:100%;top: 0;background: none;
+		}
+		</style>
+		<div id="popover" class="mui-popover">
+			<img src="image/share_bg_w.png"/>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	mui.init()
+	$(function(){
+		$("#rule").on('tap',function(){
+			toRule()
+		})
+		/**/
+		
+		timer=setInterval(function(){
+			loadHistoryList();
+		},1000)
+		var width=$(window).width();
+		console.log(width)
+		$(".yh_first").css({
+			height:parseInt(width*1010/750)
+		})
+		$("#step1_btn").on('tap',function(){
+			var mobile=$("#mobile").val();
+			if (!(/^1(3|4|5|7|8)\d{9}$/.test(mobile))) {
+				mui.alert('请输入正确的手机号码');
+				return false;
+			}else{
+				//领取优惠券 ajax 处理函数
+				//flg 0 未注册 1 已注册
+				var flg=0
+				receiveResponse(flg,mobile)
+			}
+		})
+		$("#choujiang").on('tap',function(){
+			
+			$(this).addClass('shake');
+			var _this=$(this);
+			setTimeout(function(){
+				mui.alert('恭喜你获得100元优惠券');
+				_this.removeClass('shake')
+			},1500)
+			
+		})
+		
+	})
+	var timer='';
+	var shangjia=['禅心素食馆','2046酒吧','长坂町','爱江山婚庆圆','濠河时光','二百六西餐厅','红角龙虾','花椒餐厅','桃花岛','前田日料'];
+	var mobile=[159,158,177,133,131,188,187];
+	var mobile2=parseInt(Math.random()*8999+1000) ;
+	console.log(mobile2)
+	function loadHistoryList(){
+		var now=new Date();
+		var time=now.getFullYear()+"-"+now.getMonth()+'-'+now.getDate()+" "+now.getHours()+":"+now.getMinutes()
+		var html='<li class="mui-table-view-cell yh_item" >'
+		    		        +        '<div class="yh_item_l">'
+		    		        +        	'<span class="yh_mobile">'+mobile[parseInt(Math.random()*6)]+'****'+parseInt(Math.random()*8999+1000)+'</span>'
+		    		        +        	'<span class="yh_time">'+time+'</span>'
+		    		        +        	'<p class="yh_name">'+shangjia[parseInt(Math.random()*10)] +'</p>'
+		    		        +        '</div>'
+		    		        +       	'<div class="yh_item_r">'
+		    		        +       		'<span class="mui-pull-right yh_amount">'+parseInt(Math.random()*100).toFixed(2)+'</span>'
+		    		        +       	'</div>'
+		    		        +'</li>'
+		var size=$(".yh_item").size();
+		if (size<=5) {
+			$("#yh_list").append(html);
+		}else{
+			$("#yh_list li").eq(0).slideUp(function(){
+				$("#yh_list").append(html);
+				$("#yh_list li").eq(0).remove()
+			})
+		}
+	}
+	function receiveResponse(flg,mobile){
+		$("#step1_btn").hide();
+		//flg 0 未注册 1 已注册
+		if (flg==0) {
+			$("#un_registed").fadeIn(function(){
+				sendCode(mobile);
+			})
+			
+		} else{
+			recevieSuccess(mobile);
+			$("#registed").fadeIn()
+		}
+	}
+	function recevieSuccess(mobile){
+		$("#registed span").text(mobile);
+		$("#un_registed").hide();
+		$("#mobile_div").hide();
+		$("#registed").show();
+		
+	}
+	
+	var timer='';
+	function sendCode(mobile){
+		$("#send_code").on('tap',function(){
+			//ajax请求发送短信，成功之后调用倒计时函数
+			timeChange()
+		})
+		//绑定并领取按钮事件添加
+		$("#step2_btn").on('tap',function(){
+			var code=$("#code").val();
+			if (code=='') {
+				mui.alert('请输入验证码！');
+				return false;
+			}
+			//点击绑定并领取按钮调用事件
+			registerReceive(mobile,code)
+		})
+	}
+	function registerReceive(mobile,code){
+		//ajax处理绑定领取，返回成功之后调用
+		recevieSuccess(mobile)
+	}
+	function timeChange(){
+		clearInterval(timer);
+		var time=60;
+		timer=setInterval(function(){
+			if (time>0) {
+				$(".send_code").html(time+"s后重试");
+				time--;
+			} else{
+				$(".send_code").html("发送验证码");
+				clearInterval(timer);
+			}
+		},1000)
+	}
+	function toRule(){
+		location.href='rule.html';
+	}
+	function toMy(){
+		location.href='yh_list.html'
+	}
+	function shareAction(){
+		mui("#popover").popover("toggle");
+	}
+//	function choujiang(me){
+//		$(me).addClass('shake')
+//	}
+</script>

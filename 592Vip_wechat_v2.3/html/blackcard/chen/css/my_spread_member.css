@@ -1,0 +1,128 @@
+html,body{
+	height: 100%;
+}
+
+body{
+	background-color: #FFFFFF;
+}
+
+/**
+ * 操作区域
+ */
+
+.operacte_nav{
+	height: 60px;
+	line-height: 60px;
+	display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    font-size: .9rem;
+    padding: 0 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.operacte_nav .title{
+	color: #999999;
+}
+
+.operacte_nav .time{
+	color: #333333;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+.operacte_nav .date_pick{
+	width: 20px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.operacte_nav .all{
+	height: 25px;
+	line-height: 25px;
+	background-color: #ee9c21;
+	color: #FFFFFF;
+	margin-left: 1rem;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+.operacte_nav .num{
+	margin-left: 1rem;
+}
+
+/*内容展示区域*/
+.content_nav{
+	position: relative;
+	height: calc(100% - 60px);
+}
+
+/*绑定信息模板*/
+.member_templet{
+	background-color: #FFFFFF;
+	height: 3.5rem;
+	display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.member_templet .img{
+	width: 2rem;
+	height: auto;
+}
+
+.member_templet .content{
+	margin-left: 15px;
+	text-align: left;
+}
+
+.member_templet .content .name{
+	color: #333333;
+	font-size: .9rem;
+	font-weight: bold;
+}
+
+.member_templet .content .time{
+	color: #999999;
+	font-size: .875rem;
+	margin-top: 2px;
+}
+
+/*当前无数据*/
+.no_data{
+	position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #efeff4;
+    display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.info_img {
+	width: 130px;
+	height: auto;
+}
+
+.info_explain {
+	width: 80%;
+	max-width: 320px;
+	font-size: 1.2rem;
+	color: #b0b0b0;
+	line-height: 1.8;
+	margin-top: 2rem;
+	text-align: center;
+}

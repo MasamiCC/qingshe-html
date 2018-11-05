@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>签到</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sign_in.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/newsign_in.css"/>
+	</head>
+	<style type="text/css">
+	</style>
+	<body>
+		<div class="mui-content si_main_con">
+			<div class="si_banner">
+				<div class="si_banner_item">
+					<img src="../image/head5.png"/>
+				</div>
+				<div class="si_banner_item">
+					<div class="si_banner_item_first">
+						<p class="my_heart_cion">我的爱心钻（颗）</p>
+						<p class="mhc_num">1000,00</p>
+					</div>
+					<div class="heart_icon_con">
+						<!--<div class="threehearts">
+							<img src="../image/threeheart.png"/>
+						</div>
+						<div class="heartbottom">
+							<span class="hearticonnew">爱心银行</span>
+						</div>-->
+						<div class='newheartimgbg'><img src="../image/newhartbankbg.png"/></div>
+						<span class="hearticonnew">爱心银行</span>
+					</div>
+				</div>
+			</div>	
+			<div class="si_main">
+				<div class="si_top">
+					<div class="si_top_first">
+						<div class="si_top_first_con si_top_first_con_left">
+							累计签到
+							<span class="num_con">
+								25
+							</span>	
+							天
+						</div>
+						<div class="si_top_first_con2 mui-pull-right">
+							<div class='si_top_first_con_con1 qiandaofont'>签到提醒</div>	
+							<div class="si_top_first_con_con2  ">
+								<div class="mui-switch mui-switch-mini mui-active mui-pull-right">
+				                    <div class="mui-switch-handle"></div>
+				                </div>
+							</div>
+						</div>    
+					</div>
+					<div class="si_top_second">
+						<!--签到-->
+						<!--<div class="">-->
+							<div class="si_main_sign">
+								<div class="si_main_sign_item">
+									<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon">
+										<img class="signiniconimg" src="../image/newsigned.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Mon
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+										<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon">
+										<img class="signiniconimg" src="../image/newsigned.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Tue
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+									<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon newunsign">
+										<!--未签到-->
+										<img class="signiniconimg" src="../image/newunsign.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Wed
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+									<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon newunsign">
+										<!--未签到-->
+										<img class="signiniconimg" src="../image/newunsign.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Thur
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+									<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon newunsign">
+										<!--未签到-->
+										<img  class="signiniconimg" src="../image/newunsign.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Fri
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+									<div class="si_main_sign_item_item firstline">
+										<div class="biicon">
+											钻
+										</div>
+									</div>
+									<div class="si_main_sign_item_item signinicon newunsign">
+										<!--未签到-->
+										<img  class="signiniconimg"src="../image/newunsign.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Sat
+									</div>
+								</div>
+								<div class="si_main_sign_item">
+									
+									<!--未开宝箱-->
+									<div class="si_main_sign_item_item firstline">
+										<img class="treasure" src="../image/baoxiang.png"/>
+									</div>
+									
+									<!--已开宝箱-->
+									<!--<div class="si_main_sign_item_item firstline">
+										<img src="../image/baoxiangkai.png"/>
+									</div>-->
+									<div class="si_main_sign_item_item signinicon newunsign">
+										<!--未签到-->
+										<img  src="../image/newunsign.png"/>
+									</div>
+									<div class="si_main_sign_item_item">
+										Sun
+									</div>
+								</div>
+							</div>
+							<!--</div>-->
+							<div class="newsi_information">
+								<span class="newsi_informationicon">签到规则说明 </span>
+							</div>
+							<!--<div class="line">
+							</div>-->
+						
+						<!--签到-->
+						<!--</div>-->
+					</div>
+				</div>
+				<div class="newactivity_title">
+					<img src="../image/huodongjingxuan.png"/>
+				</div>
+				<div class="activity_content">
+					<img src="../image/bottompic.png"/>
+				</div>
+			</div>
+		
+		<div id="myPopover" class="mui-popover">
+			<div class="myPopover_top">
+				<div class="popover_header1">
+					<img src="../image/coin.png"/>
+				</div>
+				<div class="popover_header2">
+					<img src="../image/popver_top.png"/>
+				</div>
+				<div class="popover_middle">
+					<div class="popover_middle_first">
+						签到成功
+					</div>
+					<div class="popover_middle_second">
+						恭喜您获得10爱心钻
+					</div>
+				</div>
+				<div class="popover_bottom">
+					<img src="../image/popver_bottom.png"/>
+				</div>
+			</div>
+			<div class="">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+		<div id="myPopover1" class="mui-popover">
+			<div class="popover_top">
+				<p class="rule_item rule_title">活动规则</p>
+				<!--<p class="rule_item">1. 首次签到得20积分，连续签到每次递增20积分。</p>
+				<p class="rule_item">2. 最高递增至200积分，如有中断，则重新从20积分开始累积</p>
+				<p class="rule_item">3. 彩蛋礼品将发送至满益网账户中，可至“消息中心”查看，话费于中奖后3个工作日内完成充值。</p>-->
+				<p class="rule_item">
+					1、连续签到1天，获取1个爱心钻；<br />
+					2、连续签到2天，获取2个爱心钻；<br />
+					3、连续签到3天，获取3个爱心钻；<br />
+					4、连续签到4天，获取4个爱心钻；<br />
+					5、连续签到5天，获取5个爱心钻；<br />
+					6、连续签到≥5天，每天获取5个爱心钻；<br />
+					7、中断签到后，重新累计连续签到天数；
+				</p>
+			</div>
+			<div class="popover_bom">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/newsign_in.js"></script>
+
+

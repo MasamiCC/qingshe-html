@@ -1,0 +1,116 @@
+.row{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 0;
+}
+.receive_btn{
+	border: none;padding: 5px 10px;font-size: 12px;background: #999;color: #fff;
+	
+}
+.txtcenter{
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: visible;
+}
+@media only screen and (max-width: 600px)  {
+	.txtcenter{
+		width: 100%;
+		
+	}
+}
+@media only screen and (min-width: 600px)  {
+	.txtcenter{
+		width: 50%;
+		
+	}
+}
+@media only screen and (min-width: 800px)  {
+	.txtcenter{
+		width: 33%;
+		
+	}
+}
+.txtcenter:last-child{
+	overflow: -webkit-paged-x;
+}
+.coupon_bottom{
+	height: 25px;
+}
+.show{
+	left: -1px;right: -1px;
+}
+.txtcenter >div{
+	margin: 0 5px;
+}
+.row_piece{
+	min-width: inherit;
+}
+/*等级权益*/
+.qy_list ul{
+	font-size: 0;
+}
+.qy_list li{
+	display: inline-block;text-align: center;font-size: 12px;width: 10%;
+}
+.qy_list li img{
+	margin: 0 10px;max-width: 50px;
+}
+.qy_list p{
+	line-height: 2;color: #666;
+}
+.now_leval{
+	border-radius: 10px;
+	padding: 10px;
+	margin: 30px auto;
+	-moz-box-shadow:0 0 15px #ccc inset;               /* For Firefox3.6+ */
+	-webkit-box-shadow:0 0 15px #ccc inset;            /* For Chrome5+, Safari5+ */
+	box-shadow:0 0 15px #ccc inset;                    /* For Latest Opera */
+}
+.now_leval h4{
+	text-align: center;
+}
+.now_leval   ul{
+	width: 100%;margin: 0 auto;font-size: 0;
+}
+.now_leval img{
+	transform:scale(0.5,0.5);
+	-ms-transform:scale(0.5,0.5); 	/* IE 9 */
+	-moz-transform:scale(0.5,0.5); 	/* Firefox */
+	-webkit-transform:scale(0.5,0.5); /* Safari 和 Chrome */
+	-o-transform:scale(0.5,0.5); 	/* Opera */
+}
+.now_leval li{
+	display: inline-block;text-align: center;width: 25%;position: relative;text-align: center;
+}
+.now_leval li img{
+	margin: 0 auto;z-index: 99;position: relative;
+}
+.now_leval li p{
+	color: #999;
+}
+.now_leval li.active p{
+	color: #db9b2c;
+}
+.now_leval li.active img{
+	transform:scale(0.8,0.8);
+	-ms-transform:scale(0.8,0.8); 	/* IE 9 */
+	-moz-transform:scale(0.8,0.8); 	/* Firefox */
+	-webkit-transform:scale(0.8,0.8); /* Safari 和 Chrome */
+	-o-transform:scale(0.8,0.8); 	/* Opera */
+}
+.now_leval .line{
+	background: #ecd8b6;position: absolute;left: 50%;width: 100%;height: 3px;top: 35%;z-index: 0;
+}
+.my_grouth{
+	text-indent: 30px;color: #999;text-align: center;line-height: 2;
+}
+.memberCenter_title{
+	font-size: 16px;font-weight: normal;text-indent: 0;line-height: 2;
+}
+.qy{
+	border-bottom: 1px dashed #ddd;
+}
+.user_right_middle {
+	padding: 0 10px;
+}

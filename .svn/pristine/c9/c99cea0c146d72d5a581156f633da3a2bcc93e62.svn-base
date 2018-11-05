@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../../css/mui.min.css" rel="stylesheet" />
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background: #fff;
+		}
+
+		.mui-content {
+			padding-top: 50px;
+			background: #fff;
+		}
+
+		.user_list {
+			display: flex;
+			/* align-items: center; */
+			padding-top: .75rem;
+			padding-bottom: .75rem;
+		}
+
+		.user_list>div {
+			flex: 1;
+		}
+
+		.user_list:after {
+			left: 0;
+			height: 0;
+		}
+
+		.user_pic {
+			flex: 0 0 3rem !important;
+			margin-right: .5rem;
+			line-height: 0;
+			text-align: center;
+		}
+
+		.user_pic img {
+			max-width: 2.5rem;
+			border-radius: 2.5rem;
+		}
+
+		.user_share {
+			flex: 0 0 5rem !important;
+			font-size: .75rem;
+			color: #fff;
+			padding: 15px 0;
+			display: inline-block;
+		}
+
+		.user_share span {
+			background: #FFB72C;
+			padding: .4rem .5rem;
+			border-radius: 1rem;
+		}
+
+		.c_bg {
+			background: #eee;
+			height: .75rem;
+			border-radius: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.c_bg_a {
+			background: #FFB72C;
+			height: .75rem;
+			width: 50%;
+			display: inline-block;
+			position: absolute;
+			border-radius: 10px;
+
+		}
+
+		.user_msg {
+			font-size: .875rem;
+			font-weight: 400;
+		}
+
+		.jindu {
+			display: flex;
+			align-items: center;
+			font-size: .875rem;
+			color: #999;
+		}
+
+		.jindu>div {
+			flex: 1;
+		}
+
+		.jindu>div:first-child {
+			margin-right: .5rem;
+		}
+
+		.jindu>div:last-child {
+			flex: 0 0 3.5rem;
+		}
+
+		.user_list.mui-active {
+			background: #fff;
+		}
+
+		.mui-table-view:before,
+		.mui-table-view:after {
+			height: 0;
+		}
+
+		.title {
+			font-size: .875rem;
+			padding-left: 1rem;
+			line-height: 3;
+			color: #666;
+		}
+
+		.red {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mui-content">
+		<div class="title">
+			以下好友需要您帮助
+		</div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell user_list">
+				<div class="user_pic">
+					<img src="./images/users.png" />
+				</div>
+				<div class="user_msg">
+					<ul>
+						<li>一片浮云</li>
+						<li class="jindu">
+							<div class="">
+								<div class="c_bg">
+									<span class="c_bg_a"></span>
+								</div>
+							</div>
+							<div class="">
+								1/2人
+							</div>
+						</li>
+
+
+					</ul>
+					<div style="display:inline" class="time">
+						<p>南通站|<span class="red">任务倒计时:<span>5</span>天<span>24</span>时<span>15</span>分</span></p>
+					</div>
+				</div>
+				<div class="user_share">
+					<span>分享邀请码</span>
+				</div>
+			</li>
+
+			<li class="mui-table-view-cell user_list">
+				<div class="user_pic">
+					<img src="./images/users.png" />
+				</div>
+				<div class="user_msg">
+					<ul>
+						<li>山海次郎</li>
+						<li class="jindu">
+							<div class="">
+								<div class="c_bg">
+									<span class="c_bg_a"></span>
+								</div>
+							</div>
+							<div class="">
+								1/2人
+							</div>
+						</li>
+					</ul>
+					<div style="display:inline" class="time">
+						<p>南通站|<span class="red">任务倒计时:<span>5</span>天<span>24</span>时<span>15</span>分</span></p>
+					</div>
+				</div>
+				<div class="user_share">
+					<span>分享邀请码</span>
+				</div>
+			</li>
+			<li class="mui-table-view-cell user_list">
+				<div class="user_pic">
+					<img src="./images/users.png" />
+				</div>
+				<div class="user_msg">
+					<ul>
+						<li>眉山太子</li>
+						<li class="jindu">
+							<div class="">
+								<div class="c_bg">
+									<span class="c_bg_a"></span>
+								</div>
+							</div>
+							<div class="">
+								1/2人
+							</div>
+						</li>
+					</ul>
+					<div style="display:inline" class="time">
+						<p>南通站|<span class="red">任务倒计时:<span>5</span>天<span>24</span>时<span>15</span>分</span></p>
+					</div>
+				</div>
+				<div class="user_share">
+					<span>分享邀请码</span>
+				</div>
+			</li>
+			<li class="mui-table-view-cell user_list">
+				<div class="user_pic">
+					<img src="./images/users.png" />
+				</div>
+				<div class="user_msg">
+					<ul>
+						<li>AnyList</li>
+						<li class="jindu">
+							<div class="">
+								<div class="c_bg">
+									<span class="c_bg_a"></span>
+								</div>
+							</div>
+							<div class="">
+								1/2人
+							</div>
+						</li>
+					</ul>
+					<div style="display:inline" class="time">
+						<p>南通站|<span class="red">任务倒计时:<span>5</span>天<span>24</span>时<span>15</span>分</span></p>
+					</div>
+				</div>
+				<div class="user_share">
+					<span>分享邀请码</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

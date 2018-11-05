@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;list-style: none;}
+			body{
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background-image: url(images/yq_bg@3x.png);
+				background-repeat: no-repeat;
+				background-size:cover;
+				overflow: auto;
+				background-position: top;
+			}
+			.mui-content{
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				left: 0;right: 0;top: 0;bottom: 0;
+				background: none;
+			}
+			.mui-content>div{flex: 1;}
+			
+			.header{max-height: 20%;text-align: center;color:#97c5e8 ;display: flex;flex-direction: column;justify-content: flex-end;padding-bottom: .5rem;}
+			.header>div:first-child{
+				color: #fff;font-size: 2rem;line-height: 2;
+			}
+			.content{display: flex;}
+			.content_div{background: #fff;border-radius: .75rem;flex: 1;margin: 1rem 2.5rem 6rem 2.5rem;box-shadow: 0 0 .3rem #999;display: flex;flex-direction: column;padding: 1rem;}
+			.content_div>div{flex: 1;text-align: center;display: flex;}
+			.content_div>div:first-child{border-bottom: 1px dashed #259cf9;max-height: 45%; }
+			.content_div ul{flex: 1;display: flex;flex-direction: column;font-size: .875rem;justify-content: space-around;}
+			.content_div li {line-height: 2;color: #666;text-align: center;}
+			.content_div>div:first-child ul{padding-bottom: .3rem;}
+			.content_div>div:first-child li{line-height: 1.8;}
+			.content_div li img{max-width: 45%;margin: .875rem auto;margin-bottom: .5rem;width: 45%;}
+			.content_div li span{
+				background: -webkit-linear-gradient(left, #48d2ff , #2095f8); /* Safari 5.1 - 6.0 */
+				background: -o-linear-gradient(right, #48d2ff, #2095f8); /* Opera 11.1 - 12.0 */
+				background: -moz-linear-gradient(right, #48d2ff, #2095f8); /* Firefox 3.6 - 15 */
+				background: linear-gradient(to right, #48d2ff , #2095f8); /* 鏍囧噯鐨勮娉� */
+				color: #fff;
+				font-size: .8rem;
+				border-radius:1rem ;
+				padding: .25rem .75rem;
+				text-align: center;
+				display: inline-block;
+				min-width:4rem;
+			}
+			.code{color: #3687c6!important;font-size: 2rem;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="header">
+				<div class="">轻奢号</div>
+				<div>带您进入小康时代</div>
+			</div>
+		    <div class="content">
+		    	<div class="content_div">
+		    		<div class="">
+		    			<ul>
+		    				<li style="color: #333333;font-size: 1rem;">您的邀请码</li>
+		    				<li class="code" style="line-height:1.2">45P9</li>
+		    				<li><span>复制</span></li>
+		    				<li>剩余邀请码次数9次</li>
+		    				<li>您的邀请码总次数 10次</li>
+		    			</ul>
+		    		</div>
+		    		<div class="">
+		    			<ul>
+		    				<li style="font-size: 0;"><img src="images/yq_code.png"/></li>
+		    				<li>或扫码邀请加入</li>
+		    				<li><span>分享二维码</span></li>
+		    			</ul>
+		    			
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

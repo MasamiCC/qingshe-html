@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评关于我们</title>
+		<meta name="Keywords" content="轻奢点评、品质生活、共享消费、在线交易、分层社交、投融理财、公益慈善、虚拟孵化器"/>
+		<meta name="Description" content="轻奢点评专注整合、优化及创造未来品质生活，为轻奢族和商家提供线上、线下更为精准的集“共享消费、在线交易、分层社交、投融理财、公益慈善、虚拟孵化器”等为一体的综合服务。"/>
+		<link rel="stylesheet" type="text/css" href="../css/aboutUs.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<style type="text/css">
+			.aU_part1{
+				line-height: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<!--head-->
+			<div class="head">
+				<div class="headimg">
+					<img src="../img/headimgbg.png"/>
+				</div>
+				<div class="headfonts">
+					<ul>
+						<li class=""><a class="" href="homepage.html">首页</a></li>
+						<li class=""><a href="BlackcardShow.html">黑卡介绍及展示</a></li>
+						<li class="homepageactive"><a href="#">关于我们</a></li>
+						<li class=""><a href="joinUs.html">加入我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--head-->
+			<!--part1-->
+			<!-- <div class="aU_part1">
+				<img src="../img/aU1.png"/>
+			</div> -->
+			<!-- 介绍区域 -->
+			<div class="intro_nav">
+				<!-- 左侧 -->
+				<div class="intro_left">
+					<img src="../img/intro_us_bg.png" class="bg">
+					<img src="../img/intro_us_img.png" class="img">
+				</div>
+				<!-- 右侧 -->
+				<div class="intro_right">
+					<div class="intro_right_content">
+						<div class="title">
+							<span>About</span>
+							<p>轻奢点评</p>
+						</div>
+						<div class="content">
+							企业介绍：轻奢点评(股权代码：669058)是全国首个集轻奢生活、共享赚钱、零成本慈善、分层社交、精准传播、品质点评、
+							时间成本管理为一体的互联网区块链大数据聚合平台。其以“让互联网消费成为你共享赚钱的手段，
+							使物质及精神品质双重提升”以及实现“全民零成本慈善，让慈善成为你的生活习惯”这一完全颠覆传统的发展理念为定位。
+							旗下现拥有：轻奢点评轻奢消费平台、轻奢点评慈善基金、592VIP黑卡俱乐部实体沙龙、592VIP自主轻奢品牌系列产品、
+							轻奢点评黑卡会员红利释放体系、轻奢慈善盛典自主大型活动、轻奢资讯、奢探、痴八猴脱口秀传播平台，分层社交懒书软件平台也正在开发中。
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--part1-->
+
+			<!-- 轻奢黑卡缘起 -->
+			<div class="origin_nav">
+				<!-- 标题 -->
+				<div class="qinshe_title">
+					<img src="../img/zfx.png">
+					<p>轻奢黑卡缘起</p>
+				</div>
+				<!-- 内容 -->
+				<div class="origin_content">
+					<!-- 第一个内容 -->
+					<div class="origin_area">
+						<!-- 显示的内容 -->
+						<div class="origin show">
+							<span class="origin_img first"></span>
+							<p>只有一个使命</p>
+							<div class="line"></div>
+							<p class="content">专为改变2020全面建成小康社会后的互联网生活。</p>
+						</div>
+						<!-- 隐藏的内容 -->
+						<div class="origin hide">
+							<span class="origin_img first"></span>
+							<p>只有一个使命</p>
+							<div class="line"></div>
+							<p class="content">专为改变2020全面建成小康社会后的互联网生活。</p>
+						</div>
+					</div>
+					<!-- 第二个内容 -->
+					<div class="origin_area">
+						<!-- 显示的内容 -->
+						<div class="origin show">
+							<span class="origin_img second"></span>
+							<p>只有一个宗旨</p>
+							<div class="line"></div>
+							<p class="content">不浪费时间打劫现在，只布局和领跑未来。</p>
+						</div>
+						<!-- 隐藏的内容 -->
+						<div class="origin hide">
+							<span class="origin_img second"></span>
+							<p>只有一个宗旨</p>
+							<div class="line"></div>
+							<p class="content">不浪费时间打劫现在，只布局和领跑未来。</p>
+						</div>
+					</div>
+					<!-- 第三个内容 -->
+					<div class="origin_area">
+						<!-- 显示的内容 -->
+						<div class="origin show">
+							<span class="origin_img third"></span>
+							<p>只有一个目标</p>
+							<div class="line"></div>
+							<p class="content">消费即赚钱，生活即慈善。</p>
+						</div>
+						<!-- 隐藏的内容 -->
+						<div class="origin hide">
+							<span class="origin_img third"></span>
+							<p>只有一个目标</p>
+							<div class="line"></div>
+							<p class="content">消费即赚钱，生活即慈善。</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!--part3-->
+			<div class=" aU_part1">
+				<img src="../img/aU3.png"/>
+			</div>
+			<!--part3-->
+			<!--bottom-->
+			<div class="bottom">
+				<div class="bottom_first">
+					<ul class="bottomul">
+						<li class=""><a href="homepage.html">首页</a></li>
+						<li class=""><a href="BlackcardShow.html">黑卡介绍及展示</a></li>
+						<li class=""><a href="#">关于我们</a></li>
+						<li class=""><a href="joinUs.html">加入我们</a></li>
+					</ul>
+				</div>
+				<div class="erWeiMa">
+					<div class="">
+						<p class="marginbottom10">APP更优惠</p>
+						<p><img src="../img/APPMa.png"/></p>
+					</div>
+					<div>
+						<p class="marginbottom10">微信服务号</p>
+						<p><img src="../img/wechatMa.png"/></p>
+					</div>
+				</div>
+				<div class="haddress">
+					地址：江苏省南通市开发区星湖大道创意设计中心8栋18层
+				</div>
+				<div class="htel">
+					电话：400 1588 592
+				</div>
+			</div>
+			<!--bottom-->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<!--<script type="text/javascript" src="../js/homepage.js"></script>-->
+</html>

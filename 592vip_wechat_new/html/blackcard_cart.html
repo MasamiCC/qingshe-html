@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/blackcardcart.css"/>
+		<style>
+			.mui-table-view-cell.mui-active{
+				background: #fff;
+			}
+			/*.mui-table-view-cell{
+				padding: 11px 0px;
+			}*/
+			.mui-table-view-cell:after,.mui-table-view:after,.mui-table-view:before{
+				height: 0;
+			}
+			.mui-table-view-cell{
+				padding: 0 0;
+				background-color: #fff;
+				margin-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 10px;
+			}
+			.mui-table-view{
+				background-color: #f4f4f4;
+				
+			}
+			.mui-content{
+				background-color: #f4f4f4;position: absolute;width: 100%;overflow: auto;
+			}
+			.mui-bar{
+				box-shadow: 0 0 0;
+				border-top: 1px solid #ddd;
+			}
+			.mui-icon .mui-badge{
+				background: #D4AC57;
+				font-size: 0.5rem;
+			    line-height: 0.85;
+			    position: absolute;
+			    top: 8px;
+			    padding: 1px 4px;
+			}
+			#footer .mui-bar .mui-icon{
+				padding-bottom: 0;
+				padding-top: 5px;
+			}
+			.mui-bar{
+				background: #fff;
+			}
+			.mui-bar-footer {
+			    z-index: 999;
+			}
+			#popover{
+				position: fixed;	
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <!--<span ><img style="width: 0.6875rem;" src="../image/back@2x.png"/></span>-->
+		    <h1 class="mui-title">购买黑卡</h1>
+		</header>
+	<div class="mui-content " id="segmentedControlContents">
+		<div class="shop_message">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell cart_item" data-goodsid='1'>
+		            <ul>
+		            	<li class="pics"><img src="../image/silver@3x.png" alt="" /></li>
+		            	<li class="font1 cart_goods_title">白银卡</li>
+		            	<li class="font2 cart_sale">面值2000元，获得相应的会员权益，并可抵扣相应的金额，购 买多张金额可累计。</li>
+		            	<li class="font3">月售20份</li>
+		            	<li class="bottom">
+		            		<div class="red cart_third">￥2000.00</div>
+			            	<div class="mui-pull-right cart_buy" >
+								<div class="" data-price="2000.00" data-title="白银卡" data-id='1'>
+									<img  style="margin-right: 10px;" src="../image/cut@2x.png" class="cart-btn cart-btn-numbox-minus"/>
+									<span style="font-family: 'Myriad Pro';"  class="mui-input-numbox"  >0</span>
+									<img  style="margin-left: 10px;" src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus"/>
+								</div>
+							</div>
+		            	</li>
+		            </ul> 
+		        </li>
+		        <li class="mui-table-view-cell cart_item " data-goodsid='2'>
+		            <ul>
+		            	<li class="pics"><img src="../image/golden@3x.png" alt="" /></li>
+		            	<li class="font1 cart_goods_title">黄金卡</li>
+		            	<li class="font2 cart_sale">面值2000元，获得相应的会员权益，并可抵扣相应的金额，购 买多张金额可累计。</li>
+		            	<li class="font3">月售20份</li>
+		            	<li class="bottom">
+		            		<div class="red cart_third">￥10000.00</div>
+			            	<div class="mui-pull-right cart_buy" >
+								<div class="" data-price="10000.00" data-title="黄金卡" data-id='2'>
+									<img  style="margin-right: 10px;" src="../image/cut@2x.png" class="cart-btn cart-btn-numbox-minus"/>
+									<span style="font-family: 'Myriad Pro';"  class="mui-input-numbox"  >0</span>
+									<img  style="margin-left: 10px;" src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus"/>
+								</div>
+							</div>
+		            	</li>
+		            </ul> 
+		        </li>
+		        <li class="mui-table-view-cell lastli cart_item " data-goodsid='3'>
+		            <ul>
+		            	<li class="pics"><img src="../image/damon@3x.png" alt="" /></li>
+		            	<li class="font1 cart_goods_title">钻石卡</li>
+		            	<li class="font2 cart_sale">面值2000元，获得相应的会员权益，并可抵扣相应的金额，购 买多张金额可累计。</li>
+		            	<li class="font3">月售20份 </li>
+		            	<li class="bottom">
+		            		<div class="red cart_third">￥50000.00</div>
+			            	<div class="mui-pull-right cart_buy" >
+								<div class="" data-price="50000.00" data-title="钻石卡" data-id='3'>
+									<img  style="margin-right: 10px;" src="../image/cut@2x.png" class="cart-btn cart-btn-numbox-minus"/>
+									<span style="font-family: 'Myriad Pro';"  class="mui-input-numbox"  >0</span>
+									<img  style="margin-left: 10px;" src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus"/>
+								</div>
+							</div>
+		            	</li>
+		            </ul> 
+		        </li>
+	        </ul>
+	    </div>
+	 </div> 
+	 
+	<div id="footer">
+	<nav class="mui-bar mui-bar-footer flx" id="nav">
+			<a class="mui-tab-item" href="" style="color: #333;">
+				<div style="flex: 1;">
+					<ul>
+						<li style="text-align: center;">
+							<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge buy_count" >0</span></span></li>
+						<li><span style="font-size: 0.75rem;">购物车</span></li>
+					</ul>
+				</div>
+			</a>
+			<span class="total_price"  style="flex: 1;padding:18px 20px;">
+				￥0.00
+			</span>
+			<div class=""  style="flex: 1;">
+				<span class="js_btn" onclick="cartSubmit()">立即购买</span>
+			</div>
+			
+	</nav>	       
+	</div>
+	<div id="popover" class="mui-popover">
+			<div class="cart_list_title">购物车 <span class="mui-pull-right cart_clear" ><i class="mui-icon mui-icon-trash"></i>清空</span></div>
+			<div class="mui-content-padded" id="cart_goods_list">
+				<ul>
+					<li class="cart_g_list" data-goodsid="6" data-attr-id="5">
+						<div id="" class="cart_g_left">白银卡 
+							<!--<p class="goods_attr">小份,不辣</p>-->
+						</div>
+						<div class="cart_g_right" data-goodsid="6">
+							<span><small>￥</small><span class="price_c">500.00</span></span>
+							<img src="../image/cut@2X.png" class="cart-btn cart-btn-numbox-minus" onclick="cartList(this,0,500)">
+							<span class="mui-input-numbox">1</span>
+							<img src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus" onclick="cartList(this,1,500)">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--<div id="attr" class="mui-popover">
+			<div class="attr_title">椒盐中虾  <span class="mui-icon mui-icon-closeempty mui-pull-right attr_close"></span></div>
+			<div class="mui-content-padded">
+				<ul>
+					<li class="attr_li" id="attr1">
+						
+					</li>
+					<li  class="attr_li" id="attr2">
+						
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="price" ><small>￥</small><span>321</span></div>
+				<input type="hidden" name="" id="cart_goods" value="" />
+				<input type="hidden" name="attr_id" id="attr_id" />
+				<div style="padding: 0 10px;">
+					<button  class="add_to_cart">加入购物车</button>
+				</div>
+			</div>
+		</div>-->
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>
+
+<!--<script src="../js/cart_basic1.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		//商品减少
+		$("#segmentedControlContents").on('tap','.cart-btn-numbox-plus',function(){
+			var name=$(this).parent().attr('data-title');
+			var price=$(this).parent().attr('data-price');
+			var id=$(this).parent().attr('data-id');
+			//addCart(name,price,id,1);
+			addCart(name,price,id,1,'',0);
+		})
+		//商品添加
+		$("#segmentedControlContents").on('tap','.cart-btn-numbox-minus',function(){
+			var name=$(this).parent().attr('data-title');
+			var price=$(this).parent().attr('data-price');
+			var id=$(this).parent().attr('data-id');
+			//addCart(name,price,id,-1);
+			addCart(name,price,id,-1,'',0);
+		})
+//		//吊起规格
+//		$("#segmentedControlContents").on('tap','.cart_gg',function(){
+//			var attrData={
+//				success: true,
+//				result: [
+//				{
+//				  id: 2,//规格ID
+//				  name: "小份",//规格名
+//				  type: "0",//'0:1级规格 1:2级规格'
+//				  goodsid: null,
+//				  price: null,
+//				  specs: [
+//				         {
+//				         id: 5,//规格ID
+//				         name: "不辣",//规格名
+//				         type: "1",//'0:1级规格 1:2级规格'
+//				         goodsid: 6,//商品ID
+//				         price: 44,//价格
+//				         specs: null
+//				         },
+//				         {
+//				         id: 6,
+//				         name: "微辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 44.5,
+//				         specs: null
+//				         },
+//				         {
+//				         id: 7,
+//				         name: "中辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 45,
+//				         specs: null
+//				         },
+//				         {
+//				         id: 8,
+//				         name: "重辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 45.5,
+//				         specs: null
+//				         }
+//				        ]
+//				      },
+//				{
+//				  id: 3,
+//				  name: "中份",
+//				  type: "0",
+//				  goodsid: null,
+//				  price: null,
+//				  specs: [
+//				         {
+//				         id: 9,
+//				         name: "不辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 64,
+//				         specs: null
+//				         },
+//				         {
+//				         id: 10,
+//				         name: "微辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 64.5,
+//				         specs: null
+//				         },
+//				         {
+//				         id: 11,
+//				         name: "中辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 65,
+//				         specs: null
+//				         },
+//				         {
+//				         id: 12,
+//				         name: "重辣",
+//				         type: "1",
+//				         goodsid: 6,
+//				         price: 65.5,
+//				         specs: null
+//				         }
+//				        ]
+//				 },
+//				{
+//				  id: 4,
+//				  name: "大份",
+//				  type: "0",
+//				  goodsid: 6,
+//		          price: 65.5,
+//				  specs: []
+//				 }
+//				],
+//				status: null,
+//				map: null
+//				};
+//			$("#attr1").empty();
+//			for (var i in attrData.result) {
+//				
+//				var span=$('<span class="attr"></span>');
+//				if (i==0) {
+//					span.addClass('attr_active')
+//				}
+//				span.html(attrData.result[i].name).bind({
+//					'click':function(){
+//						attrClick(this,1)
+//					}
+//				});
+//				var speces=attrData.result[i].specs;
+//				if (speces.length>0) {
+//					var attri='';
+//					for (var j in speces) {
+//						if (attri=='') {
+//							attri+=speces[j]['id']+"-"+speces[j]['name']+"-"+speces[j]['price'];
+//						}else{
+//							attri+="|"+speces[j]['id']+"-"+speces[j]['name']+"-"+speces[j]['price'];
+//						}
+//					}
+//					span.attr({
+//						'data-attr':attri,
+//					})
+//				}else{
+//					span.attr({
+//						'data-attr-id':attrData.result[i].id,
+//						'data-attr-price':attrData.result[i].price,
+//						'data-attr-name':attrData.result[i].name,
+//					})
+//				}
+//				$("#attr1").append(span)
+//				
+//			}
+//			$("#attr1 span").eq(0).click();
+//			$("#cart_goods").val($(this).parents('.cart_item').attr('data-goodsid'));
+//			mui("#attr").popover("toggle");
+//		})
+//		
+//		
+		$("#nav").on('tap','.mui-tab-item',function(){
+			mui("#popover").popover("toggle");
+		})
+//		//规格窗口关闭
+		$(".attr_close").click(function(){
+			mui("#attr").popover("toggle");
+		})
+		//加入购物车
+		$(".add_to_cart").click(function(){
+			var name=$('.attr_title').text();
+			var attr_id=$("#attr_id").val();
+			var attr='';
+			$(".attr_active").each(function(){
+				if (attr=='') {
+					attr+=$(this).text();
+				}else{
+					attr+=","+$(this).text();
+				}
+			})
+			var id=$("#cart_goods").val();
+			var price=parseFloat($(".price span").text())
+			addCart(name,price,id,1,attr,attr_id);
+			mui("#attr").popover("toggle");
+		})
+		//清空
+		$(".cart_clear").click(function(){
+			chartData={};
+			loadCartData();
+			mui("#popover").popover("toggle");
+		})
+		
+	})
+	
+	var chartData={};
+	if (Object.keys(chartData).length>0) {
+		loadCartData();
+	}
+	
+	//操作chartData对象，对购物车进行操作
+	/*
+	 * name；宝贝名称
+	 * price：宝贝单价
+	 * id：商品id
+	 * count：变更数量 1增加，-1减少
+	 * attr：规格
+	 * attr_id ：规格id
+	 * */
+	function addCart(name,price,id,count,attr,attr_id){
+		if (count>0) {
+			if (chartData[id+"-"+attr_id]) {
+				chartData[id+"-"+attr_id]['num']+=parseFloat(count);
+			}else{
+				chartData[id+"-"+attr_id]={
+					attr:attr,
+					attr_id:attr_id,
+					id:id,
+					name:name,
+					num:count,
+					price:price
+				}
+			}
+		}else{
+			if (chartData[id+"-"+attr_id]) {
+				chartData[id+"-"+attr_id]['num']+=parseFloat(count);
+				if (chartData[id+"-"+attr_id]['num']<=0) {
+					delete chartData[id+"-"+attr_id];
+				}
+			}
+		}
+		loadCartData();
+	}
+	//购物车内部 点击【+】/【-】执行函数，传递数据调用addcart函数
+	function cartList(me,flg,price){
+		var goodsid=$(me).parents('.cart_g_list').attr('data-goodsid');
+		var attr_id=$(me).parents('.cart_g_list').attr('data-attr-id');
+		var name=$(me).parents('.cart_g_list').attr('data-name');
+		var attr=$(me).parents('.cart_g_list').find('.goods_attr').text();
+		price=parseFloat(price);
+		addCart(name,price,goodsid,flg,attr,attr_id)
+	}
+	
+	
+//	//规格点击事件
+//	function attrClick(me,flg){
+//		var _this=me;
+//		$(_this).siblings().removeClass('attr_active');
+//		$(_this).addClass('attr_active');
+//		if (flg==1) {
+//			$("#attr2").empty();
+//		}
+//		var dataAttr=$(_this).attr('data-attr');
+//		if (dataAttr) {
+//			var arr=dataAttr.split('|');
+//			for (var i in arr) {
+//				var attr=arr[i];
+//				var arr2=attr.split('-');
+//				var span=$('<span class="attr"></span>');
+//				if (i==0) {
+//					span.addClass('attr_active')
+//				}
+//				span.html(arr2[1]).bind({
+//					'click':function(){
+//						attrClick(this,2)
+//					}
+//				});
+//				span.attr({
+//					'data-attr-id':arr2[0],
+//					'data-attr-price':arr2[2]
+//				})
+//				$("#attr2").append(span);
+//				$("#attr2 span").eq(0).click()
+//			}
+//		}else{
+//			var price=$(_this).attr('data-attr-price');
+//			var attrId=$(_this).attr('data-attr-id');
+//			$(".price span").text(price);
+//			$("#attr_id").val(attrId);
+//		}
+//	}
+
+	//根据chartData进行加载购物车以及列表页面
+	function loadCartData(){
+		console.log(chartData)
+		$("#cart_goods_list ul").empty()
+		var count=0;
+		var totalPrice=0;
+		if (Object.keys(chartData).length==0) {
+			$('#segmentedControlContents .cart-btn-numbox-minus').fadeOut();
+			$('#segmentedControlContents .mui-input-numbox').fadeOut(function(){
+				$('#segmentedControlContents .mui-input-numbox').text(0)
+			});
+		}
+		for (var i in chartData) {
+			var li=$("<li class='cart_g_list'></li>");
+			li.attr({
+				'data-goodsid':chartData[i]['id'],
+				'data-attr-id':chartData[i]['attr_id'],
+				'data-name':chartData[i]['name'],
+			})
+			var html='<div id="" class="cart_g_left">'+chartData[i]['name'];
+			if (chartData[i]['attr']) {
+				html+='<p class="goods_attr">'+chartData[i]['attr']+'</p>'
+			}
+			var price=chartData[i]['price']*chartData[i]['num'];
+				html+=	'</div>'
+					+	'<div class="cart_g_right" data-goodsid="'+chartData[i]['id']+'" >'
+					+		'<span><small>￥</small><span class="price_c">'+price.toFixed(2)+'</span></span>'
+					+		'<img src="../image/cut@2X.png" class="cart-btn cart-btn-numbox-minus" onclick="cartList(this,-1,'+chartData[i]['price']+')">'
+					+		'<span class="mui-input-numbox">'+chartData[i]['num']+'</span>'
+					+		'<img src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus" onclick="cartList(this,1,'+chartData[i]['price']+')">'
+					+	'</div>';
+			li.append(html)
+			$("#cart_goods_list ul").append(li)
+			count+=chartData[i]['num'];
+			totalPrice+=price;
+			
+			
+		}
+		
+		//变更商品列表
+		$(".cart_item").each(function(){
+			var gid=$(this).attr('data-goodsid');
+			if (chartData[gid+"-0"]) {
+				$(this).find('.cart-btn-numbox-minus').fadeIn();
+				$(this).find('.mui-input-numbox').text(chartData[gid+"-0"]['num']).fadeIn();
+			} else{
+				$(this).find('.cart-btn-numbox-minus').fadeOut();
+				$(this).find('.mui-input-numbox').text(0).fadeOut();
+			}
+			
+		})
+		$(".buy_count").text(count);
+		$(".total_price").text("￥"+parseFloat(totalPrice).toFixed(2));
+		if (count>=1) {
+			$(".buy_count").fadeIn()
+		}else{
+			$(".buy_count").fadeOut()
+		}
+	}
+</script>

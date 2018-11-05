@@ -1,0 +1,22 @@
+/*
+ * 特权中心样式
+ */
+
+html,body{
+	height: 100%;
+}
+
+
+
+/*首页一屏样式*/
+.index_nav{
+ 	height:100%;
+    width: 100%; 
+    min-width: 1280px;
+ 	overflow: hidden;
+    background-image: url(../static/img/developmentbanner_low.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center; 
+}
+

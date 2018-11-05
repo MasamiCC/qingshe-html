@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{list-style: none;margin: 0 ;padding: 0;}
+			body,.mui-content{background: #F4F4F4;}
+			.mui-content{padding-top: 50px;}
+			.mui-scroll .mui-table-view{margin: 1rem;background: none;}
+			.mui-scroll .mui-table-view:after,#refreshContainer .mui-table-view:before{height: 0;}
+			.mui-table-view:before{height: 0;}
+			.score_item{
+				background: #fff;border-radius: .5rem;margin: .8rem auto;overflow: hidden;
+			}
+			.station{display: flex;align-items: flex-start;padding: .5rem 1rem;}
+			.station>div{flex: 1;}
+			.station>div:first-child{line-height: 1.8;flex:0 0 30%;text-align: center;display: flex;align-items: center;justify-content: flex-start;font-size: 1rem;font-weight: 500;}
+			.station ul{display: flex;}
+			.station ul li{flex: 1;font-size: .75rem;text-align: center;line-height: 2.5;color: #666666;}
+			.station ul li div{font-size: .8rem;color: #333333;}
+			.point{background: #ccc;width: .5rem;height: .5rem;border-radius:1rem ;margin-right: .5rem;}
+			.bg_blue{background: #72b1ff;}
+			.font-red{color: red;}
+			.station_h{background: #fafafa;line-height: 1.6;padding: .3rem 1.5rem;color: #999999;font-size: .75rem;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <!--下拉刷新容器-->
+	      <div class="mui-scroll">
+	        <!--数据列表-->
+	        <ul class="mui-table-view mui-table-view-chevron">
+	          <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point"></div>
+	          				南通站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>50颗</div></li>
+	          					<li>预计黑钻释放天数<div>2天<span class="font-red">释放中</span></div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          		<div class="station_h">
+	          			黑钻释放完毕
+	          		</div>
+	          	</div>
+	          </li>
+	        <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point bg_blue"></div>
+	          				加油站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>660颗</div></li>
+	          					<li>预计黑钻释放天数<div>7天</div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          		<div class="station_h">
+	          			已加速，本站剩余黑钻将提前4天释放完成
+	          		</div>
+	          	</div>
+	          </li>
+	          <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point"></div>
+	          				初心站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>1760颗</div></li>
+	          					<li>预计黑钻释放天数<div>7天</div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          	</div>
+	          </li>
+	          <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point"></div>
+	          				奋斗站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>4000颗</div></li>
+	          					<li>预计黑钻释放天数<div>10天</div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          		<div class="station_h">
+	          			购买燃料，预计收益将乘以48%结算，剩余黑钻将延长15天发放
+	          		</div>
+	          	</div>
+	          </li>
+	          <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point"></div>
+	          				幸福站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>13100颗</div></li>
+	          					<li>预计黑钻释放天数<div>10天</div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          	</div>
+	          </li>
+	          <li class="score_item">
+	          	<div id="">
+	          		<div class="station">
+	          			<div class="">
+	          				<div class="point"></div>
+	          				小康站
+	          			</div>
+	          			<div class="">
+	          				<ul>
+	          					<li>预期最大收益 <div>16800颗</div></li>
+	          					<li>预计黑钻释放天数<div>10天</div></li>
+	          				</ul>
+	          			</div>
+	          		</div>
+	          	</div>
+	          </li>
+	        </ul>
+	      </div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

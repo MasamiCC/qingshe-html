@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout_user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/my_evaluate.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<script type="text/javascript">
+			var isUser=true,key='my_evaluate';
+		</script>
+		<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<script src="../js/evaluate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				<div class="user">
+					<div class="user_div user_left">
+						
+						<div class="left_menu">
+							
+						</div>
+					</div>
+					<div class="user_div user_right">
+						<div class="">
+							<div class="user_right_top">
+								<div class="user_right_title">
+									我的评价
+								</div>
+								<div class="user_right_nav">
+									订单管理&gt;我的评价
+								</div>
+							</div>
+							<div class="user_right_middle" >
+								<div class="order_header">
+									<ul  class="order_item order_item_header">
+										<li class="order_time" >下单时间</li>
+										<li class="order_detail" style="display: list-item;">订单内容</li>
+										<li class="order_evaluate">评论详情</li>
+										<!--<li class="order_pics"></li>-->
+									</ul>
+								</div>
+								<div class="address_list" ng-app="myEvaluate" ng-controller="evaluateCtrl" ng-init='getDate()'>
+									<div class="" ng-hide="evaluateList" style="line-height: 10;text-align: center;">
+										暂无数据
+									</div>
+									<ul class="order_item" ng-repeat="evaluate in evaluateList">
+										<li class="order_time">
+											<h5>{{evaluate.time|date}}</h5>
+											<p>{{evaluate.time|time}}</p>
+											<i class="fa fa-circle-o"></i>
+										</li>
+										<li class="order_detail">
+											<div class="order_detail_left">
+												<a href="" ng-href="shop_detail.html?shopId={{evaluate.shopId}}"><img ng-src="{{evaluate.shopImage}}"/></a>
+											</div>
+											<div class="order_detail_right">
+												<h4><a href="" ng-href="shop_detail.html?shopId={{evaluate.shopId}}">{{evaluate.shopName}}</a></h4>
+												<p class="evaluate_goods"> 
+													<span ng-repeat="goods in evaluate.order_goods">{{goods.name}} {{goods.count}}份 	/</span> 
+												</p>
+												<p>
+													共<span class="order-r">{{evaluate.order_goods.length}}</span>个商品
+												</p>
+											</div>
+										</li>
+										<li class="order_evaluate">
+											<div class="">
+												<span class="evaluate_evaluate">{{evaluate.evaluate}}</span>
+												<p style="text-align: right;" ng-hide='evaluate.evaluate_answer'>
+													<span class="order_btn order-y" ng-click="showEvaluate(evaluate)">[查看详情]</span>
+												</p>
+												
+											</div>
+											<div class="" ng-if="evaluate.evaluate_answer">
+												<span class="evaluate_answer" >
+													商家回复：{{evaluate.evaluate_answer}}    
+												</span>
+												<p style="text-align: right;">
+													<span class="order_btn order-y" ng-click="showEvaluate(evaluate)">[查看对话]</span>
+												</p>
+												
+												
+											</div>
+										</li>
+										<li class="order_pics" ng-if="evaluate.evaluate_pics" >
+											<!--{{evaluate.evaluate_pics}}-->
+											<img ng-src="{{pic}}" ng-repeat="pic in evaluate.evaluate_pics | limitTo:5" ng-click="showImage(pic)" />
+											<!--<div class="order-y pic_count" ng-if="evaluate.evaluate_pics.length>2" ng-click="showEvaluate(evaluate)">共{{evaluate.evaluate_pics.length}}张图片</div>-->
+										</li>
+									</ul>
+									<div class="page" ng-show="evaluateList">
+												
+												<ul class="pagination">
+												    <li><a href="#">&laquo;</a></li>
+												    <li><a href="#">1</a></li>
+												    <li><a href="#">2</a></li>
+												    <li><a href="#">3</a></li>
+												    <li><a href="#">4</a></li>
+												    <li><a href="#">5</a></li>
+												    <li><a href="#">&raquo;</a></li>
+												</ul>
+											</div>
+								</div>
+							</div>
+							
+							<div class="user_right_footer">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/user.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

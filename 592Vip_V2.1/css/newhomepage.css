@@ -1,0 +1,95 @@
+#wrap > ul > li > .text p{
+			padding: 20px 18px;
+			font-family: '微软雅黑';
+			color: #fff;
+			writing-mode:tb;
+			margin: 0 auto;
+			text-indent: 20px;
+			letter-spacing: 3px;
+		}
+		.lunbo3{
+			height: 317px!important;
+		}
+		#customize2 .pic2_2_li .pic2_2_div .pic2_2_div_ul_li_center{
+			    margin: 0 11px;
+		}
+		#customize2{
+			padding: 0 0px 3px 0px;
+		}
+		.pic2_1_ul_li1{
+			font-size: 18px;
+			color: #333;
+		}
+		.Merchant>.Merchant_list>li>a>img {
+		    width: 98.5%!important;
+		    height: 233px!important;
+		    text-align: center;
+		}
+	    .Merchant_shop{
+	    	line-height: 1.5;
+	   	}
+	   	.pic1_1{
+	   	    margin-right: 4px;
+	   	}
+	   	.life2_font ul{
+	   		text-align: justify;
+	   	}
+	   .advertisement .advertisement2{
+	   		margin: 0 17px;
+	   	}
+	   	.life, .life1 {
+		   margin-right: 14px;
+		}
+		.life2_font li {
+		    margin-right: 18px;
+		}
+		.pic2_2{
+			margin-left: 17px;
+			vertical-align: top;
+		}
+		.pic2_2_div_ul_li_center{
+			margin: 0;
+		}
+		.pic2_2>div>.pic2_2_li>a {
+			margin-right: 19px;
+		}
+		.pic2_2>div>.pic2_2_li>a:last-child{
+			margin-right: 0px;
+		}
+		.pic2_2>div>.pic2_3_div>a{
+			margin-right: 15px;
+		}
+		.pic2_2>div>.pic2_3_div>a:last-child{
+			margin-right: 0px;
+		}
+		.pic2_2>div>.pic2_2_li>a .pic2_2_div_ul_li img{
+			width: 185px;
+			height: 132px;
+		}
+		.pic2_2_divul{
+			margin-left: 0;
+		}
+		.pic2_2>div>.pic2_3_div>a .pic2_2_div_ul_li  img{
+			width:137px;
+			height: 67px;
+		}
+		.pic2_1_ul_li3_ul li{
+			list-style: disc;
+		}
+		.pic2_1_ul_li3_ul {
+		    margin-right: 30px;
+		}
+		.Merchant_list >li{
+			margin-right: 2px;
+		}
+		.big,.food_bigfont{
+			margin-right: 5px;
+		}
+		.float_window {
+			background: rgba(255,255,255,0.65);
+		}
+		.life1_1 img,.life1_2 img{
+			width: 300px;
+			height: 150px;
+		}
+		

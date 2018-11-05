@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>积分记录</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/memcp.css"/>
+		<style type="text/css">
+			.mui-fullscreen{
+				top: 19%;
+			}
+			.memcp_bottom .mui-table-view-cell{
+				padding: 11px 10px;
+    			margin: 0 15px;
+			}
+			.memcp_bottom .mui-table-view-cell:after,.mui-table-view:after{
+				height: 0!important;
+			}
+			.mui-popover.mui-popover-action .mui-table-view{
+				margin: 35px;
+			}
+			#picture a{
+				color: #666;
+			}
+			.firstul .mui-table-view-cell:last-child:after{
+				height: 0!important;
+			}
+			#picture.mui-popover-action .mui-table-view{
+				border-radius: 8px;
+			}
+			.mui-table-view-cell.mui-active{
+				background: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="memcp_top">
+			<div class="memcpcon">
+				<div class="memcpconcon">
+					<img src="../../image/goldcoin.png"/>
+				</div>
+				<div class="memcpconcon">
+					<div class="memcpconconnum">
+						30000.00
+					</div>
+					<div class="memcpconconfont">
+						总积分
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="type_icons">
+			<div class="type_icon memcp_time">
+				<span class="type_icon_time">时间</span><span class="fa fa-angle-down downicon timetounch"></span>
+			</div>
+			<div class="type_icon memcp_type">
+				<a class="type_icon_a" href="#picture"><span class="type_icon_type">类型</span>
+				<span class="fa fa-angle-down downicon typetouchu"></span></a>
+			</div>
+		</div>
+		<div class="memcp_bottom">
+			<ul class="mui-table-view time_con">
+				<li class="mui-table-view-cell lis">
+					<div class="liscon">
+						<div class="liscon_title">
+							任务—_奖励
+						</div>
+						<div class="liscon_time">
+							2018-05-06  08:00
+						</div>
+					</div>
+					<div class="liscon liscon_money">
+						+300
+					</div>
+				</li>
+				<li class="mui-table-view-cell lis">
+					<div class="liscon">
+						<div class="liscon_title">
+							任务—_违约扣除
+						</div>
+						<div class="liscon_time">
+							2018-05-06  08:00
+						</div>
+					</div>
+					<div class="liscon liscon_money">
+						-300
+					</div>
+				</li>
+				<li class="mui-table-view-cell lis">
+					<div class="liscon">
+						<div class="liscon_title">
+							消费_买单
+						</div>
+						<div class="liscon_time">
+							2018-05-06  08:00
+						</div>
+					</div>
+					<div class="liscon liscon_money">
+						-300
+					</div>
+				</li>
+				
+			</ul>
+			
+		</div>
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view firstul">
+				<li class="mui-table-view-cell firstullis ">
+					<a href="#" class="onlya type_icon_active">全部</a>
+				</li>
+				<li class="mui-table-view-cell firstullis">
+					<a href="#">奖励</a>
+				</li>
+				<li class="mui-table-view-cell firstullis">
+					<a href="#">消费</a>
+				</li>
+				<li class="mui-table-view-cell firstullis lastli">
+					<a href="#">扣除</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view ">
+				<li class="mui-table-view-cell ">
+					<a href="#picture" id="onlylia">取消</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		function goToBlackcard(){
+			callNative(memcp,weChatUrl,data);
+		}
+		
+
+		
+		$(".memcp_time").bind({
+		'click':function(e){
+			e.preventDefault();
+			var now=new Date();
+			var picker = new mui.DtPicker({
+				endDate:new Date(),
+				type:'month',
+			});
+			picker.show(function(rs){
+				console.log(rs.value)
+				var time=new Date(rs.value);
+				var year=time.getFullYear();
+				var month=time.getMonth()+1;
+				month=(month<10)?'0'+month:month;
+				console.log(month)
+				console.log(year)
+				$(".type_icon_time").html(+year+'年'+month+'月');
+			})
+			return false;
+		}
+		
+	})
+
+		
+//	$('#picture li a').each(function(){
+//		$(this).bind({
+//			click:function(){
+//				$('#picture li a').removeClass("type_icon_active");
+//				$(this).addClass("type_icon_active");
+//			}
+//		});
+//	});
+	
+	
+		var typeinfo=$(".type_icon_type");
+		mui('body').on('tap', '.firstullis a', function() {
+			var a = this,
+				parent;
+			//根据点击按钮，反推当前是哪个actionsheet
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+				console.log(a)
+			}
+			//关闭actionsheet
+			mui('#' + parent.id).popover('toggle');
+			var ahtml=a.innerHTML;
+			$(".mui-popover-action li>a").removeClass('type_icon_active')
+			$(a).addClass("type_icon_active")
+			typeinfo.html(ahtml);
+		})
+		
+		
+		mui('body').on('tap', '#onlylia', function() {
+			$(this).addClass("type_icon_active");
+			$(".mui-popover-action li>a").removeClass('type_icon_active');
+			$(".onlya").addClass('type_icon_active');
+			$(".type_icon_type").html('全部')
+		})
+	
+		
+
+	
+	var liitem='<li class="mui-table-view-cell lis">'
+				+		'<div class="liscon">'
+				+			'<div class="liscon_title">'
+				+				'消费_买单'
+				+			'</div>'
+				+			'<div class="liscon_time">'
+				+				'2018-05-06  08:00'
+				+			'</div>'
+				+		'</div>'
+				+		'<div class="liscon liscon_money">'
+				+			'-300'
+				+		'</div>'
+				+	'</li>'
+				
+	$(".time_con").append(liitem);
+
+		
+	})	
+
+
+ 				
+
+
+	
+</script>

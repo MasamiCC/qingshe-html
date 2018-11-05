@@ -1,0 +1,187 @@
+.center{
+	margin-top: 60px;
+	background: #fff;
+	background-image: url(../imgs/pc_jz_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.content_item{
+	min-height: 345px;margin-bottom: 120px;
+}
+.content_item >div{
+	background: rgba(0,0,0,0.5);color: #fff;border-radius: 5px;
+	padding: 40px 40px 40px 60px;
+	width: 520px;
+}
+.content1{
+	line-height: 0px;
+	font-size: 0;
+}
+.content1>div,.pay_wayout>div{
+	display: inline-block;
+}
+.content1_right,.content1_left,.paylogo,.payway{
+	vertical-align: middle;
+	line-height: 1;
+}
+.paylogo img,.payway{
+	vertical-align: middle;
+}
+.content1_left_con{
+	margin-right: 10px;
+	color: #fff;
+}
+.confirmpaydiv{
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+.confirmpay{
+	display: inline-block;
+	padding: 10px 50px;
+	color: #fff;
+	font-size: 16px;
+	background: grey;
+    cursor: not-allowed;
+}
+.zfactive{
+	background: url(../imgs/pay_active.png) no-repeat center bottom;
+	border: 1px solid #f84242!important;
+}
+.confirmpay_abled{
+	background: #f84242;
+}
+.confirmpay_abled:hover,.pay_wayoutdiv:hover{
+	cursor: pointer;
+}
+#content_money{
+	border: 1px solid #999;
+	width: 300px;
+	height: 38px;
+	line-height:38px;
+	color: #999;text-indent: 10px;
+}
+.margint2{
+	margin-top: 15px;
+}
+.pay_wayout{
+	font-size: 0;
+	line-height: 0;
+}
+.pay_wayoutdiv{
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.payway{
+	font-size: 16px;
+	color: #282828;
+}
+.paylogo{
+	margin-right: 10px;
+}
+.wechat{
+	padding: 10px 16px;
+}
+.zf{
+	width: 90px;
+	height: 40px;
+	line-height:40px;
+	background: none;
+	border:1px solid black;
+}
+#content_show{
+	border:0px;
+	margin-left: 20px;
+	min-width: 50px;
+	margin-right: 10px;
+	width: auto;
+	height: 26px;
+	line-height:26px;
+	color: red;
+	background: none;
+	font-size: 26px;
+}
+#yuan{
+	font-size: 14px;
+}
+.error_msg{
+	font-size: 12px;color: #dd1135;margin-left: 10px;    display: inline-block;
+}
+.pay{
+	font-size:14px ;
+	text-align: center;
+}
+.smallfont{
+	font-size: 12px;
+	margin-bottom: 10px;
+	
+}
+#cutdown{
+	color: #f84242;
+}
+li{
+	list-style: none;
+}
+.saoyisao>div,.saoyisao{
+	display: inline-block;
+}
+.pay1{
+	padding-top: 10px;
+}
+.pay3{
+	height: 0;
+	line-height: 0;
+}
+.sao{
+	margin-right: 10px;
+}
+.saoyisao{
+	background: #00a1e9;
+	padding: 20px 55px;
+}
+.sao_font li{
+	line-height: 1.5;
+}
+.sao_font{
+	color: #fff;
+}
+.pay1{
+	padding-bottom: 5px;
+
+}
+.pay2{
+	padding-bottom: 25px;
+
+}
+.layui-layer-title{
+background: none;
+}
+
+.need_count{
+	font-size: 35px;color: #fff;margin-left: 50px;font-weight: bold;
+}
+
+
+#jz{
+	display: none;
+}
+#jz+label{
+	background-image: url(../imgs/sel_bg.png);
+	background-repeat: no-repeat;
+	background-position: left bottom; 
+	text-indent: 25px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+#jz:checked+label{
+	background-image: url(../imgs/sel_bg.png);
+	background-repeat: no-repeat;
+	background-position: left top; 
+}
+.content1_left{
+	vertical-align: top;
+    line-height: 50px;
+}

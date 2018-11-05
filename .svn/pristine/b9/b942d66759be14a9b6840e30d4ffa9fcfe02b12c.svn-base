@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./map.css">
+    <title>站点地图</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="card">
+                <div class="card_top">
+                    <div class="card_title">
+                        南通站&nbsp;(始发地)
+                        <span>已通过南通站获取</span>
+                    </div>
+
+                    <p class="nums">
+                        红利释放
+                        <span>47.5积分</span>，慈善捐款
+                        <span>2.5元</span>
+                    </p>
+                </div>
+
+                <div class="card_bottom">
+                    <p class="bottom_txt">
+                        该站点积分已全部释放完毕
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box_g">
+            <div class="card">
+                <div class="card_top">
+                    <div class="card_title  org_title">
+                        加油站
+                        <span >撸起袖子加油干</span>
+                    </div>
+
+                </div>
+                <div class="card_bonus">
+                    <div class="title">
+                        预期分红
+                    </div>
+                    <div class="expect">
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">617.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_Strategy">
+                    <div class="title">过站攻略</div>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/bz@3x.png" alt="">&nbsp;&nbsp;攻略一&nbsp;:邀请两人到达加油站</span>
+                    <br>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/ry@3x.png" alt="">&nbsp;&nbsp;攻略二&nbsp;:花费4088元购买轻奢号燃料</span>
+                    <button class="bottom_btn">查看详细攻略</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box_g">
+            <div class="card">
+                <div class="card_top">
+                    <div class="card_title    ">
+                        初心站
+                        <span >不忘初心,牢记使命</span>
+                    </div>
+                </div>
+                <div class="card_bonus">
+                    <div class="title">
+                        预期分红
+                    </div>
+                    <div class="expect">
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">2289.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_Strategy">
+                    <div class="title">过站攻略</div>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/bz@3x.png" alt="">&nbsp;&nbsp;攻略一&nbsp;:帮助两人到达加油站</span>
+                    <br>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/ry@3x.png" alt="">&nbsp;&nbsp;攻略二&nbsp;:花费7888元购买轻奢号燃料</span>
+                    <button class="bottom_btn">去帮助</button>
+                </div>
+                <div class="card_bottom">
+                    <p class="bottom_txt">
+                        提前帮助,可解锁黑卡不限额度消费
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box_g">
+            <div class="card">
+                <div class="card_top" >
+                    <div class="card_title">
+                        奋斗站
+                        <span >幸福是奋斗出来的</span>
+                    </div>
+
+
+                </div>
+                <div class="card_bonus">
+                    <div class="title">
+                        预期分红
+                    </div>
+                    <div class="expect">
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">5589.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card_Strategy">
+                    <div class="title">过站攻略</div>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足500积分</span>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box box_g">
+            <div class="card">
+                <div class="card_top" >
+                    <div class="card_title">
+                        幸福站
+                        <span>小康路上一个都不能掉队</span>
+                    </div>
+
+                </div>
+                <div class="card_bonus">
+                    <div class="title">
+                        预期分红
+                    </div>
+                    <div class="expect">
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">17034.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card_Strategy">
+                    <div class="title">过站攻略</div>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足1000积分</span>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="box box_g">
+            <div class="card">
+                <div class="card_top" >
+                    <div class="card_title">
+                        小康站
+                        <span >终点站</span>
+                    </div>
+
+
+                </div>
+                <div class="card_bonus">
+                    <div class="title">
+                        预期分红
+                    </div>
+                    <div class="expect">
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">30994.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card_Strategy">
+                    <div class="title">过站攻略</div>
+                    <span class="strategy">
+                        <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足2000积分</span>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

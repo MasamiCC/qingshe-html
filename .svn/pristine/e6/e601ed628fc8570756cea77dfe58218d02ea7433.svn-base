@@ -1,0 +1,85 @@
+.mui-content{
+	background: #F4F4F4!important;
+}
+.mui-table-view:before,.mui-table-view:after{
+	height: 0;
+}
+.mui-table-view-cell{
+	font-size: 0.875rem;color: #333;
+}
+.mui-table-view-cell:after{
+	left: 0;
+}
+.appointment_item{
+	margin:10px 0
+}
+.appointment_item  .mui-pull-right{
+	font-size: 0.75rem;
+	color: #999;
+}
+.appointment_item .mui-navigate-right .mui-pull-right{
+	margin-right: 1rem;
+}
+.appointment_user li{
+	display: flex;
+}
+.appointment_user input[type=text],.appointment_user input[type=tel]{
+	border: none;
+	font-size: 0.75rem;
+	margin-bottom: 0;
+	padding-left: 0;
+	color: #999;
+}
+.appointment_user li >div{
+	flex: 1;
+}
+.appointment_right{
+	text-align: right;
+}
+.appointment_right .mui-input-row {
+	display: inline-block;
+}
+.mui-table-view-cell:hover{
+	background: #fff;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 20px;
+}
+.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+	padding-right: 0;padding-left: 25px;color: #333;
+	padding-top: 13px;
+	padding-bottom: 10px;
+}
+.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{
+	left: 0;
+	vertical-align: middle;
+	top: 10px;
+}
+.mui-table-view-cell.mui-active{
+	background: #fff;
+}
+.appointment_user .mui-table-view-cell{
+	padding: 0 15px;
+}
+textarea{
+	border:none;font-size: 0.75rem;padding-left: 0;padding-top: 0;color: #999;
+}
+.send_code{
+	line-height: 40px;color: #d4ac57;font-size: 0.75rem;
+}
+#appointment_btn{
+	background: #d4ac57;
+	border:1px solid #d4ac57;
+	top: 0;
+	height: 50px;
+	border-radius: 0;
+}
+.mui-bar-tab{
+	    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	color: #70c38e;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #70c38e;
+}

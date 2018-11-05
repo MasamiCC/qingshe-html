@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../../css/mui.min.css" rel="stylesheet" />
+	<style type="text/css">
+		body {
+			background: url(images/bcard@3x.png);
+			background-position: center;
+			background-size: cover;
+		}
+
+		.mui-content {
+			position: absolute;
+			left: 1.5rem;
+			right: 1.5rem;
+			top: 1.5rem;
+			bottom: 1.5rem;
+			box-shadow: 0 0 .5rem #999;
+			border-radius: .75rem;
+			overflow: hidden;
+			padding: .5rem;
+			background-color: #fff;
+		}
+
+		.mui-control-content {
+			/*height: 150px;*/
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 3.5rem;
+			bottom: 0;
+			padding: 0 1rem;
+		}
+
+		.mui-scroll-wrapper {
+			right: .7rem;
+			width: auto;
+		}
+
+		.mui-scrollbar-indicator {
+			background: #ff9f62;
+		}
+
+		.smartContracts_btn {
+			text-align: center;
+			left: 0;
+			right: 0;
+			padding: 1rem 0;
+		}
+
+		.smartContracts_btn span {
+			color: white;
+			border-radius: 2rem;
+			padding: .5rem 1rem;
+			width: 80%;
+			display: inline-block;
+			background: linear-gradient(to right, rgb(254, 198, 48), rgb(254, 156, 36));
+		}
+
+		.smartContracts_btn.active span {
+			color: #fff;
+			box-shadow: 1px 1px 1px 1px #ffe4c4;
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fec530), to(#fe9d24))
+		}
+
+		.smartContracts_cont {
+			line-height: 2;
+		}
+
+		.smartContracts_cont p {
+			color: #333;
+			margin-bottom: 0;
+		}
+
+		.smartContracts_title {
+			text-align: center;
+			font-size: 1.15rem;
+			padding: .75rem 0;
+			letter-spacing: 1px;
+			color: #999;
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			line-height: 2;
+			overflow: auto;
+		}
+
+		.smartContracts_user {
+			font-weight: bold;
+			font-size: 1rem;
+			line-height: 2;
+		}
+
+		.smartContracts_pro {
+			text-indent: 2rem;
+			padding: 1rem 0;
+			line-height: 2;
+			color: #333;
+			font-size: .875rem;
+			word-break: break-all;
+		}
+
+		.smartContracts_check {
+			font-size: .875rem !important;
+			padding-bottom: 1rem;
+		}
+
+		.smartContracts_check p {
+			line-height: 1.5;
+			margin-bottom: 0;
+			font-size: .75rem;
+		}
+
+		.smartContracts_check div {
+			padding: .3rem 0;
+		}
+
+		.smartContracts_check div img {
+			vertical-align: sub;
+			display: inline-block;
+			margin-right: .3rem;
+			width: 1.2rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mui-content">
+		<div class="smartContracts_title">
+			2018年4月24日
+		</div>
+		<div class="mui-control-content  content">
+			<!--这里放置真实显示的DOM内容-->
+			<div class="">
+				<div class="smartContracts_user">
+					<div>甲方:</div>
+					<div>
+						江苏轻奢点评文化科技有限公司
+					</div>
+					<div>乙方:</div>
+					<div class="">
+						xxx 先生/女士
+					</div>
+				</div>
+
+				<div class="smartContracts_pro">
+					欢迎进入 “轻奢点评经纪人 ”商务合作协议（以 下简称：本协议），经纪人业务是江苏轻奢点评文 化科技有限公司（以下简称 “甲方 ”）基于平台 为轻奢黑卡经纪人 (以下或称 “乙方 ”)提供的服 务范围内开发维护商家等相关业务。为了保障乙 方的权益，请在加入轻奢经纪人前，详细阅读本协
+					议的所有内容，特别是加粗部分。
+				</div>
+			</div>
+			<div class="">
+				<div class="smartContracts_btn">
+					<span id="sign">签订合约</span>
+				</div>
+				<div class="smartContracts_check ">
+					<div>
+						<img src="images/unselected@3x.png" />我已阅读并同意
+						<a href="">《轻奢黑卡经纪人商务合作协议》</a>
+					</div>
+					<p>自用户同意接受本协议点击“签订合约”后，协议开始生效，首次签约有效期为一年</p>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+//		swipeBack: true //启用右滑关闭功能
+	});
+	var ischeck = "";
+	(function ($) {
+		$('#scroll').scroll({
+			indicators: true //是否显示滚动条
+		});
+
+	})(mui);
+	$(function () {
+		$('.smartContracts_check').on('tap', 'div', function () {
+			console.log($(this).hasClass('checked'))
+			if ($(this).hasClass('checked')) {
+				$(this).find('img').attr('src', 'images/unselected@3x.png')
+				$(this).removeClass('checked')
+				ischeck = "";
+				$('.smartContracts_btn').removeClass('active')
+			} else {
+				ischeck = 1;
+				$(this).find('img').attr('src', 'images/selected@3x.png')
+				$(this).addClass('checked');
+				$('.smartContracts_btn').addClass('active');
+
+			}
+
+		})
+
+	})
+	qy()
+
+	function qy() {
+		$("#sign").click(function () {
+			if ($(this).hasClass('clicked')) {
+				return false;
+			}
+			$(this).addClass('clicked');
+			if (ischeck == 1) {
+				var p = $(this).parent();
+				p.removeClass('active');
+				setTimeout(function () {
+					p.addClass('active');
+					$(this).removeClass('clicked');
+				}, 2000);
+
+				callNative("signContracts", null, null);
+
+			} else {
+				alert("请阅读并勾选合约，谢谢！");
+				$(this).removeClass('clicked');
+				return false;
+			}
+		})
+	}
+</script>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>奢探</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../Public/css/mui.min.css"/>
+		<script src="../Public/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.video_li{
+				padding-right: 15px!important;position: relative;
+			}
+			.video_li p{
+				line-height: 30px;line-height: 30px;
+			}
+			.videoCss{
+				font-size: 0;height: 200px;position: relative;
+			}
+			.videoCss >img{
+				width: 100%;height: 200px;
+			}
+			.clear{
+				clear: both;
+			}
+			.video_li center{
+				position: absolute;left: 0;right: 0;top: 0;
+			}
+			center img{
+				max-width: 100px;margin-top: 45px;
+			}
+		</style>
+	</head>
+	<body>
+		
+
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron" id="video_list">
+					<li class="mui-table-view-cell video_li" data-id="1">
+						<p>
+							2017-05-21 12:50
+						</p>
+						<div id="" class="videoCss" >
+							<img src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg"/>
+							<center>
+								<img src="../Public/img/play.png" alt="" />
+							</center>
+						</div>
+						
+					</li>
+					<li class="mui-table-view-cell video_li" data-id="2">
+						<p>
+							2017-05-21 12:50
+						</p>
+						<div id="" class="videoCss" >
+							<img src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg"/>
+							<center>
+								<img src="../Public/img/play.png" alt="" />
+							</center>
+						</div>
+						
+					</li>
+					<li class="mui-table-view-cell video_li" data-id="3">
+						<p>
+							2017-05-21 12:50
+						</p>
+						<div id="" class="videoCss" >
+							<img src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg"/>
+							<center>
+								<img src="../Public/img/play.png" alt="" />
+							</center>
+						</div>
+						
+					</li>
+					<li class="mui-table-view-cell video_li" data-id="4">
+						<p>
+							2017-05-21 12:50
+						</p>
+						<div id="" class="videoCss" >
+							<img src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg"/>
+							<center>
+								<img src="../Public/img/play.png" alt="" />
+							</center>
+						</div>
+						
+					</li>
+					<li class="mui-table-view-cell video_li" data-id="5">
+						<p>
+							2017-05-21 12:50
+						</p>
+						<div id="" class="videoCss" >
+							<img src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg"/>
+							<center>
+								<img src="../Public/img/play.png" alt="" />
+							</center>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../Public/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					up: {
+						contentrefresh: '正在加载...',
+						callback: getMore
+					}
+				}
+			});
+			
+			var count = 0;
+			var page=1;
+			
+			mui("#video_list").on('tap','li',function(){
+				var id = this.getAttribute('data-id'); 
+				//var url="{:U('Home/Shetan/show/id/"+id+"')}";
+				var url="show.html?id="+id;
+				//console.log(id)
+				location.href=url;
+			})
+			function getMore(){
+				console.log(page)
+				mui('#pullrefresh').pullRefresh().endPullupToRefresh(1);
+				/*
+				$.ajax({
+		          type: 'POST',
+		          url: "{:U('Shetan/loadMore')}",
+		          data: {
+		            page:++page
+		          },
+		          success: function(data){
+		            //console.log(data)
+		            if(data.success){
+		            	loadMore(data.result.records);
+		            	console.log(data.result.totalPages)
+		            	if (page>=data.result.totalPages) {
+			            	mui('#pullrefresh').pullRefresh().endPullupToRefresh(1);
+			            }else{
+			            	page++;
+			            }
+		            	
+		            }else{
+		            	mui.alert('获取数据失败')
+		            }
+		            
+		          },
+		          dataType: 'json'
+		        });*/
+			}
+			function loadMore(data){
+				for (var i in data) {
+					var html='<li class="mui-table-view-cell video_li" data-id="'+data[i].id+'">'
+							+		'<p>'
+							+			data[i].create_time
+							+		'</p>'
+							+		'<div id="" class="videoCss" >'
+							+			'<img src="http://www.592vip.com:90/'+data[i].img+'"/>'
+							+			'<center>'
+							+				'<img src="../Public/img/play.png" alt="" />'
+							+			'</center>'
+							+		'</div>'
+							+	'</li>'
+					$("#video_list").append(html)
+				}
+			}
+		</script>

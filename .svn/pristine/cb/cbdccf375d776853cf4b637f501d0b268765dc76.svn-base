@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.newa_header img{
+	max-width: 100%;
+}
+.na_main,body{
+	background: #00475F;
+	/*position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	min-height: 600px;*/
+}
+.newa_main_item_font{
+	font-size: 1rem;
+	padding-left: 14%;
+	line-height: 1.7;
+	padding-right: 20px;
+}
+.newa_red{
+	color: #ec674f;
+}
+.newa_orange{
+	color: #f29754;
+}
+.newa_yellow{
+	color: #f8df7c;
+}
+.newa_main_bottom{
+	padding-top: 20px;
+}
+.newa_main_bottom input[type=tel],.newa_main_bottom input[type=text]{
+	background: #406a81;
+	color: #9bd6f5;
+}
+.newa_main_bottom>div{
+	padding: 0 50px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #9bd6f5;font-size: 0.9375rem;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color: #9bd6f5;font-size: 0.9375rem;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #9bd6f5;font-size: 0.9375rem;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color: #9bd6f5;font-size: 0.9375rem;
+}
+.newa_bottom{
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+#newa_submit{
+	display: inline-block;
+	font-size: 1rem;
+	color: #fff;
+	padding: 11px 67px;
+	background: #ec674f;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Mon Jun 12 09:44:57 2017
+ By admin
+</metadata>
+<defs>
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face 
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="896"
+    descent="-128"
+    x-height="792"
+    bbox="21 -31 1003 792"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0078-E624"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
+ />
+    <glyph glyph-name="x" unicode="x" horiz-adv-x="1001" 
+d="M281 543q-27 -1 -53 -1h-83q-18 0 -36.5 -6t-32.5 -18.5t-23 -32t-9 -45.5v-76h912v41q0 16 -0.5 30t-0.5 18q0 13 -5 29t-17 29.5t-31.5 22.5t-49.5 9h-133v-97h-438v97zM955 310v-52q0 -23 0.5 -52t0.5 -58t-10.5 -47.5t-26 -30t-33 -16t-31.5 -4.5q-14 -1 -29.5 -0.5
+t-29.5 0.5h-32l-45 128h-439l-44 -128h-29h-34q-20 0 -45 1q-25 0 -41 9.5t-25.5 23t-13.5 29.5t-4 30v167h911zM163 247q-12 0 -21 -8.5t-9 -21.5t9 -21.5t21 -8.5q13 0 22 8.5t9 21.5t-9 21.5t-22 8.5zM316 123q-8 -26 -14 -48q-5 -19 -10.5 -37t-7.5 -25t-3 -15t1 -14.5
+t9.5 -10.5t21.5 -4h37h67h81h80h64h36q23 0 34 12t2 38q-5 13 -9.5 30.5t-9.5 34.5q-5 19 -11 39h-368zM336 498v228q0 11 2.5 23t10 21.5t20.5 15.5t34 6h188q31 0 51.5 -14.5t20.5 -52.5v-227h-327z" />
+    <glyph glyph-name="VV" unicode="&#xe623;" 
+d="M932 522l-231 208q-9 7 -13 7h-378q-5 0 -14 -8l-205 -206q-5 -6 -5.5 -14t5.5 -14l410 -462q2 -2 14 -2v0q13 0 15 2l404 462q5 6 4.5 13.5t-6.5 13.5zM336 490l128 -354l-313 354h185zM573 699l87 -171h-289l71 171h131zM656 490l-141 -385l-138 385h279zM697 490h176
+l-305 -351zM871 528h-168l-86 171h64zM318 699h82l-71 -171h-180z" />
+    <glyph glyph-name="zuanshihuiyuan" unicode="&#xe624;" 
+d="M506 454h15v-113h-15v113zM377 735h270v-243h-270v36h234v69h-234v138zM611 699h-198v-66h198v66v0zM1003 597l-102 138h-241v-36h223l49 -66h-272v-141h252l31 36h-247v69h307zM328 528h-247l31 -36h252v141h-272l49 66h223v36h-241l-102 -138h307v-69zM512 86l-324 372
+h-47l371 -428l371 428h-47zM580 341v40h47l20 13v48l-20 12h-62v-113h15zM580 394v47h42q2 -1 5.5 -3.5t5.5 -2.5v-34l-6 -4t-5 -3h-42v0zM377 454v-63l36 -50h15l36 50v63h-15v-58l-29 -42v0l-28 42v58h-15z" />
+  </font>
+</defs></svg>

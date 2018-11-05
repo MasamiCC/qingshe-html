@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查看详情</title>
+    <!--引入css-->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <style>
+        .user_details_nav {
+            height: 450px;
+            padding: 30px 70px;
+        }
+        .user_details_nav>.title {
+            font-size: 24px;
+            color: #333333;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+        .detail_box {
+            margin-left: 40px;
+        }
+        .detail_box>p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 48px;
+            color: #999999;
+        }
+        .detail_box>p>span {
+            color: #333333;
+        }
+        .center_btn_area {
+            margin-top: 60px;
+        }
+        .center_btn_area .center_btn {
+            text-align: center;
+            margin: 0 auto;
+            width: 120px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 30px;
+            background-color: #333333;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            -webkit-transition: .5s 0s all;
+            -o-transition: .5s 0s all;
+            -moz-transition: .5s 0s all;
+            -ms-transition: .5s 0s all;
+            transition: .5s 0s all;
+            color: white;
+        }
+        .center_btn_area .center_btn.confirm {
+            background-color: #333333;
+            color: #333333;
+        }
+        .center_btn_area .center_btn.confirm:hover {
+            opacity: .8;
+        }
+        .center_btn_area .center_btn.cancel:hover {
+            background-color: #eaeaea;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="user_details_nav">
+        <h4 class="title">
+            黑卡经纪人详情
+        </h4>
+        <div class="detail_box">
+            <p>账号名称：&nbsp;&nbsp;&nbsp;<span>顾小白</span></p>
+            <p>手机号码：&nbsp;&nbsp;&nbsp;<span>17601525654</span></p>
+            <p>收益提成：&nbsp;&nbsp;&nbsp;<span>20%</span></p>
+            <p>账号地区：&nbsp;&nbsp;&nbsp;<span>崇川区</span></p>
+        </div>
+        <div class='center_btn_area'>
+            <a class='center_btn cancel'>关闭</a>
+        </div>
+    </div>
+    <script src="../../static/js/jquery.min.js"></script>
+    <script>
+        //点击取消
+        $(document).on('click', '.user_details_nav .cancel', function () {
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            parent.layer.close(index); //再执行关闭
+        })
+        $('.inp').bind('input propertychange', function () {
+            if ($(this).val()) {
+                $(this).next().show()
+            } else {
+                $(this).next().hide()
+            }
+        });
+        $('.close_icon').click(function () {
+            $(this).prev().val("");
+        })
+    </script>
+</body>
+</html>

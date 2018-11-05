@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢筹助</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/gethelpabout.css"/>
+	</head>
+
+	<body>
+		<div class="mui-content about">
+		    <div class="about-item">
+		    	<div class="about-title" style="line-height: 3;">
+		    		轻奢筹助是什么？
+		    	</div>
+		    	<div class="about-box" style="">
+		    		<div class="about-icon">
+		    			<img src="../image/icon_help_01@2x.png"/>
+		    		</div>
+		    		<div class="title">
+		    			轻奢点评旗下专业筹助平台
+		    		</div>
+		    		<p>
+		    			随着轻奢渐渐在年轻人中流行起来（尤其北上广地区），就和名人效应似的，人红是非多嘛：一些人开始反对轻奢消费，更激进的观点则直接把矛头指向了年轻人这个群体。
+		    		</p>
+		    	</div>
+		    	<div class="about-box" style="margin-top: 2rem;">
+		    		<div class="about-icon">
+		    			<img src="../image/icon_help_02@2x.png"/>
+		    		</div>
+		    		<div class="title">
+		    			轻奢点评慈善援助计划
+		    		</div>
+		    		<p >
+		    			随着轻奢渐渐在年轻人中流行起来（尤其北上广地区），就和名人效应似的，人红是非多嘛：一些人开始反对轻奢消费，更激进的观点则直接把矛头指向了年轻人这个群体。
+		    		</p>
+		    	</div>
+		    	<div class="clear">
+		    		
+		    	</div>
+		    </div>
+		    <div class="about-item">
+		    	<div class="about-title" style="padding-top: .3rem;">
+		    		合作伙伴
+		    	</div>
+		    	<div class="about-partner">
+		    		<ul class="mui-table-view mui-grid-view mui-grid-9">
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner" >
+			    		    <a href="#">
+			    		        <span class=" ">
+			    		        	<img src="../image/partner_01.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner">
+			    		    <a href="#">
+			    		         <span class=" ">
+			    		        	<img src="../image/partner_02.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner">
+			    		    <a href="#">
+			    		         <span class=" ">
+			    		        	<img src="../image/partner_03.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner">
+			    		    <a href="#">
+			    		         <span class=" ">
+			    		        	<img src="../image/partner_04.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner">
+			    		    <a href="#">
+			    		         <span class=" ">
+			    		        	<img src="../image/partner_05.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+			    		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3 partner">
+			    		    <a href="#">
+			    		         <span class=" ">
+			    		        	<img src="../image/partner_06.png"/>
+			    		        </span>
+			    		    </a>
+			    		</li>
+		    		    </ul>
+		    		
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

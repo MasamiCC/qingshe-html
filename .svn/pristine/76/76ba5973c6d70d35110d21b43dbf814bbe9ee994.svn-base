@@ -1,0 +1,84 @@
+.tel_top ul{
+	line-height: 0;
+	font-size: 0;
+}
+.tel_top{
+	margin: 65px 0px 65px 0;
+	min-width: 690px;
+}
+.tel_topli{
+	display: inline-block;
+	color: #999;
+}
+.active{
+	color: #edb94a!important;
+	border-color: #edb94a!important;
+}
+.presentactive{
+	background-color: #edb94a!important;
+	color: #fff!important;
+}
+.grey6{
+	color: #666;
+}
+
+@media (min-width: 992px){
+	.tel_title{
+	margin-left: 26.8%;
+}
+}
+@media (min-width: 1200px){
+	.tel_title{
+	margin-left: 30%;
+}
+}
+
+.num{
+	display: inline-block;
+	border: 1px  solid #999999;
+	line-height: 34px;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+.num_line{
+	color: #999;
+	padding: 0 15px;
+}
+.tel_title{
+	margin-top: 40px;
+	margin-bottom: 35px;
+	/*text-align: left!important;*/
+	/*margin-left: 29.4%;*/
+}
+.oldtel{
+	margin-bottom: 15px;
+}
+.get_yan_code{
+	display: inline-block;
+	border: 1px solid #edb94a;
+	padding: 6px 12px;
+	color: #edb94a;
+}
+.get_yan_code:hover{
+	cursor: pointer;
+}
+@media only screen and (min-width: 760px) {
+	.originaltel{
+		text-align: right;
+	}
+}
+.marginbtm{
+	margin-bottom: 20px;
+}
+.checkCircle{
+	font-size: 50px!important;
+}
+.change_tel3{
+	margin-top: 180px;
+}
+#change_tel2,#change_tel3{
+	display: none;
+}

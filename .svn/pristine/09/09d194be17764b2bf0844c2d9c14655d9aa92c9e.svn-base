@@ -1,0 +1,182 @@
+*{
+	list-style: none;padding: 0;margin: 0;
+}
+.blur{
+	height: 9rem;
+}
+@media only screen  and (max-width: 320px) {
+	.blur{
+	height: 8rem;
+}
+}
+.un_blur {
+	align-items: center;
+	margin: 0 10px;
+	top: 2rem;
+}
+.un_blur_l{
+	flex: 2;
+	width: 5.5rem;
+	margin-right: 5px;
+}
+.un_blur_l img{
+	max-width: 100%;
+	vertical-align: middle;
+	
+}
+.un_blur_c{
+	flex: 4.5;color: #fff;
+}
+.un_blur_r{
+	flex: 0.8;
+	background: rgba(34,25,16,0.9);color: #d4ac57;
+	text-align: center;
+	padding: 0.2rem 0.5rem;
+	max-width: 3rem;
+}
+.shop_name{
+	font-size: 0.9rem;font-weight: bold;
+}
+.shop_intro{
+	font-size: 0.75rem;
+}
+.lq_ticket{
+	color: #d4ac57;font-size: 0.75rem;
+	border: 1px solid #d4ac57;
+	border-radius: 2rem;
+	padding: 0.1rem 0.5rem;
+}
+.un_blur_r span{
+	font-size: 1rem;
+	line-height: 2;
+	display: block;
+}
+.un_blur_r span:first-child{
+	display: block;
+	border-bottom: 1px solid #d4ac57 ;
+	font-size: 0.9rem;
+}
+.gprs{
+	display: flex;padding: 8px 10px!important;
+}
+.gprs_l{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    font-size: 0.75rem;
+    flex: 3;
+    border-right: 1px solid #ddd;
+    margin-right: 0.5rem;
+}
+.gprs_l i{
+	color: #d4ac57;
+}
+.gprs_r{
+	width: 1.2rem;text-align: right;text-align: center;
+	flex: 1;
+	max-width: 1.2rem;
+}
+.gprs_r img{
+	margin: 0 auto;max-width: 100%;vertical-align: middle;
+}
+.gprs_ul:after{
+	height: 0;
+}
+.mui-table-view .mui-media-object{
+	width: 5.2rem;
+	max-width: 5.2rem;
+	height: 5.2rem;
+	line-height: 5.2rem;
+}
+.line_p{
+	font-weight: bold;
+	font-size: 1rem;
+	color: #000;
+	position: absolute;
+	bottom: .3rem;
+	right: .8rem;
+}
+.line_p small{
+	color: #999;
+	font-size: 0.70rem;
+}
+.last_line_title{
+	font-size: 0.85rem;margin-top: 2px;font-weight: normal;
+}
+.last_line_intro{
+	font-size: 0.75rem;line-height: 1.5;
+}
+#lasted_line ul:before,#lasted_line ul:after{
+	height: 0;
+}
+#lasted_line li:after{
+	left: 0!important;
+}
+#lasted_line li.mui-active{
+	background: #fff!important;
+}
+#lasted_line a.mui-active{
+	background: #fff!important;
+}
+#lasted_line li:after{
+	background-color: #efefef;
+}
+#fujin_tui .cat_sel_title{
+	margin-bottom: 0;
+}
+.shop_detail_pj_item {
+    display: flex;
+    padding-top: 10px;
+    margin: 0 0.5em;
+}
+.shop_detail_pj_left {
+    flex: 1;
+    width: 60px;
+    max-width: 60px;
+    text-align: left;
+}
+.shop_detail_pj_left img {
+    max-width: 50px;
+}
+.shop_detail_pj_right {
+    flex: 2;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 0;
+}
+.shop_detail_pj_item:last-child .shop_detail_pj_right{
+	border-bottom: none;
+}
+.user {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.user_xinyu {
+    font-size: 0;
+    line-height: 0;
+}
+.user_xinyu img{
+	margin-right: .2rem;
+}
+.pingjia {
+    font-size: 0.75rem;
+    color: #333;
+}
+.pingjia img{
+	max-width: 5rem;
+}
+.pingjia p{
+	color: #333;margin-bottom: 5px;
+	    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.user_lev {
+    color: #ff9600;
+}
+.pingjia_time {
+	color: #999;font-weight: normal;
+}

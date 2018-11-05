@@ -1,0 +1,25 @@
+/*公共样式*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, button, input, select, textarea{
+  font-family: "Microsoft YaHei",tahoma,arial,Hiragino Sans GB,\5b8b\4f53;
+  color: #333333;
+}
+
+ul, ol, li { 
+	list-style: none; 
+}
+
+fieldset, img { 
+	border: 0; 
+}
+
+a:hover,a:link,a:visited,a:active{
+  text-decoration: none;
+  cursor: pointer;
+}
+

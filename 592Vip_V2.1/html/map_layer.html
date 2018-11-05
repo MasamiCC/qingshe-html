@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;margin: 0;
+			}
+			#mapContainer{
+				width: 100%;height: 100%;position: absolute;overflow: hidden;
+			}
+			#mapContainer{
+				width: 452px;
+				height: 363px;
+				display: inline-block;
+				position: static;
+			}
+	/*地图信息*/
+	   .info {
+            border: solid 1px silver;
+        }
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 42px;
+            text-align: center;
+        }
+       
+        div.info-middle {
+            font-size: 12px;
+            padding: 6px;
+            line-height: 20px;
+            text-align: left;
+        }
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+           text-align: left;
+        }
+        .close{
+        	margin-bottom: 0;
+        	margin-right: 8px;
+        }
+	/*地图信息*/
+		</style>
+	</head>
+	<body>
+		<div id="mapContainer"></div>
+	</body>
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=5b4c94fd81c57ce0b38c605771edc43a"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+	<script type="text/javascript">
+		var marker = [];
+		var map = new AMap.Map('mapContainer', {
+	        resizeEnable: true,
+	        zoom:11,
+	        center: [120.944565, 31.922909]
+	 });
+	  addMarker();
+    //添加marker标记
+    function addMarker() {
+        map.clearMap();
+        var marker = new AMap.Marker({
+            map: map,
+            position: [120.944565, 31.922909]
+        });
+        //鼠标点击marker弹出自定义的信息窗体
+        AMap.event.addListener(marker, 'click', function() {
+            infoWindow.open(map, marker.getPosition());
+        });
+     
+    }
+    //infoWindow.open(map, marker.getPosition());
+    //实例化信息窗体
+    var title = '江苏轻奢点评文化科技有限公司',
+        content = [];
+    content.push("地址：江苏省南通市经济技术开发区星湖101广场1101号8号楼18F");
+    content.push("电话：0513-85799999");
+//  content.push("合作邮箱： service@chinajszb.com");
+    var infoWindow = new AMap.InfoWindow({
+        isCustom: true,  //使用自定义窗体
+        content: createInfoWindow(title, content.join("<br/>")),
+        offset: new AMap.Pixel(5, -40)
+    });
+    infoWindow.open(map, [120.944565, 31.922909]);
+
+    //构建自定义信息窗体
+    function createInfoWindow(title, content) {
+        var info = document.createElement("div");
+        info.className = "info";
+
+        //可以通过下面的方式修改自定义窗体的宽高
+//      info.style.width = "400px";
+//      info.style.height = "400px";
+        // 定义顶部标题
+        var top = document.createElement("div");
+        var titleD = document.createElement("div");
+        var closeX = document.createElement("img");
+        top.className = "info-top";
+        closeX.className = "close";
+        titleD.innerHTML = title;
+        closeX.src = "https://webapi.amap.com/images/close2.gif";
+        closeX.onclick = closeInfoWindow;
+
+        top.appendChild(titleD);
+        top.appendChild(closeX);
+        info.appendChild(top);
+
+        // 定义中部内容
+        var middle = document.createElement("div");
+        middle.className = "info-middle";
+        middle.style.backgroundColor = 'white';
+        middle.innerHTML = content;
+        info.appendChild(middle);
+
+        // 定义底部内容
+        /*var bottom = document.createElement("div");
+        bottom.className = "info-bottom";
+        bottom.style.position = 'relative';
+        bottom.style.top = '0px';
+        bottom.style.margin = '0 auto';*/
+        return info;
+    }
+
+    //关闭信息窗体
+    function closeInfoWindow() {
+        map.clearInfoWindow();
+    }
+	</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>体验版上线了</title>
+		<!--引入flexible布局-->
+		<script src="../js/experience/flexible.js"></script>
+		<!--引入css-->
+		<link rel="stylesheet" type="text/css" href="../css/experience/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/experience/experience.css" />
+	</head>
+	<body>
+		<div class="container_nav">
+			<!-- 锦鲤区域 -->
+			<div class="koi_nav">
+				<div class="koi_area">
+					<!-- 按钮 -->
+					<div class="koi_btn">
+						<a href="" class="btn">尊享版</a>
+						<a href="" class="btn">体验版</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 活动规则 -->
+			<div class="rule_nav">
+				<img src="../static/img/experience/activity_area.png" class="activity_img">
+				<!-- <img src="../static/img/rule_title.png" class="rule_title">
+				<div class="rule_area">
+					<img src="../static/img/activity_1.png" class="rule_img">
+					<img src="../static/img/activity_2.png" class="rule_img">
+				</div> -->
+			</div>
+		</div>
+	</body>
+</html>

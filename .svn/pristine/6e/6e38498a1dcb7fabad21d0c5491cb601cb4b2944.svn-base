@@ -1,0 +1,128 @@
+.list_handler{
+	padding-right: 0px;
+}
+.txt_tongji{
+	background: none;color: #333;
+}
+.txt_tongji span{
+	background: #333;padding: 2px 10px;text-decoration: none;color: #fff;
+	font-size: 14px;
+}
+.txt_tongji a{
+	color: #333;padding: 0 5px;
+}
+.txt_tongji input{
+	width: 100px;margin: 0 5px;padding: 2px 0;
+}
+
+.search_btn{
+	line-height: 1.5;font-size: 14px!important;
+}
+
+.columns{
+	cursor: pointer;
+}
+.columns.active{
+	background: #655E58;
+}
+.font-fail{
+	color: red;
+}
+.font-success{
+	color: green;
+}
+.font-ing{
+	color: #D4AC57;
+}
+.txt_page{
+	position: relative;
+}
+.page_total{
+	position: absolute;right: 0;top: 15px;line-height: 34px;
+}
+.boss_tj_item{
+	display: inline-block;width: 33%;
+	vertical-align: top;
+	font-size: 14px;
+}
+.tj_control{
+	border-bottom: 1px solid #ccc;
+}
+.tj_control li:first-child{
+	margin-left: 10px;
+}
+.tj_control li.active{
+	border: 1px solid #ccc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.tj_control li{
+	border:1px solid #fff;
+	display: inline-block;border-bottom: 1px solid #ccc;padding: 5px 15px;margin-bottom: -1px;
+}
+.tj_control_div div{
+	display: none;
+}
+.tj_control_div .active{
+	display: block;
+}
+.boss_tj_div{
+	font-size: 0;margin-top: 15px!important;
+}
+.boss_btn{
+	color: #d4ac57;border: 1px solid #d4ac57;padding: 0px 10px;line-height: 28px;display: inline-block;
+	margin: 5px auto;font-size: 14px!important;
+	text-indent: 0;
+}
+.boss_btn_a{
+	color: #fff;background: #d4ac57;
+}
+.boss_tj_item_c{
+	width: 80%;margin: 10px auto;border: 1px solid #ccc;text-align: center;
+	padding: 15px 10px 15px 0;
+}
+.boss_tj_item_c ul{
+	font-size: 0;
+}
+.boss_tj_item_c li{
+	display: inline-block;width: 33%;font-size: 14px;text-align: center;
+}
+.tj_control_div span{
+	display: block;
+}
+.tj_control_div ul{
+	font-size: 0;
+}
+.tj_control_div li {
+	font-size: 14px;text-align: center;display: inline-block;width: 50%;line-height: 2;margin-top: 10px;
+}
+.boss_tj_item_c li{
+	line-height:2;margin-top: 10px;vertical-align: top;
+}
+.tj_control_div li span,.boss_tj_item_c li span{
+	font-size: 30px;display: block;
+}
+.boss_tj_item_r{
+	line-height: 2;
+	    text-indent: 30px;
+}
+.edit_div{
+	padding: 10px 0;
+}
+.edit_div{
+	
+}
+.edit_div li{
+	padding: 10px 0;
+}
+.edit_div form{
+	width: 80%;margin: 0 auto;
+}
+.edit_div form input{
+	border:1px solid #ccc;
+	padding:3px ;border-radius: 3px;
+	width: 200px;
+}
+.edit_div a{
+	margin-left: 10px;cursor: pointer;
+}

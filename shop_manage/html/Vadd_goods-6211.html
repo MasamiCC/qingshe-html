@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="../css/Vcommon.css"/>
+		<style type="text/css">
+			.txt_yuyue_msg li{
+				height: inherit;
+				margin: 45px 0px;
+			}	
+			textarea{
+				resize: none;width: 50%;min-height: 300px;color: #666;line-height: 25px;border: 1px solid #ccc;padding: 5px 10px;
+			}
+			.txt_yuyue_msg label {
+			    min-width: 100px;
+			    display: inline-block;
+			    font-size: 16px;
+			    color: #333;
+			}
+			input[type=text]{
+				height: 36px;line-height: 36px;border: 1px solid #ddd ;text-indent: 10px;min-width: 400px;vertical-align: middle;
+			}	
+			
+			select{
+				height: 36px;line-height: 36px;border: 1px solid #ddd ;text-indent: 10px;min-width: 200px;
+			}
+			.txt_btn{
+				margin: 10px ;
+			}
+			.miaoShu,.choose_logo_nav label{
+				margin-bottom: 20px;
+				display: block!important;
+			}
+			/*.stitle{
+				background: #ddd;
+				text-indent: 10px;
+				padding: 2px 0px;
+				margin: 10px 15px 0px 15px!important;
+			}*/
+			.inlinediv{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.shopli span{
+				margin-right: 15px;
+			}
+			
+			/*商家logo*/
+			.choose_logo_nav{
+				float: left;
+				width: 150px;
+				cursor: pointer;
+				margin-right: 70px;
+			}
+			
+			.choose_logo_area{
+				width: 150px;
+				height: 150px;
+				position: relative;	
+			}
+			
+			.choose_logo_nav img{
+				width: 150px;
+				height: 150px;
+			}
+			
+			.choose_logo_nav .file_input{
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 150px;
+			    filter: alpha(opacity=0);
+			    -moz-opacity: 0;
+			    -khtml-opacity: 0;
+			    opacity: 0;	
+			}
+			
+			.logo_prompt > p{
+				text-align: center;
+				font-size: 16px;
+				color: #333333;
+				margin: 0;
+				margin-top: 10px;
+			}
+			
+			.logo_prompt > p:last-child{
+				color: #999999;
+				margin-top: 5px;
+			}
+			
+			.choose_logo_area.has_img .operate_img{
+				display: block;
+			}
+			
+			.operate_img{
+				display: none;
+			}
+			
+			.operate_img .edit_img{
+				position: absolute;
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0,0,0,0.8);
+				color: #d4ac57;
+				font-size: 14px;
+				text-align: center;
+			}
+			
+			.operate_img .remove_img{
+				position: absolute;
+				top: -10px;
+				right: -10px;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				border-radius: 100%;
+				background-color: #d4ac57;
+				font-size: 20px;
+				color: #fff;
+			}
+			.txt_btn{
+				padding: 12px 31px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="basic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="zizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="goods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="add_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="goods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="order.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="order_check.html">验证订单</a></p>
+						</div>
+						<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="pingjia.html">订单评价</a></p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心>新增商品</i> 
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+					<!--正文-->
+						<!--<div class="titleMes" style="font-weight: 600;margin:20px 15px 0px 15px;"><i>个人中心</i>><i>新增商品</i></div>-->
+						<!--<div class="stitle">基本信息</div>-->
+						<div class="txt_list txt_yuyue_msg">
+							<ul>
+								<li>
+									<label for="goods_name">商品名称</label> 
+									<input type="text" id="goods_name" placeholder="商品名称"/>
+								</li>
+								<li class="shopli" style="color: #666;">
+									<label for="">商品分类</label> 
+										<div class="inlinediv">
+											<input type="checkbox" class="checkB" name="goods" id="" value="" />
+										</div>
+										<span>分类1</span>
+									<div class="inlinediv">
+										<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									</div>
+									<span>分类2</span>
+									<div class="inlinediv">
+										<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									</div>
+									<span>分类3</span>
+								</li>
+								<li>
+									<div class="inline">
+									<label for="">单位</label> 
+									<select name="">
+										<option value="">份</option>
+										<option value="">间</option>
+									</select>	
+									</div>
+									
+								</li>
+								<li>
+									<label for="">购买数量</label> 
+									<input type="text" name="" id="" value="" placeholder="购买数量"/>
+								</li>
+								<li>
+									<label for="">单价</label> 
+									<input type="text" name="" id="" value="" placeholder="单价"/>
+								</li>
+								<!--<li>
+									<label for="">商品图片</label> 
+									<input type="file" name="" id="" value="" />
+								</li>-->
+								<li>
+									<label for="">排序</label> 
+									<input type="text" name="" id="" value="" placeholder="排序"/>
+								</li>
+								<li style="line-height: 1.8;">
+									<label for="" class="miaoShu">描述（文字）</label>
+									<textarea name="" rows="" cols="">编辑商品详情</textarea>
+								</li>
+								<li style="height: 195px;">
+									<div class="choose_logo_nav">
+										<label for="">商品图片</label>
+										<div class="choose_logo_area">
+											<img src="../img/no_pic.png" />
+											<input type="file" class="file_input" accept="image/*" />
+											<!--操作区域-->
+											<div class="operate_img">
+												<div class="edit_img">编辑</div>
+												<div class="remove_img">×</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li style="overflow: hidden;">
+									<span id="" class="txt_btn">
+										提交并保存
+									</span>
+								</li>
+							</ul>
+						</div>
+							
+						<!--正文部分结束-->
+					
+				<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+			</div>
+	     </div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+	<script type="text/javascript">
+		//编辑按钮被点击
+			$(document).on('click','.edit_img',function(){
+				$(this).closest('.choose_logo_area').find('.file_input').click();
+			})
+			
+			
+			//监听input file被选择
+			$(".file_input").on('change',function(){
+				var self = this;
+				if (!self.files.length) return;
+			    if (self.files.length > 1) {
+			        mui.alert("只允许上传一张图片!");
+			        return false;
+			    }else{
+			    	//得到图片
+			    	var file = self.files[0];
+			    	//转换成base64格式
+			    	var reader = new FileReader();
+			    	reader.onload = function () {
+				        var result = this.result;    //data:base64 
+				        $(self).closest('.choose_logo_area').find('img').attr("src", result); 
+				        $(self).closest('.choose_logo_area').addClass('has_img');
+				    };
+				    reader.readAsDataURL(file);
+			    }
+			})
+			
+			//删除按钮被点击
+			$(document).on('click','.remove_img',function(e){
+				e.stopPropagation()
+				$(this).closest('.choose_logo_area').find('img').attr("src", '../img/no_pic.png'); 
+				$(this).closest('.choose_logo_area').removeClass('has_img');
+			})
+	</script>
+</html>
+

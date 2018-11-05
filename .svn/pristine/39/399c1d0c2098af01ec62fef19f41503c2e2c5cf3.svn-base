@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				font-family: simhei;
+				background: #F4F4F4;
+			}
+			.icons{
+				font-size: 0;
+				line-height: 0;
+				margin-top: 10px;
+			}
+			.icons>div{
+				display: inline-block;
+				color: #fff;
+				font-size: 16px;
+				line-height: 1;
+			}
+			.icon_right{
+				float: right;
+			}
+			.TanChuang{
+				margin: 25px;
+			}
+			.blue_icon{
+				background-color: #3DA0F1;
+			}
+			.orange_icon{
+				background-color: #F8A120;
+			}
+			.TanChuang textarea{
+				background: none;
+				width: 100%;
+				height: 200px;
+				resize:none
+			}
+			.TanChuang ::-webkit-input-placeholder {
+			    padding-top: 10px;
+			    text-indent:10px;
+			}
+			.TanChuang textarea:focus{
+				box-shadow: none;
+				outline: none;
+			}
+			.icons span{
+				display: inline-block;
+				width: 100px;
+				height: 30px;line-height: 30px;text-align: center;
+				border-radius: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="TanChuang">
+			<div class="reason">
+				<textarea class="zd_textarea" name="" rows="" cols="" placeholder="请输入拒绝接单的原因，100字以内"  maxlength="100" ></textarea>
+			</div>
+			<div class="icons">
+				<div class="icon_left">
+					<span class="blue_icon">取消</span>
+				</div>
+				<div class="icon_right">
+					<span class="orange_icon">提交</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+
+</html>

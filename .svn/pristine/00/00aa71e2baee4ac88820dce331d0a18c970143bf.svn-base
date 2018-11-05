@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>附近</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/find.css"/>
+		<style type="text/css">
+			.shop_list{
+				top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    
+		    <div class="shop_list">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="shop_type">
+						<a class="mui-control-item shop_type mui-active" href="#item1mobile">
+							全部
+						</a>
+						<a class="mui-control-item shop_type" href="#item2mobile">
+							美味
+						</a>
+						<a class="mui-control-item shop_type" href="#item3mobile">
+							酒店
+						</a>
+						<a class="mui-control-item shop_type" href="#item4mobile">
+							定制
+						</a>
+						<a class="mui-control-item shop_type" href="#item5mobile">
+							旅游
+						</a>
+						<a class="mui-control-item shop_type" href="#item6mobile">
+							生活
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell shop_item">
+										<div class="shop_item_i shop_img">
+											<img  class="shop_logo" data-lazyload="image/shop_2.png"/>
+										</div>
+										<div class="shop_item_i shop_msg">
+											<ul>
+												<li class="shop_title">这是一家全部店铺</li>
+												<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+												<li>
+													<span class="shop_status">休息中</span>
+													<span class="shop_juli">11.49km</span>
+												</li>
+												<li>
+													<div class="shop_pingfen">
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon2.png"/>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell shop_item">
+										<div class="shop_item_i shop_img">
+											<img  class="shop_logo" data-lazyload="image/shop_2.png"/>
+										</div>
+										<div class="shop_item_i shop_msg">
+											<ul>
+												<li class="shop_title">这是一家美味店铺</li>
+												<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+												<li>
+													<span class="shop_status">营业中</span>
+													<span class="shop_juli">11.49km</span>
+												</li>
+												<li>
+													<div class="shop_pingfen">
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon2.png"/>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll4" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll5" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item6mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll6" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.pullToRefresh.js"></script>
+<script src="js/mui.pullToRefresh.material.js"></script>
+<script src="js/mui.lazyload.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.lazyload.img.js" type="text/javascript" charset="utf-8"></script>
+<script>
+			mui.init({
+                swipeBack: false
+            });
+            mui('#scroll1').pullRefresh({
+                down: {
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            });
+            mui('#scroll2').pullRefresh({
+                down: {
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            });
+            mui('#scroll3').pullRefresh({
+                down: {
+                    callback: pulldownRefresh
+                },
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            });
+            /**
+             * 下拉刷新具体业务实现
+             */
+            function pulldownRefresh() {
+                var self = this;
+                setTimeout(function() {
+                    self.endPulldownToRefresh(); //refresh completed
+                }, 1500);
+            }
+            var count = 0;
+            /**
+             * 上拉加载具体业务实现
+             */
+            function pullupRefresh() {
+                var self = this;
+                setTimeout(function() {
+                    self.endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+                }, 1500);
+            }
+			mui('#scroll1').pullRefresh().pullupLoading()
+		</script>

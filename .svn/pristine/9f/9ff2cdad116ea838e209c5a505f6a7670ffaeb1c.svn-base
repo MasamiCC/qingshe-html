@@ -1,0 +1,27 @@
+.pingjia_time{
+	font-size: 14px;line-height: 16px;
+}
+.user{
+	border-bottom: 1px solid #eee;padding: 4px 0;font-weight: lighter;font-size: 14px;
+}
+.user a{
+	margin: 0!important;padding: 0!important;
+}
+.user a:after{
+	right: 5px;
+}
+.user_xinyu{
+	padding: 10px 0;
+}
+.user:after{
+	height: 0;
+}
+.shop_detail_pj_item{
+	background: #fff;padding: 5px 8px;margin: 5px 0;
+}
+.shop_detail_list {
+	background: none;
+}
+.shop_detail_pj_right{
+	border-bottom: 0;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" href="../../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/loginedblackcard.css"/>
+		<style type="text/css">
+		.allscroll .mui-segmented-control.mui-segmented-control-inverted{
+			height: 90px;
+		}
+		.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+			padding: 0 10px;
+		}
+		.own .mui-segmented-control.mui-segmented-control-inverted{
+			height: 200px;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+			color: inherit;
+    		border-bottom: 0;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="loginedtop">
+				<div class="loginedtopfirst">
+					积分消耗完，将失去<span class="bcfont">黑卡权益</span>
+				</div>
+				<div class="loginedtopcon">
+					<div class="loginedtopconcon">
+						<div class="loginedtopconconhead">
+							<img src="../../image/dhead2.png"/>
+						</div>
+						<div class="loginedtopconconfontcon">
+							<div class="loginedtopconconfont">
+								黑卡会员
+							</div>
+						</div>
+						
+					</div>
+					<div class="loginedtopconcon2">
+						<div class="loginedtopconcon2first">
+							账户积分
+						</div>
+						<div class="loginedtopconcon2second">
+							36,500
+						</div>
+					</div>
+				</div>
+				<div class="loginedtopthird">
+					<span class="loginedfont">进入任务系统</span>
+				</div>
+			</div>
+			
+			<!--title-->
+			<div class="blackcard_title">
+				我的权益<span class="duser">查看全部</span>
+			</div>
+			<!--title-->
+			
+			<div class="detail_scroll allscroll">
+				<div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+				    <div class="mui-scroll">
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon1.png"/></div>
+			                   <div class="name">尊贵图标</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon2.png"/></div>
+			                   <div class="name">贴心管家</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon3.png"/></div>
+			                   <div class="name">轻奢福利</div>
+			               </li>
+						</a>				    			
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon4.png"/></div>
+			                   <div class="name">轻奢沙龙</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon5.png"/></div>
+			                   <div class="name">特权折扣</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon6.png"/></div>
+			                   <div class="name">车位预留</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon7.png"/></div>
+			                   <div class="name">公益慈善</div>
+			               </li>
+						</a>
+						<a href="" class="mui-control-item ">
+							<li class="lie">
+			               		<div class="liepic"><img src="../../image/newblackicon8.png"/></div>
+			                   <div class="name">优先体验</div>
+			               </li>
+						</a>
+					</div>
+				</div>
+			</div>
+		
+			<!--title-->
+			<div class="blackcard_title bordertitle">
+				自营优选<span class="duser">轻奢自营商城</span>
+			</div>
+			<!--title-->
+			<div class="detail_scroll allscroll own">
+		    		<div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted scrollitem">
+		    		    <div class="mui-scroll">
+							<a href="" class="mui-control-item ">
+								<li class="lie">
+				               	   <div class="liepic"><img src="../../image/hermes.png"/></div>
+				                   <div class="name">HERMÈS 爱马仕尼 罗河花园香水50毫升</div>
+				                   <div class="money">¥375.00</div>
+				               </li>
+							</a>
+						<a href="" class="mui-control-item ">
+								<li class="lie">
+				               	   <div class="liepic"><img src="../../image/dior.png"/></div>
+				                   <div class="name">Dior 迪奥迪奥小姐淡 香水 100毫升</div>
+				                   <div class="money">¥375.00</div>
+				               </li>
+							</a>
+							<a href="#" class="mui-control-item ">
+								<li class="lie">
+				               	   <div class="liepic"><img src="../../image/hermes.png"/></div>
+				                   <div class="name">HERMÈS 爱马仕尼 罗河花园香水50毫升</div>
+				                   <div class="money">¥375.00</div>
+				               </li>
+							</a>
+							<a href="" class="mui-control-item ">
+								<li class="lie">
+				               	   <div class="liepic"><img src="../../image/dior.png"/></div>
+				                   <div class="name">Dior 迪奥迪奥小姐淡 香水 100毫升</div>
+				                   <div class="money">¥375.00</div>
+				               </li>
+							</a>
+		    			</div>
+		    		</div>
+		    	</div>
+			
+			<!--title-->
+			<div class="blackcard_title bordertitle">
+				自营优选
+			</div>
+			<!--title-->
+			<div class="ziyingyouxuan">
+				<img src="../../image/ziyingyouxuan.png"/>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		function goToBlackcard(){
+			callNative(tologinedBlackcard,weChatUrl,data);
+		}
+		
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+	scrollY: false, //是否竖向滚动
+	
+	scrollX: true, //是否横向滚动
+	
+	startX: 0, //初始化时滚动至x
+	
+	startY: 0, //初始化时滚动至y
+	
+	indicators: true, //是否显示滚动条
+	
+	deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	
+	bounce: true //是否启用回弹
+	
+	});
+		
+	});
+	
+</script>

@@ -1,0 +1,356 @@
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body{
+				background: #fff;
+			}
+			.topbg{
+				font-size: 0.875rem;
+				color: #333;
+			}
+			.firstline{
+				display: flex;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #eeeeee;
+				padding:15px 15px 25px 15px;
+			}
+			.firstheader{
+				width: 80px;
+				display: flex;
+    			justify-content: center;
+    			align-items: center;
+    			line-height: 1;
+			}
+			.firstcontent{
+				flex: 2;
+			    display: flex;
+			    flex-direction: column;
+			    /* justify-content: center; */
+			    align-items: flex-start;
+			}
+			.calendar{
+				font-size: 0;
+				line-height: 0;
+				text-align: center;
+			}
+			.dyear,.dmonth,.dxialaicon{
+				display: inline-block;
+				width: 65px;
+			}
+			.fheader img{
+				width: 65px;
+    			height: 65px;
+    			border-radius: 50%;
+			}
+			.firstconbig{
+				font-size: 1rem;
+				color: #333;
+				font-weight: bold;
+				margin-right: 5px;
+			}
+			.firstconsmall{
+				font-size: 0.875rem;
+				color: #f8a120;
+			}
+			.dyear{
+			    font-size: 0.875rem;
+			    color: #fff;
+			    background: #f24a54;
+			    height: 26px;
+			    border-radius: 4px;
+			    line-height: 26px;  
+			}
+			.dmonth{
+				font-size: 35px;
+			    line-height: 1.2;
+			    background: #fff;
+			    border-bottom-left-radius: 6px;
+			    border-bottom-right-radius: 6px;
+			    box-shadow: 1px 1px 5px 2px #eee;
+			    color: #030000;
+			    padding-bottom: 5px;
+			}
+			.dxialaicon{
+			    background: rgba(255,254,254,0.4);
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				height: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+			}
+			.dxialaiconcon{
+				line-height: 1.2;
+    			font-size: 0.875rem;
+    			position: absolute;
+    			bottom: 2px;
+			}
+			.dxialaicon img{
+				width: 12px;
+				height: 7px;
+			}
+			.calendar{
+				position: relative;
+			}  
+			.firstcon{
+				line-height: 2.2;
+			}
+			.dtitle{
+				font-size: 1.125rem;
+				color: #333;
+				font-weight: bold;
+				line-height: 1.5;
+				margin: 0 15px 15px 15px;
+			}
+			.month_count,.heartbangcon,.dbottomline{
+				display: flex;
+			}
+			.heartbangconcon>div{
+				display: inline-block;
+			}
+			.heartbangitemf img{
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+			}
+			.duser{
+			   float: right;
+			   margin-right: 15px;
+			   position: relative;
+			   font-weight: normal;
+			   font-size: 1rem;
+			   color: #666;
+			}
+			.duser:after,.click_sign:after{
+				content: '';
+				width: 7px;
+				height: 7px;
+				border-top: 1px solid #666;
+				border-right: 1px solid #666;
+				transform: rotate(45deg);
+				position: absolute;
+				top: 8px;
+				margin-left: 3px;
+			}
+			.heartbangcon{
+				background: #f4f4f4;
+				margin: 0 15px;
+				padding: 15px 10px;
+			}
+			.heartbangconcon{
+				width: 33.3%;
+				text-align: center;
+				background: #fff;
+				position: relative;
+				margin: 8px 8px;
+			}
+			.dnum{
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 0.875rem;
+				color: #fff;
+				background: #fa5eb5;
+				position: absolute;
+				top: -3px;
+    			left: -3px;
+			}
+			.heartbangconcon:first-child .dnum{
+				background: #f6b451;
+			}
+			.heartbangconcon:last-child .dnum{
+				background: #7e7efb;
+			}
+			.shopbang .heartbangconcon{
+				background: none;
+				text-align: left;
+			}
+			.shopbang .heartbangitemf img{
+				width: 100%;
+    			height: 75.5px;
+				border-radius: 0;
+			}
+			.shopdtitle{
+				padding: 10px 0;
+			}
+			.dbottom .duser{
+				color: #333;
+			}
+			.shopbang{
+				padding-top: 5px;
+				margin-bottom: 20px;
+			}
+			.shopbang .heartbangcon{
+				padding: 0;
+				margin-bottom: 35px;
+			}
+			.heartbangnum{
+				position: absolute;
+				top: 64.5px;
+    			left: 0px;
+				font-size: 22px;
+				color: #020000;
+				display: inline-block;
+				background: rgba(234,203,128,0.73);
+				padding: 0 1px;
+				font-weight: 540;
+			}
+			.heartbangtitle{
+				font-size: 13px;
+				color: #333333;
+				width: 100px;
+				text-overflow: ellipsis;
+			 	white-space: nowrap;
+			 	overflow: hidden;
+			}
+			.shopbang .heartbangitem{
+				font-size: 12px;
+				color: #ce3026;
+			}
+			.heartbangconcon>.heartbangitem{
+				padding: 10px 0;
+			}
+			.thirdfont{
+				margin-right: 5px;
+				color: #666;
+				font-size: 0.8125rem;
+			}
+			.dmemb{
+				text-align: center;
+				background: url(../image/d592.png) no-repeat;
+				background-size: 100% 100%;
+				color: #eacb80;
+				padding-bottom:22%;
+				margin-bottom: 20px;
+			}
+			.dmembitem1{
+				font-size: 25px;
+				font-weight: 500;
+				line-height: 1.5;
+				padding-top: 22%;
+			}
+			.dmembitem2{
+				font-size: 19px;
+				line-height: 1.5;
+				margin-top:2%;
+			}
+			.dmembitem3{
+				font-size: 21px;
+				line-height: 1.5;
+				margin-top:2%;
+			}
+			.dbottomline3{
+				flex: 2;
+				text-align: right;
+				background: #f3eee3;
+			}
+			.dbottomline2{
+				flex: 1.1;
+				padding-left: 8px;
+				background: #f4f4f4;
+				align-items: flex-start!important;
+			}
+			.dbottomline2 p{
+				line-height: 1.5;
+				margin-bottom: 0px;
+			}
+			.dbottomline{
+				margin: 15px 15px 0 15px;
+				height: 60px;
+    			line-height: 60px;
+			}
+			.dbottomline1 img{
+				width: 60px;
+				height: 60px;
+			}
+			.dbottom{
+				margin-bottom: 20px;
+			}
+			/*tongji*/
+			.month_count{
+				display: flex;
+				margin: 0 15px 10px 15px ;
+			}
+			.month_countitem{
+				width: 33%;
+				height: 118px;
+				margin: 0 10px 10px 0px;
+				position: relative;
+				border: 1px solid #eee;
+				border-radius: 6px;
+				justify-content: center;
+				text-align: center;
+				align-items: center;
+				align-content: center;
+				box-shadow:1px 3px 5px 1px #ddd;
+				display: flex;
+			}
+			.month_countitem:last-child{
+				margin-right: 0;
+			}
+			.month_font{
+				position: absolute;
+				top: 36px;
+				left: 0;right: 0;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.month_numfont{
+				font-size: 16px;
+				color: #333333;
+			}
+			.month_sfont{
+				font-size: 12px;
+				color: #666;
+				}
+			.month_font p{
+				margin-bottom: 0;
+				line-height: 1.5;
+			}
+			.dbottomline2,.dbottomline3{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			.dbottom .duser{
+				font-size: 0.875rem;
+			}
+			.dbottom .duser:after{
+				width: 6px;
+				height: 6px;
+			}
+			
+			.nosignin .firstcon{
+				font-size: 0.875rem;
+				color: #666;
+				text-indent: 22px;
+			}
+			.nosignin .firstcontentline{
+				position: relative;
+			}
+			.click_sign{
+				display: inline-block;
+				padding: 1px 23px 1px 13px;
+				background: #eacb80;
+				color: #fff;
+			}
+			.click_sign:after{
+				border-color: #fff;
+			}
+			@media only screen and (max-width: 320px){
+				.shopbang .heartbangconcon{
+					width: 27.3%;
+				}
+				.shopbang .heartbangitemf img{
+					width: 78%;
+				    height: 75.5px;
+				    border-radius: 0;
+				}
+				.month_countitem{
+					    width: 32%;
+				}
+			}

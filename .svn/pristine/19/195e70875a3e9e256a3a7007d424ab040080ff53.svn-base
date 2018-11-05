@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>黑卡经纪人合作规则</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../../../css/mui.min.css" rel="stylesheet" />
+	<link href="../css/cooperate_regular.css" rel="stylesheet" />
+	<style type="text/css">
+		
+	</style>
+</head>
+
+<body>
+	<div class="mui-content allcooperate">
+		<div class="title">
+			前提条件:<span class="margin_left">(必须同时满足)</span>
+		</div>
+		<div class="banner">
+			<div class="">
+				<span class="btn">1</span>客户首先成为黑卡用户
+			</div>
+			<div class="">
+				<span class="btn">2</span>签订智能合约，进入轻奢号
+			</div>
+			<div class="">
+				<span class="btn">3</span>完成前三站点攻略任务
+			</div>
+		</div>
+		<div class="title margintop20">
+			收益规则:
+		</div>
+		<div class="mainfont">
+			黑卡经纪人与其自身开发的入驻商户业务进行捆绑计算业务费。计算方法为：经纪人签约入驻的商家在轻奢点评平台<span class="weight">每笔结算的交易额*签约平台应收扣点*20%</span>作为经纪人的业务费，业务费以消费黑钻结算，结算日期按照“T+7"周期自动结算；经纪人累计的业务收益<span class="weight">黑钻大于等于1万黑钻</span>时，可向平台申请黑钻兑现，税金自理。
+		</div>
+		<div class="bluefont">
+			“T+7”周期自动结算：即平台每天对经纪人七天前的业务黑钻账目进行自动结算
+		</div>
+		<!--<div class="bottom">
+			<div class="fontsize">
+				<span class="weight">您当前的黑卡任务进行到“任务一”</span>
+			</div>
+			<div class="botmButton_con">
+				<span class="botmButton">继续完成黑卡任务</span>
+			</div>
+		</div>-->
+		
+		<!--<div class="bottom">
+			<div class="fontsize">
+				<span class="weight">您当前还未成为红利黑卡会员</span>
+			</div>
+			<div class="botmButton_con">
+				<span class="botmButton">签订智能合约</span>
+			</div>
+		</div>-->
+		
+		<!--<div class="bottom">
+			<div class="fontsize">
+				<span class="weight">恭喜您已经符合黑卡经纪人前提条件</span>
+			</div>
+			<div class="botmButton_con">
+				<span class="botmButton">签约成为黑卡经纪人</span>
+			</div>
+		</div>-->
+		
+		<!--<div class="bottom">
+			<div class="fontsize">
+				<span class="weight">您当前还未成为黑卡会员</span>
+			</div>
+			<div class="botmButton_con">
+				<span class="botmButton">申请成为黑卡会员</span>
+			</div>
+		</div>-->
+		
+		<div class="bottom">
+			<div class="fontsize">
+				<span class="weight">您当前处于黑卡复活状态</span>
+			</div>
+			<div class="botmButton_con">
+				<span class="botmButton">去复活，继续进行攻略任务</span>
+			</div>
+		</div>
+		
+	</div>
+	<div class="propoverbg QIpropove">
+		<div class="propvercon">
+			<div class="propverconTitle">
+				新增推广收益权益通知
+			</div>
+			<div class="propverconContent">
+				为了提升黑卡经纪人的积极性,保障黑卡经纪人的收益及权益,
+				黑卡经纪人除可享受业务收益外,平台现根据黑卡经纪人推广黑卡会员数和签约商家数2项指标进行补助金的激励,
+				最高单月可获得3200元补助金,具体详见
+				<a href="https://www.592vip.com:91/app_static/html/quDaoGuanLi.html">
+					《轻奢点评黑卡经纪人渠道拓展管理办法（试行）》
+				</a>。
+				
+			</div>
+			<div class="propverconBtn">
+				知道了
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.propverconBtn').click(function(){
+			if(true){
+				$('.QIpropove').removeClass('propoverbg');
+				$('.propvercon').hide();
+			}
+//			show
+//				$('.QIpropove').addClass('propoverbg');
+//				$('.propvercon').show();
+		});
+	});
+</script>
+</html>

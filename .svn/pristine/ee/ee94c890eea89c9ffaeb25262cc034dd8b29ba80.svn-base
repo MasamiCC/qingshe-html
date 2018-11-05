@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>老虎机</title>
+		<!--引入flexible布局-->
+		<script src="../static/js/flexible.js"></script>
+		
+		<!--引入css-->
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/bandit.css" />
+	</head>
+	<body>
+		<div class="container_nav">
+			<h4 class="container_title">
+				感谢您的本次分享，在下方填写手机号与验证码之后，点击下方按钮
+			</h4>
+			
+			<!--输入验证码区域-->
+			<div class="phone_area">
+				<div class="phone_input">
+					<input type="text" placeholder="请输入手机号" class="input"/>
+				</div>
+				<div class="identi_area">
+					<input type="text" placeholder="请输入手机验证码" class="input"/>
+					<span class="code_btn">发送验证码</span>
+				</div>
+			</div>
+			
+			<!--老虎机区域-->
+			<div class="bandit_nav">
+				<div class="bandit_area">
+					<!--奖励滑动显示区域-->
+					<dl class="bandit_show">
+						<dd></dd>
+						<dd></dd>
+						<dd></dd>
+					</dl>
+					<div class="btn"></div>
+					<div class="prompt"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--抽奖成功弹窗-->
+		<div class="modle_bg modle_bg3">
+			<div class="go_binding_modle">
+				<div class="content">
+					<div class="congratulation">
+						<img src="../static/img/happy_zj.png"/>
+					</div>
+					<div class="congratulation_content">
+						<p class="title">恭喜</p>
+						<p style="line-height: 2;">您已抽中100轻奢平台专享黑钻，可在轻奢平台任意消费，赶紧去使用吧</p>
+						<div class="daKai_btn_con">
+							<span class="daKai_btn">打开APP</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--手机号输入错误弹窗-->
+		<div class="modle_bg modle_bg2">
+			<div class="go_binding_modle">
+				<div class="content">
+					<p class="conImg"><img src="../static/img/error_icon.png"/ class="close_img"></p>
+					<p>手机号输入错误，请确认后重试</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--验证码错误弹窗-->
+		<div class="modle_bg modle_bg1">
+			<div class="go_binding_modle">
+				<div class="content">
+					<p class="conImg"><img src="../static/img/error_icon.png" class="close_img"/></p>
+					<p>验证码输入错误，请确认后重试</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--引入js-->
+		<script src="../static/js/jquery.min.js"></script>
+		<script src="../js/bandit.js"></script>
+	</body>
+</html>

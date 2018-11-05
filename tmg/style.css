@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.rich_media_area_primary {
+    position: relative;
+    padding: 20px 15px 15px;
+    background-color: #fff;
+}
+.rich_media_meta_list {
+    margin-bottom: 18px;
+    line-height: 20px;
+    font-size: 0;
+}
+.rich_media_title {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px;
+}
+.not_in_mm .rich_media_meta_list {
+    position: relative;
+    z-index: 1;
+}
+.preview_appmsg .rich_media_title {
+    /*margin-top: 1.9em;*/
+}
+.rich_media_meta {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.rich_media_meta_text {
+    color: #8c8c8c;
+}
+.rich_media_meta_list em{
+    font-style: normal;
+}
+.rich_media_content {
+    overflow: hidden;
+    color: #3e3e3e;
+}
+.not_in_mm .rich_media_content {
+    position: relative;
+}
+.rich_media_content * {
+    max-width: 100%!important;
+    box-sizing: border-box!important;
+    -webkit-box-sizing: border-box!important;
+    word-wrap: break-word!important;
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px){}
+.mm_appmsg .rich_media_inner, .mm_appmsg .rich_media_meta, .mm_appmsg .discuss_list, .mm_appmsg .rich_media_extra, .mm_appmsg .title_tips .tips {
+    font-size: 17px;
+}

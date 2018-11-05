@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>攻略</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/guide_first.css" rel="stylesheet" />
+		<style type="text/css">
+			.item_content{
+				flex-direction: column;
+			}
+			.item_content_bottom{
+				width: 70%;
+			    display: flex;
+			    text-align: center;
+			}
+			.gonglue_item_bottom_left{
+				width: 75%;
+			}
+			.item_content{
+				border-right:0;
+				align-items: flex-start;
+				    padding-left: 8px;
+			}
+			.gonglue_item_middle{
+				padding: 0 15px;
+				margin-top: 6px;
+			}
+			.gonglue_item_title{
+				margin-bottom: 25px;
+			}
+			.paddingbottom12{
+				padding-bottom: 20px;
+			}
+			.item_icon div{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.checkfont{
+				font-size: 0.75rem;
+			}
+			.checkicon img{
+				width: 15px;
+				margin-right: 6px;
+			}
+			.small_font{
+				margin-top: 15px;
+				padding-bottom: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="">
+				<div class="guide_top">
+					<div class="guide_title">
+						攻略
+					</div>
+					<div class="guide_top_title">
+						目标站点&nbsp;——&nbsp;加油站
+					</div>
+					<div class="guide_top_time">
+						<span id="cutdown"></span>
+					</div>
+				</div>
+				<div class="gonglue_item margintop60 paddingbottom12">
+					<div class="gonglue_item_title">
+						<span class="gl_icon">攻略一</span>
+					</div>
+					
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gl_icon1.png"/>
+							</div>
+						</div>
+						<div class="item_content">
+							<div class="item_content_top">
+								设置会员头像
+							</div>
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去设置</span>
+						</div>
+					</div>
+					
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gl_icon2.png"/>
+							</div>
+						</div>
+						<div class="item_content">
+							<div class="item_content_top">
+								设置昵称
+							</div>
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去设置</span>
+						</div>
+					</div>
+					
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gl_icon3.png"/>
+							</div>
+						</div>
+						<div class="item_content">
+							<div class="item_content_top">
+								设置地址
+							</div>
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去设置</span>
+						</div>
+					</div>
+					
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gl_icon4.png"/>
+							</div>
+						</div>
+						<div class="item_content">
+							<div class="item_content_top">
+								设置支付密码
+							</div>
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去设置</span>
+						</div>
+					</div>
+					
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gl_icon5.png"/>
+							</div>
+						</div>
+						<div class="item_content">
+							<div class="item_content_top">
+								绑定微信
+							</div>
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去设置</span>
+						</div>
+					</div>
+				</div>
+				<div class="small_font">
+					<div class="tip_icon">
+						<img src="images/tip_icon.png"/>	
+					</div>
+					<!--change-->
+					<div class="tip_font">
+						完成以上信息设置,即可以从始发站出发，并获取该任务奖 励10黑钻。
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	countDown(86399);
+	function countDown(count){
+		
+		var timer=setInterval(function(){
+			var text='';
+			if(count>=0){
+				var h=parseInt(count/3600);
+				h=h<10?'0'+h:h;
+				var m=parseInt((count%3600)/60);
+				m=m<10?'0'+m:m;
+				var s=parseInt((count%60)%60);
+				s=s<10?'0'+s:s;
+				text="目标剩余时间："+h+":"+m+":"+s;
+				count--
+			}else{
+				clearInterval(timer)
+				text='';
+			}
+			mui('.guide_top_time')[0].innerHTML=text;
+		},1000)
+	}
+	
+	$('.item_icon').on('tap','.know_icon',function(){
+		$(this).addClass('clicked');
+		if($(this).hasClass('clicked')){
+			$(this).parent().html('<div class="checkicon"><img src="images/checked.png"/></div><div class="checkfont">已设置</div>')
+		}
+	})
+		
+</script>

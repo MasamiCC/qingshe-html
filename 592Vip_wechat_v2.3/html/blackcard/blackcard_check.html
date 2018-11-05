@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>我的黑卡</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" href="../../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/loginedblackcard.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/blackcard_rights1.css"/>
+		<style type="text/css">
+		.allscroll .mui-segmented-control.mui-segmented-control-inverted{
+			height: 90px;
+		}
+		.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+			padding: 0 10px;
+		}
+		.own .mui-segmented-control.mui-segmented-control-inverted{
+			height: 200px;
+		}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+			color: inherit;
+    		border-bottom: 0;
+		}
+		.cat_item{width: 5.2rem;text-align: center;}
+		.loginedtop{background: none;font-size: 0;line-height: 0;}
+		.loginedtop img{max-width: 100%;}
+		.un_btn{
+			background-image: url(images/un_btn_bg.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			font-size: .875rem;
+			line-height: 1;
+			padding: .75rem 0;
+		}
+		.un_btn span{display: inline-block;padding: .75rem 0;width: 78%;
+			background: -webkit-linear-gradient(37deg, #f79433 , #f15a26); /* Safari 5.1 - 6.0 */
+			  background: -o-linear-gradient(37deg, #f79433, #f15a26); /* Opera 11.1 - 12.0 */
+			  background: -moz-linear-gradient(37deg, #f79433, #f15a26); /* Firefox 3.6 - 15 */
+			  background: linear-gradient(37deg, #f79433 , #f15a26); /* 标准的语法 */
+			 color: #fff;
+			 border-radius: 2rem;
+			 box-shadow: 0 0 .3rem #999;
+			 letter-spacing: .05rem;
+		}
+		.un_h{
+			background-image: url(images/un_h_bg.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			font-size: .875rem;
+			line-height: 1;
+			padding: .75rem 0;
+			background-position: bottom;
+		}
+		.user{display: flex;margin: 0 2rem;justify-content: space-around;align-items: center;padding: 1rem 0 .75rem 0;}
+		.zhuanshi{max-width: 3rem;width: 4rem;}
+		.user >div{flex: 1;}
+		.user>div:first-child{display: flex;flex-direction: column;align-items: center;}
+		.user>div:first-child span{background: #000;border: 1px solid #454545;border-radius: .75rem;font-size: .75rem;display: inline-block;padding: .3rem .76rem;margin-top: -1.2rem;}
+		.user>div:first-child a{
+			background-image: -webkit-gradient(linear, 0 0, 50% bottom, from(#ffda8a), to(#c7a459));
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		    background-color: #000000;
+		}
+		.user_head{width: 5rem;height: 5rem;border-radius: 5rem;}
+		.msg{padding-bottom: 1rem;line-height: 65px;}
+		.msg span{color: #ff7e00;}
+		.tongji{font-size: .75rem;color: #ffc967;line-height: 1.5;text-align: left;margin-left: .5rem;}
+		.tongji li:last-child{font-size: 1.8rem;font-weight: 500;}
+		#popover{position: fixed;left: 0;top: 10%;	right: 0 ;bottom: 5%;width: auto;background: none;box-shadow: none;}
+			.popover_cont{display: flex;flex-direction: column;position: absolute;height: 100%;width: 100%;justify-content: space-between;}
+			.popover_cont>div{flex: 1;}
+			.count{
+				flex: 0 0 45px!important;    
+				display: flex;
+    			align-items: flex-end;
+    			justify-content: center;
+    			}
+			.close{flex: 0 0 45px!important;}
+			.swiper-slide{}
+			.content{display: flex;}
+			.swiperbg{background-image: url(images/swiperbg_02.png);padding: 20px 25px;overflow: auto;}
+			.allswiper_title{
+				margin-bottom: 1rem;font-size: 1rem;
+			}
+			.swiper_title{font-size: .9rem;}
+			.mui-content{
+				position: absolute;
+			    left: 0;
+			    right: 0;
+			    top: 0;
+			    bottom: 0px;
+			    overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="loginedtop">
+				<div class="un_h">
+					<div class="msg">
+						<span id="">
+							黑卡权益
+						</span>将于2018/04/25失效
+					</div>
+					<div class="user">
+						<div class="">
+							<img src="images/user@3x.png" class="user_head"/>
+							<span><a href="">黑卡会员</a></span>
+						</div>
+						<div class="tongji">
+							<ul>
+								<li>账户黑钻</li>
+								<li>3,6500  </li>
+							</ul>
+						</div>
+						<div class="">
+							<img src="images/zhuanshi.png" class="zhuanshi "/>
+						</div>
+					</div>
+				</div>
+				<div class="un_btn">
+					<span style="width:50%">进入轻奢号</span>
+				</div>
+				<!--<div class="loginedtopfirst">
+					积分消耗完，将失去<span class="bcfont">黑卡权益</span>
+				</div>
+				<div class="loginedtopcon">
+					<div class="loginedtopconcon">
+						<div class="loginedtopconconhead">
+							<img src="../../image/dhead2.png"/>
+						</div>
+						<div class="loginedtopconconfontcon">
+							<div class="loginedtopconconfont">
+								黑卡会员
+							</div>
+						</div>
+						
+					</div>
+					<div class="loginedtopconcon2">
+						<div class="loginedtopconcon2first">
+							账户积分
+						</div>
+						<div class="loginedtopconcon2second">
+							36,500
+						</div>
+					</div>
+				</div>
+				<div class="loginedtopthird">
+					<span class="loginedfont">进入任务系统</span>
+				</div>-->
+			</div>
+			
+			<!--title-->
+			<div class="blackcard_title">
+				我的权益<span class="duser">查看全部</span>
+			</div>
+			<!--title-->
+			<div class="swiper-container" id="swiper-container1">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide cat_item">
+				           <div class="liepic"><img src="../../image/newblackicon1.png"/></div>
+			                   <div class="name">尊贵图标</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	<div class="liepic"><img src="../../image/newblackicon2.png"/></div>
+			                   <div class="name">贴心管家</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	<div class="liepic"><img src="../../image/newblackicon3.png"/></div>
+			                   <div class="name">轻奢福利</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	 <div class="liepic"><img src="../../image/newblackicon4.png"/></div>
+			                   <div class="name">轻奢沙龙</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	 <div class="liepic"><img src="../../image/newblackicon5.png"/></div>
+			                   <div class="name">特权折扣</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	 <div class="liepic"><img src="../../image/newblackicon6.png"/></div>
+			                   <div class="name">车位预留</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	 <div class="liepic"><img src="../../image/newblackicon7.png"/></div>
+			                   <div class="name">公益慈善</div>
+		            </div>
+		            <div class="swiper-slide cat_item">
+		            	 <div class="liepic"><img src="../../image/newblackicon8.png"/></div>
+			                   <div class="name">优先体验</div>
+		            </div>
+		        </div>
+		    </div>
+			
+			<!--title-->
+			<div class="blackcard_title bordertitle">
+				特权折扣
+			</div>
+			<!--title-->
+			<div class="ziyingyouxuan">
+				<img src="../../image/ziyingyouxuan.png"/>
+			</div>
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="popover_cont">
+				<div id="count" class="count">
+					<div class="allswiper_title">
+			 			全部特权<span class="yellow_font">1</span>/<span class="allcount">21</span>个
+			 		</div>
+				</div>
+				 <div class="content">
+				 	<div class="swiper-container"  id="swiper-container2">
+					  <div class="swiper-wrapper">
+					    
+					  </div>
+					</div>
+				 </div>
+				 <div class="close">
+					<div class="close">
+						<img class="close_icon" src="images/close.png"/>
+		        	</div>
+				 </div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="qy_data.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('#swiper-container1', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        spaceBetween: 0
+    });
+    var swiper2 = new Swiper('#swiper-container2', {
+		slidesPerView:1.3,
+		spaceBetween : 15,
+		slidesOffsetBefore:20,
+		slidesOffsetAfter :20
+	})
+	var active=0;
+	swiper2.on('transitionEnd',function(){
+		if(this.isEnd){
+			active=this.slides.length;
+		}else{
+			active=this.activeIndex+1;
+		}
+		$('.yellow_font').html(active);
+		
+	})
+	$(function(){
+		function goToBlackcard(){
+			callNative(tologinedBlackcard,weChatUrl,data);
+		}
+		loadList()
+		mui.init()
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: false, //是否竖向滚动
+			
+			scrollX: true, //是否横向滚动
+			
+			startX: 0, //初始化时滚动至x
+			
+			startY: 0, //初始化时滚动至y
+			
+			indicators: true, //是否显示滚动条
+			
+			deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			
+			bounce: true //是否启用回弹
+		
+		});
+		var i;
+		mui('.blackcard_title').on('tap','.duser',function(){
+			mui('#popover').popover('show');
+			swiper2.slideTo(active, 1000, false);//切换到第一个slide，速度为1秒
+		    swiper2.update();
+//		    debugger
+		    i=true;
+		    callNative(isswiper,weChatUrl,i);
+		})
+		$('.close_icon').click(function(){
+			mui('#popover').popover('hide');
+			i=false
+			callNative(isswiper,weChatUrl,i);			
+		});
+	});
+	function loadList(){
+		$('#swiper-container2 .swiper-wrapper').html('');
+		$('.allcount').html(qydata.length)
+		for (var i in qydata) {
+			var html='<div class="swiper-slide">'
+				+		'<div class="swiperbg">'
+				+   		'<div class="swiper_img">'
+				+   			'<img src="images/'+qydata[i]['swiper_img']+'" alt="" />'
+				+   		'</div>'
+				+   		'<div class="swiper_title">'
+				+   			qydata[i]['swiper_title']
+				+   		'</div>'
+				+   		'<div class="swiper_content">'
+				+   			qydata[i]['swiper_content']
+				+   		'</div>'
+				+   		'<div class="open_soon_con">'
+				+   			'<span class="open_soon">'
+				+   				'立即开通领取特权'
+				+   			'</span>'
+				+   		'</div>'
+				+   	'</div>'
+				+      '</div>'
+			
+			$('#swiper-container2 .swiper-wrapper').append(html)
+		}
+		mui('.popover_cont').on('tap','.open_soon',function(){
+			callNative('toJoinBlack');
+		})
+		swiper2.update();
+	}
+	
+</script>

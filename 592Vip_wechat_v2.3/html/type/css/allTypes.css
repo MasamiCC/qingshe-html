@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all_types,body {
+	background: #F4F4F4;
+}
+/*title*/
+.all_types_header{
+	
+	background: #fff;
+	padding-top: 45px;
+}
+input[type=search]{
+	background-color: #f4f4f4;
+	border-radius: 17px;
+	line-height: 34px;
+}
+.mui-search .mui-placeholder {
+    line-height: 25px;
+    text-align: left;
+    text-indent: 6px;
+    top: 3px;
+    height: 30px;
+    line-height: 30px;
+}
+.mui-placeholder {
+    font-size: 0.875rem!important;
+    color: #ccc!important;
+}
+.mui-search .mui-placeholder .mui-icon{
+	color: #ccc;
+}
+.search_icon{
+   width: 68%;
+   margin-left: 40px;
+}
+.alltypes_icon_item{
+	margin-bottom: 10px;
+}
+/*美食*/
+.alltypes_icon_title{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	line-height: 3;
+}
+.alltypes_icon_font{
+	font-size: 0.9375rem;
+	color: #333;
+}
+.alltypes_icon_img img{
+	width: 20px;
+}
+.alltypes_icon_title>div{
+	display: flex;
+	align-items: center;
+}
+.alltypes_icon{
+	margin: 0 10px;
+	padding-bottom: 20px;
+}
+.alltypes_icon_img{
+	margin-right: 10px;
+}
+.alltypes_icon_flex{
+	text-align: left;
+	line-height: 0;
+	font-size: 0;
+}
+.alltypes_icon_flex_item{
+	display: inline-block;
+	justify-content: center;
+	line-height: 3;
+	width: 25%;
+}
+.alltypes_icon_flex_item_con{
+	width: 98%;
+	background: #fff;
+	margin-top: 2px;
+	text-align: center;
+	font-size: 0.8135rem;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

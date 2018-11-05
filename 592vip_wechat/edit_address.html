@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<style type="text/css">
+			input,textarea{
+				color: #79878f;font-size: 14px;
+			}
+			label{
+				font-size: 15px;color: #404d57;
+			}
+			.default li{
+				/*height: 45px;*/font-size: 14px;
+			}
+			.remove{
+				color: #ff3838;
+			}
+			.iframe{
+				position: absolute;top: 0;
+				left: 0;
+				width: 100%;height: 100%;
+				display: none;
+				overflow: hidden;
+			}
+			iframe{
+    			border: none;
+    		}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <form class="mui-input-group">
+		        <div class="mui-input-row add_address_li">
+		            <label>收货人</label>
+		            <input type="text" class="mui-input-clear" id="username" placeholder="收货人" value="张三">
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <label>联系电话</label>
+		            <input type="tel" class="mui-input-clear" id="mobile" placeholder="联系电话" maxlength="11" required value="15995855970">
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <label>地区</label>
+		            <input type="text" class="mui-input-clear" placeholder="选择地区" value="江苏省南通市经济开发区" id="area">
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <label>详细地址</label>
+		            <div>
+		            	<textarea name="" rows="" cols="" maxlength="30" required id="address">通盛大道188号创业外包服务中心</textarea>
+		            </div>
+		        </div>
+		        <input type="hidden" name="lat" id="lat" value="" />
+		        <input type="hidden" name="lng" id="lng" value="" />
+		        
+		    </form>
+		    
+		    <div class="default">
+		    	<ul class="mui-table-view">
+		   	        <li class="mui-table-view-cell">
+						<span>设为默认地址</span>
+						<div class="mui-switch mui-switch-mini  " id="mySwitch">
+							<div class="mui-switch-handle"></div>
+						</div>
+						<input type="hidden" name="default" id="" value="" />
+					</li>
+		   	    </ul>
+		    </div>
+		    <div class="default">
+	        	<ul class="mui-table-view">
+		   	        <li class="mui-table-view-cell">
+						<span class="remove">删除地址</span>
+					</li>
+		   	    </ul>
+	        </div>
+		    
+		    <div class="center1">
+		    	<button class="button" id="submit">添加新地址</button>
+		    </div>
+		   	
+		</div>
+		<div class="iframe" id="iframe">
+			<iframe src="area.html" width="100%" height="100%"></iframe>
+		</div>
+	</body>
+</html>
+<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+	$(function(){
+		$("#submit").click(function(){
+			var username=$('#username').val();
+			if(username==''){
+				mui.alert('收货人为空');
+				return false;
+			}
+			var mobile=$('#mobile').val();
+			if(mobile==''){
+				mui.alert('请输入手机号码');
+				return false;
+			}else if(!(/^1(3|4|5|7|8)\d{9}$/.test(mobile))){
+				mui.alert('您输入的手机号码格式不正确');
+				return false;
+			}
+			var address=$('#address').val();
+			if(address==''){
+				mui.alert('请输入详细地址');
+				return false;
+			}
+		})
+		$('.remove').click(function(){
+			var cf=confirm('确定删除地址');
+			if(cf){
+				console.log('删除操作')
+			}
+		})
+		$("#area").focus(function(){
+			$(".iframe").fadeIn();$("#area").blur()
+		})
+		document.getElementById("mySwitch").addEventListener("toggle",function(event){
+		  if(event.detail.isActive){
+		    $("input[name=default]").val(1)
+		  }else{
+		    $("input[name=default]").val(0)
+		  }
+		})
+	})
+</script>

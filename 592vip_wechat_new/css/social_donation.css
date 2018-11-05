@@ -1,0 +1,82 @@
+
+.social_item{margin: 10px auto;padding:  0;overflow: hidden;background: #fff;}
+.social_item:first-child{margin-top: 0;text-align: center;line-height: 0;padding-top: 0;padding-bottom: 0;}
+.social_pic img{max-width: 100%;}
+.social_nav{background: #f25d5d;color: #fff;text-align: center;line-height: 45px;height: 45px;box-shadow: none;font-size: 0.875rem}
+.social_form{color: #666;font-size: 0.875rem;}
+.social_form .mui-table-view:before{height: 0;}
+.social_form .mui-table-view:after{height: 0;}
+.social_form .mui-table-view-cell{padding: 0 15px;}
+.social_form .mui-checkbox label{padding-left: 25px;}
+.social_form .mui-checkbox input[type=checkbox]{left: 0;top: 6px;}
+.social_form .mui-pull-right{line-height: 37px;}
+#social_price{margin-bottom: 0;border: 0;font-size: 0.875rem;padding:25px 0;padding-left: 0;}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{font-size: 22px;}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{color: #999;}
+.fa{margin-right: 3px;color: #f25d5d;}
+#point{color: #f25d5d;}
+::-webkit-input-placeholder { /* WebKit browsers */
+　　color:#ccc;
+　　}
+　　:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+　　color:#ccc;
+　　}
+　　::-moz-placeholder { /* Mozilla Firefox 19+ */
+　　color:#ccc;
+　　}
+　　:-ms-input-placeholder { /* Internet Explorer 10+ */
+　　color:#ccc;
+　　}
+.mui-table-view-cell.mui-active{background: #fff;}
+
+
+
+
+/*pay*/
+.social_pay{
+	padding: 2rem 0 1rem 0 !important;line-height: 1.2!important;
+}
+.social_pay img{
+	max-width: 45px;
+}
+.social_pay p{margin-bottom: 0;line-height: 1.8;}
+.social_pay_total{color: #d91a1a;font-weight: bold;font-size: 1.2rem;}
+.social_pay_nav{color: #333;height: 45px;background: #fff;box-shadow:0 0 2px #ddd ;}
+.social_pay_nav .mui-pull-left{margin-left: 0.75rem;font-size: 0.875rem;line-height: 41px;}
+.social_pay_nav .mui-pull-left span{font-size: 1.5rem;}
+.social_pay_nav .mui-pull-right span{background: #f25d5d;color: #fff;display: inline-block;line-height: 45px;height: 45px;padding: 0 1rem;font-size: 0.875rem;letter-spacing: 1px;}
+.social_donation_pay_form{line-height: 34px;}
+.social_donation_pay_form img{width:30px;vertical-align: middle;margin-right: 5px;}
+.social_donation_pay_form .mui-checkbox label, .mui-radio label{padding-left: 0;vertical-align: middle;color: #333;font-size: 0.875rem;}
+.social_donation_pay_form .mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{right: 0;top: 15px;}
+.social_donation_pay_form .mui-table-view-cell:after{left: 50px;background-color: #eee;}
+.social_donation_pay_form .mui-table-view:after{height: 0;}
+/*.social_donation_pay_form .mui-table-view-cell:last-child:after, .mui-table-view-cell:last-child:before{height: 1px;background-color: #eee;}*/
+.social_donation_pay_form .mui-table-view-cell{padding-top: 0;padding-bottom: 0;}
+.social_donation_pay_form .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{    color: #70c38e;}
+.social_donation_pay_form .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{color: #70c38e;}
+
+
+
+
+/*social_donation_apply*/
+
+.social_apply_icon{background-color: #51c9f0;width: 25px;height: 25px;border-radius: 25px;text-align: center;margin: 0 auto;}
+.social_apply_icon img{width: 15px;height: 15px;margin: 0 auto;line-height: 25px;vertical-align: middle;margin-top: 5px;}
+.social_apply_form{margin: 0 1rem;}
+.social_apply_form .form_item{background: #f4f4f4;margin: 10px auto;border-radius: 5px;height: inherit;}
+.social_apply_form:before,.social_apply_form:after{height: 0;}
+.form_item:after{height: 0px!important;}
+.social_apply_form .form_item label{
+	width: 15%;
+}
+.social_apply_form .mui-input-row label~input, .social_apply_form .mui-input-row label~select, .social_apply_form .mui-input-row label~textarea{
+	width: 85%;font-size: 0.875rem;height: inherit;line-height: 26px;
+}
+.social_apply #code{position: absolute;right: 0.5rem;top: 0.875rem;font-size: 0.875rem;color: #51aff0;}
+.apply_btn{background: #51c9f0;color: #fff;border-radius: 5px;font-size: 0.875rem;text-align: center;line-height: 40px;margin-top: 3rem;}
+.apply_btn:after{height: 0px!important;}
+.apply_msg{text-align: center;font-size: 0.875rem;line-height: 40px;font-weight: 500;margin-top: 0.5rem;}
+.apply_msg:after{height: 0px!important;}
+.apply_msg span{color: #999;font-size: 0.875rem;font-weight: normal;}
+.apply_msg img{vertical-align: text-bottom;width: 20px;}

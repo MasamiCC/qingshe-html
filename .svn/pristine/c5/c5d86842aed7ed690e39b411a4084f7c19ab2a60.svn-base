@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>捐赠公示</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/donate_publicity_new.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div class="topbg">
+			<!--<div class="firstline">
+				<div class="firstheader">
+					<div class="fheader">
+						<img src="../image/dhead.png"/>
+					</div>	
+				</div>
+				<div class="firstcontent">
+					<div class="firstcon">
+						<span class="firstconbig">林嘉</span>
+						<span class="firstconsmall">超过90%的用户</span>
+					</div>
+					<div class="firstcontentline">
+						现金捐赠&nbsp;￥200
+					</div>
+					<div class="firstcontentline">
+						爱心钻捐赠&nbsp;￥200
+					</div>
+				</div>
+				<div class="firstdate">
+					<div class="calendar">
+						<div class="">
+							<span class="dyear">2018</span>
+						</div>
+						<div class="dmonthcon">
+							<span class="dmonth">03</span>
+						</div>
+						<div class="dxialaiconcon">
+							<span class="dxialaicon time_choose"><img src="../image/dxiala.png"/></span>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<div class="firstline nosignin">
+				<div class="firstheader">
+					<div class="fheader">
+						<img src="../image/morentpouxiang.png"/>
+					</div>	
+				</div>
+				<div class="firstcontent">
+					<div class="firstcon">
+						未登录
+					</div>
+					<div class="firstcontentline">
+						<span class="click_sign">点击登录</span>
+					</div>
+				</div>
+				<div class="firstdate">
+					<div class="calendar">
+						<div class="">
+							<span class="dyear">2018</span>
+						</div>
+						<div class="dmonthcon">
+							<span class="dmonth">03</span>
+						</div>
+						<div class="dxialaiconcon">
+							<span class="dxialaicon time_choose"><img src="../image/dxiala.png"/></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dtitle">
+				月统计
+			</div>
+			<!--3个加起来100-->
+			<div class="month_count">
+				<div class="liushui month_countitem">
+                    <input type="hidden"  value="50" class="knob Kf second" data-thickness="0.08" data-inputColor="#333" data-fgColor="#3da0f1" data-bgColor="#dddddd" data-width="100" data-height="100">
+					<div class="month_font">
+						<p class="month_numfont">￥2.25</p>
+						<p class="month_sfont">流水转化</p>
+					</div>
+				</div>
+				<div class="aixinbi month_countitem">
+					<input type="hidden" value="35" class="knob second" data-thickness="0.08" data-inputColor="#333" data-fgColor="#fc7875" data-bgColor="#dddddd" data-width="100" data-height="100">
+					<div class="month_font">
+						<p class="month_numfont">￥2.25</p>
+						<p class="month_sfont">爱心钻转化</p>
+					</div>
+				</div>
+				<div class="shehui month_countitem">
+					<input type="hidden" value="15" class="knob second" data-thickness="0.08" data-inputColor="#333" data-fgColor="#70c38e" data-bgColor="#dddddd" data-width="100" data-height="100">
+					<div class="month_font">
+						<p class="month_numfont">￥2.25</p>
+						<p class="month_sfont">社会捐赠</p>
+					</div>
+				</div>
+			</div>
+			<div class="dtitle">
+				月爱心榜<span class="duser">用户</span>
+			</div>
+			<div class="heartbang">
+				<div class="heartbangcon">
+					
+					<div class="heartbangconcon">
+						<div class="heartbangitem">
+							<div class="heartbangitemf">
+								<img src="../image/dhead1.png"/>
+							</div>
+							<div class="">
+								艾德
+							</div>
+							<div class="">
+								￥1000.00
+							</div>
+						</div>
+						<div class="dnum">
+							1
+						</div>
+					</div>
+					<div class="heartbangconcon">
+						<div class="heartbangitem">
+							<div class="heartbangitemf">
+								<img src="../image/dhead2.png"/>
+							</div>
+							<div class="">
+								艾德
+							</div>
+							<div class="">
+								￥1000.00
+							</div>
+						</div>
+						<div class="dnum">
+							2
+						</div>
+					</div>
+					<div class="heartbangconcon">
+						<div class="heartbangitem">
+							<div class="heartbangitemf">
+								<img src="../image/dhead3.png"/>
+							</div>
+							<div class="">
+								艾德
+							</div>
+							<div class="">
+								￥1000.00
+							</div>
+						</div>
+						<div class="dnum">
+							3
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dtitle shopdtitle">
+				<span class="duser">商户</span>
+			</div>
+			
+				<div class="heartbang shopbang">
+					<div class="heartbangcon">
+						
+						<div class="heartbangconcon">
+							<div class="heartbangitem">
+								<div class="heartbangitemf">
+									<img src="../image/dpic1.png"/>
+								</div>
+								<div class="heartbangnum">
+									NO.1
+								</div>
+								<div class="heartbangtitle">
+									七里香鲜花店七里香鲜花店七里香鲜花店
+								</div>
+								<div class="heartbangitem">
+									<span class="thirdfont">流水转化</span><br />￥10000.00
+								</div>
+							</div>
+						</div>
+						<div class="heartbangconcon">
+							<div class="heartbangitem">
+								<div class="heartbangitemf">
+									<img src="../image/dpic2.png"/>
+								</div>
+								<div class="heartbangnum">
+									NO.2
+								</div>
+								<div class="heartbangtitle">
+									七里香鲜花店
+								</div>
+								<div class="heartbangitem">
+									<span class="thirdfont">流水转化</span><br />￥10000.00
+								</div>
+							</div>
+						</div>
+						<div class="heartbangconcon">
+							<div class="heartbangitem">
+								<div class="heartbangitemf">
+									<img src="../image/dpic3.png"/>
+								</div>
+								<div class="heartbangnum">
+									NO.3
+								</div>
+								<div class="heartbangtitle">
+									七里香鲜花店
+								</div>
+								<div class="heartbangitem">
+									<span class="thirdfont">流水转化</span><br />￥10000.00
+								</div>
+							</div>
+					</div>
+				</div>
+				
+				<div class="dmemb">
+					<div class="dmembitem1">
+						轻奢点评员工月捐
+					</div>
+					<div class="dmembitem2">
+						员工总数：100
+					</div>
+					<div class="dmembitem3">
+						捐赠金额：1000.00
+					</div>
+				</div>
+				<div class="dtitle">
+					社会捐赠
+				</div>
+				
+				<div class="dbottom">
+					<div class="dbottomcon">
+						<div class="dbottomline">
+							<div class="dbottomline1">
+								<img src="../image/bottomhead.png"/>
+							</div>
+							<div class="dbottomline2">
+								<p>王小姐</p>
+								<p>2018-03-22</p>
+							</div>
+							<div class="dbottomline3">
+								文具300套，书包300套。
+							</div>
+						</div>
+						<div class="dbottomline">
+							<div class="dbottomline1">
+								<img src="../image/bottomhead.png"/>
+							</div>
+							<div class="dbottomline2">
+								<p>王小姐</p>
+								<p>2018-03-22</p>
+							</div>
+							<div class="dbottomline3">
+								文具300套，书包300套。
+							</div>
+						</div>
+					</div>
+					<div class="dtitle shopdtitle">
+						<span class="duser">查看更多</span>
+					</div>
+				</div>
+			
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.knob.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+	
+	$(".time_choose").bind({
+		'click':function(e){
+			e.preventDefault();
+			var now=new Date();
+			var picker = new mui.DtPicker({
+				endDate:new Date(),
+				type:'month',
+			});
+			picker.show(function(rs){
+				console.log(rs.value)
+				var time=new Date(rs.value);
+				var year=time.getFullYear();
+				var month=time.getMonth()+1;
+				month=(month<10)?'0'+month:month;
+				console.log(month)
+				console.log(year)
+				$(".dyear").html(year);
+				$(".dmonth").html(month);
+			})
+			return false;
+		}
+	})
+	
+	     // Build jQuery Knobs
+        $(".knob").knob({
+        	readOnly:true,
+        	
+        });
+        
+        $('.Kf').val(24).trigger('change');
+
+})
+</script>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/commonnew.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ordernew.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/way_detail.css"/>
+		<style type="text/css">
+			.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+				bottom: 50px;
+			}
+			.pad{
+				padding: 5px 0;
+			}
+			.padtop{
+				padding-top: 5px;
+			}
+			.padbtm{
+				padding-bottom: 5px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="shop_list">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll " id="order_type">
+						<a class="mui-control-item order_type mui-active" href="#item1mobile">
+							行程
+						</a>
+						<a class="mui-control-item order_type" href="#item2mobile">
+							费用及预订须知
+						</a>
+						
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll ptop" >
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="mui-table-view-cell firstli">
+											<em><div class="firstday">第 1天</div></em>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/xianlu.png" alt="" /></div>
+											<div class="content">线路：鼋头渚 - 三国城 - 酒店</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/jiaotong.png" alt="" /></div>
+											<div class="content ">交通：7:00在星湖101广场集合，乘坐大巴至无锡回酒店后自由活动</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/yongcan.png" alt="" /></div>
+											<div class="content">
+												<ul>
+													<li class="padbtm">早餐：自理</li>
+													<li class="pad">午餐：xx酒店团餐</li>
+													<li class="padtop">晚餐：自理</li>
+												</ul>
+											</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/jingdian.png" alt="" /></div>
+											<div class="content">
+												<ul>
+													<li class="padbtm">景点：鼋头渚、三国城</li>
+													<li class="padtop">
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img"><img src="../image/image/shop_detail.png"/></span>
+													</li>
+												</ul>
+												</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/zhusu.png" alt="" /></div>
+											<div class="content">住宿：xx大酒店（五星级）</div>
+											
+											<div class="clear"></div>
+										</div>
+									</li>
+										<li class="mui-table-view-cell">
+										<div class="mui-table-view-cell firstli">
+											<em><div class="firstday">第 1天</div></em>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/xianlu.png" alt="" /></div>
+											<div class="content">线路：鼋头渚 - 三国城 - 酒店</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/jiaotong.png" alt="" /></div>
+											<div class="content">交通：7:00在星湖101广场集合，乘坐大巴至无锡回酒店后自由活动</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/yongcan.png" alt="" /></div>
+											<div class="content">
+												<ul>
+													<li class="padbtm">早餐：自理</li>
+													<li class="pad">午餐：xx酒店团餐</li>
+													<li class="padtop">晚餐：自理</li>
+												</ul>
+											</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis ">
+											<div class="biaozhi"><img src="../image/jingdian.png" alt="" /></div>
+											<div class="content">
+												<ul>
+													<li class="padbtm">景点：鼋头渚、三国城</li>
+													<li class="padtop">
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img imgr"><img src="../image/image/shop_detail.png"/></span>
+														<span class="img"><img src="../image/image/shop_detail.png"/></span>
+													</li>
+												</ul>
+												</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi"><img src="../image/zhusu.png" alt="" /></div>
+											<div class="content">住宿：xx大酒店（五星级）</div>
+											
+											<div class="clear"></div>
+										</div>
+									</li>
+								</ul>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id='scroll2' class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell lies firstlie">
+										<div class="title">费用包含</div>
+										<div class="cont">1.五星级酒店一晚（含早）</div>
+										<div class="cont">2.第一天和第二天的午餐费用</div>
+										<div class="cont">3.交通费用</div>
+										<div class="cont">4.其他</div>
+									</li>
+									<li class="mui-table-view-cell lies">
+										<div class="title">自理费用</div>
+										<div class="cont">1.第一天的晚餐</div>
+										<div class="cont">2.其他自由活动时产生的消费</div>
+									</li>
+								</ul>
+								
+							</div>
+							
+							
+						</div>
+							
+					</div>
+		
+				</div>
+			</div>
+			
+			<div class="mui-bar mui-bar-footer mui-bar-tab" id="footer">
+				<span class="order">立即预订</span>
+			</div>
+			
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.js"></script>
+<script src="../js/mui.pullToRefresh.material.js"></script>
+<script>
+			mui.init();
+			mui('#scroll1').pullRefresh({});
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				
+//				$.ready(function() {
+//					//循环初始化所有下拉刷新，上拉加载。
+//					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+//						$(pullRefreshEl).pullRefresh({
+//							down: {
+//				                callback: function(){
+//				                	var self=this;
+//				                	self.endPulldownToRefresh()
+//				                }
+//				            },
+//				            up: {
+//				                contentrefresh: '正在加载...',
+//				                callback: function(){
+//				                	console.log(1)
+//				                	var self=this;
+//				                	self.endPullupToRefresh(false)
+//				                }
+//				            }
+//						});
+//					});
+//					var createFragment = function(ul, index, count, reverse) {
+//						var length = ul.querySelectorAll('li').length;
+//						var fragment = document.createDocumentFragment();
+//						var li;
+//						for (var i = 0; i < count; i++) {
+//							li = document.createElement('li');
+//							li.className = 'mui-table-view-cell shop_item';
+//							li.innerHTML = '<div class="shop_item_i shop_img">'
+//										+		'<img src="image/shop_2.png" class="shop_logo">'
+//										+	'</div>'
+//										+	'<div class="shop_item_i shop_msg">'
+//										+		'<ul>'
+//										+			'<li class="shop_title">这是一家'+index+'店铺'+i+'</li>'
+//										+			'<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>'
+//										+			'<li>'
+//										+				'<span class="shop_status">营业中</span>'
+//										+				'<span class="shop_juli">11.49km</span>'
+//										+			'</li>'
+//										+			'<li>'
+//										+				'<div class="shop_pingfen">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon2.png">'
+//										+				'</div>'
+//										+			'</li>'
+//										+		'</ul>'
+//										+	'</div>'
+//										+	'<div class="clear"></div>'
+//							fragment.appendChild(li);
+//						}
+//						return fragment;
+//					};
+				});
+//			})(mui);
+	
+</script>

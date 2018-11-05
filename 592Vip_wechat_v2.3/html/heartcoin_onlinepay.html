@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在线支付</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/heartcoin_onlinepay.css"/>
+		<style type="text/css">
+			/*.inline{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.inline_pic img{
+				width: 30px;
+			}
+			.inline:after{
+				height: 1px;
+			}*/
+			
+		
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="ho_item item_top">
+				<div class="black_logo">
+					<img src="../image/charity_heart.png"/>
+				</div>
+				<div class="bigfont">
+					轻奢点评-活动
+				</div>
+				<div class="money">
+					订单编号：56589454521212
+				</div>
+			</div>
+			<div class="ho_item top">
+				<form class="mui-input-group">
+				    <div class="mui-input-row mui-checkbox">
+				        <label class="pay_left" for="checkbox1"><img src="../image/ali_pay.png"/>支付宝</label>
+				  		<input name="checkbox1" type="checkbox" checked class="boxes" id="checkbox1" >
+				    </div>
+				    <div class="mui-input-row mui-checkbox">
+				        <label class="pay_left" for="checkbox2"><img src="../image/wechat.png"/>微信</label>
+				  		<input name="checkbox2" type="checkbox" class="boxes" id="checkbox2" >
+				    </div>
+				    <!--<div class="mui-input-row mui-checkbox">
+				       <div class="inline inline_pic">
+				       	<img src="../image/ali_pay.png"/>
+				       </div> 
+				       <div class="inline">
+				       	<label class="pay_left" for="checkbox1">支付宝</label>
+				  		<input name="checkbox1" type="checkbox" checked class="boxes" id="checkbox1" >
+				       </div> 
+				    </div>-->
+				</form>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-footer" id="">
+			<div class="mui-pull-left">
+				<div id="easy_total" class="easy_total">
+					<div class="easy_total_font">
+						实付
+					</div><span><small>￥</small></span><span class="total_amount">500.00</span>
+				</div>
+			</div>
+			
+			
+			<div class="mui-pull-right">
+				<span class="confirm_btn">去支付</span>
+			</div>
+		</nav>
+		<!-- 弹窗 -->
+		<div class="popup" style="display: none;">
+			<div class="popup_box">
+					<p class="popup_b">请确认微信支付是否已完成</p>
+					<p class="popup_r">已完成支付</p>
+					<p class="popup_g">支付遇到问题，重新支付</p>
+			</div>
+			
+		</div>
+	</body>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".boxes").each(function(){
+			$(this).bind("click",function(){
+				$(".boxes").prop("checked",false);
+				$(this).prop("checked",true);
+//console.log(this)
+			}) 
+		});
+	</script>
+</html>

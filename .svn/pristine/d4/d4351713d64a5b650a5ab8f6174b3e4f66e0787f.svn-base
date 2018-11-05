@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style>
+			.border{
+				width: 100%;
+				max-width: 850px;
+				height: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.border>img{
+               padding-top:20%;
+				width: 33%;
+				margin: 0 auto;
+			}
+			.error{
+				padding-top:8%;
+				font-size: 55px;
+				color: #999;
+				text-align: center;
+			}
+			.txt{
+				padding-top:8%;
+				height: 32px;
+				text-align: center;
+				font-weight: bold;
+			}
+			.header{
+				padding-top: 15%;
+			}
+			.page{
+				padding-top: 5%;
+			}
+			.header>button{background: #f8a120;width: 110px;height: 40px;color: #fff;border-radius: 5px;}
+			.page>button{background: #e7e7e7;width: 110px;height: 40px;color: #9a9a9a;border-radius: 5px;}
+		</style>
+	</head>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="border">
+			<img  src="../image/404.png" alt="">
+			 <div class="error">404</div>
+			 <div class="txt">抱歉，您访问的页面去了水星</div>
+			  <div class="header"><button>回到首页</button></div>
+			 <div class="page"><button >返回上一页</button></div>
+		</div>
+	</body>
+
+</html>

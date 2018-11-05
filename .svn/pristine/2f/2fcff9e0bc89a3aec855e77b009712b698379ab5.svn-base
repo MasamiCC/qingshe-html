@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bill.css"/>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="bill_month">
+				<div class="mui-pull-left show_m">
+					本月
+				</div>
+				<div class="mui-pull-right">
+					<i class="fa fa-calendar "></i>
+				</div>
+				<div class="clear">
+					
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper" id="refreshContainer">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			        <ul class="mui-table-view" id="bill_list">
+			            
+			        </ul>
+			    </div>
+			</div>
+			
+		    
+		</div>
+	</body>
+</html>
+
+
+
+<style type="text/css">
+</style>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bill.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var page=1;
+	mui.init({
+	  	pullRefresh : {
+		    container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+		    up:{
+		    	height:50,//可选,默认50.触发下拉刷新拖动距离,
+		    	auto:true,
+		      	contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+		     	contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+		      	contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+		      	callback :function(){
+		      		
+		      		var bill=getBill(page);
+		      		page++;
+		      		this.endPullupToRefresh(page>2);
+		      	}
+		    }
+	  	}
+	});
+	
+</script>

@@ -1,0 +1,173 @@
+{
+  "html/shetan_detail.html": {
+    "resources": [
+      "image/nohead.png",
+      "css/index.css",
+      "css/shop_detail.css",
+      "js/mui.min.js",
+      "image/icon/5.png",
+      "css/font-awesome-4.7.0/css/font-awesome.min.css",
+      "css/shetan_detail.css",
+      "css/mui.min.css",
+      "css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff",
+      "js/jquery-1.10.1.min.js"
+    ],
+    "refer": []
+  },
+  "html/shetan.html": {
+    "resources": [
+      "image/watch.png",
+      "image/shetanvip.png",
+      "js/common.js",
+      "image/shetanbck.png",
+      "js/mui.min.js",
+      "image/backtop.png",
+      "image/shetan2.png",
+      "css/mui.min.css",
+      "js/jquery-1.10.1.min.js",
+      "image/drop.png"
+    ],
+    "refer": []
+  },
+  "html/shop_detail.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/iconfont.woff",
+      "image/nohead.png",
+      "image/icon/lasted_line.png",
+      "js/jquery-1.10.1.min.js",
+      "image/near_shop-04.png",
+      "css/index.css",
+      "image/biaozhi.png",
+      "js/mui.min.js",
+      "image/lijizhidian.png",
+      "image/lijidaohang.png",
+      "css/iconfont.css",
+      "image/icon1.png",
+      "css/mui.min.css",
+      "image/carbck.png",
+      "image/pics.png",
+      "css/shop_detail1.css",
+      "js/mui.zoom.js",
+      "css/imageView.css",
+      "image/backtop.png",
+      "js/mui.previewimage.js",
+      "image/banner@2X.png"
+    ],
+    "refer": []
+  },
+  "html/way_detail.html": {
+    "resources": [
+      "image/zhusu.png",
+      "css/commonnew.css",
+      "js/mui.pullToRefresh.js",
+      "image/xianlu.png",
+      "js/mui.pullToRefresh.material.js",
+      "css/ordernew.css",
+      "image/image/shop_detail.png",
+      "image/yongcan.png",
+      "image/jingdian.png",
+      "js/jquery-1.10.1.min.js",
+      "js/mui.min.js",
+      "image/jiaotong.png",
+      "css/mui.min.css",
+      "css/way_detail.css"
+    ],
+    "refer": []
+  },
+  "html/pay_success.html": {
+    "resources": [
+      "css/mui.min.css",
+      "image/success.png"
+    ],
+    "refer": []
+  },
+  "html/pay_fail.html": {
+    "resources": [
+      "image/lose.png",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "html/order_cancel.html": {
+    "resources": [
+      "image/order_cancel.png",
+      "image/jiantou@2x.png",
+      "js/iconfont.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.picker.min.css",
+      "css/confirm.css",
+      "css/iconfont.woff",
+      "image/phonecancel.png",
+      "image/shop_detail.png"
+    ],
+    "refer": []
+  },
+  "html/zhifu_success.html": {
+    "resources": [
+      "js/iconfont.js",
+      "image/shop_detail.png",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "image/success.png",
+      "css/iconfont.woff",
+      "css/mui.picker.min.css",
+      "image/jiantou@2x.png",
+      "image/phonecancel.png",
+      "css/confirm.css"
+    ],
+    "refer": []
+  },
+  "html/dengdaizhifu.html": {
+    "resources": [
+      "image/dengdai@2x.png",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/iconfont.woff",
+      "image/jiantou@2x.png"
+    ],
+    "refer": []
+  },
+  "html/blackcard_cart.html": {
+    "resources": [
+      "fonts/mui-icons-extra.ttf",
+      "image/golden@3x.png",
+      "js/mui.min.js",
+      "css/common.css",
+      "image/damon@3x.png",
+      "image/plus@2X.png",
+      "css/blackcardcart.css",
+      "image/silver@3x.png",
+      "css/mui.min.css",
+      "js/jquery-1.10.1.min.js",
+      "css/icons-extra.css",
+      "image/cut@2x.png",
+      "fonts/mui.ttf"
+    ]
+  },
+  "html/my.html": {
+    "resources": [
+      "image/nohead.png",
+      "js/jquery-1.10.1.min.js",
+      "image/near_shop-04.png",
+      "image/head.png",
+      "css/index.css",
+      "image/install.png",
+      "css/my.css",
+      "js/mui.zoom.js",
+      "image/usercenter_bg.png",
+      "js/mui.min.js",
+      "image/message.png",
+      "css/iconfont.css",
+      "image/commonmeb.png",
+      "css/mui.min.css",
+      "js/mui.previewimage.js",
+      "image/mebcard.png",
+      "css/iconfont.woff",
+      "css/shop_detail1.css"
+    ]
+  }
+}

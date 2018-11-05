@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>投票展示</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/vote.css"/>
+		<style type="text/css">
+			.vote_item .mui-progressbar{
+				background: none;
+				    height: 4px;
+				    border-radius:0;
+			}
+			.mui-progressbar span{
+				background: #f9d25a;
+				width: 80%;
+			}
+			.floatr{
+				float: right;
+				line-height: 0;
+			}
+			.paddleft50{
+				padding-left: 50px;
+			}
+			#popover {
+			    height: 52%;
+   				width: 75%;
+			    margin: 0 auto;
+			    left: 0;
+			    right: 0;
+			    top: 25%;
+			    overflow: auto;
+			    text-align: center;
+			}
+			.popover_middle img{
+				max-width: 40%;
+			}
+			.popover_middle{
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			.popover_bottom_fonts{
+				font-size: 0.9375rem;
+				color: #000;
+			}
+			.popover_title{
+				color: #fff;
+				font-size: 1rem;
+				background: #3bbcb0;
+				height: 50px;
+				line-height: 50px;
+				position: relative;
+			}
+			.mui-popover .mui-scroll-wrapper{
+				margin: 0;
+			}
+			.popover_bottom_icon{
+				color: #fff;	
+				font-size: 0.875rem;
+				display: inline-block;
+				background: #ff6600;
+				padding: 3px 35px;
+			}
+			.popover_bottom_icon_con{
+				padding-top: 10%;
+			}
+			.voting_close{
+				position: absolute;
+				right: 0px;
+				top: 0px;
+			}
+			.voting_close .mui-icon{
+				font-size: 36px;
+			}
+			.voting_main_bottom_submit a{
+				text-decoration: none;
+				color: #ff5400;
+			}
+			.V_big_fonts{
+				font-size: 1rem;
+			}
+			.voting_show_main{
+			    position: absolute;
+			    width: 100%;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content voting_show_main">
+			<div class="top">
+				<div class="voting_banner" >
+			    	<img src="../image/voting_banner.png"/>
+			    </div>
+			    <div class="voting_main" >
+			    	<div class="voting_main_title">
+			    		南通理工建筑工程学院迎新晚会精心策划，请选出最符合您口味的精彩节目，为表演者们加油吧！
+			    	</div>
+			    	<div class="voting_main_main">
+			    		<div class="voting_main_main_title">
+			    			请在以下节目中，选出您最期待和喜欢的节目：
+			    		</div>
+			    		<div class="voting_main_main_main paddleft50">
+			    			<div class="vote_item">
+				    			<div class="">
+				    				开场舞（world of dance）
+				    			</div>
+				    			<div id="demo1" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				小品（到底该怨谁）
+				    			</div>
+				    			<div id="demo2" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				歌曲串烧（死性不改+稻香…）
+				    			</div>
+				    			<div id="demo3" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				小品（绝境乌江之交换人质）
+				    			</div>
+				    			<div id="demo4" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				篮球表演（篮球火 筑青春）
+				    			</div>
+				    			<div id="demo5" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				小品（非诚不扰）
+				    			</div>
+				    			<div id="demo6" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				独唱（一眼万年）
+				    			</div>
+				    			<div id="demo7" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				武术（武术魂）
+				    			</div>
+				    			<div id="demo8" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				小品（我要当干部）
+				    			</div>
+				    			<div id="demo9" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    			<div class="vote_item">
+				    			<div class="">
+				    				舞蹈（带你去旅行）
+				    			</div>
+				    			<div id="demo10" class="mui-progressbar">
+									<span></span>
+								</div>
+								<span class="floatr">220票</span>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="voting_main_bottom">
+				    	<div class="voting_main_bottom_submit_con">
+							<div class="voting_main_bottom_submit">
+								<a href="my_prize.html">查看奖品</a>
+					    	</div>
+				    	</div>	
+			    	</div>
+			    </div>
+			</div>
+		   <div class="main">
+		   		<div class="main_top">
+		   			<div class="main_top_title">
+		   				微信关注投票奖励一览
+		   			</div>
+		   		</div>
+		   		<div class="main_main">
+		   			<div class="fontweight">
+		   				参与投票<span class="v_orange">100%</span>有礼
+		   			</div>
+		   			<div class="fontweight">
+		   				你喜欢的节目投票即可<span class="v_orange">获得奖励</span>
+		   			</div>
+		   			<div class="">
+		   				<div class="main_main_fonts">
+			   				活动时间：2017.12.01-2017.12.06
+			   			</div>
+			   			<div class="main_main_get">
+			   				<div class="main_main_get_title fontweight">
+			   					奖励获取流程
+			   				</div>
+			   				<div class="main_main_get_main">
+			   					<div class="">
+			   						第一步：通过分享链接或活动彩页二维码关注公 众号，并进入投票页面；
+			   					</div>
+			   					<div class="">
+			   						第二步：点击投票并进行登录，若已登录则可直 接进行投票；
+			   					</div>
+			   					<div class="">
+			   						第三步：投票后获得奖励，可在轻奢点评微商城 使用，也可下载轻奢点评APP进行使用。
+			   					</div>
+			   				</div>
+			   				<div class="main_main_get_bottom v_orange">
+			   					注：活动获得的现金或实物奖励在现场进行发放。
+			   				</div>
+			   			</div>
+		   			</div>
+		   		</div>
+		   		<div class="main_bottom">
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励一
+				   			</div>
+				   			<div class="reward_content">
+				   				500元<br />
+								现金奖励
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励二
+				   			</div>
+				   			<div class="reward_content">
+				   			色调美发 <br />
+								会员体验卡
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励三
+				   			</div>
+				   			<div class="reward_content">
+				   				色调美发 <br />
+								洗剪吹优惠20 
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励四
+				   			</div>
+				   			<div class="reward_content">
+				   				宾士保龄球<br />免费体验卡 
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励五
+				   			</div>
+				   			<div class="reward_content">
+				   				世安搏击<br />免费体验券 
+				   			</div>
+			   			</div>
+			   		</div>
+			   		<div class="main_bottom_reward">
+			   			<div class="reward_con">
+			   				<div class="reward_title">
+			   					奖励六
+				   			</div>
+				   			<div class="reward_content">
+				   				发色私人会所<br />满200减100券 
+				   			</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   </div>
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			        <div class="popover_title">
+			        	投票成功！
+			        	<span class="voting_close" id="voting_close"><i class="mui-icon mui-icon-closeempty"></i></span>
+			        </div>
+			        <div class="popover_middle">
+			        	<img src="../image/voting_fail.png"/>
+			        </div>
+			        <div class="popover_bottom">
+			        	<div class="popover_bottom_fonts V_big_fonts">
+			        		很遗憾，您未中奖！
+			        	</div>
+			        	<!--<div class="popover_bottom_icon_con">
+			        		<div class="popover_bottom_icon">
+			        			<a href="my_prize.html">查看奖品</a>
+			        		</div>
+			        	</div>-->
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/mui.min.js"></script>
+<!--<script src="../js/.js" type="text/javascript" charset="utf-8"></script>-->
+<script>
+	$(function(){
+		mui('#popover').popover('show');
+	});
+	$('#voting_close').click(function(){
+		mui('#popover').popover('hide');
+	});
+//	进度条太大 给除以5缩小5倍显示
+	var a=100; a=a/5
+	console.log(a)
+	mui("#demo1").progressbar({progress:a}).show();
+	mui("#demo2").progressbar({progress:20}).show();
+	mui("#demo3").progressbar({progress:20}).show();
+	mui("#demo4").progressbar({progress:100}).show();
+	mui("#demo5").progressbar({progress:50}).show();
+	mui("#demo6").progressbar({progress:20}).show();
+	mui("#demo7").progressbar({progress:20}).show();
+	mui("#demo8").progressbar({progress:20}).show();
+	mui("#demo9").progressbar({progress:20}).show();
+	mui("#demo10").progressbar({progress:6}).show();
+	
+	
+	
+	
+		
+	
+</script>

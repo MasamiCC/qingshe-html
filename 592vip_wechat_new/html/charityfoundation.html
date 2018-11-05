@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>慈善基金</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.bacg .mui-table-view:after,.bacg .mui-table-view-cell:after{
+				height: 0;
+			}
+			.mui-table-view{
+				background: none;
+			}
+			.qscharity{
+				background: #fff;
+				margin-bottom: 10px;
+				padding-bottom: 25px;
+				/*padding: 15px 15px 25px 15px;*/
+			}
+			.qscharityli img{
+				width: 12.25rem;
+			}
+			.qscharityli{
+				/*padding: 0 15px 25px 15px;*/
+				font-size: 0.875rem;
+				color: #666;
+			}
+			.qsright{
+				float: right;
+				font-style: italic;
+				padding-right: 0.75rem;
+				font-size: 0.75rem;
+				/*color: #d4ac57;*/
+				color: black;
+			}
+			.li{
+			 	background: #FF4A48;
+				width: 100%;
+				height: 0.4rem;
+			}
+			.li1{
+				text-align: center;
+				padding: 20px 0 10px 0;
+			}
+			.li2{
+				text-indent: 2em;
+				line-height: 1.9;
+				overflow: hidden;
+				
+			}
+			.li2,.li3{
+				padding: 0 15px;
+			}
+			.yh_padding{
+				background: #fff;
+				margin-bottom: 10px;
+			}
+			.topbg{
+				background: #F4F4F4;
+			}
+			body,.charity_icons{
+				background: #fff;
+			}
+			.bacg{
+				background: url(../image/bg1.png) no-repeat top center;
+				background-size: 100%;
+			}
+			.bacg .mui-table-view:after,.bacg .mui-table-view-cell:after{
+				height: 0;
+			}
+			.mui-table-view{
+				background: none;
+			}
+			
+			.cishanfee img{
+				width: 100%;
+			}
+			.cishanfee{
+				line-height: 0;
+				position: relative;
+			}
+			.sk_btn_jz{
+				background: #ff3f3f;color: #fff;
+			}
+			.sk_div{
+				background: #fff;
+				/*padding: 3px 0;*/
+				/*margin: 10px 0;*/
+				margin-top: 10px;
+			}
+			.total{
+				padding: 0.9375rem 0;
+				border-bottom: 1px solid #f4f4f4;
+				margin-top: 0.625rem;
+			}
+			.sk_div ul{
+				padding: 0;
+			}
+			.sk_div li{
+				list-style: none;text-align: center;
+			}
+			.sk_title{
+				font-size: 0.875rem;
+				color: #333;
+			}
+			.sk_amount{
+				font-size: 25px;height: 40px;line-height: 40px;color: #fd4f45;
+			}
+			.charity_more{
+				display: inline-block;
+				height: 28px;
+				line-height: 28px;
+				position: absolute;
+				background:rgba(0,0,0,0.5) ;
+				
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				z-index: 100;
+				text-align: center;
+			}
+			#charity_more_icon{
+				font-size: 0.75rem;
+			}
+			#charity_more_icon a{
+				text-decoration: none;
+				color: #ccc;
+			}
+			.charity_icons{
+				display: flex;
+				text-align: center;
+				padding: 0.9375rem 0;
+			}
+			.charity_icon{
+				flex: 1;
+				line-height: 1.8;
+			}
+			.charity_icon img{
+				width: 23%;
+			}
+			.charity_icon_fonts{
+				font-size: 0.875rem;
+			}
+			.charity_items{
+				display: flex;
+				line-height: 0;
+				padding: 0 0.325rem ;
+				position: relative;
+			}
+			.charity_item_last{
+				    flex: 0.96!important;
+			}
+			.charity_item{
+				flex: 1;
+				margin: 0.65rem 0.325rem 0 0.325rem;
+			}
+			.charity_item img{
+				width: 100%;
+			}
+			.charity_item_first{
+				margin-bottom: 0.625rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbg">
+			<div class="qscharity">
+				<ul class="qscharityul">
+					<li class="qscharityli li"></li>
+					<li class="qscharityli li1"><img src="../image/qscharity.png"/></li>
+					<li class="qscharityli li2">
+						由轻奢点评在通过自主开发的“轻奢点评”网络平台上设置爱心捐赠接口，与南通市红十字会共同发起成立"轻奢点评慈善基金"，为商家和消费者打通参与公益的爱心通道，在不增加生活成本和经营成本的前提下，使慈善行为充分融入到每个人的生活及企业经营中去。
+					</li>
+					<li class="qscharityli li3">
+						<a href="http://c.eqxiu.com/s/ZVCDcH8g"><span class="qsright">了解更多&nbsp;></span></a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--慈善消费-->
+		<div class="cishanfee">
+			<img src="../image/charity_pic.png"/>
+			<div class="charity_more">
+				<span id="charity_more_icon">
+					<a href="http://c.eqxiu.com/s/ZVCDcH8g">了解更多>></a>
+				</span>
+			</div>
+		</div>
+		
+		
+			
+		<!--累计善款-->
+		<div class="sk_div total">
+			<ul class="">
+				<li class="sk_title">累计善款</li>
+				<li class="sk_amount">
+					5200000.00 <span style="font-size: 0.875rem;color: black;">元</span>
+				</li>
+			</ul>
+		</div>
+		<div class="charity_icons">
+			<div class="charity_icon">
+				<div class=""><img src="../image/icon_gonggao.png"/></div>
+				<div class="charity_icon_fonts">捐赠公示</div>
+			</div>
+			<div class="charity_icon">
+				<div class=""><img src="../image/icon_donate.png"/></div>
+				<div class="charity_icon_fonts">社捐入口</div>
+			</div>
+			<div class="charity_icon">
+				<div class=""><img src="../image/icon_bank.png"/></div>
+				<div class="charity_icon_fonts">爱心银行</div>
+			</div>
+			<div class="charity_icon">
+				<div class=""><img src="../image/icon_help.png"/></div>
+				<div class="charity_icon_fonts">帮助平台</div>
+			</div>
+		</div>
+		
+		<div class="sk_div charity_items">
+			<div class="charity_item">
+				<img src="../image/item1.png"/>
+			</div>
+			<div class="charity_item">
+				<img src="../image/item2.png"/>
+			</div>
+			<div class="charity_item charity_item_last">
+				<div class="charity_item_first">
+					<img src="../image/item3.png"/>
+				</div>
+				<div class="">
+					<img src="../image/item4.png"/>
+				</div>
+			</div>
+			<div class="charity_more">
+				<span id="charity_more_icon">
+					<a href="">进入慈善活动专题>></a>
+				</span>
+			</div>
+		</div>
+		   
+	</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>捐赠成功</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body{
+				background: #fff;
+			}
+			.ds_mian{
+				font-size: 0.875rem;
+				color: #333;
+				text-align: center;
+			}
+			.heart_container{
+				padding-top: 15%;
+			}
+			.heart_container img{
+				width: 18.5%;
+			}
+			.hearts{
+				padding-top: 5%;
+			}
+			.heart_bank_con{
+				padding-top:12%;
+			}
+			.heart_bank{
+				display: inline-block;
+				padding: 5px 11px;
+				color:#f25d5d ;
+				border: 1px solid #f25d5d;
+				border-radius: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ds_mian">
+			<div class="heart_container"><img src="../image/all_heartt.png"/></div>
+			<div class="hearts">爱心+1</div>
+			<div class="heart_bank_con">
+				<div class="heart_bank">爱心银行 </div>
+			</div>
+			
+		</div>
+	</body>
+</html>

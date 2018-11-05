@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<script src="../js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					订单信息
+				</div>
+				
+				<div class="order_type_grop">
+					
+					<div class="confirm_f_div" style="display: block;">
+						<form class="mui-input-group">
+						    <div class="mui-input-row">
+						        <label>入住人数</label>
+						        <input type="tel" class="mui-input-clear" placeholder="入住人数">
+						    </div>
+						    <div class="mui-input-row">
+						        <label>入住时间</label>
+						        <input type="text" class="mui-input-clear btn" placeholder="入住时间" id="eat_time" >
+						    </div>
+						    <div class="mui-input-row">
+						        <label>联系人</label>
+						        <input type="text" class="mui-input-clear" placeholder="联系人">
+						    </div>
+						    <div class="mui-input-row">
+						        <label>联系人手机</label>
+						        <input type="tel" class="mui-input-clear" placeholder="联系人手机" maxlength="11">
+						    </div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					<svg class="icon" aria-hidden="true" style="width: 20px;vertical-align: bottom;margin-right: 5px;">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-jiudian"></use>
+                    </svg>金石大酒店（中南世纪城）
+				</div>
+				
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell mui-media order_goods">
+			            <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+				            <div class="mui-media-body">
+				                <div class="mui-ellipsis">
+				                	<span class="order_goods_p mui-pull-right">￥600.00</span>
+				                	<div class="order_goods_n">高级双床房</div>
+				                	<div class="order_goods_count">&times; 1</div>
+				                </div>
+				            </div>
+				        </a>
+			        </li>
+			        <li class="mui-table-view-cell mui-media order_goods">
+			            <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+				            <div class="mui-media-body">
+				                <div class="mui-ellipsis">
+				                	<span class="order_goods_p mui-pull-right">￥800.00</span>
+				                	<div class="order_goods_n">商旅高级商务房</div>
+				                	<div class="order_goods_count">&times;1</div>
+				                </div>
+				            </div>
+				        </a>
+			        </li>
+			        <li class="mui-table-view-cell confirm_hotel" >
+			        	入住：10-23（今天） 离店：10-24（明天）共1晚
+			        	<br />
+			        	<span href="javascript:void(0)" style="color: #d4ac57;cursor: pointer;" onclick="showDetail()">房型信息></span>
+			        	<!--<span class="in-out-time">
+			        		入住 2017-04-20 <br />
+							离店 2017-04-21
+			        	</span>
+			        	<span id="tongji" class="mui-pull-right" style="">
+			        		1晚
+			        	</span>-->
+			        </li>
+			        <li class="mui-table-view-cell mui-collapse">
+		                <a class="mui-navigate-right">
+		                    商户折扣券<span class="mui-pull-right confirm_r">无可用</span>
+		                </a>
+		                <ul class="mui-table-view mui-table-view-chevron" id="ticket_list">
+							<li class="mui-table-view-cell">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>满100减10</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+							<li class="mui-table-view-cell ">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>9折</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+							<li class="mui-table-view-cell ">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>不使用折扣券</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+						</ul>
+		            </li>
+		            <li class="mui-table-view-cell">
+		                <a class="mui-navigate-right">
+		                   平台优惠<span class="mui-pull-right confirm_r">无可用</span>
+		                </a>
+		            </li>
+			        <li class="mui-table-view-cell order_goods" style="">
+			            <div class="" style="width: 70%;font-size: 0.75rem;color: #999;">
+			            	总计 <b>￥48.00</b>&nbsp;&nbsp;押金<b>￥48.00</b> (优惠 ￥0)
+			            	
+			            </div>
+			            <div class="" style="text-align: right;width: 30%;font-size: 0.75rem;">实付 <span  class="confirm_total">￥48.00</span></div>
+			        </li>
+			    </ul>
+			</div>
+			
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					备注
+				</div>
+				
+				<div class="confirm_f_div">
+					<ul>
+						<li class="remark">不要辣</li>
+						<li class="remark">微辣</li>
+						<li class="remark">不要葱</li>
+						<li class="remark">不要香菜</li>
+					</ul>
+					<textarea name="" rows="" cols="" placeholder="输入其他备注（可不填）" id="remark"></textarea>
+				</div>
+			</div>
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					发票
+				</div>
+				<div class="confirm_f_div">
+					<input type="text" name="" id="taitou" value="" placeholder="输入个人/企业名称抬头" />
+				</div>
+			</div>
+		</div>
+		
+		<nav class="mui-bar mui-bar-footer" id="">
+			<span class="bar_left" style="">
+				￥48.00
+				<p><small>优惠 ￥0  免配送费</small></p>
+			</span>
+			
+			<div class="mui-pull-right">
+				<span class="confirm_btn">提交订单</span>
+			</div>
+		</nav>
+		
+		<div id="popover_d" class="mui-popover">
+			<!--商品详情-->
+			商品详情 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />q<br /><br /><br />11
+			<br /><br /><br /><br /><br /><br /><br /><br />11<br /><br /><br /><br />22
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration:0.0006, 
+		bounce: true
+	})
+	
+	
+	
+	var tickets=[{
+		id:1,
+		value:'100',
+		name:'满100减10',
+		coupon_type:1,
+	},{
+		id:2,
+		value:'100',
+		name:'9折',
+		coupon_type:1,
+	},{
+		id:3,
+		value:'100',
+		name:'满1000减100',
+		coupon_type:1,
+	}];
+	
+	
+	$(".remark").each(function(){
+			$(this).bind({
+				'click':function(e){
+					var h=$(this).hasClass('clicked');
+					if (!h) {
+						$(this).addClass('clicked');
+						var val=$("#remark").val();
+						if(val==''){
+							$("#remark").val($(this).text())
+						}else{
+							$("#remark").val($("#remark").val()+'，'+$(this).text())
+						}
+						
+					}
+				}
+			})
+		})
+	$(function(){
+		loadTickets();
+		$("#eat_time").bind({
+			'focus':function(e){
+				$(this).blur()
+				e.preventDefault();
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+7))
+				var picker = new mui.DtPicker({
+					beginDate:new Date(),
+					endDate:newD
+				});
+				picker.show(function(rs){
+					console.log(rs)
+					$("#eat_time").val(rs.value)
+				})
+				return false;
+			}
+			
+		})
+		$("#ticket_list input[type=checkbox]").each(function(){
+			$(this).bind({
+				'click':function(){
+					var checked=$(this).is(':checked');
+					console.log(checked)
+					$('#ticket_list input[type=checkbox]').attr({
+						checked:false
+					})
+					$(this).prop({
+						checked:'checked'
+					})
+					var name=$(this).prev().text();
+					console.log(name)
+					$(this).parents('.mui-collapse').removeClass('mui-active').find('.confirm_r').text(name)
+					
+				}
+			})
+			
+		})
+	})
+	function loadTickets(){
+		$("#ticket_list").empty()
+		for (var i in tickets) {
+			var html='<li class="mui-table-view-cell" data-id="'+tickets[i]['id']+'" data-value="'+tickets[i]['value']+'" data-coupon-type="'+tickets[i]['coupon_type']+'"> '
+					+	'<div class="mui-input-row mui-checkbox ">'
+					+	    '<label>'+tickets[i]['name']+'</label>'
+					+	    '<input name="Checkbox" type="checkbox">'
+					+	'</div>'
+					+'</li>'
+			$("#ticket_list").append(html)
+		}
+	}
+	function showDetail(){
+		mui("#popover_d").popover('show');
+	}
+</script>

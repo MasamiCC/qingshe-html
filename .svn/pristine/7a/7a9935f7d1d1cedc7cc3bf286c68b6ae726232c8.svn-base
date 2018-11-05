@@ -1,0 +1,25 @@
+.txt_yuyue_msg li{
+	    margin: 35px 0px;
+}
+.txt_yuyue_msg{
+	padding-top: 0;
+	padding-left: 62px;
+}
+.table{
+	margin: 0 auto;	
+}
+.jumpli select{
+	height: 30px;
+    line-height: 30px;
+    margin-right: 15px;
+}
+.btns{
+	border-radius: 5px;
+    color: #fff;
+}
+.jcenter .btns{
+	background: #221910;
+}
+.jcenter #close{
+	background:#eee
+}

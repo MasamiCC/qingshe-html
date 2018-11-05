@@ -1,0 +1,72 @@
+.grouth_li{
+	
+}
+.grouth_li >div{
+
+	display: flex;
+	align-items: center;
+}
+.grouth_li >div>div{
+		flex: 1;
+}
+.grouth_img{
+	max-width: 80px;
+	text-align: center;
+}
+.grouth_img img{
+	/*max-width: 60px;*/
+	margin: 0 auto;
+	width: 60px;
+}
+.grouth_li p{
+	line-height: 2;width: 80px;
+	text-align: center;
+}
+.qy_list img{
+	max-width: 100%;
+}
+@media only screen and  (max-width: 800px) {
+	.qy_lists{
+		width: 100%;
+	}
+}
+@media only screen and  (min-width: 980px) {
+	.qy_lists{
+		width: 85%;
+	}
+}
+@media only screen and  (min-width: 1080px) {
+	.qy_lists{
+		width: 80%;
+	}
+}
+@media only screen and  (min-width: 1180px) {
+	.qy_lists{
+		width: 75%;
+	}
+}
+@media only screen and  (min-width: 1280px) {
+	.qy_lists{
+		width: 70%;
+	}
+}
+.my_grouth{
+	border-bottom: 1px dashed  #ddd;padding-left: 10px;
+}
+.my_grouth h5{
+	line-height: 2;
+}
+.my_grouth  h2{
+	margin-top: 0;
+}
+.grouth{
+	padding-left: 10px;margin-top: 10px;
+}
+.grouth h4{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2;
+}
+.showList{
+	color: red;cursor: pointer;
+}

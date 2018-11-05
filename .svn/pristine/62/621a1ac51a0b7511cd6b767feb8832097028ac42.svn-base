@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;list-style: none;
+			}
+			body{background: #f4f4f4;}
+			.list{
+				position: absolute;
+				top: 25%;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: #fff;
+			}
+			#pullrefresh{
+				position: absolute;
+				top: 40px;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: #fff;
+			}
+			.mui-table-view:before{height: 0;}
+			.list_tab ul{display: flex;justify-content: space-around;font-size: .875rem;color: #666666;border-bottom: 1px solid #e7e4e2;}
+			.list_tab ul li{padding: .5rem 0;}
+			.list_tab ul li i{font-size: 1rem;margin-left: .3rem;}
+			.list_tab ul li {display: flex;align-items: center;flex: 1;    justify-content: center;position: relative;}
+			.list_tab ul li:first-child:after{content: '';position: absolute;width: 1px;background: #e7e4e2;top: 6px;bottom: 6px;right: 0;}
+			.list_tab a{color:#666666 ;}
+			.sy_list{display: flex;justify-content: space-between;align-items: center;padding-right: 20px!important;padding-left: 20px;font-size: .875rem;font-weight: 500;}
+			.sy_list:after{
+				right: 15px;
+			}
+			.sy_time{color: #999;font-size: .75rem;font-weight: normal;}
+			.header{
+				position: absolute;top: 0;bottom: 75%;background: #000;
+				left: 0;right: 0;
+				background: url(images/score_bg.png) no-repeat scroll bottom;
+				background-size: cover;
+				display: flex;
+				align-items: center;
+				color: #fdd46b;
+				justify-content: center;
+			}
+			.header .icon{margin: .5rem 1rem;line-height: 0;}
+			.header .icon img{max-width: 3.5rem;}
+			.amount{font-size: 2.5rem;font-weight: 500;line-height: 1;height: 3.5rem;}
+			.action_default{color: #666!important;}
+			#picture{font-size: .875rem;}
+			.action_active{color: #fdd46b!important;}
+			.amount li.mui-navigate-right{
+				position: relative;
+			}
+			.amount li.mui-navigate-right:after{
+				right: -2.2rem;
+				font-size: 2.1rem;
+				color: #fdd46b;
+				font-weight: lighter;
+			}
+			.empty{text-align: center;line-height: 5;justify-content: center;}
+			/* 2018-07-12 提示 */
+			.help{
+				width: 1.5rem;
+				position: absolute;
+				top: 1rem;
+				right: 1rem;
+			}
+			.help_box{
+				z-index: 999;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				background-color: white;
+				height: auto;
+				border-radius: 20px 20px 0 0 ;
+				padding: 1.3rem;
+				display: none;
+			}
+			.help_title{
+				font-size: 1rem;
+				text-align: center;
+				font-weight: 700;
+				color: black;
+				margin-top: -1.25rem;
+			}
+			.help_txt{
+				line-height: 1.4rem;
+				letter-spacing: 1px;
+				color: rgb(53, 53, 53);
+				margin: 20px  0;
+			}
+			.mask{
+				position: fixed;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 998;
+				background-color: black;
+				opacity: 0.3;
+				display: none;
+				
+			}
+			/* 2018-07-12 提示 end*/
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mask"></div>		
+		<div class="header">
+				<!-- 2018-07-12 提示 -->
+			<img src="./images/help.png" alt="" class="help">
+			<div class="icon">
+				<img src="./images/score_icon.png"/>
+			</div>
+			<div class="amount">
+				<ul>
+					<li style="letter-spacing: 2px; font-size: 1rem;font-weight: 500;line-height: 1.2;">黑钻总量/定向黑钻</li><!--06-26 总积分改为黑钻数量-->
+					<li class="mui-navigate-right"><span>30000</span>/<span>600</span>	</li>
+				</ul>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list_tab">
+				<ul>
+					<li class="memcp_time"><span >时间</span><i class="mui-icon mui-icon-arrowdown"></i></li>
+					<li class="memcp_type"><a href="#picture"><span >类型</span><i class="mui-icon mui-icon-arrowdown"></i></a></li>
+				</ul>
+			</div>
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron">
+						<!--<li class="mui-table-view-cell sy_list empty">
+							暂无数据
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#" class="action_default action_active">全部</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#" class="action_default">红利收益</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#" class="action_default">违约扣除</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#" class="action_default">消费</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#picture" class="action_cancel"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+				<!-- 2018-07-12 提示 -->
+		
+		<div class="help_box">
+				<span class="mui-icon mui-icon-closeempty" style="font-size: 2rem;"></span>
+				<p class="help_title">提示</p>
+				<p class="help_txt">1、黑钻总量中包含定向黑钻，定向黑钻只能在定向消费任务中进行使用，并且需要在规定的时间内进行消费，若超期，这些定向黑钻将自动的规划到指定的商户名下。
+				</p>
+				<p class="help_txt">
+					2、定向黑钻是通过过去阶段任务中的红利产生的，若黑卡会员A是由黑卡签约商铺直接邀请的，则此黑卡会员的定向黑钻数量为黑卡会员完成每周期各阶段任务后获取的分红收益额的60%；若黑卡会员是由A邀请的，则此黑卡会员的定向黑钻数量为该黑卡会员每周期各阶段任务后获取的分红收益额的30%。
+				</p>
+			</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+			container: '#pullrefresh',
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	
+	var count = 0;
+	/**
+	 * 上拉加载具体业务实现
+	 */
+	function pullupRefresh() {
+		setTimeout(function() {
+			mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+			var table = document.body.querySelector('.mui-table-view');
+			var cells = document.body.querySelectorAll('.mui-table-view-cell');
+			for (var i = cells.length, len = i + 2; i < len; i++) {
+				var li = document.createElement('li');
+				li.className = 'mui-table-view-cell sy_list';
+				li.innerHTML = '<div class="">'
+							+		'<ul class=" sy_type">'
+							+			'<li>红利收益'+i+'</li>'
+							+			'<li class="sy_time">2018-05-06 08：00</li>'
+							+		'</ul>'
+							+	'</div>'
+							+	'<div class="">'
+							+		'+300'
+							+	'</div>';
+				table.appendChild(li);
+			}
+		}, 1500);
+	}
+	if (mui.os.plus) {
+		mui.plusReady(function() {
+			setTimeout(function() {
+				mui('#pullrefresh').pullRefresh().pullupLoading();
+			}, 1000);
+
+		});
+	} else {
+		mui.ready(function() {
+			mui('#pullrefresh').pullRefresh().pullupLoading();
+		});
+	}
+	$('.memcp_time').on('tap',function(){
+		console.log(1)
+		var now=new Date();
+		var picker = new mui.DtPicker({
+			endDate:new Date(),
+			type:'month',
+		});
+		picker.show(function(rs){
+			console.log(rs.value)
+			var time=new Date(rs.value);
+			var year=time.getFullYear();
+			var month=time.getMonth()+1;
+			month=(month<10)?'0'+month:month;
+			$(".memcp_time span").html(+year+'年'+month+'月');
+		})
+		return false;
+	})
+	mui('body').on('tap', '.mui-popover-action li>a', function() {
+		var a = this,
+			parent;
+		//根据点击按钮，反推当前是哪个actionsheet
+		for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+			if (parent.classList.contains('mui-popover-action')) {
+				break;
+			}
+		}
+		//关闭actionsheet
+		mui('#' + parent.id).popover('toggle');
+		
+		console.log(a.innerHTML);
+		
+		$('.action_default').removeClass('action_active');
+		if($(this).hasClass('action_default')){
+			$(this).addClass('action_active');
+			var text='';
+			if(a.innerHTML=='全部'){
+				text='类型';
+			}else{
+				text=a.innerHTML;
+			}
+			$('.memcp_type a span').html(text)
+			
+		}
+		
+	})
+	
+
+	//2018-07-12 提示
+	$('.help').click(function(){
+		$('.help_box').css("display","inline")
+		$('.mask').css("display","inline")		
+	})
+	$('.mui-icon-closeempty').click(function(){
+		$('.help_box').css("display","none")
+		$('.mask').css("display","none")				
+	})
+	$('.mask').click(function(){
+		$('.help_box').css("display","none")
+		$('.mask').css("display","none")				
+	})
+</script>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>捐赠公示</title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			body{
+				font-size: 14px;
+				color: #333;
+				background: #F2F2F2;
+			}
+			.center>div{
+			    /*max-width: 100%;*/
+			    margin: 0 auto;
+			}
+			.footer{
+				background: #fff;
+			}
+			.topbg{
+				background: #F4F4F4;
+			}
+			.center{
+				margin-top: 80px;
+				background: #F2F2F2;
+			}
+			.dpmain{
+				/*background: #fff;*/
+			}
+			.date{
+				text-align: center;
+				/*margin-right: 0.9375rem;
+				margin-left: 0.9375rem;*/
+				line-height: 2.5;
+			}
+			.time_choose input{
+				/*width: 4%;*/
+				/*float: right;*/
+				
+			}
+			.time input{
+				border: 0;
+				height: 45px;
+				text-align: center;
+			}
+			.time,.time_choose{
+				line-height: 2.5;
+			}
+			.date{
+				/*position: relative;*/
+				background: #fff;
+			}
+			.qita{
+				font-size: 15px;
+				font-weight: bold;
+			}
+			.table_con th,.table_con table{
+				text-align: center;
+				margin: 0 auto;
+			}
+			.time{
+				font-size: 15px;
+				font-weight: bold;
+				height: 60px;
+				line-height: 60px;
+				/*margin-left: 15px;*/
+			}
+			.time_choose img{
+				width: 18px;
+			}
+			.dp_banner{
+				font-size: 0;
+				line-height: 0;
+				background: url(../imgs/gs_yellow.png);
+			}
+			.dp_banner{
+				padding: 50px 0;
+				/*border-top: 1px solid #eeeeee;
+				border-bottom: 1px solid #eeeeee;*/
+			}
+			.dp_banner>div{
+				display: inline-block;
+			}
+			.dpmaintop{
+				padding-top: 5px;
+				text-align: center;
+			}
+			.dp_banner_con{
+				width: 23.5%;
+				text-align: center;
+			}
+			.dp_banner_con_fonts{
+				font-size: 28px;
+				line-height: 2.5!important;
+				color: #6bbcf5;
+				
+			}
+			.dp_banner_con_con{
+				line-height: 1.5;
+			}
+			.dp_banner_con_con img{
+				width: 40px;
+			}
+			.dp_banner_con_con_btfonts{
+				font-size:14px;
+				color: #666;
+			}
+			.fonts_red{
+				color: #fc7875;
+			}
+			.fonts_green{
+				color: #70c38e;
+			}
+			.dpmainmain{
+				text-align: center;
+				padding-bottom: 25px;
+				margin-left: 50px;
+			}
+			
+			
+			.dpmainmain_headerr{
+				position: relative;
+				padding-bottom: 35px;
+			}
+			.w_circle{
+				width:105px;
+				height: 105px;
+				border-radius: 50%;
+				background: #ffc703;
+				position: relative;
+			}
+			.m_circle{
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width:95px;
+				height: 95px;
+				border-radius: 50%;
+				background: #ffe15b;
+			}
+			.c_circle img{
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width:85px;
+				height: 85px;
+				border-radius: 50%;
+			}
+			.dpmainmain_headerr div{
+				display: inline-block;
+			}
+			.headerimg img{
+				width: 188px;
+				height: 106px;
+			}
+			.headerimg{
+			    position: absolute;
+			    top: 28px;
+			    left: 0;
+			    right: 0;
+			    text-align: center;
+			    margin: 0 auto;
+			    /*border-left:1px solid #fff ;*/
+			}
+			.headerimg_fonts{
+				position: absolute;
+				bottom: -10px;
+				
+			}
+			.headerimg_fonts{
+				position: absolute;
+				color: white;
+				left: 0;
+			    right: 0;
+			    text-align: center;
+			    margin: 0 auto;
+			    top: 72px;
+    			font-size: 16px;
+			}
+			
+			
+			.dpmainmain_first{
+				position: absolute;
+				left: 0;
+				display: inline-block;
+				padding: 5px 10px;
+				background: #f36767;
+				color: white;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+				line-height: 1.5;
+			}
+			.dpmainmain_topfonts{
+				font-size: 14px;
+				line-height: 3.5;
+				font-weight: bold;
+			}
+			.dpmainmain_smallfonts{
+				font-size: 12px;
+				line-height: 2;
+			}
+			
+			
+			.purple{
+				background: #c187e9;
+			}
+			
+			.dpmainbottom{
+				/*margin-top: 10px;*/
+				background: url(../imgs/gs_blue.png);
+				margin-bottom: 43px;
+				text-align: center;padding: 50px 0 30px 0;
+			}
+			.qita{
+				line-height: 4;
+			}
+			.table_con{
+				padding: 0 15px 40px 15px;
+			}
+			.table_con tr{
+				width: 100%;
+				height: 75px;
+				line-height: 75px;
+			}
+			.table_con tr td{
+				width: 50%;
+			}
+			.table_con table{
+				border:1px solid #eeeeee;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+			}
+			.table_con table td{
+				border-top: 1px solid #eeeeee;
+			}
+			.table_con table td:first-child,.table_con table th:first-child{
+				border-right: 1px solid #eeeeee;
+			}
+			.dpmainmain_main>div{
+				display: inline-block;
+			}
+			.dpmainmain_main{
+				font-size: 0;
+				line-height: 0;
+				background: url(../imgs/gs_red.png);
+				padding: 50px 0;
+				text-align: center;
+			}
+			.dpmainmain{
+				width: 26%;
+				position: relative;
+			}
+			.headerimg_fonts{
+				top: 82px;
+			}
+			.dpmainmain_con{
+				
+				border-left:1px solid #fff;
+			}
+			.lineh{
+				line-height: 1.6;
+			}
+			.ui-datepicker-calendar { 
+				display: none; 
+			} 
+			.date_fonts{
+				font-size: 16px;
+				color: #333;
+				font-weight: bold;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				margin: 0 40px 0 40px;
+				border-bottom: 1px solid #eee;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<div class="">
+								<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+							</div>
+							<!--erweima-->
+							<div class=" header_ma">
+								<div class="white  appcode appmr margintop35 relat">
+									<div class=" " id="qsapp">
+										轻奢APP
+									</div>
+									<div class="mashow" id="maiph">
+										<img class="" src="../imgs/app.png"/>
+									</div>
+								</div>
+								<div class="white wechatcode margintop35 relat">
+									<div class="" id="qswc">
+										轻奢微信
+									</div>
+									<div class="mashow" id="mawechat">
+										<img class="" src="../imgs/592vipma.png"/>
+									</div>
+								</div>
+							</div>
+							<!--erweima-->
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login ">
+									<!--登录前-->
+									
+									<!--<div class="beforelogin">
+										<span class="white"><a href="login.html">登录</a></span>&nbsp;&nbsp;&nbsp;<span class="white"><a href="register.html">注册</a></span>
+									</div>-->
+									
+									<!--登录后-->
+									<div class="loginmine">
+										<div class="minecon minecontainer relat linefont">
+											<div class="mineconta ">
+												<div class="inline myheader" style="vertical-align: middle;"><img src="../imgs/my.png"/></div>&nbsp;<div class="inline" id="xiala" style="vertical-align: middle;"><img src="../imgs/sel.png"/></div>
+											</div>	
+											<div class="showcon" id="showcon">
+												<div class="mineshow">
+												<div class="">
+													<a href="">
+														我的评价
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														优惠券
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														会员中心
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														账户设置
+													</a>
+												</div>
+												<div class="" id="out">
+													退出
+												</div>
+											</div>	
+											</div>
+												
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="usercenter.html">
+												我的订单
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="my_collection.html">
+												我的收藏
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="">
+												<div class="inlineblockcon">
+													消息
+												</div>
+												<div class="inlineblockcon num">
+													<div class="inlineblockcon tip_num">
+														122
+													</div>
+												</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				
+				<div class="topbg">
+			<div class="dpmain">
+				<div class="dpmaintop">
+					<div class="date">
+							<div class="date_fonts" >
+								捐赠公示
+							</div>
+							<div class="time show_m" >
+								<input name="startDate" id="time_choose" class="date-picker" placeholder="2017/10"/> 
+							</div>
+							<!--<div class="time_choose">
+								<img src="../imgs/black_bill.png"/>
+							</div>-->
+					</div>
+					<div class="dp_banner">
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../imgs/liushuizhuanhua.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts">528.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">流水转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../imgs/red_bill.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_red">520.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">爱心币转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../imgs/social_danate.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_green">525.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">社会捐赠</div>
+						</div>
+					</div>
+				</div>
+				<div class="dpmainmain_main">
+					
+					<div class="dpmainmain">
+						<div class="dpmainmain_topfonts">月爱心用户</div>
+						<div class="dpmainmain_con">
+							<div class="dpmainmain_first">第一名</div>
+							<div class="dpmainmain_headerr">
+								<div class="w_circle"><div class="m_circle">
+									<div class="c_circle">
+										<img src="../imgs/morentpouxiang.png"/>
+										</div></div></div>
+								<div class="headerimg"><img src="../imgs/header_redbm.png"/><div class="headerimg_fonts">NO.1</div></div>
+							</div>
+							<div class="lineh">吴亦凡888</div>
+							<div class="dpmainmain_smallfonts lineh">爱心转化+现金捐赠：500元</div>
+						</div>
+					</div>
+					
+					<div class="borderleft">
+						
+					</div>
+					
+					<div class="dpmainmain">
+						<div class="dpmainmain_topfonts">月爱心商户 </div>
+						<div class="dpmainmain_con">
+							<div class="dpmainmain_first purple">第一名</div>
+							<div class="dpmainmain_headerr">
+								<div class="w_circle">
+									<div class="m_circle">
+									<div class="c_circle">
+										<img src="../imgs/morentpouxiang.png"/>
+										</div>
+									</div>
+								</div>
+								<div class="headerimg"><img src="../imgs/header_pbm.png"/><div class="headerimg_fonts">NO.1</div></div>
+							</div>
+							<div class=" lineh">吴亦凡888</div>
+							<div class="dpmainmain_smallfonts lineh">爱心转化+现金捐赠：500元</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="dpmainbottom">
+					<div class="qita">
+						其他捐赠
+					</div>
+					<div class="table_con">
+						<table border="0" cellspacing="0" cellpadding="0" width="60%">
+							<tr><th>捐赠/群体</th><th>捐赠内容</th></tr>
+							<tr><td>温州皮革厂</td><td>红烧肉100斤</td></tr>
+						</table>
+					</div>
+			</div>
+		</div>
+				
+				
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			
+			
+				$("#time_choose").datetimepicker({
+				format: 'yyyy-mm',  
+		         autoclose : 1,
+		         startView: 'year',  
+		         minView: "year", 
+		         language: 'zh-CN',
+		         endDate:new Date(), 
+				}).on('changeDate',function(ev){
+					
+				    $(this).datetimepicker('update');
+			    
+			});
+			
+		load_otherdonation(otherdonationdata);
+		load_donation(donate_detail_data);
+	});
+	
+	
+		var donate_detail_data=[
+			{
+				id:1,
+				donate_name:'吴亦凡',
+				donate_detail:'爱心转化+现金捐赠：500元',
+			},
+			{
+				id:2,
+				donate_name:'温抽良',
+				donate_detail:'爱心转化+现金捐赠：10000',
+			}
+		];
+	
+	function load_donation(donate_detail_data){
+			var donationhtml='<div class="dpmainmain">'
+					+		'<div class="dpmainmain_topfonts">月爱心用户</div>'
+					+		'<div class="dpmainmain_con">'
+					+			'<div class="dpmainmain_first">第一名</div>'
+					+			'<div class="dpmainmain_headerr">'
+					+				'<div class="w_circle"><div class="m_circle">'
+					+					'<div class="c_circle">'
+					+						'<img src="../imgs/morentpouxiang.png"/>'
+					+						'</div></div></div>'
+					+				'<div class="headerimg"><img src="../imgs/header_redbm.png"/><div class="headerimg_fonts">NO.1</div></div>'
+					+			'</div>'
+					+			'<div class="lineh">'+donate_detail_data[0]['donate_name']+'</div>'
+					+			'<div class="dpmainmain_smallfonts lineh">'+donate_detail_data[0]['donate_detail']+'</div>'
+					+		'</div>'
+					+	'</div>'
+					+	 '<div class="dpmainmain">'
+					+		'<div class="dpmainmain_topfonts">月爱心商户</div>'
+					+		'<div class="dpmainmain_con">'
+					+			'<div class="dpmainmain_first purple">第一名</div>'
+					+			'<div class="dpmainmain_headerr">'
+					+				'<div class="w_circle"><div class="m_circle">'
+					+					'<div class="c_circle">'
+					+						'<img src="../imgs/morentpouxiang.png"/>'
+					+						'</div></div></div>'
+					+				'<div class="headerimg"><img src="../imgs/header_pbm.png"/><div class="headerimg_fonts">NO.1</div></div>'
+					+			'</div>'
+					+			'<div class="lineh">'+donate_detail_data[1]['donate_name']+'</div>'
+					+			'<div class="dpmainmain_smallfonts lineh">'+donate_detail_data[1]['donate_detail']+'</div>'
+					+		'</div>'
+					+	'</div>'
+				
+					$(".dpmainmain_main").html("");
+					$(".dpmainmain_main").append(donationhtml);
+		}
+	
+	
+	
+
+
+  		var otherdonationdata=[
+			{
+				id:1,
+				donation_item:'qsclub',
+				donation_detail:'红烧肉100斤',
+			},
+			{
+				id:2,
+				donation_item:'温州皮革厂',
+				donation_detail:'大棉被100条',
+			},
+			{
+				id:3,
+				donation_item:'温州皮革厂',
+				donation_detail:'红烧肉100斤',
+			}
+		];
+		
+		
+		function load_otherdonation(otherdonationdata){
+			
+			var otherdonatehtml='<table border="0" cellspacing="0" cellpadding="0" width="65%">'
+							+	'<tr><th>捐赠/群体</th><th>捐赠内容</th></tr>';
+							
+						for(var i in otherdonationdata){
+							console.log(otherdonationdata[i]['donation_item']);
+							otherdonatehtml+=	'<tr><td>'+otherdonationdata[i]['donation_item']+'</td><td>'+otherdonationdata[i]['donation_detail']+'</td></tr>';
+						}
+						
+						otherdonatehtml+= '</table>';
+						
+						$(".table_con").html("");
+						$(".table_con").append(otherdonatehtml);
+		}
+		
+	</script>
+</html>

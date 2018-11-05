@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./webkit.css">
+    <title>站点地图</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="card">
+                <div class="card_top">
+                    <p class="card_title">
+                        南通站&nbsp;(始发地)
+                    </p>
+                    <p class="card_title2">
+                        已通过南通站获取
+                    </p>
+                    <p class="nums">
+                        红利释放
+                        <span style="font-size: 0.9rem;font-weight: 600;color: rgb(58, 58,58)">47.5积分</span>,慈善捐款
+                        <span style="font-size: 0.9rem;font-weight: 600;color: rgb(58, 58,58)">2.5元</span>
+                    </p>
+                </div>
+                <div class="card_bottom">
+                    <p class="bottom_txt">
+                        该站点积分已全部释放完毕
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="card">
+                <div class="card_top">
+                    <p class="card_title">
+                        加油站
+                    </p>
+                    <p class="card_title2">
+                        已通过加油站获取
+                    </p>
+                    <p class="nums">
+                        红利释放
+                        <span style="font-size: 0.9rem;font-weight: 600;color: rgb(58, 58,58)">617.00积分</span>,慈善捐款
+                        <span style="font-size: 0.9rem;font-weight: 600;color: rgb(58, 58,58)">32.5元</span>
+                    </p>
+                </div>
+                <div class="card_bottom">
+                    <p class="bottom_txt" style="color: rgb(250, 42, 42)">
+                        红利释放第2天,将在8天后释放完成
+                    </p>
+                    <p class="bottom_txt">
+                        每邀请一个人可加速释放红利,最快可减少至2天
+                    </p>
+                    <button class="bottom_btn">我要加速</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="card">
+                <div class="card_top">
+                    <p class="card_title_reach org_title">
+                        初心站
+                        <span style="font-size:0.5rem;font-weight: 100;color: gray;margin-left: 10px">不忘初心,牢记使命</span>
+                    </p>
+
+                    <div class="card_bonus">
+                        <p class="l_title">
+                            预期分红
+                        </p>
+                        <div class="expect_left">
+                            <p class="expect_title">预计最大收益</p>
+                            <p class="expect_num">2289.5积分</p>
+                        </div>
+                        <div class="expect_right">
+                            <p class="expect_title">预计积分释放天数</p>
+                            <p class="expect_num">10天</p>
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+
+                    <div class="card_Strategy">
+                        <p class="l_title">过站攻略</p>
+                        <span class="strategy">
+                            <img class="img_bz" src="../../image/map/bz@3x.png" alt="">&nbsp;&nbsp;攻略一&nbsp;:帮助两人到达加油站</span>
+                        <br>
+                        <span class="strategy">
+                            <img class="img_bz" src="../../image/map/ry@3x.png" alt="">&nbsp;&nbsp;攻略二&nbsp;:花费7888元购买轻奢号燃料</span>
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <p class="bottom_txt">
+                        提前帮助,可解锁黑卡不限额度消费
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="box_g">
+            <div class="card">
+                <div class="card_bg" style="border-radius: 8px;padding-bottom: 20px">
+                    <p class="card_title">
+                        奋斗站
+                        <span style="font-size:0.5rem;font-weight: 100;color: gray;margin-left: 10px">幸福是奋斗出来的</span>
+                    </p>
+                    <div class="card_bonus">
+                        <p class="l_title">
+                            预期分红
+                        </p>
+                        <div>
+                            <div class="expect_left">
+                                <p class="expect_title">预计最大收益</p>
+                                <p class="expect_num">5589.5积分</p>
+                            </div>
+                            <div class="expect_right">
+                                <p class="expect_title">预计积分释放天数</p>
+                                <p class="expect_num">10天</p>
+                            </div>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="card_Strategy">
+                        <p class="l_title">过站攻略</p>
+                        <span class="strategy">
+                            <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足500积分</span>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box_g">
+            <div class="card">
+                <div class="card_bg" style="padding-bottom: 20px">
+                    <p class="card_title">
+                        幸福站
+                        <span style="font-size:0.5rem;font-weight: 100;color: gray;margin-left: 10px">小康路上一个都不能掉队</span>
+                    </p>
+                    <div class="card_bonus">
+                        <p class="l_title">
+                            预期分红
+                        </p>
+                        <div>
+                            <div class="expect_left">
+                                <p class="expect_title">预计最大收益</p>
+                                <p class="expect_num">17034.5积分</p>
+                            </div>
+                            <div class="expect_right">
+                                <p class="expect_title">预计积分释放天数</p>
+                                <p class="expect_num">10天</p>
+                            </div>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+
+                    <div class="card_Strategy">
+                        <p class="l_title">过站攻略</p>
+                        <span class="strategy">
+                            <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足1000积分</span>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_g">
+            <div class="card">
+                <div class="card_bg" style="padding-bottom: 20px">
+                    <p class="card_title">
+                        小康站
+                        <span style="font-size:0.5rem;font-weight: 100;color: gray;margin-left: 10px">终点站</span>
+                    </p>
+                    <div class="card_bonus">
+                        <p class="l_title">
+                            预期分红
+                        </p>
+                        <div>
+                            <div class="expect_left">
+                                <p class="expect_title">预计最大收益</p>
+                                <p class="expect_num">30994.5积分</p>
+                            </div>
+                            <div class="expect_right">
+                                <p class="expect_title">预计积分释放天数</p>
+                                <p class="expect_num">10天</p>
+                            </div>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+
+                    <div class="card_Strategy">
+                        <p class="l_title">过站攻略</p>
+                        <span class="strategy">
+                            <img class="img_bz" src="../../image/map/xf@3x.png" alt="">&nbsp;&nbsp;在系统推荐的分类商户中累计消费满足2000积分</span>
+                        <br>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

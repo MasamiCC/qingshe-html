@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/check.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			.day li{
+				margin: 5px auto;margin-bottom: 18px;
+			}
+			.day li:not(.ept){
+				background-image: url(../image/check_t.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.day li.ed{
+				background-image: url(../image/check_u.png);
+			}
+			.day li.jr{
+				background-image: url(../image/check_ed.png)!important;
+			}
+			.dl.jr i:first-child{
+				background: none;
+			}
+			#check_calendar{
+				background: none; margin: 10px auto;margin-bottom: 0;
+				border-radius: 0;
+			}
+			.cal-wrap{
+				background: none;
+			}
+			.weather_sun,.weather_qing{
+				background-image: url(../image/sun.png);
+			}
+			.weather_yin{
+				background-image: url(../image/yin.png);
+			}
+			.weather_rain,.weather_xiaoyu,.weather_zhenyu,.weather_zhongyu,.weather_dayu{
+				background-image: url(../image/rain.png);
+			}
+			.weather_snow{
+				background-image: url(../image/snow.png);
+			}
+			.weather_cloud,.weather_duoyun{
+				background-image: url(../image/cloud.png);
+			}
+			.weather_lei,.weather_leizhenyu{
+				background-image: url(../image/lei.png);
+			}
+			.weather_wind{
+				background-image: url(../image/wind.png);
+			}
+			.mui-content{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				overflow: auto;
+				background-image: url(../image/weather.png)!important;
+			}
+			.check_notice{
+				color: #fff;text-indent: 0;
+			}
+			#check_rule p {
+			    color: #fff;
+			    margin-bottom: 0;
+			    line-height: 2;
+			    font-size: 0.75rem;
+			}
+			.cal-wrap ul.day li.cur{
+				background: none;
+				background-image: url(../image/check_today.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			li.cur i{
+				line-height: 2.2;
+			}
+			.empty{
+				clear: both;
+			}
+			.day{
+				margin: 0 auto;width: 95%;
+			}
+			#weather{
+				color: #fff;font-size: 0.75rem;
+			}
+			#popover{
+				width: 100%;background: none;color: #fff;text-align: center;
+			}
+			#popover img{
+				max-width: 100%;margin-top: 50%;
+			}
+			.btn{
+				margin: 30px auto;
+			}
+			.btn span{
+				background: #D4AC57;color: #fff;border-radius: 50px;padding: 6px 20px;font-size: 0.875rem;letter-spacing: 1px;
+			}
+			.check_success{
+				font-size: 1rem;font-weight: 500;line-height: 2;margin:  20px auto;
+			}
+			.check_success div{
+				font-size: 0.75rem;font-weight: normal;
+			}
+			.index_item{
+				padding: 0;
+			}
+			.cal-wrap ul.week{
+				background:  rgba(0,0,0,0.15);border-bottom: 0;font-weight: bold;
+			    width: 100%;
+    			margin: 0 auto;
+    			color: #fff;
+    			height: initial;
+			}
+			.week .div{
+				
+			}
+			.cal-wrap ul.week li.wk{
+				color: #FFF;
+			}
+			.mui-backdrop{
+				background-color: rgba(0,0,0,.6);
+			}
+			.mui-switch{
+				height: 21px;
+				border-radius: 5px;
+				width: 62px;
+				background: #ddd;
+			}
+			.mui-switch .mui-switch-handle{
+				width: 14px;
+				height: 14px;
+				border-radius: 3px;
+				box-shadow: 0 0px 3px rgba(0,0,0,.4);
+			}
+			.mui-switch-mini.mui-active .mui-switch-handle{
+				    -webkit-transform: translate(21px,0);
+    				transform: translate(21px,0);
+			}
+			.mui-switch-blue{
+				
+			}
+			.mui-switch-blue.mui-active {
+			    /*border: 2px solid rgb(75,90,102);
+			    background-color: rgb(75,90,102);*/
+			}
+			.mui-switch-mini{
+				width: 41px;
+			}
+			.mui-switch .mui-switch-handle{
+				top: 1px;left: 0;
+				/*margin-left: 1px;margin-right: 1px;*/
+			}
+			.mui-switch:before{
+				top: -4px;
+			}
+			.mui-switch.mui-dragging .mui-switch-handle {
+			    width: 25px
+			}
+			
+			.mui-switch.mui-dragging.mui-active .mui-switch-handle {
+			    left: -11px;
+			    width: 25px
+			}
+			.check_tj{
+				margin: 0 2.5%;
+				line-height: 2.5;
+			    display: block;
+			    position: relative;
+			    float: none;
+			    overflow: hidden;
+			    font-weight: normal;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-transparent">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #fff;"></a>
+		    <h1 class="mui-title" style="color: #fff;">签到</h1>
+		</header>-->
+		<div class="mui-content weather_qing">
+			<div class="index_item" style="width: 90%;margin: 0 auto;margin-top: 20px;">
+				<div class="mui-pull-left" style="color: #fff;line-height: 1;">
+					<img src="../image/ali_pay.png" style="width: 2.5rem;margin-right: 5px;vertical-align: middle;border-radius: 2.5rem;" onerror="this.src='../image/usercenter.png'"/>
+					<ul style="display: inline-block;vertical-align: middle;line-height: 1.2;" >
+						<li style="font-size: 0.875rem;line-height: 1.8;font-weight: 500;">
+							春天里的油菜花
+						</li>
+						<li style="font-size: 0.75rem;">
+							爱心币：110                                                
+						</li>
+					</ul>
+				</div>
+				<div id="weather" class="mui-pull-right">
+					
+				</div>
+				<div class="empty">
+					
+				</div>
+			</div>
+		    <div class="index_item" id="check_calendar">
+		    	<div class=" " id="calendar"></div>
+		    	<div class="" style="text-align: center;color: #fff;line-height: 2;">
+		    		<div class="" style="vertical-align: middle;">
+		    			
+		    			<div style="display: inline-block;font-size: 0.875rem;">
+		    				<img src="../image/check_block.png" style="vertical-align: sub;max-width: 1.2rem;margin-right: 0.5rem;"/>每日签到提醒
+		    			</div>
+		    			<div class="mui-switch mui-active" style="display: inline-block;vertical-align: sub;" id="mySwitch">
+		    		        <div class="mui-switch-handle"></div>
+		    		    </div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		    <div class="index_item check_notice" style="margin: 10px auto;color: #fff;width: 90%;">
+		    	注：任意中断，连续签到的奖励都不能得到哦！
+		    </div>
+		    <div class="index_item" style="margin: 10px auto;color: #fff;width: 90%;" id="check_rule">
+		    	<div class="index_item_title">
+		    		签到规则
+		    	</div>
+		    	<p>
+		    		连续签到1天，获取1个爱心币；<br />
+					连续签到2天，获取2个爱心币；<br />
+					连续签到3天，获取3个爱心币；<br />
+					连续签到4天，获取4个爱心币；<br />
+					连续签到5天，获取5个爱心币；<br />
+					连续签到≥5天，每天获取5个爱心币；<br />
+					中断签到后，重新累计连续签到天数；
+		    	</p>
+		    </div>
+		    
+		</div>
+		
+		<div id="popover" class="mui-popover">
+			<div class="">
+				<img src="../image/check_success.png"/>
+			</div>
+			<div class="check_success" style="">
+				签到成功
+				<div>已领取<span>1</span>个爱心币</div>
+			</div>
+			<!--<div class="btn" >
+				<span id="">进入爱心银行</span>
+			</div>-->
+			
+			
+			<div class="btn">
+				<img src="../image/check_close.png" style="margin-top: 1rem;width: 2.5rem;" id="popover_close"/>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jqmobi.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/calendar.js" type="text/javascript" charset="utf-8"></script>
+<!--<script type="text/javascript" src="http://fw.qq.com/ipaddress"></script>-->
+<script type="text/javascript">
+
+	mui.init({
+        swipeBack: false
+    });
+    var num=0;
+    /**/
+	(function() {
+		setTimeout(function(){
+			//mui("#popover").popover('toggle');
+		},2000)
+		
+		$("#popover_close").on('tap',function(){
+			mui("#popover").popover('toggle');
+		})
+        var markData=[
+            {date:'2017-08-16',price:''},
+            {date:'2017-08-17',price:''},
+            {date:'2017-08-18'}
+        ]
+        $("#total_day").html(markData.length)
+        var now=new Date();
+        var l=markData.length;
+        console.log(time(now)-time(markData[l-1]['date']))
+        
+        if (time(now)-time(markData[l-1]['date'])>=86400000) {
+        		num=2;//满足条件,连续2天;
+		     	//然后对数组循环判断,满足则num++;否则中断循环;
+			     for(var i=l; i>1; i--){
+			      if(time(markData[i-1]['date'])-time(markData[i-2]['date'])==86400000){
+			       	num++; 
+			      }else{ 
+			       	break;//如果只要找出所有连续的天数,不需要中断
+			      }
+			      console.log(num);
+			     } 
+        } else{
+        	console.log('第一天');
+        }
+        var m=((now.getMonth()+1)<10)?'0'+(now.getMonth()+1):(now.getMonth()+1);
+        var d=m+'-'+now.getDate();
+        calendarIns = new calendar.calendar( {
+            count: 1,
+            selectDate: new Date(),
+            selectDateName: d,
+            minDate: new Date(now.getFullYear(),now.getMonth(),1),
+            maxDate: new Date(now.getFullYear(),now.getMonth(),31),
+            isShowHoliday: false,
+            isShowWeek: true,
+            isShowMarker:true,
+            markData:markData
+        } );
+        loadCheck()
+
+
+        $('.day li i:last-child').html('&nbsp;');
+        $('.day li i:first-child').css({
+        	color:'#fff',
+        	marginTop:'35px'
+        })
+        $('#calendar h2').remove();
+       // loadWeather()
+        var isManual = true;
+		document.getElementById("mySwitch").addEventListener('toggle', function(event) {
+			
+			if (isManual) {
+				var self = this;
+				var msg=(!event.detail.isActive)?'取消签到提醒':'开启签到提醒';
+				mui.confirm(msg,'提示',['确认','取消'],function(e){
+					if (e.index==1) {
+						isManual = false;
+						setTimeout(function() {
+							mui(self)['switch']().toggle();
+						}, 200);
+					}
+				})
+				
+			} else {
+				isManual = true;
+			}
+		});
+    })();
+  
+    //findWeather(); 
+    function findWeather() {
+      var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
+      $.getScript(cityUrl, function (script, textStatus, jqXHR) {
+        var citytq = remote_ip_info.city; // 获取城市
+        var url = "http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&city=" + citytq + "&day=0&dfc=3";
+        $.ajax({
+          url: url,
+          dataType: "script",
+          scriptCharset: "gbk",
+          success: function (data) {
+          	console.log(data)
+            var _w = window.SWther.w[citytq][0];
+            console.log(_w)
+            var _f = _w.f1 + "_0.png";
+            $(".mui-content").addClass('weather_'+_w.f1)
+            if (new Date().getHours() > 17) {
+              _f = _w.f2 + "_1.png";
+              $(".mui-content").addClass('weather_'+_w.f2)
+            }
+            var img = "<img width='16px' height='16px' src='http://i2.sinaimg.cn/dy/main/weather/weatherplugin/wthIco/20_20/" + _f
+        + "' />";
+            //var tq = "今日天气 :　" + citytq + " " + img + " " + _w.s1 + " " + _w.t1 + "℃～" + _w.t2 + "℃ " + _w.d1 + _w.p1 + "级";
+            var tq = citytq + " <br/>" + _w.s1 + " " + _w.t1 + "℃";
+            $('#weather').html(tq);
+          }
+        });
+      });
+    }
+    function time(date){
+     return new Date(date); 
+    }
+    function loadCheck(){
+    	var html=$('<div class="check_tj"></div>');
+    	var now=new Date();
+    	var Y=now.getFullYear();
+    	var M=now.getMonth()+1;
+    	M=M<9?"0"+M:M;
+    	var D=now.getDate();
+    	D=D<9?"0"+D:D;
+    	html.append('<div class="mui-pull-left" style="font-size:0.875rem;font-weight:600">'+M+'月'+D+'日</div>');
+    	html.append('<div class="mui-pull-right">今日已有1111人签到</div>');
+    	$(".week").prepend(html);
+    }
+    
+</script>

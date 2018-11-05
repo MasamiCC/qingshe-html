@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/my_prize.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="prize_item bg-w prize_m">
+		    	奖品已发放至：131****1423账户
+		    </div>
+		    <div class="prize_item ">
+		    	<div class="prize_i">
+		    		<div class="price_f">
+		    			<div class="price_left">
+		    				<span><small>￥</small>1</span>满500可用
+		    			</div>
+		    			<div class="price_cont">
+		    				<div class="price_title">
+		    					<span>店铺券</span>小神通乐园
+		    				</div>
+		    				<div class="price_time">
+		    					有效期2017-06-25至2017-06-25
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="price_line">
+		    			&nbsp;
+		    		</div>
+		    		<div class="price_msg">
+		    			本券仅供店铺使用
+		    		</div>
+		    	</div>
+		    	<div class="prize_i">
+		    		<div class="price_f">
+		    			<div class="price_left">
+		    				<span><small>￥</small>1</span>满500可用
+		    			</div>
+		    			<div class="price_cont">
+		    				<div class="price_title">
+		    					<span>店铺券</span>小神通乐园
+		    				</div>
+		    				<div class="price_time">
+		    					有效期2017-06-25至2017-06-25
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="price_line">
+		    			&nbsp;
+		    		</div>
+		    		<div class="price_msg">
+		    			本券仅供店铺使用
+		    		</div>
+		    	</div>
+		    	<div class="prize_i">
+		    		<div class="price_f">
+		    			<div class="price_left">
+		    				<span>9.5<small>折</small></span>满5000可用
+		    			</div>
+		    			<div class="price_cont">
+		    				<div class="price_title">
+		    					<span>店铺券</span>小神通乐园小神通乐园小神通乐园小神通乐园
+		    				</div>
+		    				<div class="price_time">
+		    					有效期2017-06-25至2017-06-25
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="price_line">
+		    			&nbsp;
+		    		</div>
+		    		<div class="price_msg">
+		    			本券仅供店铺使用本券仅供店铺使用本券仅供店铺使用本券仅供店铺使用本券仅供店铺使用本券仅供店铺使用本券仅供店铺使用
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="prize_item " style="text-align: center;">
+		    	<span class="toshop">进入微商城</span>
+		    </div>
+		    
+		</div>
+		<nav class="mui-bar mui-bar-tab" style="font-size: 0;line-height: 0;">
+			<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jszb.android.app"><img src="../image/buy_banner.png" style="max-width: 100%;"></a>
+			<span class="mui-icon mui-icon-close-filled " style="position: absolute;right: 0;top: 0;color:rgba(255,255,255,0.5);font-size: 25px;"></span>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$('.mui-icon-close-filled').on('tap',function(){
+			$("nav").fadeOut();
+			$(".mui-content").animate({
+				bottom:0
+			})
+		})
+		$('.toshop').on('tap',function(){
+			location.href='http://wx.592vip.com/index/home'
+		})
+	})
+</script>

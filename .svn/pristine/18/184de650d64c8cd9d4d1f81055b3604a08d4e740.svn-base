@@ -1,0 +1,75 @@
+.mui-content{
+	position: absolute;
+	top: 0;
+	bottom: 3rem;
+	overflow: auto;
+	padding-top: 0!important;
+	width: 100%;
+}
+.league_banner{
+	font-size: 0;line-height: 0;text-align: center;
+}
+.league_banner img{
+	max-width: 100%;margin: 0 auto;
+}
+.form_title{
+	background: #f4f4f4;
+	line-height: 2.5;
+	font-size: 0.875rem;
+	text-indent: 1rem;
+	color: #666;
+}
+.league_form .mui-table-view-cell{
+	padding: 0;font-size: 0.875rem;
+}
+.mui-table-view-cell:hover{
+	background: #fff;
+}
+.league_form .mui-table-view-cell:after{
+	left: 0;background: #eee;
+}
+.mui-input-row label{
+	width: 32%;text-align: center;padding-left: 0;text-indent: 1rem;line-height: 1.3;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+	width: 68%;color: #ccc;font-size: 0.875rem;
+}
+.league_btn{
+	background: #d4ac57;color: #fff;padding: 0.9rem 1rem;
+}
+.send_code{
+	position: absolute;right: 0.7rem;top: 0.7rem;font-size: 0.875rem;color: #666;
+}
+.mui-table-view-cell:active,.mui-table-view-cell.mui-active{
+	background: #fff;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+                    color: #ccc;
+            }
+input::-moz-placeholder ,textarea::-moz-placeholder{
+        color: #ccc;
+}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder {
+        color: #ccc;
+}
+textarea{
+	margin-bottom: 10px!important;
+}
+.league_form ul:before,.league_form ul:after{
+	height: 0;
+}
+input[type=file]{
+	display: none;
+}
+.img_list{
+	font-size: 0;line-height: 0;width: 98%;margin: 0 auto;
+}
+.img_list li{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+	text-align: center;
+}
+.img_list img{
+	max-width: 95%;margin: 5px auto;
+}

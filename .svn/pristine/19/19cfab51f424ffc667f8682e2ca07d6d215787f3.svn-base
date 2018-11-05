@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			.index_item{
+				text-align: center;
+			}
+			#qrcode{
+				margin: 10px;
+			}
+			img{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">二维码扫描</h1>
+		</header>
+		<div class="mui-content">
+			<div class="index_item">
+				<div id="qrcode1"></div>
+			</div>
+			<br />
+			
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.qrcode.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/utf.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+//	jquery('#qrcode').qrcode("this plugin is great");
+	$(function(){
+		//$('#qrcode1').qrcode("this plugin is great");
+		$("#qrcode1").qrcode({
+             render : "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+             text : "{type:2,shopid:1007}",    //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+             width : "200",               //二维码的宽度
+             height : "200",              //二维码的高度
+             background : "#ffffff",       //二维码的后景色
+             foreground : "#000000",        //二维码的前景色
+             src: '../image/backtop.png'             //二维码中间的图片
+         });
+	})
+	
+</script>

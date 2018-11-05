@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/getBlackcard.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<div class="mui-content bcbody">
+			<div class="bchead">
+				<div class="">
+					<span class="bcheadfont">选择额度</span><span class="bacques"><a href="javascript:void(0)" class="" id="aa"><i class="fa fa-question-circle ques"></i></a></span>
+				</div>
+				
+			</div>
+			<div class="bcmiddle">
+				<div class="bcmiddlecon" data-price="2000">
+					<div class="first_bcmiddlecon">
+						<img src="../image/blackcard.png"/>
+					</div>
+					<div class="bcfonts">
+						<div class="">
+							金卡额度
+						</div>
+						<div class="">
+							<span class="bcbigfont">2000</span>&nbsp;元
+						</div>
+					</div>
+					<div class="bcbgcheck">
+						<div class="">
+							<i class="fa fa-check-circle bccheck" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="bcmiddlecon" data-price="5000">
+					<div class="first_bcmiddlecon">
+						<img src="../image/goldcard.png"/>
+					</div>
+					<div class="bcfonts">
+						<div class="">
+							金卡额度
+						</div>
+						<div class="">
+							<span class="bcbigfont">5000</span>&nbsp;元
+						</div>
+					</div>
+					<div class="bcbgcheck">
+						<div class="">
+							<i class="fa fa-check-circle bccheck" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="bcmiddlecon" data-price="20000">
+					<div class="first_bcmiddlecon">
+						<img src="../image/diamondcard.png"/>
+					</div>
+					<div class="bcfonts">
+						<div class="">
+							金卡额度
+						</div>
+						<div class="">
+							<span class="bcbigfont">20000</span>&nbsp;元
+						</div>
+					</div>
+					<div class="bcbgcheck">
+						<div class="">
+							<i class="fa fa-check-circle bccheck" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="bcmiddlecon " id="bcdiy">
+					<div class="user_defined">
+						<div class="user_definedcon">
+							自定义额度
+						</div>
+					</div>
+					<div class="bcbgcheck">
+						<div class="">
+							<i class="fa fa-check-circle bccheck" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bcfooter">
+				<div class="bcfooter_con bcfooter_conbg1">
+					<div class="bcfooterfonts">
+						<a href="">
+						实体卡充值
+						</a>
+					</div>
+				</div>
+				<div class="bcfooter_con bcfooter_conbg2">
+					<div class="bcfooterfonts">
+						确认充值
+					</div>
+				</div>
+			</div>
+			<div class="inputcon">
+				<input type="number" name="" id="moneyinput" value="" placeholder="输入您要充值的额度"/>
+			</div>
+		</div>
+		<div id="creditPopover" class="mui-popover">
+			<div class="mui-content-padded creditPopover_font">
+				额度说明：<br />
+				累计充值2000元至5000元成为银卡等级<br />
+				累计充值5000元至20000元升级至金卡<br />
+				累计充值20000元及以上升级为尊贵钻石等级
+			</div>
+			<div class="creditPopover_close">
+				<span class="mui-icon mui-icon-closeempty mui-pull-right attr_close"></span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/getBlackcard.js"></script>
+

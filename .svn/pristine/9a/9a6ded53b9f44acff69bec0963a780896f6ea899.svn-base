@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>签到</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sign_in.css"/>
+	</head>
+	<style type="text/css">
+		.activity_content{
+			background: url(../image/activity_coming.png) no-repeat center #fff;
+			background-size: 87%;
+    		padding-bottom: 25%;
+		}
+	</style>
+	<body>
+		<div class="mui-content si_main_con">
+			<div class="si_banner">
+				<div class="si_banner_item">
+					<img src="../image/head5.png"/>
+				</div>
+				<div class="si_banner_item">
+					<div class="">
+						<p class="my_heart_cion">我的爱心币（个）</p>
+						<p class="mhc_num">1000,00</p>
+					</div>
+					<div class="mui-pull-right heart_icon_con">
+						<span class="heart_icon">爱心银行</span>
+					</div>
+				</div>
+			</div>	
+			<div class="si_main">
+				<div class="si_main_title">
+					已累计签到
+				</div>
+				<div class="si_main_days">
+					<span class="si_main_day_icon">0</span>
+					<span class="si_main_day_icon">0</span>
+					<span class="si_main_day_icon">7</span>
+					<span class="si_main_daynam">天</span>
+				</div>
+				<!--签到-->
+				<div class="si_main_sign">
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周一
+						</div>
+						<div class="si_main_sign_item_item">
+							<!--未签到-->
+							<img src="../image/unsign.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周二
+						</div>
+						<div class="si_main_sign_item_item">
+							<!--已签到-->
+							<img src="../image/signed.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周三
+						</div>
+						<div class="si_main_sign_item_item">
+							<img src="../image/unsign.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周四
+						</div>
+						<div class="si_main_sign_item_item">
+							<img src="../image/unsign.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周五
+						</div>
+						<div class="si_main_sign_item_item">
+							<img src="../image/unsign.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周六
+						</div>
+						<div class="si_main_sign_item_item">
+							<img src="../image/unsign.png"/>
+						</div>
+					</div>
+					<div class="si_main_sign_item">
+						<div class="si_main_sign_item_item">
+							周日
+						</div>
+						<div class="si_main_sign_item_item">
+							<!--未签到宝箱-->
+								<!--<img src="../image/uns__box.png"/>-->
+							<!--已签到宝箱-->
+								<img src="../image/s_box.png"/>
+						</div>
+					</div>
+				</div>
+				<!--签到-->
+				<div class="si_information">
+					<span class="si_information_icon">签到规则说明 ></span>
+				</div>
+			</div>
+			<div class="sign_remind">
+				<div class="sign_remind_title_con">
+					<p class='sign_remind_title'>连续签到提醒</p>
+					<p class=''>签到成功后，在第二天启动客户端时弹窗提醒</p>
+				</div>
+				<div class="sign_remind_title_con mui-pull-right">
+					<div class="mui-switch mui-switch-mini mui-active mui-pull-right">
+	                    <div class="mui-switch-handle"></div>
+	                </div>
+				</div>
+			</div>
+			<div class="activity_title">
+				活动精选
+			</div>
+			<div class="activity_content">
+				<!--<img src="../image/activity_coming.png"/>-->
+			</div>
+		</div>
+		<div id="myPopover" class="mui-popover">
+			<div class="">
+				<img src="../image/sign_success.png"/>
+				<span class="getcion">获得爱心币20个</span>
+			</div>
+			<div class="">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+		<div id="myPopover1" class="mui-popover">
+			<div class="popover_top">
+				<p class="rule_item rule_title">活动规则</p>
+				<!--<p class="rule_item">1. 首次签到得20积分，连续签到每次递增20积分。</p>
+				<p class="rule_item">2. 最高递增至200积分，如有中断，则重新从20积分开始累积</p>
+				<p class="rule_item">3. 彩蛋礼品将发送至满益网账户中，可至“消息中心”查看，话费于中奖后3个工作日内完成充值。</p>-->
+				<p class="rule_item">
+					1、连续签到1天，获取1个爱心币；<br />
+					2、连续签到2天，获取2个爱心币；<br />
+					3、连续签到3天，获取3个爱心币；<br />
+					4、连续签到4天，获取4个爱心币；<br />
+					5、连续签到5天，获取5个爱心币；<br />
+					6、连续签到≥5天，每天获取5个爱心币；<br />
+					7、中断签到后，重新累计连续签到天数；
+				</p>
+			</div>
+			<div class="popover_bom">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/sign_in.js"></script>
+
+

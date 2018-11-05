@@ -1,0 +1,9 @@
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #d4ac57;
+}
+.mui-tab-label {
+    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

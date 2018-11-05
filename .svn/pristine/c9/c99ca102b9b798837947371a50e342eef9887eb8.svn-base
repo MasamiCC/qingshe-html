@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/order_evaluate.css"/>
+		<style type="text/css">
+			input[type=file]{display: none;}
+			.pic_view{display: inline-block;}
+			.pic_hidden{display: none!important;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="order_evaluation">
+		    	<div class="evaluation_item order_evaluation_shop">
+		    		<div class="evaluation_shop_logo">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="evaluation_shop_name">
+		    			黑森日耳曼餐厅(星湖101)
+		    		</div>
+		    	</div>
+		    	<div class="evaluation_item evaluation_service">
+		    		<div class="evaluation_title">
+		    			商家服务
+		    		</div>
+		    		<div class="data-score">
+		    			
+		    		</div>
+		    		<div class="">
+		    			<textarea name="" rows="" cols="" placeholder="写下您对商户的评价吧~"></textarea>
+		    		</div>
+		    		<div class="evaluation_pic">
+		    			<div class="">
+		    				<img src="../image/10120_2.png"/>
+		    				<i class="fa fa-times-circle"></i>
+		    			</div>
+		    			<div class="">
+		    				<img src="../image/10120_2.png"/>
+		    				<i class="fa fa-times-circle"></i>
+		    			</div>
+		    			<div class="">
+		    				<img src="../image/10120_2.png"/>
+		    				<i class="fa fa-times-circle"></i>
+		    			</div>
+		    			<div class="add_img" data-orderid='122'>
+		    				<img src="../image/eva_add.png"/>
+		    			</div>
+		    			
+		    		</div>
+		    	</div>
+		    	<div class="evaluation_item ">
+		    		<div class="evaluation_title">
+		    			商品评价
+		    		</div>
+		    		<div class="evaluation_goods">
+		    			<div class="evaluation_goods_title">
+		    				<div class="mui-pull-left">
+		    					不吃肥肉不吃肥肉不吃肥肉不吃肥肉不吃肥肉不吃肥肉不
+		    				</div>
+		    				<div class="mui-pull-right">
+		    					<span class="z_p "><i class="fa fa-thumbs-o-up"></i> 赞</span>
+		    					<span class="c_p active"><i class="fa fa-thumbs-down"></i>踩</span>
+		    				</div>
+		    			</div>
+		    			<div class="">
+		    				<div class="mui-input-row">
+		    				    <input type="text" placeholder="写下您对红烧肥肉的评价吧~">
+		    				</div>
+		    			</div>
+		    			<div class="evaluation_pic">
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="add_img" data-goodsid='1'>
+			    				<img src="../image/eva_add.png"/>
+			    			</div>
+			    		</div>
+		    		</div>
+		    		<div class="evaluation_goods">
+		    			<div class="evaluation_goods_title">
+		    				<div class="mui-pull-left">
+		    					红烧肥肉1
+		    				</div>
+		    				<div class="mui-pull-right">
+		    					<span class="z_p"><i class="fa fa-thumbs-o-up"></i> 赞</span>
+		    					<span class="c_p"><i class="fa fa-thumbs-o-down"></i>踩</span>
+		    				</div>
+		    			</div>
+		    			<div class="">
+		    				<div class="mui-input-row">
+		    				    <input type="text" placeholder="写下您对红烧肥肉的评价吧~">
+		    				</div>
+		    			</div>
+		    			<div class="evaluation_pic">
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="add_img" data-goodsid='2'>
+			    				<img src="../image/eva_add.png"/>
+			    			</div>
+			    		</div>
+		    		</div>
+		    		<div class="evaluation_goods">
+		    			<div class="evaluation_goods_title">
+		    				<div class="mui-pull-left">
+		    					红烧肥肉2
+		    				</div>
+		    				<div class="mui-pull-right">
+		    					<span class="z_p active"><i class="fa fa-thumbs-up"></i> 赞</span>
+		    					<span class="c_p"><i class="fa fa-thumbs-o-down"></i>踩</span>
+		    				</div>
+		    			</div>
+		    			<div class="">
+		    				<div class="mui-input-row">
+		    				    <input type="text" placeholder="写下您对红烧肥肉的评价吧~">
+		    				</div>
+		    			</div>
+		    			<div class="evaluation_pic">
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="">
+			    				<img src="../image/10120_2.png"/>
+			    				<i class="fa fa-times-circle"></i>
+			    			</div>
+			    			<div class="add_img" data-goodsid='3'>
+			    				<img src="../image/eva_add.png"/>
+			    			</div>
+			    		</div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <div class="mui-pull-left sub_msg">
+		    	<div class="">
+		    		评价可获得<font style="color: #f25d5d;">30</font>爱心币
+		    	</div>
+		    	<p>评价单个商品可多获得一个爱心币</p>
+		    </div>
+		    <div class="mui-pull-right sub_btn">
+		    	提交
+		    </div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$('.data-score').raty({
+			score: 3,
+			starHalf    : '../image/star-half.png'  ,                              // The name of the half star image.
+			starOff     : '../image/y_star_off@3x.png'    ,                             // Name of the star image off.
+			starOn      : '../image/y_star_on@3x.png'   ,
+			width:150
+			
+		});
+		$('.evaluation_goods_title').on('tap','span',function(){
+			console.log($(this).attr('class'))
+			var active=$(this).hasClass('active');
+			if(active){
+				if($(this).hasClass('c_p')){
+					$(this).removeClass('active').find('i').removeClass('fa-thumbs-down').addClass('fa-thumbs-o-down')
+				}else{
+					$(this).removeClass('active').find('i').removeClass('fa-thumbs-up').addClass('fa-thumbs-o-up')
+				}
+			}else{
+				$(this).parent().find('span').removeClass('active');
+				
+				if($(this).hasClass('c_p')){
+					$(this).addClass('active').find('i').removeClass('fa-thumbs-o-down').addClass('fa-thumbs-down')
+					$(this).prev().find('i').removeClass('fa-thumbs-up').addClass('fa-thumbs-o-up')
+				}else{
+					$(this).addClass('active').find('i').removeClass('fa-thumbs-o-up').addClass('fa-thumbs-up')
+					$(this).next().find('i').removeClass('fa-thumbs-down').addClass('fa-thumbs-o-down')
+				}
+			}
+			
+		})
+		$('.add_img').on('tap',function(){
+			var goodsid=$(this).attr('data-goodsid');
+			var orderid=$(this).attr('data-orderid');
+			var div=$('<div class="pic_view pic_hidden "></div>');
+			var inputs=$('<input type="file"  onchange="imgChange(this)">')
+			if(orderid){
+				inputs.attr('name','order'+orderid);
+			}else if(goodsid){
+				inputs.attr('name','good'+goodsid);
+			}
+			div.append(inputs);
+			$(this).before(div);
+//	    	if($(this).siblings().size()==3){
+//	    		$(this).hide().before(div);
+//	    	}else{
+//	    		
+//	    	}
+			
+			div.find('input[type=file]').click()
+		})
+		timeClick()
+		
+	})
+	function timeClick(){
+		$('.fa-times-circle').on('tap',function(){
+			var add=$(this).parent().siblings('.add_img');
+			$(this).parent().remove();
+			add.show()
+		})
+	}
+	function imgChange(obj){
+		//console.log(obj)
+		if (!obj.files.length) {
+			
+			$(obj).prev().remove();
+			$(obj).show()
+		};
+	    if (obj.files.length > 1) {
+	        mui.alert("只允许上传一张图片!");
+	        return false;
+	    }
+	
+	    var file = obj.files[0];
+	
+	    var reader = new FileReader();
+	    reader.onload = function () {
+	        var result = this.result;    //data:base64     
+	        console.log($(obj).parent().siblings().size())
+	        if($(obj).parents('.evaluation_pic').find('i').size()>=3){
+	        	$(obj).parent().next().hide()
+	        }
+	        $(obj).parent().append('<img src="'+result+'"/><i class="fa fa-times-circle"></i>').removeClass('pic_hidden ');
+	        timeClick()
+	        $(obj).parent().attr({
+	        	src:result
+	        })
+	        $(obj).next().css({
+	        	height:$(obj).parent().width()*0.88,
+	        	width:$(obj).parent().width()*0.88
+	        })
+	    };
+	    reader.readAsDataURL(file);
+	}
+</script>

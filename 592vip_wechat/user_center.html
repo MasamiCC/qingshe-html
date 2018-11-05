@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/shop.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user_center.css"/>
+		<script src="js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.mui-row.mui-fullscreen>[class*="mui-col-"] {
+				height: 100%;
+			}
+			.mui-col-xs-3,
+			.mui-col-xs-9 {
+				overflow-y: auto;
+				height: 100%;
+			}
+			.mui-segmented-control .mui-control-item {
+				line-height: 30px;
+				width: 100%;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				background-color: #79888f;
+				color: #fff;
+			}
+			.mui-scroll img{
+				float: left;
+			}
+			.detail_top{
+				background-image: url(image/user_bc.png);background-repeat: no-repeat;
+				display: flex;
+				align-items: center;
+				padding: 20px 0;
+			}
+			.detail_top_l{
+				flex: 1;
+				max-width: 100px;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.detail_top_l img{
+				width: 80px;margin: 0 auto;vertical-align: middle;
+			}
+			.detail_top_r{
+				flex: 1;
+				color: #fff;
+			}
+			.mebs{
+				width: 22px;
+			}
+			.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+				color: white;
+			}
+			.coupons{
+				width: 100%;
+			}
+			.benefits-coupons{
+				margin: 3px 0px 0px 4px;
+			}
+			.detail_service{
+				background: #fff;
+				/*padding: 5px 0;*/
+				color: #666;
+				/*margin-top: 10px;*/
+			}
+			.detail_service ul{
+				font-size: 0;overflow: hidden;width: 100%;
+				padding: 11px 0 9px 0px;
+				/*height: 50px;*/
+			}
+			.icons{
+				display: inline-block;width: 25%;font-size: 0.8rem;
+				text-align: center;float: left;cursor: pointer;
+			}
+			.detail_service img{
+				display: block;margin: 0 auto;max-width: 100%;
+			}
+			.detail_service i{
+				font-size: 25px;display: block;margin: 5px;color: #666;
+			}
+			.shop_detail_list{
+				background: #fff;margin: 10px auto;
+			}
+			.shop_detail_title{
+				font-size: 0.95rem;
+				border-bottom: 1px solid #ddd;
+			}
+			.shop_detail_title,.benefits{
+				padding: 9px 15px;
+			}
+			.header_icon svg{
+				width: 34px;
+				height: 34px;
+			}
+		
+			.mui-segmented-control.mui-scroll-wrapper{
+				height: 30px;
+			}
+			.header_icon{
+				display: flex;
+				width: 50%;
+				font-size: 0.8rem;
+				text-align: center;float: left;cursor: pointer;
+			}
+			.header_left{
+				/*margin: 5px 0 6px 0;*/
+				/*padding: 5px 0;*/
+				/*margin-top: 10px;*/
+				flex: 1;
+				width: 50%;
+				text-align: right;
+				padding-right: 9px;
+				vertical-align: middle;
+			}
+			.header_right{
+				/*margin: 5px 0 6px 0;*/
+				/*position: relative;*/
+				text-align: left;
+				/*text-indent: 70px;*/
+				/*top: -48px;*/
+				line-height: 19px;
+				flex: 1;
+				color: #999;
+				vertical-align: middle;
+			}
+			.detail_scroll{
+				background: #fff;
+				height: 78px;
+				padding: 13px 0;
+				color: #666;margin-top: 10px;
+			}
+			.border_l{
+				border-left:1px solid #999 ;
+			}
+			.mui-scroll svg{
+				width: 28px;
+				height: 28px;
+				color: #D0D0D0;
+			}
+			.mui-scroll{
+				/*position: static;*/
+			}
+			/*.scroll_icon{
+				width: 100%;
+			}*/
+			.mui-segmented-control.mui-segmented-control-inverted{
+				height: 54px;
+			}
+			.mui-scroll a{
+				width: 25%;
+			}
+			.mui-scroll a div{
+				color: #A0A0A0;font-size: 0.75rem;
+			}
+			.mui-segmented-control .mui-control-item{
+				line-height: 21px;
+			}
+			.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				padding: 0 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="">
+		    	<div class="detail_top">
+		    		<div class="detail_top_l">
+		    			<img src="image/pic.png"/>
+		    		</div>
+		    		<div class="detail_top_r">
+		    			<ul class="">
+					        <li class="mui-table-view-cell" style="padding: 9px 15px;">
+					            <a class="mui-navigate-right">
+					               	 伊丽莎白
+					                <div class="" style="padding-top: 6px;">
+					                	<img  class="mebs" src="image/meb1.png"/>
+					                	<img  class="mebs" src="image/meb2.png"/>
+					                	<img  class="mebs" src="image/meb3.png"/>
+					                </div>
+					            </a>
+					        </li>
+			    		</ul>
+			    	</div>
+		    	</div>
+		    	<div class="detail_service">
+		    		<ul style="">
+		    			<li class="header_icon">
+		    				<div class="header_left">
+		    					<svg class="icon" aria-hidden="true">
+			                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chengchangzhi"></use>
+			                	</svg>
+		    				</div>
+		    				<div class="header_right">
+			    				<div>
+				                        	 成长值	
+				                </div>
+				                <div style="color: #333;font-size: 0.75rem;">
+				                	1000
+
+				                </div>
+		    				</div>
+		    			</li>
+		    			<li class="header_icon">
+		    				<div class="header_left border_l">
+		    					<svg class="icon" aria-hidden="true">
+			                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aixinbi"></use>
+			                </svg>
+		    				</div>
+		    				<div class="header_right ">
+			    				<div>
+				                        	 爱心币	
+				                </div>
+				                <div style="color: #333;font-size: 0.75rem;">
+				                	520
+
+				                </div>
+		    				</div>
+		    			</li>
+		    			
+		    		</ul>
+		    		<div class="clear">
+		    			
+		    		</div>
+		    	</div>
+		    	 <div class="detail_scroll" >
+		    		<div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted">
+		    		    <div class="mui-scroll">
+		    		        <!--这里放置真实显示的DOM内容-->
+		    		           <!--<ul class="scroll_icon">-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+				    					<svg class="icon" aria-hidden="true">
+						                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aixinbi"></use>
+						                </svg>
+					               		<div>
+				                		爱心
+				                		</div>
+				    				</a>
+				    			<!--</li>-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+				    					<svg class="icon" aria-hidden="true">
+					                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zhuanxiangzhekou"></use>
+					                    </svg>
+					                <!--<i>点餐</i>-->
+						                <div>
+					                	专享折扣
+						                </div>
+					    			</a>
+				    			<!--</li>-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+				    				<svg class="icon" aria-hidden="true">
+				                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cheweiyuliu"></use>
+				                    </svg>
+					                    <div>
+					                	车位预留
+						                </div>
+				                    </a>
+				    			<!--</li>-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+				    				<svg class="icon" aria-hidden="true">
+				                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shengrilibao"></use>
+				                    </svg>
+					                <!--<i>点餐</i>-->
+					                <div>
+					                	生日礼包
+						            </div>
+				    				</a>
+				    			<!--</li>-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+						    		<svg class="icon" aria-hidden="true">
+					                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-aixinbi"></use>
+					                </svg>
+					                <!--<i>点餐</i>-->
+					                 <div>
+					                	小树苗
+						            </div>
+				    				</a>
+				    			<!--</li>-->
+				    			<!--<li class="icons">-->
+				    				<a href="buy.html" class="mui-control-item">
+						    		<svg class="icon" aria-hidden="true">
+				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chengchangzhi"></use>
+				                	</svg>
+					                <!--<i>点餐</i>-->
+					                 <div>
+					                	小树苗
+						            </div>
+				    				</a>
+				    			<!--</li>-->
+				    		<!--</ul>-->
+		    		    </div>
+		    		</div>
+		    		
+		    	</div>
+		    	
+		    	
+		    	<div class="shop_detail_list">
+		    		<div class="shop_detail_title">
+		    			会员福利
+		    		</div>
+		    		<div class="benefits">
+			    		<div class="benefits-coupons">
+			    				<img class="coupons" src="image/coupon1.png"/>
+			    		</div>
+			    		<div class="benefits-coupons">
+			    				<img class="coupons" src="image/coupon2.png"/>
+			    		</div>
+			    		<div class="benefits-coupons" style="margin-bottom: 1px;">
+			    				<img class="coupons" src="image/coupon3.png"/>
+			    		</div>
+			    		<div class="benefits-coupons" style="margin-bottom: 1px;">
+			    				<img class="coupons" src="image/coupon3.png"/>
+			    		</div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+	scrollY: false, //是否竖向滚动
+	
+	scrollX: true, //是否横向滚动
+	
+	startX: 0, //初始化时滚动至x
+	
+	startY: 0, //初始化时滚动至y
+	
+	indicators: true, //是否显示滚动条
+	
+	deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	
+	bounce: true //是否启用回弹
+	
+	});
+//	mui('.mui-scroll-wrapper').scroll().setTranslate(200,0);//100毫秒滚动到顶
+
+</script>

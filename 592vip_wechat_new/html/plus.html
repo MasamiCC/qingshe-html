@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			.index_item_title h3{
+				line-height: 2;
+			}
+			.index_item:first-child{
+				padding-top: 0;
+			}
+			.cat_li{
+				width: 25%;font-size: 0.75rem;padding: 0.3rem !important;
+			}
+			.cat_li .mui-media-body{
+				font-size: 0.75rem!important;
+			}
+			.cat_li img{
+				max-width: 3rem;
+			}
+			.mui-grid-view.mui-grid-9{
+				border-bottom: none;
+				border-top: none;
+				border-left: none;
+			}
+			.plus_pro{
+				padding: 0 10px;text-indent: 2rem;font-size: 0.75rem;line-height: 1.6;
+			}
+			
+			#plus{
+			}
+			.plus_s{
+				display: none;
+				background-image: url(../image/plus_bg.png);
+				background-repeat: no-repeat;
+				background-position: top;
+				background-size: 100%;
+				overflow: hidden;
+				
+			}
+			.plus_s_n{
+				background-image: url(../image/plus_bg_1.png);
+			}
+			.plus_actice{
+				display: block;
+			}
+			.plus_s_n{
+				text-align: center;
+				overflow: hidden;
+			}
+			.plus_s_n p{
+				color: #fff;margin-top: 9rem;
+			}
+			.plus_s_n div{
+				margin: 1.25rem 0;
+			}
+			.btn_reg{
+				background: #fff;
+				border: 1px solid #dcbb6e;
+				color: #dcbb6e!important;
+				font-size: 0.75rem!important;
+				width:7rem;
+				
+			}
+			.btn_reg:active{
+				background: #dcbb6e!important;
+				color: #fff!important;
+				border: 1px solid #dcbb6e!important;
+			}
+			.btn_login{
+				background: #dcbb6e;
+				border: 1px solid #dcbb6e;
+				font-size: 0.75rem!important;
+				width: 7rem;
+			}
+			.btn_login:active{
+				background: #c5a251!important;
+				color: #fff!important;
+				border: 1px solid #dcbb6e!important;
+			}
+			.cz_btn{
+				background: #d4ac57;color: #fff;border: 1px solid #d4ac57;
+				font-size: 1rem;
+				padding: 10px 0;
+				margin-top: 0.75rem;
+				margin-bottom: 0.75rem;
+				border-radius: 0.5rem;
+			}
+			.plus_s_c{
+				width: 80%;margin: .7rem auto;
+			}
+			.plus_s_title{
+				color: #efd8a8;
+				border-top-left-radius: 0.8rem;
+				border-top-right-radius: 0.8rem;
+				font-size: 0.75rem;
+				line-height: 2.5;
+				text-indent: 0;
+				font-weight: 500;
+				text-align: left;
+			}
+			.plus_s_msg{
+				/*background: #fff;*/
+				border-radius: 0.5rem;
+				/*border-bottom-right-radius: 0.5rem;*/
+				padding: 0.4rem 0.8rem;
+				/*display: flex;*/
+				align-items: center;
+				text-align: center;
+				background-image: url(../image/plus_bg_2.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				box-shadow: 0px 0px 5px #333;
+			}
+			.plus_s_msg >div{
+				flex: 1;
+			}
+			.user_name{
+				font-size: 0.75rem;color: #efd8a8;line-height: 1.8;
+			}
+			.un_open{
+				color: #999;background: #505050;border-radius: 1rem;font-size: 0.75rem;padding: 0.1rem 0.5rem;
+			}
+			.now_score{
+				font-size: 1.5rem;line-height: 2.5;
+			}
+			.plus_g{
+				max-height: 1rem;margin: 0.2rem 0;
+			}
+			.head{
+				width: 3rem;border-radius: 100%;height: 3rem;margin: 0 auto;overflow: hidden;position: relative;
+
+			}
+			.head img{
+				position: absolute;left: 0;top: 0;min-height: 3rem;min-width: 3rem;max-width: 100%
+			}
+			.index_tui_item{
+				margin:0 10px
+			}
+			.plus_s_msg_c{
+				width: 50%;padding: 0.5rem 0;
+			}
+			.plus_s_title img{
+				max-width: 1.5rem;vertical-align: middle;margin-right: 0.2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">黑卡会员</h1>
+		</header>
+		<div class="mui-content">
+			<!--PLUS会员权益-->
+			<div class="index_item" id="plus">
+				<div class="" style="">
+					<div class="plus_s plus_s_n  ">
+						<p>
+							加入轻奢点评，成为黑卡用户
+							<br />
+							累计购买越多，享受更多服务及优惠
+						</p>
+						<div class="">
+							<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined btn_reg">注册</button>
+							<button type="button" class="mui-btn mui-btn-blue btn_login">登陆</button>
+							
+						</div>
+					</div>
+					<div class="plus_s plus_actice">
+						<div class="plus_s_c ">
+							<!--<div class="plus_s_title">
+								您还未购充值成为PLUS会员，充值即享优惠
+							</div>-->
+							<div class="plus_s_msg">
+								<div class="plus_s_title">
+									您还未购买黑卡，购买即享优惠
+								</div>
+								<div class="plus_s_msg_c">
+									<div class="head">
+										<img src="../image/near_shop-04.png"  />
+									</div>
+									
+									<div class="user_name">
+										伊丽莎白
+									</div>
+									<div>
+										<span class="un_open">未开通</span>
+									</div>
+								</div>
+								<!--<div class="">
+									<span class="now_score">
+										2000
+									</span>
+									<p>当前积分</p>
+								</div>-->
+							</div>
+							<div class="">
+								<button type="button" class="mui-btn  mui-btn-block cz_btn">立即购买</button>
+							</div>
+						</div>
+						
+					</div>
+					<div class="plus_s ">
+						<div class="plus_s_c">
+							<!--<div class="plus_s_title">
+								黄金PLUS会员卡
+							</div>-->
+							<div class="plus_s_msg">
+								<div class="plus_s_title">
+									<img src="../image/plus_icon.png"/>黑卡
+								</div>
+								<div class="plus_s_msg_c">
+									<div class="head">
+										<img src="../image/near_shop-04.png"  />
+									</div>
+									
+									<div class="user_name">
+										伊丽莎白
+									</div>
+									<div>
+										<span class="un_open">已开通</span>
+									</div>
+								</div>
+								<!--<div class="">
+									<span class="now_score">
+										2000
+									</span>
+									<p>当前积分</p>
+								</div>-->
+							</div>
+							<div class="">
+								<button type="button" class="mui-btn  mui-btn-block cz_btn">立即购买</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="index_item_title">
+					<h3>什么是黑卡？</h3>
+				</div>
+				<div class="plus_pro" >
+			      	      轻奢点评为向核心用户提供优质的消费体验，特别推出592黑卡。黑卡包含对应等级社交蛇龙参与、人工专线服务、懒书社区、生日礼包、车位预留、结算折扣及一系列的新功能有限体验的特权。我门希望通过黑卡与您建立长期的双赢关系。同时我门将不断的丰富黑卡的权益，为您提供更完善的服务。
+				</div>
+				<div class="index_item_title">
+					<h3>黑卡权益</h3>
+				</div>
+				<!--9宫格开始-->
+			
+				<div class="mui-slider-item" style="padding: 0 10px;">
+							<ul class="mui-table-view mui-grid-view mui-grid-9">
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_vip.png"/>
+										</span>
+										<div class="mui-media-body">尊贵图标</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_sl.png"/>
+										</span>
+										<div class="mui-media-body">轻奢沙龙</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_service.png"/>
+										</span>
+										<div class="mui-media-body">专线服务</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_birth.png"/>
+										</span>
+										<div class="mui-media-body">生日礼包</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_car.png"/>
+										</span>
+										<div class="mui-media-body">车位预留</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_sq.png"/>
+										</span>
+										<div class="mui-media-body">社区权限</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_zk.png"/>
+										</span>
+										<div class="mui-media-body">专享折扣</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_online.png"/>
+										</span>
+										<div class="mui-media-body">在线预约</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_pj.png"/>
+										</span>
+										<div class="mui-media-body">评价积分</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media cat_li">
+									<a href="#">
+										<span class="">
+											<img src="../image/qy_new.png"/>
+										</span>
+										<div class="mui-media-body">新功能体验</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+			</div>
+			
+			<!--PLUS会员权益-->
+		    <!-- 为您推荐开始 -->
+			<div class="index_item" id="tuijian_list">
+				<div class="index_item_title">
+					<h3>黑卡尊享店</h3>
+				</div>
+				<div class="index_tui_item">
+					<div class="index_tui_shop_title" >
+						<img src="../image/tui_shop_1.png" class="index_shop_icon"/><span>黑森日耳曼餐厅</span>
+					</div>
+					<div class="index_tui_shop_logo">
+						<img src="../image/near_shop-04.png"/>
+						<div class="index_tui_pf">
+							<span>
+								评分
+							</span>
+							<span>
+								4.5
+							</span>
+						</div>
+					</div>
+					<div class="index_tui_shop_con">
+						<h3>价值96元的香肠单人套餐，提供免费WiF</h3>
+						<p>
+							南通市开发区 | 10.5KM | 西餐
+							<span class="mui-pull-right to_see">进去看看</span>
+						</p>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!-- 为您推荐结束 -->
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			$(function(){
+				loadPingjia();
+				loadBacTop(10);
+			})
+			function loadPingjia(){
+				$(window).scroll(function(){
+					var top=$(window).scrollTop();
+					var height=$(window).height()
+					$(".index_tui_pf").each(function(){
+						var offsetTop=$(this).offset().top;
+						if (offsetTop-top<=height) {
+							$(this).addClass('active');
+						}
+					})
+					if ($(document).height()-top==height) {
+						loadMoreShop()
+					}
+				})
+			}
+			var shopCount=1;
+			var shopEnd=false;
+			function loadMoreShop(){
+				if (!shopEnd) {
+					
+					
+					if (shopCount>=2) {
+						shopEnd=true;
+						mui.toast('没有更多数据了')
+					}else{
+						for( var i =0;i<10;i++){
+							var html='<div class="index_tui_item">'
+									+	'<div class="index_tui_shop_title" >'
+									+		'<img src="../image/tui_shop_2.png" class="index_shop_icon"/>'
+									+		'<span>豪食间中西餐厅（星湖店）</span>'
+									+	'</div>'
+									+	'<div class="index_tui_shop_logo">'
+									+		'<img src="../image/near_shop-03.png"/>'
+									+		'<div class="index_tui_pf">'
+									+			'<span>'
+									+				'评分'
+									+			'</span>'
+									+			'<span>'
+									+				'4.5'
+									+			'</span>'
+									+		'</div>'
+									+	'</div>'
+									+	'<div class="index_tui_shop_con">'
+									+		'<h3>价值96元的香肠单人套餐，提供免费WiFi,提供免费停车位</h3>'
+									+		'<p>'
+									+			'南通市开发区 | 10.5KM | 西餐'
+									+			'<span class="mui-pull-right to_see">进去看看</span>'
+									+		'</p>'
+									+	'</div>'
+									+'</div>'
+							$("#tuijian_list").append(html);
+							loadPingjia()
+						}
+						shopCount++;
+					}
+					
+				}else{
+					mui.toast('没有更多数据了')
+				}
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>-->
+		<script src="../js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				background: #fff;
+				font-size: 0.75rem;
+			}
+			.confirm_item{
+				margin: auto auto;
+			}
+			.icon{
+				height: 30px;
+			}
+			.mui-content{
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				/*bottom: 44px;*/
+				overflow: auto;
+			}
+			.valuation_item_title{
+				text-align: center;
+				font-size: 0.875rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="valuation_item_title">
+					<svg class="icon" aria-hidden="true" style="width: 20px;vertical-align: bottom;margin-right: 5px;">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-dianpu"></use>
+                    </svg>
+                    <span>好又多家常菜馆()</span>
+				</div>
+		
+	</body>
+</html>

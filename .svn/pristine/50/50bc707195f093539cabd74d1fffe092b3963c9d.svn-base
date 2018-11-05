@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>任务失败</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<!--<link href="css/mission_fail.css" rel="stylesheet" />-->
+		<style type="text/css">
+			/*.mui-popover{
+				background: none;
+				-webkit-box-shadow:none;
+			}
+			.mui-backdrop{
+				background-color: rgba(0,0,0,.5);
+			}
+			.mui-popover{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			.mui-toast-container{
+				top: 48%;
+			}
+			.mui-scroll{
+				bottom: 83px;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="mission_all">
+				<div class="mission_top">
+					<div class="failimg">
+						<img src="image/failimg.png"/>
+					</div>
+					<div class="failfont">
+						由于您未按照智能合约提示的要求完成攻略，导致您无法继续在轻奢号红利体系获取积分。请在倒计时结束前完成激活，否则将失去黑卡权益。
+					</div>
+					<div class="last_time">
+					</div>
+					<div class="button_con">
+						<div class="small_button reactive">
+							重新激活
+						</div>
+					</div>
+				</div>
+				<div class="mission_bottom">
+					<div class="mission_bottom_title">
+						收益情况
+					</div>
+					<div class="">
+						<div class="incomecon">
+							<div class="point">
+								<div class="sfont">
+									已获取（积分）
+								</div>
+								<div class="numfont">
+									5000
+								</div>
+							</div>
+							<div class="active_point">
+								<div class="sfont">
+									激活后最多可获取（积分）
+								</div>
+								<div class="numfont">
+									32400
+								</div>
+							</div>
+						</div>
+						<div class="incomecon">
+							<div class="point">
+								<div class="sfont">
+									定向消费锁定（积分）
+								</div>
+								<div class="numfont">
+									3600
+								</div>
+							</div>
+							<div class="active_point">
+								<div class="small_button check_explain">
+									查看说明
+								</div>
+							</div>
+						</div>
+						<div class="incomecon">
+							<div class="point">
+								<div class="sfont">
+									未释放红利（积分）
+								</div>
+								<div class="numfont">
+									3600
+								</div>
+							</div>
+							<div class="active_point">
+								<div class="small_button shifang">
+									释放说明
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="popover_cont">
+				<div id="cont" class="cont">
+					<div class="close">
+						<span id="" class="close_icon">
+							<img src="image/close.png"/>
+						</span>
+		        	</div>
+					<div class="title">
+						定向积分锁定
+			 		</div>
+				</div>
+				<div class="main_middle">
+					<div class="content">
+					 	根据智能合约，您在注册黑卡会员时，绑定了黑卡签约店铺，您需要在该店铺消费定向积分5000积分。并且由于您未按照智能合约完成攻略。您的部分积分已被锁定用于指定商户消费。逾期后该部分积分将会失效。
+					 </div>
+					 <div class="pic_con">
+					 	<img class="pic_conimg" src="image/carbck.png"/>
+					 	<div class="pop_con">
+					 		<div class="dingxiang">
+					 			<img src="image/dingxiang.png"/>
+					 		</div>
+					 		<div class="dx_title">
+					 			南通方特探险王国
+					 		</div>
+					 		<div class="dx_con">
+					 			需定向消费5000积分，已消费2000积分
+					 		</div>
+					 		<div class="">
+					 			<div class="etr_item_banner_middle progress">
+									<div class="bar_left" style="width: 50%;"></div>
+									<div class="bar_right"></div>
+								</div>
+					 		</div>
+					 		<div class="small_button enter_btn">
+					 			点击进入
+					 		</div>
+					 	</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+		#popover1{
+			height: 100px;
+			width:200px;
+		}
+		</style>
+		<div id="popover1" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+				    <ul class="mui-table-view">
+				    	<li class="mui-table-view-cell"><a href="#">Item1</a></li>
+				    	<li class="mui-table-view-cell"><a href="#">Item2</a></li>
+				    	<li class="mui-table-view-cell"><a href="#">Item3</a></li>
+				    	<li class="mui-table-view-cell"><a href="#">Item4</a></li>
+				    	<li class="mui-table-view-cell"><a href="#">Item5</a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<a href="#popover1" id="openPopover1" class="mui-btn mui-btn-primary mui-btn-block">打开弹出菜单</a>
+		
+	</body>
+</html>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		countDown(86450);
+		mui('.mui-scroll-wrapper').scroll()
+		mui('#popover1').popover('show');
+		$('.check_explain').click(function(){
+			mui('#popover').popover('show');
+		});
+		
+		$('.shifang').click(function(){
+			mui('#popover1').popover('show');
+		});
+		
+		$('.close_icon').click(function(){
+			mui('#popover').popover('hide');
+		});
+		
+		$('.close_icon1').click(function(){
+			mui('#popover1').popover('hide');
+		});
+		
+		
+		$('.bottom_nav').click(function(){
+			mui('#popover1').popover('show');
+			mui.toast('领取成功');
+			$('.none_main').delay(2000).show(0);
+			$('.point_all').delay(2000).hide(0);
+		});
+		
+		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		});
+		
+	});
+	
+	function countDown(count){
+		var timer=setInterval(function(){
+			var text='';
+			if(count>=0){
+				var d=parseInt(count/( 60 * 60 * 24));
+				d=d<10?'0'+d:d;
+				var h=parseInt((count/3600)-d*24);
+				h=h<10?'0'+h:h;
+				var m=parseInt((count%3600)/60);
+				m=m<10?'0'+m:m;
+				var s=parseInt((count%60)%60);
+				s=s<10?'0'+s:s;
+				text=d+"天"+h+"小时"+m+"分"+s+"秒";
+				count--
+			}else{
+				clearInterval(timer)
+				text='';
+			}
+			mui('.last_time')[0].innerHTML=text;
+		},1000)
+	}
+	
+	
+	
+</script>
+

@@ -1,0 +1,87 @@
+.lay_body img{
+	vertical-align: baseline;
+}
+/*头部*/
+.people:after{
+	top: 14px;
+    height: 30px;
+}
+.people{
+	padding-right: 30px;
+}
+.quYu{
+	padding-left: 27px;
+}
+.BCtop_left span:first-child{
+	margin-right: 25px;
+}
+.BCtop_left p{
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	line-height:2;
+	margin: 0;
+}
+.BCtop_left p:first-child{
+	font-size: 16px;
+	color: #dfbd76;
+}
+.BCtop_left{
+	padding: 12px 40px 2px 25px;
+}
+/*查询时间*/
+
+.sele_time1 select{
+	width: 110px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	text-indent: 15px;
+	margin-right: 20px;
+}
+select.sel_month,select.sel_day{
+	width: 95px;
+}
+.sele_time1 input[type='text']{
+	border:0;
+	background: none;
+	box-shadow:none;
+	text-indent: 10px;
+}
+.sele_time1 label{
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding-right: 10px;
+	border-radius: 4px;
+	margin-bottom: 0px;
+}
+.form-control:focus{
+	box-shadow:none
+}
+.BCtop_right select{
+	    width: 122px;
+}
+.sele_time1{
+	margin-left: 20px;
+}
+.line{
+	width: 10px;
+	height: 1px;background: #ddd;
+	/*margin: 0 2px;*/
+}
+.BCtop span {
+    vertical-align: middle;
+}
+.BCtop_right span:first-child {
+    margin-right: 10px;
+}
+.right_mian{
+	min-width: 1575px;
+}
+.table_con th{
+	text-align: center;
+}
+.left5{
+	margin-left: 5px;
+}

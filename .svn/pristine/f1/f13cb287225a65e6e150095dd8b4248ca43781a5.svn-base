@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.img_bg {
+    width: 100%;
+    /* height: 230px; */
+}
+
+.score {
+    background-color: rgba(34, 25, 16, 0.7);
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0px;
+    right: 1.5rem;
+}
+
+.score>p {
+    padding: 0.3rem 0.1rem;
+    font-size: 0.8rem;
+    color: #d4ac57;
+    text-align: center;
+}
+
+.score_txt {
+    border-top: 2px solid #d4ac57;
+}
+
+.img_head {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    -webkit-transform: translateX(0%) translateY(-50%);
+    -webkit-transform: translateX(0%) translateY(-50%);
+    -moz-transform: translateX(0%) translateY(-50%);
+    -ms-transform: translateX(0%) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
+    margin-left: -55px;
+}
+
+.msg_box {
+    width: 82%;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    margin-top: 75px;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.shop_name {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    font-weight: 600;
+    margin-left:10px;
+}
+
+.shop_add,
+.shop_tel,
+.shop_int {
+    color: #666666;
+    margin: 0.4rem auto;
+    font-size: 13px;
+}
+
+.shop_int {
+    border-top: 1px solid #999999;
+    padding-top: 0.8rem;
+    margin: 0.8rem 0 3rem 0;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.shop_tel>img,
+.shop_add>img {
+    width: 0.5rem;
+    margin-right: 4px;
+}
+
+
+.b_nav {
+    height: 3.5rem;
+    background:url(../image/app_bg.png)no-repeat 100%;
+    background-size: cover;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.b_nav img{
+    width: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top:-.8rem;
+}

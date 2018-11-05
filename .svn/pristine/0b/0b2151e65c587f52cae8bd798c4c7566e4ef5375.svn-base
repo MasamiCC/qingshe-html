@@ -1,0 +1,179 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.np_main_coupon_fonts{
+	font-size: 0;
+	line-height: 0;
+}
+.np_main_coupon_fonts>div{
+	display: inline-block;
+	line-height: 1;
+}
+.rrp_mian_con{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*overflow: hidden;*/
+	background: #ece5d5;
+	text-align: center;
+}
+.rrp_mian_bg{
+	text-align: center;
+	padding-top: 10px;
+	background: #fbf7eb;
+	/*margin:16px 16px  0 16px;*/
+	/*margin: 16px auto 0 auto;*/
+	position: absolute;
+	top: 18px;
+	left: 16px;
+	right: 16px;
+	/*bottom: 4%;*/
+	width: 91%;
+	height: 91%;
+	z-index: 10;
+}
+.np_main_item_fourth{
+	position: absolute;
+	bottom: 11%;
+	left: 0;
+	right: 0;
+	line-height: 2;
+	color: #fe8d83;
+	font-size: 0.75rem;
+	
+}
+.np_main_item_fourth a{
+	color: #fe8d83;
+	text-decoration: underline;
+}
+.quesition_icon{
+	margin-right: 5px;
+}
+.np_main_item_fourth span{
+	vertical-align: middle;
+}
+.np_main_coupon{
+	position: absolute;
+	top: 49%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+}
+.np_main_coupon img{
+	width: 80%;
+}
+.coupon_money{
+	font-size:1.5rem;
+	color: #ff0000;
+	position: absolute;
+	top: 39%;
+    left: 14%;
+}
+.coupon_font{
+	line-height: 1.8;
+	text-align: left;
+	position: absolute;
+	top: 25%;
+    left: 47%;
+}
+.bigfont{
+	font-size: 0.625rem;
+}
+.coupon_font1{
+	font-size: 0.9375rem;
+	color: #ff0000;
+}
+.coupon_font2{
+	font-size: 0.75rem;
+	color: #f8a120;
+}
+.enter_shop a{
+	font-size: 0.9375rem;
+	color: #ff9900;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+}
+.enter_coupon a{
+	color: #cc9900;
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 3%;
+	left: 0;
+	right: 0;
+}
+.re_coupon_money{
+	color: #aaaaaa;
+	font-size:1.5rem;
+	position: absolute;
+	top: 27%;
+    left: 16%;
+}
+.re_coupon_money_font{
+	color: #aaaaaa;
+	font-size:0.625rem;
+}
+.re_coupon_font1{
+	font-weight: bold;
+	font-size: 0.9375rem;
+	color: #aaaaaa;
+	line-height: 1.7;
+}
+.re_coupon_font2{
+	font-size: 0.625rem;
+	color: #aaaaaa;
+	line-height: 2.4;
+}
+.re_coupon_font{
+	line-height: 1.8;
+	text-align: left;
+	position: absolute;
+	top: 24%;
+    left: 44%;
+}
+.newYear_title img{
+	width: 50%;
+}
+.newYear_title{
+	position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;
+}
+.newYear_diamond{
+	position: absolute;
+	top: 13%;
+	left: 0;
+	right: 0;
+}
+.newYear_diamond img{
+	width: 30%;
+}
+.rrp_mian_bottom{
+	width: 99%;
+    height: 44%;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 6%;
+    box-shadow: 0px -3px 2px #d74f43;
+    z-index: 22;
+
+}
+.rrp_bottom{
+	position: absolute;
+	background: #d74f43;
+	width: 95%;
+	height:12%;
+	left: 10px;
+	right: 10px;
+	bottom: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}

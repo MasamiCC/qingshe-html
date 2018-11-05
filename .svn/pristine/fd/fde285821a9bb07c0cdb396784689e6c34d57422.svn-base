@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.indexedlist.css"/>
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+			.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			.city_title{
+				font-size: 16px;line-height: 30px;
+			}
+			.hot_city{
+				margin: 0 10px;font-size: 0;line-height: 2.5;padding-bottom:5px;
+			}
+			.hot_city span{
+				display: inline-block;font-size: 0.75rem;width: 30%;margin: 3px 1.5%;
+				border: 1px solid #eee;
+				text-align: center;
+				border-radius: 3px;
+				background: #fff;
+				color: #333;
+				height: 2rem;
+				line-height: 2rem;
+				font-weight: normal;
+				vertical-align: middle;
+			}
+			.hot_city span img{
+				width: 15px;height: 15px;vertical-align: text-bottom;margin-right: 3px;
+			}
+			.hot_city span.active{
+				background: #f4f4f4;
+			}
+			.mui-indexed-list-bar{
+				background: none;
+				width: 25px;
+				height: auto;
+			}
+			.mui-indexed-list-bar.active,.mui-indexed-list-bar:active{
+				background: rgba(255,255,255,0.6);color: #faa331;
+			}
+			.mui-indexed-list-bar a,.mui-indexed-list-bar.active a,.mui-indexed-list-bar.active a.active{font-size: 0.6rem;color: #faa331;}
+			.mui-indexed-list-group, .mui-indexed-list-item{
+				font-size: 0.875rem;font-weight: normal;
+				
+			}
+			.mui-indexed-list-group{
+				background: #f2f2f2;color: #666;line-height: 2;
+			}
+			.city_list a{font-size: 0.75rem;}
+			.mui-table-view-divider:after{height: 0;}
+			.no_before:before{height: 0;}
+			.mui-indexed-list-group span.area{
+				position: absolute;right: 1rem;
+			}
+			.mui-indexed-list-group span.area i{
+				font-size: 1rem;
+			}
+			.mui-icon-clear:before{
+				content: '取消';
+				font-size: 0.5rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id='list' class="mui-indexed-list">
+					
+				<div class="mui-indexed-list-search mui-input-row mui-search">
+					<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索城市">
+
+				</div>
+				<div class="mui-indexed-list-bar">
+					<a href="">区县</a>
+					<a href="">定位</a>
+					<a href="">热门</a>
+					<a>A</a>
+					<a>B</a>
+					<a>C</a>
+					<a>D</a>
+					<a>E</a>
+					<a>F</a>
+					<a>G</a>
+					<a>H</a>
+					<a>I</a>
+					<a>J</a>
+					<a>K</a>
+					<a>L</a>
+					<a>M</a>
+					<a>N</a>
+					<a>O</a>
+					<a>P</a>
+					<a>Q</a>
+					<a>R</a>
+					<a>S</a>
+					<a>T</a>
+					<a>U</a>
+					<a>V</a>
+					<a>W</a>
+					<a>X</a>
+					<a>Y</a>
+					<a>Z</a>
+				</div>
+				<div class="mui-indexed-list-alert"></div>
+				<div class="mui-indexed-list-inner">
+					<div class="mui-indexed-list-empty-alert">没有数据</div>
+					
+					<ul class="mui-table-view">
+						<li data-group="区县" class="mui-table-view-divider mui-indexed-list-group" style="background: #fff;color: #033333;">
+							当前：南通全城
+							<span class="mui-pull-right area">切换县区 <i class="mui-icon mui-icon-arrowdown"></i></span>
+							<div class="hot_city">
+								<span class="active">全城</span>
+								<span>通州区</span>
+								<span>港闸区</span>
+								<span>开发区</span>
+								<span>如东县</span>
+								<span>海安县</span>
+								<span>如皋市</span>
+								<span>启东市</span>
+								<span>海门市</span>
+							</div>
+						</li>
+						
+						<li data-group="定位" class="mui-table-view-divider mui-indexed-list-group " style="background: #f7f7f7;color: #033333;" >
+							定位/最近访问
+							<div class="hot_city">
+								<span> <img src="../image/changeCity.png" />通州区</span>
+								<span>港闸区</span>
+								<span>开发区</span>
+							</div>
+						</li>
+						<li data-group="热门" class="mui-table-view-divider mui-indexed-list-group no_before" style="background: #f7f7f7;color: #033333;">
+							热门城市
+							<div class="hot_city">
+								<span>通州区</span>
+								<span>港闸区</span>
+								<span>开发区</span>
+								<span>通州区</span>
+								<span>港闸区</span>
+								<span>开发区</span>
+							</div>
+						</li>
+						
+						<li data-group="B" class="mui-table-view-divider mui-indexed-list-group">B</li>
+						<li data-value="BJ" data-tags="BeiJing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=北京">北京</a></li>
+						<li data-value="BD" data-tags="BaoDing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=保定">保定</a></li>	
+						<li data-value="BT" data-tags="BaoTou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=包头">包头</a></li>	
+						<li data-value="BZ" data-tags="BinZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=滨州">滨州</a></li>
+						
+						<li data-group="C" class="mui-table-view-divider mui-indexed-list-group">C</li>
+						<li data-value="CZ" data-tags="CangZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=沧州">沧州</a></li>	
+						<li data-value="CD" data-tags="ChangDe" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=常德">常德</a></li>	
+						<li data-value="CZ" data-tags="ChangZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=常州">常州</a></li>	
+						<li data-value="CZ" data-tags="ChenZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=郴州">郴州</a></li>	
+						<li data-value="CD" data-tags="ChengDu" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=成都">成都</a></li>	
+						<li data-value="CS" data-tags="ChangSha" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=长沙">长沙</a></li>	
+						<li data-value="CC" data-tags="ChangChun" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=长春">长春</a></li>	
+						<li data-value="CQ" data-tags="ChongQing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=重庆">重庆</a></li>		
+						
+						<li data-group="D" class="mui-table-view-divider mui-indexed-list-group">D</li>
+						<li data-value="DL" data-tags="DaLian" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=大连">大连</a></li>	
+						<li data-value="DQ" data-tags="DaQing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=大庆">大庆</a></li>	
+						<li data-value="DZ" data-tags="DeZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=德州">德州</a></li>	
+						<li data-value="DG" data-tags="DongGuang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=东莞">东莞</a></li>	
+						<li data-value="DY" data-tags="DongYing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=东营">东营</a></li>
+						
+						<li data-group="E" class="mui-table-view-divider mui-indexed-list-group">E</li>
+						<li data-value="DSN" data-tags="EErDuoSi" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=鄂尔多斯">鄂尔多斯</a></li>
+						
+						<li data-group="F" class="mui-table-view-divider mui-indexed-list-group">F</li>
+						<li data-value="FS" data-tags="FoShan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=佛山">佛山</a></li>	
+						<li data-value="FZ" data-tags="FuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=福州">福州</a></li>
+						
+						<li data-group="G" class="mui-table-view-divider mui-indexed-list-group">G</li>
+						<li data-value="GZ" data-tags="GuangZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=广州">广州</a></li>
+						<li data-value="GY" data-tags="GuYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=鞍山">贵阳</a></li>		
+						
+						<li data-group="H" class="mui-table-view-divider mui-indexed-list-group">H</li>
+						<li data-value="HD" data-tags="HanDan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=邯郸">邯郸</a></li>	
+						<li data-value="HHHT" data-tags="HuHeHaoTe" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=呼和浩特">呼和浩特</a></li>
+						<li data-value="HEB" data-tags="HaErBin" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=哈尔滨">哈尔滨</a></li>	
+						<li data-value="HZ" data-tags="HangZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=杭州">杭州</a></li>
+						<li data-value="HF" data-tags="HeFei" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=合肥">合肥</a></li>	
+						<li data-value="HY" data-tags="HeYuan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=河源">河源</a></li>
+						<li data-value="HZ" data-tags="HeZe" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=菏泽">菏泽</a></li>
+						<li data-value="HY" data-tags="HengYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=衡阳">衡阳</a></li>	
+						<li data-value="HZ" data-tags="HuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=湖州">湖州</a></li>	
+						<li data-value="HA" data-tags="HuaiAn" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=淮安">淮安</a></li>	
+						
+						<li data-group="J" class="mui-table-view-divider mui-indexed-list-group">J</li>
+						<li data-value="JL" data-tags="JiLin" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=吉林">吉林</a></li>
+						<li data-value="JN" data-tags="JiNan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=济南">济南</a></li>	
+						<li data-value="JN" data-tags="JiNing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=济宁">济宁</a></li>	
+						<li data-value="JX" data-tags="JiaXing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=嘉兴">嘉兴</a></li>	
+						<li data-value="JM" data-tags="JiangMen" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=江门">江门</a></li>	
+						<li data-value="JH" data-tags="JinHua" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=金华">金华</a></li>	
+						
+						<li data-group="K" class="mui-table-view-divider mui-indexed-list-group">K</li>
+						<li data-value="KM" data-tags="KunMing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=昆明">昆明</a></li>	
+						
+						<li data-group="L" class="mui-table-view-divider mui-indexed-list-group">L</li>
+						<li data-value="LF" data-tags="LangFang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=廊坊">廊坊</a></li>
+						<li data-value="LZ" data-tags="LanZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=兰州">兰州</a></li>
+						<li data-value="LYG" data-tags="LianYunGang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=连云港">连云港</a></li>
+						<li data-value="LC" data-tags="LiaoCheng" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=聊城">聊城</a></li>
+						<li data-value="LQ" data-tags=LinQi class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=临沂">临沂</a></li>
+						<li data-value="LZ" data-tags="LiuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=柳州">柳州</a></li>
+						<li data-value="LY" data-tags="LuoYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=洛阳">洛阳</a></li>		
+					
+						<li data-group="M" class="mui-table-view-divider mui-indexed-list-group">M</li>
+						<li data-value="MM" data-tags="MaoMing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=茂名">茂名</a></li>	
+						<li data-value="MZ" data-tags="MeiZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=梅州">梅州</a></li>	
+						
+						<li data-group="N" class="mui-table-view-divider mui-indexed-list-group">N</li>
+						<li data-value="NC" data-tags="NanZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=南昌">南昌</a></li>	
+						<li data-value="NJ" data-tags="NanJing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=南京">南京</a></li>	
+						<li data-value="NN" data-tags="NanNing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=南宁">南宁</a></li>	
+						<li data-value="NT" data-tags="NanTong" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=南通">南通</a></li>	
+						<li data-value="NB" data-tags="NingBo" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=宁波">宁波</a></li>	
+						
+						
+						<li data-group="Q" class="mui-table-view-divider mui-indexed-list-group">Q</li>
+						<li data-value="QD" data-tags="QingDao" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=青岛">青岛</a></li>	
+						<li data-value="QY" data-tags="QingYuan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=清远">清远</a></li>	
+						<li data-value="QZ" data-tags="QuanZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=泉州">泉州</a></li>	
+						
+						
+						<li data-group="S" class="mui-table-view-divider mui-indexed-list-group">S</li>
+						<li data-value="SH" data-tags="ShangHai" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=上海">上海</a></li>
+						<li data-value="SG" data-tags="ShaoGuang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=韶关">韶关</a></li>
+						<li data-value="SX" data-tags="ShaoXing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=绍兴">绍兴</a></li>	
+						<li data-value="SZ" data-tags="ShenZhen" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=深圳">深圳</a></li>	
+						<li data-value="SY" data-tags="ShenYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=沈阳">沈阳</a></li>	
+						<li data-value="SJZ" data-tags="ShiJiaZhuang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=石家庄">石家庄</a></li>	
+						<li data-value="SZ" data-tags="SuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=苏州">苏州</a></li>	
+						<li data-value="SQ" data-tags="SuQian" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=宿迁">宿迁</a></li>
+						
+						<li data-group="T" class="mui-table-view-divider mui-indexed-list-group">T</li>
+						<li data-value="TZ" data-tags="TaiZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=台州">台州</a></li>
+						<li data-value="TY" data-tags="TaiYuan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=太原">太原</a></li>
+						<li data-value="TA" data-tags="TaiAn" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=泰安">泰安</a></li>
+						<li data-value="TZ" data-tags="TaiZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=泰州">泰州</a></li>
+						<li data-value="TS" data-tags="TangShan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=唐山">唐山</a></li>
+						<li data-value="TJ" data-tags="TianJin" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=天津">天津</a></li>
+						<li data-value="TL" data-tags="TongLiao" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=通辽">通辽</a></li>
+						
+						<li data-group="W" class="mui-table-view-divider mui-indexed-list-group">W</li>
+						<li data-value="WH" data-tags="WeiHai" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=威海">威海</a></li>
+						<li data-value="WZ" data-tags="WeiZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=温州">温州</a></li>
+						<li data-value="WLMQ" data-tags="WuLuMuQi" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=乌鲁木齐">乌鲁木齐</a></li>
+						<li data-value="WF" data-tags="WeiFang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=潍坊">潍坊</a></li>
+						<li data-value="WX" data-tags="WuXi" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=无锡">无锡</a></li>
+						<li data-value="WH" data-tags="WuHu" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=芜湖">芜湖</a></li>
+						<li data-value="WH" data-tags="WuHan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=武汉">武汉</a></li>
+						
+						<li data-group="X" class="mui-table-view-divider mui-indexed-list-group">X</li>
+						<li data-value="XA" data-tags="XinAn" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=西安">西安</a></li>
+						<li data-value="XY" data-tags="XianYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=咸阳">咸阳</a></li>
+						<li data-value="XY" data-tags="XiangYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=襄阳">襄阳</a></li>
+						<li data-value="XX" data-tags="XinXiang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=新乡">新乡</a></li>
+						<li data-value="XZ" data-tags="XuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=徐州">徐州</a></li>
+						<li data-value="XC" data-tags="XuChang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=许昌">许昌</a></li>
+						
+						<li data-group="Y" class="mui-table-view-divider mui-indexed-list-group">Y</li>
+						<li data-value="YT" data-tags="YanTai" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=西安">烟台</a></li>
+						<li data-value="YC" data-tags="YanCheng" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=咸阳">盐城</a></li>
+						<li data-value="YJ" data-tags="YangJiang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=襄阳">阳江</a></li>
+						<li data-value="YC" data-tags="YiChang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=新乡">宜昌</a></li>
+						<li data-value="YL" data-tags="YuLin" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=徐州">榆林</a></li>
+						<li data-value="YY" data-tags="YueYang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=许昌">岳阳</a></li>
+						
+						<li data-group="Z" class="mui-table-view-divider mui-indexed-list-group">Z</li>
+						<li data-value="ZZ" data-tags="ZaoZhuang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=枣庄">枣庄</a></li>
+						<li data-value="ZJ" data-tags="ZhanJiang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=湛江">湛江</a></li>
+						<li data-value="ZZ" data-tags="ZhangZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=漳州">漳州</a></li>
+						<li data-value="ZQ" data-tags="ZhaoQing" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=肇庆">肇庆</a></li>
+						<li data-value="ZJ" data-tags="ZhenJiang" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=镇江">镇江</a></li>
+						<li data-value="ZZ" data-tags="ZhenZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=郑州">郑州</a></li>
+						<li data-value="ZS" data-tags="ZhongShan" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=中山">中山</a></li>
+						<li data-value="ZK" data-tags="ZhouKou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=周口">周口</a></li>
+						<li data-value="ZH" data-tags="ZhuHai" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=珠海">珠海</a></li>
+						<li data-value="ZZ" data-tags="ZhuZhou" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=新乡">株洲</a></li>
+						<li data-value="ZB" data-tags="ZiBo" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=徐州">淄博</a></li>
+						<li data-value="ZY" data-tags="ZunYi" class="mui-table-view-cell mui-indexed-list-item"><a href="${ctx}/index/locationCity?city=许昌">遵义</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.indexedlist.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init();
+	mui.ready(function() {
+		var header = document.querySelector('header.mui-bar');
+		var list = document.getElementById('list');
+		//calc hieght
+		list.style.height = (document.body.offsetHeight) + 'px';
+		//create
+		window.indexedList = new mui.IndexedList(list);
+		
+	});
+	$(function(){
+		$('.area').on('tap',function(){
+			$(this).next().slideToggle()
+			$(this).find('i').toggleClass('mui-icon-arrowdown mui-icon-arrowup')
+		})
+	})
+	
+</script>

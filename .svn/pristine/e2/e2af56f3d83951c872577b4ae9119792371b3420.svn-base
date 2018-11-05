@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/car_wash.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="http://114.215.25.249/808gps/open/player/swfobject.js"></script>-->
+		<script src="../js/swfobject.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+    
+
+	</body>
+</html>
+<script type="text/javascript">
+	//http://114.215.25.249/StandardApiAction_getDeviceStatus.action?jsession=b786c015-199d-4f60-9c2e-41ef2d406e8f&devIdno=80004345&toMap=2
+	
+	$(function(){
+		$.ajax({
+             type: "get",
+             async: false,
+             url: "http://114.215.25.249/StandardApiAction_getDeviceStatus.action?jsession=b786c015-199d-4f60-9c2e-41ef2d406e8f&devIdno=80004345&toMap=2",
+             dataType: "jsonp",
+             jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+             jsonpCallback:"flightHandler",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+             success: function(json){
+             	document.write(json)
+               	console.log(json)
+                 //alert('您查询到航班信息：票价： ' + json.price + ' 元，余票： ' + json.tickets + ' 张。');
+             },
+             error: function(){
+                 alert('fail');
+             }
+         });
+	})
+</script>

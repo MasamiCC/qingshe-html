@@ -1,0 +1,98 @@
+.mui-content{
+	color: #404D57;
+	font-size: 12px;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+	padding-right: 15px!important;
+	padding: 5px 15px;
+}
+.middle{
+	border-bottom: 1px solid #EDEDED;
+}
+.lineh{
+	padding:6px 0px ;
+}
+/*.piece2{
+	margin-top: 6px;
+}*/
+.mui-icon{
+	font-size: 18px;
+}
+.mui-btn-block{
+	border-radius: 40px;
+	margin-top: 14px;
+	background: none;
+	
+}
+.button{
+	display: inline-block;
+	padding: 10px 120px;
+	border: 1px solid #404D57;
+	border-radius:50px ;
+	cursor: pointer;
+	background: #ededed;
+}
+.center1{
+	text-align: center;
+	margin-top:18px;
+}
+#ul{
+	background: none;
+}
+
+#ul li{
+	background: white;
+}
+.li2{
+	margin-top: 6px;
+}
+.button:active{
+	background: #404d57;
+	color: #fff;
+}
+.address_user{
+	font-size: 14px;
+}
+.address_address{
+	font-size: 13px;letter-spacing: 1px;
+}
+.address_default{
+	font-size: 12px;padding-bottom:0px ;
+}
+.piece1{
+	margin: 10px auto;
+}
+.piece1:first-child{
+	margin-top: 0;
+}
+.piece1:after{
+	left: 0;height: 0;
+}
+
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	    font-size: 18px;
+    left: -25px;
+    position: absolute;
+    top: -3px;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color: #404d57;
+}
+.address_default label{
+	width: inherit;
+	padding-left: 15px!important;
+}
+.mui-checkbox, .mui-radio{
+	display: inline-block;
+}
+.add_address_li{
+	height: inherit!important;
+}
+.default{
+	color: #404d57;
+	padding: 10px 0;
+}
+.mui-switch.mui-active{
+	background: #404d57;
+	border-color:#404d57 ;
+}

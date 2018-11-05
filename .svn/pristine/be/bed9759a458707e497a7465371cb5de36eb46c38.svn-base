@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/information_read.css"/>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				<div class="luxury-detail">
+					<div class="luxury-left">
+						<div class="left_container">
+						<div class="luxury_left_item">
+							<div class="read_left_item_title">
+								<div class="read_left_item_title1">
+									江苏十三市的13碗最馋人的面 看完就流口水了
+								</div>
+								<div class="read_left_item_title2">
+									<span>1分钟前</span>&nbsp;&nbsp;
+									<span>18438人阅读</span>&nbsp;&nbsp;
+									<span>327个赞</span>&nbsp;&nbsp;
+								</div>
+								<div class="read_content">
+									面条，也是最具包容性的食物。不管是一碗清汤，还是几滴酱油，一点猪油抑或是前顿的剩菜，只要和面条糅合，无疑都能成就出崭新一餐。在中国，地不问南北，味无涉浓淡，每个地方，都有一碗属于自己的面。就连自古不以面为主食的江苏，每个地方都有属于自己的一碗面。今天小编就带大家尝尝，征服江苏的十三碗。
+								</div>
+								<a href="">
+									<div class="">
+										<div class="read_pic">
+											<img src="../imgs/read1_1.png"/>
+										</div>
+										<div class="read_pic">
+											皮肚面  南京
+										</div>
+										<div class="read_content">
+											皮肚面,诞生于1952年前后，你在南京任何一个背街小巷都不难找到一家卖皮肚面的馆子。汤料充盈，酷似于大杂烩，十几样东西，皮肚、猪肝、香肠、肉丝、西红柿、鸡蛋、青菜、木耳……一锅烩。真的，你想到想不到的，都在面汤里，这些似不相干的食材相搭配，却毫无违和之感。整碗面条，味道敦厚，憨憨的实在着。像极了爱吃皮肚面的南京人的风格，朴实无华，实实在在，好吃就行。
+										</div>
+									</div>
+								</a>
+								<a href="">
+									<div class="">
+										<div class="read_pic">
+											<img src="../imgs/read1_2.png"/>
+										</div>
+										<div class="read_pic">
+											广福寺素面  无锡
+										</div>
+										<div class="read_content">
+											都道江南口味清爽，誉满无锡的这碗面，是一碗素面，心甘情愿，素面。地处灵秀的鼋头渚景区，饱览太湖水色之后，叩庙门而入，体验僧食之素。偏爱三鲜的，浇头里有面筋、笋干、黑木耳、黄花菜等，每一样蔬菜都有着极大的魅力；面汤上面飘着一层清亮的素油，还撒着白芝麻，一碗下肚，满口生香。
+										</div>
+									</div>	
+								</a>
+								<div class="read_pic">
+									<div class="yzan">
+										<ul>
+											<li><img src="../imgs/yzan.png"/></li>
+											<li>赞一下</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="luxury_left_item ">
+							<!--评论信息-->
+							<div class="luxury_form read_login" >
+								<form action="" method="post">
+									<div class="luxury-text">
+										<textarea name="" rows="" cols="" disabled=""></textarea>
+										<div class="">
+											<span>登录</span> | <span>注册</span>
+										</div>
+									</div>
+									<div class="" style="text-align: right;">
+										<input type="button" value="发表评论" class="luxury_btn"/>
+									</div>
+								</form>
+							</div>
+							<div class="">
+								<div class="luxury_tuijian_title">
+									<span class="pingjia_title">全部评论</span>
+								</div>
+								<div class="" style="margin-top: 10px;" id="pj_list_main">
+									<div class="pj_list">
+										<div class="pj_left">
+											<img src="../imgs/user.png"/>
+										</div>
+										<div class="pj_right">
+											<ul>
+												<li class="luxury-user">
+													宇宙无敌小小酥
+													<span class="luxury-time">刚刚</span>
+												</li>
+												<li class="luxury-pj_con">
+													吃完了才想起来要拍照，吃到最后只剩我们一桌了哈哈哈，好有成就感的感觉，是个新开的店，菜品非常非常新鲜，鸳鸯锅，一边是一次性的锅底非常干净，辣味十足，过瘾，点的毛肚很鲜七上八下刚刚好，牛蛙特别嫩，自制的油碟也棒极了，还有乌鸡卷香肠，小伙伴的最爱，虽然新开，但是服务却非常到位，时不时给我们加汤什么的，环境也比较干净，今天靠窗的一排都坐满了希望下次能坐到靠窗的位置，还能看看外面的夜景，南大街夜晚的的钟楼美极了，小伙伴们吃的也很开心，约好了下次还来！嘻嘻，墙裂推荐！
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+									<div class="pj_list">
+										<div class="pj_left">
+											<img src="../imgs/user2.png"/>
+										</div>
+										<div class="pj_right">
+											<ul>
+												<li class="luxury-user">
+													福禄小金刚
+													<span class="luxury-time">3小时前</span>
+												</li>
+												<li class="luxury-pj_con">
+													口味还行，就是太辣了！大厅特别呛人！一直在咳嗽！点个锅底等了半个多小时，霸道牛肉，午餐肉还不错，菜总体新鲜
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+									<div class="pj_list">
+										<div class="pj_left">
+											<img src="../imgs/user3.png "/>
+										</div>
+										<div class="pj_right">
+											<ul>
+												<li class="luxury-user">
+													猴子请来的救兵
+													<span class="luxury-time">2017-07-12</span>
+												</li>
+												<li class="luxury-pj_con">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+								</div>
+								<div class="luxury_more">
+										加载更多
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="luxury-right">
+						<div class="luxury_tuijian_ad inline_container" style="background: none;">
+							<div class="inline_container" style="border-bottom:1px dashed #ddd;">
+								<div class="read_author read_author1">
+									<span class="comment_detail1_span1"><img src="../imgs/pic.png"/></span>
+								    <span class="comment_detail1_span2">轻奢小编 </span>
+								</div>
+								<div class="read_author read_author2">
+									<div class="guanzhu guanzhu1">
+										关注Ta
+									</div>
+								</div>
+							</div>
+							<div class="read_detail inline_container">
+								<div class="readnum">
+									<ul>
+										<li class="readnumli">3000</li>
+										<li>粉丝</li>
+									</ul>
+								</div>
+								<div class="readnum">
+									<ul>
+										<li class="readnumli">93</li>
+										<li>文章</li>
+									</ul>
+								</div>
+								<div class="readnum">
+									<ul>
+										<li class="readnumli">25600</li>
+										<li>阅读</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="luxury_tuijian_ad inline_container read_recommend" style="background: none;">
+							<div class="" style="line-height: 3;">
+								推荐用户
+							</div>
+							<div class="read_recommend_pic" style="">
+								<a href="">
+								<img src="../imgs/read2_1.png"/>
+								</a>
+							</div>
+							<div class="inline_container" style="padding-top: 10px;">
+								<div class="read_author read_author1 read_shop1">
+									<span class="comment_detail1_span1" style="font-size:16px ;"><a href="">新石器烤肉</a></span>
+								</div>
+								<div class="read_author read_author2 read_shop2">
+									<a href="">
+									<div class="guanzhu guanzhu2">
+										进入店铺
+									</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="luxury_tuijian_list">
+							<div class="luxury_tuijian_title">
+								热门资讯推荐
+							</div>
+							<div class="">
+								<div class="luxury_tuijian inline_container">
+									<div class="read_tuijian1">
+										<a href="">
+										<img src="../imgs/shupian.png"/>
+										</a>
+									</div>
+									<div class="read_tuijian2">
+										<a href="">
+										<ul>
+											<li class="shop_title">小姐姐带你亲测20种薯片后！小姐姐带你亲测20种薯片后！</li>
+											<li class="shop_intro">
+												薯片作为看剧必备也是大家最喜欢的零食了，一年四季都吃不够哇。那到底哪款好吃又性价比高呢
+											</li>
+										</ul>
+										</a>
+									</div>
+									
+								</div>
+								<div class="luxury_tuijian inline_container">
+									
+									<div class="read_tuijian1">
+										<a href="">
+										<img src="../imgs/shupian.png"/>
+										</a>
+									</div>
+									<div class="read_tuijian2">
+										<a href="">
+										<ul>
+											<li class="shop_title">小姐姐带你亲测20种薯片后！</li>
+											<li class="shop_intro">
+												薯片作为看剧必备也是大家最喜欢的零食了，一年四季都吃不够哇。那到底哪款好吃又性价比高呢
+											</li>
+										</ul>
+										</a>
+									</div>
+									
+								</div>
+								<div class="luxury_tuijian inline_container">
+									
+									<div class="read_tuijian1">
+										<a href="">
+										<img src="../imgs/shupian.png"/>
+										</a>
+									</div>
+									<div class="read_tuijian2">
+										<a href="">
+										<ul>
+											<li class="shop_title">小姐姐带你亲测20种薯片后！</li>
+											<li class="shop_intro">
+												薯片作为看剧必备也是大家最喜欢的零食了，一年四季都吃不够哇。那到底哪款好吃又性价比高呢
+											</li>
+										</ul>
+										</a>
+									</div>
+									
+								</div>
+								<div class="luxury_tuijian inline_container">
+									
+									<div class="read_tuijian1">
+										<a href="">
+										<img src="../imgs/shupian.png"/>
+										</a>
+									</div>
+									<div class="read_tuijian2">
+										<a href="">
+										<ul>
+											<li class="shop_title">小姐姐带你亲测20种薯片后！</li>
+											<li class="shop_intro">
+												薯片作为看剧必备也是大家最喜欢的零食了，一年四季都吃不够哇。那到底哪款好吃又性价比高呢
+											</li>
+										</ul>
+										</a>
+									</div>
+									
+								</div>
+								<div class="luxury_tuijian inline_container">
+									
+									<div class="read_tuijian1">
+										<a href="">
+										<img src="../imgs/shupian.png"/>
+										</a>
+									</div>
+									<div class="read_tuijian2">
+										<a href="">
+										<ul>
+											<li class="shop_title">小姐姐带你亲测20种薯片后！</li>
+											<li class="shop_intro">
+												薯片作为看剧必备也是大家最喜欢的零食了，一年四季都吃不够哇。那到底哪款好吃又性价比高呢
+											</li>
+										</ul>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+				<div class="footer_lcd">
+			<!--footer-help-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门  
+						</span>
+						<li>购物流程 </li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>区域代理</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../imgs/app.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../imgs/592vipma.png" alt="" />
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div class="" style="margin-top: 33px;">
+				<div class="footer_rz">
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+				</div>
+			</div>
+			<p class="footer_copyRight">
+				<span>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+						COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</span>
+			</p></div>
+		</div>
+			<!--footer-->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/video.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script type="text/javascript">
+
+	$(function(){
+		$(".luxury_more").bind({
+			'click':function(){
+				var hasC=$(this).hasClass('finish');
+				if(!hasC){
+					$(".luxury_more").html("正在加载中。。。");
+					var pingjiaData=getPingjia();
+					loadPingjia(pingjiaData,0)
+				}
+			}
+		})
+	})
+	
+	function getPingjia(){
+		var pingjiaData=[{
+			id:'1',
+			username:'123',
+			user_headpic:'../imgs/user.png',
+			createtime:'1498699358000',
+			content:'店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒',
+		},{
+			id:'2',
+			username:'宇宙无敌小小酥',
+			user_headpic:'../imgs/user.png',
+			createtime:'1498699358000',
+			content:'完了才想起来要拍照，吃到最后只剩我们一桌了哈哈哈，好有成就感的感觉，是个新开的店，菜品非常非常新鲜，鸳鸯锅，一边是一次性的锅底非常干净，辣味十足，过瘾，点的毛肚很鲜七上八下刚刚好，牛蛙特别嫩，自制的油碟也棒极了，还有乌鸡卷香肠，小伙伴的最爱，虽然新开，但是服务却',
+		}
+		]
+		return pingjiaData;
+	}
+	function loadPingjia(data,flg){
+		//flg 1表示最后一页加载，0表示其它
+		var html='';
+		for (var   i  in data) {
+			html+='<div class="pj_list">'
+				+	'<div class="pj_left">'
+				+		'<img src="'+data[i]['user_headpic']+'"/>'
+				+	'</div>'
+				+	'<div class="pj_right">'
+				+		'<ul>'
+				+			'<li class="luxury-user">'
+				+				data[i]['username']
+				+				'<span class="luxury-time">'+data[i]['createtime']+'</span>'
+				+			'</li>'
+				+			'<li class="luxury-pj_con">'
+				+				data[i]['content']
+				+			'</li>'
+				+		'</ul>'
+				+	'</div>'
+				+'</div>';
+		}
+		console.log(html)
+		if (flg==1) {
+			$("#pj_list_main").append(html);
+			$(".luxury_more").html('全部加载完成').addClass('finish');
+		} else{
+			$("#pj_list_main").append(html);
+			$(".luxury_more").html('加载更多');
+		}
+		
+	}
+</script>

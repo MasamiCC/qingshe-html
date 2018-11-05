@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			body{
+				color: #333;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			.cooperation_title{
+				font-size: 1rem;
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.5;
+			}
+			.paragraph_title{
+				font-size: 0.875rem;
+			}
+			.paragraph_title p{
+				line-height: 1.8;
+			}
+			.paragraph_title table{
+				text-align: center;
+				border-right: 1px solid #333;
+				border-bottom: 1px solid #333;
+			}
+			.paragraph_title table td,.paragraph_title table th{
+				border-top: 1px solid #333;
+				border-left: 1px solid #333;
+			}
+			.lastline{
+				text-align: left;
+			}
+			.lastline td{
+				padding: 0 10px;
+			}
+			.font_w{
+				font-weight: bold;
+			}
+			.textitem{
+				text-indent: 2em;
+				line-height: 1.5!important;
+				margin: 0;
+			}
+			.liucheng_con{
+				line-height: 0;
+				font-size: 0;
+			}
+			.liucheng_con>div{
+				display: inline-block;
+				vertical-align:middle;
+			}
+			.liuchengpic{
+				width: 35%;
+			}
+			.liuchengpic img{
+				max-width: 90%;
+			}
+			.liuchengright{
+				width: 65%;
+				line-height: 1.5;
+				font-size: 0.875rem;
+				color: #333;
+			}
+			.gray{
+				background: #D9D9D9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cooperation_title">
+			轻奢点评渠道招商细则
+		</div>
+		<div class="paragraph_title">
+			<p>一、招商条件<br />
+				1）具备一定的资金投入，资金周转能力，合法独立的公司或个人；<br />
+				2）拥有良好的社会资源，本地区有一定影响力，并且有丰富的本地区销售资源；<br />
+				3）具备轻奢点评认可的相关从业水平，或者具有此类服务或产品的客户来源；<br />
+				4）将轻奢点评产品列为其主要经营项目，积极维护企业声誉及品牌形象，不得在合作期间与任何个人或团队做轻奢点评业务相竞争工作；<br />
+				5）服从江苏轻奢点评文化科技有限公司的管理，愿意接受轻奢点评对其的审核、监督和指导；<br />
+				6）拥有符合要求的高端群体、平台商家与平台VIP面对面精准社交、学习、交流、共享各类资源的线下实体沙龙场地。<br />
+			</p>
+			<p> 二、准确定位<br />
+				1.	目标市场定位<br />
+				一线城市（选择性直营进入）<br />
+				1)	商业资源集聚度高<br />
+				2)	城市人消费频次高<br />
+				3)	餐饮、娱乐种类丰富，门店数多<br />
+				4)	市场区域集中<br />
+			</p>
+			<p class="gray">
+				一线城市（4个）<br />
+				北京市、上海市、广州市、深圳市<br />
+				新一线城市（15个）<br />
+				成都市、杭州市、武汉市、重庆市、南京市、天津市、苏州市、西安市、长沙市、沈阳市、青岛市、郑州市、大连市、东莞市、宁波市<br />
+			</p>
+			<p>
+				二线城市（发展加盟代理）<br />
+				1)	商业资源集聚度中等<br />
+				2)	城市人消费频次较高<br />
+				3)	餐饮、娱乐种类丰富，门店数中等<br />
+				4)	市场区域规模中等<br />
+			</p>
+			<p class="gray">
+				二线城市（30个）<br />
+				厦门市、福州市、无锡市、合肥市、昆明市、哈尔滨市、济南市、佛山市、长春市、温州市、石家庄市、南宁市、常州市、泉州市、南昌市、贵阳市、太原市、烟台市、嘉兴市、南通市、金华市、珠海市、惠州市、徐州市、海口市、乌鲁木齐市、绍兴市、中山市、台州市、兰州市<br />
+
+			</p>
+			<p>
+				三线城市（发展加盟代理）<br />
+				1)	商业资源集聚度低<br />
+				2)	城市人消费频次中等<br />
+				3)	餐饮、娱乐大品牌青睐指数低，门店数少<br />
+				4)	市场区域分散规模小<br />
+			</p>
+			<p class="gray">
+				三线城市（70个）<br />
+				潍坊市、保定市、镇江市、扬州市、桂林市、唐山市、三亚市、湖州市、呼和浩特市、廊坊市、洛阳市、威海市、盐城市、临沂市、江门市、汕头市、泰州市、漳州市、邯郸市、济宁市、芜湖市、淄博市、银川市、柳州市、绵阳市、湛江市、鞍山市、赣州市、大庆市、宜昌市、包头市、咸阳市、秦皇岛市、株洲市、莆田市、吉林市、淮安市、肇庆市、宁德市、衡阳市、南平市、连云港市、丹东市、丽江市、揭阳市、延边朝鲜族自治州、舟山市、九江市、龙岩市、沧州市、抚顺市、襄阳市、上饶市、营口市、三明市、蚌埠市、丽水市、岳阳市、清远市、荆州市、泰安市、衢州市、盘锦市、东营市、南阳市、马鞍山市、南充市、西宁市、孝感市、齐齐哈尔市<br />
+			</p>
+			<p>
+				2.	入住商家要求<br />
+				轻奢点评的入驻商家均为平台以市级为单位，进行筛选后符合当地有特色，确定为能够达到轻奢品质，以服务为理念的商家。<br />
+			</p>
+			<p>
+				3.	消费人群定位<br />
+				身份<br />
+				1)	经济状况：中等（6万/年），以上收入人群；<br />
+				2)	职业状况：中产阶级家庭（白领、公务员、中小企业主等）的主妇、子女、部分追求生活品质的群体；<br />
+				3)	年龄状况：20-45岁，其中25-35岁群体为主力消费群体。<br />
+				观念<br />
+				1)	消费习惯：生活品质及高端生活感受追随者，追求时尚、高端品质消费<br />
+				2)	价值观：重视自我价值，自我意识强 <br />
+				3)	社会观：喜欢增加同层次的社交体验<br />
+				4)	生活追求：崇尚自然、享受，高品质、自我的休闲生活<br />
+			</p>
+			<p>
+				三、渠道支持<br />
+				1.	首期20个城市免收代理费；<br />
+				2.	区域独家政策支持；<br />
+				3.	公司市场部指导项目运营与市场拓展、培训等；<br />
+				4.	公司品牌设计推广部提供原始图片、宣传画册、宣传单页、海报等设计支持；<br />
+				5.	公司研发运维部全权负责指导后台系统运营与操作；<br />
+				6.	平台入驻商家达到规定指标，代理区域市场广告宣传支持；<br />
+				7.	公益慈善，与红十字会联合成立慈善基金，在不额外增加任何消费或经营成本的同时每产生一笔订单，平台将自助补贴相应善款，用于当地健康扶贫；<br />
+				8.	合同续约优先权：双方合同期满，在没有违反合同规定的情况下，代理商可优先获得续约，公司准予办理。<br />
+			</p>
+			<p>
+				四、代理政策及盈利分析<br />
+				1．城市渠道代理政策<br />
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td>代理级别</td><td>二线城市</td><td>三线城市</td></tr>
+					<tr><td>代理费</td><td>150万<br />（前20个免）</td><td>100万<br />（前20个免）</td></tr>
+					<tr><td>质保金</td><td>30万</td><td>20万</td></tr>
+					<tr><td>第一年利润返退</td><td colspan="2">100%</td></tr>
+					<tr><td>第二年利润返退</td><td colspan="2">70%</td></tr>
+					<tr><td>第三年利润返退</td><td colspan="2">60%</td></tr>
+					<tr><td>续签</td><td colspan="2">45%</td></tr>
+					<tr><td>招商奖励</td><td colspan="2">第二年、第三年利润返退上浮5%</td></tr>
+					<tr><td>会员注册<br />APP推广补助<br />（前20万会员）</td><td colspan="2">系统赠送1000积分/位,折合人民币20元</td></tr>
+					<tr><td rowspan="6">区域广告支持<br />（投放代理区域广告费）</td><td>入驻商家达300家以上</td><td rowspan="2">广告费用<br />3万</td></tr>
+					<tr><td>注册会员3万以上</td></tr>
+					<tr><td>入驻商家达500家以上</td><td rowspan="2">广告费用<br />5万</td></tr>
+					<tr><td>注册会员5万以上</td></tr>
+					<tr><td>入驻商家达1000家以上</td><td rowspan="2">广告费用<br />10万</td></tr>
+					<tr><td>注册会员10万以上</td></tr>
+					<tr><td>海报、广告图设计支持</td><td colspan="2">√</td></tr>
+					<tr><td>各类地推活动物料及小礼品支持</td><td colspan="2">√</td></tr>
+					<tr><td>海报、广告图设计支持</td><td colspan="2">√</td></tr>
+					<tr class="lastline"><td colspan="3">
+						<span class="font_w">渠道代理费</span><br />
+						<p class="textitem">代理费将作为该地区代理商按照平台当时市值折算相应比例股份（另行签订股权协议），以投资入股方式成为轻奢点评平台股东之一，享受永久比例分红及相应权益（该股权与其他股东在后续融资事项上一样平等，进行同步同比例稀释，股东负责代理地区经营管理及总部决策的执行，股东均为公司的一致行动人，具体双方另行签订股权协议，并以股权协议条款为准。）、承担相应义务以及股东责任。</p>
+						<span class="font_w">质保金</span><br />
+						<p class="textitem">1.用于市场拓展入驻商家及注册会员指标计划时间内未达标的区域广告费用。</p>
+						<p class="textitem">2.用于该城市商家可能在平台产生的各类经济纠纷的理赔保证金。质保金为年度核算，不足需要补足，终止合作按照结余实际金额的50%在7个工作日内返还，另50%需一年观察期满后按照实际可能存在的纠纷理赔结束结余金额进行返还（多退少补）。</p></td></tr>
+				</table>
+			</p>
+			<p>
+				2．渠道代理扣点利润分析<br />
+				1)	餐饮类扣点（例）<br />
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr><td>入驻商家数</td><td>1家</td><td>20家</td><td>50家</td><td>100家</td></tr>
+					<tr><td rowspan="2">日流水<br />（签约家数*1000元）</td><td colspan="4">例：餐饮店每天平均1000元/家平台买单流水</td></tr>
+					<tr><td>1000元</td><td>2万</td><td>5万</td><td>10万</td></tr>
+					<tr><td>月流水<br />（日流水*30天）</td><td>3万</td><td>60万</td><td>150万</td><td>300万</td></tr>
+					<tr><td>月利润<br />（月流水*餐饮扣点5%）</td><td>1500元</td><td>3万</td><td>7.5万</td><td>15万</td></tr>
+				</table>
+				2)	该城市平台商家在平台投入广告收入的70%提成；<br />
+				3)	落地该城市592vip线下沙龙85%的提成（沙龙由代理商按照总部要求自建）；<br />
+				4)	该城市小康水平年度数据报告50%提成；<br />
+				5)	该城市上线商家经营状况改善建议数据分析报告50%提成；<br />
+				6)	其它类在该城市创收收益不低于30%-50%不等的提成构成（如各类品牌商家市场调研大数据报告、竞业培训等）。<br />
+			</p>
+			<p>
+				五、城市代理运营团队重要组成<br />
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr><th width="22%">岗位名称</th><th width="39%">二线城市人数</th><th width="39%">三线城市人数</th></tr>
+					<tr><td>市场推广</td><td>10人</td><td>5人</td></tr>
+					<tr><td>市场督导</td><td>2人</td><td>1人</td></tr>
+					<tr><td>客服</td><td>5人</td><td>1人</td></tr>
+					<tr><td>摄影</td><td>2人</td><td>1人</td></tr>
+					<tr><td>财务</td><td>1人</td><td>1人</td></tr>
+					<tr><td>运营专员</td><td>5人</td><td>2人</td></tr>
+				</table>
+			</p>
+			<div class="liucheng_con">
+				<div class="liuchengpic"><img src="../image/liucheng.jpg"/></div>
+				<div class="liuchengright">
+					六、招商流程<br />
+					1）充分了解当地的商业街区市场；<br />
+					2）与本公司渠道招商部门沟通，洽谈合作方式 ；<br />
+					3）申请资料: 1.申请表格；<br />
+					2.市场推广计划书  <br />
+					4）经公司审批通过，签到合同意向书；<br />
+					5）签订合作协议，建立合作关系。<br />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

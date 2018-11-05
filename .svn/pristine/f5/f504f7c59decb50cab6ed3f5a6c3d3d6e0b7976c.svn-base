@@ -1,0 +1,158 @@
+#sliderSegmentedControl{
+	    background: #fff;
+}
+#ticket_type .ticket_type.mui-active{
+	    color: #dab875;
+	    border-bottom: 2px solid #dab875;
+}
+#ticket_type .ticket_type{
+	    color: #333;
+}
+.ticket_dianpu .coupon_left{
+	background: #fff;
+}
+.coupon_right,.ticket_time{
+	     border: none; 
+}
+.coupon_tips{
+	display: block;
+	line-height: 20px;
+	padding: 0 0 0.4rem 0;
+    min-height: 26px;
+    height: 100%;
+    text-indent: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ticket_beizhu{
+	color: #999;
+}
+.coupon_left{
+	 color: none;
+	 /*flex: 3*/
+	    max-height: 56px;
+    height: 56px;
+    line-height: 56px;
+}
+.coupon_right{
+	/*flex: 7*/
+}
+.coupon_zhe{
+	font-size: 1.9375rem;
+	font-family: arial;
+}
+.coupon_money{
+    line-height: 35px;
+    color: #d91a1a;
+}
+.coupon_content{
+	line-height: 20px;
+	color: #666;
+	font-size: 0.875rem;
+}
+.coupon_font{
+	font-size: 0.9375rem;
+}
+.ticket_title{
+	padding-top: 0;
+}
+.coupon_shop .coup_type{
+	background: none;
+}
+.coup_type{
+	border-radius: 10px;
+	font-size: 0.625ren;
+}
+.business_title{
+	font-size: 1rem;
+	color: #333;
+}
+.ticket_time{
+	font-size: 0.75rem;
+	color: #666;
+}
+.ticket_title {
+    min-height: 38px;
+    padding-top: 0px;
+    line-height: 38px;
+    height: 38px;
+}
+.coupons ,.used_coupons,.used_coupons{
+	font-size: 0;
+	line-height: 0;
+}
+.coupon_shop{
+	padding-top: 10px;
+	/*padding-bottom: 5px;*/
+	background: #fff;
+}
+.used_coupon,.outdate_coupon{
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+.used_coupons{
+	background: url(../image/coupon_used.png) no-repeat;
+	background-size:100% 100% ;
+	margin: 10px 15px;
+}
+.outdate_coupons{
+	background: url(../image/coupon_timeout.png) no-repeat;
+	background-size:100% 100% ;
+	margin: 10px 15px;
+}
+.used_coupons .coupon_money,.used_coupons .coupon_content,.outdate_coupons .coupon_money,.outdate_coupons .coupon_content{
+	color: #999;
+}
+.used_coupons .coupon_money,.outdate_coupons .coupon_money{
+	line-height: 26px;
+}
+.used_coupons .ticket_title,.outdate_coupons .ticket_title{
+	line-height: 33px;
+	    height: 33px;
+	    min-height: 33px;
+}
+.used_coupons .coupon_content,.outdate_coupons .coupon_content{
+	    line-height: 25px;
+	    padding-bottom: 5px;
+}
+.used_coupons .ticket_time,.outdate_coupons .ticket_time{
+	line-height: 23px;
+}
+.ticket_used .ticket_left, .ticket_passed .ticket_left{
+	background: none;
+}
+.used_coupons .ticket_msg,.used_coupons .coupon_left,.outdate_coupons .ticket_msg,.outdate_coupons .coupon_left{
+	background: none;
+}
+.ticket_msg{
+	border: 0;
+}
+.used_coupons_left{
+	max-height: 59px;
+    height: 59px;
+    line-height: 59px;
+}
+.used_coupons_tips{
+	line-height: 1;
+	font-size: 0.875rem;
+}
+.used_coupons .ticket_beizhu,.used_coupons .ticket_beizhu,.outdate_coupons .ticket_beizhu,.outdate_coupons .ticket_beizhu{
+	display: block;
+	background: none;
+}
+.used_coupons .ticket_beizhu,.outdate_coupons .ticket_beizhu{
+	padding-top: 0;
+}
+.used_coupons .business_title,.used_coupons .ticket_time,.outdate_coupons .business_title,.outdate_coupons .ticket_time{
+	color: #999;
+}
+.used_coupons ,.outdate_coupons {
+	padding: 5px 0px 5px 0px;
+}
+.ticket_time{
+	        line-height: 19px;
+	        height: 19px;
+}
+.coupon_content {
+    line-height: 16px;
+    }	

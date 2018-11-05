@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.content{
+				font-size: 14px;
+			}
+			/*.container{
+				width: 100%;
+				
+			}*/
+			.main_left{
+				width:62%;
+				position: relative;
+				border-left: 1px dashed  #ccc;
+				padding-left: 20px;
+				font-size: 14px;
+				margin-bottom: 25px;
+			}
+			.lists{
+				/*max-width: 100%;*/
+				position:absolute;
+				left: -76px;
+				top: 45px;
+			}
+			.lists li{
+				margin-bottom: 10px;
+			}
+			
+			.main_right{
+				width: 28%;
+				min-height: 43px;
+				vertical-align: top;
+				margin-left: 25px;
+				font-size: 14px;
+				position: relative;
+			}
+			.inline{
+				display: inline-block;
+			}
+			.hr{
+				border:1px dashed #ccc;
+				margin-left:25px ;
+				margin-right:25px ;
+				
+			}
+			.right div{
+				display: inline-block;
+			}
+			
+			#t{
+				display: inline-block;
+				padding: 2px 8px;
+				top: 10px;
+				left: 60px;
+				background: #333;
+				position: absolute;
+			}
+			
+			.piece{
+				border-right: 1px solid  #ccc;
+				margin-top: 20px;
+			}
+			
+			.piece div{
+				display: inline-block;
+			}
+			.recommend{
+				border-top:1px solid  #ccc;
+				margin-right: -5px;
+				border-left:1px solid  #ccc ;
+				padding: 10px 12px 17px 12px;
+			}
+			.piece1{
+				border-left: 1px solid  #ccc;
+			}
+			.shou{
+				margin-bottom: 20px;
+			}
+			.fonts{
+				padding: 0px 6px;
+				border-radius: 50%;
+				background: #666;
+				color: white;
+				font-size: 20px;
+				float: right;
+				overflow: hidden;
+			}
+			.fonts:hover{
+				cursor:pointer;
+			}
+			.piece4{
+				border-right:1px solid  #ccc ;
+			}
+			.p_b{
+				/*margin-bottom: 25px;*/
+				border-bottom: 1px solid  #ccc;
+			}
+			/*右*/
+			.word{
+				display: inline-block;
+				width: 75px;
+				text-align: left;
+				margin-right: 10px;
+			}
+			.inpu{
+				line-height: 35px;
+				height: 35px;
+				border: 0px;
+				width: 71%;
+				text-indent: 5px;
+			}
+			.order textarea{
+				overflow:hidden;
+				width:98%;
+				margin-top: 20px;
+			}
+			.word1{
+				margin-top: 30px;
+			}
+			
+			.foot1{
+				position:absolute ;
+				top: 640px;
+			
+			}
+			.word3{
+				margin-top: 10px;
+			}
+			.foot2{
+				position:absolute ;
+				top: 700px;
+			}
+			.fot2{
+				font-size: 30px;
+				/*font-weight: 600;*/
+				color: #333;
+				margin-left: 108px;
+			}
+			.fot3{
+				padding: 8px 15px;
+				background: #333;
+				color: white;
+			}
+			.fot4{
+				padding: 8px 28px;
+				background: #333;
+				color: white;
+				margin-left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header_l">
+			<!--顶部-->
+			<div class="header_top">
+				<div id="" class="float_left reg_div">
+					<span style="" class="ic_erm">
+						小康生活一站式消费平台
+					</span>
+				</div>
+				<div class="float_right">
+					<span id="" class="ic_erm">
+						登录
+					</span>
+					<span class="ic_erm">
+						注册
+					</span>
+					<span class="ic_erm">轻奢APP </span>
+					<span class="ic_erm">轻奢微信</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_search">
+				<div class="float_left">
+					<img src="../img/logo.png" alt="" />
+				</div>
+				<div class="float_right">
+					<form action="" method="post">
+						<ul>
+							<li>
+								<label for="" class="search_label">
+									<input type="text"  class="keywords" placeholder="请输入关键字"/>
+									<span class="search_btn">搜索</span>
+								</label>
+							</li>
+							<li class="key_words">
+								关键字：<span>膳魔师 </span><span>COACH</span><span>UGG</span><span>GUCCI</span>
+							</li>
+						</ul>
+						
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_nav">
+				<ul class="nav_list">
+					<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+					<li class="header_nav_li "><a href="">美食</a></li>
+					<li class="header_nav_li "><a href="">酒店</a></li>
+					<li class="header_nav_li "><a href="">定制</a></li>
+					<li class="header_nav_li "><a href="">旅游</a></li>
+					<li class="header_nav_li "><a href="">生活</a></li>
+				</ul>
+				<ul style="float: right;" class="nav_list">
+					<li class="header_nav_li "><a href="">奢探</a></li>
+					<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+					<li class="header_nav_li "><a href="">慈善基金</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="header" id="header_s">
+			<div class="">
+				<div class="float_left">
+					<img src="../img/logo_s.png" style="vertical-align: middle;"/>
+					<ul style="display: inline-block;">
+						<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+						<li class="header_nav_li "><a href="">美食</a></li>
+						<li class="header_nav_li "><a href="">酒店</a></li>
+						<li class="header_nav_li "><a href="">定制</a></li>
+						<li class="header_nav_li "><a href="">旅游</a></li>
+						<li class="header_nav_li "><a href="">生活</a></li>
+						<li class="header_nav_li "><a href="">奢探</a></li>
+						<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+						<li class="header_nav_li "><a href="">慈善基金</a></li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<div class="float_right login_s">
+						<span id="">
+							登录
+						</span>
+						<span>注册</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--正文 -->
+		<div class="content">
+			<!--正文内容部分开始-->
+			<div class="container">
+			<div class="shou">
+				<span>首页 </span>&gt;
+				<span>美食 </span>&gt;
+				<span>中餐 </span>&gt;
+				<span>福泽日本料理（文峰城市广场店）</span>
+			</div>
+			<div class="main_left inline">
+				
+			<div id="border_r">
+				<div class="lists">
+					<span id="t"></span>
+					<ul>
+						<li>开胃凉菜</li>
+						<li>美味中虾</li>
+						<li>特色热菜</li>
+						<li>主厨推荐</li>
+						<li>饮品酒水</li>
+						<li>主食</li>
+					</ul>
+				</div>
+				</div>
+				<span style="display: inline-block; margin-bottom: 15px;">商品列表</span>
+				<hr class="line-t"/>
+				<div class="piece">
+						<div class="recommend p_t piece1" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_t piece2" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_t piece3" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_t piece4" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend piece1" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend piece2" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend piece3" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend piece4" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_b piece1" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_b piece2" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_b piece3" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+						<div class="recommend p_b piece4" >
+							<ul>
+								<li><img src="../img/fuqifeipian.png"/></li>
+								<li class="shadow_li">夫妻肺片</li>
+								<li class="shadow_li">
+									<span>8元/份</span>
+									<span class="fonts">+</span>
+								</li>
+							</ul>
+						</div>
+				</div>
+
+			</div>
+<!--右半部分开始-->
+				
+			<div class="main_right inline">
+				<span style="display: inline-block; margin-bottom: 15px;">订单信息</span>
+				<hr class="line-t"/>
+				<div class="order">
+					<ul>
+						<li class="l">     
+							<span class="word word1">用餐人数</span>	
+							<input type="text" class="inpu" name="" id="" value="" placeholder="输入用餐人数" title="输入用餐人数"/>  
+						</li>
+						<li class="l"><span class="word">就餐时间</span>	 
+							<input type="text" class="inpu" name="" id="" value="" placeholder="选择就餐时间" title="选择就餐时间"/> 	
+						</li>
+						<li class="l"><span class="word">联系人</span>	
+							<input type="text" class="inpu" name="" id="" value="" placeholder="联系人昵称" title="联系人昵称"/>
+						</li>
+						<li class="l"><span class="word">联系人手机</span>     
+							<input type="text"  class="inpu" name="" id="" value="" placeholder="输入手机号" title="输入手机号"/>	
+						</li>
+						<li class="l">
+							<span class="word word3">备注</span> 
+							<textarea name="txt" clos="100" rows="5"  placeholder="请输入备注" title="请输入备注">
+								
+							</textarea>
+						</li>
+						<li class="l">
+							<span class="word">发票</span> 
+							<input type="text" class="inpu" name="" id="" value="" placeholder="请输入发票抬头" title="请输入发票抬头"/>
+							 
+						</li>			
+				    </ul>
+			    </div>
+				<div class="main_foot foot1">
+					<span class="fot fot1">订单总金额</span>
+					<span class="fot fot2">￥56.00</span>
+				</div>
+				<div class="main_foot foot2">
+					<span class="fot fot3">返回修改菜品</span>
+					<span class="fot fot4">立即预定</span>
+				</div>
+
+		    </div>
+<!--右半部分结束-->
+			<!--正文内容部分结束-->
+		</div>
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<!--footer-heip-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门
+						</span>
+						<li>购买流程</li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../img/app_erm.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../img/wechat_erm.png" alt="" />
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div class="footer_copyRight">
+				<p>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</p>
+			</div>
+			<div class="footer_rz">
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	
+	 $('.fonts').each(function(){
+	    	$(this).bind({
+	    		click:function(){
+	    			
+	    		    div = document.createElement("div");
+				        div.setAttribute("class", "file");
+				      
+				        $("#").after(div);
+	    		}
+	    	})
+	    })
+ 
+   
+
+	
+	
+});
+</script>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢点评商品管理</title>
+	<link href="../css/layout1.css" rel="stylesheet" />
+	<link href="../css/Vcommon.css" rel="stylesheet" />
+	<style type="text/css">
+		.goods_pic {
+			width: 100px;
+			vertical-align: middle;
+		}
+
+		.goods_pic img {
+			max-height: 60px;
+			max-width: 60px;
+			vertical-align: middle;
+		}
+
+		.this_btn {
+			background: #221910;
+			color: #fff;
+			padding: 3px 20px;
+			border-radius: 5px;
+			font-size: 14px;
+			margin-left: 10px;
+			cursor: pointer;
+			display: inline-block;
+			letter-spacing: 1px;
+		}
+
+		tr>td {
+			border: 1px solid #eeeeee;
+		}
+
+		tr {
+			font-size: 12px;
+		}
+
+		.shop_btn {
+			color: white;
+			border-radius: 4px;
+			height: 40px;
+			width: 40px;
+			text-align: center;
+			line-height: 20px;
+			font-size: 14px;
+			display: inline-block;
+		}
+
+		.btn_blue {
+			background-color: #6bbcf5;
+		}
+
+		.btn_orange {
+			background-color: #f8a120;
+		}
+
+		.btn_red {
+			background-color: #fc7875;
+		}
+
+		.more {
+			color: white;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.color_blue {
+			color:#6bbcf5;
+		}
+
+		.color_orange {
+			color:#f8a120;
+		}
+
+		.color_red {
+			color:#fc7875;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="cont" id="index_cont">
+			<div class="content" id="main1">
+				<div id="t1">
+					<div id="pic1">
+						<img id="p1" src="../img/slogo.png" />
+					</div>
+				</div>
+				<div id="t2">
+					<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+					</div>
+					<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+					</div>
+					<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>订单管理</p>
+						<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+					</div>
+					<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png" />&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+					</div>
+					<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+					<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+				</div>
+			</div>
+			<!--个人中心正文中间部分-->
+			<div class="content" id="main2">
+				<div id="txt">
+					<!--正文部分开始-->
+					<!--头部-->
+					<div id="header">
+						<div id="head">
+							<div id="cl" class="head heade1">
+								<ul>
+									<li class="business"><i>商家中心>全部商品</i>
+										<i class="shopname">当前商家：江南厨房</i>
+									</li>
+									<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+								</ul>
+							</div>
+							<div id="cr" class="head head_r">
+								<div class="head heade2">
+									<img src="../img/qvip.png" />
+								</div>
+								<div class="head line">
+									<ul>
+										<li>下午好！13059891234</li>
+										<li>欢迎进入轻奢点评商家中心</li>
+									</ul>
+								</div>
+								<div class="head heade3">
+									<a href="" class="login_out"><img src="../img/esc.png" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--头部-->
+					<!--正文-->
+					<div class="titleMes" style="font-weight: 600;margin:10px 0px 10px 10px">
+						<!-- <i>个人中心</i>><i>全部商品</i> -->
+
+					</div>
+					<!--<div class="txt_title">
+							全部商品
+						</div>-->
+					<div class="txt_search">
+						<form action="">
+							<div class="inline">
+								<span>商品分类：</span>
+								<div class="inline" style="margin-left: -6px;">
+									<!--商品名称：-->
+									<input type="text" placeholder="请输入商品名称搜索" style="width: 325px;height: 29px;text-indent: 5px;" />
+								</div>
+								<span>商品状态：</span>
+								<select name="" id="" style="width: 110px;height: 31px;">
+									<option value="">已回复</option>
+									<option value="">未回复</option>
+								</select>
+
+							</div>
+
+							<!-- <span class="state"><input type="radio" placeholder="" name="state" style=""/> 所有状态</span>
+									<span class="state"><input type="radio" placeholder="" name="state" style=""/> 已上架</span>
+									<span class="state"><input type="radio" placeholder="" name="state" style=""/> 已下架</span>
+									<span class="state"><input type="radio" placeholder="" name="state" style=""/> 待上架</span> -->
+							<!--<label for="">
+									状态：
+									<select name="" id="">
+										<option value="">已上架</option>
+										<option value="">已下架</option>
+									</select>
+								</label>-->
+							<span class="search_btn this_btn">
+								搜索
+							</span>
+							<a href="Vadd_goods.html"><span id="ziShop" class="txt_right this_btn" style="">添加商品</span></a>
+						</form>
+
+					</div>
+					<div class="txt_list">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" class="list_table">
+
+							<tr class="">
+								<th>序号</th>
+								<th>图片</th>
+								<th>商品</th>
+								<th>类型</th>
+								<th>单位</th>
+								<th>销售量</th>
+								<th>单价</th>
+								<th>轻奢价</th>
+								<th>PLUS会员价</th>
+								<th>状态</th>
+								<th>审核状态</th>
+								<th>是否推荐</th>
+								<th>创建人</th>
+								<th>创建时间</th>
+								<th>操作</th>
+							</tr>
+
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									<span>1</span>
+								</td>
+								<td class="list_center goods_pic1">
+									<span class="goods_pic"><img src="../img/ico.png" alt="" /></span>
+									<!-- <span>至尊卡</span> -->
+								</td>
+								<td class="list_center">至尊卡</td>
+								<td class="list_center ">会员区</td>
+								<td class="list_center ">个</td>
+								<td class="list_center ">100</td>
+								<td class="list_center ">542.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center color_orange">已上架</td>
+								<td class="list_center">批准未通过</td>
+								<td class="list_center color_blue">推荐</td>
+								<td class="list_center ">郭月梅</td>
+								<td class="list_center ">2017-06-03 14:59 </td>
+								<td class="list_left list_handler ">
+									<span class="shop_btn btn_blue">商品规格</span>
+									<span class="shop_btn btn_orange">商品库存</span>
+									<span class="shop_btn btn_blue">商品编辑</span>
+									<span class="shop_btn btn_orange">商品属性</span>
+									<span class="shop_btn btn_red">取消推荐</span>
+									<span class="shop_btn btn_red">失败原因</span>
+								</td>
+							</tr>
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									<span>2</span>
+								</td>
+								<td class="list_center ">
+									<span class="goods_pic goods_pic1"><img src="../img/ico.png" alt="" /></span>
+									<!-- <span>至尊卡</span> -->
+								</td>
+								<td class="list_center">至尊卡</td>
+								<td class="list_center ">会员区</td>
+								<td class="list_center ">份</td>
+								<td class="list_center ">100</td>
+								<td class="list_center ">542.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center color_red">已下架</td>
+								<td class="list_center">批准未通过</td>
+								<td class="list_center color_blue">否</td>
+								<td class="list_center ">郭月梅</td>
+								<td class="list_center ">2017-06-03 14:59 </td>
+								<td class="list_right list_handler">
+									<span class="shop_btn btn_blue">商品规格</span>
+									<span class="shop_btn btn_orange">商品库存</span>
+									<span class="shop_btn btn_blue">商品编辑</span>
+									<span class="shop_btn btn_orange">商品属性</span>
+									<span class="shop_btn btn_red">取消推荐</span>
+								</td>
+							</tr>
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									<span>3</span>
+								</td>
+								<td class="list_center ">
+									<span class="goods_pic goods_pic1"><img src="../img/ico.png" alt="" /></span>
+									<!-- <span>至尊卡</span> -->
+								</td>
+								<td class="list_center">至尊卡</td>
+								<td class="list_center ">会员区</td>
+								<td class="list_center ">只</td>
+								<td class="list_center ">100</td>
+								<td class="list_center ">542.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center color_blue">待上架</td>
+								<td class="list_center">批准未通过</td>
+								<td class="list_center color_blue">否</td>
+								<td class="list_center ">郭月梅</td>
+								<td class="list_center ">2017-06-03 14:59 </td>
+								<td class="list_right list_handler">
+									<span class="shop_btn btn_blue">商品规格</span>
+									<span class="shop_btn btn_orange">商品库存</span>
+									<span class="shop_btn btn_blue">商品编辑</span>
+									<span class="shop_btn btn_orange">商品属性</span>
+									<span class="shop_btn btn_red">取消推荐</span>
+								</td>
+							</tr>
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									<span>4</span>
+								</td>
+								<td class="list_center ">
+									<span class="goods_pic goods_pic1"><img src="../img/ico.png" alt="" /></span>
+									<!-- <span>至尊卡</span> -->
+								</td>
+								<td class="list_center">至尊卡</td>
+								<td class="list_center ">会员区</td>
+								<td class="list_center ">对</td>
+								<td class="list_center ">100</td>
+								<td class="list_center ">542.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center color_orange">待上架</td>
+								<td class="list_center">批准未通过</td>
+								<td class="list_center color_blue">否</td>
+								<td class="list_center ">郭月梅</td>
+								<td class="list_center ">2017-06-03 14:59 </td>
+								<td class="list_right list_handler">
+									<span class="shop_btn btn_blue">商品规格</span>
+									<span class="shop_btn btn_orange">商品库存</span>
+									<span class="shop_btn btn_blue">商品编辑</span>
+									<span class="shop_btn btn_orange">商品属性</span>
+									<span class="shop_btn btn_red">取消推荐</span>
+								</td>
+							</tr>
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" class="checkB" name="goods" id="" value="" />
+									<span>5</span>
+								</td>
+								<td class="list_center ">
+									<span class="goods_pic goods_pic1"><img src="../img/ico.png" alt="" /></span>
+									<!-- <span>至尊卡</span> -->
+								</td>
+								<td class="list_center">至尊卡</td>
+								<td class="list_center ">会员区</td>
+								<td class="list_center ">对</td>
+								<td class="list_center ">100</td>
+								<td class="list_center ">542.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center ">500.00</td>
+								<td class="list_center color_orange">待上架</td>
+								<td class="list_center">批准未通过</td>
+								<td class="list_center color_blue">否</td>
+								<td class="list_center ">郭月梅</td>
+								<td class="list_center ">2017-06-03 14:59 </td>
+								<td class="list_right list_handler">
+									<span class="shop_btn btn_red">商品下架</span>
+									<span class="shop_btn btn_blue">商品规格</span>
+									<span class="shop_btn btn_orange">商品库存</span>
+									<span class="shop_btn btn_blue">商品编辑</span>
+									<span class="shop_btn btn_orange">商品属性</span>
+									<span class="shop_btn btn_red">取消推荐</span>
+								</td>
+							</tr>
+							<tr class="">
+								<td class="list_center ">
+									<input type="checkbox" name="" id="checkedAll" value="" />
+									<span id="">全选</span>
+								</td>
+								<td class="list_center ">
+									<!--<span class="goods_pic goods_pic1"><img src="../img/ico.png" alt="" /></span>
+										<span>至尊卡</span>-->
+								</td>
+								<td class="list_center ">
+									<!--会员区-->
+								</td>
+								<td class="list_center ">
+									<!--例-->
+								</td>
+								<td class="list_center ">
+									<!--100-->
+								</td>
+								<td class="list_center ">
+									<!--542.00-->
+								</td>
+								<td class="list_center ">
+									<!--500.00-->
+								</td>
+								<td class="list_center ">
+									<!--500.00-->
+								</td>
+								<td class="list_center ">
+									<!--已上架-->
+								</td>
+								<td class="list_center ">
+									<!--郭月梅-->
+								</td>
+								<td class="list_center ">
+								</td>
+								<td class="list_center ">
+								</td>
+								<td class="list_center ">
+									<!--2017-06-03 14:59-->
+								</td>
+								<td class="list_center ">
+									<!--2017-06-03 14:59-->
+								</td>
+								<td class="list_right list_handle">
+									<span class="more btn_blue">批量上架</span>
+									<!--<span onclick="setGuiGe()">规格</span>-->
+									<span class="more btn_red">批量下架</span>
+									<!--<span>删除</span>-->
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="txt_page">
+						<ul>
+							<!--<li class="page_item page_disabled">第一页</li>-->
+							<li class="page_item page_active">1</li>
+							<li class="page_item">2</li>
+							<li class="page_item">3</li>
+							<li class="page_item">4</li>
+							<li class="page_item">...</li>
+							<li class="page_item">7</li>
+							<li class="page_item">8</li>
+							<!--<li class="page_item1">下一页</li>-->
+						</ul>
+					</div>
+
+					<!--正文-->
+					<!--正文部分结束-->
+
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/Vlayout.js"></script>
+<script type="text/javascript">
+	$(function () {
+		//		 $('.list_time').each(function(){
+		//	    	var state=$(this).html();
+		//  		console.log(state);
+		//			if("已下架"==state||"下架"==state){
+		//						$(this).css("color","red");
+		//					}else if("已上架"==state||"上架"==state){
+		//						$(this).css("color","green");
+		//					}else if("待上架"==state){
+		//						$(this).css("color","#D4AC57");
+		//					}
+		//	    	});
+		$("input[name='goods']").each(function () {
+			$(this).click(function () {
+				var inputchecked = $(this).attr('checked');
+				console.log(inputchecked);
+				if (!inputchecked) {
+					$("#checkedAll").attr("checked", false);
+				}
+			})
+		});
+
+		$("#checkedAll").click(function () {
+
+			if (this.checked) {
+				$("input[name='goods']").each(function () { this.checked = true; });
+			} else {
+				$("input[name='goods']").each(function () { this.checked = false; });
+			}
+		});
+
+		// $("input[name='goods']").each(function(){
+		// 	console.log(this.checked);
+		// 	if(false==this.checked){
+		// 		var isSelected = $("#checkAll").attr("checked");
+		// 		$("#checkedAll").attr("checked", false);
+		// 		console.log($("#checkedAll").checked);
+		// }
+		// });
+
+
+
+	});
+
+</script>
+
+</html>

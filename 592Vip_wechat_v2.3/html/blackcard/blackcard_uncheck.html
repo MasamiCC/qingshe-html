@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我的黑卡</title>
+	<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+	<link rel="stylesheet" href="../../css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/loginedblackcard.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css" />
+	<style type="text/css">
+		.allscroll .mui-segmented-control.mui-segmented-control-inverted {
+			height: 90px;
+		}
+
+		.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+			padding: 0 10px;
+		}
+
+		.own .mui-segmented-control.mui-segmented-control-inverted {
+			height: 200px;
+		}
+
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+			color: inherit;
+			border-bottom: 0;
+		}
+
+		.cat_item {
+			width: 5.2rem;
+			text-align: center;
+		}
+
+		.loginedtop {
+			background: none;
+			font-size: 0;
+			line-height: 0;
+		}
+
+		.loginedtop img {
+			max-width: 100%;
+		}
+
+		.un_btn {
+			background-image: url(images/un_btn_bg.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			font-size: .875rem;
+			line-height: 1;
+			padding: .75rem 0;
+		}
+
+		.un_btn span {
+			display: inline-block;
+			padding: .75rem 0;
+			width: 78%;
+			background: -webkit-linear-gradient(37deg, #f79433, #f15a26);
+			/* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(37deg, #f79433, #f15a26);
+			/* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(37deg, #f79433, #f15a26);
+			/* Firefox 3.6 - 15 */
+			background: linear-gradient(37deg, #f79433, #f15a26);
+			/* 标准的语法 */
+			color: #fff;
+			border-radius: 2rem;
+			box-shadow: 0 0 .3rem #999;
+			letter-spacing: .05rem;
+		}
+
+		.un_h {
+			background-image: url(images/un_h_bg.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			font-size: .875rem;
+			line-height: 1;
+			padding: .75rem 0;
+			background-position: bottom;
+		}
+
+		.user {
+			display: flex;
+			margin: 0 3rem;
+			justify-content: space-around;
+			align-items: center;
+			padding: 1rem 0 .75rem 0;
+		}
+
+		.zhuanshi {
+			max-width: 3rem;
+			width: 4rem;
+		}
+
+		.user>div:first-child {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.user>div:first-child span {
+			background: #000;
+			border: 1px solid #454545;
+			border-radius: .75rem;
+			font-size: .75rem;
+			display: inline-block;
+			padding: .3rem .3rem;
+			margin-top: -1.2rem;
+		}
+
+		.user>div:first-child a {
+			background-image: -webkit-gradient(linear, 0 0, 50% bottom, from(#ffda8a), to(#c7a459));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-color: #000000;
+		}
+
+		.user_head {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 5rem;
+		}
+
+		.msg {
+			padding-bottom: 1rem;
+			line-height: 65px;
+		}
+
+		.msg span {
+			color: #ff7e00;
+		}
+
+		.tongji {
+			font-size: .75rem;
+			color: #ffc967;
+			line-height: 1.5;
+			text-align: left;
+			margin-left: .5rem;
+		}
+
+		.tongji li:last-child {
+			font-size: 1.8rem;
+			font-weight: 500;
+		}
+
+		#popover {
+			position: fixed;
+			left: 0;
+			top: 10%;
+			right: 0;
+			bottom: 10%;
+			width: auto;
+			background: none;
+			box-shadow: none;
+		}
+
+		.popover_cont {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.popover_cont>div {
+			flex: 1;
+		}
+
+		.count {
+			flex: 0 0 50px !important;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+
+		.close {
+			flex: 0 0 70px !important;
+		}
+
+		.swiper-slide {}
+
+		.content {
+			display: flex;
+		}
+
+		.swiperbg {
+			background-image: url(images/swiperbg_02.png);
+			padding: 20px 25px;
+			overflow: auto;
+		}
+
+		.allswiper_title {
+			margin-bottom: 1rem;
+			font-size: 1rem;
+		}
+
+		.swiper_title {
+			font-size: .9rem;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="mui-content">
+		<div class="loginedtop">
+			<div class="un_h">
+				<div class="msg">
+					<span id="">
+						黑卡权益
+					</span>将于2018/04/25失效
+				</div>
+				<div class="user">
+					<div class="">
+						<img src="images/user@3x.png" class="user_head" />
+						<span><a href="">黑卡会员</a></span>
+					</div>
+					<div class="">
+						<img src="images/zhuanshi.png" class="zhuanshi " />
+					</div>
+				</div>
+			</div>
+			<div class="un_btn">
+				<span>立即免费申请加入区块链红利释放体系</span>
+			</div>
+			<!--<div class="loginedtopfirst">
+					积分消耗完，将失去<span class="bcfont">黑卡权益</span>
+				</div>
+				<div class="loginedtopcon">
+					<div class="loginedtopconcon">
+						<div class="loginedtopconconhead">
+							<img src="../../image/dhead2.png"/>
+						</div>
+						<div class="loginedtopconconfontcon">
+							<div class="loginedtopconconfont">
+								黑卡会员
+							</div>
+						</div>
+						
+					</div>
+					<div class="loginedtopconcon2">
+						<div class="loginedtopconcon2first">
+							账户积分
+						</div>
+						<div class="loginedtopconcon2second">
+							36,500
+						</div>
+					</div>
+				</div>
+				<div class="loginedtopthird">
+					<span class="loginedfont">进入任务系统</span>
+				</div>-->
+		</div>
+
+		<!--title-->
+		<div class="blackcard_title">
+			我的权益<span class="duser">查看全部</span>
+		</div>
+		<!--title-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon1.png" /></div>
+					<div class="name">尊贵图标</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon2.png" /></div>
+					<div class="name">贴心管家</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon3.png" /></div>
+					<div class="name">轻奢福利</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon4.png" /></div>
+					<div class="name">轻奢沙龙</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon5.png" /></div>
+					<div class="name">特权折扣</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon6.png" /></div>
+					<div class="name">车位预留</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon7.png" /></div>
+					<div class="name">公益慈善</div>
+				</div>
+				<div class="swiper-slide cat_item">
+					<div class="liepic"><img src="../../image/newblackicon8.png" /></div>
+					<div class="name">优先体验</div>
+				</div>
+			</div>
+		</div>
+
+		<!--title-->
+		<div class="blackcard_title bordertitle">
+			特权折扣
+		</div>
+		<!--title-->
+		<div class="ziyingyouxuan">
+			<img src="../../image/ziyingyouxuan.png" />
+		</div>
+	</div>
+	<!-- 弹窗 -->
+	<div class="popup_n" style="display: none;">
+		<div class="popup_area">
+			<p class="popup_title">设备绑定提示</p>
+			<p class="popup_b">
+				尊敬的黑卡用户，为了保证您的账户与隐私安全，防止黑钻被恶意消费，保护您的权益不受侵害，轻奢点评平台已经自动将您的账号与本机设备进行绑定，今后请使用本机设备进行相关操作，敬请知悉。
+			</p>
+			<p class="popup_g">同时，您可以在APP“我的”   “设置”“账户、设备安全”中进行解除绑定及重新绑定等操作。</p>
+			<p class="popup1_btn">知道了</p>
+		</div>
+	</div>
+
+	<!-- 弹窗去绑定 -->
+	<div class="popup_n" >
+		<div class="popup_area popup_area_over">
+			<p class="popup_title">设备绑定提示</p>
+			<p class="popup_b">
+				尊敬的黑卡用户，为了保证您的账户与隐私安全，防止黑钻被恶意消费，保护您的权益不受侵害，轻奢点评平台需要将您的账号与本机设备进行绑定，目前您的手机设备已经被其他账号绑定，您有以下2种方法进行设备绑定：
+			</p>
+			<p class="popup_g">
+				1、退出登录并重新登录其他黑卡账号，在APP“我的”   “设置”   “账户、设备安全”中进行解除此账号的绑定，然后登录本人账号，本机将会自动进行设备的绑定。
+			</p>
+			<p class="popup_g">
+				2、使用其他未被绑定过的手机设备登录此账号，本机将会自动进行设备的绑定。
+			</p>
+			<p class="popup_b">
+				您也可以联系客服管家进行设备绑定相关问题的咨询，我们将竭诚为您提供帮助。
+			</p>
+			<div class="popup_btn">
+				<span class="popupbtn_g">下次再说</span>
+				<span class="popupbtn_o">退出登录,去绑定</span>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function () {
+		function goToBlackcard() {
+			callNative(tologinedBlackcard, weChatUrl, data);
+		}
+
+		mui.init()
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: false, //是否竖向滚动
+
+			scrollX: true, //是否横向滚动
+
+			startX: 0, //初始化时滚动至x
+
+			startY: 0, //初始化时滚动至y
+
+			indicators: true, //是否显示滚动条
+
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+
+			bounce: true //是否启用回弹
+
+		});
+
+
+	});
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		slidesPerView: 'auto',
+		paginationClickable: true,
+		spaceBetween: 0
+	});
+</script>

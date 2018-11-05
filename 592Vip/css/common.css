@@ -1,0 +1,249 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: none;
+	font-family: "微软雅黑";
+}
+.header,.content,.footer{
+	width: 100%;
+
+	margin: 0 auto;
+}
+.header{
+	box-shadow: 2px 2px 4px #ccc;
+}
+#header_l{
+	height: 178px;
+	background-image: url(../img/bg.png);
+}
+#header_s .header_nav_li{
+	padding: 10px 23px;
+}
+#header_s{
+	height: 58px;padding-top: 12px;padding-bottom: 5px;
+	position: fixed;
+	top: 0;
+	background: #fff;
+	display: none;
+}
+.login_s{
+	height: 55px;line-height: 55px;
+}
+.header > div,.content >div,.footer >div{
+	max-width: 1200px;width: 100%;margin: 0 auto;
+}
+.header_top{
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 13px;
+}
+.reg_div{
+	color: #fff;
+}
+.reg_div span{
+	padding: 0 10px 0 0;
+}
+.register{
+	/*color: #aaa;*/
+}
+.ic_erm{
+	font-size: 13px;font-family: "微软雅黑";
+	padding-right:10px ;
+	vertical-align: middle;
+}
+.ic_erm img{
+	vertical-align: inherit;
+}
+.footer{
+	border-top: 1px solid #aaa;padding-top: 30px;
+}
+.header_search{
+	padding: 15px 0;overflow: hidden;
+}
+.header_nav_li{
+	display: inline-block;
+	padding: 10px 30px;
+	
+	font-size: 14px;
+	
+}
+.header_nav_li a{
+	cursor: pointer;
+	border-bottom: 5px solid #fff;
+	color: #333;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.header_nav_active{
+	/*background: #3a3a3a;*/
+	color: #333;
+	/*border-bottom: 5px solid #333;*/
+}
+.header_nav_active a{
+	cursor: pointer;
+	border-bottom: 5px solid #333;
+	color: #333;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.float_left{
+	float: left;
+}
+.float_right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.search_label{
+	border:1px solid #aaa;height: 36px;line-height: 36px;overflow: hidden;display: inline-block;
+}
+.keywords{
+	border:0;width: 300px;text-indent: 15px;
+}
+.key_words{
+	color: #ccc;font-size: 13px;
+}
+.key_words span{
+	display: inline-block;padding: 0 5px;cursor: pointer;
+}
+.search_btn{
+	background: #3a3a3a;color: #fff;height: 36px;line-height: 36px;display: inline-block;padding: 0 15px;
+}
+.footer_item{
+	display: inline-block;vertical-align: top;width: 220px;margin-left: 20px;
+}
+.footer_item li{
+	font-size: 14px;line-height: 30px;color: #666;
+}
+.footer_item span{
+	color: #333;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	line-height: 35px;
+}
+.footer_copyRight{
+	text-align: center;color: #fff;line-height: 30px;padding: 10px 0;background: #333;font-size: 12px;
+}
+.footer_rz{
+	padding-bottom: 10px;
+}
+.footer_rz img{
+	width: 125px;margin: 5px 10px;
+}
+.erm_li{
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 25px;
+}
+.content{
+	padding-top: 10px;
+}
+.page{
+	margin-bottom: 20px;
+}
+.page_tiem {
+	padding: 5px 10px;display: inline-block;border: 1px solid #ccc;color: #333;cursor: pointer;
+}
+.page_current{
+	background: #ff5858;color: #fff;border: 1px solid $#FF5858;
+}
+.page_disabled{
+	background: #ddd;color: #777;cursor:not-allowed;
+}
+.nav_list{
+	display: inline-block;
+}
+.content{
+	/*font-size: 0;*/
+}
+.content_left,.content_right{
+	display: inline-block;
+	font-size: 14px;
+	/*border: 1px solid #ddd;*/
+	
+}
+.content_left{
+	width: 25%;
+	vertical-align: top;
+}
+.content_left >div{
+	height: 676px;
+	border: 1px solid #ccc;
+	margin:0 10px 10px 0;
+	text-align: center;
+}
+.content_right{
+	width: 75%;
+	vertical-align: top;
+}
+.content_right >div{
+	min-height: 676px;;
+	border: 1px solid #ccc;
+	margin:0 0 10px 10px
+}
+.left_nav li a{
+	color: #666;
+	background: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0;
+	
+}
+.left_nav li a:hover{
+	color: #333;
+	background: #eeeeee;
+}
+.left_nav li.active a{
+	color: #333;
+	background: #eeeeee;
+}
+.login_out{
+	background: #333;
+	color: #fff;
+	padding: 7px 25px;
+	border: none;
+}
+.left_uc{
+	padding: 10px 0;
+	background-image: url(../img/user-center_left_bg.png);
+	background-repeat: repeat-x;
+	height: 232px;
+	
+}
+.left_uc ul{
+	margin: 10px 0;
+}
+.left_uc li{
+	padding: 8px 0;
+}
+.nickname{
+	color: #333333;
+	font-size: 14px;
+}
+.pt_user{
+	color: #666;
+}
+.yz_user{
+	color: #999;
+}
+.jz_user{
+	color: #db9b2c;
+}
+.zs_user{
+	color: #2c93db;
+}
+.table_list th{
+	background: #eeeeee;
+	color: #666666;
+	line-height: 45px;
+	font-size: 14px;
+}
+.table_list td{
+	font-size: 14px;
+}

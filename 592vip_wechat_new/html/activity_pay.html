@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			body{
+				background: #F4F4F4;
+			}
+			.mui-content{
+				font-size:0.875rem ;
+				background: #F4F4F4;
+			}
+			/*.mui-content>.mui-table-view:first-child{
+				margin-top: 0px;
+			}*/
+			.mui-table-view-cell:after,	.mui-table-view-cell:before,.mui-table-view:before,.mui-table-view:after{
+				height: 0;
+			}
+			.mui-table-view-cell{
+				border-bottom: 1px solid #EEEEEE;
+			}
+			.index_item:first-child{
+				padding: 0;padding:15px 0;margin-bottom: 0;
+			}
+			.pay_iten_title{
+				color: #999;font-size: 0.75rem;background: #f4f4f4;line-height: 3;
+				text-align: left;text-indent: 10px;
+			}
+			.black_logo img{
+				width: 10%;
+				height: 10%;
+			}
+			.black_logo{
+				line-height: 2;
+			}
+			.item_top{
+				text-align: center;
+				line-height: 1.7;
+			}
+			.bigfont{
+				color: #333;
+				font-size: 0.9375rem;
+				font-weight: bold;
+			}
+			.money{
+				color: #d4ac57;
+				font-size: 0.9375rem;
+				font-weight: bold;
+			}
+			.flx{
+				display: flex;
+			}
+			.book_notes{
+				margin-top: 10px;
+			}
+			.book_note_left{
+				color: #333;
+				display: inline-block;
+				vertical-align: middle;
+				flex: 2;
+				font-size: 0.8125rem;
+			}
+			.book_note_right{
+				color: #333;
+				display: inline-block;
+				vertical-align: middle;
+				 flex: 5;
+				 font-size: 0.8125rem;
+			}
+			.mui-bar{
+				background: #fff;
+			}
+			/*.food{
+				display: inline-block;line-height: 3;
+			}
+			.food1{
+				width: 49%;
+				
+			}
+			.food2{
+				width: 49%;
+				text-align: right;
+				color: #d91a1a;
+				font-weight: bold;
+			}*/
+			/*.pay{
+				display: flex;
+				align-items: center;
+			}*/
+			.pay_left{
+				flex: 1;vertical-align: middle;
+			}
+			.pay_left img{
+				max-width: 1.5rem;vertical-align: middle;margin-right: 0.5rem;
+			}
+			.wechat{
+				display: inline-block;
+				margin-top: 13px; 
+				vertical-align: top;
+			}
+			.pay_right{
+				flex: 1;
+				text-align: right;
+			}
+			.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+				font-size: 1.125rem;
+				/*vertical-align: middle;*/
+				/*background: url(image/check_bc.png) no-repeat;*/
+				/*border-color: white;*/
+			}
+			.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+				top: 12px;
+				right:0px;
+				/*border-color: white;*/
+			}
+			/*.mui-btn-block{
+				border:0;
+				background: #79888F;
+				color: #FFFFFF;
+				font-size:1rem ;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 0;
+			}*/
+			.easy_total {
+			    font-size: 0.875rem;
+			    line-height: 3.6;
+			}
+			.total_amount {
+			    color: #d91a1a;
+			    font-weight: 500;
+			    font-size: 1.3rem;
+			    line-height: 1.2;
+			}
+			.easy_total span {
+			    color: #d91a1a;
+			}
+			.top{
+				padding-top: 0;padding-bottom: 0;
+			}
+			.mui-input-row label{
+				padding: 5px 15px;line-height: 2.5
+			}
+			.mui-input-group .mui-input-row{
+				height: inherit;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+				color: #70c38e;
+			}
+			.mui-input-group:before,.mui-input-group:after{
+				height: 0;
+			}
+			.mui-input-group .mui-input-row:after{
+				left: 45px;background: #eee;height: 0;
+			}
+			.mui-bar:before{
+				line-height: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="index_item item_top">
+				<div class="black_logo">
+					<img src="../image/black_pay.png"/>
+				</div>
+				<div class="bigfont">
+					轻奢点评-活动
+				</div>
+				<div class="money">
+					￥500.00
+				</div>
+			</div>
+			<div class="book_notes">
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell book_note li flx">
+			            <div class="book_note_left">
+							支付方式：
+						</div>
+						<div class="book_note_right">
+						12345465845454 
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell flx">
+			            <div class="book_note_left">
+							 礼包名称：
+						</div>
+						<div class="book_note_right address">
+							中秋国庆11元优选礼包
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell book_note flx">
+			             <div class="book_note_left">
+							购买单价：
+						</div>
+						<div class="book_note_right">
+							￥11.00
+						</div>
+			        </li>
+			       <li class="mui-table-view-cell book_note flx">
+			             <div class="book_note_left">
+							购买数量：
+						</div>
+						<div class="book_note_right">
+							1
+						</div>
+			        </li>
+		        </ul>	 
+			</div>
+			<div class="index_item top">
+				<div class="index_item_title pay_iten_title">
+					注:该类订单不可以使用黑卡或优惠！
+				</div>
+				<form class="mui-input-group">
+				    <div class="mui-input-row mui-checkbox">
+				        <label class="pay_left" for="checkbox1"><img src="../image/ali_pay.png"/>支付宝</label>
+				  		<input name="checkbox1" type="checkbox" checked class="boxes" id="checkbox1" >
+				    </div>
+				    <div class="mui-input-row mui-checkbox">
+				        <label class="pay_left" for="checkbox2"><img src="../image/wechat.png"/>微信</label>
+				  		<input name="checkbox2" type="checkbox" class="boxes" id="checkbox2" >
+				    </div>
+				</form>
+				<!--<form class="mui-input-group">-->
+				    
+				<!--</form>-->
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-footer" id="">
+			<div class="mui-pull-left">
+				<div id="easy_total" class="easy_total">
+					<span><small>￥</small></span><span class="total_amount">500.00</span>
+				</div>
+			</div>
+			
+			
+			<div class="mui-pull-right">
+				<span class="confirm_btn">立即支付</span>
+			</div>
+		</nav>
+	</body>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".boxes").each(function(){
+			$(this).bind("click",function(){
+				$(".boxes").prop("checked",false);
+				$(this).prop("checked",true);
+//console.log(this)
+			}) 
+		});
+	</script>
+</html>

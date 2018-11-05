@@ -1,0 +1,78 @@
+*{
+	margin: 0;padding: 0;list-style: none;
+	outline: none;
+}
+body{
+	background: #f4f4f4;
+}
+html{
+	font-size: 16px;
+}
+header.mui-bar{
+	background: #fff;
+}
+.mui-icon.mui-icon-speech{
+	width: 20px!important;
+	height: 26px!important;
+	top: 12px!important;
+}
+.mui-search .mui-placeholder{
+	line-height: 25px;text-align: left;text-indent: 3px;top: 10px;
+	height: 30px;
+}
+.mui-search.mui-active:before {
+    font-size: 20px;
+    right: auto;
+    left: 6px;
+    display: block;
+    margin-right: 0;
+    top: 12px;
+}
+#msg {
+	color: #333;
+}
+#msg .mui-badge{
+	font-size: 10px;
+    position: absolute;
+    top: 8px;
+    left: inherit;
+    right: 10px;
+    padding: 0;
+    background: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+}
+.mui-bar .mui-title{
+	left: 75px;right: 50px;
+}
+.mui-placeholder{
+	font-size: 0.75rem!important;
+	color: #ccc!important;
+}
+.mui-search .mui-placeholder .mui-icon{
+	color: #ccc;font-size: 1.2rem;line-height: 29px;
+}
+.mui-search.mui-active:before{
+	color: #ccc;
+	font-size: 1.2rem;
+	
+}
+#hearder_search{
+	border-radius: 20px;
+	background: none;
+	border: 1px solid #ccc;
+	font-size: 0.75rem;
+	color: #ccc;
+    line-height: 25px;
+}
+#city{
+	color: #333;font-size: 0.95rem;
+}
+#city i{
+	color: #d1d1d1;font-size: 20px;
+}
+
+.empty{
+	clear: both;
+}

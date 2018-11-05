@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢点评个人中心</title>
+	<link href="../css/layout1.css" rel="stylesheet" />
+	<link href="../css/setPass.css" rel="stylesheet" />
+	<style type="text/css">
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="cont" id="index_cont">
+			<div class="content" id="main1">
+				<div id="t1">
+					<div id="pic1">
+						<img id="p1" src="../img/slogo.png" />
+					</div>
+				</div>
+				<div id="t2">
+					<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2">
+							<a href="Vbasic.html">实名认证</a>
+						</p>
+						<p class="tc tb tb2">
+							<a href="Vzizhanghu.html">交易密码设置</a>
+						</p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+					</div>
+					<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>店铺管理</p>
+						<p class="tc tb tb2">
+							<a href="Vgoods.html">轻奢沙龙</a>
+						</p>
+					</div>
+					<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>结算明细</p>
+						<p class="tc tb tb2">
+							<a href="Vorder.html">轻奢沙龙</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--个人中心正文中间部分-->
+			<div class="content" id="main2">
+				<div id="txt">
+					<!--正文部分开始-->
+					<!--头部-->
+					<div id="header">
+						<div id="head">
+							<div id="cl" class="head heade1">
+								<ul>
+									<li class="business">
+										<i>商家中心</i>
+										<i class="shopname">当前商家：轻奢沙龙</i>
+									</li>
+								</ul>
+							</div>
+							<div id="cr" class="head head_r">
+								<div class="head heade2">
+									<img src="../img/qvip.png" />
+								</div>
+								<div class="head line">
+									<ul>
+										<li>下午好！13059891234</li>
+										<li>欢迎进入轻奢点评商家中心</li>
+									</ul>
+								</div>
+								<div class="head heade3">
+									<a href="" class="login_out"><img src="../img/esc.png" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--头部-->
+					<!--内容展示区域-->
+					<div class="container_nav">
+						<!-- 基本信息 -->
+						<p class="cont_title">交易密码设置</p>
+						<div class="phone">
+							<label for="">手机号码</label>
+							<input placeholder="请输入手机号" type="text">
+							<input type="button" id="btn" value="获取验证码" onclick="settime(this)" class="getCode">
+						</div>
+						<div>
+							<label for="">验证码</label>
+							<input placeholder="请输入验证码" type="text">
+						</div>
+						<div>
+							<label for="">交易密码</label>
+							<input placeholder="请输入交易密码" type="text">
+						</div>
+						<button class="sub">提交设置</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script>
+	var countdown = 60;
+	function settime(val) {
+		if (countdown == 0) {
+			val.removeAttribute("disabled");
+			val.value = "获取验证码";
+			countdown = 60;
+		} else {
+			val.setAttribute("disabled", true);
+			val.value = "重新发送(" + countdown + ")";
+			countdown--;
+			setTimeout(function () {
+				settime(val)
+			}, 1000)
+		}
+	} 
+</script>
+
+</html>

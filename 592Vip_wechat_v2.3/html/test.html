@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<!--<script src="http://www.ichartjs.com/js/ichart-1.0.min.js"></script>-->
+ 		<!--<script src="http://www.ichartjs.com/js/ichart.gauge2d.js"></script>-->
+		<meta charset="UTF-8">
+		<title>爱心银行</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<style type="text/css">
+			#myCanvas{margin: 0 auto;}
+			#img{max-width: 80%;}
+			#ringoImage{display: none;}
+		</style>
+	</head>
+	<body>
+		
+		<div id="div">
+			
+		</div>
+		
+		
+		<p><img id="ringoImage" alt="" src="../image/shai.png"  style="max-width: 100%;"/></p>
+				
+		
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var img=document.getElementById("ringoImage"),canvas =convertImageToCanvas(img);
+	document.getElementById("div").appendChild(convertCanvasToImage(canvas))
+	function convertImageToCanvas(image){
+		var width=$(window).width();
+		var canvas = document.createElement("canvas");
+		canvas.width=parseInt(width*0.8);
+		canvas.height=parseInt(width*0.8*1.7);
+		var ctx=canvas.getContext("2d");
+		ctx.drawImage(image,0,0,parseInt(width*0.8),parseInt(width*0.8*1.7));
+		ctx.font="32px Arial";
+		ctx.strokeStyle = "red";
+		ctx.fillStyle = '#fff';  
+		ctx.fillText("200",parseInt(width*0.8*0.425),parseInt(width*0.8*0.70));
+		return canvas;
+	}
+	
+	function convertCanvasToImage(canvas) {
+		var image = new Image();
+		image.src = canvas.toDataURL("image/png");
+		return image;
+	}
+	
+	
+</script>

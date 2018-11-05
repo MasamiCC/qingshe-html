@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/Vcommon.css" />
+		<!--<link rel="stylesheet" href="../css/layer.css" />-->
+		<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" />
+		<style type="text/css">
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			.list_ordersn {
+				width: 120px;
+			}
+			
+			.goods_pic2 td {
+				padding-top: ;
+			}
+			
+			.layui-layer {
+				border: 1px solid #D4AC57;
+				box-shadow: 10px 10px 5px #B3B3B3;
+			}
+			
+			.layui-layer-title {
+				/*display: none;*/
+			}
+			
+			.lastlist span {
+				padding: 2px 6px;
+				margin: 0px 5px;
+			}
+			
+			.left {
+				margin-left: -4px;
+			}
+			
+			.txt_search {
+				padding-top: 30px;
+			}
+			
+			.lastlist:hover {
+				cursor: pointer;
+			}
+<<<<<<< .mine
+			.shebei_list{
+			   	width: 95%;
+			    margin: 10px auto;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 50px;
+			    overflow: auto;
+||||||| .r23294
+			.shebei_list{
+			   	width: 95%;
+			    margin: 10px auto;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 50px;
+			    overflow: auto;
+				
+=======
+			
+			.shebei_list {
+				width: 95%;
+				margin: 10px auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 50px;
+				overflow: auto;
+>>>>>>> .r23340
+			}
+			
+			.shebei_list li {
+				padding: 10px 0;
+				text-indent: 15px;
+				border-bottom: 1px solid #eee;
+			}
+			
+			.shebei_list li:hover {
+				background: #f4f4f4;
+			}
+			
+			.shebei_list li input[type=checkbox] {
+				margin-right: 5px;
+			}
+			/*详细*/
+			
+			.txt_list {
+				position: relative;
+			}
+			
+			.detail_area {
+				position: absolute;
+				top: 50px;
+				left: -420px;
+				width: 420px;
+				height: 650px;
+				background-color: #edeceb;
+				box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.1);
+				-moz-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.1);
+				-webkit-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.1);
+				padding: 20px 0;
+				box-sizing: border-box;
+				overflow: hidden;
+				visibility: hidden;
+				-webkit-transition: .5s 0s left ease;
+				-o-transition: .5s 0s left ease;
+				-moz-transition: .5s 0s left ease;
+				transition: .5s 0s left ease;
+			}
+			
+			.detail_area_in {
+				visibility: visible;
+				left: 5px;
+			}
+			
+			.detail_area .retract {
+				position: relative;
+				padding-left: 50px;
+				font-size: 18px;
+				color: #666666;
+				cursor: pointer;
+			}
+			
+			.detail_area .retract:before {
+				content: '';
+				position: absolute;
+				display: block;
+				left: 20px;
+				top: 0;
+				width: 20px;
+				height: 20px;
+				background-image: url(../img/retract.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			.detail_area .detail_show {
+				height: 560px;
+				padding: 0px 20px;
+				margin-top: 20px;
+			}
+			
+			.detail_area .detail_content {
+				background-color: #FFFFFF;
+				box-sizing: border-box;
+				padding: 0 15px;
+				margin-bottom: 20px;
+			}
+			
+			.detail_area .detail_content:last-child {
+				margin-bottom: 0;
+			}
+			
+			.detail_area .detail_collapse {
+				padding: 12px;
+				border-bottom: 1px solid #edeceb;
+				font-size: 14px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+			
+			.detail_area .detail_collapse:last-child {
+				border-bottom: none;
+			}
+			
+			.detail_area .detail_collapse .title {
+				color: #999999;
+				float: left;
+				box-sizing: border-box;
+			}
+			
+			.detail_area .detail_collapse .content {
+				color: #333333;
+				float: right;
+				text-align: right;
+				box-sizing: border-box;
+			}
+			
+			.detail_area .detail_collapse.row .title {
+				float: none;
+			}
+			
+			.detail_area .detail_collapse.row .content {
+				float: none;
+				margin-top: 10px;
+			}
+			
+			.detail_area .detail_collapse.row .content .img {
+				width: 120px;
+				height: 90px;
+				margin-right: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+							<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+							<p class="tc tb tb2">
+								<a href="Vbasic.html">基本信息</a>
+							</p>
+							<p class="tc tb tb2">
+								<a href="Vzizhanghu.html">子账号管理</a>
+							</p>
+							<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+							<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+							<p class="tc tb tb2">
+								<a href="Vgoods.html">全部商品</a>
+							</p>
+							<p class="tc tb tb2">
+								<a href="Vadd_goods.html">新增商品</a>
+							</p>
+							<p class="tc tb tb2">
+								<a href="Vgoods_cat.html">分类管理</a>
+							</p>
+						</div>
+						<div id="column3" class="columns">
+							<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2">
+								<a href="Vorder.html">全部订单</a>
+							</p>
+							<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+							<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+							<p class="tc tb tb2">
+								<a href="Vorder_check.html">验证订单</a>
+							</p>
+						</div>
+						<div id="column4" class="columns">
+							<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+							<p class="tc tb tb2">
+								<a href="Vpingjia.html">订单评价</a>
+							</p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->
+				<div class="content" id="main2">
+					<div id="txt">
+						<!--正文部分开始-->
+						<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心</i>
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png" />
+									</div>
+									<div class="head line">
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--头部-->
+						<!--正文-->
+						<div class="titleMes" style="font-weight: 600;margin:30px 0px 10px 20px"><i>个人中心</i>><i>全部订单</i></div>
+						<div class="txt_search">
+							<form action="">
+								<div class="inline">
+									<span>所有状态：</span>
+									<select name="" id="" style="width: 110px;height: 31px;">
+										<option value="">已回复</option>
+										<option value="">未回复</option>
+									</select>
+								</div>
+								<div class="inline">
+									<span>所有类型：</span>
+									<select name="" id="" style="width: 110px;height: 31px;">
+										<option value="">已回复</option>
+										<option value="">未回复</option>
+									</select>
+								</div>
+								<div class="inline" style="margin-left: -6px;">
+									<!--商品名称：-->
+									<input type="text" placeholder="请输入订单号" style="width: 325px;height: 29px; text-indent: 5px;" />
+								</div>
+
+								<!--<label for="">
+									状态：
+									<select name="" id="">
+										<option value="">已上架</option>
+										<option value="">已下架</option>
+									</select>
+								</label>-->
+								<span class="search_btn">
+									搜索
+								</span>
+								<!--<span id="ziShop" class="txt_right" style="">添加商品</span>-->
+							</form>
+
+						</div>
+						<div class="txt_list">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%" class="list_table">
+
+								<tr class="goods_pic2">
+									<th>序号</th>
+									<th>订单号</th>
+									<th>订单类型</th>
+									<th>用户</th>
+									<th>下单时间</th>
+									<th>联系电话</th>
+									<th>总价</th>
+									<th>支付方式</th>
+									<th>订单状态</th>
+									<th>操作</th>
+								</tr>
+
+								<tr class="goods_pic2">
+									<td class="list_center ">
+										<!--<input type="checkbox" name="goods" id="" value="" />-->
+										<span>1</span>
+									</td>
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">堂食</td>
+									<td class="list_center ">张先生</td>
+									<td class="list_center ">2017-06-21 15:08</td>
+									<td class="list_center ">13894562579</td>
+									<td class="list_center ">52.0</td>
+									<td class="list_center ">支付宝</td>
+									<td class="list_center list_orange">待上菜</td>
+									<td class="list_center lastlist">
+										<span class="lists1 background_green">完成</span>
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 background_gold">详情</span>
+										<span class="lists3 background_red">取消</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center ">
+										<!--<input type="checkbox" name="goods" id="" value="" />-->
+										<span> 2 </span>
+									</td>
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">预订</td>
+									<td class="list_center ">喵喵喵</td>
+									<td class="list_center ">2017-06-21 15:08</td>
+									<td class="list_center ">13894562579</td>
+									<td class="list_center ">78.0</td>
+									<td class="list_center ">微信</td>
+									<td class="list_center list_grey">订单取消</td>
+									<td class="list_center lastlist">
+										<!--<span class="lists1 background_green">完成</span>-->
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 background_gold">详情</span>
+										<!--<span class="lists3 background_red"></span>-->
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center ">
+										<!--<input type="checkbox" name="goods" id="" value="" />-->
+										<span>3</span>
+									</td>
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">外卖</td>
+									<td class="list_center ">贱贱</td>
+									<td class="list_center ">2017-06-21 15:08</td>
+									<td class="list_center ">13894562579</td>
+									<td class="list_center ">120.0</td>
+									<td class="list_center ">银行卡</td>
+									<td class="list_center list_gold">配送中</td>
+									<td class="list_center lastlist">
+										<span class="lists1 "></span>
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 background_gold" id="lists2">详情</span>
+										<span class="lists3 background_red">取消</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center ">
+										<!--<input type="checkbox" name="goods" id="" value="" />-->
+										<span>4</span>
+									</td>
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">外卖</td>
+									<td class="list_center ">贱贱</td>
+									<td class="list_center ">2017-06-21 15:08</td>
+									<td class="list_center ">13894562579</td>
+									<td class="list_center ">121.1</td>
+									<td class="list_center ">银行卡</td>
+									<td class="list_center list_red">待接单</td>
+									<td class="list_center lastlist">
+										<span class="lists4 background_gold">设备绑定</span>
+										<span class="lists1 background_orange">接单</span>
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 background_gold">详情</span>
+										<span class="lists3 background_red">取消</span>
+									</td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="txt_page">
+							<ul>
+								<!--<li class="page_item page_disabled">第一页</li>-->
+								<li class="page_item page_active">1</li>
+								<li class="page_item">2</li>
+								<li class="page_item">3</li>
+								<li class="page_item">4</li>
+								<li class="page_item">...</li>
+								<li class="page_item">7</li>
+								<li class="page_item">8</li>
+								<!--<li class="page_item1">下一页</li>-->
+							</ul>
+						</div>
+						<!--正文-->
+						<!--正文部分结束-->
+
+					</div>
+				</div>
+			</div>
+
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+	<script src="../js/layer.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../js/art-template.js"></script>
+	<!--模板js-->
+	<script id="details" type="text/html">
+		<!--详细-->
+		<div class="detail_area detail_area_in">
+			<p class="retract">收起</p>
+			<div class="detail_show" data-mcs-theme="minimal-dark">
+				{{if type=='退款'}}
+				<div class="detail_content">
+					<div class="detail_collapse row">
+						<div class="title">
+							退款原因
+						</div>
+						<div class="content">
+							食物中毒
+						</div>
+					</div>
+					<div class="detail_collapse row">
+						<div class="title">
+							退款原因
+						</div>
+						<div class="content">
+							<img src="../img/ico.png" class="img" />
+							<img src="../img/ico.png" class="img" />
+						</div>
+					</div>
+					<div class="detail_collapse row">
+						<div class="title">
+							售后方式
+						</div>
+						<div class="content">
+							退款
+						</div>
+					</div>
+				</div>
+				{{/if}}
+				<div class="detail_content">
+					<div class="detail_collapse">
+						<div class="title">
+							订单编号
+						</div>
+						<div class="content">
+							{{bianhao}}
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							订单类型
+						</div>
+						<div class="content">
+							酒店预订
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							下单时间
+						</div>
+						<div class="content">
+							2018-02-05 12:26
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							订单状态
+						</div>
+						<div class="content">
+							待支付
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							下单人
+						</div>
+						<div class="content">
+							刘能
+						</div>
+					</div>
+				</div>
+				<div class="detail_content">
+					<div class="detail_collapse">
+						<div class="title">
+							联系人
+						</div>
+						<div class="content">
+							张波
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							联系电话
+						</div>
+						<div class="content">
+							136487521212
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							到店时间
+						</div>
+						<div class="content">
+							2018-02-05 12:26
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							入住时间
+						</div>
+						<div class="content">
+							2018-02-05 12:26~2018-02-07<br/> 共2晚
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							房间类型
+						</div>
+						<div class="content">
+							大床房
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							房间数量
+						</div>
+						<div class="content">
+							1
+						</div>
+					</div>
+					<div class="detail_collapse">
+						<div class="title">
+							预留车位
+						</div>
+						<div class="content">
+							无
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript">
+		var index = '';
+		$('.lists2').on('click', function() {
+			//加载数据
+			var data={
+				'bianhao': 11111,
+				'type': '退款'
+			}
+			var html = template('details',data);
+			$('.detail_area').remove();
+			$('.txt_list').append(html);
+			$(".detail_show").mCustomScrollbar();
+			
+			
+		});
+		
+		$(document).on('click','.retract',function(){
+			$(this).closest('.detail_area').removeClass('detail_area_in');
+			$('.detail_area').remove();
+		})
+
+		$('.lists4').on('click', function() {
+			var data = [{
+					id: '1',
+					name: '80004345',
+				},
+				{
+					id: '2',
+					name: '80004346',
+				},
+				{
+					id: '3',
+					name: '80004347',
+				},
+				{
+					id: '4',
+					name: '80004348',
+				}
+
+			]
+			var html = '';
+			html = '<div class="shebei_list"><ul>';
+			for(var i in data) {
+				html += '<li><input type="checkbox" name="shebei" id="' + data[i]['id'] + '" value="">' + data[i]['name'] + '</li>';
+			}
+			html += '</ul></div>';
+			html += '<div style="text-align:center;padding:10px 0;position:absolute;bottom:0;left:0;right:0;width:100%"><span id="bind_shebei" class="txt_btn">绑定设备</span></div>'
+			index = layer.open({
+				type: 1,
+				title: '绑定设备',
+				shadeClose: true,
+				shade: 0.8,
+				area: ['380px', '300px'],
+				content: html //iframe的url
+			});
+			shebeiClick()
+			bindSubmit()
+
+		});
+
+		function shebeiClick() {
+			$(".shebei_list input[type=checkbox]").each(function() {
+				$(this).bind({
+					'click': function() {
+						var checked = $(this).is(":checked");
+						if(checked) {
+							$(".shebei_list input[type=checkbox]").removeProp('checked');
+							$(this).prop({
+								checked: 'checked'
+							})
+						}
+					}
+				})
+			})
+		}
+
+		function bindSubmit() {
+			$("#bind_shebei").click(function() {
+				var id = $(".shebei_list input[type=checkbox]:checked").attr('id');
+				if(id) {
+					layer.alert('你选择的设备id是：' + id);
+				} else {
+					layer.msg('请选择设备')
+				}
+
+			})
+		}
+	</script>
+
+</html>

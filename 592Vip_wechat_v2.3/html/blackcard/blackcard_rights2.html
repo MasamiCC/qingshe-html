@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" href="../../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/blackcard_rights1.css"/>
+		<style type="text/css">
+			.mui-popover{
+				background: none;
+				-webkit-box-shadow:none;
+			}
+			.mui-backdrop{
+				background-color: rgba(0,0,0,.7);
+			}
+			#popover{position: a;left: 0rem;top: 1rem;	right: 0rem ;bottom: 1rem;width: auto;background: none;box-shadow: none;}
+			.popover_cont{display: flex;flex-direction: column;position: absolute;height: 100%;width: 100%;justify-content: space-between;}
+			.popover_cont>div{flex: 1;}
+			.count{
+				flex: 0 0 80px!important;    
+				display: flex;
+    			align-items: flex-end;
+    			justify-content: center;
+    			}
+			.close{flex: 0 0 70px!important;}
+			.swiper-slide{}
+			.content{display: flex;}
+			.swiperbg{background-image: url(images/swiperbg_02.png);}
+		</style>
+	</head>
+	<body>
+		<div id="popover" class="mui-popover">
+			<div class="popover_cont">
+				<div id="count" class="count">
+					<div class="allswiper_title">
+			 			全部特权<span class="yellow_font">1</span>/<span class="allcount">21</span>个
+			 		</div>
+				</div>
+				 <div class="content">
+				 	<div class="swiper-container">
+					  <div class="swiper-wrapper">
+					    
+					  </div>
+					</div>
+				 </div>
+				 <div class="close">
+					<div class="close">
+						<img class="close_icon" src="images/close.png"/>
+		        	</div>
+				 </div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="qy_data.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var lastflg=false;
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView:1.3,
+		spaceBetween : 15,
+		slidesOffsetBefore:40,
+		centeredSlides:true,
+	})
+	var active=GetQueryString('num')?GetQueryString('num'):'';
+	swiper.on('transitionEnd',function(){
+		if(this.isEnd){
+			active=this.slides.length;
+		}else{
+			active=this.activeIndex+1;
+		}
+		$('.yellow_font').html(active);
+		
+	})
+	mui('#popover').popover('show');
+	swiper.slideTo(0, 1000, false);//切换到第一个slide，速度为1秒
+	mui('.blackcardnew').on('tap','.blackcard_icon',function(){
+		callNative('toJoinBlack');
+	})
+	$(function(){
+		loadList(qydata);
+		
+		
+		
+		$('.close_icon').click(function(){
+			mui('#popover').popover('hide');
+			callNative('closeQuanyi');
+		});
+
+	});
+	
+	//获取URL参数
+	function GetQueryString(name){
+	     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r!=null)return  unescape(r[2]); return null;
+	}
+	
+	function loadList(data){
+		$('.swiper-wrapper').html('');
+		$('.allcount').html(data.length)
+		for (var i in data) {
+			var html='<div class="swiper-slide">'
+				+		'<div class="swiperbg">'
+				+   		'<div class="swiper_img">'
+				+   			'<img src="images/'+data[i]['swiper_img']+'" alt="" />'
+				+   		'</div>'
+				+   		'<div class="swiper_title">'
+				+   			data[i]['swiper_title']
+				+   		'</div>'
+				+   		'<div class="swiper_content">'
+				+   			data[i]['swiper_content']
+				+   		'</div>'
+				+   		'<div class="open_soon_con">'
+				+   			'<span class="open_soon">'
+				+   				'立即开通领取特权'
+				+   			'</span>'
+				+   		'</div>'
+				+   	'</div>'
+				+      '</div>'
+			
+			$('.swiper-wrapper').append(html)
+		}
+		mui('.popover_cont').on('tap','.open_soon',function(){
+			callNative('toJoinBlack');
+		})
+		swiper.update();
+	}
+	
+</script>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+	<title>订房</title>
+	<style type="text/css">
+		.index_item_title{
+			font-size: 0.875rem;line-height:1.5;border-bottom: 1px solid #eee;padding-bottom: 0.5rem;
+		}
+		.hotel_price{
+			color: #d4ac57;
+		}
+		.hotel_js{
+			background: #d4ac57;color: #fff;padding: 0 1.5rem;line-height: 50px;font-size: 0.875rem;
+		}
+		.hotel_time{
+			display: flex;align-items: center;margin: 1rem 0 0.2rem 0;line-height: 1.5;
+		}
+		.hotel_time_i{
+			flex: 1;text-align: center;font-size: 0.78rem;color: #333;
+		}
+		.hotel_time_c{
+		}
+		.hotel_time_c img{
+			/*max-width: 80%;*/
+			width:2rem;
+		}
+		.hotel_count{
+			background: #d4ac57;
+			color: #fff;
+			padding: 0.1rem 0.5rem;
+			border-radius: 1rem;
+			font-size: 0.75rem;
+			letter-spacing: 1px;
+		}
+		.mui-bar{
+			background: #fff;
+		}
+		header .mui-title{
+			color: #d4ac57;
+		}
+		.room_item{
+			display: flex;align-items: center;margin: 0 0.5rem;border-bottom: 1px solid #eee;
+			padding: 0.2rem 0;
+		}
+		.room_item .item{
+			flex: 1;overflow: hidden;
+		}
+		.item_l{
+			max-width: 5rem;line-height: 0;width: 5rem;height: 5rem;overflow: hidden;position: relative;
+		}
+		.item_l img{
+			position: absolute;left: 0;right: 0;height: 100%;width: 100%;
+		}
+		.item_c p{
+			margin-bottom: 0;
+		}
+		.item_c{
+			padding: 0 0.3rem;
+		}
+		.item_r{
+			text-align: right;max-width: 4.5rem;
+		}
+		.item_r img{
+			max-width: 18px;vertical-align: middle;
+		}
+		.hotel_name{
+			font-size: 0.875rem;line-height: 2;
+		}
+		.room_intro{
+			font-size: 0.75rem;line-height: 1.5;
+		}
+		.room_price{
+			font-size: 1rem;font-weight: 500;line-height: 2.1;color: #000;
+		}
+		.mui-bar-nav~.mui-content{
+			bottom: 50px;overflow: auto;
+		}
+		.room_item:last-child{
+			border-bottom: none;
+		}
+		.index_item:last-child{
+			padding-bottom: 0;margin-bottom: 0;
+		}
+		.mui-input-numbox{
+			color: #666;
+		}
+		.item_r .mui-input-numbox{
+			padding: 0 0.3rem;display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+	    <h1 class="mui-title">订房</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="index_item">
+	    	<div class="index_item_title">
+	    		选择入住时间
+	    	</div>
+	    	<div class="hotel_time">
+	    		<div class="hotel_time_i hotel_time_l">
+	    			<span>入住时间</span>
+	    			<p><!--2017-04-20--></p>
+	    			<input type="hidden" name="inTime" id="inTime" value="" />
+	    		</div>
+	    		<div class="hotel_time_i hotel_time_c">
+	    			<span><img src="../image/hotel_jt.png"/></span>
+	    			<p><span class="hotel_count">0晚</span></p>
+	    		</div>
+	    		<div class="hotel_time_i hotel_time_r">
+	    			<span>离店时间</span>
+	    			<p><!--2017-04-21--></p>
+	    			<input type="hidden" name="leaveTime" id="leaveTime" value="" />
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="index_item" >
+	    	<div class="index_item_title">
+	    		可供选择的房间类型
+	    	</div>
+	    	<div class="" id="room_list">
+	    		<div class="room_item">
+		    		<div class="item item_l">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="item item_c">
+		    			<div class="hotel_name">商务大床房</div>
+		    			<p class="room_intro">16-18平方米&nbsp;1.5米大床1张 <br />	适合1人入住</p>
+		    			<p>
+		    				<span class="room_price">￥600.00</span><small>/一晚</small>
+		    			</p>
+		    		</div>
+		    		<div class="item item_r">
+							<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>
+							<span class="mui-input-numbox" data-price="600.00" >0</span>
+							<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>
+		    		</div>
+		    	</div>
+		    	<div class="room_item">
+		    		<div class="item item_l">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="item item_c">
+		    			<div class="hotel_name">商务大床房</div>
+		    			<p class="room_intro">16-18平方米&nbsp;1.5米大床1张 <br />	适合1人入住</p>
+		    			<p>
+		    				<span class="room_price">￥600.00</span><small>/一晚</small>
+		    			</p>
+		    		</div>
+		    		<div class="item item_r">
+		    			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>
+							<span class="mui-input-numbox" data-price="600.00" >0</span>
+							<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>
+		    		</div>
+		    	</div>
+		    	<div class="room_item">
+		    		<div class="item item_l">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="item item_c">
+		    			<div class="hotel_name">商务大床房</div>
+		    			<p class="room_intro">16-18平方米&nbsp;1.5米大床1张 	<br />适合1人入住</p>
+		    			<p>
+		    				<span class="room_price">￥600.00</span><small>/一晚</small>
+		    			</p>
+		    		</div>
+		    		<div class="item item_r">
+		    			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>
+							<span class="mui-input-numbox" data-price="600.00"  >0</span>
+							<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="room_item">
+		    		<div class="item item_l">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="item item_c">
+		    			<div class="hotel_name">商务大床房</div>
+		    			<p class="room_intro">16-18平方米&nbsp;1.5米大床1张 	<br />适合1人入住</p>
+		    			<p>
+		    				<span class="room_price">￥600.00</span><small>/一晚</small>
+		    			</p>
+		    		</div>
+		    		<div class="item item_r">
+		    			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>
+							<span class="mui-input-numbox" data-price="600.00" >0</span>
+							<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>
+		    		</div>
+		    	</div>
+		    	<div class="room_item">
+		    		<div class="item item_l">
+		    			<img src="../image/hotel_logo.png"/>
+		    		</div>
+		    		<div class="item item_c">
+		    			<div class="hotel_name">商务大床房</div>
+		    			<p class="room_intro">16-18平方米&nbsp;1.5米大床1张 	<br />适合1人入住</p>
+		    			<p>
+		    				<span class="room_price">￥600.00</span><small>/一晚</small>
+		    			</p>
+		    		</div>
+		    		<div class="item item_r">
+		    			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>
+							<span class="mui-input-numbox" data-price="600.00" >0</span>
+							<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	
+	    	
+	    </div>
+	</div>
+	<nav class="mui-bar mui-bar-tab">
+		<div class="mui-pull-left" style="line-height: 50px;text-indent: 15px;font-size: 0.875rem;">
+			合计金额：<span class="hotel_price">￥0.00</span>
+		</div>
+	    <span class="mui-pull-right hotel_js" >
+	    	结算
+	    </span>
+	</nav>
+</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var inBeginTime,inEndDate,leaveBeginTime,leaveEndTime,inTime,leaveTime;
+	var inBeginTime=new Date();
+	var inEndDate=new Date(+inBeginTime+30*86400000);
+	var leaveBeginTime=new Date(+inBeginTime+86400000);
+	var leaveEndTime=new Date(+inBeginTime+30*86400000);
+	var inTime=new Date();
+	$(function(){
+		$(".hotel_time_l").on('tap',function(){
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+30));
+				if (leaveTime!='') {
+					newD=new Date(leaveTime);
+				}
+				var picker = new mui.DtPicker({
+					beginDate:inBeginTime,
+					endDate:inEndDate,
+					type:'datetime'
+				});
+				picker.show(function(rs){
+					inTime=rs.y.value+"-"+rs.m.value+"-"+rs.d.value;
+					$(".hotel_time_l").find('p').html(inTime);
+					leaveBeginTime=new Date(+new Date(rs.value)+86400000);
+					
+					leaveBeginTime_s=leaveBeginTime.getFullYear()+"-"+(leaveBeginTime.getMonth()+1)+"-"+leaveBeginTime.getDate();
+					$(".hotel_time_r").find('p').html(leaveBeginTime_s);
+					leaveTime=leaveBeginTime_s;
+					console.log(leaveTime)
+					GetDateDiff()
+					
+					
+				})
+		})
+		$(".hotel_time_r").on('tap',function(){
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+30));
+				
+				var defaultValue=(leaveTime)?leaveTime:leaveBeginTime;
+				console.log(defaultValue)
+				var picker = new mui.DtPicker({
+					beginDate:leaveBeginTime,
+					endDate:leaveEndTime,
+					type:'datetime',
+					setSelectedValue:defaultValue,
+				});
+				picker.show(function(rs){
+					leaveTime=rs.y.value+"-"+rs.m.value+"-"+rs.d.value;
+					$(".hotel_time_r").find('p').html(leaveTime);
+					inEndDate=new Date(+new Date(rs.value)-86400000);
+					
+					GetDateDiff()
+				})
+		})
+		$(".room_item").on('tap','.cart-btn-numbox-plus',function(e){
+			$(this).prev().html(parseInt($(this).prev().html())+1);
+			loadTotal()
+		})
+		$(".room_item").on('tap','.cart-btn-numbox-minus',function(e){
+			var a=parseInt($(this).next().html());
+			if (a>0) {
+				$(this).next().html(a-1)
+			}
+			loadTotal()
+		})
+	})
+	function GetDateDiff()  
+	{  
+		console.log(inTime)
+	    var startTime = new Date(Date.parse(inTime.replace(/-/g,   "/"))).getTime();     
+	    var endTime = new Date(Date.parse(leaveTime.replace(/-/g,   "/"))).getTime();     
+	    var dates = Math.abs((startTime - endTime))/(1000*60*60*24);
+	    $(".hotel_count").html(dates+"晚")
+	    return  dates;    
+	}
+	var inTime='',leaveTime='';
+	
+	loadTotal()
+	function loadTotal(){
+		var total=0;
+		$('.room_item').each(function(){
+			var count=parseInt($(this).find('.mui-input-numbox').html()) ;
+			var price=parseFloat($(this).find('.mui-input-numbox').attr('data-price')) ;
+			total+=price*count;
+		})
+		$('.hotel_price').html("￥"+parseFloat(total).toFixed(2))
+	}
+	function loadDeafult(){
+		var start=new Date();
+		var smonth=start.getMonth()+1;
+		smonth=(smonth<10)?'0'+smonth:smonth;
+		var stime=start.getFullYear()+'-'+smonth+'-'+start.getDate();
+		$(".hotel_time_l p").html(stime);
+		inTime=stime;
+		var end=new Date(start.setDate(start.getDate()+1));
+		var emonth=end.getMonth()+1;
+		emonth=(emonth<10)?'0'+emonth:emonth;
+		var etime=end.getFullYear()+'-'+(emonth)+'-'+end.getDate();
+//		leaveTime=etime;
+		$(".hotel_time_r p").html(etime)
+	}
+	loadDeafult();
+	var roomData= [
+	        {
+	        id: 28,
+	        name: "小房间",
+	        img: "../image/near_shop-02.png",
+	        attribute1: "16-18平米 1.8米大床房1张",
+	        attribute2: "适合女生入住",
+	        price: 85.5,
+	        num: 20
+	        },
+	        {
+	        id: 29,
+	        name: "小房间",
+	        img: "../image/near_shop-02.png",
+	        attribute1: "16-18平米 1.8米大床房1张",
+	        attribute2: "适合女生入住",
+	        price: 90.5,
+	        num: 10
+	        },
+	        {
+	        id: 30,
+	        name: "小房间",
+	        img: "../image/near_shop-02.png",
+	        attribute1: "16-18平米 1.8米大床房1张",
+	        attribute2: "适合女生入住",
+	        price: 120.5,
+	        num: 30
+	        }
+	]
+	loadRoomData(roomData);
+	function loadRoomData(data){
+		$("#room_list").empty();
+		for (var i in data) {
+			var html='<div class="room_item">'
+			    	+	'<div class="item item_l">'
+			    	+		'<img src="'+data[i]['img']+'"/>'
+			    	+	'</div>'
+			    	+	'<div class="item item_c">'
+			    	+		'<div class="hotel_name">'+data[i]['name']+'</div>'
+			    	+		'<p class="room_intro">'+data[i]['attribute1']+' 	<br />'+data[i]['attribute2']+'</p>'
+			    	+		'<p>'
+			    	+			'<span class="room_price">￥'+data[i]['price']+'</span><small>/一晚</small>'
+			    	+		'</p>'
+			    	+	'</div>'
+			    	+	'<div class="item item_r">'
+			    	+		'<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus"/>'
+					+			'<span class="mui-input-numbox" data-price="600.00" >'+data[i]['num']+'</span>'
+					+			'<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus"/>'
+			    	+	'</div>'
+			    	+'</div>';
+			$("#room_list").append(html)
+		}
+	}
+
+</script>

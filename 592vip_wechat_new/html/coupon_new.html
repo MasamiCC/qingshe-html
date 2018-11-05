@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>附近</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/tickets.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/coupon_new.css"/>
+		<style type="text/css">
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+		</style>
+		
+		
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="shop_list">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="ticket_type">
+						<a class="mui-control-item ticket_type mui-active" href="#item1mobile">
+							未使用
+						</a>
+						<a class="mui-control-item ticket_type" href="#item2mobile">
+							已使用
+						</a>
+						<a class="mui-control-item ticket_type" href="#item3mobile">
+							已过期
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell coupons">
+										<div class="ticket_item ticket_dianpu coupon_shop">
+											<div class="shop_item_i ticket_left coupon_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">￥1</span><span class="coupon_font"></span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg coupon_right">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">店铺券</span><span class="business_title">小神通乐园</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="">
+											<img src="../image/coupon_new.png"/>
+										</div>
+										<div class="ticket_beizhu coupon_tips">
+											本券仅供店铺使用
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li class="mui-table-view-cell coupons">
+										<div class="ticket_item ticket_dianpu coupon_shop">
+											<div class="shop_item_i ticket_left coupon_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">9.5</span><span class="coupon_font">折</span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg coupon_right">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">平台券</span><span class="business_title">国庆中秋活动</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="">
+											<img src="../image/coupon_new.png"/>
+										</div>
+										<div class="ticket_beizhu coupon_tips">
+											详细描述，本券仅供本平台使用，仅限1855456545手机号码的用 户使用，不可以转赠
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell used_coupons" >
+										<div class="ticket_item ticket_used used_coupon">
+											<div class="shop_item_i ticket_left used_coupons_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">￥1</span><span class="coupon_font"></span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">平台券</span><span class="business_title">国庆中秋活动</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="ticket_beizhu used_coupons_tips">
+											全平台通用，不与其他优惠同用
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li class="mui-table-view-cell used_coupons" >
+										<div class="ticket_item ticket_used used_coupon">
+											<div class="shop_item_i ticket_left used_coupons_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">￥1</span><span class="coupon_font"></span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">平台券</span><span class="business_title">国庆中秋活动</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="ticket_beizhu used_coupons_tips">
+											全平台通用，不与其他优惠同用
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell outdate_coupons" >
+										<div class="ticket_item ticket_used  outdate_coupon ">
+											<div class="shop_item_i ticket_left used_coupons_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">￥1</span><span class="coupon_font"></span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">平台券</span><span class="business_title">国庆中秋活动</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="ticket_beizhu used_coupons_tips">
+											全平台通用，不与其他优惠同用
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li class="mui-table-view-cell  outdate_coupons" >
+										<div class="ticket_item ticket_used used_coupon">
+											<div class="shop_item_i ticket_left used_coupons_left">
+												<div class="coupon_money">
+													<span class="coupon_zhe">￥1</span><span class="coupon_font"></span>
+												</div>
+												<div class="coupon_content">
+													满500可用
+												</div>
+											</div>
+											<div class="shop_item_i ticket_msg">
+												<ul>
+													<li class="ticket_title"><span class="ticket_s_type coup_type">平台券</span><span class="business_title">国庆中秋活动</span></li>
+													<li class="ticket_time">
+														有效期2017-06-25至2017-06-25
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="ticket_beizhu used_coupons_tips">
+											全平台通用，不与其他优惠同用
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.js"></script>
+<script src="../js/mui.pullToRefresh.material.js"></script>
+<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+							
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell shop_item';
+							li.innerHTML = '<div class="shop_item_i shop_img">'
+										+		'<img src="image/shop_2.png" class="shop_logo">'
+										+	'</div>'
+										+	'<div class="shop_item_i shop_msg">'
+										+		'<ul>'
+										+			'<li class="shop_title">这是一家'+index+'店铺'+i+'</li>'
+										+			'<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>'
+										+			'<li>'
+										+				'<span class="shop_status">营业中</span>'
+										+				'<span class="shop_juli">11.49km</span>'
+										+			'</li>'
+										+			'<li>'
+										+				'<div class="shop_pingfen">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon2.png">'
+										+				'</div>'
+										+			'</li>'
+										+		'</ul>'
+										+	'</div>'
+										+	'<div class="clear"></div>'
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+	$(function(){
+		$(".coupons .coup_type").each(function(){
+			var type=$(this).html();
+			if("店铺券"==type){
+				$(this).css("background","#fc7875");
+			}else{
+				$(this).css("background","#70c38e");
+			}
+		});
+//		$(".ticket_ms i").each(function(){
+//			$(this).bind({
+//				'click':function(){
+//					console.log(1)
+//					$(this).toggleClass('mui-icon-arrowdown')
+//					$(this).toggleClass('mui-icon-arrowup')
+//					$(this).parents('.ticket_item').next().slideToggle()
+//				}
+//			})
+//		})
+	})
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>新闻资讯</title>
+		<link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+		<!--引入css-->
+		<link rel="stylesheet" type="text/css" href="../css/common-1f3ba6fcbb.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/newsList-51524139bd.css" />
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="../css/ie-b22aab3a4e.css" />
+	    <![endif]-->
+	</head>
+	<body>
+		<!--加载中-->
+		<div class="loading_area"></div>
+		<!--加载中-->
+		
+		<!--头部导航条-->
+		<div class="header"></div>
+		<!--头部导航条结束-->
+		
+		<!--页面固定按钮-->
+		<div class="bcBtns" id='Btnsall'></div>
+		<!--页面固定按钮-->
+
+		<!--首页一屏主体-->
+		<div class="index_nav zip_img" replace-img="../static/img/newsList_bg.png"> 
+			<img src="../static/img/newsList_logo.png" class="privilege_logo wow bounceInDown">
+		</div>
+
+		<!-- 资讯中心 -->
+		<div class="newsList_nav">
+			<div class="newsList_area">
+				<h4 class="newsList_header">
+					资讯中心
+				</h4>
+				<ul class="newsList_ul">
+				</ul>
+			</div>
+
+			<div class="paging_navigation">
+				<ul class="paging_ul">
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 加入黑卡 -->
+		<div class="join_nav bg_lazy" data-original="../static/img/join_us_bg.png">
+			<!--加入黑卡模块-->
+			<span class="intro_icon"></span>
+			<h4 class="title">
+				加入黑卡
+			</h4>
+			<img src="../static/img/join_us_logo.png" class="join_us_logo wow fadeIn" data-wow-duration="5s"/>
+			<div class="join_us_word wow fadeInUp">
+				<p class="content">轻奢黑卡</p>
+				<p class="content">让消费进行升级</p>
+				<p class="content">让生活充满惊喜</p>
+				<a href="../html/BCBlackCardJoin.html" class="join_us">
+					加入黑卡
+				</a>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="footer bg_lazy" data-original="../static/img/footer_bg.png">
+		</div>
+		<!-- 底部结束 -->
+		<!--引入js-->
+		<script src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/wow.min.js"></script>
+		<script src="../static/js/js-plugs.js"></script>
+		<script src="../js/common-642468dda9.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../static/js/es5-shim.min.js"></script>
+		<script src="../static/js/es5-sham.min.js"></script>
+		<script src="../static/js/json3.min.js"></script>
+		<![endif]-->
+		<script src="../static/js/art-template.js"></script>
+		<!-- 模板js -->
+		<script id="news" type="text/html">
+			{{each items value i}}
+			<li>
+				<a href="BCUSNewsDetail.html?id={{value.id}}" newsId = {{value.id}}>
+					<h4 class="news_title">
+						{{value.news_name}}
+					</h4>
+					<p class="news_source">
+						<span class="time">{{value.publish_time}}</span>
+						<span class="source">{{value.news_source}}</span>
+					</p>
+					<p class="news_content">
+						{{value.news_describe}}
+					</p>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		<script src="../js/newsList-d9d14a467f.js"></script>
+	</body>
+</html>

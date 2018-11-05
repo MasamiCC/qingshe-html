@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+body{
+    background: rgb(244, 244, 244);
+}
+.container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;    
+    margin-left: 2rem;margin-right: 0.5rem
+}
+.box{
+    position: relative;padding: 10px;flex: 1;
+}
+
+.box:before{
+    position: absolute;
+    content: '';
+    left: -0.55rem;
+    top:2rem;
+    height: 100%;
+    border-left: 1px dashed #fde6ae;
+}
+.box:after{
+    position: absolute;
+    content: '';
+    left: -.875rem;
+    top:2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #f8a322;
+    border-radius: 1rem
+}
+.box:last-child::before{display: none;}
+.box_g:before{
+    border-left: 1px dashed #cccccc;
+}
+.box_g:after{
+    background: #cccccc;
+}
+.box_a:before{
+    border-left: 1px dashed #cccccc;
+}
+.box_a:after{
+    background: #f8a322;
+}
+.card{background: #fff;border-radius: 6px;font-size: .875rem;line-height: 1.8;overflow: hidden;}
+.card>div{margin-left: 0.75rem;margin-right: 0.7rem;}
+.card_top{padding: .5rem 0;    margin-left: 0.75rem;
+    margin-right: 0.7rem;}
+.card_top .nums span{font-weight: bold;font-size: .975rem;color: #333;}
+.card_title{font-size: 0.975rem;}
+.box_g .card_title{
+	display: flex;
+	display: -webkit-flex;
+    align-items: baseline;
+    font-size: 1rem;
+	}
+.box_g .card_title span{margin-left: 1.2rem;}
+.card_title span{font-size: 0.75rem;color: #999;display: block;}
+.card_bonus{border-top: 1px solid #f1f1f1;padding: .5rem 0rem;}
+.card_bonus .title,.card_Strategy .title{color: #333;line-height: 1;font-weight: 400;padding: .3rem 0;}
+.expect{display: flex;display: -webkit-flex;}
+.expect>div{flex: 1;}
+.expect_title{font-size: .75rem;color: #999999;line-height: 3;}
+.expect_num{font-weight: bold;}
+.card_Strategy{border-top: 1px solid #f1f1f1;padding-bottom: .75rem;padding-top: .5rem;}
+.strategy{font-size: .75rem;color: #999;}
+.img_bz{    width: 0.8rem;    height: 0.8rem;vertical-align: middle;}
+.card_bottom{background: rgb(235,235,235);padding: .3rem .75rem;    margin: 0!important;}
+.bottom_btn{
+	border: 0px;
+    font-size: 0.8rem;
+    background: linear-gradient(-70deg, rgb(248,161,32), rgb(255,202,69));
+    color: white;
+    letter-spacing: 1px;
+    padding: 7px 16px;
+    border-radius: 99px;
+    display: block;margin-top: .3rem;margin-bottom: .3rem;
+}
+.bottom_txt{color: #999;    word-break: break-all;line-height: 1.8;}
+
+.bottom_txt.red{color: red;}
+.org_title{color: rgb(248, 162, 35);font-size: 1.8rem;}
+.card_title_active{
+	color: #f8a120;
+	font-size:1.4rem!important;
+}

@@ -1,0 +1,92 @@
+html,
+body,
+.spread_container {
+	height: 100%;
+}
+
+.tc {
+	text-align: center;
+}
+
+
+/*主体*/
+
+.spread_nav {
+	height: 100%;
+	background-color: #eeeeee;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 6rem;
+}
+
+.spread_nav.qd_spread{
+	min-height: 100%;
+	padding: 50px 0;
+	height: auto;
+}
+
+.qd_img {
+	width: 60%;
+	max-width: 300px;
+	height: auto;
+}
+
+.spread_explain {
+	width: 80%;
+	max-width: 300px;
+	font-size: 1rem;
+	line-height: 1.8;
+	color: #333333;
+	margin-top: 2rem;
+}
+
+/*分享按钮*/
+.share_qd{
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 30px;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+  background: -webkit-linear-gradient(left, #ffcd48, #f8a120);
+  background: -o-linear-gradient(right, #ffcd48, #f8a120);
+  background: -moz-linear-gradient(right, #ffcd48, #f8a120);
+  background: linear-gradient(to right, #ffcd48, #f8a120);
+}
+
+
+/*绑定过其他黑卡经纪人*/
+
+.info_img {
+	width: 5rem;
+	height: auto;
+}
+
+.info_explain {
+	width: 80%;
+	max-width: 320px;
+	font-size: 1rem;
+	color: #b0b0b0;
+	line-height: 1.8;
+	margin-top: 2rem;
+}
+
+.info_explain.tc {
+	text-align: center;
+}
+
+/*加入黑卡按钮*/
+.join_black{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 25px;
+	font-size: 1rem;
+	background-color: #ee9c21;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin-top: 4rem;
+}

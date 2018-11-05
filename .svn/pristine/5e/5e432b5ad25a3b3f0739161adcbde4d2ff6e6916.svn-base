@@ -1,0 +1,229 @@
+html,body{
+	height: 100%;
+}
+
+body{
+	background-image: url(../static/img/bandit_bg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.container_nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow-y: auto;
+	padding: 0 1.18rem .83rem;
+}
+
+.container_nav .container_title{
+	text-align: center;
+	font-size: 0.40rem;
+	margin: .65rem auto;
+	color: #FFFFFF;
+	line-height: 1.8;
+}
+
+.phone_area{
+	width: 100%;
+}
+
+.phone_input{
+	margin-bottom: .31rem;
+}
+
+.phone_area .input{
+	width: 100%;
+    padding: .3rem 10px;
+	border-radius: 10px;
+	border: none;
+	font-size: 0.40rem;
+}
+input::-webkit-input-placeholder{
+    color: #cccccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #cccccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #cccccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #cccccc;
+}
+
+/*验证码*/
+.phone_area .identi_area{
+	display: flex;
+}
+
+.phone_area .identi_area .input{
+	width: 70%;
+	background-color: #FFFFFF;
+}
+
+.phone_area .identi_area .code_btn{
+	padding: .3rem 10px;
+	width: 30%;
+	font-size: 0.30rem;
+	border: none;
+	background-color: #f8a120;
+	color: #FFFFFF;
+	border-radius: 10px;
+	margin-left: .21rem;
+	text-align: center;
+}
+
+/*老虎机*/
+.bandit_nav{
+	
+}
+
+.bandit_area{
+	background-image: url(../static/img/bandit_img.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 8rem;
+	margin-top: .62rem;
+	position: relative;
+}
+
+.bandit_show{
+    width: 100%;
+    height: 2.00rem;
+    position: relative;
+    top: 1.90rem;
+    padding: 0 1.2rem;
+    overflow: hidden;
+}
+
+.bandit_show:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.bandit_show dd{
+	width: 32%;
+    height: 2.00rem;
+    background-color: #fff;
+    margin-left: 1.1%;
+    float: left;
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-image: url(../static/img/compoundPush-gb.png);
+    background-position-y: -.14rem;
+    background-size: 2.2rem 20.77rem;
+}
+
+.bandit_area .btn{
+	position: absolute;
+	width: 2.40rem;
+	height: 1.66rem;
+	bottom: 0;
+	left: 0;
+    background-image: url(../static/img/btn.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -1.20rem;
+    bottom: 1.67rem;
+    cursor: pointer;
+}
+
+.bandit_area .btn.active{
+	background-image: url(../static/img/btn_down.png);
+	height: 1.5rem;
+}
+
+.bandit_area .prompt{
+	position: absolute;
+	width: 2.90rem;
+	height: 1.8rem;
+	bottom: 0;
+	left: 0;
+    background-image: url(../static/img/bandit_prompt.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -1.55rem;
+    bottom: 0.2rem;
+}
+
+/*阴影*/
+.modle_bg{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.go_binding_modle {
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 0;
+    border-radius: 8px;
+    width: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1rem;
+    margin-left: -3.5rem;
+    z-index: 999;
+    text-align: center;
+    animation: showModle 1s;
+    -webkit-animation: showModle 1s;
+    opacity: 1;
+}
+.conImg{
+	margin-bottom: 0.35rem;
+}
+.conImg img{
+	width: 0.63rem;
+	cursor: pointer;
+}
+.content p{
+	font-size: 14px;
+}
+.content{
+	padding: 0.48rem 0.745rem 0.67rem 0.745rem;
+}
+.congratulation img{
+	width: 3.7rem;
+	margin-top: -1.8rem;
+}
+.modle_bg3 .go_binding_modle{
+	width: 8.5rem;
+	margin-left: -4.2rem;
+	margin-top: -3rem;
+}
+.title{
+	font-size: 18px!important;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 0.1rem;
+}
+.daKai_btn{
+	color: #fff;
+	padding: 0.26rem 1rem;
+	background: #f8a120;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.daKai_btn_con{
+	margin-top: 0.6rem;
+	line-height: 3;
+}
+.modle_bg{
+	display: none;
+}

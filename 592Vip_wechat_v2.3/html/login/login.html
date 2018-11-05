@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>扫码登录</title>
+		<style type="text/css">
+			/*all*/
+			.all_tracef,body{
+				background: #fff;
+			}
+			.all_login{
+				text-align: center;
+				font-size: 0.875rem;
+			}
+			/*img*/
+			.lo_img{
+				margin-top: 30%;
+			}
+			.lo_img img{
+				width: 38%;
+			}
+			/*font*/
+			.lo_font{
+				color: #333;
+				line-height: 3;
+				margin-top: 5.8%;
+			}
+			/*login*/
+			.login_font{
+				position: fixed;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 0;
+				text-align: center;
+			}
+			.login_font_first{
+				background: #3da0f1;
+				color: #fff;
+			}
+			.login_font>div{
+				height: 40px;
+				line-height: 40px;
+				margin: 0 auto;
+				margin-bottom: 15px;
+				border-radius: 20px;
+				width: 80%;
+			}
+			.tip{
+				color: #fc7875;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--all-->
+		<div class="mui-content all_login">
+			<!--img-->
+			<div class="lo_img"><img src="../../image/saoMa.png"/></div>
+			<!--font-->
+			<div class="lo_font">商户pc端登录</div>
+			<div class="tip">
+				
+			</div>
+			<!--login-->
+			<!--<div class="login_font">
+				<div class="login_font_first">
+					确认登录
+				</div>
+				<div class="login_font_second">
+					取消登录
+				</div>
+			</div>-->
+			<!--重新扫码登录-->
+			<div class="login_font">
+				<div class="login_font_first">
+					重新扫码
+				</div>
+				<div class="login_font_second">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		重新扫码
+		if(1){
+			$('.login_font_first').addClass('loginFail');
+			
+			if($('.login_font_first').hasClass('loginFail')){
+				$('.tip').html('登录确认已失效，请重新扫码');
+			}
+		}
+	</script>
+</html>

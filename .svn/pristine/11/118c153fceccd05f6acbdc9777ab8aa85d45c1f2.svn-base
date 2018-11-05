@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/jrcxzbhfh.css" rel="stylesheet" />
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="remind_all">
+				
+				<div class="remind_item remind_item1">
+					<div class="remind_item_time">
+						2018-04-22  08:00
+					</div>
+					<div class="remind_item_content">
+						您已被踢出分红体系并失去黑卡权益，点击复活
+					</div>
+					<div class="remind_item_icon">
+						<span class="remind_item_icon_icon">复活</span>
+					</div>
+					<div class="remind_img">
+						<img src="images/remind.png"/>
+					</div>
+				</div>
+				
+				<div class="remind_item">
+					<div class="remind_item_time">
+						2018-04-22  08:00
+					</div>
+					<div class="remind_item_content">
+						请尽快确认进入下一站（加油站）， 否则将被踢 出分红体系并失去黑卡权益
+					</div>
+					<div class="remind_img">
+						<img src="images/unremind.png"/>
+					</div>
+				</div>
+				
+				<div class="remind_item">
+					<div class="remind_item_time">
+						2018-04-22  23:00
+					</div>
+					<div class="remind_item_content">
+						进入加油站，将获得600黑钻及慈善基金善款
+					</div>
+					<div class="remind_img">
+						<img src="images/unremind.png"/>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+			
+</script>

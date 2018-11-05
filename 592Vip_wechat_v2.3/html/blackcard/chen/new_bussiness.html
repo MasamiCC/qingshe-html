@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新增签约商户</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!--引入css-->
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/new_bussiness.css" />
+	</head>
+	<body>
+		<div class="mui-content">
+			<!-- 标题 -->
+			<div class="content_title">
+				新增签约商户
+				<a class="contact">
+					联系客服
+				</a>
+			</div>
+			<!--新增商户提交表单-->
+			<form class="mui-input-group bussiness_form">
+				<!--第一步-->
+				<div class="step">
+					第一步：填写商户基本信息<span>（必填）</span>
+				</div>
+				
+				<div class="from_field">
+					<input type="text" class="field_import" placeholder="请输入商户名称"/>
+				</div>
+				<div class="from_field">
+					<div class="mui-navigate-right">
+					  <input type="text" readonly class="field_import" placeholder="选择商户所在地区" id="area" />
+					</div>
+				</div>
+				<div class="from_field">
+					<div class="mui-navigate-location">
+					  <input type="text" class="field_import" placeholder="商户详细地址"/>
+					</div>
+				</div>
+				<div class="from_field">
+					<input type="text" class="field_import" placeholder="请输入商户负责人姓名"/>
+				</div>
+				<div class="from_field">
+					<input type="number" class="field_import" placeholder="请输入联系方式"/>
+				</div>
+				
+				<!--第二步-->
+				<div class="step">
+					第二步：上传商户证件<span>（必填）</span>
+				</div>
+				<div class="upload_area">
+					<div class="no_pic">
+						<img src="img/upload.png"/>
+						<p>
+							点击上传营业执照正面
+						</p>
+					</div>
+					<input type="file" class="file_input" accept="image/*"/>
+				</div>
+				
+				<!--第三步-->
+				<div class="step">
+					第三步：上传商户环境照片
+				</div>
+				<div class="upload_group">
+					<div class="upload_area half">
+						<div class="no_pic">
+							<img src="img/upload.png"/>
+							<p>
+								点击上传环境照1
+							</p>
+						</div>
+						<input type="file" class="file_input" accept="image/*"/>
+					</div>
+					
+					<div class="upload_area half">
+						<div class="no_pic">
+							<img src="img/upload.png"/>
+							<p>
+								点击上传环境照2
+							</p>
+						</div>
+						<input type="file" class="file_input" accept="image/*"/>
+					</div>
+				</div>
+				
+				<!--第四步-->
+				<div class="step">
+					第四步：上传商户门头照
+				</div>
+				<div class="upload_area">
+					<div class="no_pic">
+						<img src="img/upload.png"/>
+						<p>
+							点击上传商户门头照
+						</p>
+					</div>
+					<input type="file" class="file_input" accept="image/*"/>
+				</div>
+				
+				<div class="btn_area">
+					<input type="submit" class="btn" value="提交审核"/>
+				</div>
+				
+			</form>
+		</div>
+		
+	</body>
+	<!--引入js-->
+	<script src="../../../../592Vip_V2.1/js/jquery-1.10.1.min.js"></script>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="js/mui.citys.picker.js"></script>
+	<script src="js/mui.citys.poppicker.js"></script>
+	<script src="js/work.js"></script>
+	<script src="js/new_bussiness.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</html>

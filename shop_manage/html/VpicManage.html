@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<style type="text/css">
+			/*选择图片框样式*/
+#content{
+	margin: 60px auto auto 200px;
+	max-width: 1200px;
+	
+}
+#div_imgfile {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    cursor: pointer;
+}
+    /*选择图片框鼠标移入移出效果*/
+    #div_imgfile:hover {
+        background-color: #d1cfcf;
+    }
+.imgfile {
+    display: none;
+}
+
+/*这里是图片预览容器样式*/
+#div_imglook {
+    margin-top: 20px;
+}
+
+/*单个图片预览模块样式*/
+.lookimg {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+    .lookimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+/*删除按钮样式*/
+.lookimg_delBtn {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #808080;
+    opacity: 0.8;
+    color: white;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    display: none;
+    cursor: pointer;
+}
+
+    /*删除按钮移入移出效果*/
+    .lookimg_delBtn:hover {
+        opacity: 1;
+    }
+
+/*上传进度条样式*/
+.lookimg_progress {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+    .lookimg_progress div {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: #e9cc2e;
+    }
+
+
+/*确定上传按钮样式*/
+#btn_ImgUpStart {
+    width: 130px;
+    height: 35px;
+    margin-top: 30px;
+    border: 0px;
+    border-radius:5px ;
+	color: white;
+	background: black;
+	font-size: 14px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+						</div>
+						<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心</i> 
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+						<!--正文-->
+					<div class="titleMes" style="font-weight: 600;margin-left: 165px;margin-top:83px;"><i>个人中心</i>><i>图片管理</i></div>
+					
+						<div class="left" id="content">
+							<!--图片选择对话框-->
+							<div style="height: 30px;line-height: 30px;margin-bottom: 10px;">注意：最多选择5张图片</div>
+							
+						    <div class="left" id="div_imgfile">选择图片</div>
+						    <!--图片预览容器-->
+						    <div class="left" id="div_imglook">
+						    	<div class="lookimg" num="0">
+						    		<img src="../../592Vip/img/78dian.png"/>
+						    		<div class="lookimg_delBtn" style="display: none;">移除</div>
+						    		<div class="lookimg_progress">
+						    			<div></div>
+						    		</div>
+						    	</div>
+						    	<div class="lookimg" num="1">
+						    		<img src="../../592Vip/img/78dian.png"/>
+						    		<div class="lookimg_delBtn" style="display: none;">移除</div>
+						    		<div class="lookimg_progress">
+						    			<div></div>
+						    		</div>
+						    	</div>
+						    	<div class="lookimg" num="2">
+						    		<img src="../../592Vip/img/78dian.png"/>
+						    		<div class="lookimg_delBtn" style="display: none;">移除</div>
+						    		<div class="lookimg_progress">
+						    			<div></div>
+						    		</div>
+						    	</div>
+						    	<div class="lookimg" num="3">
+						    		<img src="../../592Vip/img/78dian.png"/>
+						    		<div class="lookimg_delBtn" style="display: none;">移除</div>
+						    		<div class="lookimg_progress">
+						    			<div></div>
+						    		</div>
+						    	</div>
+						    	<div class="lookimg" num="4">
+						    		<img src="../../592Vip/img/78dian.png"/>
+						    		<div class="lookimg_delBtn" style="display: none;">移除</div>
+						    		<div class="lookimg_progress">
+						    			<div></div>
+						    		</div>
+						    	</div>
+						        <div style="clear: both;" id="clear"></div>
+						    </div>
+						    <!--确定上传按钮-->
+						    <!--<input type="button" value="确定上传" id="btn_ImgUpStart" />-->
+					    </div>
+							
+		
+						<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+			</div>
+	     </div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/picManage.js"></script>
+</html>
+

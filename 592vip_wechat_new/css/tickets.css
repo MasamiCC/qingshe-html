@@ -1,0 +1,165 @@
+#ticket_type{
+	width: 100%;
+}
+#ticket_type .ticket_type{
+	padding: 0!important;
+	width: 33%!important;
+	border-bottom: 2px solid #fff;
+    color: #999;
+    line-height: 39px;
+}
+#ticket_type .ticket_type.mui-active{
+	color: #333;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+}
+#sliderSegmentedControl{
+	height: 40px;
+}
+.ticket_item {
+	display: flex;
+}
+.ticket_left{
+	flex: 1;max-width: 100px;
+}
+.ticket_msg{
+	flex: 2;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	padding-right: 10px;
+	background: #fff;
+	border-left: none;
+}
+.ticket_beizhu{
+	background: #fff;color: #79878f;font-size: 0.8rem;
+	line-height: 30px;
+	padding: 3px 0;
+	text-indent: 15px;
+	display: none;
+}
+.ticket_pingtai .use_btn{
+	border:1px solid #628fb1;
+	color: #628fb1;
+}
+.ticket_dianpu .use_btn{
+	border:1px solid #f9bd83;
+	color: #f9bd83;
+}
+.ticket_left{
+	color: #fff;text-align: center;
+	font-size: 1.5rem;
+	max-height: 100px;
+	height: 100px;line-height: 100px;
+}
+.ticket_left p{
+	line-height: 0;color: #fff;margin-top: -25px;
+}
+.ticket_pingtai .ticket_left{
+	background-color: #628fb1
+}
+.ticket_dianpu .ticket_left{
+	background-color: #f9bd83;
+}
+.ticket_s_type{
+	color: #fff;
+    display: inline-block;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin:0 5px 0 0;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.ticket_pingtai .ticket_s_type{
+	background:#628fb1 ;
+}
+.ticket_dianpu .ticket_s_type{
+	background:#f9bd83 ;
+}
+.ticket_used .ticket_left,.ticket_passed .ticket_left{
+	background: #ccc;
+}
+.ticket_used .ticket_s_type,.ticket_passed .ticket_s_type{
+	background: #ccc;
+}
+.use_btn{
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0px 10px;
+    line-height: 20px;
+    margin-top: 3px;
+}
+.ticket_used .ticket_msg{
+	/*background-image: url(../image/used.png);*/
+	background-repeat:no-repeat ;
+	background-position:95%  3px;
+	background-size: 65px;
+}
+.ticket_passed .ticket_msg{
+	/*background-image: url(../image/passed.png);*/
+	background-repeat:no-repeat ;
+	background-position:95%  3px;
+	background-size: 65px;
+}
+.ticket_time{
+	border-bottom: 1px dashed #b3c2ca;height: 25px;
+	color: #79878f;
+	vertical-align: middle;
+	line-height: 25px;
+	font-size: 12px;
+}
+.ticket_title{
+	font-size: 0.87rem;
+	vertical-align: middle;
+	min-height: 35px;
+	padding-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 20px;
+    height: 43px;
+    color: #404d57;
+}
+.ticket_ms{
+    height: 25px;
+    line-height: 25px;
+    font-size: 0.75rem;
+    color: #79878f;
+    padding-top: 2px;
+}
+.ticket_ms i{
+	color: #fff;
+	background: #ccc;
+	border-radius: 20px;
+	font-size: 15px;
+	margin-right: 5px;
+	margin-top: 0;
+	margin-left: 5px;
+	vertical-align: middle;
+	line-height: 16px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	
+}
+.ticket_dianpu .ticket_ms i{
+	background: #f9bd83;
+}
+.ticket_pingtai .ticket_ms i{
+	background: #628fb1;
+}	
+.mui-table-view{
+	background: none;margin-top: 5px;
+}
+.mui-table-view-cell{
+	background: none;padding: 5px 15px 5px 15px;
+}
+.mui-table-view-cell:after{
+	height: 0;
+}
+i.mui-pull-right{
+	margin-top: 5px;
+}

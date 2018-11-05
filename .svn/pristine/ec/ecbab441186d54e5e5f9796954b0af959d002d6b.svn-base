@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				background: #fff;
+			}
+			header.mui-bar{
+				background: #fff;
+			}
+			.mui-bar .mui-title{
+				color: #d4ac57;
+			}
+			header .mui-icon-left-nav{
+				color: #999;
+			}
+			.mui-content{
+				background: #fff;
+				padding:  1rem;
+				margin-top: 0;
+			}
+			h2{
+				font-size: 1rem;text-align: center;line-height: 1.5;
+			}
+			h4{
+				font-size: 0.875rem;text-align: center;
+			}
+			p{
+				color: #333;font-size: 0.75rem;text-indent: 1.5rem;
+			}
+			p.no_indent{
+				text-indent: 0;
+			}
+			strong{
+				margin-right:5px ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">帮助中心</h1>
+		</header>-->
+		<div class="mui-content">
+		    <h2 style="text-align: center;"> 爱心银行贡献值获取方式及兑换孵化</h2>
+			<p>
+			    交易功能开放后，商家在平台每成功成交一笔交易，商家便会获得由平台自动按照交易比例补贴的相应善款进入商家的爱心银行专户，商家在平台交易量越多，则补贴也会越多。平台按照单笔交易额度最低补贴单笔善款不低于一元钱，进入专户的善款不可以取出，而是直接通过平台系统转账进入轻奢点评慈善基金全国统一爱心账号（为红十字会账户并由其全程监管），用于因病因灾致贫的健康扶贫救助项目。商家爱心银行贡献值将不会随之减少或清除，而是不断累加，存储于商家爱心银行专户内，可以即时查看并按照贡献值大小作为平台对商家的授信条件之一兑换如下免费或优惠的平台各类相应孵化服务（具体孵化项目及标准见本手册第十一条款）：
+			</p>
+			<p>
+			    1、按照等级获取平台对应额度的金融孵化扶持
+			</p>
+			<p>
+			    2、免费邀请参加线下592vip轻奢沙龙对应等级的会员制社交活动
+			</p>
+			<p>
+			    3、免注册费参与线上对应等级的VIP会员制懒书社交交流活动
+			</p>
+			<p>
+			    4、免费或优惠获得《奢探栏目》在线直播互动推广宣传
+			</p>
+			<p>
+			    5、免费或优惠获得轻奢点评媒体平台软文推广
+			</p>
+			<p>
+			    6、免费或优惠获得商家微视节目制作并推广（腾讯、爱奇艺、优酷、轻奢点评服务号、商家平台店铺等）
+			</p>
+			<p>
+			    7、免费或优惠获得平台广告位展示（轻奢点评app广告位、轻奢点评服务号广告位、轻奢资讯订阅号广告位、轻奢点评官网广告位、实体592VIP轻奢社交沙龙广告位、轻奢点评慈善基金服务号、官网等）
+			</p>
+			<p>
+			    8、免费获得参与轻奢点评慈善基金的线下各类公益活动并推广
+			</p>
+			<p>
+			    9、邀请参与每年一度的轻奢点评慈善盛典大型公益传播活动
+			</p>
+			<p>
+			    10、获得由红十字会、轻奢点评慈善基金联合颁发的慈善商家、慈善达人等荣誉称号并宣传
+			</p>
+			<p>
+			    11、点评优先、点评过滤服务功能
+			</p>
+			<p>
+			    12、协助舆情公关、高层公关
+			</p>
+			<p>
+			    13、成为 592 线下主题沙龙举办合作商
+			</p>
+			<p>
+			    14、同类别产品置顶展示交易
+			</p>
+			<p>
+			    15、特定会员产品推送服务
+			</p>
+			<p>
+			    16、在线经营技巧培训
+			</p>
+			<p>
+			    17、商家大数据经营年度诊断报告
+			</p>
+			<p>
+			    18、商家个性化定制服务
+			</p>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>

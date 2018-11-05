@@ -1,0 +1,157 @@
+/*个人中心正文中间部分*/
+#main2{
+	position: relative;
+}
+.fa{
+	font-size: 14px!important;
+}
+
+#s3{
+	display: none;
+}
+.inputs{
+	line-height: 30px;
+	height: 30px;
+	border: 1px solid #DDDDDD;
+	width: 300px;
+	text-indent: 5px;
+}
+.inputs2{
+	margin-top: 25px;
+	margin-bottom: 22px;
+}
+.btns{
+	width: 120px;
+	height: 30px;
+	border: 0px;
+}
+.btnb{
+	width: 160px;
+	height: 40px;
+	border: 0px;
+}
+.botm{
+	margin-top: 85px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.btnleft{
+	margin-right: 205px;
+}
+.inline{
+	display: inline-block;
+}
+
+
+
+/*
+ * 10.11修改
+ */
+*{
+	box-sizing: border-box;
+}
+
+p{
+	margin: 0 0 0 0;
+}
+
+.container_nav{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+			
+/*基本信息*/
+.info_nav{
+	background-color: #fff;
+	padding: 25px 30px;
+    overflow: hidden;
+}
+
+.info_nav:first-child{
+	margin-bottom: 25px;
+}
+
+.info_nav .img_info{
+	float: left;
+	width: 160px;
+	height: 160px;
+	margin-right: 50px;
+}
+
+
+.info_nav .img_info img{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.info_nav .person_info{
+	min-width: 400px;
+	float: left; 
+}
+
+.info_nav .info_complet{
+	width: 100%;
+	line-height: 40px;
+	margin-bottom: 5px;
+}
+
+.info_complet .info_complet_icon {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/lay_index.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    top: 6px;
+    margin-right: 15px;
+}
+
+.info_complet .info_complet_icon.icon_1 {
+    background-position: 0 -90px;
+}
+
+.info_complet .info_complet_icon.icon_2 {
+    background-position: -371px -91px;
+}
+
+.info_complet .info_complet_icon.icon_3 {
+    background-position: -164px -90px;
+}
+
+
+.info_complet .info {
+    color: #333333;
+    font-size: 18px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.info_nav .qd_info{
+	float: right;
+}
+
+.info_nav .qd_info img{
+	width: 150px;
+	height: 150px;
+}
+
+.toptitle{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom:30px;
+}
+.idImg>div{
+	display: inline-block;
+	width: 310px;
+	font-size: 16px;
+	margin:20px 100px 0 0;
+}
+.idImg>div>img{
+	width: 300px;
+	height: 190px;
+	margin-top: 20px;
+}

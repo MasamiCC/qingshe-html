@@ -1,0 +1,239 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.mui-content,body{
+	background: #F4F4F4;
+}
+.guide_top{
+	background: url(../images/blackcardbg.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    padding: 20px 0 23% 0;
+}
+.guide_top_title{
+	font-size: 1.125rem;
+	margin-bottom: 18px;
+}
+.guide_top_time{
+	font-size: 0.875rem;
+	height: 30px;
+}
+.guide_top div{
+	line-height: 2;
+}
+
+.gonglue_item{
+    margin: 0 15px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    /* top: -65px; */
+    box-shadow: 1px 3px 3px #efefef;
+}
+.margintop15{
+	margin-top: 15px;
+}
+.margintop60{
+	margin-top: -60px;
+}
+.gonglue_item_title img{
+	/*width: 80px;*/
+	height: 31px;
+    position: absolute;
+    left: -5px;
+    top: 19px;
+}
+.gonglue_item_title{
+	height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 3.5;
+    /* text-indent: 50px; */
+    
+}
+.small_font{
+    			margin-right: 31px;
+			}
+.gl_icon{
+	position: absolute;
+    left: -5px;
+    top: 18px;
+    font-size: 1rem;
+    color: #fff;
+    background: url(../images/gonglue_icon.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 2px 18px 5px 18px;
+    line-height: 1.4;
+}
+.gonglue_item_middle{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-top: 15px;
+}
+.item_content{
+	flex: 2.6;
+    color: #333;
+    font-size: 0.875rem;
+    border-right: 1px solid #eee;
+    min-height: 50px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-right: 8px;
+    /*padding: 10px 8px;*/
+}
+.login_font{
+	font-size: 0.75rem;
+}
+.item_icon_flex4{
+	flex: 1.6!important;
+}
+.know_icon{
+	display: inline-block;
+	/*width: 100%;*/
+	background: -moz-linear-gradient(top, #f8a120, #ffda2f);
+	background: -o-linear-gradient(top,#f8a120, #ffda2f);
+	background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#f8a120), to(#ffda2f));
+	padding: 3px 14px;
+}
+.login_icon img{
+	width: 34px;
+}
+.login{
+	flex:1 ;
+}
+.item_icon{
+	flex:1.4;
+}
+.know_icon{
+	font-size: 0.8125rem;
+	color: #fff;	
+	border-radius: 15px;
+}
+/*bar*/
+.etr_item_banner_middle{
+	position: relative;
+	width: 95%;
+	margin: 10px auto;
+	text-align:center;
+	height: 10px;
+}
+.bar_left{
+	position: absolute;
+	width: 0;
+	height: 8px;
+	background: #f8a120;
+	border-radius: 5px;
+	/*border-bottom-right-radius: 0;
+	border-top-right-radius: 0;*/
+	left: 0;
+	transition: width 2s;
+	-moz-transition: width 2s;	/* Firefox 4 */
+	-webkit-transition: width 2s;	/* Safari 和 Chrome */
+	-o-transition: width 2s;
+	z-index: 2;
+}
+.bar_right{
+	position: absolute;
+	width: 100%;
+	height: 8px;
+	background: #eee;
+	border-radius: 5px;
+}
+/*bar*/
+.gonglue_item_bottom{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+.gonglue_item_bottom>div{
+	/*display: inline-block;*/
+}
+.gonglue_item_bottom_left,.gonglue_item_bottom_right{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.gonglue_item_bottom_right{
+	font-size: 0.75rem;
+	display: flex;
+	flex-wrap: nowrap ;
+}
+.gonglue_item_bottom_left{
+	width: 35%;
+	margin-right: 12px;
+}
+
+.tip_icon img{
+	width: 10px;
+}
+.tip_font{
+	font-size: 0.75rem;
+}
+.small_font{
+	display: flex;
+	/*text-align: center;
+	justify-content: center;*/
+	margin-top: 10px;
+	margin-left: 35px;
+}
+.tip_icon img{
+	width: 12px;
+	margin-right: 10px;
+}
+.paddingbottom10{
+	padding-bottom: 10px;
+}
+/*2*/
+.gonglue_font{
+	font-size: 0.875rem;
+	color: #666;
+	margin-left: 30%;
+}
+.paddingbottom12{
+	padding-bottom: 12px;
+}
+/*4*/
+.guide_icons{
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.guide_icons_item{
+	/*flex: 1;*/
+	width: 20%;
+}
+.guide_icons_item_img img{
+	width: 36px;
+}
+.guide_icons_item_font{
+	font-size: 0.8125rem;
+}
+/*4*/
+/*title*/
+/*.guide_title{
+	font-size: 1.125rem;
+	color: #f8d26c;
+	padding-top: 25px;
+	padding-bottom: 3px;
+}*/
+
+.guide_title{
+	font-size: 1.125rem;
+	color: #f8d26c;
+	line-height: 44px!important;
+	height: 44px;
+	text-align: center;
+}

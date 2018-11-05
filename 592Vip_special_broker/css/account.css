@@ -1,0 +1,203 @@
+.lay_body{
+    background-color:  #f4f4f4;
+    padding: 25px 30px;
+}
+.accout_nav{
+    width: 100%;
+    min-width: 1280px;
+    height: 80px;
+    line-height: 80px;
+    background-color: white;
+    position: relative;
+    padding: 0 70px  0 0px;
+}
+.nav_left{
+    height: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #333333;
+    color: white;
+    display: inline-block;
+    padding-right: 40px;
+    font-size: 18px;
+}
+.nav_right{
+    position: absolute;
+    top:50%;
+    height: 80px;
+    margin-top: -40px;   
+    right: 70px; 
+}
+.nav_left>img{
+    width: 32px;
+    height: 32px;
+    margin-right: 27px;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+}
+.accout_num{
+    font-size: 18px;
+    margin-left: 65px;
+}
+.nav_right>button{
+    border: 0;
+    height: 40px;
+    background-color:  #000000;
+    color:  #cccccc;
+    border-radius: 4px;
+    padding: 0px 27px;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.searchBox{
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+    padding: 0 20px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+#itemlist{
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+    font-size: 14px;
+    padding:0 100px 0 15px;
+}
+.nav_right>span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+.account_list{
+    width: 1620px;
+}
+.account_list>li{
+    width: 240px;
+	height: 280px;
+	background-color: #ffffff;
+    border-radius: 10px;
+    margin: 25px 13px 0 13px;
+    display:inline-block;
+    overflow: hidden;
+    text-align: center;
+    padding: 42px 40px;
+    position: relative;
+    cursor:pointer;
+}
+
+.account_list>li:hover{
+    box-shadow: 0px 6px 10px 0px 
+		rgba(0, 0, 0, 0.1);
+
+}
+.account_list>li:hover .account_menu
+,.account_list>li:hover .loacl_header
+,.account_list>li:hover{
+    -webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+}
+.account_menu
+,.loacl_header
+,.account_list>li{
+    -webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+}
+.account_list>li>img{
+    border-radius:100%;
+    width: 100px;
+    height: 100px;
+}
+.account_name{
+    font-size: 24px;
+    margin-top: 20px;
+    /*border-bottom: 1px solid #eeeeee;*/
+    width: 100%;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+
+}
+.account_address{
+	color: #666;
+	font-size: 16px;
+	line-height: 2.6;
+}
+.account_phone{
+    color: #999999;
+    font-size: 16px;
+}
+.account_menu{
+    width: 100%;
+	height: 160px;
+    position: absolute;
+    background-color: #333333;
+    bottom: -160px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    color: #dfbd76;
+    padding: 22px 30px;
+}
+.account_menu>p{
+    display: flex;
+    align-items:Center;
+    justify-content:center;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    cursor:pointer;
+}
+.account_list>li:hover .account_menu{
+    -webkit-transition: .8s 0s all;
+	-o-transition: .8s 0s all;
+	-moz-transition: .8s 0s all;
+	-ms-transition: .8s 0s all;
+	transition: .8s 0s all;
+    position: absolute;
+    bottom: 0;
+}
+.account_list>li:hover .account_list_img{
+    width: 85px;
+    height: 85px;
+}
+.account_list>li:hover .loacl_header{
+    width: 80px;
+    height: 80px;
+
+}
+.border{
+    border-bottom: 1px solid  #554930;
+}
+.account_menu>p>img{
+    margin-right: 10px;
+  
+}
+
+/*分页*/
+.pagenation{
+	text-align: center;
+	margin-top: 40px;
+}
+.pagenation li{
+	display: inline-block;
+	padding: 8px 13px;
+	background: #fff;
+	border: 1px solid #777;
+	margin-right: 10px;
+}
+.pagenation li:last-child{
+	margin-right: 0px;
+}
+.pagenationactive{
+	background: #333!important;
+	color: #fff;
+}

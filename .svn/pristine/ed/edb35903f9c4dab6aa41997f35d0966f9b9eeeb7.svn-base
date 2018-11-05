@@ -1,0 +1,169 @@
+*{
+	margin: 0;padding: 0;list-style: none;outline: none;
+}
+body{
+	font-size: 14px;
+}
+.bg{
+	background-image: url(../img/login_new_bg.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: auto;
+	text-align: center;
+}
+.login{
+	width: 500px;
+	margin: 12% auto;
+	margin-bottom: 0;
+}
+.login a{
+	color: #e7b64c;text-decoration: none;
+}
+.login a:hover{
+	color: #e7b64c;text-decoration: none;
+}
+.login_con{
+	margin: 50px auto;background: rgba(101,72,36,0.2);
+	border-radius: 5px;
+	border: 1px solid #d1a651;
+	padding-top: 10px;
+}
+.login_btn{
+	display: inline-block;
+    background: #f8a120;
+    padding: 10px 0;
+    width: 81%;
+    border-radius: 5px;
+    margin: 3px 0;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.login_form li{
+	margin: 28px auto 0 auto;
+	text-align: center;
+}
+.login_btn_li{
+	text-align: center!important;
+	margin-bottom: 0;
+	margin-top: 40px!important;
+	width: 87%;
+}
+label{
+	width: 90px;
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+input{
+	width: 260px;
+	border: none ;
+	height: 40px;
+	border-radius: 3px;
+	text-indent: 10px;
+	background: rgba(255,255,255,0.3);
+	color: #765a37;
+	vertical-align: middle;
+}
+.login_cont{
+	border-bottom: 1px solid #ceb99b;width: 93%;margin: 0 auto;
+	border-color: rgba(255,255,255,.3);
+	font-size: 18px;
+}
+.login_cont span{
+	display: inline-block;
+	padding: 15px 0;
+	border-bottom: 2px solid ;
+	border-color: rgba(255,255,255,0);
+	color: #f4f4f4;
+	margin: 0 15px;
+}
+.login_cont span.active{
+	border-color: #f8a120;
+	color: #f8a120;
+}
+.login_form{
+	display: none;
+	padding: 10px 0;
+}
+.remember{
+	position: relative;
+	/*vertical-align: middle;*/
+	text-align: left!important;
+	margin: 0 75px!important;
+	margin-top: 15px!important;
+}
+.remember label{
+	position: relative;
+	/*vertical-align: sub;*/
+	text-indent: 10px;
+	/*width: 100px;*/
+}
+.remember input{
+	/*position: absolute;
+	left: 0;
+	vertical-align: bottom;
+	margin-left: 10px;
+	z-index: 999;*/
+	width: initial;
+	height: 20px;
+}
+.code{
+	background: rgba(255,255,255,.3);
+	color: #f8a120;
+	display: inline-block;
+	line-height: 40px;
+	/*padding: 0 15px;*/
+	border-radius: 3px;
+	font-size: 16px;
+	margin-left: 10px;
+	cursor: pointer;
+	vertical-align: middle;
+	width: 110px;
+}
+/*boss*/
+.zhangHao,.wangJi{
+	color: #fff;
+	margin-right: 75px!important;
+}
+.wangJi{
+		text-align: right!important;
+		margin-top: 20px!important;
+}
+.bossForm2{
+	display: none;
+}
+.remember div{
+	display: inline-block;
+	width: 50%;
+}
+.remember div:last-child{
+	position: absolute;
+    text-align: right;
+    line-height: 21px;
+    color: #fff;
+}
+/*ma*/
+.login_form_Ma{
+	margin: 40px 0 33px 0;
+}
+.use_font{
+	color: #fff;
+	font-size: 16px;
+	padding: 0px 0 50px 0;
+}
+.zhangHao:hover,.tel:hover{
+	cursor: pointer;
+}
+.zhangHaocon{
+	text-align: right!important;
+	margin-top: 20px!important;
+}
+
+

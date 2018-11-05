@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻松了解轻奢点评精准宣传推广活动即区块链红利释放攻略及注意要点</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.ptjz_con img{
+				max-width: 100%;
+			}
+			.ptjz_con{
+				text-align: center;
+				line-height: 0;
+				font-size: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ptjz_con">
+			<!--<img src="../../image/HLSFYD.jpg"/>-->
+			<img src="../image/HLSFYD.jpg"/>
+		</div>
+	</body>
+</html>

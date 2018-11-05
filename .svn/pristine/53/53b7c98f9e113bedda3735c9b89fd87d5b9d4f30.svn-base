@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/allTypes.css"/>
+		<title>全部分类</title>
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<body>
+		<div class="mui-content all_types">
+			<!--<div class="all_types_header ">
+				<div class="">
+			    	<div class="mui-input-row mui-search search_icon">
+					    <input type="search" class="seach" placeholder="请输入关键字" id="hearder_search">
+					</div>
+				</div>
+			</div>-->
+			<div class="alltypes_icon">
+				<!--美食-->
+				<div class="alltypes_icon_item">
+					<div class="alltypes_icon_title">
+						<div class="alltypes_icon_img"><img src="../img/meiShi.png"/></div>
+						<div class="alltypes_icon_font">美食</div>
+					</div>
+					<div class="alltypes_icon_flex">
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								其他产品服务定制
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div><div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						</div>
+					</div>
+					<!--美食-->
+					<!--娱乐-->
+					<div class="alltypes_icon_item">
+					<div class="alltypes_icon_title">
+						<div class="alltypes_icon_img"><img src="../img/yuLe.png"/></div>
+						<div class="alltypes_icon_font">娱乐</div>
+					</div>
+					<div class="alltypes_icon_flex">
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								台湾/客家菜
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div><div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						<div class="alltypes_icon_flex_item">
+							<div class="alltypes_icon_flex_item_con">
+								全部
+							</div>
+						</div>
+						</div>
+					</div>
+					<!--娱乐-->
+					<!--酒店-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/jiuDian.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--酒店-->
+					<!--旅游-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/lvYou.png"/></div>
+							<div class="alltypes_icon_font">旅游</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--旅游-->
+					<!--健身-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/jianShen.png"/></div>
+							<div class="alltypes_icon_font">健身</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--健身-->
+					<!--丽人-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/liRen.png"/></div>
+							<div class="alltypes_icon_font">丽人</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--丽人-->
+					<!--健康管理-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/jianKangGuanLi.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									精神卫生机构
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--健康管理-->
+					<!--汽车服务-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/qiCheFuWu.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--汽车服务-->
+					<!--轻奢品-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/qingShePin.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--轻奢品-->
+					<!--宴会-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/yanHui.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--宴会-->
+					<!--宠物-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/chongWu.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--宠物-->
+					<!--学习培训-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/xueXiPeiXun.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--学习培训-->
+					<!--母婴亲子-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/MuYingQinZi.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--母婴亲子-->
+					<!--摄影写真-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/sheYingXieZhen.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--摄影写真-->
+					<!--结婚-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/jieHun.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--结婚-->
+					<!--家装-->
+					<div class="alltypes_icon_item">
+						<div class="alltypes_icon_title">
+							<div class="alltypes_icon_img"><img src="../img/jiaZhuang.png"/></div>
+							<div class="alltypes_icon_font">酒店</div>
+						</div>
+						<div class="alltypes_icon_flex">
+							<div class="alltypes_icon_flex_item">
+								<div class="alltypes_icon_flex_item_con">
+									台湾/客家菜
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--家装-->
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--<script src="../../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#hearder_search').focus(function(){
+				callNative(fname,weChatUrl,data);  //调原生的search商家页面
+			})
+		});
+		
+	</script>-->
+</html>

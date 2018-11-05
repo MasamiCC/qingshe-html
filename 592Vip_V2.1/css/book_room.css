@@ -1,0 +1,91 @@
+.book_room{
+	padding: 30px 20px;
+}
+.book_room_con{
+line-height: 0;
+font-size: 0;
+}
+.book_room_con>div{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+.choose_time{
+	color: #333;
+	font-weight: bold;
+}
+.book_room_con>div:first-child{
+	width: 13.5%;
+}
+/*.begin_time,.end_time{
+	width:30% ;
+}*/
+/*.hotel_search_btn span{
+	padding: 13px 64px;
+	background: #edb94a;
+	float: right;
+	color: #fff;
+}*/
+.hotel_search_btn{
+	width: 23%;
+}
+.hotel_search{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #ccc;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: top;
+	padding: 0 10px;
+	margin: 0 10px;
+	
+}
+.hotel_search label{
+	color: #999;font-weight: normal;text-indent: 10px;
+}
+.hotel_search input{
+	border: none;
+	line-height: 38px;
+	height: 36px;
+	text-indent: 25px;
+	width: 200px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    margin-right: 5px;
+    color: #333;
+    font-weight: 700;
+    font-size: 13px;
+}
+.hotel_search i{
+	margin-right: 5px;color: #edb94a;
+}
+.hotel_search_btn{
+	border: 1px solid  #edb94a;
+	background: #edb94a;color: #fff;
+	/*padding: 0 20px;*/
+	cursor: pointer;
+	float: right;
+	    text-align: center;
+    height: 40px;
+    line-height: 40px!important;
+}
+.time{
+	width: 130px!important;
+}
+/*liveday*/
+.ruzhutianshu div{
+	display: inline-block;
+}
+.ruzhutianshu{
+    padding: 0 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.days{
+	float: right;
+}
+#shopping_goods{
+	padding: 0 0 0 13px;
+}

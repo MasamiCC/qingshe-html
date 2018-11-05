@@ -1,0 +1,132 @@
+	body{background: #fff;}
+			.hm_header,.hm_main_main,.hm_main_main_con{
+				font-size: 0;line-height: 0;
+			}
+			.hm_header img{max-width: 100%;}
+			.hm_header_fonts{
+				text-align: center;
+				font-size: 0.9375rem;
+				color: #333;
+				line-height: 3;
+				border-bottom: 1px solid #eee;
+				font-weight: bold;
+			}
+			.hm_main{
+				text-align: center;
+			}
+			.hm_main_main{
+				padding: 20px;
+			}
+			.helpme_nav{
+				text-align: center;
+				line-height: 2.3;
+			}
+			.hm_main_bottom{
+				width: 100%;
+				background: #f4f4f4;
+				position: fixed;
+				bottom:41px;
+				left: 0;
+				text-align: left;padding-left: 15px;
+				font-size: 0.8125rem;
+				line-height: 3;
+			}
+			.mui-bar-tab{
+				height: 40px;
+			}
+			.hm_main_bottom_con>div,.hm_main_main>div,.hm_main_main_con>div{
+				display: inline-block;    vertical-align: middle;
+			}
+			.hm_main_main_left{
+				width: 20%;
+				text-align: left;
+			}
+			.hm_main_main_right{
+				width: 80%;
+				/*width: 100%;*/
+				vertical-align: top;
+			}
+			.hm_main_main_left img{
+				max-width: 65%;
+			}
+			.hm_main_bottom_con_blue{
+				color: #51c9f0;padding-left: 10px;
+			}
+			.mui-bar{
+				background: #51c9f0;
+			}
+			.helpme_nav{
+				color: #fff;
+			}
+			.hm_main_main_con{
+				background: url(../image/dalogbg.png) no-repeat;
+				background-size: 100% 100%;
+				/*display: flex;*/
+				font-size:0.875rem ;
+				padding: 10px 0;
+				margin-bottom: 15%;
+			}
+			.hm_main_main_con:last-child{
+				margin-bottom: 0;
+			}
+			.hm_main_main_con_left{
+				width: 23.5%;
+				vertical-align: middle;
+				/*text-align: center;*/
+			}
+			.hm_main_main_con_left img{
+				max-width: 40%;
+			}
+			.hm_main_main_con_right{
+				width: 74.5%;
+				vertical-align: middle;
+				line-height: 1.8;
+				text-align: left;
+			}
+			.hm_main_main_right{
+				position: relative;
+			}
+			.hm_main_main_left_position{
+				position: absolute;
+				left: -65px;
+				top: 0;
+				width: 19.5%;
+			}
+			.hm_main_main_left_position img{
+				width: 100%;
+			}
+			.skyblue{
+				color: #1f5cc1;
+			}
+			.hm_main_bottom_con_blue a{
+				text-decoration:none ;
+				color:#51c9f0 ;
+			}
+			.waterblue{
+				color:#06a8dc ;
+			}
+			.waterred{
+				color:#f25d5d ;
+			}
+			/*.floatleft{
+				float: left;
+			}*/
+			input[type="checkbox"]{
+				
+			}
+			.agree{background-image: url(../image/sel_bg_02.png);
+				background-repeat: no-repeat;
+				background-position: left;
+				height: 30px;overflow: hidden;
+				text-indent: 25px;
+				line-height: 30px;
+				background-size: 18px;
+			}
+			.agree_read{background-position: left;background-image: url(../image/sel_bg_01.png);}
+			.help_me_mian{
+				line-height: 0;
+				padding-top: 14%;
+			}
+			.help_me_mian div img{
+				width: 100%;
+			}

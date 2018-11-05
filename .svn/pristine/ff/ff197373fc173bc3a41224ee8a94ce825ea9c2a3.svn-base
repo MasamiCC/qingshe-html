@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的推广码</title>
+
+		<!--引入css-->
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/my_spread.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- 我的推广码 -->
+		<div class="spread_container">
+			<!-- 当有二维码时 -->
+			<!--<div class="spread_nav qd_spread">
+				<img src="img/qd_img.png" class="qd_img">
+				<p class="spread_explain">
+					使用说明：黑卡经纪人推荐的黑卡会员加入成功后，可将邀请次黑卡会员使用轻奢点评APP扫描此推广码，扫描成功后，此黑卡会员即会与经纪人进行绑定，并计入当月推广会员人数。
+				</p>
+				<a class="share_qd">
+					分享推广码
+				</a>
+			</div>-->
+
+			<!-- 绑定过其他黑卡经纪人 -->
+			 <!--<div class="spread_nav">
+				<img src="img/spread_success.png" class="info_img">
+				<p class="info_explain">
+					抱歉，您已绑定过其他黑卡经纪人的推广码不能重复绑定，一个黑卡会员只能绑定一个推广码。
+				</p>
+			</div> -->
+			
+			<!-- 用户不是黑卡会员 -->
+			 <div class="spread_nav">
+				<img src="img/spread_success.png" class="info_img">
+				<p class="info_explain">
+					您当前还不是黑卡会员，请注册成为黑卡后重新绑定。
+				</p>
+				<a class="join_black">加入黑卡会员</a>
+			</div> 
+			<!-- 绑定成功 -->
+			<!-- <div class="spread_nav">
+				<img src="img/spread_success.png" class="info_img">
+				<p class="info_explain tc">
+					恭喜，您已经成功绑定黑卡经纪人<br/>张宇的推广码。
+				</p>
+			</div> -->
+			<!-- 绑定失败 -->
+			<!-- <div class="spread_nav">
+				<img src="img/spread_fail.png" class="info_img">
+				<p class="info_explain tc">
+					抱歉，推广码绑定失败，请稍后重试。
+				</p>
+			</div> -->
+		</div>
+	</body>
+
+</html>

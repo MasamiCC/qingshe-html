@@ -1,0 +1,45 @@
+/*body,html,.allBCquestion{
+	height: 100%;
+}*/
+/*问题*/
+.BCQcontent{
+	max-width: 1205px;
+	margin: 0 auto;
+	margin-top: 180px;
+}
+.BCQcontent_title{
+	font-size: 24px;
+	color: #333;
+}
+.BCQcontent_content{
+	margin-top: 36px;
+	margin-bottom: 66px;
+	margin-left: 45px;
+	font-size: 16px;
+	color: #333;
+	line-height: 2;
+}
+/*中间公众号栏*/
+.questionbg{
+	background: url(../static/img/questionMiddle.png) no-repeat;
+	background-size: 100% 100%;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.questionbg p{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	line-height: 2.2;
+}
+.wechatErweima{
+	margin-top: 15px;
+	/*animation-duration: 4s;    //动画持续时间
+	-webkit-animation-duration: 4s;    //chrome,safari动画持续时间
+	-moz-animation-duration: 4s;    //firefox动画持续时间
+	-o-animation-duration: 4s;    //opera动画持续时间
+	-ms-animation-duration: 4s;    //IE动画持续时间
+    animation-delay: 2s;*/  
+}
+

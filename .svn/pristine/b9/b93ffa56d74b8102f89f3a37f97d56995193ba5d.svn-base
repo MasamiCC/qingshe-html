@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myblackcard.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<style type="text/css">
+		.mui-bar{
+			height: 66px;
+			background: #fff;
+		}
+		.mui-popover {
+			left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    top: 40%;
+		}
+		
+		.mui-content-padded{
+			margin: 0px;
+		}
+		.mui-table-view-cell:after{
+			left: 0px;
+			background-color: #eee;
+		}
+		#updateblack {
+		    text-align: center;
+		    margin: 0 auto;
+		    position: static;
+		    margin: 10px 0;
+		    padding: 10px 0;
+		}
+		.mui-tab-label{
+				    font-size: 11px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+			}
+	</style>
+	<body>
+		<div class="mui-content mbbody">
+			<div class="mbhead">
+				<div class="mbheadpic">
+					<img src="../image/blackcardbg.png"/>
+					<div class="application" id="application"><span class="marginr6 v_middle">申请实体卡</span><span><img class="v_middle" src="../image/triangle.png"/></span></div>
+					<div class="card_no">NO.<span>123456789</span></div>
+				</div>
+				<div class="mbheaditems">
+					<div class="mbheaditem">
+						<div class="firstline">
+							<span><img src="../image/surplus.png"/></span><span class="mbblack">余额</span>
+						</div>
+						<div class="">
+							<span class="mbnum">200,000</span><span class="mbsmall">元</span>
+						</div>
+					</div>
+					<div class="mbheaditem">
+						<div class="firstline">
+							<a href="black_bill.html"><span><img src="../image/bill.png"/></span><span class="mbblack">账单</span></a>
+						</div>
+						<div class="">
+							<span class="mbnum">10</span><span class="mbsmall">笔</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mbmiddle">
+				<div class="mbmiddlecon">
+					<div class="mbmiddlehead">
+						已获得权益
+					</div>
+					<div class="mbmiddlecon_icons">
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_vip.png"/>
+							</div>
+							<div class="">
+								尊贵图标
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_sl.png"/>
+							</div>
+							<div class="">
+								轻奢沙龙
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_service.png"/>
+							</div>
+							<div class="">
+								专线服务
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_birth.png"/>
+							</div>
+							<div class="">
+								生日礼包
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_car.png"/>
+							</div>
+							<div class="">
+								车位预留
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_sq.png"/>
+							</div>
+							<div class="">
+								社区权限
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_zk.png"/>
+							</div>
+							<div class="">
+								专享折扣
+							</div>
+						</div>
+						<div class="mbmiddlecontent">
+							<div class="">
+								<img src="../image/qy_vip.png"/>
+							</div>
+							<div class="">
+								在线预约
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" style="position: static;">
+					<div id="updateblack" class="">
+						<span class="updateblack_icon" id="updateblack_icon">升级黑卡</span>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item " href="index.html">
+		        <span class="fa fa-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <!--<a class="mui-tab-item" href="#">
+		        <span class="mui-icon mui-icon-bars"></span>
+		        <span class="mui-tab-label">订单</span>
+		    </a>
+		    <a class="mui-tab-item" href="#">
+		        <span class="mui-icon mui-icon-paperplane"></span>
+		        <span class="mui-tab-label">优惠券</span>
+		    </a>-->
+		    <a class="mui-tab-item " href='near.html'>
+		        <span class="fa fa-map-o"></span>
+		        <span class="mui-tab-label">附近</span>
+		    </a>
+		    <a class="mui-tab-item mui-active" href="#">
+		        <!--<span class="mui-icon-extra mui-icon-extra-card"></span>-->
+		        <span class="fa fa-credit-card"></span>
+		        <br />
+		        <span class="mui-tab-label">黑卡</span>
+		    </a>
+		    <a class="mui-tab-item " href='near.html'>
+		        <span class="fa fa-user-circle-o"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+		<div id="myblackcardPopover" class="mui-popover">
+			<div class="mui-content-padded myblackcardPopover_font">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			        <div class="popover_title">
+			        	<span class="voting_close" id="voting_close"><i class="mui-icon mui-icon-closeempty"></i></span>
+			        </div>
+			        <div class="popover_middle">
+			        	<img src="../image/592_diamond.png"/>
+			        </div>
+			        <div class="popover_bottom">
+			        	<div class="popover_bottom_icons">
+			        		<a href="getBlackcard.html">自助购买</a>
+			        	</div>
+			        	<div class="popover_bottom_icons">
+			        		<a href="">激活卡激活</a>
+			        	</div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/myblackcard.js"></script>
+

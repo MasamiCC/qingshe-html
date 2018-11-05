@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>信息总览</title>
+		<!--引入css-->
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap-datetimepicker.min.css"/>
+		<link rel="stylesheet" href="../static/css/layer.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/layout.css"/>
+		<link rel="stylesheet" href="../css/information.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="lay_header">
+				<div class="navbar-custom-menu">
+					<span class="custom_icon"></span>
+					<span class="custom_name">管理员</span>
+					<!--操作区域-->
+					<div class="custom_op">
+						<a class="change_password">修改密码</a>
+						<a class="login_out">退出登录</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--左侧-->
+		<div class="lay_left">
+			<a class="logo">
+				<img src="../static/img/logo.png"/>
+			</a>
+			<!--左侧菜单-->
+			<ul class="sidebar-menu">
+				<li>
+					<a href="#" class="active">
+						<i class="sidebar_icon icon_1"></i>
+						<span class="sidebar_category">信息总览</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_2"></i>
+						<span class="sidebar_category">团队管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_3"></i>
+						<span class="sidebar_category">签约商户</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_4"></i>
+						<span class="sidebar_category">黑卡经纪人</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_5"></i>
+						<span class="sidebar_category">账号管理</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+	    <!--主体内容区域-->
+	    <div class="lay_body">
+	    	<div class="index_nav">
+		    	<div class="row">
+		    		<!--用户个人信息-->
+		    		<div class="left_nav">
+		    			<div class="info_nav content_nav">
+		    				<h4 class="title">
+		    					用户个人信息
+		    				</h4>
+		    				<!--信息展示-->
+		    				<div class="info_area">
+		    					<!--头像-->
+		    					<div class="info_header">
+		    						<img src="../static/img/header_default.png"/>
+		    					</div>
+		    					<!--个人信息-->
+		    					<div class="info_personal">
+		    						<div class="info_complet">
+		    							<span class="info_complet_icon icon_1"></span>
+		    							<div class="info_text">
+		    								<span class="info">许冠清  (1865465254）</span>
+		    							</div>
+		    						</div>
+		    						<div class="info_complet">
+		    							<span class="info_complet_icon icon_2"></span>
+		    							<div class="info_text">
+			    							<span class="info_title">家庭住址：</span>
+			    							<span class="info">南通市人民路28号</span>
+		    							</div>
+		    						</div>
+		    						<div class="info_complet">
+		    							<span class="info_complet_icon icon_3"></span>
+		    							<div class="info_text">
+			    							<span class="info_title">性        别：</span>
+			    							<span class="info">男</span>
+		    							</div>
+		    						</div>
+		    						<div class="info_complet">
+		    							<span class="info_complet_icon icon_4"></span>
+		    							<div class="info_text">
+			    							<span class="info_title">注册日期：</span>
+			    							<span class="info">2018-05-06</span>
+			    						</div>
+		    						</div>
+		    						<div class="info_complet">
+		    							<span class="info_complet_icon icon_5"></span>
+		    							<div class="info_text">
+			    							<span class="info_title">所属城市： </span>
+			    							<span class="info">南通</span>
+			    						</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	    <!--特约经纪人二维码-->
+		    	    <div class="right_nav">
+		    	    	<div class="content_nav qd_nav">
+		    	    		<div class="qd_left">
+		    	    			<h4 class="title">
+		    	    				特约经纪人二维码
+		    	    			</h4>
+		    	    			<p class="content">
+		    	    				此二维码为特约经纪人所独有的二维码，特约经纪人可以使用此二维码在负责的地区邀请黑卡会员，用户只需在黑卡注册流程中，使用轻奢点评APP扫描二维码，或输入字符即可。
+		    	    			</p>
+		    	    		</div>
+		    	    		<div class="qd_right">
+		    	    			<img src="../static/img/qd_img.png"/>
+		    	    			<p class="qd_num">
+		    	    				AQ78
+		    	    			</p>
+		    	    		</div>
+		    	    	</div>
+		    	    </div>
+		    	</div>
+	    	    <div class="row mb0">
+	    	    	<!--左侧数据统计-->
+	    	    	<div class="left_data_nav">
+	    	    		<!--数据统计-->
+	    	    		<div class="num_statistics_nav">
+	    	    			<div class="row">
+	    	    				<!--签约商户数量-->
+	    	    				<div class="data_left">
+	    	    					<div class="content_nav data_nav">
+	    	    						<span class="data_icon icon_1"></span>
+	    	    						<p class="data_num">
+	    	    							<span>255</span>家
+	    	    						</p>
+	    	    						<p class="data_intro">本地入驻平台商户数量</p>
+	    	    					</div>
+	    	    				</div>
+	    	    				<!--黑卡经纪人数量-->
+	    	    				<div class="data_left">
+	    	    					<div class="content_nav data_nav">
+	    	    						<span class="data_icon icon_2"></span>
+	    	    						<p class="data_num">
+	    	    							<span>1080</span>人
+	    	    						</p>
+	    	    						<p class="data_intro">
+	    	    							黑卡经纪人数量
+	    	    						</p>
+	    	    					</div>
+	    	    				</div>
+	    	    			</div>
+	    	    			<!--黑卡会员人数-->
+	    	    		    <div class="content_nav member_data_nav row mb0">
+	    	    		    	<div class="member_data">
+	    	    		    		<span class="data_icon icon_3"></span>
+    	    						<p class="data_num">
+    	    							<span>255</span>人
+    	    						</p>
+    	    						<p class="data_intro">
+    	    							黑卡会员人数
+    	    						</p>
+	    	    		    	</div>
+	    	    		    	<!--饼图展示区-->
+	    	    		    	<div class="member_pie_nav">
+	    	    		    		<div id="member_pie">
+	    	    		    			
+	    	    		    		</div>
+	    	    		    	</div>
+	    	    		    </div>
+	    	    		</div>	    	    		
+	    	    	</div>
+	    	    
+	    	        <!--右侧数据统计-->
+	    	        <div class="right_data_nav">
+    	        		<!--本地入驻平台商户数量增长趋势图-->
+    	        		<div class="tendency_chart_nav">
+    	        			<div class="chart_title">
+    	        				<h4 class="title">签约商户增长趋势图</h4>
+    	        				<!--日期选择区域-->
+    	        				<div class="time_area">
+    	        					<div class="time_inline">
+										<label for="startTime">
+											<input type="text" class="form-control startTime" readonly="readonly" date-part="0"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<div class="time_inline">
+										<label for="endTime">
+											<input type="text" class="form-control endTime" readonly="readonly" date-part="1"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<span class="time_search" chart-num="1"></span>
+    	        				</div>
+    	        		    </div>
+    	        			<div class="tendency_chart" id="tendency_chart_1"></div>
+    	        		</div>
+    	        		<!--业务提成收益趋势图-->
+    	        		<div class="tendency_chart_nav">
+    	        			<div class="chart_title">
+    	        				<h4 class="title">业务提成收益趋势图</h4>
+    	        				<!--日期选择区域-->
+    	        				<div class="time_area">
+    	        					<div class="time_inline">
+										<label for="startTime">
+											<input type="text" class="form-control startTime" readonly="readonly" date-part="0"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<div class="time_inline">
+										<label for="endTime">
+											<input type="text" class="form-control endTime" readonly="readonly" date-part="1"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<span class="time_search" chart-num="2"></span>
+    	        				</div>
+    	        		    </div>
+    	        			<div class="tendency_chart" id="tendency_chart_2"></div>
+    	        		</div>
+    	        		<!--黑卡用户增长趋势图-->
+    	        		<div class="tendency_chart_nav">
+    	        			<div class="chart_title">
+    	        				<h4 class="title">黑卡用户增长趋势图</h4>
+    	        				<!--日期选择区域-->
+    	        				<div class="time_area">
+    	        					<div class="time_inline">
+										<label for="startTime">
+											<input type="text" class="form-control startTime" readonly="readonly" date-part="0"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<div class="time_inline">
+										<label for="endTime">
+											<input type="text" class="form-control endTime" readonly="readonly" date-part="1"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<span class="time_search" chart-num="3"></span>
+    	        				</div>
+    	        		    </div>
+    	        			<div class="tendency_chart" id="tendency_chart_3"></div>
+    	        		</div>
+    	        		<!--黑卡经纪人增长趋势图-->
+    	        		<div class="tendency_chart_nav">
+    	        			<div class="chart_title">
+    	        				<h4 class="title">黑卡经纪人增长趋势图</h4>
+    	        				<!--日期选择区域-->
+    	        				<div class="time_area">
+    	        					<div class="time_inline">
+										<label for="startTime">
+											<input type="text" class="form-control startTime" readonly="readonly" date-part="0"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<div class="time_inline">
+										<label for="endTime">
+											<input type="text" class="form-control endTime" readonly="readonly" date-part="1"/>
+											<span class="time_icon"></span>
+										</label>
+									</div>
+									<span class="time_search" chart-num="4"></span>
+    	        				</div>
+    	        		    </div>
+    	        			<div class="tendency_chart" id="tendency_chart_4"></div>
+    	        		</div>
+	    	        </div>
+	    	    </div>
+
+	    	</div>
+	    </div>
+	<!--引入js-->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/js-plugs.js"></script>
+	<script src="../static/js/echarts.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../static/js/es5-shim.min.js"></script>
+	<script src="../static/js/es5-sham.min.js"></script>
+	<script src="../static/js/json3.min.js"></script>
+	<![endif]-->
+	<script src="../static/js/art-template.js"></script>
+	<script src="../static/js/layer.js"></script>
+	<script src="../static/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="../static/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/information.js"></script>
+	</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../js/Simple-Calendar/stylesheets/simple-calendar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/route_details.css"/>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			#calendar{
+				margin: 0 auto;float: none;box-shadow: none;
+				border: none;
+			}
+			.sc-header{
+				background: #fff;
+				border: 1px solid #eee;
+				border-bottom: none;
+				color: #edb94a;
+			}
+			.sc-header select{
+				color: #edb94a;
+			}
+			.sc-week-item{
+				background: #fffcf8;
+				border-color:  #eee;	
+			}
+			.sc-item{
+				font-weight: normal;background: #fffcf8;position: relative;
+				height: 80px;
+			}
+			.sc-item:nth-child(7n) {
+				border-right: 1px solid #eee;
+			}
+			.sc-body{
+				box-shadow: none;height: inherit;
+			}
+			.sc-days{
+				height: inherit;
+			}
+			.sc-active-day, .sc-selected{
+				background: #edb94a;color: #fff;
+			}
+			.sc-today{
+				background-color: #fffcf8;
+    			color: #333;
+    			border: 1px solid #eee;
+			}
+			.sc-today .day{
+				color: #565555!important;
+			}
+			.sc-item .lunar-day{
+				color: #edb94a;font-size: 14px;
+			}
+			.sc-active-day .lunar-day,.sc-selected .lunar-day{
+				color: #fff;
+			}
+			.sc-item .day{
+				position: absolute;
+				right: 5px;
+				bottom: 5px;
+				font-size: 14px;
+			}
+			.sc-mark{
+				cursor: pointer;
+			}
+			
+/*订单确认部分数据*/
+.data-sel{
+	width: 500px;margin: 0 auto;
+}
+.confirm_cart{
+	margin: 5px auto;
+	background: #fffcf8;
+	border: 1px solid #eee;
+}
+.confirm_title_s{
+	text-align: left;
+	line-height: 2.5!important;
+	border-bottom: 1px solid #eee;
+	padding-top: 0!important;
+}
+.cart_list td{
+	height: 35px;line-height: 35px!important;
+}
+.cart_list td:nth-child(1){
+	text-align: left;
+}
+.cart_btn{
+	line-height: 20px;
+}
+.cart_btn span{
+	font-size: 14px;
+}
+.xuzhi{
+    white-space: initial;line-height: 1.5;color: #999;
+}
+.xuzhi i{
+	margin-right: 5px;color: #66;
+}
+input[type=checkbox]{
+	vertical-align: middle;margin-top: 0;margin-right:4px ;
+}
+		</style>
+		
+	</head>
+	<body >
+		<div class="">
+			<div class=" " id="calendar"></div>
+			<div class="data-sel">
+				<div class="confirm_cart">
+					<div class="confirm_title_s">
+						出行人数
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" width="100%">
+						<tr class="cart_list">
+							<td>成人</td>
+							<td>
+								<div class="cart_btn">
+									<span onclick="cartList(this,-1,0.02)">-</span>
+									<input type="text" readonly="" value="1">
+									<span onclick="cartList(this,1,0.02)">+</span>
+								</div>
+							</td>
+							<td id="adultPrice">￥38500.00</td>
+						</tr>
+						<tr class="cart_list">
+							<td>儿童</td>
+							<td>
+								<div class="cart_btn">
+									<span onclick="cartList(this,-1,0.02)">-</span>
+									<input type="text" readonly="" value="1">
+									<span onclick="cartList(this,1,0.02)">+</span>
+								</div>
+							</td>
+							<td id="childrenPrice">￥38500.00</td>
+						</tr>
+						<tr class="cart_list">
+							<td colspan="3">
+								<label for="">
+									<input type="checkbox" name="" id="" value="" />携带婴儿（0-2周岁）
+								</label>
+								<p class="xuzhi">
+									<i class="fa fa-exclamation-circle"></i>预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="confirm_cart">
+					<div class="confirm_title_s">
+						保险
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" width="100%">
+						<tr class="cart_list baoxian_list">
+							<td><input type="checkbox" name="" id="" value="" />人身意外险1</td>
+							<td>
+								<div class="cart_btn">
+									<span onclick="cartList(this,-1,0.02)">-</span>
+									<input type="text" readonly="" value="1">
+									<span onclick="cartList(this,1,0.02)">+</span>
+								</div>
+							</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr class="cart_list baoxian_list">
+							<td><input type="checkbox" name="" id="" value="" />人身意外险2</td>
+							<td>
+								<div class="cart_btn">
+									<span onclick="cartList(this,-1,0.02)">-</span>
+									<input type="text" readonly="" value="1">
+									<span onclick="cartList(this,1,0.02)">+</span>
+								</div>
+							</td>
+							<td>￥200.00</td>
+						</tr>
+						<tr class="cart_list baoxian_xuzhi">
+							<td colspan="3">
+								<p class="xuzhi">
+									<i class="fa fa-exclamation-circle"></i>保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="confirm_cart">
+					<div class="confirm_title_s">
+						单房差
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" width="100%">
+						<tr class="cart_list">
+							<td>单房差</td>
+							<td>
+								<div class="cart_btn">
+									<span onclick="cartList(this,-1,0.02)">-</span>
+									<input type="text" readonly="" value="1">
+									<span onclick="cartList(this,1,0.02)">+</span>
+								</div>
+							</td>
+							<td id="roomPrice">￥38500.00</td>
+						</tr>
+						<tr class="cart_list">
+							<td colspan="3">
+								
+								<p class="xuzhi">
+									<i class="fa fa-exclamation-circle"></i>单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="route_btn_div">
+					<button id="">
+						确认订单
+					</button>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="../js/Simple-Calendar/javascripts/simple-calendar.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+    var options = {
+      width: '500px',
+      height: '600px',
+      language: 'CH', //语言
+      showLunarCalendar: false, //阴历
+      showHoliday: true, //休假
+      showFestival: false, //节日
+      showLunarFestival: false, //农历节日
+      showSolarTerm: false, //节气
+      showMark: true, //标记
+      timeRange: {
+        startYear: 2017,
+        endYear: 2049
+      },
+      mark: {
+        '2017-10-31': {
+        	adultPrice: 1200,
+	        childrenPrice: 1100,
+	        roomPrice: 10,
+	        insurances:[
+                {
+                id: 1,
+                name: "人生意外险1",
+                goodsId: 32,
+                price: 21,
+                createTime: null,
+                creator: null
+                },
+                {
+                id: 2,
+                name: "全能险",
+                goodsId: 32,
+                price: 100,
+                createTime: null,
+                creator: null
+                }
+        	]
+        },
+        '2017-11-04': {
+        	adultPrice: 1300,
+	        childrenPrice: 1200,
+	        roomPrice: 11,
+	        insurances:[
+                {
+                id: 1,
+                name: "人生意外险1",
+                goodsId: 32,
+                price: 21,
+                createTime: null,
+                creator: null
+                },
+                {
+                id: 2,
+                name: "全能险",
+                goodsId: 32,
+                price: 100,
+                createTime: null,
+                creator: null
+                }
+        	]
+        },
+      },
+      theme: {
+        changeAble: false,
+        weeks: {
+          backgroundColor: '#FBEC9C',
+          fontColor: '#4A4A4A',
+          fontSize: '20px',
+        },
+        days: {
+          backgroundColor: 'red',
+          fontColor: '#565555',
+          fontSize: '24px'
+        },
+        todaycolor: 'orange',
+        activeSelectColor: 'orange',
+      }
+    }
+    $(function(){
+    	var myCalendar = new SimpleCalendar('#calendar',options);
+    	var a='2017-10-07';
+    	if(a!=''){
+    		$(".sc-mark[data-date="+a+"]").eq(0).click()
+    		
+    	}else{
+    		$(".sc-mark").eq(0).click()
+    	}
+    	
+    })
+    
+    
+    
+    
+    function cartList(me,flg){
+    	if(flg==1){
+    		var count=parseInt($(me).prev().val());
+    		$(me).prev().val(count+1)
+    	}else{
+    		var count=parseInt($(me).next().val());
+    		if (count>1) {
+    			$(me).next().val(count-1)
+    		}else{
+    			console.log('数值大于等于1')
+    		}
+    	}
+    }
+    
+    
+    function loadCartData(date1,adultPrice,childrenPrice,roomPrice,insurances){
+    	if(adultPrice!=''){
+    		$("#adultPrice").html("￥"+adultPrice);
+    	}
+    	if(childrenPrice!=''){
+    		$("#childrenPrice").html("￥"+childrenPrice);
+    	}
+    	if(roomPrice!=''){
+    		$("#roomPrice").html("￥"+roomPrice);
+    	}
+    	if(insurances!=''){
+    		$('.baoxian_list').remove();
+    		var insurancesD=JSON.parse(insurances);
+    		for (var  i in insurancesD ) {
+    			
+    			var  html='<tr class="cart_list baoxian_list">'
+						+	'<td><input type="checkbox" name="" id="" value="" />'+insurancesD[i]['name']+'</td>'
+						+	'<td>'
+						+		'<div class="cart_btn">'
+						+			'<span onclick="cartList(this,-1,0.02)">-</span>'
+						+			'<input type="text" readonly="" value="1">'
+						+			'<span onclick="cartList(this,1,0.02)">+</span>'
+						+		'</div>'
+						+	'</td>'
+						+	'<td>￥'+insurancesD[i]['price']+'</td>'
+						+'</tr>';
+				$(".baoxian_xuzhi").before(html)
+    		}
+    	}
+    }
+</script>

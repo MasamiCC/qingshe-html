@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<style type="text/css">
+			.trajectory_list{
+				font-size: 0.75rem;color: #999999;padding-left: 5px;
+			}
+			.trajectory_item {
+				padding: 0;padding-left: 5px;position: relative;
+
+			}
+			.trajectory_item >div{
+				border-left: 1px solid #eee;
+				margin-left: 0px;
+				overflow: auto;
+				padding: 11px 15px;
+				
+
+			}
+			.trajectory_item i{
+				position: absolute;left: 0;top: 17px;z-index: 99;color: #ddd;
+			}
+			.trajectory_active {
+				color: #dab875;
+			}
+			.trajectory_active i{
+				color: #dab875;
+			}
+			.trajectory_active hr{
+				background: #dab875!important;
+			}
+			.trajectory_item.mui-active{
+				background: #fff;
+			}
+			.empty{
+				clear: both;
+			}
+			.trajectory_detail img{
+				max-width: 100%;
+			}
+			.trajectory_item hr{
+				width: 25px;vertical-align: middle;margin-top:10px;margin-right: 5px;border: none;height: 1px;color: #eee;background: #ccc;
+			}
+			.trajectory_btn{
+				display: flex;align-items: center;
+			}
+			.trajectory_btn >div{
+				flex: 1;
+			}
+			.trajectory_button{
+				border:1px solid #e9d5ab;color: #d4ac57;border-radius: 2rem;padding: .2rem 0.8rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">订单跟踪</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="index_item">
+		    	<ul class="mui-table-view trajectory_list">
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	        	<div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />订单已提交
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+		    	        	</div>
+		    	            
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />支付成功
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />商户已接单
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />师傅已取车
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+			    	            
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />师傅已到店
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+			    	            <div class="empty"></div>
+			    	            <div class="trajectory_detail">
+			    	            	行车轨迹
+			    	            	<img src="../image/icon/5.png"/>
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />车辆洗护完成
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item">
+		    	        	<i class="fa fa-circle"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />车辆返程中
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+			    	            <div class="empty"></div>
+			    	            <div class="trajectory_detail">
+			    	            	车辆定位中
+			    	            	<img src="../image/icon/5.png"/>
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell trajectory_item trajectory_active">
+		    	        	<i class="fa fa-dot-circle-o"></i>
+		    	            <div id="">
+		    	        		<div class="mui-pull-left">
+			    	            	<hr class="mui-pull-left" style="" />订单已完成
+			    	            </div>
+			    	            <div class="mui-pull-right">
+			    	            	07-11 10:13:25
+			    	            </div>
+			    	            <div class="empty"></div>
+			    	            <div class="trajectory_detail  trajectory_btn">
+			    	            	<div class="mui-pull-left">
+			    	            		<span id="" class="trajectory_button">
+			    	            			立即取消
+			    	            		</span>	
+			    	            	</div>
+			    	            	<div class="mui-pull-right" style="width: 50%;">
+			    	            		<img src="../image/banner@2X.png"/>
+			    	            	</div>
+			    	            	
+			    	            </div>
+		    	        	</div>
+		    	        </li>
+		    	        
+		    	    </ul>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>

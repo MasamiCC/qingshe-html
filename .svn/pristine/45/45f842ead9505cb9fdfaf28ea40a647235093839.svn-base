@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"
+	/>
+	<meta name="format-detection" content="telephone=no">
+	<title>签到</title>
+	<link rel="stylesheet" href="css/public.css" />
+	<link rel="stylesheet" href="css/signin.css" />
+	<style type="text/css">
+		.imgcon img {
+			width: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top flex flex-align-end flex-pack-center flex-warp">
+		<img src="" alt="" class="header_img">
+		<div class="sign_box">
+			<p class="user_name">顾小白</p>
+			<span class="sign_num">已累计签到
+				<em style="color: #fffc00;
+                        font-size: 1.5rem;margin:0 3px;" id="sign-count">0</em>天</span>
+		</div>
+		<div class="sign_box2">
+			<img src="./image/ok.png" alt="">
+			<p class="rule_txt">活动规则</p>
+		</div>
+	</div>
+	<div class="Calendar">
+		<div id="toyear" class="flex flex-pack-center">
+			<div class="year-month">
+				<span id="idCalendarYear">2018</span>&nbsp;年&nbsp;
+				<span id="idCalendarMonth">6</span>&nbsp;月
+			</div>
+		</div>
+		<table border="1px" cellpadding="0" cellspacing="0">
+			<thead>
+				<tr class="tou">
+					<td>日</td>
+					<td>一</td>
+					<td>二</td>
+					<td>三</td>
+					<td>四</td>
+					<td>五</td>
+					<td>六</td>
+					<!--<img src="image/1.png"/>-->
+				</tr>
+			</thead>
+			<tbody id="idCalendar">
+			</tbody>
+		</table>
+		<div class="remind">
+			<label class="label">
+				<img class="icon" src="./image/remind.png" alt="">
+				<span>每日签到提醒</span>
+				<input class="mui-switch mui-switch-animbg" type="checkbox" checked>
+			</label>
+		</div>
+
+	</div>
+	<div class="banner_box">
+		<img src="./image/banner.png" alt="" class="banner">
+	</div>
+
+	<div class="sign_tips">
+		<img src="./image/tips_bg.png" alt="" class="tips_bg">
+		<div class="tips_txt">
+			<p>签到成功</p>
+			<p>您已累计签到
+				<span>1</span>天</p>
+		</div>
+		<img src="./image/closs.png" alt="" class="closs_tips">
+	</div>
+
+	<div class="card">
+		<h3>活动规则</h3>
+		<p>1.用户每天可签到一次;</p>
+		<p>2.平台将会根据用户累计或者连续签到数，推出不同的签到活动;</p>
+		<p>3.活动礼品的最终解释权归平台所有。</p>
+		<img src="./image/closs.png" alt="" class="closs">
+	</div>
+	<div class="gray"></div>
+	<script type="text/javascript" src="js/rili.js"></script>
+	<script src="../../js/jquery-1.10.1.min.js"></script>
+	<script language="JavaScript">
+		window.onload = function () {
+			//添加今天签到                
+			if (isSign == false) {
+				var res = cale.SignIn();
+				if (res == '1') {
+					$$("sign-count").innerHTML = parseInt($$("sign-count").innerHTML) + 1;
+					isSign = true;
+					$(".sign_tips").css("display", "inline")
+					$(".gray").css("display", "inline")
+					$(".closs_tips").click(function () {
+						$(".sign_tips").css("display", "none")
+						$(".gray").css("display", "none")
+					})
+						
+				} else if (res == '2') {
+					$$("sign-txt").innerHTML = '已签到';
+					alert('今天已经签到了')
+				}
+			} else {
+				alert('今天已经签到了')
+			}
+		}
+		var isSign = false;
+		var myday = new Array(); //已签到的数组
+		// myday[0] = "1528646400"
+		// myday[1] = "1528387200"
+		// myday[2] = "1525708800"
+
+		var cale = new Calendar("idCalendar", {
+			qdDay: myday,
+			//				onToday: function(o) {
+			//                  o.className = "onToday";
+			//				},
+			onSignIn: function () {
+				$$("sign-txt").innerHTML = '已签到';
+			},
+			onFinish: function () {
+				$$("sign-count").innerHTML = myday.length //已签到次数
+				$$("idCalendarYear").innerHTML = this.Year;
+				$$("idCalendarMonth").innerHTML = this.Month; //表头年份
+
+			}
+		});
+		// $$("idCalendarPre").onclick = function() {
+		// 	cale.PreMonth();
+		// }
+		// $$("idCalendarNext").onclick = function() {
+		// 	cale.NextMonth();
+		// }
+
+		$(".closs").click(function () {
+			$(".card").css("display", "none")
+			$(".gray").css("display", "none")
+		})
+		$(".rule_txt").click(function () {
+			$(".card").css("display", "inline")
+			$(".gray").css("display", "inline")
+		})
+	</script>
+
+</body>
+
+</html>

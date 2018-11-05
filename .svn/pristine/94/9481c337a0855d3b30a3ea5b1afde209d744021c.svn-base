@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/wxzf.css"/>
+		<style type="text/css">
+			body{
+				background: #fff;
+			}
+			.mui-content{
+				font-size:0.875rem ;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0px;
+			}
+			.mui-table-view-cell:after{
+				height: 0;
+			}
+			.index_item{
+				background: #fff;
+			}
+			.index_item:first-child{
+				padding: 0;padding-top: 10px;margin-bottom: 0;
+			}
+			.pay_iten_title{
+				color: #999;font-size: 0.75rem;background: #f4f4f4;line-height: 3;
+				text-align: left;text-indent: 10px;
+			}
+			#timer{
+				border-bottom:1px solid #eee ;font-size: 2rem;color: #333;padding-bottom: 5px;
+			}
+			.fonts{
+				color: #999;
+			}
+			.fonts,#timer{
+				width: 100%;
+				text-align: center;
+				line-height: 1.5;
+			}
+			.food{
+				display: inline-block;line-height: 3;vertical-align: top;
+			}
+			.food1{
+				width: 69%;line-height: 1.5;
+			}
+			.food2{
+				width: 29%;
+				text-align: right;
+				color: #d91a1a;
+				font-weight: bold;
+			}
+			.pay{
+				display: flex;
+				align-items: center;
+			}
+			.pay_left{
+				flex: 1;vertical-align: middle;
+			}
+			.pay_left img{
+				max-width: 1.5rem;vertical-align: middle;margin-right: 0.5rem;
+			}
+			.wechat{
+				display: inline-block;
+				margin-top: 13px; 
+				vertical-align: top;
+			}
+			.pay_right{
+				flex: 1;
+				text-align: right;
+			}
+			.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+				font-size: 1.125rem;
+				/*vertical-align: middle;*/
+				background: url(image/check_bc.png) no-repeat;
+				/*border-color: white;*/
+			}
+			.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+				top: 12px;
+				right:0px;
+				/*border-color: white;*/
+			}
+			
+			.mui-btn-block{
+				border:0;
+				background: #79888F;
+				color: #FFFFFF;
+				font-size:1rem ;
+				position: absolute;
+				bottom: 0;
+				margin-bottom: 0;
+			}
+			.easy_total {
+			    font-size: 0.875rem;
+			    line-height: 3.6;
+			}
+			.total_amount {
+			    color: #d91a1a;
+			    font-weight: 500;
+			    font-size: 1.3rem;
+			    line-height: 1.2;
+			}
+			.easy_total span {
+			    color: #d91a1a;
+			}
+			.top{
+				padding-top: 0;padding-bottom: 0;
+			}
+			.mui-input-row label{
+				padding: 5px 15px;line-height: 2.5
+			}
+			.mui-input-group .mui-input-row{
+				height: inherit;padding: 8px 0;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+				color: #70c38e;
+			}
+			.mui-input-group:before,.mui-input-group:after{
+				height: 0;
+			}
+			.mui-input-group .mui-input-row:after{
+				left: 30px;background: #eee;
+			}
+			.food1 img{
+				vertical-align: middle;max-width: 3rem;float: left;margin-right: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">黑卡支付</h1>
+		</header>
+		<div class="mui-content">
+			<div class="index_item">
+				<div class="fonts">
+					剩余支付时间
+				</div>
+				<div class="" id="timer">
+					00:15:00
+				</div>
+				<div class="" style="padding:  10px;">
+					<div class="food food1">
+						<img src="../image/biaozhi.png" style="border-radius: 3rem;"/>
+						<div id="" style="padding-top: 0.25rem;">
+							欧培拉（星湖101店）
+						</div>
+						<span style="font-size: 0.75rem;color: #999;">订单编号：56589454521212</span>
+					</div>
+					<div class="food food2">￥3008.00</div>
+				</div>
+			</div>
+			<div class="index_item top" style="margin: 10px 0;padding: 10px 0;">
+			<!--<div class="index_item_title pay_iten_title">
+				选择支付方式
+			</div>-->
+			<form class="mui-input-group" style="margin: 0 10px;">
+			    <div class="mui-input-row mui-checkbox">
+			        <div class="pay_left mui-pull-left" for="checkbox1"><img src="../image/black_pay.png"/>黑卡支付</div>
+			        <div class="mui-pull-right" style="margin-right: 10px;">
+			        	<img src="../image/blackCard-price.png" style="max-height: 1.3rem;"/>
+			        </div>
+			    </div>
+			    <div class="mui-input-row mui-checkbox" style="padding: 10px 0;">
+			        <div class="mui-pull-left" style="text-indent: 30px;">
+			        	余额
+			        </div>
+			        <div class="mui-pull-right" style="margin-right: 10px;font-size: 0.875rem;font-weight: 500;"> 
+			        	￥5000
+			        </div>
+			    </div>
+			</form>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-footer" id="">
+			<div class="mui-pull-left">
+				<div id="easy_total" class="easy_total">
+					 总计<span><small>￥</small></span><span class="total_amount">500.00</span>
+				</div>
+			</div>
+			
+			
+			<div class="mui-pull-right">
+				<span class="confirm_btn">确认支付</span>
+			</div>
+		</nav>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/pay.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+		var maxtime = 15*60 //一个小时，按秒计算，自己调整!   
+		function CountDown(){   
+			if(maxtime>=0){   
+				minutes = Math.floor(maxtime/60);   
+				seconds = Math.floor(maxtime%60);
+				if(minutes<10){
+					minutes="0"+minutes; 
+				}
+				if(seconds<10){
+					seconds="0"+seconds;
+				}
+				
+				msg = "00:"+minutes+":"+seconds;   
+				document.all["timer"].innerHTML=msg;   
+				if(maxtime == 5*60) {alert('注意，还有5分钟!')};   
+					--maxtime;   
+			}   
+			else{   
+				clearInterval(timer);   
+				alert("时间到!");   
+			}   
+		}   
+		timer = setInterval("CountDown()",1000);
+		
+	$(function(){
+		loadPay();
+		//出现浮动层
+		$(".confirm_btn").click(function(){
+			$(".ftc_wzsf").show();
+		});
+	})
+</script>

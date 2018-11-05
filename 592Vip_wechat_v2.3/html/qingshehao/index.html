@@ -1,0 +1,912 @@
+<br /><!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;list-style: none;}
+			.mui-content{background: #f4f4f4;position: absolute;left: 0;right: 0;top: 0;bottom: 0;overflow: auto;}
+			.qsh_header{
+				height: 25%;
+				/*background-color: red;*/
+				display: flex;
+				background-image: url(image/qsh_bg.png)  ;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;position: relative;
+			}
+			.qsh_banner{
+				background: #0a042e;
+				display: flex;
+				color: #a6adb7;
+				justify-content: space-between;
+				padding: 0 1rem;
+				align-items: center;
+				font-size: .75rem;
+				padding-top: .5rem;
+				
+			}
+			.qsh_time{font-size: .875rem;}
+			.qsh_station_name{
+				color: #fff;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				line-height: 1;
+				justify-content: space-between;
+				align-content: center;
+				align-items: center;
+			}
+			.qsh_station_name span{line-height: 2;}
+			
+			.map_p{width: .875rem;height: 1.22rem;}
+			.qsh_p{width: 1rem;height: .5rem;}
+			.qsh_map span{
+				border: 1px solid #424e60;
+				border-radius: 1rem;
+				padding: .2rem .75rem;
+				display: flex;
+			}
+			/*黑钻排行榜*/
+			.balck_rank > img{
+				width: 100%;
+				height: auto;
+			}
+			.qsh_score_list {padding:0 .5rem .5rem;margin-top: .5rem;background: #fff;}
+			.qsh_score_list li{display: flex;justify-content: space-between;align-items: center;color: #333;line-height: 2;padding: .4rem 0;font-size: .9rem;font-weight: 500;}
+			.qsh_score_list li.active{box-shadow: 0 0 5px #999;border: 1px solid #cacaca;border-radius: .5rem;margin: .5rem 0;}
+			.qsh_score_list li:first-child{color: #666666;}
+			.qsh_score_list li >div{flex: 1;display: flex;align-items: center;}
+			.qsh_score_list li >div:first-child{flex: 0 0 5rem;justify-content: center;margin-right: 1rem;}
+			.qsh_score_list li >div:first-child img{width: 1.5rem;}
+			.qsh_score_list li >div:last-child{flex: 0 0 5rem;justify-content: center;}
+			.qsh_score_title {display: flex;align-items: center;line-height: 0;font-size: 1rem;font-weight: 500;padding: .5rem 0;}
+			.qsh_score_title img{width: 1.5rem;margin-right: .5rem;line-height: 0;}
+			.qsh_user{border-radius: 5rem;width: 2.2rem;height: 2.2rem;margin-right: .5rem;}
+			.qsh_score{padding-bottom: .5rem;background: #fff;margin-top: .75rem;}
+			.qsh_tongji{display: flex;align-items: center;padding: .5rem 1rem;background: #fff;padding-bottom: .75rem;margin-bottom: .75rem;}
+			.qsh_tongji >div{flex: 1;position: relative;}
+			
+			.qsh_tongji ul{margin-left: 5%;font-size: 2rem;line-height: 1.2;}
+			.qsh_tongji >div:last-child ul{margin-left: 10%;}
+			.qsh_tongji >div:first-child:after{
+				content: '';
+				position: absolute;
+				width: 1px;
+				top: 5px;
+				bottom: 5px;
+				right: 0;
+				background-color: #eee;
+			}
+			.qsh_tongji li:first-child{display: flex;align-items: center;font-size: .875rem;line-height: 2;font-weight: 500;}
+			.qsh_tongji li:first-child img{width: 1.1rem;margin: 0 .3rem;}
+			.qsh_stations{background: #fff;padding: .875rem 1rem;}
+			.qsh_stations>div{
+				box-shadow: 0 0 .5rem #999;
+				/*margin: 0.5rem 1rem;*/
+				border: .4rem solid #ffedc2;border-radius: .5rem;
+				padding: .5rem;
+				background: #fff;
+			}
+			.qsh_station{display: flex;align-items: flex-start;padding: .2rem 0;position: relative;}
+			.qsh_station:before{
+			    position: absolute;
+			    content: '';
+			    left: 0.06rem;
+			    /* height: 100%; */
+			    width: 1px;
+			    border-left: 1px dashed #f8a120;
+			    top: 20px;
+			    bottom: -6px;
+			}
+			.qsh_station:after{
+				position: absolute;
+				content: '';
+				left: 0;
+				height: 100%;
+				width: 4px;
+				height: 4px;
+				background: #f8a120;
+				border-radius: 50%;
+				top: .65rem;
+				left: 0;
+			}
+			.qsh_station:last-child:before{
+				width: 0;
+				display: none;
+			}
+			.qsh_station >div{flex: 1;}
+			.qsh_station_l{font-size: 1rem;margin-left: 1rem;}
+			.qsh_station_l>div:first-child span{color: #999;font-size: .75rem;}
+			.qsh_station_l_list{display: flex;align-items: center;font-size: .75rem;color: #999;padding: .1rem 0;}
+			.qsh_station_l_list>div:nth-child(2){flex: 0 0 40%;display: flex;margin: 0 .3rem;}
+			.qsh_station_l_list>div:nth-child(2) div{background: #eeeeee;height: .75rem;flex: 1;border-radius: 1rem;overflow: hidden;line-height: 0;position: relative;}
+			.qsh_station_l_list>div:nth-child(2) div span{
+				background: -moz-linear-gradient(left, #f8a221, #ffcc47);
+	background: -o-linear-gradient(left,#f8a221, #ffcc47);
+	background: -webkit-gradient(linear, 0% 100%, 100% 100%, from(#f8a221), to(#ffcc47));
+				height: .75rem;display: inline-block;width: 0px;border-radius: 1rem;
+				transition: all 2s;
+				-moz-transition: all 2s;	/* Firefox 4 */
+				-webkit-transition: all 2s;	/* Safari 和 Chrome */
+				-o-transition: all 2s;
+				position: absolute;
+				}
+			.qsh_station_r{display: flex;flex: 0 0 3.5rem!important;}
+			.qsh_station_r span{
+				background: -webkit-linear-gradient(left, #fecd48 , #f8a221); /* Safari 5.1 - 6.0 */
+				background: -o-linear-gradient(right, #fecd48, #f8a221); /* Opera 11.1 - 12.0 */
+				background: -moz-linear-gradient(right, #fecd48, #f8a221); /* Firefox 3.6 - 15 */
+				background: linear-gradient(to right, #fecd48 , #f8a221); /* 标准的语法 */
+				color: #fff;
+				font-size: .85rem;
+				border-radius:1rem ;
+				flex: 1;
+				padding: .2rem .5rem;
+				text-align: center;
+			}
+			#popover{left: 0;right: 0;top: 0;bottom: 0;width: auto;display: none;background: none;justify-content: center;}
+			.mui-popover .mui-scroll-wrapper{max-height: 40%;width: 80%;margin: 0 auto;background: #fff;left: 10%;top: 30%;}
+			.mui-popover .mui-table-view{background: none;margin: 0 1rem;padding: 1rem 0;}
+			.mui-popover .qsh_station{padding: .5rem 0;}
+			.mui-popover .qsh_station:after{top:.9rem}
+			.mui-popover .qsh_station:before{top: 1rem;bottom: -.9rem;}
+			.mui-popover .qsh_station.actived .qsh_station_l{font-size: 1.2rem;}
+			.mui-popover .qsh_station.future:before{display: none;} 
+			.mui-popover .qsh_station_l{font-size: .9rem;}
+			.mui-popover .qsh_station_l span{margin-left: .5rem;}
+			.notice{background: url(image/notice_bg@3x.png);background-repeat: no-repeat;width: 100%;color: #becdff;background-size: contain;margin: 1rem;padding-left: 2.5rem;line-height: 1.5;font-size: .875rem;overflow: hidden;height: 1.5rem;}
+			.bg{
+				position: absolute;left: 0;right: 0;bottom: 0;top: 0;
+				background: url(image/move_bg@3x.png);
+				background-position: bottom;
+				background-repeat: repeat-x;
+				background-size: auto 75%;
+				overflow: hidden;
+				z-index: 2;
+			}
+			.bg_ing{
+				animation: train 150s linear infinite   ;
+				-moz-animation: train 150s linear infinite   ;	/* Firefox */
+				-webkit-animation: train 150s  linear infinite   ;	/* Safari 和 Chrome */
+				-o-animation: train 150s linear infinite   ;	/* Opera */	
+			}
+			
+			@keyframes train
+			{
+			from { background-position-x: 0;}
+			to { background-position-x:-4500px;}
+			}
+			
+			@-moz-keyframes train /* Firefox */
+			{
+			from { background-position-x: 0;}
+			to { background-position-x:-4500px;}
+			}
+			
+			@-webkit-keyframes train /* Safari 和 Chrome */
+			{
+			from { background-position-x: 0;}
+			to { background-position-x:-4500px;}
+			}
+			
+			@-o-keyframes train /* Opera */
+			{
+			from { background-position-x: 0;}
+			to { background-position-x:-4500px;}
+			}
+			.train{position: absolute;width: 55%;bottom: 0;line-height: 0;z-index: 3;}
+			.train img{position: absolute;left: 0;height: 3rem;bottom: -.4rem;}
+			.here{
+				position: absolute;left: 0;z-index: 4;width: 100%;top: 3.2rem;
+				
+			}
+			.here img{width:28%;}
+			.to{
+				position: absolute;left: 0;z-index: 4;width: 26%;bottom: 3.5rem;background: url(image/go@3x.png) no-repeat scroll bottom left;
+				background-size: contain;left: 1rem;
+				color: #fff;
+				line-height: 2.5;
+				font-size: .75rem;
+				text-align: center;
+				padding-right: 1rem;
+			}
+			.qsh_scores,.qsh_love{
+				position: absolute;top: 30%;right: 30%;text-align: center;color: #fff;
+				font-size: .75rem;
+				line-height: 1;
+				z-index: 4;
+			}
+			.qsh_love{
+				top: 55%;right: 12%;
+			}
+			.qsh_scores img,.qsh_love img{
+				width: 2.8rem;	display: block;line-height: 1;
+				animation: twinkle 1.5s infinite;
+			}
+
+			@keyframes twinkle
+			{
+			  0% {
+			  	opacity: 1.0;
+                transform: scale(1, 1);
+			  }
+			  60% {
+			  	opacity: 1.0;
+                transform: scale(1.2, 1.2);
+			  }
+			  100% {
+			    opacity: 0.0;
+			  }
+			}
+
+			@-webkit-keyframes twinkle /*Safari and Chrome*/
+			{
+			  0% {
+			  	opacity: 1.0;
+                transform: scale(1, 1);
+			  }
+			  60% {
+			  	opacity: 1.0;
+                transform: scale(1.2, 1.2);
+			  }
+			  100% {
+			    opacity: 0.0;
+			  }
+			}
+
+
+			.qsh_msg{
+				position: absolute;
+				z-index:4;
+				background: url(image/station_paopao@3x.png) no-repeat scroll center;
+				background-size: 100% 100%;
+				color: #fff;
+				font-size: .75rem;
+				width: 40%;
+				top: 35%;
+			    left: 25%;
+			    padding: .5rem .75rem;
+			    padding-bottom: 2rem;
+			    
+    			}
+    			
+    			.scoretitle{
+    				padding: 15px;
+    				border: 1px solid #eee;
+    			}
+    			.scoreimg img{
+    				width: 20px;
+    			    margin-right: 3px;
+    			}
+    			.scoretitle_font{
+    				font-size: 0.9375rem;
+    				font-weight: bold;
+    			}
+    			    
+    
+    			/*会员动态*/
+    			.flexcon>div{
+    				display: inline-block;
+    				font-size: 0.75rem;
+    				line-height: 1.5;
+    				vertical-align: middle;
+    				padding: 7px 0;
+    			}
+    			.peopleimg img{
+    				width: 12px;
+    				margin-right: 8px;
+    				vertical-align: middle;
+    			}
+    			.flexcon{
+    				line-height: 0;
+				    font-size: 0;
+				    width: 100%;
+    			}
+    			.happyimg img{
+    				width: 15px;
+    				margin-left: 6px;
+    			}
+    			.peopleimg{
+    				width: 7%;
+    			}
+    			.inline_content{
+    				width: 93%;
+    			}
+		        #news{
+		           	height: 156px;
+		            overflow: hidden;
+		        }
+		        .member_title_font{
+		        	font-size: 0.9375rem;
+		        	font-weight: bold;
+		        }
+		        .noticeimg img{
+		        	width: 15px;
+		        	vertical-align: top;
+		        	margin-right: 3px;
+		        }
+		        .member_allcontainer{
+		        	/*padding: 15px;*/
+		        	padding: 15px 0;
+    				margin:10px;
+    				background: #fff;
+    				/*margin-top: 10px;*/
+    				border-radius: 8px;
+		        }
+		        .member_title{
+		        	/*padding:15px 10px ;*/
+		        	background: #fff;
+		        	border-bottom: 1px solid #eee;
+		        	padding-bottom: 15px;
+		        	padding-left: 15px;
+		        	
+		        	
+		        }
+		        .member_all{
+		        	    margin-top: 10px;
+		        	    padding-left: 10px;
+		        	    padding-right: 10px;
+		        }
+
+		        .member_ul{
+		        	height: 150px;
+		        	overflow: hidden; 
+		        }
+		        .member_li{
+		        	height: 50px;
+		        	line-height: 50px;
+		        }
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+		    <div class="qsh_header">
+		    	<div class="notice">
+		    		<div id="">
+		    			<ul>
+		    				<li>公告内容1</li>
+		    			</ul>
+		    		</div>
+		    		<!---->
+		    		
+		    		
+		    	</div>
+		    	<!--开往。。。。-->
+		    	<!--<div class="to">
+	    			开往 南通站
+	    		</div>-->
+	    		<div class="here">
+	    			<img src="image/station_fd@3x_31.png"/>
+	    		</div>
+		    	<div class="train">
+	    			<img src="image/train@3x.png"/>
+	    		</div>
+	    		<div class="qsh_scores" data-amount='1000'>
+	    			<img src="image/score@3x.png" alt="" />
+	    			1000
+	    		</div>
+	    		<div class="qsh_love" data-amount='1000'>
+	    			<img src="image/love@3x.png" alt="" />
+	    			1000
+	    		</div>
+	    		<div class="qsh_msg">
+	    			人们对美好生活的向往是我们奋斗的目标!
+	    		</div>
+	    		<!--背景-->
+	    		<div class="bg bg_ing "></div>
+		    </div>
+		    <div class="qsh_banner">
+		    	<div class="qsh_station_name">
+		    		<img src="image/qsh_map.png" class="map_p"/>
+		    		<span>南通站</span>
+		    		<img src="image/qsh_p.png" class="qsh_p"/>
+		    	</div>
+		    	<div class="qsh_time">
+		    		<!--任务倒计时 22h:44m:20s-->
+		    	</div>
+		    	<div class="qsh_map">
+		    		<span>站点地图</span>
+		    	</div>
+		    </div>
+		    <div class="qsh_stations">
+		    	<div class="">
+		    		<ul>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						开始出发
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									登陆天数
+		    								</div>
+		    								<div class="">
+		    									<div><span style="width: 50%;"></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/2天
+		    								</div>
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						初心站
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									帮助人数
+		    								</div>
+		    								<div class="">
+		    									<div><span style="width: 50%;"></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/2人
+		    								</div>
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						奋斗站 <span>幸福是奋斗出来的</span>
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									消费积分数
+		    								</div>
+		    								<div class="">
+		    									<div><span style="width: 80%;"></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/500积分
+		    								</div>
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						幸福站 
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									消费积分数
+		    								</div>
+		    								<div class="">
+		    									<div><span style="width: 20%;"></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/1000积分
+		    								</div>
+		    							</li>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									评论数
+		    								</div>
+		    								<div class="">
+		    									<div><span></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/3条
+		    								</div>
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						小康站（终点站） 
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									消费积分数
+		    								</div>
+		    								<div class="">
+		    									<div><span></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/1000积分
+		    								</div>
+		    							</li>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									评论数
+		    								</div>
+		    								<div class="">
+		    									<div><span></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/3条
+		    								</div>
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="qsh_tongji">
+		    	<div class="">
+		    		<ul>
+		    			<li>积分 <img src="image/point_icon.png"/></li>
+		    			<li class="jifen_total">3600</li>
+		    		</ul>
+		    	</div>
+		    	<div class="">
+		    		<ul>
+		    			<li>慈善贡献值 <img src="image/heart_icon.png"/></li>
+		    			<li class="gongxianzhi_total">1000</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    
+		    <div class="member_allcontainer">
+		    	<div class="member_title">
+		    		<span class="noticeimg"><img src="image/memberNotice.png"/></span>
+		    		<span class="member_title_font">黑卡会员即时动态</span>
+		    	</div>
+			    <div class="member_all" id="news">
+			    	<ul class="member_ul">
+			    		<li class="member_li">
+			    			<div class="flexcon">
+			    				<div class=" peopleimg">
+			    					<img src="image/people.png"/>
+			    				</div>
+			    				<div class="inline_content">
+			    					<span>
+			    						恭喜吴亦凡完成小康站任务，获得红利释放50黑钻！zszzszszszszszzszszszs
+			    					</span>
+			    					<span class="happyimg">
+				    					<img src="image/happy.png"/>
+				    				</span>
+				    			</div>
+			    			</div>
+			    		</li>
+			    		<li class="member_li">
+			    			<div class="flexcon">
+			    				<div class=" peopleimg">
+			    					<img src="image/people.png"/>
+			    				</div>
+			    				<div class="inline_content">
+			    					<span>
+			    						2
+			    					</span>
+			    					<span class="happyimg">
+				    					<img src="image/happy.png"/>
+				    				</span>
+			    				</div>
+			    			</div>
+			    		</li>
+			    		<li class="member_li">
+			    			<div class="flexcon">
+			    				<div class=" peopleimg">
+			    					<img src="image/people.png"/>
+			    				</div>
+			    				<div class="inline_content">
+			    					<span>
+			    						3
+			    					</span>
+			    					<span class="happyimg">
+				    					<img src="image/happy.png"/>
+				    				</span>
+			    				</div>
+			    			</div>
+			    		</li>
+			    		<li class="member_li">
+			    			<div class="flexcon">
+			    				<div class=" peopleimg">
+			    					<img src="image/people.png"/>
+			    				</div>
+			    				<div class="inline_content">
+			    					<span>
+			    						4
+			    					</span>
+			    					<span class="happyimg">
+				    					<img src="image/happy.png"/>
+				    				</span>
+			    				</div>
+			    			</div>
+			    		</li>
+			    	</ul>
+			    </div>
+		    </div>
+		    
+		    
+		    
+		    <div class="qsh_score">
+		    	<!-- 黑钻排行榜 -->
+				<div class="scoretitle">
+		    		<span class="scoreimg"><img src="image/jifen.png"/></span>
+		    		<span class="scoretitle_font">黑钻即时排行总榜</span>
+		    	</div>
+		    	<div class="qsh_score_list">
+		    		<ul>
+		    			<li>
+		    				<div>名次</div>
+		    				<div></div>
+		    				<div>积分</div>
+		    			</li>
+		    			<li class="active">
+		    				<div>101</div>
+		    				<div>
+		    					<img src="image/point_header1.png" class="qsh_user"/>我
+		    				</div>
+		    				<div>10</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no1.png"/></div>
+		    				<div>
+		    					<img src="image/point_header2.png" class="qsh_user"/>一片浮云
+		    				</div>
+		    				<div>3000</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no2.png"/></div>
+		    				<div>
+		    					<img src="image/point_header3.png" class="qsh_user"/>上海次郎
+		    				</div>
+		    				<div>2000</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no3.png"/></div>
+		    				<div>
+		    					<img src="image/point_header4.png" class="qsh_user"/>眉山太子
+		    				</div>
+		    				<div>200</div>
+		    			</li>
+		    			<li>
+		    				<div>4</div>
+		    				<div>
+		    					<img src="image/point_header5.png" class="qsh_user"/>胡子haha
+		    				</div>
+		    				<div>80</div>
+		    			</li>
+		    			<li>
+		    				<div>5</div>
+		    				<div>
+		    					<img src="image/point_header1.png" class="qsh_user"/>一片浮云
+		    				</div>
+		    				<div>5</div>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+				    <ul class="mui-table-view">
+				    	<li class="qsh_station passed">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						南通站(始发站)
+		    					</div>
+		    				</div>
+		    			</li>
+				    	<li class="qsh_station actived">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						加油站
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						初心站<span>不忘初心，牢记使命</span>
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						奋斗站<span>幸福是奋斗出来的</span>
+		    					</div>
+		    				</div>
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						幸福站<span>小康路上一个都不能掉队</span>
+		    					</div>
+		    				</div>
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						小康站(终点站)
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	mui('body').on('tap','#popover',function(){
+		console.log(1)
+		mui('#popover').popover('hide');
+	})
+	mui('body').on('tap','.mui-scroll-wrapper',function(e){
+		e.stopPropagation();
+	})
+	mui('.qsh_banner').on('tap','.qsh_map',function(){
+		mui('#popover').popover('show');
+	})
+	countDown(100)
+	function countDown(count){
+		
+		var timer=setInterval(function(){
+			var text='';
+			if(count>=0){
+				var h=parseInt(count/3600);
+				var m=parseInt((count%3600)/60);
+				var s=parseInt((count%60)%60);
+				text="任务倒计时 "+h+"h:"+m+"m:"+s+"s";
+				count--
+			}else{
+				clearInterval(timer)
+				text='';
+			}
+			mui('.qsh_time')[0].innerHTML=text;
+		},1000)
+	}
+	$(function(){
+		
+		$('.qsh_header').on('tap','.qsh_scores',function(){
+			$(this).fadeOut();
+			var count=$(this).attr('data-amount');
+			var timer=setInterval(function(){
+				var a=10;
+				var total=parseInt($('.jifen_total').html());
+				$('.jifen_total').html(total+a);
+				if(count<=a){
+					clearInterval(timer)
+					
+				}
+				count-=a;
+			},20)
+		})
+		$('.qsh_header').on('tap','.qsh_love',function(){
+			$(this).fadeOut();
+			var count=$(this).attr('data-amount');
+			var timer=setInterval(function(){
+				var a=10;
+				var total=parseInt($('.gongxianzhi_total').html());
+				$('.gongxianzhi_total').html(total+a);
+				if(count<=a){
+					clearInterval(timer)
+					
+				}
+				count-=a;
+			},20)
+		})
+		
+//		会员动态
+		// fanGun();
+  //       var scrollTimer;
+  //       function fanGun(){
+  //           scrollTimer = setInterval(function() {
+  //               scrollNews();
+  //           }, 3000);
+  //       };
+
+  //       function scrollNews() {
+  //           var $self = $("#news").find(".member_ul");
+  //           var lineHeight = $self.find(".member_li:first").height();
+			
+  //           $self.animate({
+  //               "marginTop": -lineHeight + "px"
+  //           }, 500, function() {
+  //               $self.css({
+  //                   marginTop: 0
+  //               }).find(".member_li:first").appendTo($self);
+  //           })
+  //       }
+  // var top = 0;
+  // var $self = $("#news").find(".member_ul");
+  // var ulHeight = $self.height();
+  // var lineHeight = $(".member_li:first").height();
+  // var size = $(".member_li").length;
+  // var cloneHtml = $("#news").find(".member_ul .member_li").clone();
+  // $self.append(cloneHtml);
+  // var bar = setInterval(function() {
+  //   top = top - lineHeight;
+  //   $self.animate({
+  //   	"marginTop": top + "px"
+  //   },785,function(){
+  //   	if(-top >= ulHeight + lineHeight){
+  //   		$self.css('margin-top',-(size-3)*lineHeight + 'px');
+  //   		top = -(size-3)*lineHeight;
+  //   	}
+  //   })         
+  // }, 1500);
+
+  //翻滚
+  var top = 0;
+  var $self = $("#news").find(".member_ul");
+  var ulHeight = $self.height();
+  var cloneHtml = $("#news").find(".member_ul .member_li").clone();
+  $self.append(cloneHtml);
+  var newHeight = $self.height();
+  var scrollTop = 0;
+  $self.scrollTop(0);
+  var myScroll = setInterval(function(){
+  	scrollUp()
+  },50);
+
+  var scrollUp = function(){
+  	if(scrollTop >= ulHeight + 50) {
+  		scrollTop = 0;
+      $self.scrollTop(0);
+    }else{
+      scrollTop ++;
+      $self.scrollTop(scrollTop);
+    }
+  }
+
+
+   //排名li被点击
+		$(document).on('click','.qsh_score_list li',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+	})
+	
+</script>

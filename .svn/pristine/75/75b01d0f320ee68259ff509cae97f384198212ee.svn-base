@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_detail1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
+		<style type="text/css">
+			.item_r img {
+			    max-width: 24px;
+			    vertical-align: middle;
+			}
+			.mui-media{
+				display: flex;vertical-align: middle;
+			}
+			.mui-media > div{
+				flex: 1;position: relative;
+			}
+			.mui-media > div:first-child{
+				max-width: 5.2rem;margin-right: 0.5rem;
+			}
+			.easy_do{
+				position: absolute;bottom: 0;width: 100%;
+			}
+			.easy_price{
+				font-size: 0.875rem;color: #d91a1a;font-weight: 500;
+			}
+			.easy_price small{
+				text-decoration: line-through;color: #999;
+			}
+			.easy_btn{
+				background: #d4ac57;color: #fff;line-height: 50px;
+				padding: 0 15px;
+				font-size: 1rem;
+			}
+			.easy_total{
+				font-size:0.875rem ;line-height: 3.6;
+				text-indent: 1rem;
+			}
+			.easy_total span{
+				color: #d91a1a;
+			}
+			.total_amount{
+				color: #d91a1a;font-weight: 500;
+				font-size: 1.3rem;line-height: 1.2;
+			}
+			.mui-ellipsis{
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    white-space: inherit;
+			    font-size: 0.75rem;
+			    line-height: 1.2;
+			    color: #666;
+			}
+			.easy_name{
+				font-size: 0.875rem;line-height: 1.8;
+			}
+			.mui-bar-nav~.mui-content{
+				top: 44px;padding-top:0;background: #fff;bottom: 50px;
+			}
+			body{
+				background: #fff;
+			}
+			.mui-scroll-wrapper{
+				bottom: 44px;
+			}
+			.mui-table-view:after{
+				height: 0;
+			}
+			li.mui-active{
+				background: #fff!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">易洗护</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div id="" style="line-height: 2.5;text-indent: 1rem;font-size: 1rem;border-bottom: 1px solid #eee;">
+							选择项目
+						</div>
+			<div class="index_item" style="position: relative;height: 100%;" >
+					<div class="mui-scroll-wrapper" >
+						
+					    <div class="mui-scroll">
+					        <!--这里放置真实显示的DOM内容-->
+					        <ul class="mui-table-view" id="service_list">
+					        	
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div  class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        	<div>
+							        		<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							        	</div>
+							            
+							            <div class="mui-media-body">
+						               		<div class="easy_name">标准洗车</div>
+							                <p class="mui-ellipsis">
+							                	去除车表灰尘，轮辋泥土，车内部件无灰尘、室内无异味，坐垫、脚垫整齐有序。
+							                </p>
+							                <div class="easy_do"> 
+							                	<div id="" class="mui-pull-left easy_price">
+							                		<small>￥500</small>￥500
+							                	</div>
+							                	<div class="mui-pull-right item_r">
+						                			<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+						                			<span class="mui-input-numbox" data-price="500.00">10</span>
+						                			<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+							                	</div>
+							                </div>
+							            </div>
+							    </li>
+							</ul>
+					    </div>
+					</div>
+					
+				
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-pull-left">
+				<div id="easy_total" class="easy_total">
+					 总计<span><small >￥</small></span><span class="total_amount">500</span>
+				</div>
+			</div>
+			<div class="mui-pull-right easy_btn" >
+				提交订单
+			</div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui('.mui-scroll-wrapper').scroll({})
+	mui('#service_list').on('tap','.cart-btn-numbox-minus',function(){
+		var a=parseInt($(this).next().html());
+		if (a>0) {
+			$(this).next().html(a-1)
+		}
+		loadTotal()
+	})
+	mui('#service_list').on('tap','.cart-btn-numbox-plus',function(){
+		$(this).prev().html(parseInt($(this).prev().html())+1);
+		loadTotal();
+	})
+	loadTotal()
+	function loadTotal(){
+		var total=0;
+		$('#service_list li').each(function(){
+			var count=parseInt($(this).find('.mui-input-numbox').html()) ;
+			var price=parseFloat($(this).find('.mui-input-numbox').attr('data-price')) ;
+			total+=price*count;
+		})
+		$('.total_amount').html(parseFloat(total).toFixed(2))
+	}
+</script>

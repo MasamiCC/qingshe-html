@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/christmas_menu.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/newyear.css"/>
+		<link rel="stylesheet" href="../css/liMarquee.css">
+		
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav mui-bar-transparent">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">双dan狂欢</h1>
+		</header>-->
+		<div class="mui-content">
+		    <div class="newYear_logo">
+		    	<img src="../image/newYear_01.png"/>
+		    	<img src="../image/newYear_02.png"/>
+		    	<img src="../image/newYear_03.png"/>
+		    	<div class="newYear_gl">
+		    		<img src="../image/newYear_gl.png"/>
+		    	</div>
+		    </div>
+		    <div class="newYear_tickets">
+		    	<ul>
+		    		<li>
+		    			<div class="">
+		    				<img src="../image/newYear_ticket_1.png"/>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<div class="">
+		    				<img src="../image/newYear_ticket_2.png"/>
+		    			</div>
+		    		</li>
+		    		<li>
+		    			<div class="">
+		    				<!--<img src="../image/newYear_ticket_3.png"/>-->
+		    				<img src="../image/newYear_ticket_3_h.png"/>
+		    			</div>
+		    			<div id="" class="empty"></div>
+		    		</li>
+		    	</ul>
+		    </div>
+		    <div class="newYear_gets">
+				<div class="dowebok">
+						<ul>
+							<li>
+								<div class="">
+									<img src="../image/texuan.png" onerror="this.src='../image/morentpouxiang.png'"/>
+									砍到了<span>美克美甲5折</span>
+								</div>
+							</li>
+							<li>
+								<div class="">
+									<img src="../image/texuan.png" onerror="this.src='../image/morentpouxiang.png'"/>
+									砍到了<span>美克美甲5折</span>
+								</div>
+							</li>
+							<li>
+								<div class="">
+									<img src="../image/texuan1.png" onerror="this.src='../image/morentpouxiang.png'"/>
+									砍到了<span>美克美甲5折</span>
+								</div>
+							</li>
+							<li>
+								<div class="">
+									<img src="../image/texuan.png" onerror="this.src='../image/morentpouxiang.png'"/>
+									砍到了<span>美克美甲5折</span>
+								</div>
+							</li>
+							<li>
+								<div class="">
+									<img src="../image/texuan.png" onerror="this.src='../image/morentpouxiang.png'"/>
+									砍到了<span>美克美甲5折</span>
+								</div>
+							</li>
+						</ul>
+					
+				</div>
+		    </div>
+		    <div class="newYear_t">
+		    	<div class="newYear_t_bg" style="background: url(../image/newYear_t.png) no-repeat;    background-size: 100%;">
+	    			<img src="../image/newYear_t.png" style="visibility: hidden;"/>
+	    		</div>
+		    	<div id="discount">
+		    		<!--倒数-->
+					<div class="flipUnitContainer" id="ten">
+						<div class="upperCard">
+							<span>?</span>
+						</div>
+						<div class="lowerCard">
+							<span>?</span>
+						</div>
+						<div class="flipCard first fold">
+							<span>?</span>
+						</div>
+						<div class="flipCard second unfold">
+							<span>?</span>
+						</div>
+					</div>
+					<span class="flipUnitContainer" ></span>
+					<div class="flipUnitContainer" id="ge">
+						<div class="upperCard">
+							<span>?</span>
+						</div>
+						<div class="lowerCard">
+							<span>?</span>
+						</div>
+						<div class="flipCard first fold">
+							<span>?</span>
+						</div>
+						<div class="flipCard second unfold">
+							<span>?</span>
+						</div>
+					</div>
+		    	</div>
+		    </div>
+		    <div class="newYear_shops">
+		    	<div class="newYear_shops_title"><img src="../image/newYear_shop_t.png"/></div>
+		    	<div class="newYear_date">
+		    		<ul>
+		    			<li class="active">圣诞</li>
+		    			<li>12月<br />26日</li>
+		    			<li>12月<br />27日</li>
+		    			<li>12月<br />28日</li>
+		    			<li>12月<br />29日</li>
+		    			<li>12月<br />30日</li>
+		    			<li>12月<br />31日</li>
+		    			<li>元旦</li>
+		    		</ul>
+		    	</div>
+		    	<div class="">
+		    		<ul class="newYear_shop_list">
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_1.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro  mui-navigate-right">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="empty">
+			    					
+			    				</div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_2.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro ">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="newYear_shop_go mui-navigate-right">GO</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_3.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="newYear_shop_go mui-navigate-right mui-navigate-right">GO</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_4.png"/>
+			    				</div>
+			    				<div class=" newYear_shop_pro">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_5.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_6.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<li class="newYear_shop">
+		    				<div class="">
+		    					<div class="newYear_shop_img">
+			    					<img src="../image/newYear_shop_7.png"/>
+			    				</div>
+			    				<div class="newYear_shop_pro">
+			    					<div class="">
+			    						爱在西元前
+			    					</div>
+			    					<p>折扣描述</p>
+			    				</div>
+			    				<div class="empty"></div>
+		    				</div>
+		    				
+		    			</li>
+		    			<div class="empty"></div>
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.liMarquee.js"></script>
+<script src="../js/christmas_year.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$('.dowebok').liMarquee({
+			scrollamount:80,
+		});
+		$('.newYear_gl').on('tap','img',function(){
+//			location.href='';
+			callNative('tocy', 'new-year-gl.html');
+		});
+		countDown2(99,51,200)
+	})
+</script>

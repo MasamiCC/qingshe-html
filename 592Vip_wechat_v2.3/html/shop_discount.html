@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>双旦店铺券</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  		<link rel="stylesheet" type="text/css" href="../css/number-pb.css">
+		<link href="../css/christmas_menu.css" rel="stylesheet" />
+		<link href="../css/christmas_year.css" rel="stylesheet" />
+		<link href="../css/shop_discount.css" rel="stylesheet" />
+		<style type="text/css">
+			.chy_main{
+				min-height: 177px;
+				height: 100%;
+			}
+			.activity_rule{padding: 5px 8px;vertical-align: middle;}
+			.activity_rule img{width: 0.875rem;vertical-align: bottom;line-height: 1;}
+		</style>
+	</head>
+
+	<body>
+		<div class="cy_main mui-content">
+			<div class="chy_header">
+				<div class="chy_header_h_con shop_discount_con">
+					<div class="chy_header_h">
+				   		<img src="../image/carbck.png" onerror="this.src='../image/d_year.png'" />
+					</div>
+					<div class="chy_header_h shop_discount">
+				   		<img src="../image/shop_discount.png"/>
+					</div>
+					<div class="shop_lowest">
+				   		<img src="../image/lowest.png"/>
+				   		<span class="sd_lowest">5</span>
+					</div>
+					<div class="activity_rule sd_rule" style="position: absolute;top: auto;bottom: 48px;right: 11px;line-height: 0.875rem;">
+				   		<img src="../image/rule_icon.png"/>
+				   		活动规则
+				   </div>
+					<!--<div class="activity_rule "  style="position: absolute;bottom:40px;right: 20px;top: auto;">
+						   		<a href="new-year-rule.html">活动规则</a>
+					 </div>-->
+				</div>
+			</div>	
+			<div class="chy_main_con">
+				<div class="chy_header_b_con">
+					<div class="chy_header_b">
+						<div class="sd_title">
+			    			保时捷体验中心
+			    		</div>
+						<div class="yellow_banner">
+							<img src="../image/yellow_banner.png"/>
+						</div>
+					</div>
+					<div class="discount">
+						
+						<div class="newYear_t_bg sd_yellowbg">
+			    			<img src="../image/sd_yellowbg.png"/>
+			    			<div class="discount_con" >
+			    				<!--倒数-->
+								<div class="flipUnitContainer" id="ten">
+									<div class="upperCard">
+										<span>?</span>
+									</div>
+									<div class="lowerCard">
+										<span>?</span>
+									</div>
+									<div class="flipCard first fold">
+										<span>?</span>
+									</div>
+									<div class="flipCard second unfold">
+										<span>?</span>
+									</div>
+								</div>
+								<span class="flipUnitContainer" ></span>
+								<div class="flipUnitContainer" id="ge">
+									<div class="upperCard">
+										<span>?</span>
+									</div>
+									<div class="lowerCard">
+										<span>?</span>
+									</div>
+									<div class="flipCard first fold">
+										<span>?</span>
+									</div>
+									<div class="flipCard second unfold">
+										<span>?</span>
+									</div>
+								</div>
+			    			</div>
+			    		</div>
+			    		<!--进度条-->	
+			    		<!--<div class="discount_progress">
+							<div class="bar">
+								<div class="bar_bg">
+									
+								</div>
+								<div class="bar_s" >
+									
+								</div>
+							</div>
+						</div>-->
+						<div class="discount_fonts">
+							已有 <span class="chy_people">0</span> 人参与，剩余可砍次数为： <span class="chy_other">5</span>
+						</div>
+					</div>
+				</div>
+				<div class="chy_main">
+					<div class="chy_main_top">
+						<!--初始化显示-->
+						<div class="chy_main_item" id="chy_get">
+							<img src="../image/christmas_get.png"/>
+						</div>
+						<!--初始化显示-->
+						
+						<!--已砍光-->
+						<div class="chy_main_item" id="chy_end">
+							<img src="../image/christmas_end.png"/>
+						</div>
+						<!--已砍光 10次用光-->
+						
+						<!--邀请好友砍价-->
+						<div class="chy_main_item" id="chy_inv">
+							<img src="../image/christmas_inv.png"/>
+						</div>
+						<!--邀请好友砍价-->
+						
+						<!--不砍了，激活-->
+						<div class="chy_main_item" id="go_active">
+							<img src="../image/christmas_use.png"/>
+						</div>
+						<!--不砍了，激活-->
+						<!--帮他砍-->
+						<div class="chy_main_item" id="go_helphim">
+							<img src="../image/help_him.png"/>
+						</div>
+						<!--帮他砍-->
+						<!--分享获取砍价机会-->
+						<div class="chy_main_item" id="go_mydiscount">
+							<img src="../image/get_mydiscount.png"/>
+						</div>
+						<!--分享获取砍价机会-->
+						<!--已激活-->
+						<div class="chy_main_item" id="go_activited">
+							<img src="../image/actived.png"/>
+						</div>
+						<!--已激活-->
+						<!--分享获取砍价机会-->
+						<div class="chy_main_item" id="go_share">
+							<img src="../image/share_get.png"/>
+						</div>
+						<!--分享获取砍价机会-->
+					</div>
+					<div class="white_line">
+						<div class="white_line_font_con">
+							<span class="white_line_font">砍券记录</span>
+						</div>
+					</div>
+					<div class="chy_main_bottom">
+						<!--邀请好友助砍-->
+						<div class="invite_friends">
+							<div class="invite_friend1">
+								<img src="../image/christmas_head.png"/>
+							</div>
+							<div class="invite_friend2">
+								<span class="invite_inline">小被几</span><span class="invite_inline">帮您砍了</span><span class="invite_inline">0.8折</span>
+							</div>
+							<div class="invite_friend3">
+								25分钟前
+							</div>
+						</div>
+						<div class="invite_friends">
+							<div class="invite_friend1">
+								<img src="../image/christmas_head.png"/>
+							</div>
+							<div class="invite_friend2">
+								<span class="invite_inline">我</span><span class="invite_inline">砍了</span><span class="invite_inline">0.6折</span>
+							</div>
+							<div class="invite_friend3">
+								5分钟前
+							</div>
+						</div>
+						<!--邀请好友助砍-->
+					</div>
+					<div class="chy_bottom">
+					   <img src="../image/bottom_snow.png"/>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			       <div class="out_con">
+					  	<div class="popover_main">
+					  		<div class="popover_item">
+					  			您的优惠券已激活
+					  		</div>
+					  		<div class="popover_item">
+					  			请至“我的优惠券”中查看并使用
+					  		</div>
+					  		<div class="popover_item">
+					  			<span class="check_coupon">查看我的优惠券</span>
+					  		</div>
+					  	</div>
+					  	<div class="popover_close" id="popover_close">
+					  		<img src="../image/p_close.png"/>
+					  	</div>
+			       </div>
+			    </div>
+			</div>
+		</div>
+		<div id="share_popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			       <div class="share_con">
+					  	<img src="../image/tip_share.png"/>
+			       </div>
+			    </div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/christmas_year.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+	
+	$(function(){
+		var count=GetQueryString('count');
+		var people=GetQueryString('people');
+		//进度条
+		$(".bar_s").animate({
+			width:count*20+'%',
+		})
+		$('#go_active').click(function(){
+				mui('#popover').popover('show');
+				$(".mui-backdrop").on("touchstart",function(){
+				return false;
+			});
+		});
+		
+		$('#go_share').click(function(){
+				mui('#share_popover').popover('show');
+		});
+		
+		$('#popover_close').click(function(){
+				mui('#popover').popover('hide');
+		});
+		
+		console.log(5-count)
+		var other=5-count;
+		if(0==people){
+			
+			if(count>0&&count<5){
+				$("#chy_inv").addClass("chy_show");
+				$("#go_active").addClass("chy_show");
+				$(".chy_people").html(count);
+				$(".chy_other").html(other);
+			}else if(count>5){
+				$("#chy_end").addClass("chy_show");
+				$("#go_active").addClass("chy_show");
+				$(".chy_people").html(count);
+				$(".chy_other").html(other);
+			}else{
+				$("#chy_get").addClass("chy_show");
+				$("#go_active").addClass("chy_show");
+			}
+			
+		}else if(1==people){
+			$("#go_helphim").addClass("chy_show");
+			$("#go_mydiscount").addClass("chy_show");
+		}else{
+			$("#go_activited").addClass("chy_show");
+			$("#go_share").addClass("chy_show");
+		}
+		
+//		超链接
+		$(".check_coupon ,#go_activited").click(function(){
+			callNative('toTickets', 'my_tickets.html');
+		});
+//		超链接 callNative(调的函数名,Url地址)	
+
+		countDown2(99,85,200)
+		
+//		折扣小数点后一位
+		var newlowest;
+		var lowest=$(".sd_lowest").html();
+		console.log(lowest)
+		newlowest=parseFloat(lowest).toFixed(1);
+		$(".sd_lowest").html(newlowest);
+//		折扣小数点后一位
+
+    });
+  	//获取URL参数
+	function GetQueryString(name){
+	     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	     var r = window.location.search.substr(1).match(reg);
+	     if(r!=null)return  unescape(r[2]); return null;
+	}
+	
+</script>

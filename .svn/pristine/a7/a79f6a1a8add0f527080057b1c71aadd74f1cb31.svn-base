@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				background: #fff;
+			}
+			header.mui-bar{
+				background: #fff;
+			}
+			.mui-bar .mui-title{
+				color: #d4ac57;
+			}
+			header .mui-icon-left-nav{
+				color: #999;
+			}
+			
+			.mui-content{
+				background: #fff;
+				padding:  1rem;
+				margin-top: 0;
+			}
+			h2{
+				font-size: 1rem;text-align: center;line-height: 1.5;
+			}
+			h4{
+				font-size: 0.875rem;text-align: center;
+			}
+			p{
+				color: #333;font-size: 0.75rem;text-indent: 1.5rem;
+			}
+			p.no_indent{
+				text-indent: 0;
+			}
+			strong{
+				margin-right:5px ;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+		    <h2 style="text-align: center;"> 爱心信用评价计分、修改删除规则与实施细则</h2>
+			<p>
+			    在爱心信用评价中，评价人若给予好评，则被评价人信用积分增加100分；若给予差评，则被评价人爱心信用积分减少200分；若给予中评或十五天内双方均未评价，则爱心信用积分不变。如评价人给予好评而对方未在十五天内给其评价，则评价人信用积分增加20分。
+			</p>
+			<p>
+			    相同买、卖家任意十四天内就同款商品的多笔交易，买家多个好评只加20分、多个差评只减20分；卖家多个好评只加100分、多个差评只减200分。每个自然月，相同买家与轻奢点评网卖家之间交易，买家与卖家爱心信用积分仅计取前三次。
+			</p>
+			<p>
+			    评价人可在作出中、差评后的15天内，对爱心信用评价进行一次修改或删除。15天后评价不得修改。
+			</p>
+			<p class="no_indent">
+			   <strong>一、如果是单方评价，什么时候生效，什么时候显示？</strong> 
+			</p>
+			<p>
+			      如仅一方作出“好评”，则立即生效即时显示；如一方作出“中评”或“差评”，另一方未评，则评价内容将在评价期间届满的48小时后全网显示并根据计分规则计分。
+			</p>
+			<p class="no_indent">
+			    <strong>二、评价可以修改吗？</strong> 
+			</p>
+			<p>
+			      好评不可以改成中评或差评，差评也不可以改为中评。中评或差评可以有一次机会改成好评或删除，修改或删除后立即生效，同时评价解释将被清空。
+			</p>
+			<p class="no_indent">
+			    <strong>三、评价已经修改过一次，还能再修改么？</strong>
+			</p>
+			<p>
+			      只有一次修改或删除的机会，如果已经修改过了是无法再次修改或删除。
+			</p>
+			<p class="no_indent">
+			   <strong>四、如果我1月份跟同一个卖家成交了6笔交易，我给了6个好评。其中有2笔是14天内对同款商品做出的好评。该卖家共获得几分？</strong> 
+			</p>
+			<p>
+			      14天内对同款商品做出的多次好评是只计算100分，因此这6笔交易中其中2笔是只计算100分的。加上剩下的4笔交易，这个卖家一共会获得500分。
+			</p>
+			<p class="no_indent">
+			    <strong>五、为什么要设置每个自然月相同买卖双方的爱心信用积分仅计取前三次的规则？判断是否在一个自然月内是依据什么时间？</strong>
+			</p>
+			<p>
+			      通过大量的数据验证，相同买卖双方之间每个自然月发生的交易，笔数一般在2-4笔之内，我们选择折中数作为参考依据。判断相同买卖双方产生爱心信用积分的交易是否在一个自然月内，是依据交易拍下的时间。
+			</p>
+			<p class="no_indent">
+			    <strong>六、好评率是怎么计算的？</strong>
+			</p>
+			<p>
+			      卖家好评率=所有计分的卖家好评数/所有计分的卖家评价总数；
+			</p>
+			<p>
+			      买家好评率=所有计分的买家好评数/所有计分的买家评价总数。
+			</p>
+			<p>
+			      数据经系统四舍五入后显示。
+			</p>
+			<p class="no_indent">
+			     <strong>七、退款成功了，是否还有评价权？</strong>
+			</p>
+			<p>
+			      只有成功的交易双方才有评价权。交易是否成功则以产品或服务的最终归属作为判断依据。
+			</p>
+			<p>
+			      也就是说，如果买家收到货或体验了服务，只要选择了不退货、退款，无论是全额退款还是部分退款，系统都判定交易成功，此时双方仍然有评价权。
+			</p>
+			<p>
+			      反过来，只要选择了退货、退款，并且卖家确认收货或确认退款，无论是全额退款还是部分退款，系统都判定交易关闭。此时，双方都没有评价权。
+			</p>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>

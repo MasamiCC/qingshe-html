@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css"/>
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;list-style: none;outline: none;}
+			body{overflow: hidden;position: absolute;left: 0;right: 0;top: 0;bottom: 0;}
+			.mui-content{position: absolute;left: 0;right: 0;top: 0;bottom: 0;overflow: auto;}
+			.cs-item{margin: .5rem auto;background: #fff;}
+			.cs-item:first-child{margin: 0;line-height: 0;}
+			.cs-item:last-child{margin-bottom: 0;}
+			.cs-item .title{display: flex;display: -webkit-flex;justify-content: space-between;align-items: center;border-bottom: 1px solid #eeeeee;padding: .5rem 1rem;}
+			.title_text{font-weight: 500;font-size: .875rem;}
+			.title-more{font-size: .75rem;color: #999;position: relative;}
+			.title-more:after{right: 0;}
+			.title-more.mui-navigate-right{padding-right: .75rem;}
+			.cs-banner{position: relative;}
+			.cs-banner img{max-width: 100%;}
+			.cs-banner .cs-banner-msg {position: absolute;left: 0;right: 0;top: 0;bottom: 0;color: #fff;display: flex;display: -webkit-flex;flex-direction: column;}
+			.cs-banner .cs-banner-msg ul{display: flex;display: -webkit-flex;flex-direction: column;flex: 1;margin-left: 2rem;justify-content: center; }
+			.cs-banner li{ line-height: 1.2;font-size: .75rem;}
+			.cs-banner li:first-child{font-size: .95rem;font-weight: 600;padding: 0 0 1rem 0;}
+			.cs-menu{display: flex;display: -webkit-flex;margin: 0;padding: .75rem 0;}
+			.cs-menu a{flex: 1;text-align: center;color: #333333;font-size: .75rem;}
+			.cs-menu a img{width: 1.6rem;margin: .3rem;height: 1.6rem;margin-bottom: 0;}
+			.action-list{font-size: .75rem;padding: .5rem 0;}
+			.action-img{font-size: 0;line-height: 0;border-radius: .5rem;overflow: hidden;text-align: center;}
+			.action-img img{max-width: 100%;}
+			.action-title{line-height: 1.5; overflow: hidden;    text-overflow: ellipsis;    display: -webkit-box;    -webkit-line-clamp: 2;    -webkit-box-orient: vertical;}
+			.help-list{padding: 0 1rem;}
+			.help-item{display: flex;display: -webkit-flex;align-items: stretch;-webkit-align-items: stretch;border-bottom: 1px solid #eee;padding: .75rem 0;}
+			.help-item-left{flex: 0 0 6.5rem;font-size: 0;line-height: 0;}
+			.help-item-pic{max-width: 5.5rem;border-radius: .5rem;}
+			.help-item-tj ul{display: flex;display: -webkit-flex;align-items: center;-webkit-align-items: center;}
+			.help-item-tj li{font-size: .75rem;color: #999;flex: 1;}
+			.help-item-tj span{display: block;color: #f8a120;font-size: 1.5rem;padding: .2rem 0;}
+			.help-item-right{display: flex;display: -webkit-flex;flex-direction: column;-webkit-flex-direction: column;justify-content: space-between;-webkit-justify-content: space-between;flex: 1;}
+			.help-item-user{font-size: .875rem;}
+			.showend{justify-content: center;font-size: .75rem;color: #999;}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<!--banner-->
+		    <div class="cs-item cs-banner">
+		    	<div class="">
+		    		<img src="images/cishan_banner.png"/>
+		    	</div>
+		    	<div class="cs-banner-msg">
+		    		<ul>
+		    			<li >轻奢慈善链· 慈善消费新理念</li>
+		    			<li style="line-height: 1;">累计善款（元）</li>
+		    			<li style="font-size: 1.8rem;font-weight: 500;">246,330.09</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <!--tongji-->
+		    <div class="cs-item cs-menu">
+		    	<a href="#">
+		    		<ul>
+		    			<li>
+		    				<img src="images/icon_gonggao.png"/>
+		    			</li>
+		    			<li>捐赠公示</li>
+		    		</ul>
+    			</a>
+    			<a href="#">
+		    		<ul>
+		    			<li>
+		    				<img src="images/icon_donate.png"/>
+		    			</li>
+		    			<li>轻松筹</li>
+		    		</ul>
+    			</a>
+    			<a href="#">
+		    		<ul>
+		    			<li>
+		    				<img src="images/icon_bank.png"/>
+		    			</li>
+		    			<li>爱心银行</li>
+		    		</ul>
+    			</a>
+    			<a href="#">
+		    		<ul>
+		    			<li>
+		    				<img src="images/icon_help.png"/>
+		    			</li>
+		    			<li>申请救助</li>
+		    		</ul>
+    			</a>
+		    </div>
+		    <!--action-->
+		    <div class="cs-item cs-action">
+		    	<div class="title">
+		    		<div class="title_text">公益活动</div>
+		    		<div class="title-more mui-navigate-right">更多往期活动</div>
+		    	</div>
+		    	<div class="action-list">
+		    		<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+					        	<div id="" class="action-img">
+					        		<img src="../../image/carbck.png"/>
+					        	</div>
+					        	<div class="action-title">
+					        		一场圣殿，一个符号，一个历史,一场圣殿，一个符号，一个历史场圣殿，一个符号，一个历史,一场圣殿，一个符号，一个历史 
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div id="" class="action-img">
+					        		<img src="../../image/carbck.png"/>
+					        	</div>
+					        	<div class="action-title">
+					        		一场圣殿，一个符号，一个历史
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div id="" class="action-img">
+					        		<img src="../../image/carbck.png"/>
+					        	</div>
+					        	<div class="action-title">
+					        		一场圣殿，一个符号，一个历史
+					        	</div>
+					        </div>
+					    </div>
+					   
+					</div>
+		    	</div>
+		    </div>
+		    <!--helplist-->
+		    <div class="cs-item cs-help">
+		    	<div class="title">
+		    		<div class="title_text">爱心救助</div>
+		    		<div class="title-more">以下均为轻奢点评大病救助真实案例</div>
+		    	</div>
+		    	<div class="help-list">
+		    		<div class="help-item">
+		    			<div class="help-item-left">
+		    				<img src="../../image/bottom1head.png" class="help-item-pic" onerror="this.src='./images/cs_head_default.png'"/>
+		    			</div>
+		    			<div class="help-item-right">
+		    				<div class="help-item-user">
+		    					李大芬（ 因患白血病致贫 ）
+		    				</div>
+		    				<div class="help-item-tj">
+		    					<ul>
+		    						<li>已救助金额（元) <span>18000</span></li>
+		    						<li>已救助金额（次) <span>2</span></li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="help-item">
+		    			<div class="help-item-left">
+		    				<img src="../../image/bottomhead.png" class="help-item-pic"/>
+		    			</div>
+		    			<div class="help-item-right">
+		    				<div class="help-item-user">
+		    					李大芬（ 因患白血病致贫 ）
+		    				</div>
+		    				<div class="help-item-tj">
+		    					<ul>
+		    						<li>已救助金额（元) <span>18000</span></li>
+		    						<li>已救助金额（次) <span>2</span></li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<div class="help-item">
+		    			<div class="help-item-left">
+		    				<img src="../../image/bottomhead.png" class="help-item-pic"/>
+		    			</div>
+		    			<div class="help-item-right">
+		    				<div class="help-item-user">
+		    					李大芬（ 因患白血病致贫 ）
+		    				</div>
+		    				<div class="help-item-tj">
+		    					<ul>
+		    						<li>已救助金额（元) <span>18000</span></li>
+		    						<li>已救助金额（次) <span>2</span></li>
+		    					</ul>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	var mySwiper = new Swiper ('.swiper-container', {
+		slidesPerView : 1.7,
+		spaceBetween : 10,
+		slidesOffsetBefore : 15,
+		slidesOffsetAfter :15
+	})
+	var totalPage=10,currentPage=1;
+	$(function(){
+		contentScroll();
+	})
+	function contentScroll(){
+		$('.mui-content').scroll(function(){
+
+			var h = $(this).height();//div可视区域的高度
+	        var sh = $(this)[0].scrollHeight;//滚动的高度，$(this)指代jQuery对象，而$(this)[0]指代的是dom节点
+	        var st =$(this)[0].scrollTop;//滚动条的高度，即滚动条的当前位置到div顶部的距离
+	        if(h+st>=sh){
+	            var html='';
+	            if(currentPage<=totalPage){
+	            	
+	            	$('.help-list').append(getHtml())
+	            	if(currentPage==totalPage){
+		            	if($('.showend').size()==0){
+		            		$('.help-list').append('<div class="showend help-item"><span>全部加载完成</span></div>')
+		            	}
+		            }
+	            	currentPage++;
+	            }else{
+	            	return false;
+	            }
+	            
+	        }
+		})
+	}
+	function getHtml(){
+		var html=''
+//		for (var i in data) {
+			html+='<div class="help-item">'
+		    	+		'<div class="help-item-left">'
+		    	+			'<img src="../../image/bottomhead.png" class="help-item-pic"/>'
+		    	+		'</div>'
+		    	+		'<div class="help-item-right">'
+		    	+			'<div class="help-item-user">'
+		    	+				'李大芬（ 因患白血病致贫 ）'
+		    	+			'</div>'
+		    	+			'<div class="help-item-tj">'
+		    	+				'<ul>'
+		    	+					'<li>已救助金额（元) <span>18000</span></li>'
+		    	+					'<li>已救助金额（次) <span>2</span></li>'
+		    	+				'</ul>'
+		    	+			'</div>'
+		    	+		'</div>'
+		    	+	'</div>'
+//		}
+		
+		return html;
+		
+	}
+	
+	
+</script>

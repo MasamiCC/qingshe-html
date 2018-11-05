@@ -1,0 +1,34 @@
+	.bill_name{
+		font-size: 0.875rem;color: #333;
+	}
+	.bill_time{
+		font-size: 0.75rem;color: #999;
+	}
+	.bill_in .bill_amount{
+		color: #ff3e3a;
+	}
+	.bill_out .bill_amount{
+		color: #47b36e;
+	}
+	.bill_amount{
+		margin-top: 0.8rem;
+	}
+	.mui-table-view-cell:after{
+		left: 0;
+	}
+	.clear{
+		clear: both;
+	}
+	.bill_month{
+		background: #fbf8f0;color: #333;font-weight: 500;font-size: 0.9rem;
+		text-indent: 15px;
+		line-height: 3;
+	}
+	.bill_month i{
+		color: #ddbd79;
+		margin-right: 1rem;
+		font-size: 1.3rem;
+	}
+	.mui-scroll-wrapper{
+		top: 43px;
+	}

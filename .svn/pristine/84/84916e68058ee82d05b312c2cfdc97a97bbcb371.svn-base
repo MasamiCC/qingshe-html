@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>申请帮助</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/social_donation_apply_f.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.poppicker.css"/>
+		<style type="text/css">
+			#popover p{word-break: break-all;}
+		</style>
+	</head>
+
+	<body>
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide swiper-no-swiping">
+		            	
+		            	<div class="">
+		            		<div class="step_title">
+		            			第一步 填写基本信息
+		            		</div>
+		            		<div class="step_form">
+		            			<form class="mui-input-group">
+		            			    <div class="mui-input-row">
+		            			        <label>姓名</label>
+		            			        <div class="form_item ">
+		            			        	<input type="text" class="" placeholder="请输入申请人姓名">
+		            			        </div>
+		            			        
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>性别</label>
+		            			        <div class="form_item form_item_n">
+		            			        	<div class=" mui-radio " style="text-align: left;padding-top: 8px;padding-left: 15px;">
+		            			        		
+		            			        	    <label for="meal">男<input name="radio" type="radio" checked id="meal"></label>
+		            			        	    
+		            			        	    <label for="fmeal">女<input name="radio" type="radio" id="fmeal" ></label>
+		            			        	    
+		            			        	</div>
+		            			        </div>
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>民族</label>
+		            			        <div class="form_item">
+		            			        	<input type="text" class="" placeholder="请输入民族">
+		            			        </div>
+		            			        
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>家庭地址</label>
+		            			        <div class="form_item">
+		            			        	<div class="mui-navigate-right" style="position: relative;border-bottom:1px dashed #ccc ;">
+		            			        		<input type="text" class="" placeholder="请选择地区" readonly id="changeCity">
+		            			        	</div>
+		            			        	<div class="">
+		            			        		<input type="text" class="" placeholder="请填写详细地址">
+		            			        	</div>
+		            			        	
+		            			        </div>
+		            			        
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>联系电话</label>
+		            			        <div class="form_item">
+		            			        	<div class="" style="position: relative;border-bottom:1px dashed #ccc ;text-align: left;">
+		            			        		<input type="text" class="" placeholder="请输入手机号码" style="width: 60%;padding-right: 0;" maxlength="11" id="myMobile">
+		            			        		<span id="code" class="mui-pull-right" style="color: #51aff0;font-size: 0.75rem;">
+		            			        			获取验证码
+		            			        		</span>
+		            			        	</div>
+		            			        	<div class="">
+		            			        		<input type="text" class="" placeholder="请输入验证码">
+		            			        	</div>
+		            			        </div>
+		            			        
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>开户行</label>
+		            			        <div class="form_item">
+		            			        	<input type="text" class="" placeholder="请输入开户行名称">
+		            			        </div>
+		            			        
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			        <label>开户卡号</label>
+		            			        <div class="form_item">
+		            			        	<input type="text" class="" placeholder="请输入开户行银行卡号">
+		            			        </div>
+		            			        
+		            			    </div>
+		            			</form>
+		            			<form class="mui-input-group" style="border-top: 3px solid #F4F4F4;" >
+		            			    <div class="mui-input-row">
+		            			       <ul class="pic_list">
+		            			       	<li>
+		            			       		<div class="">
+		            			       			<img src="../image/social_add.png" onclick="changImg(this)"/>
+		            			       		</div>
+		            			       		<p>身份证正面照</p>
+		            			       		<input type="file" name="" id="" value="" accept="image/*" onchange="change(this)"/>
+		            			       	</li>
+		            			       	<li>
+		            			       		<div class="">
+		            			       			<img src="../image/social_add.png" onclick="changImg(this)"/>
+		            			       		</div>
+		            			       		<p>身份证反面照</p>
+		            			       		<input type="file" name="" id="" value="" accept="image/*" onchange="change(this)"/>
+		            			       	</li>
+		            			       	<li>
+		            			       		<div class="">
+		            			       			<img src="../image/social_add.png" onclick="changImg(this)"/>
+		            			       		</div>
+		            			       		<p>手持身份证照片</p>
+		            			       		<input type="file" name="" id="" value=""  accept="image/*" onchange="change(this)"/>
+		            			       	</li>
+		            			       </ul>
+		            			    </div>
+		            			    <div class="mui-input-row">
+		            			       <img src="../image/demo_btn.png" style="width: 66%;" id="showDemo"/>
+		            			    </div>
+		            			</form>
+		            		</div>
+		            		<div class="slide_btns" style="">
+			            		<div  class="slide_btn slide_next">下一步</div>
+			            	</div>
+		            	</div>
+		            </div>
+		            <div class="swiper-slide swiper-no-swiping">
+		            	<div class="">
+		            		<div class="step_title">
+		            			第二步 家庭成员收入信息
+		            		</div>
+		            		<div class="step_form">
+		            			<form class="mui-input-group">
+		            				<div class="person">
+		            					<div class="step_title_s">
+		            						<i class="fa fa-user"></i><span>本人</span>
+		            					</div>
+		            					<div class="mui-input-row">
+			            			        <label>工作单位</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入工作单位或无业、务农" name="my_work" data-title="工作单位">
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>月收入</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入月收入" name="my_monthIn" data-title="月收入">
+			            			        	<span>元</span>
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>其他收入</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="退休金、政府补贴生活费" name="my_monthIn_o" data-title="其他收入"><span>元</span>
+			            			        </div>
+			            			        
+			            			    </div>
+		            				</div>
+		            				<div class="person">
+		            					<div class="step_title_s">
+		            						<i class="fa fa-users"></i><span>家属一</span>
+		            					</div>
+		            					<div class="mui-input-row">
+			            			        <label>姓名</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入家属姓名" name="name" data-title="姓名">
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>关系</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="与申请人关系" name="relationship" data-title="关系">
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>工作单位</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入工作单位或无业、务农" name="workplace" data-title="工作单位">
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>联系方式</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入联系电话" name="phone" maxlength="11" data-title="联系方式">
+			            			        </div>
+			            			        
+			            			    </div>
+			            			    <div class="mui-input-row">
+			            			        <label>月收入</label>
+			            			        <div class="form_item">
+			            			        	<input type="text" class="" placeholder="请输入月收入" name="income" data-title="月收入"><span>元</span>
+			            			        </div>
+			            			        
+			            			    </div>
+		            				</div>
+		            				<div class="add_person">
+		            					<span id="add_person">新增家属信息 +</span>
+		            				</div>
+		            			    
+		            			  
+		            			</form>
+		            		</div>
+		            		<div class="slide_btns slide_btns_d" style="">
+			            		<div  class="slide_btn slide_prev slide_half"><span></span>上一步</div>
+			            		<div  class="slide_btn slide_next slide_half"><span></span>下一步</div>
+			            	</div>
+		            	</div>
+		            	
+		            </div>
+		            <div class="swiper-slide swiper-no-swiping">
+		            	<div class="">
+		            		<div class="step_title">
+		            			第三步 调查问卷
+		            		</div>
+		            		<div class="step_form">
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	一、救助申请人居住地属于？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>发达地区</label>
+		            			    	    <input name="dc_01" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>次发达地区</label>
+		            			    	    <input name="dc_01" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>欠发达地区</label>
+		            			    	    <input name="dc_01" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	二、救助申请人及其直系亲属、儿女配偶、孙子女配偶中有无私营企业（有限公司、集团等性质）负责人或担任法人？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_02" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_02" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			    <div class="dc_form">
+		            			    	<div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="请输入企业名称">
+			            			    	</div>
+			            			    </div>
+		            			    </div>
+		            			    
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	三、救助申请人自身有无稳定生活来源？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_03" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_03" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	四、救助申请人是否已享受低保状态？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>是</label>
+		            			    	    <input name="dc_04" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>否</label>
+		            			    	    <input name="dc_04" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	五、救助申请人生活来源是否低于当地最低工资标准？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>是</label>
+		            			    	    <input name="dc_05" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>否</label>
+		            			    	    <input name="dc_05" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	六、因病因灾祸致贫后救助申请人整个家庭月收入
+		            			    </div>
+		            			    <div class="form_item">
+		            			    	<div class="mui-input-row">
+		            			    	    <input type="text" placeholder="请输入家庭总月收入">
+		            			    	    <span>元（人民币）</span>
+		            			    	</div>
+		            			    </div>
+		            			    
+		            			    <div class="dc_title">
+		            			    	银行或其他金融类平台总存款
+		            			    </div>
+		            			    <div class="form_item">
+		            			    	<div class="mui-input-row">
+		            			    	    <input type="text" placeholder="家庭总存款">
+		            			    	    <span>元（人民币）</span>
+		            			    	</div>
+		            			    </div>
+		            			    <div class="dc_title">
+		            			    	月平均用电量
+		            			    </div>
+		            			    <div class="form_item">
+		            			    	<div class="mui-input-row">
+		            			    	    <input type="text" placeholder="家庭月均用电量">
+		            			    	    <span>千瓦时</span>
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	七、除用于为家庭谋取生活来源进行营业性经营外，救助申请人及其直系亲属、儿女配偶、孙子女配偶有无汽车作为代步工具？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_07" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_07" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			    <div class="dc_form">
+		            			    	<div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="请输入车辆品牌，多量不同品牌以逗号隔开">
+			            			    	</div>
+			            			    </div>
+			            			    <div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="请输入数量">
+			            			    	</div>
+			            			    </div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	八、在可以满足救助申请人及其直系亲属、儿女配偶、孙子女配偶自住外有无富余房产？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_08" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_08" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			    <div class="dc_form">
+		            			    	<div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="请输入房产数量">
+			            			    	</div>
+			            			    </div>
+			            			    <div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="多个房产，请输入房产位置，并以逗号隔开">
+			            			    	</div>
+			            			    </div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	九、救助申请人及其直系亲属、子女配偶、孙子女配偶任一成员中，有无股票、证券、期货以及其他类理财产品、民间借贷等投资行为？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_09" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_09" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			    <div class="dc_form">
+		            			    	<div class="form_item">
+			            			    	<div class="mui-input-row">
+			            			    	    <input type="text" placeholder="总额">
+			            			    	    <span>元（人民币）</span>
+			            			    	</div>
+			            			    </div>
+			            			   
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	十、申请救助家庭有无弄虚作假骗取慈善救助或其他类似善款行为史？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_10" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_10" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	十一、救助申请人及其直系亲属、儿女配偶、孙子女配偶任一成员中有无吸毒、赌博成员？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>有</label>
+		            			    	    <input name="dc_11" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>无</label>
+		            			    	    <input name="dc_11" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	十二、救助申请人本人或供养亲属是否属于轻奢点评黑卡会员、会员？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>是</label>
+		            			    	    <input name="dc_12" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>否</label>
+		            			    	    <input name="dc_12" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	十三、救助申请人本人或供养亲属是否属于轻奢点评平台合格爱心商家？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>是</label>
+		            			    	    <input name="dc_13" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>否</label>
+		            			    	    <input name="dc_13" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			<div class="mui-row">
+		            			    <div class="dc_title">
+		            			    	十四、救助申请人本人或供养亲属是否属于合格爱心商家的供养亲属、员工？
+		            			    </div>
+		            			    <div class="dc_a_list">
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>是</label>
+		            			    	    <input name="dc_14" type="radio" >
+		            			    	</div>
+		            			    	<div class="mui-input-row mui-radio ">
+		            			    	    <label>否</label>
+		            			    	    <input name="dc_14" type="radio" >
+		            			    	</div>
+		            			    </div>
+		            			</div>
+		            			
+		            		</div>
+		            		<div class="slide_btns slide_btns_d" style="">
+			            		<div  class="slide_btn slide_prev slide_half"><span></span>上一步</div>
+			            		<div  class="slide_btn slide_next slide_half slide_end"><span></span>完成问卷，并提交申请</div>
+			            	</div>
+		            	</div>
+		            	
+		            </div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <!--<div class="swiper-pagination"></div>-->
+		    </div>
+			<div id="popover" class="mui-popover">
+					<h3>注意</h3>
+				   	<p>①申请者须提供家庭困难证明，医院诊断证明、住院医疗费用单据（年度自费部分5万元以上）以及本人身份证复印件等。</p>
+				   	<p>②所提供的资料必须真实无任何虚假，若有虚假行为，我们将按照轻奢点评慈善基金管理办法第17条进行处理。</p>
+				   	<p>③轻奢点评慈善基金管理办法请登录轻奢点评官网（http://www.592vip.com ）或登录微信直接搜索“轻奢点评慈善基金”公众号并关注，即可进行相关查询，或直接拨打电话：4008288110咨询。</p>
+					<div class="slide_btns " style="">
+	            		<div  class="slide_btn   "  id="closePop">已知晓</div>
+	            	</div>
+			</div>
+			<div id="demopopover" class="mui-popover">
+				<img src="../image/person_card.png"/>
+				<span><i class="fa fa-times-circle fa-2x"></i></span>
+			</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.poppicker.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function($, doc) {
+		$.init();
+		$.ready(function() {
+			//普通示例
+			
+			
+			//-----------------------------------------
+			//					//级联示例
+			var cityPicker3 = new $.PopPicker({
+				layer: 3
+			});
+			cityPicker3.setData(createData(cityData));
+			var showCityPickerButton = doc.getElementById('changeCity');
+			var cityResult3 = doc.getElementById('changeCity');
+			showCityPickerButton.addEventListener('tap', function(event) {
+				cityPicker3.show(function(items) {
+					cityResult3.value = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+		});
+	})(mui, document);
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        noSwiping : true,
+    });
+    var mytimer='';
+	$(function(){
+		var step=sessionStorage.getItem("read");
+		console.log(step)
+		if(step==null){
+			mui('#popover').popover('show')
+		}
+	    $('.slide_next').click(function(){
+	    	var index=$(this).parents('.swiper-slide').index();
+	    	if (!$(this).hasClass('slide_end')) {
+	    		if(index==1){
+		    		if(formCheck()){
+		    			mySlideNext();
+		    		}else{
+		    			return false;
+		    		}
+		    	}else{
+		    		mySlideNext();
+		    	}
+	    		
+	    	}
+	    	
+	    	
+	    })
+	    $('.slide_prev').click(function(){
+	    	mySlidePrev();
+	    })
+	    $("#closePop").on('tap',function(){
+	    	mui('#popover').popover('hide');
+	    	sessionStorage.setItem("read", "1");
+	    })
+	    $("#demopopover").on('tap','span',function(){
+	    	mui('#demopopover').popover('hide')
+	    })
+	    $("#showDemo").on('tap',function(){
+	    	mui('#demopopover').popover('show')
+	    })
+	    $(".add_person").on('tap',function(){
+	    	
+	    	var pSize=$('.person').size();
+	    	if(pSize<6){
+	    		var html='<div class="person">'
+        				+	'<div class="step_title_s"><i class="fa fa-users"></i><span>家属</span><i class="mui-pull-right delPerson fa fa-trash" onclick="delPerson(this)"></i></div>'
+        				+	'<div class="mui-input-row">'
+        				+		'<label>姓名</label>'
+            			+        '<div class="form_item"><input type="text" class="" placeholder="请输入家属姓名" name="name" data-title="姓名"></div>'
+            			+    '</div>'
+            			+    '<div class="mui-input-row">'
+            			+        '<label>关系</label>'
+            			+        '<div class="form_item"><input type="text" class="" placeholder="与申请人关系" name="relationship" data-title="与申请人关系"></div>'
+            			+    '</div>'
+            			+    '<div class="mui-input-row">'
+            			+        '<label>工作单位</label>'
+            			+        '<div class="form_item"><input type="text" class="" placeholder="请输入工作单位或无业、务农" name="workplace" data-title="工作单位"></div>'
+            			+    '</div>'
+            			+    '<div class="mui-input-row">'
+            			+        '<label>联系方式</label>'
+            			+        '<div class="form_item"><input type="text" class="" placeholder="请输入联系电话" name="phone" maxlength="11" data-title="联系方式"></div>'
+            			+    '</div>'
+            			+    '<div class="mui-input-row">'
+            			+        '<label>月收入</label>'
+            			+        '<div class="form_item"><input type="text" class="" placeholder="请输入月收入" name="income" data-title="月收入"><span>元</span></div>'
+            			+    '</div>'
+        				+'</div>';
+        		$(this).before(html);
+        		loadPersonTitle();
+        		if(pSize==5){$(".add_person").hide()}
+	    	}
+
+	    })
+	    $("#code").on('tap',function(){
+	    	var clicked=$(this).hasClass('clicked');
+	    	if(!clicked){
+	    		$(this).addClass('clicked');
+	    		var mobile=$("#myMobile").val();
+	    		if(!(/^1[3|4|5|7|8][0-9]\d{8}$/.test(mobile))){
+	    			mui.alert('手机号码格式不正确');
+	    			$("#myMobile").focus();
+	    			$(this).removeClass('clicked')
+	    		}else{
+	    			countTime("#code",10)
+	    		}
+	    	}
+	    })
+	    stepThirdClick()
+	    mySlideTo(2)
+	})
+	
+    function mySlideTo(index){
+    	swiper.slideTo(index, 1000, false)
+    }
+    function mySlideNext(){
+    	swiper.slideNext(1000,false);
+    }
+    function mySlidePrev(){
+    	swiper.slidePrev(1000,false);
+    }
+    function stepThirdClick(){
+    	$('.mui-row input[type=radio]').each(function(){
+    		$(this).on('click',function(){
+    			var siblings=$(this).parents('.dc_a_list').siblings().size();
+    			var index=$(this).parent().index();
+    			if(siblings==2){
+    				if(index==0){
+    					$(this).parents('.dc_a_list').next().slideDown()
+    				}else{
+    					$(this).parents('.dc_a_list').next().slideUp()
+    				}
+    			}
+    			console.log($(this).parents('.dc_a_list').siblings().size())
+    		})
+    	})
+    }
+    function countTime(ele,count){
+    	clearInterval(mytimer);
+    	mytimer=setInterval(function(){
+    		if (count>0) {
+    			$(ele).html(count+"s后重试");
+    			count--;
+    		}else{
+    			clearInterval(mytimer);
+    			$(ele).removeClass('clicked');
+    			$(ele).html("获取验证码");
+    		}
+    	},1000)
+    }
+    function changImg(me){
+    	console.log(me)
+    	$(me).parents('li').find('input[type=file]').click()
+    }
+    function change (obj) {
+	    if (!obj.files.length) return;
+	    if (obj.files.length > 1) {
+	        mui.alert("只允许上传一张图片!");
+	        return false;
+	    }
+	
+	    var file = obj.files[0];
+	
+	    var reader = new FileReader();
+	    reader.onload = function () {
+	        var result = this.result;    //data:base64     
+	        $(obj).parent().find('img').attr({
+	        	src:result
+	        })
+	        $(obj).parent().find('div').append('<i class="fa fa-times-circle fa-2x" onclick="delImg(this)"></i>')
+	        $(obj).parent().find('img').css({
+	        	height:($(obj).parent().width()-10)*112/178,
+	        	width:$(obj).parent().width()-10
+	        })
+	    };
+	    reader.readAsDataURL(file);
+	}
+    function delImg(me){
+    	$(me).parent().html('<img src="../image/social_add.png" onclick="changImg(this)">')
+    }
+    function delPerson(me){
+    	$(me).parents('.person').remove();
+    	loadPersonTitle();
+    	if($('.person').size()<6){
+    		$(".add_person").show()
+    	}
+    }
+    function loadPersonTitle(){
+    	var arr=['一','二','三','四','五'];
+    	$('.person').each(function(){
+    		var index=$(this).index();
+    		if(index>1){
+    			$(this).find('.step_title_s span').html('家属'+arr[index-1])
+    		}
+    	})
+    }
+    
+    var applyFamily={};
+    function formCheck(){
+    	var err={};
+    	$(".person").each(function(){
+    		var _this=$(this);
+    		var index=_this.index();
+    		var keys=_this.find('.step_title_s span').text();
+    		var flist=_this.find('.mui-input-row input');
+    		var temp={};
+    		var errTemp={};
+    		flist.each(function(){
+    			temp[$(this).attr('name')]=$(this).val();
+    			console.log($(this).attr('name')+":"+$(this).val())
+    			if($(this).val()==''){
+    				errTemp[$(this).parents('.mui-input-row').index()]=$(this).attr('data-title')+'为空';
+    			}
+    		})
+    		applyFamily[index]=temp;
+    		if(JSON.stringify(errTemp)!='{}'){
+    			err[keys]=errTemp;
+    		}
+    		
+    	})
+    	console.log(err)
+    	if(JSON.stringify(err)!='{}'){
+    		var str='';
+    		for (var i in err) {
+    			str+="<b>"+i+"</b>\r\n";
+    			var e=err[i];
+    			for (var j in e) {
+    				str+=e[j]+"\r\n";
+    			}
+    		}
+    		mui.alert(str);
+    		return false;
+    	}else{
+    		return applyFamily;
+    	}
+    	
+    }
+    
+    
+    function thirdForm(){
+    	$('.mui-row').each(function(){
+    		var index=$(this).index();
+    		console.log(index+1)
+    	})
+    }
+</script>

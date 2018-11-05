@@ -1,0 +1,299 @@
+.user_right{
+	background:#f7f7f7;
+	padding-top: 0;
+}
+.productnum{
+	color: #333;
+}
+.center a{
+	text-decoration:none;
+	color: initial;
+}
+.profile-infoitem:last-child{
+	border: 0;
+}
+.profile-infoitem:first-child{
+	padding-right:40px ;
+}
+.usercenter_img{
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.profile .profile-panel {
+    padding: 0;
+    background-color: #f7f7f7;
+    border: none;
+    overflow: hidden;
+}
+.profile-panel {
+    min-height: 680px;
+    padding: 10px 18px;
+}
+.profile-panelcontent {
+    display: inline-block;
+    width: 100%;
+}
+.profile-info, .profile-order {
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+.profile-footprint {
+	 margin-bottom: 20px;
+    background-color: #fff;
+}
+.profile-btn, .profile-perosondata {
+    display: inline-block;
+}
+.profile-info {
+    display: table;
+    padding: 30px 0;
+    width: 100%;
+}
+.profile-infoitem-number.hongbao {
+    color: #e0aa58;
+}
+.profile-infoitem-number.score {
+    color: #fc463f;
+}
+.profile-infoitem-number.balance {
+    color: #5db423;
+}
+.profile-infoitem-number {
+    font-weight: 600;
+    font-size: 12px;
+    height: 60px;
+    line-height: 60px;
+}
+.profile-footprint, .profile-order {
+    padding: 20px 20px 0;
+}
+.member{
+	color: #db9b2c;
+}
+.inherit{
+	color: inherit;
+	height: inherit;
+}
+.profile-infoitem:first-child {
+    position: relative;
+    padding-left: 30px;
+    width: auto;
+    text-align: left;
+}
+@media (min-width: 1260px)
+.profile-infoitem {
+    width: 203px;
+}
+.profile-infoitem {
+    display: table-cell;
+    border-right: 1px solid #eee;
+    width: 185px;
+    text-align: center;
+    /*padding:20px 0;*/
+}
+.profile-avatar, .profile-avatarwrap, .profile-infoitem, .profile-othermessage .vip, .profile-perosondata {
+    vertical-align: middle;
+}
+.profile-perosondata p{
+	line-height: 35px;
+}
+@media only screen and (min-width: 1260px) {
+#touxiang{
+    display: inline-block;
+}	
+}
+.profile-avatarwrap {
+    position: relative;
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*.profile-avatar, .profile-avatarwrap, .profile-edit {
+    width: 112px;
+    height: 112px;
+}*/
+.profile-name{
+	font-size: 16px;
+}
+.profile-edit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    text-align: center;
+    line-height: 112px;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+}
+.profile-avatar, .profile-avatarwrap, .profile-edit {
+    width: 112px;
+    height: 112px;
+}
+a, ins {
+    text-decoration: none;
+}
+@media (min-width: 1260px)
+.profile-name {
+    max-width: 220px;
+}
+.profile-name {
+    font-size: 16px;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    font-weight: 400;
+}
+a:hover,a:focus{
+	text-decoration: none;
+}
+.number{
+	font-size: 30px;
+}
+.tabnavigation{
+	border-bottom: 1px solid #f4f4f4;
+    position: relative;
+}
+.tabnavigation-rightitem {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: #666;
+}
+.orderblock {
+    display: table;
+    padding: 20px 0 15px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+.orderblock-rstinfo {
+    text-align: left;
+}
+.orderblock-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+.orderblock-time {
+    width: 105px;
+    color: #999;
+}
+.orderblock-price .total {
+    font-family: arial;
+    color: #666;
+    font-size: 18px;
+}
+.checkmoreorderblue{
+	color: #666;
+}
+article, aside, blockquote, body, button, code, dd, details, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 1260px)
+.orderblock-rstinfo .name, .orderblock-rstinfo .product {
+    width: 400px;
+}
+.orderblock-rstinfo .product {
+    margin: 6px 0;
+    color: #999;
+}
+.orderblock-rstinfo .name, .orderblock-rstinfo .product {
+    width: 288px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tabnavigation-navitem.active {
+    font-weight: 700;
+    border-bottom: 3px solid #e0aa58;
+}
+.tabnavigation-navitem {
+    display: inline-block;
+    margin-bottom: -2px;
+    padding: 0 15px;
+    height: 27px;
+    cursor: pointer;
+    color: #666;
+}
+.tabnavigation-navitem, .tabnavigation-rightitem {
+    line-height: 1em;
+}
+/*.profile-order-content {
+    height: 324px;
+}*/
+.orderblock-rstinfo .logo {
+    float: left;
+    margin-right: 20px;
+}
+.profile-order-content .name a{
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.count{
+	color: red;
+}
+.footprint-content-div-left,.footprint-content-div-right{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footprint-content-div-left{
+	margin-right: 20px;
+}
+.footprint-content-div{
+	padding: 20px 0;
+	display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.footprint-content-div-right p{
+	line-height:2;
+}
+
+.statuslink{
+	color: #e0aa58;
+}
+.redlink{
+	color: #fc463f;
+}
+.cancel:hover{
+	cursor: pointer;
+}
+.orderblock-price span{
+	color: #999;
+}
+.logo img,.footprint-content-div-left img{
+	width:72px;
+	height: 72px;
+}
+.nav_more:hover{
+	cursor: pointer;
+}	
+.orderblock-status{
+	width: 140px;
+}
+.checkmoreorderblue{
+	color: #0089dc;
+}
+
+
+.usercenter_change{
+	font-size: 0;
+	line-height: 0;
+}
+.footprint-content-div{
+	line-height: 1.5;
+}

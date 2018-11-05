@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+		<script src="js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			html{
+				font-size: 16px;
+			}
+			.mui-content{
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				bottom: 44px;
+				overflow: auto;
+			}
+			.mui-input-row label{
+				width: 30%;
+			}
+			.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+				width: 70%;
+			}
+			.order_type_grop .confirm_f_div{
+				padding-top: 0;margin: 0 0 0 15px;
+			}
+			.mui-table-view:after{
+				height: 0;
+			}
+			.icon{
+				width: 30px;height: 30px;
+			}
+			.mui-switch{
+				background-clip: inherit;
+			}
+			.mui-switch-dark.mui-active {
+			    border: 2px solid #404d57;
+			    background-color: #404d57;
+			        
+			}
+			#ticket_list label{
+				width: 60%;font-size: 0.95rem;
+			}
+			#ticket_list .mui-table-view-cell{
+				padding: 0 40px 0 0 ;
+			}
+			#ticket_list .mui-table-view-cell:after{
+				left: 15px;
+			}
+			#ticket_list input[type=checkbox]{
+				top: 10px;
+			}
+			#ticket_list input[type=checkbox]:before{
+				font-size: 20px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="confirm_item">
+				<ul class="mui-table-view">
+		            <li class="mui-table-view-cell">
+		                <a class="mui-navigate-right">
+		                    支付方式 <span class="mui-pull-right confirm_r">餐前支付</span>
+		                </a>
+		            </li>
+		            <li class="mui-table-view-cell mui-collapse">
+		                <a class="mui-navigate-right">
+		                    商户折扣券<span class="mui-pull-right confirm_r">无可用</span>
+		                </a>
+		                <ul class="mui-table-view mui-table-view-chevron" id="ticket_list">
+							<li class="mui-table-view-cell">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>满100减10</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+							<li class="mui-table-view-cell ">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>9折</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+							<li class="mui-table-view-cell ">
+								<div class="mui-input-row mui-checkbox ">
+								    <label>不使用折扣券</label>
+								    <input name="Checkbox" type="checkbox" >
+								</div>
+							</li>
+						</ul>
+		            </li>
+		            <li class="mui-table-view-cell">
+		                <a class="mui-navigate-right">
+		                   平台优惠<span class="mui-pull-right confirm_r">无可用</span>
+		                </a>
+		            </li>
+		        </ul>
+			</div>
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					<svg class="icon" aria-hidden="true" style="width: 20px;vertical-align: bottom;margin-right: 5px;">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-dianpu"></use>
+                    </svg>好又多家常菜馆
+				</div>
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell order_goods">
+			            <span class="order_goods_t">鱼香肉丝</span>
+			            <span class="order_goods_a">小份、微辣</span>
+			            <span class="order_goods_n">x1</span>
+			            <span class="order_goods_p">￥100.00</span>
+			        </li>
+			        <li class="mui-table-view-cell order_goods">
+			            <span class="order_goods_t">鱼香肉丝</span>
+			            <span class="order_goods_a"></span>
+			            <span class="order_goods_n">x1</span>
+			            <span class="order_goods_p">￥24.00</span>
+			        </li>
+			        <li class="mui-table-view-cell order_goods">
+			            <span class="order_goods_t">鱼香肉丝</span>
+			            <span class="order_goods_a"></span>
+			            <span class="order_goods_n">x10</span>
+			            <span class="order_goods_p">￥1000.00</span>
+			        </li>
+			        <li class="mui-table-view-cell order_goods">
+			            <span>总计 <small style="color: #79878f;">￥48.00 <span style="color: #79878f;">(优惠 ￥0)</span></small></span>
+			            <span class="mui-pull-right" style="text-align: right;">实付 <small style="color: #e1280a;">￥48.00</small></span>
+			        </li>
+			    </ul>
+			</div>
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					<ul id="order_type">
+						<li class="mui-checkbox order_type ">
+							<label for="order_type_1">
+								<input type="checkbox" name="order_type" id="order_type_1"  checked="checked"/>堂食
+							</label>
+						</li>
+						<li class="mui-checkbox order_type">
+							<label for="order_type_2">
+								<input type="checkbox" name="order_type" id="order_type_2"/>预定
+							</label>
+						</li>
+						<li class="mui-checkbox order_type">
+							<label for="order_type_3">
+								<input type="checkbox" name="order_type" id="order_type_3"/>外卖
+							</label>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="order_type_grop">
+					<div class=" active" style="padding-top: 8px;">
+						<form class="mui-input-group">
+						    <div class="mui-input-row">
+						        <input type="text" class="mui-input-clear" placeholder="绑定位置" id="table_id">
+						    </div>
+						</form>
+					</div>
+					<div class="confirm_f_div">
+						<form class="mui-input-group">
+						    <div class="mui-input-row">
+						        <label>用餐人数</label>
+						        <input type="tel" class="mui-input-clear" placeholder="用餐人数">
+						    </div>
+						    <div class="mui-input-row">
+						        <label>就餐时间</label>
+						        <input type="text" class="mui-input-clear btn" placeholder="就餐时间" id="eat_time" >
+						    </div>
+						    <div class="mui-input-row">
+						        <label>联系人</label>
+						        <input type="text" class="mui-input-clear" placeholder="联系人">
+						    </div>
+						    <div class="mui-input-row">
+						        <label>联系人手机</label>
+						        <input type="tel" class="mui-input-clear" placeholder="联系人手机" maxlength="11">
+						    </div>
+						    <div class="mui-input-row">
+				        	    <label style="width: 50%;">是否需要预留车位</label>
+				        	    <div class="mui-switch mui-switch-mini mui-switch-dark mui-active ">
+				        	        <div class="mui-switch-handle"></div>
+				        	    </div>
+				        	</div>
+						</form>
+					</div>
+					<div class="confirm_f_div">
+					<form class="mui-input-group">
+						<div class="mui-input-row" style="height: inherit;" id="address">
+					        <a href="javascript:changeAddress()" class="mui-navigate-right">
+					        	<ul>
+					        		<li>蒋爱军 <span class="mui-pull-right">15995855970</span></li>
+					        		<li>江苏省南通市经济开发区通盛大道188号创业外包服务中心B座9楼</li>
+					        	</ul>
+					        </a>
+					    </div>
+					    <div class="mui-input-row">
+					        <label>用餐人数</label>
+					        <input type="tel" class="mui-input-clear" placeholder="用餐人数">
+					    </div>
+					    <div class="mui-input-row">
+					        <label>送餐时间</label>
+					        <input type="text" class="mui-input-clear btn" placeholder="送餐时间" id="send_time">
+					    </div>
+					    <div class="mui-input-row">
+					        <label>配送费</label>
+					        <div class="mui-pull-right confirm_r" style="margin-top: 10px;">免费配送</div>
+					    </div>
+					</form>
+				</div>
+				</div>
+			</div>
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					备注
+				</div>
+				
+				<div class="confirm_f_div">
+					<ul>
+						<li class="remark">不要辣</li>
+						<li class="remark">微辣</li>
+						<li class="remark">不要葱</li>
+						<li class="remark">不要香菜</li>
+					</ul>
+					<textarea name="" rows="" cols="" placeholder="输入其他备注（可不填）" id="remark"></textarea>
+				</div>
+			</div>
+			<div class="confirm_item">
+				<div class="confirm_item_title">
+					发票
+				</div>
+				<div class="confirm_f_div">
+					<input type="text" name="" id="taitou" value="" placeholder="输入个人/企业名称抬头" />
+				</div>
+			</div>
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="address_title">
+				选择地址
+			</div>
+			<div class="mui-scroll-wrapper address_form" id="address_list_div" >
+			    <div class="mui-scroll" id="address_list">
+			        <!--这里放置真实显示的DOM内容-->
+			        
+			    </div>
+			    
+			</div>
+			
+			
+			<div class="add_address">
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="add_new_address">使用新地址</button>
+			</div>
+			
+		</div>
+		<div id="popover2" class="mui-popover">
+			<div class="address_title">
+				新增地址
+			</div>
+			
+			<div class="mui-scroll-wrapper address_form" style="" id="address_form_div">
+		        <div class="mui-input-row add_address_li">
+		            <div>收货人</div>
+		            <input type="text" class="mui-input" id="username" placeholder="收货人" required>
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <div>联系电话</div>
+		            <input type="tel" class="mui-input" id="mobile" placeholder="联系电话" maxlength="11" required>
+		        </div>
+		        <div class="mui-input-row add_address_li" style="height: 60px;overflow: visible;z-index: 99;">
+		            <div>小区/大厦/学校</div>
+		            <input type="text" class="mui-input" placeholder="选择地区" id="area">
+	            	<ul id="area_list">
+	            		<li>101商务酒店1 <span>江苏省南通市崇川区1</span></li>
+	            		<li>101商务酒店 2<span>江苏省南通市崇川区2</span></li>
+	            		<li>101商务酒店 3<span>江苏省南通市崇川区3</span></li>
+	            	</ul>
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <div>详细地址</div>
+	            	<textarea name="" rows="" cols="" maxlength="30" required id="address_detail"></textarea>
+		        </div>
+		        <div class="add_address">
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="add_address">新增地址</button>
+				</div>
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-footer" id="">
+			<span class="bar_left" style="">
+				￥48.00
+				<p><small>优惠 ￥0  免配送费</small></p>
+			</span>
+			
+			<div class="mui-pull-right">
+				<span class="confirm_btn">提交订单</span>
+			</div>
+		</nav>
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration:0.0006, 
+		bounce: true
+	})
+	var address=[{
+		id:1,
+		reciver:'张三',
+		mobile:'15995855970',
+		cityname:'南通',
+		areaname:'开发区',
+		address:'通盛大道188号',
+		flag:0
+	},{
+		id:1,
+		reciver:'李斯',
+		mobile:'18954574778',
+		cityname:'南通',
+		areaname:'崇川区',
+		address:'南大街',
+		flag:1
+	},{
+		id:1,
+		reciver:'赵五',
+		mobile:'15645645655',
+		cityname:'南通',
+		areaname:'开发区',
+		address:'通盛大道120号',
+		flag:1
+	},{
+		id:1,
+		reciver:'忍者',
+		mobile:'15900000000',
+		cityname:'南通',
+		areaname:'未知数',
+		address:'通盛大道188号',
+		flag:1
+	},{
+		id:1,
+		reciver:'神龟',
+		mobile:'15900000001',
+		cityname:'南通',
+		areaname:'星空',
+		address:'通盛大道188号',
+		flag:1
+	}]
+	var tickets=[{
+		id:1,
+		value:'100',
+		name:'满100减10',
+		coupon_type:1,
+	},{
+		id:2,
+		value:'100',
+		name:'9折',
+		coupon_type:1,
+	},{
+		id:3,
+		value:'100',
+		name:'满1000减100',
+		coupon_type:1,
+	}];
+	$("#order_type label").each(function(){
+		$(this).bind({
+			'click':function(){
+				var checked=$(this).find('input[name=order_type]').is(':checked');
+				console.log(checked)
+				var index=$(this).parent().index();
+					$('input[name=order_type]').attr({
+						checked:false
+					})
+					$(this).find('input[name=order_type]').prop({
+						checked:'checked'
+					})
+				$(".order_type_grop> div").hide()
+				$(".order_type_grop> div").eq(index).show();
+			}
+		})
+		
+	})
+	
+	$(".remark").each(function(){
+			$(this).bind({
+				'click':function(e){
+					var h=$(this).hasClass('clicked');
+					if (!h) {
+						$(this).addClass('clicked');
+						var val=$("#remark").val();
+						if(val==''){
+							$("#remark").val($(this).text())
+						}else{
+							$("#remark").val($("#remark").val()+'，'+$(this).text())
+						}
+						
+					}
+				}
+			})
+		})
+	function changeAddress(){
+		mui("#popover").popover("toggle");
+	}
+	function addressClick(me){
+		var checked=$(me).is(':checked');
+		//console.log(checked)
+		$('#address_list input[type=checkbox]').attr({
+			checked:false
+		})
+		$(me).prop({
+			checked:true
+		})
+		var clone=$(me).prev().find('ul').clone();
+		$("#address ul").replaceWith(clone);
+		mui("#popover").popover("toggle");
+	}
+	$(function(){
+		loadTickets();
+		loadAddress();
+		$("#eat_time").bind({
+			'focus':function(e){
+				$(this).blur()
+				e.preventDefault();
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+7))
+				var picker = new mui.DtPicker({
+					beginDate:new Date(),
+					endDate:newD
+				});
+				picker.show(function(rs){
+					console.log(rs)
+					$("#eat_time").val(rs.value)
+				})
+				return false;
+			}
+			
+		})
+		$("#send_time").bind({
+			'focus':function(e){
+				$(this).blur()
+				e.preventDefault();
+				var now=new Date();
+				var newD=new Date(now.setDate(now.getDate()+1))
+				var picker = new mui.DtPicker({
+					beginDate:new Date(),
+					endDate:newD
+				});
+				picker.show(function(rs){
+					console.log(rs)
+					$("#send_time").val(rs.value)
+				})
+				return false;
+			}
+		})
+		$("#ticket_list input[type=checkbox]").each(function(){
+			$(this).bind({
+				'click':function(){
+					var checked=$(this).is(':checked');
+					console.log(checked)
+					$('#ticket_list input[type=checkbox]').attr({
+						checked:false
+					})
+					$(this).prop({
+						checked:'checked'
+					})
+					var name=$(this).prev().text();
+					console.log(name)
+					$(this).parents('.mui-collapse').removeClass('mui-active').find('.confirm_r').text(name)
+					
+				}
+			})
+			
+		})
+		$("#address_list input[type=checkbox]").each(function(){
+			$(this).bind({
+				'click':function(){
+					/*
+					var checked=$(this).is(':checked');
+					//console.log(checked)
+					$('#address_list input[type=checkbox]').attr({
+						checked:false
+					})
+					$(this).prop({
+						checked:'checked'
+					})
+					var clone=$(this).prev().find('ul').clone();
+					$("#address ul").replaceWith(clone);
+					mui("#popover").popover("toggle");*/
+				}
+			})
+		})
+		$("#area").on('input',function(){
+			var val=$(this).val();
+			$('#area_list').fadeIn();
+			console.log(val)
+		})
+		$("#add_address").on('tap',function(){
+			
+			
+			var temp={};
+			temp.id=12;
+			temp.reciver=$("#username").val(),
+			temp.mobile=$("#mobile").val();
+			temp.cityname='南通';
+			temp.areaname='星空';
+			temp.address=$("#address_detail").val();
+			temp.flag=1;
+			createAddressResponse(temp);
+		})
+		$("#area_list li").each(function(){
+			$(this).bind({
+				'click':function(){
+					var li=$(this).clone();
+					var area=li.find('span').text();
+					$("#area").val(area);
+					li.find('span').remove();
+					var address=li.text();
+					$("#address_detail").html(address)
+					$('#area_list').fadeOut();
+				}
+			})
+		})
+		$("#add_new_address").on('tap',function(){
+			mui("#popover").popover("toggle");
+			mui("#popover2").popover("toggle");
+			
+		})
+	})
+	function loadTickets(){
+		$("#ticket_list").empty()
+		for (var i in tickets) {
+			var html='<li class="mui-table-view-cell" data-id="'+tickets[i]['id']+'" data-value="'+tickets[i]['value']+'" data-coupon-type="'+tickets[i]['coupon_type']+'"> '
+					+	'<div class="mui-input-row mui-checkbox ">'
+					+	    '<label>'+tickets[i]['name']+'</label>'
+					+	    '<input name="Checkbox" type="checkbox">'
+					+	'</div>'
+					+'</li>'
+			$("#ticket_list").append(html)
+		}
+	}
+	function createAddressResponse(data){
+		address.push(data);
+		loadAddress();
+		mui("#popover2").popover("toggle");
+		mui("#popover").popover("toggle");
+		
+		$("#address_form_div input").val('');
+		$("#address_form_div textarea").val('')
+	}
+	function loadAddress(){
+		console.log(address)
+		$("#address_list").empty()
+		for (var i in address) {
+			var checked=''
+			if (address[i]['flag']==0) {
+				checked=' checked="checked"'
+			}
+			var html='<div class="mui-input-row mui-checkbox address_li" >'
+				    +    '<div class="address_item">'
+				    +    	'<ul>'
+				    +    		'<li>'+address[i]['reciver']+' <span class="mui-pull-right">'+address[i]['mobile']+' </span></li>'
+				    +    		'<li>'+address[i]['cityname']+address[i]['areaname']+address[i]['address']+' </li>'
+				    +    	'</ul>'
+				    +    '</div>'
+				    +    '<input name="Checkbox" type="checkbox"'+checked+' onclick="addressClick(this)">'
+				    +'</div>';
+			$("#address_list").append(html)
+		}
+	}
+</script>

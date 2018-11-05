@@ -1,0 +1,73 @@
+body,.acbody{
+	background: #fff;
+}
+.acmiddle img{
+	max-width: 100%;
+}
+.acheaditem1{
+	font-size: 0.875rem;
+	color: #000;
+	line-height: 1.5;
+	margin-top: 8%;
+}
+.acheaditem{
+	font-size: 0.75rem;
+	color: #999;
+	line-height: 4;
+	margin-bottom: 24%;
+}
+
+.achead{
+	margin: 0 15px;
+}
+
+
+.bcfooter{
+	font-size: 0;
+	line-height: 0;
+}
+.bcfooter>div{
+	display: inline-block;
+	/*width: 50%;*/
+}
+.bcfooter_con{
+	flex: 1;
+}
+.bcfooterfonts{
+	text-align: center;
+	line-height: 2.8;
+	
+}
+.bcfooter_conbg1{
+	background: #bbbbbb;	
+}
+.bcfooter_conbg2{
+	background: #1f1f1f;	
+}
+.bcfooter{
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+    margin: 0 12px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.ac_icon{
+	font-size: 0.875rem;
+	padding: 3% 28%;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+}
+/*.add_address_icons{
+	width: 50%;
+	text-align: center;
+}
+.add_address_icon{
+	width: 90%;
+}*/
+.add_address_icon a{
+	text-decoration:none ;
+	color: #fff;
+}

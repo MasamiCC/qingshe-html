@@ -1,0 +1,111 @@
+.address_list{
+	font-size: 0;
+}
+@media only screen  and (max-width: 500px) {
+	.address_item {
+		display: inline-block;
+		width: 100%;
+	}
+}
+@media only screen  and (min-width: 500px) {
+	.address_item {
+		display: inline-block;
+		width: 48%;
+		margin-right: 2%;
+	}
+}
+@media only screen  and (min-width: 800px) {
+	.address_item {
+		display: inline-block;
+		width: 32%;
+		margin-right: 1%;
+	}
+}
+.address_item {
+	display: inline-block;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+	padding: 15px 0;
+	position: relative;
+	border: 1px solid #ddd;
+    cursor: pointer;
+    color: #666;
+    vertical-align: top;
+}
+.address_add{
+	text-align: center;line-height: 6;
+}
+.address_add:hover{
+	color: #edb94a;
+}
+.address_add i{
+	margin-right: 8px;
+}
+
+.address_item:hover {
+    border: 1px solid #edb94a
+}
+
+.address_item:hover .address_item-button {
+    color: #edb94a
+}
+.address_item-mask{
+	position: absolute;
+	background: rgba(0,0,0,0.25);
+	top: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 100%;
+}
+.address_item-buttons {
+    position: absolute;
+    right: 12px;
+    top: 19px;
+    
+}
+.address_item-removebuttons{
+	position: absolute;
+	z-index: 99;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.address_item-removebuttons button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    margin-top: 5px;
+    width: 60px;
+    height: 24px;
+    padding: 0 10px;
+    line-height: 24px;
+}
+
+.address_item-button {
+    font-size: 12px;
+    color: #bbb;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+    width: 30px;
+}
+.address_item-removebuttons .confirmdelete {
+    background: #edb94a;
+    color: #fff
+}
+
+.address_item-removebuttons .canceldelete {
+    margin-left: 10px;
+    background-color: #fff;
+    color: #333;
+}
+.address_item-name,.address_item-address,.address_item-mobile{
+	margin-left: 15px;    
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2;
+	
+}

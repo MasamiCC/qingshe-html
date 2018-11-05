@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.flexcon{
+				display: flex;
+				flex-wrap: wrap;
+				padding: 15px;
+			}
+			.flexcon_item_con{
+				padding: 15% 0;
+    			background: #F5F5F7;
+    			margin:20px 10px;
+			}
+			.flexcon_item{
+				flex: 0 0 12.5%;
+				text-align: center;
+				line-height: 1.5;
+				font-size: 17px;
+			}
+			.flexcon_item_con>div:first-child{
+				color: #C7D1D5;
+				font-size: 26px;
+			}
+			.warningActive .flexcon_item_con{
+				background: none;
+				border: 1px solid #16C6E1;
+			}
+			.warningActive .flexcon_item_con>div:first-child{
+				color: #FF0001;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flexcon">
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						紧急事件
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item warningActive">
+				<div class="flexcon_item_con">
+					<div class="">
+						5
+					</div>
+					<div class="">
+						攻击
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+			<div class="flexcon_item">
+				<div class="flexcon_item_con">
+					<div class="">
+						0
+					</div>
+					<div class="">
+						漏洞
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style type="text/css">
+			.personal_right{
+				margin-right: 20px;color: #999;font-size: 0.8rem;
+			}
+			.personal_right img{
+				max-width: 40px;vertical-align: middle;
+			}
+			.person_ul{
+				margin:10px auto;
+			}
+			.person_ul:first-child{
+				margin-top: 0;
+				line-height: 45px;
+			}
+			li{
+				vertical-align: middle;font-size: 1rem;color: #333;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="mui-table-view person_ul">
+	        <li class="mui-table-view-cell" style="padding: 9px 15px;">
+	            <a class="mui-navigate-right">
+	                头像	<span class="mui-pull-right personal_right" style="line-height: 40px;"><img src="image/nohead.png"/></span>
+	            </a>
+	        </li>
+	       
+	    </ul>
+	    <ul class="mui-table-view person_ul">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" id="updateNickname">
+	                昵称<span class="mui-pull-right personal_right">我的昵称</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="#picture">
+	                性别<span class="mui-pull-right personal_right">男</span>
+	            </a>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view person_ul">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right" href="address.html">
+	                地址<span class="mui-pull-right personal_right">管理</span>
+	            </a>
+	        </li>
+	        
+	    </ul>
+	    <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">男</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">女</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#picture"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('body').on('tap', '.mui-popover-action li>a', function() {
+			var a = this,
+				parent;
+			//根据点击按钮，反推当前是哪个actionsheet
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+			}
+			//关闭actionsheet
+			mui('#' + parent.id).popover('toggle');
+			info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
+		})
+	mui('.person_ul').on('tap','#updateNickname',function(){
+		location.href='update_nickname.html'
+	})
+</script>

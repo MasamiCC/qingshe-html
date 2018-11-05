@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/guide_first.css" rel="stylesheet" />
+		<style type="text/css">
+			.item_content{
+				/*padding: 10px 8px;*/
+				padding: 0px 2.4%;
+			}
+			.gl_icon{
+				padding: 3px 18px;
+			}
+			.gonglue_font{
+				margin-left: 45%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="">
+				<div class="guide_top">
+					<div class="guide_top_title">
+						目标站点&nbsp;——&nbsp;小康站
+					</div>
+					<div class="guide_top_time">
+						目标剩余时间：<span id="cutdown" count="86399">23:59:59</span>
+					</div>
+				</div>
+				
+				<div class="gonglue_item margintop60 paddingbottom12">
+					<div class="gonglue_item_title">
+						<span class="gl_icon">攻略一</span>
+					</div>
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/point.png"/>
+							</div>
+							<div class="login_font">
+								黑钻
+							</div>
+						</div>
+						<div class="item_content">
+							在平台内任意板块消费累计不低于2000黑钻
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去消费</span>
+						</div>
+					</div>
+					<div class="gonglue_item_bottom">
+						<div class="gonglue_item_bottom_left">
+							<div class="etr_item_banner_middle progress">
+								<div class="bar_left" style="width: 10%;"></div>
+								<div class="bar_right"></div>
+							</div>
+						</div>
+						<div class="gonglue_item_bottom_right">
+							200/2000黑钻
+						</div>
+					</div>
+					<div class="guide_icons">
+						<div class="guide_icons_item">
+							<div class="guide_icons_item_img">
+								<img src="images/food.png"/>
+							</div>
+							<div class="guide_icons_item_font">
+								美食
+							</div>
+						</div>
+						<div class="guide_icons_item">
+							<div class="guide_icons_item_img">
+								<img src="images/life.png"/>
+							</div>
+							<div class="guide_icons_item_font">
+								生活
+							</div>
+						</div>
+						<div class="guide_icons_item">
+							<div class="guide_icons_item_img">
+								<img src="images/dingzhi.png"/>
+							</div>
+							<div class="guide_icons_item_font">
+								定制
+							</div>
+						</div>
+						<div class="guide_icons_item">
+							<div class="guide_icons_item_img">
+								<img src="images/tourist.png"/>
+							</div>
+							<div class="guide_icons_item_font">
+								旅游
+							</div>
+						</div>
+						<div class="guide_icons_item">
+							<div class="guide_icons_item_img">
+								<img src="images/hotel.png"/>
+							</div>
+							<div class="guide_icons_item_font">
+								酒店
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="small_font">
+					<div class="tip_icon">
+						<img src="images/tip_icon.png"/>	
+					</div>
+					<div class="tip_font">
+						到达小康站可获取红利释放16800黑钻；<br />
+						若初心站为购买燃料通过，则释放黑钻=16800*0.48；
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

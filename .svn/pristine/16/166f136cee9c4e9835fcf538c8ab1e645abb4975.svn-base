@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<link href="../css/Vbasic.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<style type="text/css">
+			.pictsicon{
+				background: #bbbbbb;border-radius: 40px;width: 40px;height: 40px;margin: 0 auto;color: #fff;
+				font-size: 25px;cursor: pointer;
+			}
+			.active .pictsicon{
+				background: #eccb5a;
+			}
+		</style>
+	</head>
+<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+						</div>
+						<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心</i> 
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+						<!--正文-->
+				       
+						<div class="titleMes" style="font-weight: 600;margin-left: 30px;margin-top:30px;"><i>个人中心</i>><i>基本信息</i></div>
+							<!--<div class="titleMes"><i>个人中心</i>><i></i></div>-->
+								<ul>
+									<li class="l">
+										<span class="word">商户名称</span>	 
+										<span class="grey">江南厨房【测试】</span>
+									</li>
+									<li class="l">
+										<span class="word">商户类型</span>	 
+										<span class="grey">美味-美食-中餐</span>
+									</li>
+									<li class="l">
+										<span class="word">适用城市</span>	
+										<!--<select disabled="disabled" style="width: 140px;height: 33px;">
+										  <option value="volvo">江苏</option>
+										  <option value="saab">广州</option>
+										</select>
+										<select disabled="disabled" style="width: 140px;height: 33px;">
+										  <option value="volvo">南通</option>
+										  <option value="saab">深圳</option>
+										</select>-->
+										<span class="grey">江苏省-南通市-开发区</span>
+									</li>
+									<li class="l" id="time">
+										<span class="word">营业时间</span>
+										<span class="time_word grey">时段1</span>
+										<input type="text" class="inpu time" name="" id="" value="" placeholder="10:00" title="时间"/>
+										<span class="time_word">至</span>                              
+										<input type="text" class="inpu time" name="" id="" value="" placeholder="14:00" title="时间"/>
+										<!--<br/>-->
+										<!--<li class="time2">-->
+										<span class="time_word word2 grey">时段2</span>                              
+										<input type="text" class="inpu time" name="" id="" value="" placeholder="17:00" title="时间"/>
+										<span class="time_word">至</span>                               
+										<input type="text" class="inpu time" name="" id="" value="" placeholder="23:00" title="时间"/>
+										<span class="time_word time_word1">全部为空表示全天</span>
+										<!--</li>-->
+									</li>
+									<li class="l"><span class="word">简述</span>	
+										<input type="text" class="inpu" name="" id="" value="" placeholder="美味中餐" title="美味中餐"/>  
+									</li>
+									<li class="l"><span class="word">联系电话</span>	 
+										<input type="text" class="inpu" name="" id="" value="" placeholder="18712345678" title="联系电话"/> 	
+									</li>
+									<li class="l"><span class="word">联系电话2</span>	
+										<input type="text" class="inpu" name="" id="" value="" placeholder="051356897845" title="联系电话"/>
+									</li>
+									<li class="l"><span class="word">地址</span>     
+										<input type="text"  class="inpu" name="" id="" value="" placeholder="星湖大街101" title="地址"/>	
+									</li>
+									<li class="l">
+										<span class="word">备注提示</span> 
+										<input type="text" class="inpu" name="" id="" value="" placeholder="不要辣|不要葱" title="备注提示"/>
+										<span class="time_word time_word1">（参考格式为：不要辣|微辣）</span> 
+									</li>
+									<li class="l">
+										<span class="word">VIP服务提示</span> 
+										<input type="text" class="inpu" name="" id="" value="" placeholder="我要餐巾纸|我要餐具|我要宝宝椅" title="vip服务提示"/>
+										<span class="time_word time_word1">（参考格式为：我要餐巾纸|我要宝宝椅）</span> 
+									</li>
+<!--									
+																	<li class="l"> 
+								    <span class="word">商家图片</span>
+								</li>								-->
+								<!--<li class="l">
+								    <span class="word"></span>
+									<input type="file" class="inpu" name="pic1" id="pic" value="" style="width: 300px;"//> 
+										<div class="showPic"><img src="../img/pic.png"/></div>
+								</li>  -->
+									<li class=" lishop"><span class="word">商家图片</span>
+										<span class="btn b_a">
+										<!--<a href="pictures.html"><img src="../img/add.png"/></a>-->
+										<input type="file" class="inpu" name="pic2" id="pic1" value="" style="width: 300px;"/> 
+										<div class="showPic"><img src="../img/pic.png"/></div>
+										</span>
+										<!--<div class="tips">
+											提示：此图片将用为，建议图片尺寸1:1
+										</div>-->
+										<!--<img src="../img/dianji.png" onclick="" id="dj"/>-->
+										
+										<!--<div id="prvid" style="width:120px; height:100px;margin-left: 280px;"></div>-->
+										<!--<p class="show">预览:</p>-->
+									    <!--<p class="show">
+									        <img id="preview" alt="" name="pic" style="width: 200px; height: 200px;margin-left: 137px;"/>
+									    </p>-->
+									</li>
+										<li class=" lishop"><span class="word">商家图片</span>
+										<div class="shopleft">
+											<span class="btn b_a">
+											<input type="file" class="inpu" name="pic3" id="pic2" value="" style="width: 300px;"/> 
+											</span>
+											<div class="tips">
+												提示：宽比高 3:4
+											</div>
+										</div>
+										<div class="showPic"><img src="../img/qvip.png"/></div>
+									</li>
+									</li>
+										<li class=" lishop"><span class="word">商家图片</span>
+										<div class="shopleft">
+											<span class="btn b_a">
+											<input type="file" class="inpu" name="pic4" id="pic3" value="" style="width: 300px;"/> 
+											</span>
+											<div class="tips">
+												提示：宽比高 16:9
+											</div>
+										</div>
+										<div class="showPic"><img src="../img/qvip.png"/></div>
+									</li>
+									</li>
+										<li class=" lishop"><span class="word">全景图片</span>
+										<span class="btn b_a picMa">
+										<a href="picManage.html">管理图片</a>	
+										</span>
+									</li>
+									<!--<li class="l ser">
+										<ul class="serv">
+											<span class="servtitle">服务设置</span> 
+											<li class="serlis">
+												<div class="picts"><i class="fa fa-credit-card-alt pics"></i></div>
+												<div class="picts pictsfont">买单服务</div>
+												<input type="radio" class="service" name="service" id="service1" value="" checked="checked"/>开通
+												<input type="radio" class="service1" name="service" id="" value=""/>关闭
+											</li>
+											<li class="serlis"> 
+												<div class="picts"><i class="fa fa-edit pics"></i></div>
+												<div class="picts pictsfont">点餐服务</div>
+												<input type="radio" class="service" name="service1" id="service1" value="" checked="checked"/>开通
+												<input type="radio" class="service1" name="service1" id="" value=""/>关闭
+											</li>
+											<li class="serlis">
+												<div class="picts"><i class="fa fa-book pics"></i></div>
+												<div class="picts pictsfont">预约服务</div>
+												<input type="radio" class="service" name="service2" id="service1" value="" checked="checked"/>开通
+												<input type="radio" class="service1" name="service2" id="" value=""/>关闭
+											</li>
+											<li class="serlis">
+												<div class="picts"><i class="fa fa-archive pics"></i></div>
+												<div class="picts pictsfont">外卖服务</div>
+												<input type="radio" class="service" name="service3" id="service1" value="" checked="checked"/>开通
+												<input type="radio" class="service1" name="service3" id="" value=""/>关闭
+											</li>
+											<li class="serlis">
+												<div class="picts"><i class="fa fa-car pics"></i></div>
+												<div class="picts pictsfont">停车服务</div>
+												<input type="radio" class="service" name="service4" id="service1" value="" checked="checked"/>开通
+												<input type="radio" class="service1" name="service4" id="" value=""/>关闭
+											</li>
+											<li class="serlis" id="service3">
+												<div class="picts"><i class="fa fa-wifi pics"></i></div>
+												<div class="picts pictsfont">WiFi服务</div>
+											</li>
+										</ul>
+									</li>-->
+									<li class="l ser">
+										<ul class="serv">
+											<span class="servtitle">服务设置</span> 
+											<li class="serlis active">
+												<div class="picts pictsicon "><i class="fa fa-credit-card-alt pics"></i></div>
+												<div class="picts pictsfont">买单服务</div>
+												<input type="hidden" class="service1" name="service" id="" value=""/>
+											</li>
+											<li class="serlis"> 
+												<div class="picts pictsicon"><i class="fa fa-edit pics"></i></div>
+												<div class="picts pictsfont">点餐服务</div>
+												<input type="hidden" class="service1" name="service1" id="" value=""/>
+											</li>
+											<li class="serlis">
+												<div class="picts pictsicon"><i class="fa fa-book pics"></i></div>
+												<div class="picts pictsfont">预约服务</div>
+												<input type="hidden" class="service1" name="service2" id="" value=""/>
+											</li>
+											<li class="serlis">
+												<div class="picts pictsicon"><i class="fa fa-archive pics"></i></div>
+												<div class="picts pictsfont">外卖服务</div>
+												<input type="hidden" class="service1" name="service3" id="" value=""/>
+											</li>
+											<li class="serlis">
+												<div class="picts pictsicon"><i class="fa fa-car pics"></i></div>
+												<div class="picts pictsfont">停车服务</div>
+												<input type="hidden" class="service1" name="service4" id="" value=""/>
+											</li>
+											<li class="serlis" id="service3">
+												<div class="picts pictsicon"><i class="fa fa-wifi pics"></i></div>
+												<div class="picts pictsfont">WiFi服务</div>
+												<input type="hidden" class="service1" name="service5" id="" value=""/>
+											</li>
+										</ul>
+									</li>
+									<!--<li class="l ser"><span class="word service">买单服务</span> 
+										<input type="radio" class="service" name="service" id="service1" value="" checked="checked"/>开通
+										<input type="radio" class="service1" name="service" id="" value=""/>关闭
+									</li> 
+									<li class="l s" id="s1">
+									</li>
+									<li class="l"><span class="word service">停车服务</span>    
+										<input type="radio" class="service" name="service1" id="service2" value="" checked="checked"/>开通
+										<input type="radio" class="service1" name="service1" id="" value=""/>关闭 
+									</li>
+									<li class="l s" id="s2">
+									</li>
+									<li class="l">
+										<span class="word service">wifi服务</span>	
+										<input type="radio" class="service" name="service2" id="service3" value="" checked="checked"/>开通
+										<input type="radio" class="service1" name="service2" id="close" value=""/>关闭 
+									</li> -->
+									<!--<li class="l" id="s3">
+										wifi名<input type="text" class="inpu time" name="" id="" value=""/>
+				 						密码<input type="text" class="inpu time" name="" id="" value=""/>
+									</li>	-->
+								</ul>
+								<div class="wifi  inline" id="s3">
+									<input type="text" class="inputs" name="" id="" value="" placeholder="请输入WiFi名称" title="请输入WiFi名称"/>
+				 					<input type="text" class="inputs inputs2" name="" id="" value="" placeholder="请输入WiFi密码" title="请输入WiFi密码"/>
+				 				<div>
+									<div class="inline">
+										<input type="button" class="btnq btns" name="" id="close" value="取消修改" />
+									</div>
+									<div class="inline">
+										<input type="button" class="btnyel btns" name="" id="close1" value="保存修改" />
+									</div>
+								</div>
+							</div>
+						<div class="botm">
+									<!--<input type="button" class="btnblk btnb btnleft" name="" id="" value="取消修改" />-->
+									<input type="button" class="btnyel btnb btnright" name="" id="" value="保存修改" />
+						</div>
+		
+						<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+			</div>
+	     </div>
+	    </div>
+	     
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+	<script type="text/javascript">
+	
+		
+		$(function(){
+//				 $("#service3").click(function(){
+//				 	$("#s3").show();
+//				 });
+				
+				 $("#close,#close1").click(function(){
+				 	$("#s3").hide();
+				 });
+				 $('.serv').on('click','li',function(){
+				 	$(this).toggleClass('active');
+				 	var id=$(this).attr('id');
+				 	if (id=='service3') {
+				 		$("#s3").show();
+				 	}
+				 })
+		});
+		
+		
+/*
+ 图片上传预览功能
+  
+function change() {
+    var pic = document.getElementById("preview"),
+        file = document.getElementById("pic");
+
+    var ext=file.value.substring(file.value.lastIndexOf(".")+1).toLowerCase();
+
+     // gif在IE浏览器暂时无法显示
+     if(ext!='png'&&ext!='jpg'&&ext!='jpeg'){
+         alert("图片的格式必须为png或者jpg或者jpeg格式！"); 
+         return;
+     }
+    var isIE = navigator.userAgent.match(/MSIE/)!= null,
+         isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null;
+
+     if(isIE) {
+        file.select();
+        var reallocalpath = document.selection.createRange().text;
+
+        // IE6浏览器设置img的src为本地路径可以直接显示图片
+         if (isIE6) {
+            pic.src = reallocalpath;
+//          pic.style.width = '190px'
+//              pic.style.height='180px'
+         }else {
+         	pic.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            pic.filters("DXImageTransform.Microsoft.AlphaImageLoader").src = reallocalpath;
+            // 非IE6版本的IE由于安全问题直接设置img的src无法显示本地图片，但是可以通过滤镜来实现
+             //pic.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='image',src=\"" + reallocalpath + "\")";
+             // 设置img的src为base64编码的透明图片 取消显示浏览器默认图片
+             pic.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+            //alert(1)
+         }
+     }else {
+        html5Reader(file);
+     }
+    document.getElementById("preview").style.width='200px';
+    document.getElementById("preview").style.height='200px';
+}
+
+ function html5Reader(file){
+     var file = file.files[0];
+     var reader = new FileReader();
+     reader.readAsDataURL(file);
+     reader.onload = function(e){
+         var pic = document.getElementById("preview");
+         pic.src=this.result;
+//        pic.style.width = '180px';
+//          pic.style.height = '190px';
+     }
+ }
+ 功能结束*/
+		   
+	</script>
+</html>

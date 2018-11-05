@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>轻奢点评</title>
+		<link rel="stylesheet" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				outline: none;
+				list-style: none;
+			}
+			body{
+				background: #F4F4F4;
+				/*background: pink;*/
+			}
+			/*head*/
+			.header{
+				background: #fff;
+			}
+			.detail a{
+				text-decoration: none;
+				color: #333;
+				margin-bottom: 10px;
+			}
+			.detail li{
+				display: inline-block;
+				width: 31%;
+				margin: 10px 0px;
+				font-size: 0.75rem;
+				text-align: center;
+			}
+			.chinese{
+				font-size: 0.75rem;
+			}
+			.wests{
+				font-size: 0.5625rem;
+				color: #999;
+			}
+			.detail_ul{
+				text-align: left;font-size: 0;
+			}
+			.detail_ul div{
+				height: 18px;
+				line-height: 18px;
+			}
+			.border{
+				border-left: 1px solid #ddd;
+				border-right: 1px solid #ddd;
+			}
+			.lastli{
+				padding-bottom: 3px;
+			}
+			/*head*/
+			.main{
+				width: 100%;
+				height: 100%;
+			}
+			.shops{
+				max-width: 100%;
+			}
+			.mui-content{
+				background: #fff;
+				margin-top: 10px;
+			}
+			.main2,.nine{
+				font-size: 0.5625rem;
+			}
+			.contentlis{
+				position: relative;
+				overflow: hidden;
+			}
+			.score{
+				text-align: center;
+				display: inline-block;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				background: rgba(50,42,35,0.9);
+				color: #D4AC57;
+				padding: 3px 13px;
+			}
+			.score li{
+				line-height: 32px;
+			}
+			.pro{
+				font-family: Myriad Pro;
+			}
+			.eleven{
+				font-size: 0.6875rem;
+			}
+			.score1{
+				font-size: 0.8125rem;
+				border-bottom: 1px solid #D4AC57;
+			}
+			.score2{
+				font-size: 0.875rem;
+			}
+			.left1{
+				border-right: 1px solid #F0F0F0;
+				/*border-right: 1px solid red;*/
+				padding-right:6px;
+			}
+			.left2{
+				padding: 0px 6px;
+			}
+			.left1,.left2{
+				color: #666;
+			}
+			.main2,.main3{
+				padding:0px 15px 0px 10px;
+			}
+			.right{
+				float: right;
+				padding:0px 15px ;
+				border: 1px solid #E0C48F;
+				border-radius: 50px;
+				color: #E0C48F;
+			}
+			.main3{
+				margin-bottom: 12px;
+			}
+			.lastlist{
+				margin-bottom: 25px;
+			}
+			.backtop img{
+				width: 44px;
+			}
+			.backtop{
+				position: fixed;
+				right:15px ;
+				bottom:12px;
+			}
+			.detail_ul a:hover{
+				
+			}
+			.active{
+				color: #d4ac57!important;
+			}
+			.active .wests{
+				color: #d4ac57;
+			}
+			#more,#close{
+				width: 100%;
+			}
+			.contentlis{
+				margin: auto 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		  <div class="detail">
+    		<ul class="detail_ul">
+    			<a href="#"><li class="detail_li active">
+    				<div class="chinese">中餐</div>
+    				<div class="wests ">Chinese food</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li border">
+    				<div class="chinese">西餐</div>
+    				<div class="wests">Western food</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li">
+    				<div class="chinese">特色菜</div>
+    				<div class="wests">Specialities</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li">
+    				<div class="chinese">甜品</div>
+    				<div class="wests">Desserts</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li border">
+    				<div class="chinese">咖啡</div>
+    				<div class="wests">Coffee</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li">
+    				<div class="chinese">茶道</div>
+    				<div class="wests">Tea</div>
+    			</li></a>
+    			<a href="#"><li class="detail_li hide">
+    				<div class="chinese">亚洲菜</div>
+    				<div class="wests">Asian food</div>
+    			</li></a>
+    			<a href="#"><li class="hide detail_li border">
+    				<div class="chinese">自助餐</div>
+    				<div class="wests">Buffet</div>
+    			</li></a>
+    			<a href="#"><li class="hide detail_li">
+    				<div class="chinese">美酒</div>
+    				<div class="wests">Wines</div>
+    			</li></a>
+    			<a href="#"><li class="hide detail_li">
+    				<div class="chinese">美酒</div>
+    				<div class="wests">Wines</div>
+    			</li></a>
+    			<a href="#"><li class="lastli " id="more">
+    				<div class="chinese">更多分类 <span class="pro">More ></span> </div>
+    			</li></a>
+    			<a href="#"><li class="lastli " id="close">
+    				<div class="chinese">收起  <span class="pro">Close ></span> </div>
+    			</li></a>
+    		</ul>
+    	  </div>
+		</div>
+		<div class="mui-content">
+		  <ul class="contentul">
+		  	<li class="contentlis">
+		  		<div class="main main1"><img  class="shops" src="../image/shop1.png"/></div>
+		  		<div class="score">
+		  			<ul>
+		  				<li class="score1">评分</li>
+		  				<li class="score2">4.5</li>
+		  			</ul>
+		  		</div>
+		  		<div class="shop_status" id="shop_status">
+		  			<img src="../image/keyuding.png"/>
+		  		</div>
+		  		<div class="main main2">花神象银美式咖啡厅</div>
+		  		<div class="main main3 ">
+		  			<span class="left1 pro eleven">10.5KM</span><span class="left2 eleven">西餐</span>
+		  			<span class="right nine">进去看看</span>
+		  		</div>
+		  	</li>
+		  	<li class="contentlis">
+		  		<div class="main main1"><img  class="shops" src="../image/shop2.png"/></div>
+		  		<div class="score">
+		  			<ul>
+		  				<li class="score1">评分</li>
+		  				<li class="score2">4.5</li>
+		  			</ul>
+		  		</div>
+		  		<div class="shop_status" id="shop_status">
+		  			<img src="../image/keman.png"/>
+		  		</div>
+		  		<div class="main main2">花神象银美式咖啡厅</div>
+		  		<div class="main main3 ">
+		  			<span class="left1 pro eleven">10.5KM</span><span class="left2 eleven">西餐</span>
+		  			<span class="right nine">进去看看</span>
+		  		</div>
+		  	</li>
+		  	<li class="contentlis">
+		  		<div class="main main1"><img  class="shops" src="../image/shop1.png"/></div>
+		  		<div class="score">
+		  			<ul>
+		  				<li class="score1">评分</li>
+		  				<li class="score2">4.5</li>
+		  			</ul>
+		  		</div>
+		  		<div class="shop_status" id="shop_status">
+		  			<img src="../image/xiuxizhong.png"/>
+		  		</div>
+		  		<div class="main main2">花神象银美式咖啡厅</div>
+		  		<div class="main main3 ">
+		  			<span class="left1 pro eleven">10.5KM</span><span class="left2 eleven">西餐</span>
+		  			<span class="right nine">进去看看</span>
+		  		</div>
+		  	</li>
+		  	<li class="contentlis lastlist">
+		  		<div class="main main1"><img  class="shops" src="../image/shop2.png"/></div>
+		  		<div class="score">
+		  			<ul>
+		  				<li class="score1">评分</li>
+		  				<li class="score2">4.5</li>
+		  			</ul>
+		  		</div>
+		  		<div class="shop_status" id="shop_status">
+		  			<img src="../image/yingye.png"/>
+		  		</div>
+		  		<div class="main main2">花神象银美式咖啡厅</div>
+		  		<div class="main main3">
+		  			<span class="left1 pro eleven">10.5KM</span><span class="left2 eleven">西餐</span>
+		  			<span class="right nine">进去看看</span>
+		  		</div>
+		  	</li>
+		  </ul>
+		  <div class="backtop">
+	   		<img  id="to_top" src="../image/backtop.png"/>
+	   	 </div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		 <script type="text/javascript">
+      	mui.init();
+      	window.onload = function(){
+		  var oTop = document.getElementById("to_top");
+		  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+		  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+		  oTop.style.left = screenw - oTop.offsetWidth +"px";
+		  oTop.style.top = screenh - oTop.offsetHeight + "px";
+		  window.onscroll = function(){
+		    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+		    oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+		  }
+		  oTop.onclick = function(){
+		    document.documentElement.scrollTop = document.body.scrollTop =0;
+		  }
+		}  
+		
+		$(function(){
+			$(".hide,#close").hide();
+		});
+		
+		$("#close").click(function(){
+			$("#more").show();
+			$("#close,.hide").hide();
+		});
+		$("#more").click(function(){
+			$("#more").hide();
+			$("#close,.hide").show();
+		});
+		
+			    $('.detail_li').each(function(){
+	    	$(this).bind({
+	    		click:function(){
+	    			
+		    			$('.detail_li').removeClass('active');
+						$(this).addClass('active');
+						
+	    			
+	    		}
+	    	})
+	    })
+		
+        </script>
+	</body>
+</html>

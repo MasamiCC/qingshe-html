@@ -1,0 +1,1 @@
+$(function(){new WOW({boxClass:"wow",animateClass:"animated",offset:200,mobile:!1,live:!0}).init()});

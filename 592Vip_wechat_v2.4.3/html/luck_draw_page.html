@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>抽奖页面</title>
+        <!--引入flexible布局-->
+        <script src="../js/experience/flexible.js"></script>
+        <!--引入css-->
+        <link rel="stylesheet" type="text/css" href="../css/experience/common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/experience/luck_draw.css" />
+    </head>
+    <body>
+        <div class="container_nav">
+            <!-- 标题 -->
+            <div class="luck_title">
+                <img src="../static/img/experience/luck_title.png" class="title_img">
+                <a class="rule_icon"></a>
+            </div>
+            <!-- 抽奖区域 -->
+            <div class="draw_nav">
+            	<!--旋转区域-->
+            	<div class="rotate">
+            		<img src="../static/img/experience/luck_nav_img.png"/>
+            	</div>
+            	<!--箭头-->
+            	<div class="pointer">
+            		<p>点击抽奖</p>
+            		<p><span class="num">3</span>次</p>
+            	</div>
+            </div>
+            <!-- 按钮区域 -->
+            <div class="btn_area">
+                <a href="" class="btn"></a>
+                <a href="" class="btn"></a>
+            </div>
+            <!-- 中奖名单 -->
+            <div class="luck_list">
+                <div class="title">
+                    <span>中奖名单</span>
+                </div>
+                <!-- 中奖轮播区域 -->
+                <div class="luck_list_area">
+                    <ul class="luck_list_ul">
+                        <li>
+                            <img src="../static/img/experience/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云11</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/img/experience/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云22</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/img/experience/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云33</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/img/experience/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云44</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 规则弹窗 -->
+        <script type="text/html" id="rule_modle">
+            <div class="modle_bg modle_rule modle_nav">
+                <div class="modle_area">
+                    <!-- 标题 -->
+                    <div class="title">
+                        抽奖规则
+                        <div class="close">
+                            <span class="close_btn"></span>
+                        </div>
+                    </div>
+                    <div class="text_content">
+                        <h4 class="title">
+                            抽奖机会获取方式
+                        </h4>
+                        <p class="content">
+                            轻奢黑卡会员每成功邀请一位好友成为黑卡会员，即可获得一次抽奖机会，抽奖机会可以累积，数量无限制。抽奖机会在用户黑卡会员有效期间可以使用，过期作废。（被邀请好友成功成为黑卡会员，才会获得一次抽奖机会）。
+                        </p>
+                        <h4 class="title">
+                            开奖公布
+                        </h4>
+                        <p class="content">
+                            轻平台会将您的抽奖结果将以滚动的方式公布在抽奖页面，所有黑卡会员都能实时看到所有会员的抽奖结果。
+                        </p>
+                        <h4 class="title">
+                            奖品设置
+                        </h4>
+                        <p class="content">
+                            奖品由虚拟物品、现金与实物三类构成：虚拟物品包括黑钻；现金指人民币；实物包括现实中的商品，具体以平台设置为准。
+                        </p>
+                        <h4 class="title">
+                            奖品领取与使用
+                        </h4>
+                        <p class="content">
+                            会员可以在中奖查询界面中查看中奖信息。虚拟物品（黑钻），用户直接领取即可，将会直接进入会员的黑卡账户，会员可以使用此黑钻在轻奢平台任意消费；
+                            <br/>
+                            现金的领取需要用户绑定银行卡，平台将会把现金打入此银行卡账号中，会员需要注意查收；实物的领取需要用户选择领取方式（商户邮寄或自提），并填写收货地址，平台将会在最快时间内进行实物奖品的发送。
+                        </p>
+                        <h4 class="title">
+                            其他
+                        </h4>
+                        <p class="content">
+                            奖品以实物为准。奖品不得调换、转让或兑换现金，亦不可作价销售；
+                            <br/>
+                           带有第三方品牌的奖品如遇质量问题，用户应与奖品的生产商或其指定的经销商联系，按照其正常的退换货和维修规则办理相关事宜，轻奢平台不承担任何责任；
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <!--定义一个弹窗模板js-->
+		<script type="text/html" id="success_modle">
+			<div class="modle_bg modle_nav">
+				<div class="modle_area">
+					<div class="title">
+						恭喜您
+						<div class="close">
+							<span class="close_btn"></span>
+						</div>
+					</div>
+					<div class="modle_content">
+						<p>[tips]</p>
+						<img src=[img] />
+					</div>
+				</div>
+			</div>
+		</script>
+
+        <!--引入js-->
+        <script src="../js/experience/jquery.min.js"></script>
+        <script src="../js/experience/awardRotate.js"></script>
+        <script src="../js/experience/luck_draw.js"></script>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+*{
+	margin: 0;padding: 0;
+	list-style: none;
+	outline: none;
+	font-family: "微软雅黑";
+}
+.center{
+	background: #f7f7f7;
+	margin-top: 60px;
+}
+.route{
+	overflow: hidden;
+	
+}
+.route_item{
+	background: #fff;margin: 10px auto; 
+	padding: 10px;
+}
+.route_li {
+	border-bottom: 1px solid #eeeeee;margin-bottom: 5px;
+}
+.route_li li{
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0px 10px 3px 0;
+	margin-bottom: -1px;
+	border-bottom: 3px solid rgba(0,0,0,0);
+	cursor: pointer;
+}
+.route_li li.active{
+	border-bottom: 3px solid #edb94a;
+	color: #edb94a;
+}
+.route_div >div{
+	display: none;
+	padding-top: 10px;
+	font-size: 0;
+}
+.route_div >div.active{
+	display: block;
+}
+.route_div >div:nth-child(2){
+	padding-left: 10px;
+}
+.route_div .title{
+	font-weight: bold;line-height: 2;
+}
+.route .cont{
+	color: #666;line-height: 2;
+}
+
+.route_btn_div{
+	text-align: center;margin: 10px;
+}
+.route_btn_div button{
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 30px;
+	color: #fff;
+	background: #edb94a;
+	border-radius: 5px;
+	border: none;
+}
+.route-price{
+	text-align: right;
+	border-bottom: 1px dashed #eee;
+	margin-top: 20px;
+}
+.route_btn_div{
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+}
+.old_price{
+	text-decoration: line-through;
+	    line-height: 2;
+}
+.now_price{
+	 line-height: 2;
+}
+.now_price span{
+	color: #edb94a;
+	font-size: 30px;	
+}
+
+.route-pro .route_title{
+	font-size: 16px;
+	line-height: 2.5;
+	font-weight: 600;
+	color: #333;
+	
+}
+.route-pro p{
+	color: #666;
+	line-height: 2.5;
+}
+h2.route_title{
+	font-size: 24px;line-height: 1.2;
+}
+.route_hotel{
+	line-height: 2;
+    margin-top: 10px;
+}
+.route_hotel a,.route_hotel a:hover{
+	color:#edb94a ;
+}
+
+
+
+.route_line >div{
+	display: inline-block;
+	vertical-align: top;
+}
+.route_line{
+	font-size: 0;
+}
+.route_line_left{
+	width: 25%;
+}
+.route_line_right{
+	width: 75%;
+}
+.swipercontainer{
+ 	position: relative;
+    height:;
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    text-align: center;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 80%;
+    /*width: 100%;*/
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+.route_line img{
+	max-width: 100%;
+	height: 320px;
+	width: 320px;
+}
+.route_list{
+	border-left: 1px solid #edb94a;
+	position: relative;
+	padding: 10px;
+}
+.route_list:last-child{
+	border-left: none;
+}
+.route_list_day{
+	margin-left: -15px;margin-top: -10px;
+}
+.route_list_day span{
+	color: #fff;
+	background: #edb94a;
+	display: inline-block;padding: 3px 10px;
+	margin-right: 10px;
+}
+.route_list li{
+	line-height: 2;margin: 10px auto;
+}
+.route_list li i{
+	margin-right: 5px;	color: #333;
+}
+.route_list li >div{
+	padding-left: 20px;margin-top: 10px;
+}
+.route_list_pic_c{
+	display: inline-block;width: 30%;vertical-align: top;text-align: left;font-size: 0;
+}
+.route_list li img{
+	display: inline-block;
+	max-width: 100%;
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/video-js.css"/>		
+		<link rel="stylesheet" type="text/css" href="../css/vivify.min.css"/>
+		<style type="text/css">
+			*{
+				list-style: none;padding: 0;margin: 0;outline: none;
+			}
+			.video{
+				text-align: center;
+			}
+			.do{
+				display: none;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				bottom: 0;
+				text-align: left;
+				z-index: 999;
+				
+			}
+			.div_f{
+				text-indent: 1rem;color: #fff;line-height: 2.2;font-size: 0.875rem;
+			}
+			.do_btn{
+				position: absolute;
+				bottom: 3.7rem;
+				left: 25%;
+				right: 25%;
+				height: 50px;
+			}
+			.video{
+				width: 100%;position: absolute;top: 0;bottom: 0;height: 100%;
+			}
+			.video img{
+				max-width: 100%;
+				position: absolute;
+				width: 100%;
+				z-index: 999;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			
+			#btn{
+				position: absolute;	z-index: 99;
+				
+				top: 30px;
+				left: -9999930px;
+			}
+			.video-js{
+				position: absolute;width: 100%;height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+			<div class="video">
+				<video id="my-video" 
+					class="video-js"  
+					autoplay='autoplay' 
+					preload="auto" 
+					width="100%" 
+					height="100%"
+		  			poster="../image/double_11_bg2.png" 
+		  			x-webkit-airplay="true" 
+					webkit-playsinline="true" 
+					playsinline="true"
+					x5-video-player-type="h5"   x5-video-orientation="h5"     x5-video-player-fullscreen="true"
+		  			data-setup="{}">
+					<source src="../video/17.11.3_06.mp4" type="video/mp4">
+					<p class="vjs-no-js">
+					  To view this video please enable JavaScript, and consider upgrading to a web browser that
+					  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+					</p>
+				  </video>
+			</div> 
+		    <div class="do" >
+		    	<div class="do_btn">
+		    		
+		    	</div>
+		    </div>
+		    <button id="btn">anniui </button>
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/video.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/videojs-ie8.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	if(isAndroid){
+		$('.video').html('<img src="../image/video_bg.jpg" class="popIn"/>');
+	}else{
+		var myPlayer = videojs('my-video');
+		videojs("my-video").ready(function(){
+			var myPlayer = this;
+			myPlayer.play();
+		});
+		document.addEventListener("WeixinJSBridgeReady", function () {
+			myPlayer.play();
+		}, false);
+
+	}
+	//alert('是否是Android：'+isAndroid);
+	//alert('是否是iOS：'+isiOS);
+	
+    $(function(){
+    	var wWidth=$(window).width();
+    	$('.video').css('height',parseInt(wWidth*1334/750))
+    	console.log(wWidth)
+    	setTimeout(function(){
+    		abc();
+    	},100)
+    	$(".do").on('click',function(){
+    		location.href='double_e_n.html?time='+Math.random()
+    	});
+    	$(".video").on('click',function(){
+    		location.href='double_e_n.html?time='+Math.random()
+    	});
+    })
+    function abc(){
+    	$(".do").fadeIn();
+    	
+    }
+    
+</script>

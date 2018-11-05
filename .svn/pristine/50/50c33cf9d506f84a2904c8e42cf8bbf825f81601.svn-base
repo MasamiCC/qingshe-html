@@ -1,0 +1,118 @@
+.pingjia_re_btn_qiang{
+				border:none;
+				padding: 3px 10px ;
+				/*background: #221910;*/
+				color: #D4AC57;
+				border-radius: 3px;text-decoration: none;
+			}
+			.pingjia_btn{
+				margin: 10px;
+			}
+			.search_btn{
+			    padding: 5px 16px;
+			    border-radius: 5px;
+			}
+			.txt_search{
+				padding: 25px 0;
+			}
+			#txt > div{
+				margin: 0 30px 0 25px;
+			}
+			.pingjia_item{
+				border: 1px solid #e5e5e5;
+				padding: 0;
+				margin-bottom: 25px;
+			}
+			.pingjia_title{
+				background: #eee;
+				color: #333;
+				font-size: 14px;
+				padding: 0 35px 0 10px;
+			}
+			.pingjia_person img{
+				border: 1px solid #d4ac58;
+    			border-radius: 50%;
+			}
+			.txt_list{
+				padding: 0;
+			}
+			.pingjia_item_con{
+				padding: 20px 28px 25px 28px;
+			}
+			.pingJia_container{
+				width: 100%;
+				font-size: 0;
+				line-height: 0;
+			}
+			.pingjia_person{
+				width: 5%;
+			}
+			.pingjia_con{
+				width: 95%;
+			}
+			.pingjia_cont{
+				padding: 0;
+				line-height: 2;
+			}
+			.pingjia_re_btn{
+				font-size: 14px;
+				color: #41a5f2;
+				background: none;
+				padding: 0;
+			}
+			 .pingjia_re_sub{
+			 	position: absolute;
+			 	top: 12px;
+			 	right: 0;
+			 }
+			.pingjia_re_btn{
+				text-decoration: underline;
+			}
+			.pingjia_title span{
+				font-size: 20px;
+				color: #f8a120;
+			}
+			.pingjia_img img{
+				margin-right: 5px;
+			}
+			.pingjia_btn {
+			    line-height: 1;
+			    margin: 0;
+			    margin-top: 10px;
+			}
+			.pingjia_re_btn{
+				float: right;
+			}
+			.pingjia_time{
+				font-size: 14px;
+				color: #999;
+			}
+			.zhiHui{
+				color: #999;
+			}
+			.reply{
+				font-size: 14px;
+				color: #d29617;
+				margin-top: 15px;
+				line-height: 1.5;
+				margin-bottom: 6px;
+			}
+			.reply span{
+				float: right;
+				color: #999;
+			}
+			.replycon{
+				color: #d29617;
+				font-size: 14px;
+				line-height: 1.8;
+			}
+			.replyForm{
+				margin-top: 25px;
+				position: relative;
+			}
+			.txt_page{
+				padding-top: 130px;
+			}
+		
+			
+			

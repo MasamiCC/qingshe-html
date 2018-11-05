@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css"/>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/Wcommon.css" />
+		<!--<link rel="stylesheet" href="../css/layer.css" />-->
+		<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css"/>
+		<style type="text/css">
+			body{
+				font-family: "微软雅黑";
+			}
+			.list_ordersn{
+				width: 120px;
+			}
+			.goods_pic2 td{
+				padding-top: ;
+			}
+			.layui-layer{
+				    border: 1px solid #D4AC57;
+				    box-shadow: 10px 10px 5px #B3B3B3;
+			}
+			.layui-layer-title{
+				/*display: none;*/
+			}
+			.lastlist span{
+				padding: 2px 6px;
+				margin: 0px 12px;
+				border-radius: 4px;	
+			}
+			.left{
+				margin-left:-4px;
+			}
+			.txt_search{
+				padding-top: 25px;
+				padding-bottom: 5px;
+			}
+			.lastlist:hover{
+				cursor: pointer;
+			}
+			.shebei_list{
+			   	width: 95%;
+			    margin: 10px auto;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 50px;
+			    overflow: auto;
+				
+			}
+			.shebei_list li{
+				padding: 10px 0;text-indent: 15px;border-bottom: 1px solid #eee;
+			}
+			.shebei_list li:hover{
+				background: #f4f4f4;
+			}
+			.shebei_list li input[type=checkbox]{
+				margin-right: 5px;
+			}
+			.inline{
+				margin-right: 20px;
+				padding-bottom: 10px;
+			}
+			.inline:last-child{
+				margin-right: 0;
+			}
+			.search_btn{
+				padding: 0;
+			     margin-left: 0px; 
+			     padding: 0px 17px;
+			     height: 31px; 
+			    line-height: 31px;
+			    text-align: center;
+			    border-radius: 4px;
+			}
+			.inline_block{
+				display: inline-block;
+			}
+			.inline_block{
+				margin-left: 45px;
+			}
+			.inline_block:last-child{
+				margin-left: 8px;
+			}
+			.order_time_con input[type='text']{
+				border:0;
+				background: none;
+			}
+			.order_time_con label{
+				border: 1px solid #ccc;
+				display: inline-block;
+				padding-right: 10px;
+			}
+			.time_icon img{
+				margin-bottom: 3px;
+			}
+			.goods_pic2 th:last-child{
+				width: auto;
+			}
+			.list_table td:last-child{
+				text-align: left;
+				text-indent: 10px;
+				width: 320px;
+			}
+			/*详细*/
+			.txt_list{
+				position: relative;
+			}
+			.detail_area{
+				position: absolute;
+				top: 50px;
+				left: -420px;
+				width: 420px;
+				height: 650px;
+				background-color: #edeceb;
+				box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.1);
+				-moz-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.1);
+			    -webkit-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.1);
+			    padding: 20px 0;
+			    box-sizing: border-box;
+			    overflow: hidden;
+			    visibility: hidden;
+			    -webkit-transition: .5s 0s left ease;
+			 	-o-transition: .5s 0s left ease;
+			 	-moz-transition: .5s 0s left ease;
+			 	transition: .5s 0s left ease;
+			}
+			
+			.detail_area_in {
+				visibility: visible;
+				left: 3px;
+			}
+			
+			.detail_area .retract{
+				position: relative;
+				padding-left: 50px;
+				font-size: 18px;
+				color: #666666;
+				cursor: pointer;
+			}
+			.detail_area .retract:before{
+				content: '';
+				position: absolute;
+				display: block;
+				left: 20px;
+				top: 0;
+				width: 20px;
+				height: 20px;
+				background-image: url(../img/retract.png);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.detail_area .detail_show{
+				height: 560px;
+				padding: 0px 20px;
+				margin-top: 20px;
+			}
+			
+			.detail_area .detail_content{
+				background-color: #FFFFFF;
+				box-sizing: border-box;
+				padding: 0 15px;
+				margin-bottom: 20px;
+			}
+			
+			.detail_area .detail_content:last-child{
+				margin-bottom: 0;
+			}
+			
+			.detail_area .detail_collapse{
+				padding: 12px;
+				border-bottom: 1px solid #edeceb;
+				font-size: 14px;
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+			
+			.detail_area .detail_collapse:last-child{
+				border-bottom: none;
+			}
+			
+			.detail_area .detail_collapse .title{
+				color: #999999;
+				float: left;
+				box-sizing: border-box;
+			}
+			.detail_area .detail_collapse .content{
+				color: #333333;
+				float: right;
+				text-align: right;
+				box-sizing: border-box;
+			}
+			
+			.detail_area .detail_collapse.row .title{
+				float: none;
+			}
+			
+			.detail_area .detail_collapse.row .content{
+				float: none;
+				margin-top: 10px;
+			}
+			
+			.detail_area .detail_collapse.row .content .img{
+				width: 120px;
+				height: 90px;
+				margin-right: 20px;
+			}
+			.form-control:focus{
+				box-shadow:none
+			}
+			.login_out img{
+				vertical-align: baseline;
+			}
+			#header{
+				padding: 22px 0px 13px 0px;
+			}
+			.lists2:hover{
+				background: #6090b1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+							<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+							<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+							<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						</div>
+						<div id="column2" class="columns">
+							<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+							<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+							<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+							<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+							<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="worder.html">待处理订单（25）</a></p>
+							<p class="tc tb tb2"><a href="WOrderOrder.html">预定类订单（10）</a></p>
+							<p class="tc tb tb2"><a href="WCompleteOrder.html">已完成订单</a></p>
+							<p class="tc tb tb2"><a href="WTuiKuan.html">售后/退款</a></p>
+						</div>
+						<div id="column4" class="columns">
+							<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+							<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+						</div>
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>退款售后</i> 
+											<i class="shopname">所属商家：轻奢沙龙</i>
+										</li>
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+						<!--正文-->
+						<div class="txt_search">
+							<form action="">
+								<div class="inline_block">
+									<div class="inline">
+										<span>订单编号：</span>
+										<input type="text" placeholder="请输入订单号" style="width: 198px;height: 24px; text-indent: 10px;"/>
+									</div>
+									<div class="inline order_time_con">
+										<span>下单时间：</span>
+										<label for="order_time">
+											<input type="text" class=" form-control"  id='order_time' placeholder="" readonly="readonly" style="display:inline-block;width: 90px;height: 24px;padding: 6px 4px;"/>
+											<span class="time_icon"><img src="../img/rili.png"/></span>
+										</label>
+									</div>
+									<div class="inline">
+										<span>订单类型：</span>
+										<select name="" id="" style="/*width: 94px;*/width: 90px; height: 24px;">
+											<option value="">酒店预定</option>
+											<option value="">美食预定</option>
+										</select>
+									</div>
+									<div class="inline">
+										<span>下单人：</span>
+										<input type="text" placeholder="周润发" style="width: 85px;height: 24px; text-indent: 10px;"/>
+									</div>
+									<div class="inline">
+										<span>支付方式：</span>
+										<select name="" id="" style="width: 94px;height: 24px;">
+											<option value="">黑卡支付</option>
+											<option value="">支付宝支付</option>
+										</select>
+									</div>
+									<div class="inline">
+										<span>订单状态：</span>
+										<select name="" id="" style="/*width: 133px;*/width: 100px;height: 24px;">
+											<option value="">已完成</option>
+											<option value="">待付款</option>
+										</select>
+									</div>
+									<div class="inline">
+										<span class="search_btn">
+											搜索
+										</span>
+									</div>
+								</div>	
+								<div class="inline_block">
+									<span class="search_btn">
+										刷新
+									</span>
+								</div>
+								<div class="inline_block">
+									<span class="search_btn">
+										生成表格
+									</span>
+								</div>
+							</form>
+						</div>
+						<div class="txt_list">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%"  class="list_table">
+								<tr class="goods_pic2">
+									<th>订单编号</th>
+									<th>下单时间</th>
+									<th>订单类型</th>
+									<th>订单人</th>
+									<th>订单金额</th>
+									<th>支付方式</th>
+									<th>订单状态</th>
+									<th>操作</th>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontOrange">等待退款</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+										<span class="lists4 backgroundOrange">同意退款</span>
+										<span class="lists4 backgroundRed">拒绝退款</span>
+									</td>
+									
+								</tr>
+							 	<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontGreen">退款成功</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontRed">拒绝退款</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+										<span class="lists4 backgroundOrange">同意退款</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontOrange">退款中</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontOrange">等待售后</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+										<span class="lists4 backgroundOrange">同意售后</span>
+										<span class="lists4 backgroundRed">拒绝售后</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontRed">拒绝售后</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+										<span class="lists4 backgroundOrange">同意售后</span>
+									</td>
+								</tr>
+								<tr class="">
+									<td class="list_center">
+										<!--<span class="goods_pic"></span>-->
+										<span>14980340690060848</span>
+									</td>
+									<td class="list_center ">2018-05-05 12:25:26</td>
+									<td class="list_center ">酒店预订</td>
+									<td class="list_center ">周润发</td>
+									<td class="list_center ">2000.00</td>
+									<td class="list_center ">黑卡支付</td>
+									<td class="list_center fontBlue">同意售后</td>
+									<td class="list_center lastlist">
+										
+										<!--<span onclick="setGuiGe()">规格</span>-->
+										<span class="lists2 backgroundBlue">详情</span>
+										<!--<span class="lists3 background_red">取消</span>-->
+									</td>
+								</tr>
+							</table>
+							<!--详细-->
+						    <div class="detail_area">
+						    	<p class="retract">收起</p>
+						    	<div class="detail_show mCustomScrollbar" data-mcs-theme="minimal-dark">
+						    		<div class="detail_content">
+						    			<div class="detail_collapse row">
+							    			<div class="title">
+							    				退款原因
+							    			</div>
+							    			<div class="content">
+							    				食物中毒
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse row">
+							    			<div class="title">
+							    				退款原因
+							    			</div>
+							    			<div class="content">
+							    				<img src="../img/ico.png" class="img"/>
+							    				<img src="../img/ico.png" class="img"/>
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse row">
+							    			<div class="title">
+							    				售后方式
+							    			</div>
+							    			<div class="content">
+							    				退款
+							    			</div>
+							    		</div>
+						    		</div>
+							    	<div class="detail_content">
+							    		<div class="detail_collapse">
+							    			<div class="title">
+							    				订单编号
+							    			</div>
+							    			<div class="content">
+							    				201545645545454
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse">
+							    			<div class="title">
+							    				订单类型
+							    			</div>
+							    			<div class="content">
+							    				酒店预订
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse">
+							    			<div class="title">
+							    				下单时间
+							    			</div>
+							    			<div class="content">
+							    				2018-02-05 12:26
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse">
+							    			<div class="title">
+							    				订单状态
+							    			</div>
+							    			<div class="content">
+							    				待支付
+							    			</div>
+							    		</div>
+							    		<div class="detail_collapse">
+							    			<div class="title">
+							    				下单人
+							    			</div>
+							    			<div class="content">
+							    				刘能
+							    			</div>
+							    		</div>
+							    	</div>
+							    	<div class="detail_content">
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				联系人
+						    			</div>
+						    			<div class="content">
+						    				张波
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				联系电话
+						    			</div>
+						    			<div class="content">
+						    				136487521212
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				到店时间
+						    			</div>
+						    			<div class="content">
+						    				2018-02-05 12:26
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				入住时间
+						    			</div>
+						    			<div class="content">
+						    				2018-02-05 12:26~2018-02-07<br/>
+						    				共2晚
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				房间类型
+						    			</div>
+						    			<div class="content">
+						    				大床房
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				房间数量
+						    			</div>
+						    			<div class="content">
+						    				1
+						    			</div>
+						    		</div>
+						    		<div class="detail_collapse">
+						    			<div class="title">
+						    				预留车位
+						    			</div>
+						    			<div class="content">
+						    				无
+						    			</div>
+						    		</div>
+						        </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="txt_page">
+							<ul>
+								<!--<li class="page_item page_disabled">第一页</li>-->
+								<li class="page_item page_active">1</li>
+								<li class="page_item">2</li>
+								<li class="page_item">3</li>
+								<li class="page_item">4</li>
+								<li class="page_item">5</li>
+								<li class="page_item">6</li>
+								<li class="page_item">...</li>
+								<li class="page_item">上页</li>
+								<li class="page_item">下页</li>
+								<!--<li class="page_item1">下一页</li>-->
+							</ul>
+						</div>
+						<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+			</div>
+	     </div>
+	     
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+	<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/layer.js"></script>
+	<script type="text/javascript">
+		$('.lists2').on('click',function(){
+            $('.detail_area').addClass('detail_area_in')
+		});
+		
+		$('.retract').on('click',function(){
+			$(this).closest('.detail_area').removeClass('detail_area_in')
+		})
+		$('.time_icon img').click(function(){
+			$('#order_time').datetimepicker('show');
+		})
+		$("#order_time").datetimepicker({  
+			language : 'zh-CN',  
+		    weekStart : 1,  
+		    todayBtn : 0,  
+		    autoclose : 1,  
+		    minView: "month",  
+		    format: 'yyyy-mm-dd',  
+		    forceParse : 0  
+		})
+	</script>
+</html>

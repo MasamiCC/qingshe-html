@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #fff;
+}
+.blackcardnew{
+	line-height: 0;
+	font-size: 0;
+	text-align: center;
+	position: relative;
+}
+.blackrights{
+	padding: 25px 15px;
+}
+.blackcardnew img{
+	max-width: 100%;
+	line-height: 0;
+}
+.blackcard_icon{
+	position: absolute;
+    bottom: 12%;
+    right: 0;
+    left: 0;
+    display: inline-block;
+    background: -moz-linear-gradient(top, #303030, #040404);
+    background: -o-linear-gradient(top,#303030, #040404);
+    background: -webkit-gradient(linear, 0% 100%, 100% 100%, from(#303030), to(#040404));
+    font-size: 0.875rem;
+    z-index: 15;
+    width: 65%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 22px;
+    box-shadow: 1px 1px 1px 1px #333;
+    color: #e9bb63;
+}
+/*new*/
+.blackcard_firstitemcon{
+	display: flex;
+	columns: 3;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.blackcard_firstitem{
+	margin-top: 15px;
+	text-align: center;
+	flex: 0 0 25%;
+}
+.blackcard_fipic img{
+	max-width: 55%;
+}
+.blackcard_fifont{
+	font-size: 0.75rem;
+    color: #333;
+    line-height: 1;
+    margin-top: 8px;
+}
+.blackcard_explanation{
+	border-top: 1px solid #ccc;
+    padding-top: 7px;
+    margin-top: 20px;
+}
+.blackrights .blackcard_title{
+	margin-bottom: 3px;
+}
+/*new*/
+.bcard_msg img{
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+}
+.bcard_msg{
+	margin: 0 36px;
+	color: #999999;
+	font-size: 0.8125rem;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+    padding-bottom: 2rem
+}
+/*popover*/
+#popover {
+	position: fixed;
+    /*height: 85%;*/
+	width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    overflow: hidden;
+    text-align: center;
+    min-height: 347px;
+}
+.swiperbg{
+	background-repeat: repeat-x;
+	/*background: url(../image/swiperbg_02.png) repeat-x;*/
+    background-size: 100% 100%;
+    text-align: center;
+    width: auto;
+    /*margin: 0 auto;*/
+    padding: 35px 25px 15px 25px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: auto;
+    flex:1
+}
+.swiper_title{
+	font-size: 1rem;
+    color: #fff;
+    /*height: 70px;*/
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper_content{
+	font-size: 0.875rem;
+    color: #fff;
+    line-height: 1.5;
+    /*height: 200px;*/
+    text-align: left;
+    padding: .5rem 0;
+}
+.swiper_img img{
+	width: 4rem;
+    box-shadow: 1px 1px 1px 1px #bf9767;
+    border-radius: 5px;
+}
+.open_soon{
+	width: 85%;
+	background: -moz-linear-gradient(top, #fbf7f1, #f8e3ca);
+    background: -o-linear-gradient(top,#fbf7f1, #f8e3ca);
+    background: -webkit-gradient(linear, 0% 100%, 100% 100%, from(#fbf7f1), to(#f8e3ca));
+    display: inline-block;
+    line-height: 3;
+    border-radius: 23px;
+    color: #333;
+    font-weight: 550;
+    font-size: .875rem;
+}
+
+.allswiper_title{
+	font-size: 1.25rem;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.yellow_font{
+	color: #deaf77;
+	
+}
+.close img{
+	width: 30px;
+}
+.close{
+	    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.swiper_img{flex:0 0 2rem!important}
+.swiper_title{flex:0 0 2rem!important}
+.swiperbg>div{flex: 1;}
+.open_soon_con{flex: 0 0 2rem!important;}
+#popover .swiper-slide{display: flex}

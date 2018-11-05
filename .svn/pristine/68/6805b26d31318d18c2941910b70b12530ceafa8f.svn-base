@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../Public/css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.video_li{
+				padding-right: 0px!important;padding-left: 0!important
+			}
+			.video_li img{
+				width: 100%;max-width: 100%;
+			}
+			.jijin_name{
+				/*margin-right: -20px!important;font-size: 15px;*/
+				margin: 0!important;padding: 0!important;margin-right: -15px!important;font-size: 14px;text-indent: 15px
+			}
+			.mui-table-view-cell:after{
+				left: 0
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron" id="video_list">
+					<!-- <foreach name="lists" item="vo" key='k'>
+					<li class="mui-table-view-cell video_li " data-id="{$vo.id}" >
+						<img src="http://www.592vip.com:90/{$vo.img}"/>
+						<a class="mui-navigate-right jijin_name" >
+							{$vo.title}
+						</a>
+					</li>
+					</foreach> -->
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jj_logo.png"/>
+						<a class="mui-navigate-right jijin_name" >
+							慈善活动1
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../Public/js/mui.min.js"></script>
+<script src="../Public/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+					container: '#pullrefresh',
+					up: {
+						contentrefresh: '正在加载...',
+						callback: getMore
+					}
+				}
+	})
+	var page=1;
+	function getMore(){
+		mui('#pullrefresh').pullRefresh().endPullupToRefresh(1);
+		// $.ajax({
+		//           type: 'POST',
+		//           url: "{:U('Jijin/lists')}",
+		//           data: {
+		//             page:++page
+		//           },
+		//           success: function(data){
+		//             //console.log(data)
+		//             if(data.success){
+		//             	loadMore(data.result.items);
+		//             	console.log(data.result.totalPages)
+		//             	if (page>=data.result.totalPages) {
+		// 	            	mui('#pullrefresh').pullRefresh().endPullupToRefresh(1);
+		// 	            }else{
+		// 	            	page++;
+		// 	            }
+		            	
+		//             }else{
+		//             	mui.alert('获取数据失败')
+		//             }
+		            
+		//           },
+		//           dataType: 'json'
+		//         });
+	}
+	function loadMore(data){
+		for (var i in data) {
+			var html='<li class="mui-table-view-cell video_li " data-id="'+data[i]['id']+'" >'
+					+	'<img src="http://www.592vip.com:90/'+data[i]['img']+'"/>'
+					+	'<a class="mui-navigate-right jijin_name" >'
+					+		data[i]['title']
+					+	'</a>'
+					+'</li>';
+			$("#video_list").append(html);
+		}
+	}
+	mui("#video_list").on('tap','li',function(){
+		var id=this.getAttribute('data-id'); 
+		location.href="show.html?id="+id;
+	})
+	
+</script>

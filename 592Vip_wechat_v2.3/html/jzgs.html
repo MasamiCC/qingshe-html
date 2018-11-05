@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			body{
+				background: #fff;
+			}
+			.mui-content{
+				background: #f4f4f4;margin:  1rem;padding:.5rem;
+			}
+			h4{font-size: 1.2rem;}
+			.item{list-style: none;padding: .4rem 0;line-height: 1.8;color: #333;font-size: 1rem;}
+			.item>span{color: #46b568;font-size: .875rem;position: relative;text-indent: 25px;display: inline-block;}
+			.item>span:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: .15rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				background: url(../image/check@3x.png) no-repeat scroll center center;
+				background-size: 1.1rem 1.1rem;
+				
+			}
+			.item div span{display: inline-block;width: 100%;}
+			.item_sm span{display: block;color: #46b568;font-size: .875rem;}
+			.item_line{position: relative;}
+			.item_line:after{
+				content: '';
+				position: absolute;
+				height: 1px;
+				left: 0;
+				right: 0;
+				background: #dddddd;
+				bottom: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		   	<ul>
+		   		<h4>基本信息公示</h4>
+		   		<li class="item">
+		   			<div class="">
+		   				<span style="width: 50%;">姓名：李晓明</span>
+		   				<span style="width: 40%;">性别：男</span>
+		   				<span>身份证号码：123456789098765432</span>
+		   			</div>
+		   			<span >身份证已审核</span>
+		   		</li>
+		   		<li class="item">
+		   			<div class="">
+		   				<span>重症名称：帕金斯是综合症</span>
+		   			</div>
+		   			<div class="">
+		   				<span>就诊医院：南通市第一人民医院</span>
+		   			</div>
+		   			<span>诊断证明已审核</span>
+		   		</li>
+		   		<li class="item item_line">
+		   			<div class="">
+		   				<span>医院报销费用：50（万元）</span>
+		   			</div>
+		   			<div class="">
+		   				<span>自付费用：30（万元）</span>
+		   			</div>
+		   			<span>费用已审核</span>
+		   		</li>
+		   		<h4 style="line-height: 1.5;">补充说明</h4>
+		   		<li class="item item_sm">
+		   			<div class="">
+		   				家庭月收入
+		   				<span>0.5（万元）</span>
+		   			</div>
+		   			
+		   		</li>
+		   		<li class="item item_sm">
+		   			<div class="">
+		   				家庭/个人保险状况
+		   				<span>有城乡居民医保</span>
+		   			</div>
+		   			
+		   		</li>
+		   		<li class="item item_sm">
+		   			<div class="">
+		   				家庭房屋财产状况
+		   				<span>有两亩地、没房子</span>
+		   			</div>
+		   			
+		   		</li>
+		   		<li class="item item_sm">
+		   			<div class="">
+		   				家庭车辆财产状况
+		   				<span>艾玛电动自行车X5一辆</span>
+		   			</div>
+		   		</li>
+		   	</ul>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>抽奖页面</title>
+        <!--引入flexible布局-->
+        <script src="../static/experience/js/flexible.js"></script>
+        <!--引入css-->
+        <link rel="stylesheet" type="text/css" href="../css/experience/common.css" />
+        <link rel="stylesheet" type="text/css" href="../css/experience/luck_draw.css" />
+    </head>
+    <body>
+        <div class="container_nav">
+            <!-- 标题 -->
+            <div class="luck_title">
+                <img src="../static/experience/img/luck_title.png" class="title_img">
+                <a class="rule_icon"></a>
+            </div>
+            <!-- 抽奖区域 -->
+            <div class="draw_nav">
+            	<!--旋转区域-->
+            	<div class="rotate">
+            		<img src="../static/experience/img/luck_nav_img.png"/>
+            	</div>
+            	<!--箭头-->
+            	<div class="pointer">
+            		<p>点击抽奖</p>
+            		<p><span class="num">3</span>次</p>
+            	</div>
+            </div>
+            <!-- 按钮区域 -->
+            <div class="btn_area">
+                <a href="" class="btn"></a>
+                <a href="" class="btn"></a>
+            </div>
+            <!-- 中奖名单 -->
+            <div class="luck_list">
+                <div class="title">
+                    <span>中奖名单</span>
+                </div>
+                <!-- 中奖轮播区域 -->
+                <div class="luck_list_area">
+                    <ul class="luck_list_ul">
+                        <li>
+                            <img src="../static/experience/img/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云11</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/experience/img/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云22</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/experience/img/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云33</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                        <li>
+                            <img src="../static/experience/img/experience_bg.png" class="header_img">
+                            <div>
+                                <span>一片浮云44</span>
+                                <span>获得10黑钻</span>
+                            </div>
+                            <div class="time">2017-05-16 15:36:44</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--定义一个弹窗模板js-->
+		<script type="text/html" id="success_modle">
+			<div class="modle_bg modle_nav">
+				<div class="modle_area">
+					<div class="title">
+						恭喜您
+						<div class="close">
+							<span class="close_btn"></span>
+						</div>
+					</div>
+					<div class="modle_content">
+						<p>[tips]</p>
+						<img src=[img] />
+					</div>
+				</div>
+			</div>
+		</script>
+
+        <!--引入js-->
+        <script src="../static/experience/js/jquery.min.js"></script>
+        <script src="../static/experience/js/awardRotate.js"></script>
+        <script src="../static/experience/js/luck_draw.js"></script>
+    </body>
+</html>

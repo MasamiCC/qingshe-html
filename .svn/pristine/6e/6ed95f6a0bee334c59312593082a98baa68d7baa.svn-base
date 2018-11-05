@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>溯源结果</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/trace.css"/>
+		<style type="text/css">
+			.mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+			.mui-preview-header,
+			.mui-preview-footer {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 10;
+			}
+			.mui-preview-header {
+				height: 44px;
+				top: 0;
+			}
+			.mui-preview-footer {
+				height: 50px;
+				bottom: 0px;
+			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-preview-image.mui-preview-out .mui-preview-header,
+			.mui-preview-image.mui-preview-out .mui-preview-footer {
+				display: none;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+			.mui-zoom {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+				width: 100%;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+				display: inline-table;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.mui-preview-loading {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.mui-preview-loading.mui-active {
+				display: block;
+			}
+			.mui-preview-loading .mui-spinner-white {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-preview-image img.mui-transitioning {
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+			}
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			.hide{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content all_trace">
+			<div class="business_del">
+				<div class="business_del_title">
+					<div class="business_icon shop">
+						<img src="images/shop_del.png"/>
+					</div>
+					<div class="business_content">
+						商品信息 
+					</div>
+				</div>
+				<div class="business_del_content grey_font">
+					<div class="top">
+						<div class="business_del_item marginbottom35">
+							<div class="businesspic">
+								<div class="businesspiccont">
+									<div class="businesspiccon">
+										<img src="images/business.png" data-preview-src="" data-preview-group="1" id="img1"/>
+										<img src="images/newblackicon2.png" class="hide" data-preview-src="" data-preview-group="1" />
+										<img src="images/business.png" class="hide" data-preview-src="" data-preview-group="1" />
+									</div>
+									<div class="businessmore" onclick="showNj()">
+										更多照片
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<div class="business_del_item business_title">
+									<div class="business_del_item_left">
+										统一零售价：
+									</div>
+									<div class="business_del_item_right">
+										8500元
+									</div>
+								</div>
+								<div class="line2">
+									商品品牌：
+								</div>
+								<div class="line2">
+									592VIP
+								</div>
+								<div class="line2">
+									商品名称：
+								</div>
+								<div class="line2">
+									MICHAEL KORS Mercer 皮质手袋
+								</div>
+								<!--<div class="line2">
+									生产日期：
+								</div>
+								<div class="line2">
+									2014-07-02
+								</div>-->
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								执行标准：
+							</div>
+							<div class="business_del_item_right">
+								QB\T1333-2004
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								货号：
+							</div>
+							<div class="business_del_item_right">
+								B.WB18.05001
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								商品识别码：
+							</div>
+							<div class="business_del_item_right">
+								B.WB18.791650
+							</div>
+						</div>
+						<div class="business_del_item ">
+							<div class="business_del_item margintop marginringt20">
+								<div class="business_del_item_left">
+									面料：
+								</div>
+								<div class="business_del_item_right">
+									牛皮
+								</div>
+							</div>
+							<div class="business_del_item margintop">
+								<div class="business_del_item_left">
+									里料：
+								</div>
+								<div class="business_del_item_right">
+									超纤
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bordertop">
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								Executive standard：
+							</div>
+							<div class="business_del_item_right">
+								QB\T1333-2004
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								Art.No：
+							</div>
+							<div class="business_del_item_right">
+								B.WB18.05001
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								Commodity indentification cation：
+							</div>
+							<div class="business_del_item_right">
+								B.WB18.791650
+							</div>
+						</div>
+						<div class="business_del_item">
+							<div class="business_del_item_left">
+								Material：
+							</div>
+							<div class="business_del_item_right">
+								Grain Cowhide    Lining：microfiber
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="business_del">
+				<div class="business_del_title">
+					<div class="business_icon sys">
+						<img src="images/saoyisao.png"/>
+					</div>
+					<div class="business_content">
+						如何辨别真伪 
+					</div>
+				</div>
+				<div class="business_del_sys">
+					<div class="business_del_sys1 business_del_sys2">
+						<img src="images/fenbian1.png"/>
+					</div>
+					<div class="business_del_sys1">
+						<img src="images/fenbian2.png"/>
+					</div>
+					<div class="business_del_sys1">
+						<img src="images/fenbian3.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="business_del">
+				<div class="business_del_title">
+					<div class="business_icon bus">
+						<img src="images/bus.png"/>
+					</div>
+					<div class="business_content">
+						物流信息 
+					</div>
+				</div>
+				<div class="business_del_content business_del_content1">
+					<div class="business_del_content_top">
+						<div class="business_del_content_item">
+							<div class="business_del_content_item1">
+								<div class="business_del_date">
+									04-05
+								</div>
+								<div class="business_del_time">
+									12:44
+								</div>
+							</div>
+							<div class="business_del_content_item2">
+								<img src="images/shou.png" alt="" />
+							</div>
+							<div class="business_del_content_item3 grey_font">
+								上海市港闸区孩儿巷国际贸易中心18F
+							</div>
+						</div>
+					</div>
+					<!--show content-->
+					<div class="business_del_content_center">
+						<div class="business_del_content_center_top">
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+								</div>
+								<div class="business_del_content_item2 allleftborder">
+								</div>
+								<div class="business_del_content_item3 grey_font zhankai">
+									<img src="images/zhankai.png " class="zk_img"/>
+								</div>
+							</div>
+						</div>
+						<div class="business_del_content_center_show">
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2 point">
+									<img src="images/point.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									同步物流信息
+								</div>
+							</div>
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2 point">
+									<img src="images/point.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									同步物流信息
+								</div>
+							</div>
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2 point">
+									<img src="images/point.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									同步物流信息
+								</div>
+							</div>
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2 point">
+									<img src="images/point.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									同步物流信息
+								</div>
+							</div>
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2">
+									<img src="images/vip.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									轻奢点评发货<br />到达【轻奢点评开发区仓库】发货
+								</div>
+							</div>
+							<div class="business_del_content_item">
+								<div class="business_del_content_item1">
+									<div class="business_del_date">
+										04-01
+									</div>
+									<div class="business_del_time">
+										05:26
+									</div>
+								</div>
+								<div class="business_del_content_item2">
+									<img src="images/user.png" alt="" />
+								</div>
+								<div class="business_del_content_item3 grey_font">
+									用户购买<br />您购买了【MICHAEL KORS Mercer 皮质手袋】
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!--show content-->
+					<div class="business_del_content_bottom">
+						<div class="business_del_content_item">
+							<div class="business_del_content_item1">
+								<div class="business_del_date">
+									04-01
+								</div>
+								<div class="business_del_time">
+									05:26
+								</div>
+							</div>
+							<div class="business_del_content_item2">
+								<img src="images/vip.png" alt="" />
+							</div>
+							<div class="business_del_content_item3 grey_font">
+								轻奢点评入库<br />到达【轻奢点评开发区仓库】
+							</div>
+						</div>
+						<div class="business_del_content_item">
+							<div class="business_del_content_item1">
+								<div class="business_del_date">
+									04-01
+								</div>
+								<div class="business_del_time">
+									01:03
+								</div>
+							</div>
+							<div class="business_del_content_item2">
+								<img src="images/fa.png" alt="" />
+							</div>
+							<div class="business_del_content_item3 grey_font">
+								工厂发货<br />工厂【广州市花都区狮岭卡尔文箱包厂】
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/mui.zoom.js"></script>
+	<script src="../../js/mui.previewimage.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			$('.zk_img').click(function(){
+				$('.business_del_content_center_show').show();
+				$(this).parents().find('.business_del_content_center_top').hide();
+			});
+		});
+		
+		
+		function showNj(){
+				var previewImageApi = mui.previewImage();
+				previewImageApi.open(document.getElementById("img1"));
+			}
+		
+	</script>
+</html>

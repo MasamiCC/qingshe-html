@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<script src="../js/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			/*总体*/
+			*{
+				padding: 0px;
+				margin: 0px;
+				/*font-family: "宋体";*/
+			}
+			body{
+				background-color: #F4F4F4;
+			}
+			.mui-table-view:before,.mui-table-view:after{
+				height: 0;
+			}
+			/*总体*/
+			/*头部订单已取消*/
+		.header{
+			display: flex;
+			/*background:url(image/order_bc.png) ;*/
+			padding:40px 0 30px 0;
+			background: #fff;
+		}
+		.header1{
+			display: flex;
+			/*background:url(image/order_bc.png) ;*/
+			padding:40px 0 0 0;
+			background: #fff;
+		}
+		.header_left1{
+			flex: 1;
+			text-align: right;
+			padding-right: 15px;
+		}
+		.header_left{
+			flex: 1.2;
+			text-align: right;
+			padding-right: 15px;
+		}
+		.header_left img,.header_left1 img{
+			width: 44px;
+		}
+		
+		.big_font{
+			font-size: 1rem;
+			color: #333;
+			font-weight: bold;
+		}
+		.header_right{
+			flex: 2;
+			text-align: left;
+			
+		}
+		.small_font{
+			font-size: 0.75rem;
+			margin-top: 8px;
+			color: #999;
+		}
+		.icon{
+			color: #D4AC57;
+			/*font-size: 0.92rem;*/
+		}
+		.light{
+			color: #666;
+		}
+		.bold{
+			color: #333;
+		}
+		.order_goods_p{
+			color: #D91A1A;
+			/*font-weight: bold;*/
+		}
+		
+		/*头部订单已取消*/
+		/*正文*/
+		/*small{
+			font-size: 0.625rem;
+		}*/
+		.confirm_item ul,.order_goods{
+			font-size: 0.8125rem;
+		}
+		.confirm_r{
+			color: #999;
+			margin-right: 10px;
+		}
+		.padtb{
+			border-top: 1px solid red;
+			border-bottom: 1px solid red;
+		}
+		.bomline{
+			padding: 11px 10px;
+    		margin: 0px 15px;
+		}
+		#bomline:after{
+			height: 0;
+		}
+		#cell{
+			padding: 11px 10px;
+    		margin: 0px 15px;
+		}
+		
+		#contact{
+			padding-bottom: 11px;
+			padding-top: 4px;
+			text-align: center;
+		}
+		.total{
+			text-align: right;
+		}
+		
+		.flx{
+			display: flex;
+		}
+		.order_note{
+			font-size: 0.8125rem;
+			background: #FFF;
+			margin-top: 10px;
+			padding: 11px 15px;
+			line-height: 27px;
+		}
+		.order_note_left{
+			/*width: 20%;*/
+			display: inline-block;
+			color: #9EA3A7;
+			/*vertical-align: top;*/
+			flex: 2;
+			color: #333;
+			/*width: 28%;*/
+			font-size: 0.75rem;
+			display: inline-block;
+			/*vertical-align: middle;*/
+			flex: 2;
+		}
+		.order_note_right{
+			/*width: 78%;*/
+			display: inline-block;
+			color: #B1B8BD;
+			flex: 5;
+			
+		    color: #333;
+			font-size: 0.75rem;
+		}
+		.mui-navigate-right:after, .mui-push-right:after{
+			    right: 1px;
+		}
+		.book_notes{
+			margin-top: 10px;
+		}
+		.book_note_left{
+			color: #333;
+			display: inline-block;
+			vertical-align: middle;
+			flex: 2;
+			font-size: 0.8125rem;
+		}
+		.book_note_right{
+			color: #333;
+			display: inline-block;
+			vertical-align: middle;
+			 flex: 5;
+			 font-size: 0.8125rem;
+		}
+		.onemore{
+			background: #fff;
+			padding-top: 11px;
+		}
+		.onemore1{
+			background: #fff;
+			padding-top: 11px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.onemore_button{
+			display: inline-block;
+			border: 1px solid #E9D5AB;
+			border-radius: 50px;
+			color: #D4AC57;
+			font-size: 0.75rem;
+			padding: 0px 8px;
+		}
+		.li:after{
+			left: 0px;
+		}
+		.li1:after{
+			height: 0px;
+		}
+		.mui-table-view-cell:after{
+			background-color: #EDEDED;
+		}
+		/*正文*/
+		/*外卖*/
+		.book_note_right1{
+			color: #B1B8BD;
+			width: 78%;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: right;
+			
+		}
+		.address{
+			display: inline-block;
+			padding: 0px 0px;
+			/*font-size: 0.8125rem;*/
+			/*width: 95%;*/
+			overflow: hidden;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 2;
+		    -webkit-box-orient: vertical;
+		    word-break: break-all;
+		   
+		}
+		.mui-table-view-cell>a:not(.mui-btn){
+			white-space:initial;
+		}
+		
+		/*外卖*/
+		.lastul .mui-table-view{
+			margin-bottom: 80px;
+		}
+		</style>
+	</head>
+	<body>
+		<!--头部订单已取消start-->
+		<div class="header">
+			<div class="header_left">
+				<img src="../image/ordering@2x.png"/>
+			</div>
+			<div class="header_right">
+				<div class="">
+					<span class="big_font">洗护已结束 </span>
+					<span><img style="max-width: 7px;" src="../image/jiantou@2x.png"/></span>
+				</div>
+				<div class="small_font">车辆返程中，点击查看实时监控</div>
+				
+			</div>
+		</div>
+		
+		<!--头部订单已取消end-->
+		
+		
+		<!--好又多商家信息start-->
+		<!--<div class="mui-content">-->
+			<div class="confirm_item">
+					<div class="confirm_item_title">
+				        <i class="icon iconfont icon-dianpu"></i>&nbsp;
+				              <span class="light">保时捷体验中心店 —</span><span class="bold">(服务名称)易洗护</span> 
+					</div>
+					
+					<ul class="mui-table-view">
+				        <li class="mui-table-view-cell mui-media order_goods bomline" id="bomline" style="padding: 11px 0px;">
+				            <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="../image/shop_detail.png">
+					            <div class="mui-media-body">
+					                <div class="mui-ellipsis">
+					                	<span class="order_goods_p mui-pull-right">￥24.00</span>
+					                	<div class="order_goods_n ">标准洗车</div>
+					                	<div class="order_goods_count">&times; 1</div>
+					                </div>
+					            </div>
+					        </a>
+				        </li>
+				        <li class="mui-table-view-cell mui-media order_goods bomline"  id="" style="padding: 11px 0px;">
+				            <a href="javascript:;">
+					            <img class="mui-media-object mui-pull-left" src="../image/shop_detail.png">
+					            <div class="mui-media-body">
+					                
+					                <div class="mui-ellipsis">
+					                	<span class="order_goods_p mui-pull-right" >￥24.00</span>
+					                	<div class="order_goods_n">标准洗车</div>
+					                	<div class="order_goods_count">&times; 1</div>
+					                </div>
+					            </div>
+					        </a>
+				        </li>
+				        <li class="mui-table-view-cell" id="cell">
+			                <a class="mui-navigate-right">
+			                   优惠券<span class="mui-pull-right confirm_r">暂无可用优惠券</span>
+			                </a>
+		            	</li>
+		            	<li class="mui-table-view-cell" id="cell">
+			                <a class="mui-navigate-right">
+			                   平台活动<span class="mui-pull-right confirm_r">暂无活动</span>
+			                </a>
+		            	</li>
+		            	<li class="mui-table-view-cell total" id="bomline">
+				            <span class="" style="color: #79878f;">优惠 <small style="font-family: '黑体';">￥10.00 </small></span>&nbsp;<span  class="" style="text-align: right;color: #333;">总计 <small class="order_goods_p">￥48.00</small></span>
+			          	</li>
+			          	<div class="onemore" id="contact">
+							<span class="onemore_button"><img src="../image/phonecancel.png" style="width: 10px;vertical-align: middle;"/> 联系商户</span>
+						</div>
+				    </ul>
+				</div>
+			<!--好又多商家信息end-->
+			
+			<!--订单信息start-->
+			<div class="book_notes">
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell book_note li flx">
+			            <div class="book_note_left">
+							车辆信息
+						</div>
+						<div class="book_note_right">
+						苏F88888 &nbsp;（小轿车）
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell flx">
+			            <div class="book_note_left">
+							 提车地址   
+						</div>
+						<div class="book_note_right address">
+							桃园路311号地下车库B区1102号停车位左 侧右边  
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell book_note flx">
+			             <div class="book_note_left">
+							服务时间
+						</div>
+						<div class="book_note_right">
+							17:36
+						</div>
+			        </li>
+			       
+		        </ul>	 
+			</div>
+			
+			<!--订单信息end-->
+			<!--订单信息start-->
+			<div class="order_note flx">
+				<div class="order_note_left">
+					备注/发票
+				</div>
+				<div class="order_note_right">
+					快点过来<br />
+					轻奢点评网络文化科技有限公司
+				</div>
+			</div>
+			<!--订单信息end-->
+			<!--订单信息start-->
+			<div class="book_notes lastul">
+				<ul class="mui-table-view">
+			        <li class="mui-table-view-cell book_note li flx">
+			            <div class="book_note_left">
+							车辆信息
+						</div>
+						<div class="book_note_right">
+						在线支付
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell flx">
+			            <div class="book_note_left">
+							 订单号码   
+						</div>
+						<div class="book_note_right address">
+							时间戳(13)随机(2)用户编号(N) 
+						</div>
+			        </li>
+			        <li class="mui-table-view-cell book_note flx">
+			             <div class="book_note_left">
+							订单时间
+						</div>
+						<div class="book_note_right">
+							2017-12-26 12:25:56
+						</div>
+			        </li>
+			       
+		        </ul>	 
+			</div>
+			
+			<!--订单信息end-->
+			</div>
+		<!--</div>-->	
+	</body>
+</html>

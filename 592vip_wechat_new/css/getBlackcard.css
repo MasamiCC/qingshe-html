@@ -1,0 +1,169 @@
+body,.bcbody{
+	background: #fff;
+}
+.bcbody{
+	margin: 0px auto;
+	text-align: center;
+}
+.bchead{
+	margin: 20px 0 40px 15% ;
+	text-align: left;
+}
+.ques{
+	color: #ccc;
+}
+.bcmiddle,.bcfooter{
+	font-size: 0;
+	line-height: 0;
+}
+.bcmiddle>div,.bcfooter>div{
+	display: inline-block;
+}
+.bcfonts,.bcfooterfonts{
+	font-size: 0.875rem;
+	color: #fff;
+}
+.bcheadfont{
+	font-size: 0.875rem;
+	margin-right: 5px;	
+}
+.bcheadfont,.ques{
+	vertical-align: middle;
+}
+.bcbigfont{
+	font-size: 1.625rem;
+}
+.first_bcmiddlecon img{
+	width: 8.0625rem;
+	border-radius: 4px;
+}
+.bcmiddlecon{
+	position: relative;
+	margin: 4% 3%;
+	vertical-align: top;
+}
+.bcfonts{
+	position: absolute;line-height: 1.4;
+	top: 13px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.user_defined{
+	width: 8.0625rem;
+	height: 4.5rem;
+	background: #f4f4f4;
+	border-radius: 4px;
+	border: 1px solid #E2E2E2;
+}
+.user_definedcon{
+	font-size: 0.875rem;
+	color: #666;
+	text-align: center;
+	line-height: 4.8;
+	/*vertical-align: middle;*/
+}
+.bcfooter_con{
+	width: 8.56rem;
+	height: 2.41rem;
+	border-radius: 4px;
+	margin: 0 3%;
+}
+.bcfooterfonts{
+	text-align: center;
+	line-height: 2.8;
+}
+.bcfooter_conbg1{
+	background: #d4ac57;	
+}
+.bcfooter_conbg2{
+	background: #1F1F1F;	
+}
+.bcfooter{
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.bcbgcheck{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+    right: 0;
+    text-align: center;
+    background:rgba(0,0,0,0.3);
+    width: 8.0625rem;
+	height: 4.5rem;
+}
+.bcbgcheck>div{
+	top: 18px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.bccheck{
+	font-size: 40px!important;
+	color: #fff;
+	opacity:0.8;
+}
+.bccheckbg{
+	display: inline-block;
+	width: 1.875rem;
+	height: 1.875rem;
+	background: #fff;
+	border-radius: 50%;
+}
+.inputcon{
+	margin: 15px 10px 15px 10px;
+	display: none;
+}
+.inputcon input[type=number]{
+	    background: #efefef;
+	    border: 0;
+	    font-size: 0.875rem;
+}
+.bcfooterfonts a{
+	text-decoration: none;
+	color: inherit;
+}
+ .mui-popover{
+	background:url(../image/shopbg.png) no-repeat;
+	background-size:100% 100% ;
+	/*opacity:0.99;*/
+	top: 54px;
+    left: 18px;
+   /*margin: 0 auto;
+   left: 0;
+   right: 0;
+   top: 54px;
+   background: rgba(0,0,0,0.9)*/
+}
+ .mui-popover .mui-popover-arrow:after{
+	background: none;
+}
+.creditPopover_font{
+	font-size: 0.75rem;
+	color: #fff;
+	line-height: 2.5;
+}
+ .mui-content-padded{
+	margin: 10px 15px;
+}
+.creditPopover_close{
+	position: absolute;
+	top: -7px;
+    right: -7px;
+
+}
+.closeicon img{
+	width: 1.125rem;
+}
+.attr_close {
+    border-radius: 20px;
+    color: initial;
+    background: #eee;
+}

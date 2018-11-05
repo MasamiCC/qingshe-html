@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/newYearRed.css"/>
+		<style type="text/css">
+			.mui-content{
+			    background: none;
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    top: 0;
+			    bottom: 0;
+			}
+			small{font-size: 60%;}
+			.default{
+				background: url(../image/dog@3x.png) no-repeat scroll center center;background-size: 100%;top: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;right: 0;
+				background-position: center 20%; 
+			    margin: 0px 16%;
+			}
+			.default .msg{
+				position: absolute;top:65%;width: 100%;
+			}
+			.share_p{
+				position: absolute;width: 100%;text-align: center;top: -100px;
+				transition: all 2s;
+				-moz-transition: all 2s; /* Firefox 4 */
+				-webkit-transition: all 2s; /* Safari 和 Chrome */
+				-o-transition: all 2s; /* Opera */
+				transition-delay: 20s;
+				-moz-transition-delay: 20s; /* Firefox 4 */
+				-webkit-transition-delay: 20s; /* Safari 和 Chrome */
+				-o-transition-delay: 20s; /* Opera */
+			}
+			.share_p.show{
+				top: 0;
+				transition: all 2s;
+				-moz-transition: all 2s; /* Firefox 4 */
+				-webkit-transition: all 2s; /* Safari 和 Chrome */
+				-o-transition: all 2s; /* Opera */
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="new_year_rule">
+				<i class="fa fa-question-circle"></i><a href="javascript:void(0)">活动规则</a>
+			</div>
+			<div class="default">
+				<div id="" class="msg">
+					<span>"说出您的新年愿望或祝福，不超过20个字"</span>
+				</div>
+				<div class="btn_div">
+					<img src="../image/speech_d@3x.png" id="btn"/>
+					<p>长按说出心愿/祝福领红包</p>
+				</div>
+			</div>
+			<div class="share">
+				<div class="share_order">
+					心愿单：<a href="javascript:void(0)">#QSDP666666#</a>
+				</div>
+				<div class="share_msg">
+					"找个漂亮的女朋友"
+				</div>
+				<div class="bag">
+					<div class="bag_ticket active">
+						
+						<img src="../image/tickets_bg.png"/>
+						<div class="" style="background: #fff;font-size: 0;display: flex;">
+							<span style="display: inline-block;font-size: 1.5rem;width: 36%;line-height: 2;color: #ff0000;font-weight: bold;"><small>￥</small>0.68</span>
+							<div class=""style="position: relative;width: 64%;display: inline-block;font-size: .875rem;text-align: left;">
+								<div style="color: #ff0000;margin-left: 10px;line-height: 2;font-weight: 500;">微信红包</div>
+								<span style="margin-left: 10px;color: #f8a120;font-size: .75rem;">现金红包，直接到账</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="bag_btn">
+						<button>立即领取</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="">
+					<p>进入微商城</p>
+				</div>
+			</div>
+		</div>
+		<div class="share_p" style="">
+			<img src="../image/share@3x.png" style="max-width: 100%;margin: 0 auto;"/>
+		</div>
+		<div id="myPopover" class="mui-popover">
+			<div class="popover_con">
+				<p class="activity_title">活动规则</p>
+				<p class="activity_con">1．活动参与者说出语音愿望并分享给好友或朋友圈，即可获取轻奢愿望基金（红包）；</p>
+				<p class="activity_con">2．新年愿望字数限制为20字以内；</p>
+				<p class="activity_con">3．活动期间每一名参与者有且仅能领取一份愿望红包；</p>
+				<p class="activity_con">4．活动末期将由轻奢点评总部随机选取10个入围愿望，助其实现；</p>
+				<p class="activity_con">5．本次活动最终解释权归轻奢点评所有；</p>
+			</div>
+			<div class="">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	var startx, starty,timer;  
+    //获得角度  
+    function getAngle(angx, angy) {  
+        return Math.atan2(angy, angx) * 180 / Math.PI;  
+    };  
+   
+    //根据起点终点返回方向 1向上 2向下 3向左 4向右 0未滑动  
+    function getDirection(startx, starty, endx, endy) {  
+        var angx = endx - startx;  
+        var angy = endy - starty;  
+        var result = 0;  
+   
+        //如果滑动距离太短  
+        if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {  
+            return result;  
+        }  
+   
+        var angle = getAngle(angx, angy);  
+        if (angle >= -135 && angle <= -45) {  
+            result = 1;  
+        } else if (angle > 45 && angle < 135) {  
+            result = 2;  
+        } else if ((angle >= 135 && angle <= 180) || (angle >= -180 && angle < -135)) {  
+            result = 3;  
+        } else if (angle >= -45 && angle <= 45) {  
+            result = 4;  
+        }  
+   
+        return result;  
+    }  
+    //手指接触屏幕  
+    document.getElementById("btn").addEventListener("touchstart", function(e) {  
+        startx = e.touches[0].pageX;  
+        starty = e.touches[0].pageY; 
+        clearTimeout(timer)
+        var html='<span class="rect7"></span>'
+				+'<span class="rect6"></span>'
+				+'<span class="rect5"></span>'
+				+'<span class="rect4"></span>'
+				+'<span class="rect3"></span>'
+				+'<span class="rect2"></span>'
+				+'<a>录音中<br />上划取消</a>'
+				+'<span class="rect2"></span>'
+				+'<span class="rect3"></span>'
+				+'<span class="rect4"></span>'
+				+'<span class="rect5"></span>'
+				+'<span class="rect6"></span>'
+				+'<span class="rect7"></span>';
+        $('.default').addClass('loading').find('.msg').html(html);
+        $("#btn").attr({
+        	'src':'../image/speech_h@3x.png'
+        }).next().html('长按说出心愿/祝福领红包')
+    }, false); 
+    
+    //手指离开屏幕  
+    document.getElementById("btn").addEventListener("touchend", function(e) {  
+        var endx, endy;  
+        endx = e.changedTouches[0].pageX;  
+        endy = e.changedTouches[0].pageY;  
+        var direction = getDirection(startx, starty, endx, endy);  
+        console.log(direction)
+        switch (direction) {  
+            case 1:  
+                $('.default').removeClass('loading').find('.msg').html('<span>"说出您的新年愿望或祝福，不超过20个字"</span>')
+                break;  
+            default:  
+            	$('.default').removeClass('loading').find('.msg').html('识别中...');
+            	speechRecognition()
+        }  
+        $("#btn").attr({
+        	'src':'../image/speech_d@3x.png'
+        })
+    }, false); 
+    
+    function speechRecognition(){
+    	var status=parseInt(Math.random()*2),msg;
+    	if(status==0){
+    		msg='识别失败，请再试一次'
+    	}else{
+    		msg='"找个漂亮的女朋友"'
+    	}
+    	timer=setTimeout(function(){
+    		recognitionResponse(msg,status)
+    	},1000)
+    }
+    function recognitionResponse(msg,status){
+    	$('.default').removeClass('loading').find('.msg').html(msg);
+    	if(status>0){
+    		$("#btn").next().html('点击右上角分享祝福给好友<br/>或朋友圈即可领取现金红包');
+    		
+    		setTimeout(function(){
+    			shareCallBack()
+    		},2000)
+    	}
+    }
+    
+    
+    function shareCallBack(){
+    	$(".share").show();
+    	$('.default').hide();
+    	setTimeout(function(){
+			$('.share_p').addClass('show');
+		},1000)
+    	
+    }
+    $(function(){
+    	$(".bag_btn button").on('tap',function(){
+    		if (!$(this).hasClass('disabled')) {
+    			$(this).addClass('disabled').html('已领取')
+    		}
+    		
+    	})
+    })
+    $('.new_year_rule').click(function(){
+			mui('#myPopover').popover('show');
+			mui("#myPopover").on('tap','.mui-icon',function(){
+			mui('#myPopover').popover('hide');
+		})	
+	})
+</script>

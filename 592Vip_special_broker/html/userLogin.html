@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/userLogin.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <p class="title">轻奢点评特约经纪人后台管理系统</p>
+    <!-- 账号密码登录 -->
+    <div class="loginBox userLogin">
+        <p class="box_title">用户登录</p>
+        <div class="input_box">
+            <i class="user_icon icon_left"></i>
+            <input placeholder="请输入账号" class="input_user inp" type="text">
+            <i class="close_icon clear_user"></i>
+        </div>
+        <p class="error_none">用户账号不存在</p>
+        <div class="input_box">
+            <i class="passowrd_icon icon_left"></i>
+            <input placeholder="请输入密码" class="input_password inp" type="password">
+            <i class="close_icon clear_password"></i>
+        </div>
+        <button class="login_btn">登录</button>
+        <span class="fr l_gray">忘记密码？</span>
+        <span class="fl l_gray "><input class="rememberPass" type="checkbox"> 记住密码</span>
+    </div>
+    <!-- 账号密码登录 -->
+    <!-- 手机登录 -->
+    <div class="phoneBox phoneLogin">
+        <p class="box_title">手机验证登录</p>
+        <div class="input_box">
+            <i class="phone_icon icon_left"></i>
+            <input pattern="[0-9]" placeholder="请输入手机号" class="input_phone inp" type="text">
+            <i class="close_icon clear_phone"></i>
+        </div>
+        <p class="error_none">手机号码不存在</p>
+
+        <div class="input_box">
+            <i class="code_icon icon_left"></i>
+            <input placeholder="请输入手机验证码" class="input_code" type="password">
+            <input type="button" value="发送验证码" class="code_btn fr obtain generate_code" onclick="settime(this);"></button>
+        </div>
+        <button class="login_btn">登录</button>
+        <span class="fl l_gray goUser">账号密码登录</span>
+        <!-- <span class="fr l_gray goRegister">注册账号</span> -->
+    </div>
+    <!-- 手机登录 -->
+
+    <!-- 账号注册 -->
+    <!-- <div class="registerBox register">
+        <p class="box_title">账号注册</p>
+        <div class="input_box">
+            <i class="user_icon icon_left"></i>
+            <input placeholder="请输入手机号码" class="input_user inp" type="text">
+        </div>
+        <p class="error_none">用户账号不存在</p>
+        <div class="input_box">
+            <i class="code_icon icon_left"></i>
+            <input placeholder="请输入手机验证码" class="input_code" type="password">
+            <input type="button" value="发送验证码" class="code_btn fr obtain generate_code" onclick="settime(this);"></button>
+        </div>
+        <div class="input_box">
+            <i class="passowrd_icon icon_left"></i>
+            <input placeholder="请输入登录密码" class="input_user inp" type="password">
+        </div>
+        <div class="input_box">
+            <i class="passowrd_icon icon_left"></i>
+            <input placeholder="请再次输入登录密码" class="input_user inp" type="password">
+        </div>
+        <button class="login_btn">注册</button>
+        <span class="fl l_gray goUser">账号密码登录</span>
+    </div> -->
+    <!-- 账号注册 -->
+
+    <!-- 账号密码错误 -->
+    <div class="error_box userWrong">
+        <div class="error_wrong">
+            <p>您输入的账号或密码有误，请重新输入。</p>
+            <p></p>
+            <button class="error_btn">确定</button>
+        </div>
+    </div>
+    <!-- 账号密码错误 -->
+
+    <!-- 手机验证码错误 -->
+    <div class="error_box codeWrong">
+        <div class="error_wrong">
+            <p>您输入的手机验证码有误，请重新输入。</p>
+            <p></p>
+            <button class="error_btn">确定</button>
+        </div>
+    </div>
+
+    <!-- 手机密码不一致 -->
+    <!-- <div class="error_box registerPassword">
+        <div class="error_wrong">
+            <p>您输入的手机密码不一致，请重新输入。</p>
+            <p></p>
+            <button class="error_btn">确定</button>
+        </div>
+    </div> -->
+    <!-- 手机密码不一致 -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+#shop_gb_list{
+	font-size: 0;background: none;border-bottom: 1px solid #ddd;height: 40px;overflow: visible;z-index: 9999;
+}
+#shop_gb_list:after{
+	height: 0;
+}
+.shop_gb{
+	display: inline-block;width: 33%;font-size: 1rem;vertical-align: top;background: #fff;text-align: center;
+	padding: 10px 15px;
+}
+.shop_gb:after{
+	height: 0;
+}
+.shop_list{
+	position: absolute;top: 210px;bottom: 0;width: 100%;z-index: 10;
+}
+.shop_gb ul{
+	z-index: 99999;
+}
+.shop_item{
+	padding-right: 15px!important;
+}
+.shop_title{
+	font-size: 0.95rem;
+}
+.shop_gb  ul{
+	margin-right: -15px!important;
+	font-size: 1rem!important;
+	box-shadow: 5px 5px 5px #ff0000;
+}
+.shop_gb  ul li{
+	padding-left:0!important  ;
+	padding-right: 0!important;
+	height: 35px;
+	line-height: 35px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.9rem;
+}
+.shop_gb  ul li a{
+	color: #666;
+}
+.shop_gb  ul li:hover{
+	background: #eee;
+}
+.shop_gb  ul li:after{
+	height: 0!important;
+}
+.shop_gb  ul li a.mui-active{
+	padding-left: 11px!important;
+}
+.shop_gb.mui-active{
+	margin-top: 0!important;background: none;font-size: 1rem;box-shadow: 0px 0px 3px #aaa;z-index: 99;
+}
+.shop_gb.mui-active >a{
+	background: none;
+}

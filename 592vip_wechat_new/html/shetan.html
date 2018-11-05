@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+        <link href="../css/mui.min.css" rel="stylesheet"/>
+        <script type="text/javascript">
+      	mui.init();
+      	window.onload = function(){
+		  var oTop = document.getElementById("to_top");
+		  var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+		  var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+		  oTop.style.left = screenw - oTop.offsetWidth +"px";
+		  oTop.style.top = screenh - oTop.offsetHeight + "px";
+		  window.onscroll = function(){
+		    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+		    oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
+		  }
+		  oTop.onclick = function(){
+		    document.documentElement.scrollTop = document.body.scrollTop =0;
+		  }
+		}  
+        </script>
+        <style type="text/css">
+        	*{
+        		padding: 0px;
+        		margin: 0px;
+        		font-family: "宋体";
+        	}
+        	body{
+        		background: #F4F4F4;
+        	}
+        	.show2{
+        		margin-top: 10px;
+        	}
+        	.mui-table-view:after,.mui-table-view:before,.mui-table-view-cell:after{
+        		height: 0px;
+        	}
+			.mui-table-view-chevron .mui-table-view-cell{
+				padding-right: 15px;
+			}
+			.mui-table-view-cell{
+				padding: 0px 15px;
+			}
+			.grey{
+				color: #999;
+				padding-bottom: 0;
+				line-height:2;
+			}
+			.grey span{
+				font-size: 0.625rem;
+				display: inline-block;
+			}
+			.watch{
+				width: 10px;
+			}
+			.shetan_list{
+				margin-top: 10px;
+				background: #fff;
+				padding-top: 15px;
+				
+			}
+			.shetan_list_title{
+				font-size: 0.8125rem;
+			}
+			.tdrop{
+				margin-top: -10px;
+				margin-bottom: 8px;
+			}
+			.shetan{
+				width: 100%;
+			}
+			.shetan img{
+				max-width: 100%;
+			}
+			.shetan_list li{
+				width: 50%;
+				display: inline-block;
+			}
+			.shetan_list .mui-table-view .mui-media-object{
+				height:  inherit;
+				max-width:100%;
+				display: block;
+			}
+			.shetan_list .mui-table-view-cell>a:not(.mui-btn){
+				white-space: normal;
+				padding-bottom: 0;
+				padding-left:15px;
+			}
+			.backtop img{
+				width: 44px;
+			}
+			.backtop{
+				position: fixed;
+				right:15px ;
+				bottom:12px;
+				display: none;
+			}
+			.shetan_list .mui-table-view-cell>a:not(.mui-btn){
+				padding-left: 0px;
+				/*padding-bottom: 0px;*/
+			}
+			.history_list_name{
+				font-size: 0.6875rem;
+				display: inline-block;
+				/*max-width: 92%;*/
+			}
+			.shetan_list li{
+				display: inline-block;margin: 0.2rem 0;vertical-align: top;
+			}
+			.shetan1{
+				max-width: 100%;
+				/*min-height: 160px;*/
+				padding:30px 100px;
+				text-align: center;
+				height: auto;
+				/*width: 640px;*/
+				/*height: 316px;*/
+				background: url(../image/shetanbck.png) no-repeat;
+			}
+			.shetanb{
+				font-size: 0.8125rem;
+			}
+			.shetans{
+				font-size: 0.625rem;
+				color: #B4B4B4;
+			}
+			.shetanvip img{
+				width: 60px;
+			}
+			.mui-media{
+				padding: 0px 0px;
+				margin: 0px 0px;
+			}
+			#history_list{
+				font-size: 0;line-height: 0;
+				padding-left: 0.45rem;
+				padding-right: 0.45rem;
+			}
+			#history_list a{
+				margin: 0 0.45rem;
+				line-height: 1;
+			}
+			.history_title{
+				overflow: hidden;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			    word-break: break-all;
+				text-overflow:ellipsis;
+			    line-height: 1.5;
+			    height: 2.4rem;
+			}
+        </style>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="">
+		    	<div class="show">
+		    		<ul class="mui-table-view mui-table-view-chevron" id="video_list">
+						<li class="" data-id="">
+							<div id="" class="videoCss v1" >
+								<div class="shetan shetan1">
+									<!--<iframe height="212" min-width="410" width="100%" src="http://player.youku.com/embed/XMTgzMTMzNTQ4OA==" frameborder="0" 'allowfullscreen'=""></iframe>-->
+									<!--<img src="../image/shetan1.png"/>-->
+									<div class="shetanvip"><img src="../image/shetanvip.png"/></div>
+									<div class="shetanb">奢探showtime</div>
+									<div class="shetans">播放总量：5.4万</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+		    	</div>
+		    	<div class="show show2">
+		    		<ul class="mui-table-view mui-table-view-chevron" id="video_list1">
+		    			<li class="mui-table-view-cell" data-id="">
+							<div id="" class="videoCss" >
+								<center>
+									<div class="" style="font-size: 0.8125rem; padding-top:15px ;">
+										最近更新
+									</div>
+									<div class="" style="margin-top: -10px;">
+										<img  class="watch" src="../image/drop.png"/>
+									</div>
+								</center>
+								<div class="history_title" style="font-size: 0.6875rem;padding-top: 8px;">
+										轻奢点评《奢探》直播之前田日料
+								</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell video_li" data-id="">
+							<div id="" class="videoCss" >
+								<div class="shetan shetan2">
+									<!--<iframe height="212" min-width="410" width="100%" src="http://player.youku.com/embed/XMTgzMTMzNTQ4OA==" frameborder="0" 'allowfullscreen'=""></iframe>-->
+									<img src="../image/shetan2.png"/>
+								</div>
+							<div class="grey">
+								<span id="" >05月05日</span>
+								<span id=""><img class="watch" src="../image/watch.png"/></span>
+								<span>1150</span>
+							</div>
+							</div>
+						</li>
+					</ul>
+		    	</div>
+		    <div class="shetan_list">
+				<center class="shetan_list_title">
+					往期奢探
+					<div class="tdrop">
+						<img class="watch" src="../image/drop.png" />
+					</div>
+				</center>
+				<ul class="mui-table-view" id="history_list" >
+					<li class="mui-table-view-cell mui-media" data-id="11">
+				        <a href="javascript:;" >
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				               	 <div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	 </div>
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				   <li class="mui-table-view-cell mui-media" data-id="12">
+				        <a href="javascript:;">
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				               	<div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media" data-id="13">
+				        <a href="javascript:;" >
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				                <div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				      <li class="mui-table-view-cell mui-media" data-id="12">
+				        <a href="javascript:;">
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				               	<div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media" data-id="13">
+				        <a href="javascript:;" >
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				                <div class="history_title">
+				               	 	轻奢点评
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media" data-id="13">
+				        <a href="javascript:;" >
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				                <div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人轻奢点评《奢探》直播之披萨达人轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				      <li class="mui-table-view-cell mui-media" data-id="12">
+				        <a href="javascript:;">
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				               	<div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media" data-id="13">
+				        <a href="javascript:;" >
+				            <img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+				            <div class="mui-media-body history_list_name title">
+				                <div class="history_title">
+				               	 	轻奢点评《奢探》直播之披萨达人
+				               	</div>	
+					            <div class="grey">
+									<span id="" >05月05日</span>
+									<span id=""><img class="watch" src="../image/watch.png"/></span>
+									<span>1150</span>
+								</div>
+				            </div>
+				        </a>
+				    </li>
+				</ul>
+				<div class="backtop">
+					<img  id="to_top" src="../image/backtop.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(window).scroll(function(){
+			var top=$(window).scrollTop();
+			var height=$(window).height();
+			
+			if ($(document).height()-top==height) {
+				loadHistory()
+			}
+		})
+	})
+	var pageCount=1;
+	var pageEnd=false;
+	
+	function loadHistory(){
+		
+		if (!pageEnd) {
+			if (pageCount>=2) {
+				pageEnd=true;
+				mui.toast('没有更多数据了')
+			}else{
+				for( var i =0;i<10;i++){
+					var html='<li class="mui-table-view-cell mui-media" data-id="13">'
+				        +'<a href="javascript:;">'
+				        +    '<img class="mui-media-object" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">'
+				        +    '<div class="mui-media-body history_list_name title">'
+				        +        	'<div class="history_title">'
+				        +       	 	'轻奢点评《奢探》直播之披萨达人'
+				        +       	'</div>'
+					    +        '<div class="grey">'
+						+			'<span id="">05月05日</span>'
+						+			'<span id=""><img class="watch" src="../image/watch.png"></span>'
+						+			'<span>1150</span>'
+						+		'</div>'
+				        +    '</div>'
+				        +'</a>'
+				    	+'</li>'
+					$("#history_list").append(html);
+				}
+				pageCount++;
+			}
+			
+		}else{
+			mui.toast('没有更多数据了')
+		}
+	}
+	
+</script>

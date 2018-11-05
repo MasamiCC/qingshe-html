@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>抽奖成功</title>
+		<!--引入flexible布局-->
+		<script src="../static/js/flexible.js"></script>
+		
+		<!--引入css-->
+		<link href="../css/common.css" />
+		<link href="../css/bandit.css" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.all_tracef,body{
+				background: #F4F4F4;
+			}
+			.all_tracef{
+				text-align: center;
+			}
+			.sy_img{
+				margin-top: 24%;
+			}
+			.sy_img img{
+				width: 25%;
+			}
+			.sy_font{
+				font-size: 0.875rem;
+				color: #333;
+				line-height: 5;
+			}
+			/*阴影*/
+			.modle_bg{
+				position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    overflow: hidden;
+			    background: rgba(0,0,0,0.3);
+			    height: 100%;
+			    width: 100%;
+			    z-index: 100;
+			}
+			
+			.go_binding_modle {
+			    background-color: #fff;
+			    height: auto;
+			    padding-bottom: 0;
+			    border-radius: 8px;
+			    width: 7rem;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    margin-top: -1rem;
+			    margin-left: -3.5rem;
+			    z-index: 999;
+			    text-align: center;
+			    animation: showModle 1s;
+			    -webkit-animation: showModle 1s;
+			    opacity: 1;
+			}
+			.conImg{
+				margin-bottom: 0.35rem;
+			}
+			.conImg img{
+				width: 0.63rem;
+			}
+			.content p{
+				font-size: 14px;
+			}
+			.content{
+				padding: 0.48rem 0.745rem 0.67rem 0.745rem;
+			}
+			.congratulation img{
+				width: 3.7rem;
+				margin-top: -1.8rem;
+			}
+			.modle_bg3 .go_binding_modle{
+				width: 8.5rem;
+				margin-left: -4.2rem;
+				margin-top: -3rem;
+			}
+			.title{
+				font-size: 18px!important;
+			    font-weight: bold;
+			    line-height: 1.8;
+			    margin-bottom: 0.1rem;
+			}
+			.daKai_btn{
+				color: #fff;
+				padding: 0.26rem 1rem;
+				background: #f8a120;
+				border-radius: 2px;
+			}
+			.daKai_btn_con{
+				margin-top: 0.6rem;
+				line-height: 3;
+			}
+			.modle_bg{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!--手机号输入错误弹窗-->
+		<!--<div class="modle_bg modle_bg1">
+			<div class="go_binding_modle">
+				<div class="content">
+					<p class="conImg"><img src="../static/img/error_icon.png"/></p>
+					<p>验证码输入错误，请确认后重试</p>
+				</div>
+			</div>
+		</div>-->
+		
+		<!--验证码错误弹窗-->
+		<!--<div class="modle_bg modle_bg2">
+			<div class="go_binding_modle">
+				<div class="content">
+					<p class="conImg"><img src="../static/img/error_icon.png"/></p>
+					<p>手机号输入错误，请确认后重试</p>
+				</div>
+			</div>
+		</div>-->
+		
+		<!--抽奖成功弹窗-->
+		<div class="modle_bg modle_bg3">
+			<div class="go_binding_modle">
+				<div class="content">
+					<div class="congratulation">
+						<img src="../static/img/happy_zj.png"/>
+					</div>
+					<div class="congratulation_content">
+						<p class="title">恭喜</p>
+						<p style="line-height: 2;">您已抽中100轻奢平台专享黑钻，可在轻奢</p>
+						<p>平台任意消费，赶紧去使用吧</p>
+						<div class="daKai_btn_con">
+							<span class="daKai_btn">打开APP</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <title></title>
+    <style type="text/css">
+    	body{
+    		background: #fff;
+    	}
+    	.pascricle{
+    		font-size: 18px;
+    	}
+    	.num_del{
+    		width: 20px;
+    	}
+        table#number_input {
+            background-color: white;
+            position: fixed;
+            top: 180px;
+            width: 70%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        table#number_input td {
+            border: 1px solid gainsboro;
+            border-right: 0;
+            width: 10%;
+            height: 40px;
+        }
+
+        table#number_input td:last-child {
+            border-right: 1px solid gainsboro;
+        }
+
+        table#keyboard {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            width: 100%;
+            height: 160px;
+            background-color: white;
+        }
+
+        table#keyboard td {
+            border: 1px solid gainsboro;
+            border-right: 0;
+            border-bottom: 0;
+            width: 33%;
+        }
+
+        table#keyboard td:enabled {
+            color: red;
+        }
+
+        table#keyboard td:last-child {
+            border-right: 1px solid gainsboro;
+        }
+        .checkpass_fonts{
+        	font-size: 0.875rem;
+        	text-align: center;
+        	background: #fff;
+        	color: #333;
+        	line-height: 2.3;
+        	position: absolute;
+        	top: 80px;
+        	left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .checkpass_num{
+        	color: #d1ac54;
+        }
+        .greyfont{
+        	color: #999999;
+        }
+        .greyicon{
+        	background: #C8CFD7;
+        }
+        .wrong_tip{
+        	position: absolute;
+        	top: 228px;
+        	left: 15%;
+        	font-size: 0.75rem;
+        	color:#fb5c5c ;
+        }
+        .gold{
+        	color: #d1ac54;
+        }
+        #check_success{
+        	margin: 0 auto;
+        	left: 0;
+        	right: 0;
+        	text-align: center;
+        	top: 40%;
+        }
+        .check_success_main{
+        	padding: 20px;
+        }
+         .check_success_main div{
+         	line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mui-content">
+    	<div class="checkpass_fonts">
+    		<div class="">
+    			已向您的注册手机13888888888发送验证码
+    		</div>
+    		<div class="greyfont" id="restart">
+    			<span class="checkpass_num">59</span>秒后可重新发送
+    		</div>
+    	</div>
+        <table id="number_input" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td class="input-item"></td>
+                    <td class="input-item"></td>
+                    <td class="input-item"></td>
+                    <td class="input-item"></td>
+                    <td class="input-item"></td>
+                    <td class="input-item"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="wrong_tip" id="wrong_tip"></div>
+        <table id="keyboard" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td class="keyboard-number">1</td>
+                    <td class="keyboard-number">2</td>
+                    <td class="keyboard-number">3</td>
+                </tr>
+                <tr>
+                    <td class="keyboard-number">4</td>
+                    <td class="keyboard-number">5</td>
+                    <td class="keyboard-number">6</td>
+                </tr>
+                <tr>
+                    <td class="keyboard-number">7</td>
+                    <td class="keyboard-number">8</td>
+                    <td class="keyboard-number">9</td>
+                </tr>
+                <tr>
+                    <td class="keboard-action greyicon"><span class="pascricle">.</span></td>
+                    <td class="keyboard-number">0</td>
+                    <td class="keboard-action greyicon" data-action="cancel"><img class="num_del" src="../image/num_del.png"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="check_success" class="mui-popover">
+			<div class="mui-content-padded check_success_main">
+				<div class="">
+					<img src="../image/pay_success.png"/>
+				</div>
+				<div class="">
+					充值成功
+				</div>
+			</div>
+		</div>
+    <script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        mui.ready(function() {
+        	var timer;
+        	//yanzhengma();
+        	
+            // 数字索引
+            var activeIndex = 0;
+            // 密码结果
+            var resultValue = "";
+            // 所有输入框
+            var inputList = mui(".input-item");
+            // 所有数字键
+            var numberList = mui(".keyboard-number");
+            // 数字键盘点击事件
+            mui("#keyboard").on("tap", ".keyboard-number", function() {
+                if(activeIndex == 6) {
+                    return;
+                }
+                var num = this.innerText;
+                addNumber(num);
+            });
+            mui("#keyboard").on("tap", ".keboard-action", function() {
+                var value = this.getAttribute("data-action");
+                switch(value) {
+                    case "cancel":
+                        if(activeIndex == 0) {
+                            return;
+                        }
+                        cancelNumber();
+                        break;
+                    case "reset":
+                        resetInput();
+                        break;
+                    default:
+                        break;
+                }
+            });
+            // 添加数字
+            function addNumber(num) {
+                inputList[activeIndex].innerText = "*";
+                resultValue += num;
+                activeIndex++;
+                // 检测密码长度
+                if(activeIndex == 6) {
+                    // 假定123456是正确密码
+                    if(resultValue != "123456") {
+                        wrongPassword();
+                    } else {
+                        mui.toast("密码正确，然后跳转到下一个页面");
+                        mui("#check_success").popover("show");
+                        
+                        
+                    }
+                }
+            }
+            // 撤销数字
+            function cancelNumber() {
+                activeIndex--;
+                inputList[activeIndex].innerText = "";
+                resultValue = resultValue.substring(0, resultValue.length - 1);
+            }
+            // 密码框置空
+            function resetInput() {
+                activeIndex = 0;
+                resultValue = "";
+                mui(".input-item").each(function(index, element) {
+                    element.innerText = "";
+                });
+            }
+            
+            // 密码错误
+//          function wrongPassword() {
+//              mui.confirm("密码错误", "验证结果", ["再来一次", "密码忘了"], function(event) {
+//                  var index = event.index;
+//                  if(index == 0) {
+//                      mui.toast("请再次输入");
+//                  } else {
+//                      mui.toast("下一步跳转到忘记密码的页面");
+//                  }
+//                  resetInput();
+//              });
+//          }
+
+
+			
+			
+
+			//验证码倒计时
+			/*
+			function yanzhengma(){
+				var clicked=$('#restart').hasClass('clicked');
+				if (!clicked) {
+				$('#restart').addClass('clicked');
+				clearInterval(timer);
+				var time=3;
+				timer=setInterval(function(){
+					if (time>0){
+						$(".checkpass_num").html(time);
+						time--;
+					} else{
+						$("#restart").html("重新发送");
+						$("#restart").attr("class","gold");
+						$("#restart").removeClass('clicked')
+						clearInterval(timer);
+					}
+				},1000)
+			}else{
+				return false;
+			}
+			}*/
+			
+			
+			
+			
+		/*	$("#restart").click(function(){
+			//recheck();
+			//console.log(time);
+						});
+					
+					
+					function recheck(){
+						var rehtml=$("#restart").html();
+						if("重新发送"==rehtml){
+							var clicked=$('#restart').hasClass('clicked');
+							if (!clicked) {
+								$('#restart').addClass('clicked');
+								
+								console.log('time1='+time);
+								$("#restart").html('<span class="checkpass_num">'+time+'</span>'+'秒后可重新发送');
+								console.log('time2='+time);
+								yanzhengma();
+								console.log('time3='+time);
+							 $("#restart").removeClass('gold');
+							  $("#restart").addClass('greyfont');
+							}else{
+								return false;
+							}
+						}
+							
+				
+					}
+					
+						
+			//验证码倒计时
+			function yanzhengma(){
+				clearInterval(timer);
+				time=5;
+				timer=setInterval(function(){
+					console.log(time)
+					if (time>0){
+						$(".checkpass_num").html(time);
+						time--;
+					} else{
+						$("#restart").html("重新发送");
+						$("#restart").attr("class","gold");
+						clearInterval(timer);
+						time=5;
+					}
+				},1000)
+		
+			}*/	
+
+
+
+
+
+
+			//验证码错误
+			function wrongPassword() {
+			var html=$("#wrong_tip").html("验证码错误");
+			var timer1=setTimeout(function(){
+			$("#wrong_tip").html('');
+			},2000)
+			}
+  
+        });
+        
+        
+        
+        
+        $(function(){
+        	var count=10;
+        	timeCount(count);
+        	$("#restart").click(function(){
+        		var clicked=$(this).hasClass('clicked');
+        		if(!clicked){
+        			timeCount(count);
+        		}
+        	})
+        })
+        var timer='';
+	      //倒计时函数
+	      function timeCount(time){
+	      	clearInterval(timer);
+	      	timer=setInterval(function(){
+	      		if(time>0){
+	      			$("#restart").removeClass('gold').html('<span class="checkpass_num">'+time+'</span>'+'秒后可重新发送').addClass('clicked');
+	      			time--;
+	      		}else{
+	      			$("#restart").html("重新发送").addClass('gold').removeClass('clicked');
+	      			clearInterval(timer);
+	      		}
+	      	},1000)
+	      }
+          
+          
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*
+ * 适配ie的css
+ */
+
+.visible {
+	visibility: visible!important;
+}
+
+.header {
+	background-color: #000000;
+	filter:Alpha(opacity=90);
+}
+
+.header {
+	background-color: #000000;
+	filter:Alpha(opacity=90);
+}
+
+.navigation_bar .channel .channel_hover{
+	background-color: #000000;
+	filter:Alpha(opacity=90);
+}
+
+.bcBtns div{
+	background-color: #B89457;
+	filter:Alpha(opacity=80);
+}
+.bc_font{
+	background-color: #000000;
+	filter:Alpha(opacity=75);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的推广会员</title>
+		
+		<!--引入css-->
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/my_spread_member.css" />
+	</head>
+
+	<body>
+		<!--操作区域-->
+		<div class="operacte_nav">
+			<span class="title">
+				推广会员记录
+			</span>
+			<span class="time">
+				2018年04月
+			</span>
+			<img src="img/calendar.png" class="date_pick">
+			<span class="all">
+				全部
+			</span>
+			<span class="num">
+				25人
+			</span>
+		</div>
+		
+		<!--内容展示区域-->
+		<div class="content_nav">
+			<!--下拉刷新容器-->
+		    <div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+		    	<div class="mui-scroll">
+		    		<div class="count_section">
+		    			
+		    		</div>
+		        </div>
+		    </div>
+		    <!--当前无相关数据-->
+		    <!--<div class="no_data">
+		    	<img src="img/no_content.png" class="info_img">
+				<p class="info_explain">
+					当前无相关数据
+				</p>
+		    </div>-->
+		</div>
+		
+	<!--定义一个成功绑定模板js-->
+	<script type="text/html" id="member_templet">
+		<div class="member_templet">
+			<img src="img/signedListCheck.png" class="img"/>
+			<div class="content">
+				<div class="name">
+					[name]
+				</div>
+				<div class="time">
+					[time]绑定成功
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<!--引入js-->
+	<script src="../../../../592Vip_V2.1/js/jquery-1.10.1.min.js"></script>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="../../../js/mui.picker.min.js"></script>
+	<script src="js/my_spread_member.js"></script>
+		
+	</body>
+
+</html>

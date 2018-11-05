@@ -1,0 +1,101 @@
+#shop_card {
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+}
+.shop_card_l{
+	flex: 2;
+}
+.shop_card_l img{
+	max-width: 100%;
+	
+}
+.shop_card_r{
+	flex: 3;
+	padding-left: 5px;
+}
+.shop_card_title{
+	font-size: 0.875rem;line-height: 1.5;
+}
+.shop_card_msg{
+	font-size: 0.75rem;line-height: 2;color: #666;
+}
+.shop_card_pingfen{
+	line-height: 2;font-size: 1.2rem;position: relative;
+}
+.shop_card_pingfen small{
+	font-size: 0.8rem;
+	
+}
+.shop_card_pingfen span{
+	position: absolute;right: .2rem;bottom: 0.5rem;
+}
+#shetan_video{
+	padding-top: 0;font-size: 0.875rem;margin-bottom: 10px;
+}
+#shetan_video div,#shetan_video p{
+	text-indent: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#shetan_video div{
+	color: #333;
+}
+#shetan_video p{
+	color: #999;
+}
+#shetan_video video{
+	background: #000;
+}
+.pingjia_time{
+	font-size: 0.75rem;line-height: 2;
+}
+.shop_detail_pj_left img{
+	max-width: 3rem;
+}
+.pingjia{
+	font-size: 0.85rem;
+}
+.pingjia p{
+	    -webkit-line-clamp: 3;
+}
+.cat_sel_title{
+	font-size: 0.875rem;font-weight: 800;border-bottom: 1px solid #ededed;
+}
+#pingjia_list{
+	padding-top: 0.1rem;
+}
+#pingjia_list .cat_sel_title{
+	line-height: 2.5;
+}
+.mui-content{
+	overflow: auto;
+}
+#shetan_pj{
+	padding-right: 55px;padding-top: 5px;
+	padding-left: 5px;
+}
+
+#send_btn{
+	position: absolute;top: 8px;right: 3px;color: #999999;font-size: 0.875rem;
+	width: 50px;
+	text-align: center;
+}
+#send_btn i{
+	display: block;text-align: center;line-height: 1;color: #999999;
+}
+#shetan_pj_con{
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	color: #ccc;
+	text-indent: 5px;
+}
+#shetan_pj_con i{
+	position: absolute;top: 8px;
+}
+#shetan_pj_con input{
+	border: none;padding: 0;width: auto;margin-bottom: 0;font-size: 0.875rem;height: 35px;width: 100%;
+	padding-left: 25px;
+	padding-right: 10px;
+	color: #ccc;
+}

@@ -1,0 +1,99 @@
+table#number_input {
+    background-color: white;
+    width: 70%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+table#number_input td {
+    border: 1px solid gainsboro;
+    border-right: 0;
+    width: 10%;
+    height: 40px;
+}
+
+table#number_input td:last-child {
+    border-right: 1px solid gainsboro;
+}
+
+table#keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    background-color: white;
+}
+
+table#keyboard td {
+    border: 1px solid gainsboro;
+    border-right: 0;
+    border-bottom: 0;
+    width: 33%;
+}
+
+table#keyboard td:enabled {
+    color: red;
+}
+
+table#keyboard td:last-child {
+    border-right: 1px solid gainsboro;
+}
+.checkpass_fonts{
+	font-size: 1rem;
+	text-align: center;
+	background: #fff;
+	color: #333;
+	line-height: 2.3;
+	position: absolute;
+	top: 80px;
+	left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.checkpass_num{
+	color: #d1ac54;
+}
+.greyfont{
+	color: #999999;
+}
+.greyicon{
+	background: #C8CFD7;
+}
+.wrong_tip{
+	position: absolute;
+	top: 228px;
+	left: 15%;
+	font-size: 0.75rem;
+	color:#fb5c5c ;
+}
+.gold{
+	color: #d1ac54;
+}
+#popover{
+	bottom: 0;
+	width: 100%;
+	border-radius: 0;
+	height: 330px;
+	background: #fff;
+}
+.pass-title{
+	text-align: center;position: relative;
+	height: 45px;line-height:45px;
+	box-shadow: 2px 2px 2px #eee;
+	font-size: 1rem;
+}
+.pass-title i{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	font-size: 2rem;
+	color: #cdcdcd;
+}
+

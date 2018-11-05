@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				background: #2a2420;
+				
+			}
+			.mui-content{
+				background: #2a2420;
+				background-image: url(../image/Halloween_bottom.png);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				background-size: contain;
+			}
+			.shop{
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				padding: 0.75rem 1rem ;
+				
+			}
+			.shop_1{
+				background-image: url(../image/Halloween_1.png);
+			}
+			.shop_2{
+				background-image: url(../image/Halloween_2.png);
+			}
+			.shop_3{
+				background-image: url(../image/Halloween_3.png);
+			}
+			.Halloween_top img{
+				max-width: 100%;
+			}
+			.Halloween_top {
+				font-variant-ligatures: .875rem;position: relative;color: #fff;
+			}
+			.Halloween_top div{
+				position: absolute;bottom: 0.5rem;left: 2rem;
+			}
+			.Halloween_top span{
+				color:#f1e629
+			}
+			.shop_list{
+				text-align: center;padding-bottom: 7rem;
+				margin: 0  1.7rem;
+			}
+			.shop_title{
+				color: #1f100b;font-size: 1rem;line-height: 2;font-weight: 500;
+			}
+			.shop_intro{
+				color: #0e0c0f;font-size: 0.75rem;line-height: 2;margin-bottom: 0.5rem;
+			}
+			.shop_btn{
+				font-size: 0.875rem;font-size: 0.875rem;line-height: 1;color: #cc975c;
+				border-radius: 2rem;
+				background-color: #6e3800;
+				border: none;
+				margin-bottom: 0.5rem;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="Halloween_top">
+				<img src="../image/Halloween_top.png"/>
+				<div class="">
+					<span>活动时间：</span>2017.10.26-10.31
+				</div>
+			</div>
+			<div class="shop_list">
+				<div class="shop shop_1">
+					<div class="shop_title">
+						美珂国际
+					</div>
+					<div class="shop_intro">
+						1元可享价值68元纯色美甲货88元手膜一次
+					</div>
+					<div class="shop_btn_d">
+						<button class="shop_btn" data-id="10475">进入店铺</button>
+					</div>
+				</div>
+				<div class="shop shop_2">
+					<div class="shop_title">
+						色调美容美发
+					</div>
+					<div class="shop_intro">
+						1元可享精品美发以及纯色美甲
+					</div>
+					<div class="shop_btn_d">
+						<button class="shop_btn" data-id="10663"> 进入店铺</button>
+					</div>
+				</div>
+				<div class="shop shop_3">
+					<div class="shop_title" style="margin-top: 0.5rem;">
+						兰蝶女子美容会所
+					</div>
+					<div class="shop_intro">
+						1元可享T区毛孔清洁（小气泡）
+					</div>
+					<div class="shop_btn_d">
+						<button class="shop_btn" data-id="10268" style="margin-bottom: 0;">进入店铺</button>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+			 $('.shop_list').on('tap','.shop_btn',function(){
+			 	var id=$(this).attr('data-id');
+			 	location.href='http://wx.592vip.com/shop/getShopDetailNew?shopid='+id
+			 })
+//			$(function(){
+//				$('.shop_btn').click(function(){
+//					var id=$(this).attr('data-id');
+//					location.href='http://wx.592vip.com/shop/getShopDetailNew?shopid='+id
+//				})
+//				
+//			})
+		</script>

@@ -1,0 +1,788 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/nearby_new.css"/>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.mui-content{
+				position: absolute;overflow: auto;
+				height: 100%;
+				width: 100%;
+			}
+			.mui-fullscreen{
+				top:0
+			}
+			.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+				bottom: 50px;
+			}
+			.mui-slider-indicator .mui-indicator{border-radius: 0;box-shadow: none;background: #fff;}
+			.mui-slider-indicator .mui-active.mui-indicator{border-radius: 0;box-shadow: none;background: #f9b44d;width: 12px;}
+			.mui-table-view:before,.mui-table-view:after,.mui-table-view-cell:before,.mui-table-view-cell:after{
+				height: 0;
+			}
+			.shop_list{top: 40px;overflow: hidden!important;}
+			.nb_menu{
+				width: 100%!important;
+			}
+			.nb_menu a{
+				width: 19%!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+			<div class="new_top">
+				<div id="mapContainer" style="height: 150px;position: relative;"></div>
+		    <!-- 分类精选开始 -->
+				<div class="index_item">
+					<div class="index_item_title">
+						<h4>附近精选</h4>
+						<p>人气好店</p>
+					</div>
+					<div class="cat_sel">
+						<div class="swiper-container">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide cat_item">
+							           <div class="cat_logo">
+							           	<img src="../image/vertial2.png" class="cat_item_logo"/>
+							           	<div class="cat_pf">
+							           		<span>评分</span>
+							           		<span>4.5</span>
+							           	</div>
+							           </div>
+							           <div class="cat_con">
+							           		<div class="cat_con_title">豪食间中西餐厅豪食间中西餐厅</div>
+							           		<div class="score" data-score='1'></div>
+							           		<p class="cat_con_juli">南通市开发区 | 10.5km|星级酒店</p>
+							           		<!--<p class="cat_con_type">西餐</p>-->
+							           </div>
+					            </div>
+					            <div class="swiper-slide cat_item">
+					            	<div class="cat_logo">
+							           	<img src="../image/vertial3.png" class="cat_item_logo"/>
+							           	<div class="cat_pf">
+							           		<span>评分</span>
+							           		<span>4.5</span>
+							           	</div>
+							           </div>
+							           <div class="cat_con">
+							           		<div class="cat_con_title">豪食间中西餐厅</div>
+							           		<div class="score" data-score='1'></div>
+							           		<p class="cat_con_juli">南通市开发区 | 10.5km|星级酒店</p>
+							           		<!--<p class="cat_con_type">西餐</p>-->
+							           </div>
+					            </div>
+					            <div class="swiper-slide cat_item">
+					            	<div class="cat_logo">
+							           	<img src="../image/vertial4.png" class="cat_item_logo"/>
+							           	<div class="cat_pf">
+							           		<span>评分</span>
+							           		<span>4.5</span>
+							           	</div>
+							           </div>
+							           <div class="cat_con">
+							           		<div class="cat_con_title">豪食间中西餐厅</div>
+							           		<div class="score" data-score='1'></div>
+							           		<p class="cat_con_juli">南通市开发区 | 10.5km|星级酒店</p>
+							           		<!--<p class="cat_con_type">西餐</p>-->
+							           </div>
+					            </div>
+					            <div class="swiper-slide cat_item">
+					            	<div class="cat_logo">
+							           	<img src="../image/vertial5.png" class="cat_item_logo"/>
+							           	<div class="cat_pf">
+							           		<span>评分</span>
+							           		<span>4.5</span>
+							           	</div>
+							           </div>
+							           <div class="cat_con">
+							           		<div class="cat_con_title">豪食间中西餐厅</div>
+							           		<div class="score" data-score='1'></div>
+							           		<p class="cat_con_juli">南通市开发区 | 10.5km|星级酒店</p>
+							           		<!--<p class="cat_con_type">西餐</p>-->
+							           </div>
+					            </div>
+					            <div class="swiper-slide cat_item">
+					            	<div class="cat_logo">
+							           	<img src="../image/vertial7.png" class="cat_item_logo"/>
+							           	<div class="cat_pf">
+							           		<span>评分</span>
+							           		<span>4.5</span>
+							           	</div>
+							           </div>
+							           <div class="cat_con">
+							           		<div class="cat_con_title">豪食间中西餐厅</div>
+							           		<div class="score" data-score='1'></div>
+							           		<p class="cat_con_juli">南通市开发区 | 10.5km|星级酒店</p>
+							           		<!--<p class="cat_con_type">西餐</p>-->
+							           </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<!-- 分类精选结束 -->
+			</div>
+			
+				
+		    <div class="" style="height: 100%;overflow: auto;background: #fff;position: relative;">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+					<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<div class="mui-scroll nb_menu">
+							<a class="mui-control-item mui-active" href="#item1mobile">
+								美食
+							</a>
+							<a class="mui-control-item" href="#item2mobile">
+								生活
+							</a>
+							<a class="mui-control-item" href="#item3mobile">
+								酒店
+							</a>
+							<a class="mui-control-item" href="#item4mobile">
+								旅游
+							</a>
+							<a class="mui-control-item" href="#item5mobile">
+								定制
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-group">
+						<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+							<div id="" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll ">
+									<a class="mui-control-item mui-active" href="#item1mobile">
+										全部美食
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										中餐
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										甜品
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										茶道
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										西餐
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										咖啡
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										美酒
+									</a>
+									<a class="mui-control-item" href="#item1mobile">
+										特色菜
+									</a>
+								</div>
+							</div>
+							<div id="" class="mui-scroll-wrapper shop_list" style="">
+								<div class="mui-scroll">
+									<div class="near_main" id='near_main'>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+										<div class="nearby_item_last">
+											价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+										</div>
+									
+									</div>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+										<div class="nearby_item_last">
+											价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+										</div>
+									</div>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+										<div class="nearby_item_last">
+											价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+										</div>
+										
+									</div>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+										<div class="nearby_item_last">
+											价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+										</div>
+									
+									</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div id="item2mobile" class="mui-slider-item mui-control-content">
+							<div id="" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll ">
+									<a class="mui-control-item mui-active" href="">
+										全部生活
+									</a>
+									<a class="mui-control-item" href="">
+										美发
+									</a>
+									<a class="mui-control-item" href="">
+										健身
+									</a>
+									<a class="mui-control-item" href="">
+										美容
+									</a>
+									<a class="mui-control-item" href="">
+										网咖
+									</a>
+									<a class="mui-control-item" href="">
+										KTV
+									</a>
+									<a class="mui-control-item" href="">
+										功夫
+									</a>
+									<a class="mui-control-item" href="">
+										其他
+									</a>
+								</div>
+							</div>
+							<div id="" class="mui-scroll-wrapper shop_list" style="">
+								<div class="mui-scroll">
+									<div class="near_main" id='near_main'>
+										<div class="mui-loading">
+											<div class="mui-spinner">
+											</div>
+										</div>
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="item3mobile" class="mui-slider-item mui-control-content">
+							<div id="" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll ">
+									<a class="mui-control-item mui-active" href="">
+										全部酒店
+									</a>
+									<a class="mui-control-item" href="">
+										星级酒店
+									</a>
+									<a class="mui-control-item" href="">
+										商务型
+									</a>
+									<a class="mui-control-item" href="">
+										度假型
+									</a>
+									<a class="mui-control-item" href="">
+										其他
+									</a>
+								</div>
+							</div>
+							<div id="" class="mui-scroll-wrapper shop_list" style="">
+								<div class="mui-scroll">
+									<div class="near_main" id='near_main'>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+											<div class="nearby_item_last">
+												价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+											</div>
+										
+									</div>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+											<div class="nearby_item_last">
+												价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+											</div>
+										
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="item4mobile" class="mui-slider-item mui-control-content">
+							<div id="" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll ">
+									<a class="mui-control-item mui-active" href="">
+										全部旅游
+									</a>
+									<a class="mui-control-item" href="">
+										特色游
+									</a>
+									<a class="mui-control-item" href="">
+										其他
+									</a>
+								</div>
+							</div>
+							<div id="" class="mui-scroll-wrapper shop_list" style="">
+								<div class="mui-scroll">
+									<div class="near_main" id='near_main'>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+											<div class="nearby_item_last">
+												价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+											</div>
+										
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="item5mobile" class="mui-slider-item mui-control-content">
+							<div id="" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+								<div class="mui-scroll ">
+									<a class="mui-control-item mui-active" href="">
+										全部定制
+									</a>
+									<a class="mui-control-item" href="">
+										培训
+									</a>
+									<a class="mui-control-item" href="">
+										摄影写真
+									</a>
+									<a class="mui-control-item" href="">
+										鲜花
+									</a>
+									<a class="mui-control-item" href="">
+										珠宝玉石
+									</a>
+									<a class="mui-control-item" href="">
+										服饰
+									</a>
+									<a class="mui-control-item" href="">
+										汽车服务
+									</a>
+									<a class="mui-control-item" href="">
+										其他产品定制
+									</a>
+								</div>
+							</div>
+							<div id="" class="mui-scroll-wrapper shop_list" style="">
+								<div class="mui-scroll">
+									<div class="near_main" id='near_main'>
+										<div class="nearby_item_con">
+											<div class="nearby_item_first">
+												<div class="nearby_item_item">
+													<img src="../image/tui_shop_1.png"/>
+												</div>
+												<div class="nearby_item_item">
+													<div class="nearby_item_item_title">
+														黑森日耳曼餐厅
+													</div>
+													<div class="nearby_item_item_score" data-score='0'>
+													</div>
+													<div class="nearby_item_item_item">
+														南通市开发区 | 10.5KM | 西餐
+													</div>
+												</div>
+											</div>
+											<div class="nearby_item">
+											<img src="../image/near_shop-04.png"/>
+											<div class="index_tui_pf">
+												<span>
+													评分
+												</span>
+												<span>
+													4.5
+												</span>
+											</div>
+										</div>
+											<div class="nearby_item_last">
+												价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi
+											</div>
+										
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item" href="index.html">
+		        <p class="bottom_img"><img src="../image/shouye.png"/></p>
+		        <p class="mui-tab-label">首页</p>
+		    </a>
+		    <a class="mui-tab-item mui-active" href='near.html'>
+		        <p class="bottom_img"><img src="../image/fujin.png"/></p>
+		        <p class="mui-tab-label bottom_active">附近</p>
+		    </a>
+		    <a class="mui-tab-item" href="#">
+		        <p class="bottom_img"><img src="../image/shequ.png"/></p>
+		        <p class="mui-tab-label">社区</p>
+		    </a>
+		    <a class="mui-tab-item " href='near.html'>
+		        <p class="bottom_img"><img src="../image/wode.png"/></p>
+		        <p class="mui-tab-label">我的</p>
+		    </a>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.material.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../js/webapimap.js"></script>
+<script type="text/javascript" src="../js/liteToolbar.js"></script>
+<script type="text/javascript">
+mui.init();
+	
+		$(function(){
+			loadCat();
+			
+			$('.mui-content').scroll(function() {
+				if($("#slider").offset().top==0){
+					$('.shop_list').css({overflow:'auto'})
+				}else{
+					$('.shop_list').css({overflow:'hidden'})
+				}
+			  console.log($('.mui-content').scrollTop())
+			  console.log($("#slider").offset().top)
+			});
+
+		})
+	
+//	map
+var marker = [];
+		var map = new AMap.Map('mapContainer', {
+	        resizeEnable: true,
+	        zoom:11,
+	        center: [120.944565, 31.922909]
+	 });
+//	  addMarker();
+    //添加marker标记
+    function addMarker() {
+        map.clearMap();
+        var marker = new AMap.Marker({
+            map: map,
+            position: [120.944565, 31.922909]
+        });
+        //鼠标点击marker弹出自定义的信息窗体
+        AMap.event.addListener(marker, 'click', function() {
+            infoWindow.open(map, marker.getPosition());
+        });
+     
+    }
+    //infoWindow.open(map, marker.getPosition());
+    //实例化信息窗体
+    var title = '',
+    content = [];
+    content.push("<img src='../image/dingwei.png'/>");
+    content.push('<div class="near_title">101文化创意产业园产业园</div>');
+    content.push('<i class="fa fa-angle-down"></i>');
+    var infoWindow = new AMap.InfoWindow({
+        isCustom: true,  //使用自定义窗体
+        content: createInfoWindow(title, content.join("")),
+        offset: new AMap.Pixel(5, -40)
+    });
+    infoWindow.open(map, [120.944565, 31.922909]);
+
+
+    //构建自定义信息窗体
+    function createInfoWindow(title, content) {
+        var info = document.createElement("div");
+        info.className = "info";
+
+        //可以通过下面的方式修改自定义窗体的宽高
+        // 定义顶部标题
+        var top = document.createElement("div");
+        var titleD = document.createElement("div");
+        var closeX = document.createElement("img");
+        closeX.className = "close";
+        closeX.src = "https://webapi.amap.com/images/close2.gif";
+        closeX.onclick = closeInfoWindow;
+
+
+        // 定义中部内容
+        var middle = document.createElement("div");
+        middle.className = "info-middle";
+        middle.style.backgroundColor = 'white';
+        middle.innerHTML = content;
+        info.appendChild(middle);
+
+        return info;
+    }
+
+    //关闭信息窗体
+    function closeInfoWindow() {
+        map.clearInfoWindow();
+    }	
+//Map	
+
+	function loadCat(){
+		var width=$(window).width();
+		console.log(width)
+		$(".cat_item").css({
+			width:parseInt(width*0.33),
+		})
+		var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        slidesPerView: 'auto',
+	        paginationClickable: true,
+	        spaceBetween: 0
+	    });
+	}
+	
+	loadRaty()
+	function loadRaty(){
+		$('.score').each(function(){
+			var score=$(this).attr('data-score');
+			$(this).raty({
+		        score: score, //初始值是设置
+		        path: '../image',
+		        size: 24,
+		        starHalf: 'icon3.png',
+		        starOff: 'icon2.png',
+		        starOn: 'icon1.png',
+			})
+    });
+	}
+	loadmainRaty();
+		function loadmainRaty(){
+		$('.nearby_item_item_score').each(function(){
+			var score=$(this).attr('data-score');
+			$(this).raty({
+		        score: score, //初始值是设置
+		        path: '../image',
+		        size: 24,
+		        starHalf: 'icon3.png',
+		        starOff: 'icon2.png',
+		        starOn: 'icon1.png',
+			})
+    });
+	}
+//xiala
+(function($) {
+		//阻尼系数
+		var deceleration = mui.os.ios?0.003:0.0009;
+		$('.mui-scroll-wrapper').scroll({
+			bounce: false,
+			indicators: true, //是否显示滚动条
+			deceleration:deceleration
+		});
+	})(mui);
+	
+//分类加载的数据
+	function loadshop(){
+		var html='<div class="nearby_item_con">'
+				+	'<div class="nearby_item_first">'
+				+		'<div class="nearby_item_item">'
+				+			'<img src="../image/tui_shop_1.png"/>'
+				+		'</div>'
+				+		'<div class="nearby_item_item">'
+				+			'<div class="nearby_item_item_title">'
+				+				'黑森日耳曼餐厅'
+				+			'</div>'
+				+			'<div class="nearby_item_item_score" data-score="1">'
+				+			'</div>'
+				+			'<div class="nearby_item_item_item">'
+				+				'南通市开发区 | 10.5KM | 西餐'
+				+			'</div>'
+				+		'</div>'
+				+	'</div>'
+				+	'<div class="nearby_item">'
+				+		'<img src="../image/near_shop-04.png"/>'
+				+		'<div class="index_tui_pf">'
+				+			'<span>'
+				+				'评分'
+				+			'</span>'
+				+			'<span>'
+				+				'4.5'
+				+			'</span>'
+				+		'</div>'
+				+	'</div>'
+				+	'<div class="nearby_item_last">'
+				+		'价值96元的香肠单人套餐，提供免费WiFi，价值96元的香 肠单人套餐，提供免费WiFi'
+				+	'</div>'
+				+'</div>'
+				$('#near_main').append(html)
+				if(""==html){
+					mui.toast("暂无数据！")
+				}
+				}
+	
+</script>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>建筑工程学院晚会抽奖</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/new_activity.css" rel="stylesheet" />
+		<style type="text/css">
+		
+		</style>
+	</head>
+
+	<body>
+		<div class="na_main">
+			<div class="newa_header">
+			   <img src="../image/activity.png"/>
+			</div>
+			<div class="newa_main">
+				<div class="newa_main_item newa_main_item_top">
+					<div class="newa_main_item_font newa_red" >
+						一等奖：富士保龄球500元VIp贵宾卡
+					</div>
+					<div class="newa_main_item_font newa_orange">
+						二等奖：轻奢点评加湿器
+					</div>
+					<div class="newa_main_item_font newa_yellow">
+						三等奖：金海岸电影票
+					</div>
+				</div>
+				<div class="newa_main_item newa_main_bottom">
+					<div class="">
+						<input type="tel" name="" id="tel" value="" placeholder="抽奖手机号码" maxlength="11"/>	
+					</div>	
+					<div class="">
+						<input type="text" name="" id="name" value="" placeholder="抽奖人姓名" />	
+					</div>	
+				</div>
+			</div>
+			<div class="newa_bottom">
+			   <div class="newa_submit" id="newa_submit">提交</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+	$(function(){
+		$('#newa_submit').click(function(){
+		    var new_Mobile = $('#tel').val(); 
+		    var new_name = $('#name').val(); 
+		    if(!(/^1[3|4|5|8][0-9]\d{8}$/.test(new_Mobile))){ 
+		        alert("请输入正确的手机号，谢谢！"); 
+		        $('#tel').focus(); 
+		        return false; 
+		    } 
+		    if(new_name==""){ 
+		        alert("请输入正确的姓名，谢谢！"); 
+		        $('#name').focus(); 
+		        return false; 
+		    } 
+		});
+	
+    })
+	
+
+
+  
+</script>

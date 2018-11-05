@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopping.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/book_room.css"/>
+		<style type="text/css">
+				.cat_list::-webkit-scrollbar {
+				width:3px;
+				background: #dddddd;
+				border-radius: 5px;
+			}
+			/* 滚动槽 */
+			.cat_list::-webkit-scrollbar-track {
+				-webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+				border-radius:5px;
+			}
+			/* 滚动条滑块 */
+			.cat_list::-webkit-scrollbar-thumb {
+				border-radius:5px;
+				background:#edb94a;
+				-webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+			}
+			.cat_list::-webkit-scrollbar-thumb:window-inactive {
+				background:#edb94a;
+			}
+			.cart_list input{
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center shopping">
+				<div class="shopping_left">
+					<div class="shopping_item">
+						<div class="shopping_shop">
+							<img src="../imgs/business_touxiang.png" alt="" />
+							<h2>东升国际大酒店无国界餐厅</h2>
+						</div>
+						<div class="shopping_shop_type">
+							<ul>
+								<li class="active"><img src="../imgs/shopping_but.png"/>购买</li>
+								<!--<li><img src="../imgs/shopping_yxh.png"/>易洗护</li>
+								<li><img src="../imgs/shopping_yuyue.png"/>预约</li>
+								<li><img src="../imgs/shopping_waimai.png"/>外卖</li>-->
+								<li><img src="../imgs/shopping_dingfang.png"/>订房</li>
+								<!--<li><img src="../imgs/shopping_diy.png"/>定制</li>
+								<li><img src="../imgs/shopping_travel.png"/>旅游</li>-->
+							</ul>
+						</div>
+						
+					</div>
+					<!--<div class="shopping_item">
+						<div class="">
+							购买类订单不需要填写订单信息。
+						</div>
+					</div>
+					<div class="shopping_item">
+						发票/备注
+					</div>-->
+					
+					<div class="shopping_item book_room">
+						<div class="left_item left_item_hotel book_room_con" id="book_room_con">
+							<div class="choose_time">
+								选择入住时间
+							</div>
+							<div class="hotel_search begin_time" >
+								<label for="">入住时间</label>
+								<input type="text"  readonly="" class="time" id="begin_time" />
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="hotel_search end_time">
+								<label for="">离开时间</label>
+								<input type="text"   readonly="" class="time"  id="end_time"/>
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class=" hotel_search_btn sel_room_btn" id="sel_room_btn">
+								<span>查询可预订房间</span>
+							</div>
+						</div>
+					</div>
+					<div class="shopping_item shopping_goods" id="shopping_goods">
+						
+						<!--<div class="">-->
+					        <div class="cat_list" dir=RTL id="cat_list">
+					            <div class="cat_item"  dir="ltr" data-id='1' id="cat_item1">
+					            	<div class="shopping_cat_goods">
+					            	
+					            		<div class="shopping_cat_item">
+					            			<div class="shopping_cat_img">
+					            				<!--<img src="../imgs/comment_pic1.png"/>-->
+					            				<img src="../imgs/cart_img.png"/>
+					            			</div>
+					            			<div class="shopping_cat_pro">
+					            				<div class="shopping_goods_title">
+					            					大床房
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					16-18平米 1.8米大床房1张
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					适合女生入住
+					            				</div>
+					            				<div class="shopping_goods_pro">
+					            					<div class="shopping_goods_old">
+					            						￥500
+					            					</div>
+					            					<div class="shopping_goods_new">
+					            						￥385.00
+					            						<button data-goodsid="2" data-price="0.02" class="addToCart" data-name='惠灵顿牛排2'>加入购物车</button>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="shopping_cat_item">
+					            			<div class="shopping_cat_img">
+					            				<img src="../imgs/comment_pic1.png"/>
+					            			</div>
+					            			<div class="shopping_cat_pro">
+					            				<div class="shopping_goods_title">
+					            					惠灵顿牛排3
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					月售1份&nbsp;&nbsp;好评率100%
+					            				</div>
+					            				<div class="shopping_goods_pro">
+					            					<div class="shopping_goods_old">
+					            						￥500
+					            					</div>
+					            					<div class="shopping_goods_new">
+					            						￥0.03
+					            						<button data-goodsid="3" data-price="0.03" class="addToCart" data-name='惠灵顿牛排3'>加入购物车</button>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="shopping_cat_item">
+					            			<div class="shopping_cat_img">
+					            				<!--<img src="../imgs/comment_pic1.png"/>-->
+					            				<img src="../imgs/cart_img.png"/>
+					            			</div>
+					            			<div class="shopping_cat_pro">
+					            				<div class="shopping_goods_title">
+					            					大床房
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					16-18平米 1.8米大床房1张
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					适合女生入住
+					            				</div>
+					            				<div class="shopping_goods_pro">
+					            					<div class="shopping_goods_old">
+					            						￥500
+					            					</div>
+					            					<div class="shopping_goods_new">
+					            						￥385.00
+					            						<button data-goodsid="2" data-price="0.02" class="addToCart" data-name='惠灵顿牛排7'>加入购物车</button>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            		<div class="shopping_cat_item">
+					            			<div class="shopping_cat_img">
+					            				<!--<img src="../imgs/comment_pic1.png"/>-->
+					            				<img src="../imgs/cart_img.png"/>
+					            			</div>
+					            			<div class="shopping_cat_pro">
+					            				<div class="shopping_goods_title">
+					            					大床房大床房大床房大床房大床房大床房大床房大床房大床房大床房大床房大床房大床房大床房
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					16-18平米 1.8米大床房1张
+					            				</div>
+					            				<div class="shopping_goods_sale">
+					            					适合女生入住
+					            				</div>
+					            				<div class="shopping_goods_pro">
+					            					<div class="shopping_goods_old">
+					            						￥500
+					            					</div>
+					            					<div class="shopping_goods_new">
+					            						￥385.00
+					            						<button data-goodsid="4" data-price="0.02" class="addToCart" data-name='惠灵顿牛排4'>加入购物车</button>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            
+					            	</div>
+					            </div>
+					        </div>
+					    <!--</div>-->
+					</div>
+				</div>
+				<div class="shopping_right">
+					<div class="cart">
+						<div class="cart_bg">
+							购物车<span class="cart_clear">[清空]</span>
+							<i class="fa fa-shopping-cart " style="font-size: 20px;float: right;margin-right: 10px;color: #333;line-height: 50px;"></i>
+						</div>
+						<div class="cart_lists">
+							<ul>
+								
+							</ul>
+						</div>
+						<div class="cart_bg">
+							<div class="cart_tj">
+								<i class="fa fa-shopping-cart "><span>1</span></i>
+								<span class="cart_total">￥385.00</span>
+							</div>
+							<div class="cart_js">
+								去结算
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+	</body>
+	<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/book_room.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+ 	<!--<script src="../js/moment.js" type="text/javascript" charset="utf-8"></script>-->
+</html>
+
+<script type="text/javascript">
+	$(function(){
+		
+		$(".cat_list").scroll(function(){
+			var a='';
+			var res='';
+			var id='';
+			var ltop=$(".cat_list").offset().top;
+			var lheight=$(".cat_list").height();
+			console.log(lheight)
+			console.log(ltop);
+			var arr=[];
+			$('.shopping_cat_title').each(function(e){
+				var top=$(this).offset().top-ltop;
+				console.log(top)
+				if (top>-100&&top<100) {
+					id=$(this).parent().attr('data-id');
+					$(".shopping_cat li").removeClass('active')
+					$("#cat_"+id).addClass('active')
+				}else{
+					
+				}
+
+			})
+
+		})
+		$(".shopping_shop_type li").each(function(){
+			$(this).bind({
+				'click':function(){
+					$(this).addClass('active').siblings().removeClass('active')
+				}
+			})
+		})
+		$('.begin_time').click(function(){
+			$('#begin_time').datetimepicker('show');
+		})
+		$('.end_time').click(function(){
+			$('#end_time').datetimepicker('show');
+		})
+	})
+	
+var begintime_s = new Date();
+var begintime_e = new Date(+begintime_s+1000*60*60*24*7);
+var endtime_s = new Date(+begintime_s+1000*60*60*24*1);
+var endtime_e=new Date(+begintime_s+1000*60*60*24*8);
+//console.log(begintime_s)
+//console.log(begintime_e)
+//console.log(endtime_s)
+//console.log(endtime_e)
+var beginsmonth=begintime_s.getMonth()+1;
+	beginsmonth=beginsmonth>=10?beginsmonth:"0"+beginsmonth;
+var beginsday=begintime_s.getDate()
+	beginsday=beginsday>=10?beginsday:"0"+beginsday;
+	
+var endsmonth=endtime_s.getMonth()+1;
+	endsmonth=endsmonth>=10?endsmonth:"0"+endsmonth;
+var endsday=endtime_s.getDate()
+	endsday=endsday>=10?endsday:"0"+endsday;
+	$("#begin_time").val(begintime_s.getFullYear()+'-'+beginsmonth+'-'+beginsday); 
+	$("#end_time").val(endtime_s.getFullYear()+'-'+endsmonth+'-'+endsday); 
+
+
+$("#begin_time").datetimepicker({  
+    language : 'zh-CN',  
+    weekStart : 1,  
+    todayBtn : 0,  
+    autoclose : 1,  
+    //todayHighlight : 1,  
+    startView : 2,  
+    minView: "month",  
+    startDate:begintime_s,
+    endDate:begintime_e,
+    format: 'yyyy-mm-dd',  
+    forceParse : 0  
+}).on('hide', function(event) {  
+    event.preventDefault();  
+    event.stopPropagation(); 
+    var startTime = new Date(event.date); //返回的时间
+    var endTime=new Date(+startTime+1000*60*60*24*1);//一天之后的时间
+    $("#end_time").datetimepicker('setStartDate',endTime); 
+	var month=endTime.getMonth()+1
+	month=month>=10?month:"0"+month;
+	var day=endTime.getDate();
+	day=day>=10?day:"0"+day;
+	$("#end_time").val(endTime.getFullYear()+'-'+month+'-'+day); 
+	$('#end_time').datetimepicker('update');
+	loadCartData();
+});
+
+$("#end_time").datetimepicker({  
+    language : 'zh-CN',  
+    weekStart : 1,  
+    todayBtn : 0,  
+    autoclose : 1,  
+    startView : 2,  
+    minView: "month",
+  	startDate:endtime_s,/*shezhi */
+  	endDate:endtime_e,/*shezhi */
+    format: 'yyyy-mm-dd',  
+    forceParse : 0  
+}).on('hide', function(event) {  
+   	event.preventDefault();  
+    event.stopPropagation(); 
+    var startTime = new Date(event.date); //返回的时间
+    endTime=new Date(+startTime+-1000*60*60*24*1);//一天之后的时间
+    startTime=new Date(+startTime+-1000*60*60*24*7);//一天之后的时间
+//  console.log(startTime)
+    $("#begin_time").datetimepicker('setStartDate',startTime);/*shezhi */
+    $("#begin_time").datetimepicker('setEndDate',endTime); /*shezhi */
+    $('#begin_time').datetimepicker('update');
+//	var month=startTime.getMonth()+1
+//	month=month>=10?month:"0"+month;
+//	var day=startTime.getDate();
+//	day=day>=10?day:"0"+day;
+//	$("#begin_time").val(startTime.getFullYear()+'-'+month+'-'+day); 
+loadCartData();
+}); 
+
+
+ 
+</script>

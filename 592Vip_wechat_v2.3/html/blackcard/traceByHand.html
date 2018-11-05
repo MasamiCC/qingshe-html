@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<title>商品溯源</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.all_traceBH{
+				background: #f4f4f4;
+				text-align: center;
+			}
+			.business_top{
+				background: #fff;
+			}
+			.all_traceBH_head img{
+				max-width: 100%;
+			}
+			.all_traceBH_head{
+				background: #000000;
+				padding-top: 15px;
+			}
+			.all_traceBH_part1{
+				font-size: .875rem;
+				text-align: center;
+				margin: 20px 0 50px 0;
+			}
+			input[type='text']{
+				outline: none;
+				background: none;
+				border: 1px solid #999;
+				height: 38px;
+				width: 80%;
+				text-indent: 10px;
+			}
+			.all_traceBH_part3{
+				margin-top: 10px;
+				padding-bottom: 20%;
+			}
+			.all_traceBH_part3_btn{
+				width: 80%;
+				color: #fff;
+				background: #cfb576;
+				margin: 0 auto;
+				line-height: 2.5;
+				border-radius: 4px;
+			}
+			.business_del_title{
+				display: flex;
+				border-bottom: 1px solid #eee;
+				padding: 10px 10px 8px 30px;
+			}
+			.business_del{
+				background: #fff;
+				margin-top: 15px;
+				/*border-radius: 10px;*/
+    			border: 1px solid #eee;
+    			padding: 0px 0 16% 0;
+			}
+			.business_del_sys{
+				padding: 40px 0;
+				font-size: 0;
+    			line-height: 0;
+			}
+			.business_del_sys1 img{
+				width: 100%;
+			}
+			.sys img {
+			    width: 15px;
+			    height: 15px;
+			    margin-right: 12px;
+			}
+			.business_content {
+			    font-size: 0.875rem;
+    			color: #333;
+			}
+			.business_del_sys2{
+				margin: 0 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content all_traceBH">
+			<div class="business_top">
+				<div class="all_traceBH_head">
+					<img src="images/sybg.png"/>
+				</div>
+				<div class="all_traceBH_part1">
+					查询溯源,一步到位
+				</div>
+				<div class="all_traceBH_part2">
+					<input type="text" class="" name="sym" id="sym" value="" placeholder="请输入商品识别码"/>
+				</div>
+				<div class="all_traceBH_part3">
+					<div class="all_traceBH_part3_btn">
+						点击查询
+					</div>
+				</div>	
+			</div>
+			<div class="business_del">
+				<div class="business_del_title">
+					<div class="business_icon sys">
+						<img src="images/saoyisao.png"/>
+					</div>
+					<div class="business_content">
+						如何辨别真伪 
+					</div>
+				</div>
+				<div class="business_del_sys">
+					<div class="business_del_sys1 business_del_sys2">
+						<img src="images/fenbian1.png"/>
+					</div>
+					<div class="business_del_sys1">
+						<img src="images/fenbian2.png"/>
+					</div>
+					<div class="business_del_sys1">
+						<img src="images/fenbian3.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.all_traceBH_part3_btn').click(function(){
+				var notEmpty=$('#sym').html();
+				if(''!==notEmpty){
+					console.log('true')
+				}else{
+					mui.alert('请输入溯源码，谢谢！');
+					console.log('false')
+				}
+			});
+		});
+	</script>
+</html>

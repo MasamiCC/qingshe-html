@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>慈善基金</title>
+		<!--<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">-->
+		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/charitable_list.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center shop_list">
+				<div class="shop_list_c">
+					<!--左侧开始-->
+					<div class="shop_list_l">
+						<div class="left_item">
+							<div class="charity_item charity_first">
+								
+								<!--<img src="../imgs/charity_big.png"/>
+								<div class="charity_first_title">
+									首届轻奢点评慈善盛典隆重举行
+								</div>-->
+								<div class="swiper-container">
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行1</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行2</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行3</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行4</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行5</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行6</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行7</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行8</a>
+											</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<a href="charitable_detail.html"><img src="../imgs/charity_big.png"/></a>
+											<div class="charity_first_title">
+												<a href="charitable_detail.html">首届轻奢点评慈善盛典隆重举行9</a>
+											</div>
+							            </div>
+							        </div>
+							        <!-- Add Pagination -->
+							        <div class="swiper-pagination"></div>
+							    </div>
+							</div>
+						</div>
+						<!--商家列表-->
+						<div class="left_item  charit_list">
+							<!--列表-->
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="charity_item">
+								<div class="charity_title">
+									<a href="charitable_detail.html">轻奢点评正式成立工会 会员自愿每人每天捐一元做公益</a>
+								</div>
+								<div class="charity_cont">
+									<div class="charity_pic">
+										<a href="charitable_detail.html"><img src="../imgs/charity_pic.png" class=""/></a>
+									</div>
+									<div class="charity_pro">
+										<p class="">
+											为了响应国家号召、团结劳动者力量,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。
+											<span>
+												2017-05-12 12:00
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--左侧结束-->
+					
+					<!--右侧开始-->
+					<div class="shop_list_r">
+						<div class="sk_div" id="amount">
+							<ul class="">
+								<li class="sk_title">累计善款(元)</li>
+								<li class="sk_amount">
+									20,000,00
+								</li>
+								<li class="sk_title">爱心人数(人)</li>
+								<li class="sk_amount">
+									5,123,745
+								</li>
+								<li class="sk_btn_li" id="sk_btn_li">
+									<!--<span class="sk_btn sk_btn_jz"> <img src="../imgs/ic_jz.png" alt="">现金捐赠</span>
+									<span class="sk_btn sk_btn_his"><img src="../imgs/ic_myhis.png">我的捐赠记录</span>-->
+									<div class="">
+										<a href="">
+											<img src="../imgs/icon_gonggao.png"/>
+											<p>捐赠公示</p>
+										</a>
+										
+									</div>
+									<div class="">
+										<a href="donate_pay.html">
+											<img src="../imgs/icon_donate.png"/>
+											<p>社捐入口</p>
+										</a>
+										
+									</div>
+									<div class="">
+										<a href="">
+											<img src="../imgs/icon_bank.png"/>
+											<p>爱心银行</p>
+										</a>
+										
+									</div>
+									<div class="">
+										<a href="help_me.html">
+											<img src="../imgs/icon_help.png"/>
+											<p>帮助平台</p>
+										</a>
+										
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="sk_div jj_pro">
+							<div>
+								<h3 class="title" style="text-indent: 20px;font-size: 14px;padding-top: 20px;">轻奢慈善	爱心消费</h3>
+								<p style="color: #fff;text-indent: 20px;font-size: 12px;">在日常消费中，通过轻奢点评可以点滴的积累慈善基金。</p>
+								
+								<ul class="jj_pro_ul">
+									<h3>关于轻奢点评慈善基金</h3>
+									<li>
+										<span>专注于慈善消费的大平台</span>
+										<p>
+											由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因灾致贫、遭遇意外。
+										</p>
+									</li>
+									<li>
+										<span>专注于慈善消费的大平台</span>
+										<p>
+											由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因。
+										</p>
+									</li>
+									<li>
+										<span>专注于慈善消费的大平台</span>
+										<p>
+											由轻奢点评和红十字康因病因灾致贫、遭遇意外等面临生存困难的特殊家庭。
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--右侧结束-->
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	
+	<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay:2000,
+        loop:true,
+    });
+	$(function(){
+		 $( "#slider-range" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 500,
+	      values: [ 75, 300 ],
+	      slide: function( event, ui ) {
+	        $("#slider-range a").eq(0).html(ui.values[ 0 ]);
+	    	$("#slider-range a").eq(1).html(ui.values[ 1 ])
+	      }
+	    });
+	    $("#slider-range a").eq(0).html($( "#slider-range" ).slider( "values", 0 ));
+	    $("#slider-range a").eq(1).html($( "#slider-range" ).slider( "values", 1 ));
+	    
+	    $(".clear_sel").click(function(){
+	    	$(this).parents('.sel_now').remove()
+	    })
+	    var data=[
+	    	{
+	    		id:1,
+	    		title:'轻奢点评正式成立工会 会员自愿每人每天捐一元做公益1',
+	    		img:'../imgs/charity_pic.png',
+	    		content:'为了响应国家号召、团结劳动者力量,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。',
+	    		time:'2017-12-20 11:30'
+	    	},
+	    	{
+	    		id:2,
+	    		title:'轻奢点评正式成立工会 会员自愿每人每天捐一元做公益2',
+	    		img:'../imgs/charity_pic.png',
+	    		content:'为了响应国家号召,更积极的承担社会责任,形成良好的企业文化和塑造良好的劳动环境,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。',
+	    		time:'2017-12-20 11:30'
+	    	},
+	    	{
+	    		id:3,
+	    		title:'轻奢点评正式成立工会 会员自愿每人每天捐一元做公益3',
+	    		img:'../imgs/charity_pic.png',
+	    		content:'为了响应国家号召、团结劳动者力量,更积极的承担社会责任,更好发挥劳动者的激情与创造力。2017年4月28日，轻奢点评工会正式成立并在592VIP沙龙举行成立大会。',
+	    		time:'2017-12-20 11:30'
+	    	}
+	    ];
+	    loadList (data);
+	})
+	
+	function loadList (data) {
+		$('.charit_list .charity_item').remove();
+		var html=''
+		for (var i in data) {
+			html+='<div class="charity_item">'
+				+		'<div class="charity_title">'
+				+			'<a href="charitable_detail.html?id='+data[i]['id']+'">'+data[i]['title']+'</a>'
+				+		'</div>'
+				+		'<div class="charity_cont">'
+				+			'<div class="charity_pic">'
+				+				'<a href="charitable_detail.html?id='+data[i]['id']+'"><img src="'+data[i]['img']+'" class=""/></a>'
+				+			'</div>'
+				+			'<div class="charity_pro">'
+				+				'<p class="">'
+				+					data[i]['content']
+				+					'<span>'
+				+						data[i]['time']
+				+					'</span>'
+				+				'</p>'
+				+			'</div>'
+				+		'</div>'
+				+	'</div>'
+			
+		}
+		$('.charit_list').prepend(html);
+	}
+</script>

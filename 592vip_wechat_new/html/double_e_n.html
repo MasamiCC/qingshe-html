@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/vivify.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<style type="text/css">
+			*{
+				list-style: none;padding: 0;margin: 0;outline: none;
+			}
+			.mui-content{
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				overflow: hidden;
+			}
+			.video{
+				position: absolute;top: 0;
+				bottom: 0;left: 0;right: 0;z-index: 99;
+			}
+			.swiper-container{
+				/*display: none;*/
+				position: absolute;top: 0;
+				bottom: 0;left: 0;right: 0;
+				background: url(../image/double_11_bg.png);
+			}
+			#slider1{
+				overflow: auto;
+			}
+			#slider2{
+				overflow: auto;
+				/*background: url(../image/double_11_bg.png);*/
+			}
+			.to_right{
+				position: absolute;right: 0;bottom: 1rem;width: 100%;left: 0;
+				
+			}
+			.to_right img{
+				max-width: 100%;
+			}
+			.line_list{
+				background: rgba(255,255,255,0.69);
+				margin: 1rem  0.75rem;
+				border-radius: 0.75rem;
+				position: relative;
+				overflow: hidden;
+				box-shadow: 0px 0px 5px #666;
+				margin-top: 1.8rem;
+			}
+			.line_list:first-child{
+				margin-top: 2.5rem;
+			}
+			.div_c{
+				overflow: hidden;
+			}
+			.div_c div{
+				display: inline-block;width: 50%;vertical-align: top;line-height: 0;
+			}
+			.div_c_l ul{
+				margin-left: 1rem;margin-top: 0.5rem;
+				padding-right:5px ;
+			}
+			.div_c_l li{
+				font-size: 0.875rem;color: #333333;
+				line-height: 2.6;
+				font-weight: 500;
+				white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    -webkit-text-overflow: ellipsis;
+			}
+			.div_c_l li span{
+				margin-left: 0.5rem;
+				font-size: 0.6rem;
+				font-weight: normal;
+				border-radius: 3px;
+				color: #fff;
+				padding: 2px 3px;
+				filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+			    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);/*IE8*/	
+			    background:red; /* 一些不支持背景渐变的浏览器 */  
+			    background:-moz-linear-gradient(right, #828bf9, #2878fc);  
+			    background:-webkit-gradient(linear, 0 0, right 0, from(#828bf9), to(#2878fc));  
+			    background:-o-linear-gradient(right, #828bf9, #2878fc);
+			}
+			.div_c_r img{
+				max-width: 100%;border-top-right-radius: 0.5rem;
+			}
+			.div_f{
+				text-indent: 1rem;color: #fff;line-height: 2.2;font-size: 0.875rem;
+			}
+			.line_list:nth-child(1) .div_f{
+				background: #ef9c77;
+			}
+			.line_list:nth-child(2) .div_f{
+				background: #5e9af0;
+			}
+			.line_list:nth-child(3) .div_f{
+				background: #d174e9;
+			}
+			.to_shop{
+				float: right;margin-right: 1rem;
+			}
+			.to_shop a,.to_shop a:hover{
+				color: #fff;text-decoration: none;
+			}
+			.shopList{
+				font-size: 0;margin: 0 2rem;margin-top: 0.75rem;
+			}
+			.shopList li{
+				display: inline-block;width: 33%;text-align: center;
+			}
+			.shopList li img{
+				margin: 0 auto;
+				width: 90%!important;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--<div class="video">
+				<video  autoplay="autoplay"  x-webkit-airplay="true" webkit-playsinline="true" playsinline=""  preload="auto" style="width:100%; height:100%; object-fit: fill">
+				  <source src="../video/2017-11-11.mp4" type="video/mp4" -webkit-playsinline webkit-playsinline />
+					Your browser does not support the video tag.
+				</video>
+			</div>-->
+			<div class="swiper-container" style="height: 100%;">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide" id="slider1">
+			    	<!-- 具体内容 -->
+			          <img src="../image/double_11_title.png" style="margin: 2rem auto;max-width: 100%;"/>
+			          <div class="">
+			          	<ul class="shopList">
+			          		<li class="flipInX">
+			          			<img src="../image/10559_icon.png"/>
+			          		</li>
+			          		<li class="flipInY">
+			          			<img src="../image/11143_icon.png"/>
+			          		</li>
+			          		<li class="flipInX">
+			          			<img src="../image/10267_icon.png"/>
+			          		</li>
+			          		<li class="flipInY">
+			          			<img src="../image/19083_icon.png"/>
+			          		</li>
+			          		<li class="flipInX">
+			          			<img src="../image/10120_icon.png"/>
+			          		</li>
+			          		<li class="flipInY">
+			          			<img src="../image/10106_icon.png"/>
+			          		</li>
+			          		<li class="flipInX">
+			          			<img src="../image/10283_icon.png"/>
+			          		</li>
+			          		<li class="flipInY">
+			          			<img src="../image/19091_icon.png"/>
+			          		</li>
+			          		<li class="flipInX">
+			          			<img src="../image/19093_icon.png"/>
+			          		</li>
+			          	</ul>
+			          </div>
+			          <div class="to_right">
+			          	<img src="../image/double_11_top.png"/>
+			          </div>
+			    </div>
+			    <div class="swiper-slide" id="slider2">
+			    	
+			    </div>
+			  </div>
+			</div>
+		
+		    
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/double_eleven.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+	$(function(){
+		var flg=GetQueryString('flg');
+		if(flg==1){
+			$("#slider2").addClass('swiper-no-swiping');
+		}
+		var initialSlide=(flg==1)?2:0;
+		//alert(initialSlide)
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: false,//可选选项，自动滑动
+			direction : 'vertical',
+			noSwiping :function(){
+				return flg==1; 
+			},
+			initialSlide:initialSlide,
+			onSlideChangeEnd:function(swiper){
+				console.log(swiper.activeIndex);
+				if (swiper.activeIndex==1) {
+					loadLine(ele_datas);
+				}else{
+					loadNine()
+				}
+			}
+		})
+		setTimeout(function(){
+//			$(".swiper-container").fadeIn()
+			$(".video").fadeOut();
+			loadNine()
+		},3500)
+	})
+	function loadLine(data){
+    	//$("#slider2").empty()
+    	if($(".line_list").size()>0){
+    		$(".line_list").each(function(){
+    			$(this).replaceWith($(this).clone())
+    		})
+    		$(".line_list").on('tap',function(){
+    			location.href='lovers_line.html?type='+$(this).attr('data-id')+"&flg="+GetQueryString('flg');
+    		})
+    	}else{
+    		for (var i in data) {
+	    		var div=$('<div class="line_list" data-id="'+i+'"></div>');
+	    		if(i%2==0){
+	    			div.addClass('driveInLeft')
+	    		}else{
+	    			div.addClass('driveInRight')
+	    		}
+	    		//中部
+	    		var div_c=$('<div class="div_c"></div>');
+	    		var div_c_l=$('<div class="div_c_l"></div>');
+	    		var ul=$('<ul></ul>');
+	    		var shopList=data[i]['shopList'];
+	    		for (var m in shopList) {
+	    			var li =$('<li></li>');
+	    			li.append(shopList[m]['shopName']);
+	    			if(shopList[m]['ele_actions_s']!=''){
+	    				li.append('<span>'+shopList[m]['ele_actions_s']+'</span>')
+	    			}
+	    			ul.append(li);
+	    		}
+	    		div_c_l.append(ul)
+	    		
+	    		var div_c_r=$('<div class="div_c_r"></div>');
+	    		div_c_r.append('<img src="'+data[i]['img']+'"/>');
+	    		div_c.append(div_c_l).append(div_c_r);
+	    		div.append(div_c);
+	    		//底部
+	    		var div_f=$('<div class="div_f"></div>');
+	    		var arr=['一','二','三'];
+	    		div_f.append(data[i]['title'])
+	    		div_f.append('<div class="to_shop"><a href="javascript:void(0)">线路'+arr[i]+' ></a> </div>');
+	    		div.append(div_f);
+	    		div.bind({
+	    			'click':function(){
+	    				location.href='lovers_line.html?type='+$(this).attr('data-id')+"&flg="+GetQueryString('flg');
+	    			}
+	    		})
+	    		div.on('tap',function(){
+	    			location.href='lovers_line.html?type='+$(this).attr('data-id')+"&flg="+GetQueryString('flg');
+	    		})
+	    		$('#slider2').append(div)
+	    		console.log(data[i])
+	    	}
+    	}
+    	
+    }
+	function loadNine(){
+		//$(".shopList").empty();
+		if($('.shopList li').size()>0){
+			$(".shopList li").each(function(){
+    			$(this).replaceWith($(this).clone())
+    		})
+		}else{
+			for (var i in ele_datas) {
+				var shopList=ele_datas[i]['shopList']
+				for (var j in shopList) {
+					console.log(shopList[j])
+					var li=$("<li class='spinIn'></li>");
+					li.append('<img src="../image/'+shopList[j]['id']+'_icon.png" />');
+					$(".shopList").append(li)
+				}
+			}
+		}
+		
+	}
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+</script>

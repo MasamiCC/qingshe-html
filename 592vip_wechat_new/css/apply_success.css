@@ -1,0 +1,39 @@
+body,.asbody{
+	background: #fff;
+}
+.asbody{
+	margin: 0 15px;
+}
+.asmiddle img{
+	max-width: 100%;
+}
+.asheaditem{
+	font-size: 0.875rem;
+	color: #000;
+	line-height: 2;
+	margin-top: 8%;
+	margin-bottom: 40%;
+}
+
+
+.asfooter{
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.asfooter a{
+	text-decoration: none;
+	color: #fff;
+}
+.asknown{
+	display: inline-block;
+	background: #1f1f1f;
+	width: 43%;
+	padding: 3% 0;
+	border-radius: 6px;
+	font-size: 0.875rem;
+}
+

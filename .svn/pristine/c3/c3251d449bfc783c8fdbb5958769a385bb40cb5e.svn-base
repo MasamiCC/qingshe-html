@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的推广收益</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.all_popularize,body{
+			background: #eee;
+		}
+		
+		.popularize_container_top{
+			display: flex;
+			/*justify-content: space-between;*/
+			align-items: center;
+			margin-bottom: 12px;
+		}
+		
+		.popularize_container{
+			margin: 10px 0;
+			background: #fff;
+			padding: 10px 10px;
+		}
+		.popularize_title{
+			font-size: 1rem;
+			color: #333;
+			font-weight: bold;
+			flex: 2;
+		}
+		.popularize_T_icon{
+			display: inline-block;
+			font-size: 0.75rem;
+			color: #fff;
+			padding: 1px 18px;
+			background: #ee9c21;
+			border-radius: 5px;
+		}
+		.popularize_container_bottom{
+			/*line-height: 0;
+			font-size: 0;*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		/*.popularize_container_bottom>div{
+			display: inline-block;
+		}*/
+		.popularize_container_bottom_item{
+			/*width: 33%;*/
+			font-size: 0.875rem;
+			/*margin-right: 5px;*/
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.popularize_container_bottom_item:last-child{
+			margin-right: 0;
+		}
+		.incomeimg img{
+			width: 12px;
+			margin-right: 7px;
+		}
+		.memberimg img{
+			width: 14px;
+			margin-right: 3px;
+		}
+		.signShopimg img{
+			width: 13px;
+			margin-right: 4px;
+		}
+		.popularize_container_bottom_item2,.popularize_title{
+			justify-content: flex-start;
+			/*flex: 1.3;*/
+		}
+		.popularize_container_bottom_item3,.popularize_title_right{
+			justify-content: flex-end;
+			display: flex;
+		}
+		
+		/*无相关数据*/
+		.no_data{
+			position: absolute;
+		    z-index: 3;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    overflow: hidden;
+		    width: 100%;
+		    padding-top: 100px;
+		    background-color: #efeff4;
+		    display: flex;
+		    display: -webkit-flex;
+		    align-items: center;
+		    flex-direction: column;
+		    justify-content: flex-start;
+		}
+		.no_data .info_img {
+		    width: 130px;
+		    height: auto;
+		}
+		
+		.no_data .info_explain {
+		    width: 80%;
+		    max-width: 320px;
+		    font-size: 1.2rem;
+		    color: #b0b0b0;
+		    line-height: 1.8;
+		    margin-top: 2rem;
+		    text-align: center;
+		}
+		.popularize_container_top_item{
+			display: inline-block;
+		}
+		.popularize_container_top_item1{
+			margin-right: 3px;
+		}
+	</style>
+	<body>
+		<div class="mui-content all_popularize">
+			<div class="signed_item_con">
+				<div id="pullrefresh" class="signed_item mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="popularize_container_con">
+							<div class="popularize_container">
+								<div class="popularize_container_top">
+									<div class="popularize_title">
+										<span class="popularize_container_top_item1">
+											2018年8月	
+										</span>
+										<span class="popularize_container_top_item">
+											收益：¥ 2000
+										</span>
+									</div>
+									<div class="popularize_title_right">
+										<span class="popularize_T_icon">未打款</span>
+									</div>
+								</div>
+								<div class="popularize_container_bottom">
+									<div class="popularize_container_bottom_item popularize_container_bottom_item2">
+										<span class="button_icon memberimg"><img src="img/member.png"/></span>
+										<span class="button_icon">推广会员：</span>
+										<span class="button_icon">30人</span>
+									</div>
+									<div class="popularize_container_bottom_item popularize_container_bottom_item3">
+										<span class="button_icon signShopimg"><img src="img/signShop.png"/></span>
+										<span class="button_icon ">签约商户：</span>
+										<span class="button_icon">7家</span>
+									</div>
+								</div>
+							</div>
+							<div class="popularize_container">
+								<div class="popularize_container_top">
+									<div class="popularize_title">
+										<span class="popularize_container_top_item1">
+											2018年8月	
+										</span>
+										<span class="popularize_container_top_item">
+											收益：¥ 2000
+										</span>
+									</div>
+									<div class="popularize_title_right">
+										<!--<span class="popularize_T_icon">未打款</span>-->
+									</div>
+								</div>
+								<div class="popularize_container_bottom">
+									<div class="popularize_container_bottom_item popularize_container_bottom_item2">
+										<span class="button_icon memberimg"><img src="img/member.png"/></span>
+										<span class="button_icon">推广会员：</span>
+										<span class="button_icon">30人</span>
+									</div>
+									<div class="popularize_container_bottom_item popularize_container_bottom_item3">
+										<span class="button_icon signShopimg"><img src="img/signShop.png"/></span>
+										<span class="button_icon ">签约商户：</span>
+										<span class="button_icon">7家</span>
+									</div>
+								</div>
+							</div>
+							<div class="popularize_container">
+								<div class="popularize_container_top">
+									<div class="popularize_title">
+										<span class="popularize_container_top_item1">
+											2018年8月	
+										</span>
+										<span class="popularize_container_top_item">
+											收益：¥ 2000
+										</span>
+									</div>
+									<div class="popularize_title_right">
+										<span class="popularize_T_icon">已打款</span>
+									</div>
+								</div>
+								<div class="popularize_container_bottom">
+									<div class="popularize_container_bottom_item popularize_container_bottom_item2">
+										<span class="button_icon memberimg"><img src="img/member.png"/></span>
+										<span class="button_icon">推广会员：</span>
+										<span class="button_icon">30人</span>
+									</div>
+									<div class="popularize_container_bottom_item popularize_container_bottom_item3">
+										<span class="button_icon signShopimg"><img src="img/signShop.png"/></span>
+										<span class="button_icon ">签约商户：</span>
+										<span class="button_icon">7家</span>
+									</div>
+								</div>
+							</div>
+							
+						
+						</div>
+					</div>
+				</div>
+				
+				<!--暂无收益-->
+				<!--当前无相关数据-->
+			    <!--<div class="no_data">
+			    	<img src="img/no_content.png" class="info_img">
+					<p class="info_explain">
+						当前无相关数据
+					</p>
+			    </div>-->
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../../js/mui.min.js"></script>
+<script src="../../../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+	pullRefresh: {
+		container: '#pullrefresh',
+		up: {
+			contentrefresh: '正在加载...',
+			callback: pullupRefresh,
+			auto:true
+		}
+	}
+});
+var count = 0;
+
+/**
+ * 上拉加载具体业务实现
+ */
+function pullupRefresh() {
+	setTimeout(function() {
+		mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+		var sharecontainer = document.body.querySelector('.popularize_container_con');
+		var sharediv = document.body.querySelectorAll('.popularize_container');
+		for (var i = sharediv.length, len = i + 2; i < len; i++) {
+			var div = document.createElement('div');
+			div.className = 'share_foot_item_item_content';
+			//字符串
+		  div.innerHTML = '<div class="popularize_container">'
+						+		'<div class="popularize_container_top">'
+						+			'<div class="popularize_title">'
+						+				'<span class="popularize_container_top_item1">'
+						+					'2018年8月'	
+						+				'</span>'
+						+				'<span class="popularize_container_top_item">'
+						+					'收益：¥ 2000'
+						+				'</span>'
+						+			'</div>'
+						+			'<div class="popularize_title_right">'
+						+				'<span class="popularize_T_icon">已打款</span>'
+						+			'</div>'
+						+		'</div>'
+						+		'<div class="popularize_container_bottom">'
+						+			'<div class="popularize_container_bottom_item popularize_container_bottom_item2">'
+						+				'<span class="button_icon memberimg"><img src="img/member.png"/></span>'
+						+				'<span class="button_icon">推广会员：</span>'
+						+				'<span class="button_icon">30人</span>'
+						+			'</div>'
+						+			'<div class="popularize_container_bottom_item popularize_container_bottom_item3">'
+						+				'<span class="button_icon signShopimg"><img src="img/signShop.png"/></span>'
+						+				'<span class="button_icon ">签约商户：</span>'
+						+				'<span class="button_icon">7家</span>'
+						+			'</div>'
+						+		'</div>'
+						+	'</div>'
+						
+			
+		            
+				sharecontainer.appendChild(div);
+		}
+	}, 1500);
+}
+</script>
+

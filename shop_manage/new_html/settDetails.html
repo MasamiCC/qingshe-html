@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>轻奢点评商家中心</title>
+    <link href="../css/layout1.css" rel="stylesheet" />
+    <link href="../css/settDetails.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/layer.css" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="cont" id="index_cont">
+            <div class="content" id="main1">
+                <div id="t1">
+                    <div id="pic1">
+                        <img id="p1" src="../img/slogo.png" />
+                    </div>
+                </div>
+                <div id="t2">
+                    <div id="column1" class="columns">
+                        <p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>个人中心</p>
+                        <p class="tc tb tb2">
+                            <a href="Vbasic.html">基本信息</a>
+                        </p>
+                        <p class="tc tb tb2">
+                            <a href="Vzizhanghu.html">子账号管理</a>
+                        </p>
+                    </div>
+                    <div id="column2" class="columns">
+                        <p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>商品管理</p>
+                        <p class="tc tb tb2">
+                            <a href="Vgoods.html">全部商品</a>
+                        </p>
+                        <p class="tc tb tb2">
+                            <a href="Vadd_goods.html">新增商品</a>
+                        </p>
+                        <p class="tc tb tb2">
+                            <a href="Vgoods_cat.html">分类管理</a>
+                        </p>
+                    </div>
+                    <div id="column3" class="columns">
+                        <p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>订单管理</p>
+                        <p class="tc tb tb2">
+                            <a href="Vorder.html">全部订单</a>
+                        </p>
+
+                        <p class="tc tb tb2">
+                            <a href="Vorder_check.html">验证订单</a>
+                        </p>
+                    </div>
+                    <div id="column4" class="columns">
+                        <p class="tc th"><span><img src="../img/editor.png" />&nbsp;&nbsp;</span>评价管理</p>
+                        <p class="tc tb tb2">
+                            <a href="Vpingjia.html">订单评价</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--个人中心正文中间部分-->
+            <div class="content" id="main2">
+                <div id="txt">
+                    <!--正文部分开始-->
+                    <!--头部-->
+                    <div id="header">
+                        <div id="head">
+                            <div id="cl" class="head heade1">
+                                <ul>
+                                    <li class="business"><i>商家中心</i>
+                                        <i class="shopname">当前商家：江南厨房</i>
+                                    </li>
+                                    <!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+                                </ul>
+                            </div>
+                            <div id="cr" class="head head_r">
+                                <div class="head heade2">
+                                    <img src="../img/qvip.png" />
+                                </div>
+                                <div class="head line">
+                                    <ul>
+                                        <li>下午好！13059891234</li>
+                                        <li>欢迎进入轻奢点评商家中心</li>
+                                    </ul>
+                                </div>
+                                <div class="head heade3">
+                                    <a href="" class="login_out"><img src="../img/esc.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topNav">
+                        <div class="sele_time">
+                            <div class="time_inline">
+                                <label for="startTime">
+                                    <input type="text" class="form-control" id='startTime' placeholder="" readonly="readonly"
+                                        style="display:inline-block;width: 120px;height: 30px;padding: 6px 4px;" />
+                                    <span class="startTime_icon time_icon"><img src="../img/rili.png" /></span>
+                                </label>
+                            </div>
+                            <span class="zhi"> — </span>
+                            <div class="time_inline">
+                                <label for="endTime">
+                                    <input type="text" class="form-control" id='endTime' placeholder="" readonly="readonly"
+                                        style="display:inline-block;width: 120px;height: 30px;padding: 6px 4px;" />
+                                    <span class="endTime_icon time_icon"><img src="../img/rili.png" /></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pay">
+                            <label for="">付款方式：</label>
+                            <select name="" id="">
+                                <option value="">请选择</option>
+                                <option value="">黑钻支付</option>
+                                <option value="">在线支付</option>
+                            </select>
+                        </div>
+                        <div class="delpay">
+                            <label for="">收退款：</label>
+                            <select name="" id="">
+                                <option value="">请选择</option>
+                                <option value="">收款</option>
+                                <option value="">退款</option>
+                            </select>
+                        </div>
+                        <span class='BCtop_icon BCtop_icon1 hoverColor'>搜索</span>
+                    </div>
+                    <div class="txt_list">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="list_table">
+                            <tr>
+                                <th>收支ID</th>
+                                <th>订单号</th>
+                                <th>收支类型</th>
+                                <th>收支金额</th>
+                                <th>平台补助</th>
+                                <th>商家优惠</th>
+                                <th>实际收入</th>
+                                <th>支付方式</th>
+                                <th>订单时间</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td class="list_center">1561561615</td>
+                                <td class="list_center">15415 45545 4654654 654654</td>
+                                <td class="list_center">酒店预定</td>
+                                <td class="list_center">20000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">黑钻支付</td>
+                                <td class="list_center">2018-08-28 13:41:11</td>
+                                <td class="list_center list_status">
+                                    <span class="del">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="list_center">1561561615</td>
+                                <td class="list_center">15415 45545 4654654 654654</td>
+                                <td class="list_center">酒店预定</td>
+                                <td class="list_center">20000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">黑钻支付</td>
+                                <td class="list_center">2018-08-28 13:41:11</td>
+                                <td class="list_center list_status">
+                                    <span class="del">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="list_center">1561561615</td>
+                                <td class="list_center">15415 45545 4654654 654654</td>
+                                <td class="list_center">酒店预定</td>
+                                <td class="list_center">20000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">黑钻支付</td>
+                                <td class="list_center">2018-08-28 13:41:11</td>
+                                <td class="list_center list_status">
+                                    <span class="del">删除</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="list_center">1561561615</td>
+                                <td class="list_center">15415 45545 4654654 654654</td>
+                                <td class="list_center">酒店预定</td>
+                                <td class="list_center">20000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">2000.00</td>
+                                <td class="list_center">黑钻支付</td>
+                                <td class="list_center">2018-08-28 13:41:11</td>
+                                <td class="list_center list_status">
+                                    <span class="del">删除</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--正文-->
+                    <!--正文部分结束-->
+                </div>
+            </div>
+        </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../js/Vlayout.js"></script>
+<script src="../js/layer.js"></script>
+
+</html>
+<script type="text/javascript">
+    $(function () {
+        $('.startTime_icon img').click(function () {
+            $('#startTime').datetimepicker('show');
+        })
+        $("#startTime").datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 0,
+            autoclose: 1,
+            minView: "month",
+            format: 'yyyy-mm-dd',
+            forceParse: 0,
+            container: '.content',
+        })
+
+        $('.endTime_icon img').click(function () {
+            $('#endTime').datetimepicker('show');
+        })
+
+        $("#endTime").datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 0,
+            autoclose: 1,
+            minView: "month",
+            format: 'yyyy-mm-dd',
+            forceParse: 0,
+            container: '.content'
+        })
+
+        $('.del').each(function () {
+            $(this).bind({
+                click: function () {
+                    window.confirm("确认删除吗？");
+                }
+            });
+        });
+
+        $('.list_time').each(function () {
+            var state = $(this).html();
+            if ("停用" == state) {
+                $(this).css("color", "#f8a120");
+            } else {
+                $(this).css("color", "#6bbcf5");
+            }
+        });
+    });
+</script>

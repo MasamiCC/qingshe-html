@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="../js/bootstrap-datetimepicker/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/my_tickets.css"/>
+		<style type="text/css">
+			
+			.txtcenter>div {
+			    margin: 0 0px;
+			    /*position: relative;*/
+			}
+			.plus:hover{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center confirm">
+				<div class="confirm_content">
+					<div class="confirm_left">
+						<div class="confirm_item " id="order_detail" >
+							<div class="confirm_title">
+								订单详情
+								<span>
+									<返回修改
+								</span>
+							</div>
+							
+							<div class="confirm_cart">
+								<div class="confirm_title_s">
+									购物车
+								</div>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<thead>
+										<th>商品/规格</th>
+										<th>数量</th>
+										<th>小计（元）</th>
+									</thead>
+									<tr class="cart_list">
+										<td>黄焖鸡米饭-大份/不辣黄焖鸡米饭-大份/不辣黄焖鸡米饭-大份/不辣黄焖鸡米饭-大份/不辣</td>
+										<td>
+											<div class="cart_btn">
+												<span onclick="cartList(this,-1,0.02)">-</span>
+												<input type="text" readonly="" value="1">
+												<span onclick="cartList(this,1,0.02)">+</span>
+											</div>
+										</td>
+										<td>￥38500.00</td>
+									</tr>
+									<tr class="cart_list">
+										<td>黄焖鸡米饭-大份/不辣</td>
+										<td>
+											<div class="cart_btn">
+												<span onclick="cartList(this,-1,0.02)">-</span>
+												<input type="text" readonly="" value="1">
+												<span onclick="cartList(this,1,0.02)">+</span>
+											</div>
+										</td>
+										<td>￥38500.00</td>
+									</tr>
+									<tr class="cart_list">
+										<td>黄焖鸡米饭-大份/不辣</td>
+										<td>
+											<div class="cart_btn">
+												<span onclick="cartList(this,-1,0.02)">-</span>
+												<input type="text" readonly="" value="1">
+												<span onclick="cartList(this,1,0.02)">+</span>
+											</div>
+										</td>
+										<td>￥38500.00</td>
+									</tr>
+								</table>
+							</div>
+							<!--旅游确认-->
+							<div class="confirm_xl">
+								<div class="confirm_title_s">
+									线路名称/日期
+								</div>
+								<div class="confirm_xlxq">
+									日本东京4日自由行·热门商圈3晚连住 周末出游 说走就走 2017年10月25日
+								</div>
+							</div>
+							<div class="confirm_travelnum">
+								<div class="confirm_title_s">
+									出行人数
+								</div>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr class="cart_list">
+										<td>成人</td>
+										<td>￥2000.00</td>
+										<td>
+											<div class="cart_num">
+												<span>12</span>
+											</div>
+										</td>
+									</tr>
+									<tr class="cart_list">
+										<td>标准间</td>
+										<td>￥500.00</td>
+										<td>
+											<div class="cart_num">
+												<span>12</span>
+											</div>
+										</td>
+									</tr>
+									<tr class="cart_list confirm_travelnum_checkbox">
+										<td colspan="3" >
+											<label for="">
+												<input type="checkbox" name="" id="" value="" />携带婴儿（0-2周岁）
+											</label>
+											<p class="xuzhi">
+												<i class="fa fa-exclamation-circle"></i>预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知预定须知
+											</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="confirm_baoxian">
+								<div class="confirm_title_s">
+									保险
+								</div>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr class="cart_list">
+										<td colspan="2"><input type="checkbox" class="confirm_travelnum_ckbox" name="" id="" value="" />人身意外险1</td>
+										<td>
+											<div class="cart_num">
+												<span>x4</span>
+											</div>
+										</td>
+									</tr>
+									<tr class="cart_list">
+										<td colspan="2"><input type="checkbox" class="confirm_travelnum_ckbox" name="" id="" value="" />人身意外险2</td>
+										<td>
+											<div class="cart_num">
+												<span>x4</span>
+											</div>
+										</td>
+									</tr>
+									<tr class="cart_list confirm_travelnum_checkbox">
+										<td colspan="3" >
+											<p class="xuzhi">
+												<i class="fa fa-exclamation-circle"></i>保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明保险说明
+											</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="confirm_dfc">
+								<div class="confirm_title_s">
+									单房差
+								</div>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr class="cart_list">
+										<td>单房差</td>
+										<td>￥2000.00</td>
+										<td>
+											<div class="cart_num">
+												<span>12</span>
+											</div>
+										</td>
+									</tr>
+									<tr class="cart_list confirm_travelnum_checkbox">
+										<td colspan="3" >
+											<p class="xuzhi">
+												<i class="fa fa-exclamation-circle"></i>单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明单房差说明
+											</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--旅游确认-->
+							
+							
+							<div class="confirm_yh">
+								<div class="confirm_title_s">
+									入住天数<span style="float: right;font-weight: normal;color: #666;">*4</span>
+								</div>
+								
+							</div>
+							<div class="confirm_yh">
+								<div class="confirm_title_s">
+									优惠信息
+								</div>
+								<div class="">
+									<ul>
+										<li>优惠券	<span id="oldclickhtml" onclick="changeTicket()" data-id="2">无可用优惠券</span></li>
+										<li>平台活动	<span>满100元减50元</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="confirm_hj">
+								<div class="confirm_title_s">
+									合计	<span>￥358000.00</span>
+								</div>
+								<p>共<span>666</span>个商品</p>
+								<!--旅游确认-->
+								<p>已优惠<span>50</span>元</p>
+								<!--旅游确认-->
+							</div>
+						</div>
+					</div>
+					<div class="confirm_right">
+						<div class="confirm_item">
+							<div class="confirm_title">
+								订单信息
+							</div>
+							<div class="confirm_form">
+								<p>购买类订单无订单信息，购买后请凭短信付款码或手机登录APP查看付款二维码。</p>
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								订单信息(易洗护)
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>车辆信息</td>
+										<td colspan="3" id="order_car">
+											<div class="address_item_div">
+												苏F88888（小轿车）
+											</div>
+											<div class="change_a change_c" onclick="chooseCar()" id="change_car">
+												选择车辆
+											</div>
+											<div class="change_a change_c" onclick="addCar()" id="add_car">
+												新增车辆
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>选择地址</td>
+										<td colspan="3"  >
+											<div class="address_item_div"><div>蒋爱军6<span>女士</span></div><div>四海家园 复兴路613号楼315</div><div>15995855970</div></div>
+											<div class="change_a" onclick="changeAddress('change_address_car')" id="change_address_car">
+												修改地址
+											</div>
+											<div class="change_a" onclick="addNewAddress()" id="add_address">
+												新增地址
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>服务时间</td>
+										<td ><input type="text" placeholder="请输入服务时间"   readonly="" id="car_wash_time"/></td>
+										<td></td><td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								订单信息(旅游)
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>联系人</td>
+										<td><input type="text" placeholder="请输入联系人昵称"/></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>联系人手机 </td>
+										<td><input type="tel" placeholder="请输入手机号码" maxlength="11"/></td>
+										<td></td><td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								外卖信息
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>选择地址</td>
+										<td colspan="3" >
+											<div class="address_item_div"><div>蒋爱军6<span>女士</span></div><div>四海家园 复兴路613号楼315</div><div>15995855970</div></div>
+											<div class="change_a" onclick="changeAddress('change_address')" id="change_address">
+												修改地址
+											</div>
+											<div class="change_a" onclick="addNewAddress()" id="add_address">
+												新增地址
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>用餐人数</td>
+										<td ><input type="text" placeholder="请输入用餐人数" /></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>送餐时间</td>
+										<td ><input type="text" placeholder="请输入送餐时间"  readonly="" id="wm_time"/></td>
+										<td></td><td></td>
+									</tr>
+								</table>
+								
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								预定信息
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>就餐人数</td>
+										<td ><input type="text" placeholder="请输入就餐人数" /></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>就餐时间</td>
+										<td><input type="text" placeholder="请选择到点时间" id="yd_time" readonly=""/></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>联系人</td>
+										<td><input type="text" placeholder="请输入联系人昵称"/></td>
+										<td>联系人手机</td>
+										<td><input type="tel" placeholder="请输入手机号码" maxlength="11"/></td>
+									</tr>
+									<tr>
+										<td>预留车位</td>
+										<td>
+											<label for="car_0"><input type="radio" id="car_0" name="car" checked=""/> 需要</label>
+											<label for="car_1"><input type="radio" id="car_1" name="car"/> 不需要</label>
+										</td>
+										<td></td><td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								订房信息
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>入住人数</td>
+										<td ><input type="text" placeholder="请输入入住人数" /></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>到达时间</td>
+										<td><input type="text" placeholder="请选择到达时间" id="df_time" readonly=""/></td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>联系人</td>
+										<td><input type="text" placeholder="请输入联系人昵称"/></td>
+										<td>联系人手机</td>
+										<td><input type="tel" placeholder="请输入手机号码" maxlength="11"/></td>
+									</tr>
+									<tr>
+										<td>预留车位</td>
+										<td>
+											<label for="car_2"><input type="radio" id="car_2" name="car1" checked=""/> 需要</label>
+											<label for="car_3"><input type="radio" id="car_3" name="car1"/> 不需要</label>
+										</td>
+										<td></td><td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								发票/备注
+							</div>
+							<div class="confirm_form">
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td>备注</td>
+										<td >
+											<textarea name="" rows="3" cols=""></textarea>
+										</td>
+										<td></td><td></td>
+									</tr>
+									<tr>
+										<td>发票</td>
+										<td colspan="3">
+											<label for="piao_1" class="p_label"><input type="radio" id="piao_1" name="piao"/> 个人</label>
+											<label for="piao_2" class="p_label"><input type="radio" id="piao_2" name="piao"/> 普通</label>
+											<label for="piao_3" class="p_label"><input type="radio" id="piao_3" name="piao"/> 增值税</label>
+											<label for="piao_0" class="p_label"><input type="radio" id="piao_0" name="piao" checked=""/> 不需要</label>
+											<div class="piaoer_form">
+												<div class="">
+													<input type="text" placeholder="请输入姓名"/>
+													<input type="text" placeholder="请输入联系电话"/>
+												</div>
+												<div class="">
+													<input type="text" placeholder="企业名称"/>
+													<input type="text" placeholder="税号"/>
+												</div>
+												<div class="">
+													<input type="text" placeholder="企业名称"/>
+													<input type="text" placeholder="税号"/>
+													<input type="text" placeholder="开户行"/>
+													<input type="text" placeholder="开户账号"/>
+													<input type="text" placeholder="公司地址"/>
+													<input type="text" placeholder="联系方式"/>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+								
+								
+							</div>
+						</div>
+						<div class="confirm_item">
+							<div class="confirm_title">
+								付款方式
+							</div>
+							<div class="confirm_form">
+								<ul class="pay_list">
+									<li class="active"><img src="../imgs/zhifubao.png"/>支付宝</li>
+									<li><img src="../imgs/wechat.png"/>微信</li>
+									<li><img src="../imgs/black_pay.png"/>黑卡支付</li>
+								</ul>
+								<div class="">
+									<button class="confirm_btn" onclick="submitOrder()">确认下单</button>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+		
+
+
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/confirm.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>-->
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=5b4c94fd81c57ce0b38c605771edc43a"></script>
+	<script src="../js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/my_ticketcon.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../js/my_tickerts.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
+
+<script type="text/javascript">
+	$(function(){
+		
+	})
+	function changeTicket(){
+		var flg=$("#oldclickhtml").attr("data-id");
+		//console.log(flg)
+		var html=loadcoupon(couponData,flg);
+	
+		//iframe层
+		var index=layer.open({
+		  type: 1,
+		  title: '选择优惠券',
+		  shadeClose: true,
+		  shade: 0.8,
+		  area: ['700px'],
+		  content: html //iframe的url
+		}); 
+		
+		ticketClick()
+		couponHover();
+//		nocoupon();
+		//used(couponData);
+	}
+</script>

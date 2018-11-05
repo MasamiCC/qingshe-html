@@ -1,0 +1,25 @@
+body{
+	background: #f4f4f4;font-size:16px;
+}
+.mui-content{
+	margin: 0.75rem;background: #f4f4f4;
+}
+.prize_item{
+	box-shadow: 3px solid #eee;background: none;margin-bottom: 0.75rem;font-size: 0.92rem;
+}
+.prize_item.bg-w{
+	background: #fff;
+}
+.prize_m{padding: 0.5rem ;font-size: 0.92rem;color: #333;}
+.prize_i{box-shadow: 2px 2px 2px #eee;padding-top: 0.5rem ;margin-bottom: 0.75rem;background: #fff;}
+.price_time{font-size: 0.875rem;color: #666;}
+.price_msg{font-size: 0.64rem;color: #999;padding-left: 0.5rem;padding-bottom: 0.3rem;padding-right: 0.5rem;line-height: 1.5;}
+.price_f{position: relative;padding: 0.3rem 0;overflow: hidden;}
+.price_left {position: absolute;text-align: center;left: 0.75rem;color: #666;width: 25%;font-size: 0.75rem;}
+.price_left span{display: block;color: #d91a1a;font-size: 2rem;font-weight: bold;line-height: 1.2;}
+.price_left span small{font-size: 0.875rem;font-weight: 500;}
+.price_cont{margin-left: 30%;display: inline-block;vertical-align: middle;line-height: 2;max-width: 70%;}
+.price_title{font-size: 1rem;color: #333;font-weight: bold;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.price_title span{display:inline-block;color: #fff;background: #fc7875;border-radius: 3rem;font-size: 0.64rem;padding: 0.2rem 0.3rem;margin-right: 0.3rem;line-height: 1;font-weight: normal;vertical-align: top;margin-top: 0.45rem;}
+.toshop{display: inline-block;width: 50%;text-align: center;background: #ff6600;color: #fff;font-size: 0.92rem;margin: 0.5rem auto;padding: 0.5rem 0;}
+.price_line{background-image:url(../image/prize_bg.png);background-repeat: no-repeat;background-size: 100%;line-height: 1;}

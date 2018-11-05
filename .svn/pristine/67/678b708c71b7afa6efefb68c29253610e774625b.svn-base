@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goods_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>
+		
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="detail_item">
+		    	<div id="slider" class="mui-slider" >
+		    	  <div class="mui-slider-group mui-slider-loop">
+		    	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    	    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	      <a href="#">
+		    	        <img src="../image/shop1.png">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第一张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="../image/shop2.png">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第二张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="../image/shop1.png">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第三张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="../image/shop2.png">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 第四张 -->
+		    	    <div class="mui-slider-item">
+		    	      <a href="#">
+		    	        <img src="../image/shop1.png">
+		    	      </a>
+		    	    </div>
+		    	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    	    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	      <a href="#">
+		    	        <img src="../image/shop2.png">
+		    	      </a>
+		    	    </div>
+		    	  </div>
+		    	  <div class="mui-slider-indicator">
+		    	    <div class="mui-indicator mui-active"></div>
+		    	    <div class="mui-indicator"></div>
+		    	    <div class="mui-indicator"></div>
+		    	    <div class="mui-indicator"></div>
+		    	  </div>
+		    	</div>
+		    	<div class="img_list">
+		    		<ul>
+		    			<li>
+		    				<div id="">
+		    					<img src="../image/hotel_logo.png">
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div id="">
+		    					<img src="../image/hotel_logo.png">
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div id="">
+		    					<img src="../image/hotel_logo.png">
+		    				</div>
+		    			</li>
+		    			<li>
+		    				<div id="">
+		    					<img src="../image/hotel_logo.png">
+		    				</div>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="detail_item">
+		    	<!--非酒店累使用-->
+		    	<div class="detail_title" style="line-height: 1.2;font-size: 1rem;">
+		    		宾利新欧陆 GT 极致版敞篷版
+		    	</div>
+		    	<!--酒店信息
+		    	<div class="detail_title" style="line-height: 1.2;">
+		    		酒店信息
+		    	</div>-->
+		    	<div class="detail_sale">
+		    		月售20份  好评率80%
+		    	</div>
+		    	<div id="" class="detail_cont" style="padding: 0.3rem 0;">
+		    		全新设计的欧陆 GT 极致版敞篷版座舱，是对敞篷豪华运动轿车的极致诠释，从此令您的每一段旅程都令人艳羡不已。陆 GT 极致版敞篷版座舱，是对敞篷豪华运动轿车的极致诠释，从此令您的每一段旅程都令人艳羡不已。
+		    	</div>
+		    	<div class="price_u">
+		    		原价：￥550.00
+		    	</div>
+		    	<div class="price_n">
+		    		<small>会员价</small>￥166.00
+		    		<div class="mui-pull-right cart_buy " data-goodsid='1'>
+						<!--<div class="" data-price="166.00" data-title="宾利新欧陆 GT 极致版敞篷版" data-id="1">
+							<img src="../image/min@2X.png" class="cart-btn cart-btn-numbox-minus">
+							<span class="mui-input-numbox">0</span>
+							<img src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus">
+						</div>-->
+						<span class="cart_gg">规格</span>
+					</div>
+		    	</div>
+		    	
+		    </div>
+		    <div class="detail_item">
+		    	<div class="detail_title">
+		    		商品属性
+		    	</div>
+		    	<div class="detail_cont">
+		    		<ul class="detail_attr">
+		    			<li>
+		    				属性一：测试属性1
+		    			</li>
+		    			<li>
+		    				属性二：测试属性2
+		    			</li>
+		    			<li>
+		    				属性三：测试属性3
+		    			</li>
+		    			<li>
+		    				属性四：测试属性4
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="detail_item">
+		    	<div class="detail_title">
+		    		商品详情
+		    	</div>
+		    	<div class="detail_cont">
+		    		<img src="../image/at_js.png"/>
+		    		<p>
+		    			全新设计的欧陆 GT 极致版敞篷版座舱，是对敞篷豪华运动轿车的极致诠释，从此令您的每一段旅程都令人艳羡不已。
+		    		</p>
+		    		<img src="../image/banner@2X.png"/>
+		    		<p>
+		    			这个名称可追溯到上世纪勒芒 24 小时耐力赛中获胜的宾利车型 Speed Six。如今，“Speed”已脱胎为极致版，对卓越性能的追求和对精致工艺的考量缺一不可。
+		    		</p>
+		    	</div>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-footer" id="nav">
+			<!--非酒店显示内容，酒店不显示-->
+			<a class="mui-tab-item" href="javascript:void(0)" style="color: #333;">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart">
+					<span class="mui-badge buy_count" >12</span>
+				</span>
+			</a>
+			
+			<div class="mui-pull-right">
+				<!--非酒店显示‘选好了’，酒店显示‘预定’-->
+				<span class="js_btn" onclick="cartSubmit()">
+					选好了
+				</span>
+				<!--非酒店显示‘选好了’，酒店显示‘预定’-->
+				<!--<span class="js_btn js_btn_yd" onclick="cartSubmit()">
+					预定
+				</span>-->
+			</div>
+		</nav>
+		<div id="popover" class="mui-popover">
+			<div class="cart_list_title">购物车 <span class="mui-pull-right cart_clear" ><i class="mui-icon mui-icon-trash"></i>清空</span></div>
+			<div class="mui-content-padded" id="cart_goods_list">
+				<ul>
+					<!--<li class="cart_g_list" data-goodsid="6" data-attr-id="5">
+						<div id="" class="cart_g_left">椒盐中虾 
+							<p class="goods_attr">小份,不辣</p>
+						</div>
+						<div class="cart_g_right" data-goodsid="6">
+							<span><small>￥</small><span class="price_c">44</span></span>
+							<img src="../image/min@2X.png" class="cart-btn cart-btn-numbox-minus" onclick="cartList(this,0,44)">
+							<span class="mui-input-numbox">1</span>
+							<img src="../image/plus@2X.png" class="cart-btn cart-btn-numbox-plus" onclick="cartList(this,1,44)">
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<div id="attr" class="mui-popover">
+			<div class="attr_title">椒盐中虾  <span class="mui-icon mui-icon-closeempty mui-pull-right attr_close"></span></div>
+			<div class="mui-content-padded">
+				<ul>
+					<li class="attr_li" id="attr1">
+						
+					</li>
+					<li  class="attr_li" id="attr2">
+						
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div class="price" ><small>￥</small><span>321</span></div>
+				<input type="hidden" name="" id="cart_goods" value="" />
+				<input type="hidden" name="attr_id" id="attr_id" />
+				<div style="padding: 0 10px;">
+					<button  class="add_to_cart">加入购物车</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/goods_detail.js" type="text/javascript" charset="utf-8"></script>

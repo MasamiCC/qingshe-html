@@ -1,0 +1,236 @@
+.main{
+	padding-left: 0px;
+	    padding-bottom: 10px;
+}
+.row_main{
+	padding-left: 10px;
+}
+.nav_top{
+	border-bottom: 1px solid #eee;
+}
+.nav_top a{
+	color: #666;
+	font-size: 16px;
+}
+.nav_top a:focus,.nav_top a:hover{
+	background: none;
+}
+.coupon_bottom_content{
+	font-size: 12px;
+	color: #999;
+	padding: 0 19px 5px 19px;
+	text-align: left;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+}
+.show{
+	overflow: initial;white-space: normal;text-overflow: unset;
+	 position: absolute;
+    z-index: 99;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    left:-1px;
+    right: -1px;
+}
+.coupon_top{
+	background: url(../imgs/avaliable_coupon.png) no-repeat;
+	line-height: 1;
+	background-size: 100% 100%;
+	position: relative;
+	top: 0;
+}
+.zhuanxiang{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.icons_v{
+	color:#ddd;
+	font-size: 22px;
+}
+.uncoupon_top{
+	background: url(../imgs/unavaliable_coupon.png) no-repeat;
+	line-height: 1;
+	background-size: 100% 100%;
+	position: relative;
+}
+.uncoupon_font{
+	position: absolute;
+	top: 12px;
+    right: 10px;
+}
+.uncoupon_used{
+	color: #ff3f3f;
+}
+.uncoupon_top1{
+	color: #999999;
+	font-size: 18px;
+	padding: 30px 0 20px 0;
+}
+.uncoupon_top2{
+	color: #999;
+	padding-bottom: 32px;
+}
+.coupon_top1{
+	color: #e22424;
+	font-size: 18px;
+	padding: 30px 0 20px 0;
+}
+.coupon_top2{
+	color: #666;
+	padding-bottom: 32px;
+}
+.txtcenter{
+	text-align: center;
+}
+.row_piece{
+	min-width: 368px;
+	line-height: 0;
+	margin: 12px 0;
+	overflow: -webkit-paged-x;
+	
+}
+.coupon_bottom{
+	border:1px solid #ddd ;
+	border-top: 0;
+	/*border-bottom: 0;*/
+	background-color: #F7F7F7;
+	line-height: 1.5;
+	/*border-radius:4px ;*/
+	position: relative;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.icon_v{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	z-index: 99;
+}
+.buchong{
+	display: none;
+}
+.icon_v:hover{
+	cursor: pointer;
+}
+.row_piece ul{
+	margin-bottom: 0px;
+}
+.more{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    line-height: 3;
+}
+.more:hover{
+	cursor: pointer;
+}
+.more_icon{
+	/*display: inline-block;*/
+	padding: 10px 20px;
+	background: #e0c89b;
+	color: #fff;
+	border-radius: 6px;
+}
+.more_unicon{
+	background: #d2d2d2;
+}
+#availableCoupons>div{
+	line-height: 0;
+	font-size: 0;
+}
+/*.rowline{
+	vertical-align: top;
+	overflow: visible;
+	width: 33%;
+	display: inline-block;
+}*/
+
+.rowline{
+	vertical-align: top;
+	overflow: visible;
+	width: 31%;
+	display: inline-block;
+	height: 100%;
+    min-height: 138px;
+}
+.newrowlinecont{
+	width: 50%;
+	vertical-align: top;
+	overflow: visible;
+	display: inline-block;
+	
+}
+.newrowline1{
+	width: 97%;
+	margin: 5px;
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+}
+.newrowline{
+	margin: 5px;
+	position: relative;
+}
+.txtcenter >div{
+	margin: 0 6px;
+}
+.row_piece{
+	min-width: inherit;
+}
+.newrowline{
+	
+}
+.plus{
+	text-align: center;
+	padding: 72px 0;
+	border: 1px solid #EBEBEB;
+	border-radius: 6px;
+	/*width: 100%;*/
+	color: #999;
+	}
+	
+.newrowline.cpactive{
+	border: 1px solid #edb94a;
+}
+.newrowline.cpactive .cpuse_this{
+	display: none;
+}
+.cpuse_this{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	text-align: center;
+	line-height: 8;
+	display: none;
+}
+.cpuse_this button{
+	background: #edb94a;color: #fff;padding: 3px 10px;border: none;border-radius: 3px;font-size: 14px;line-height: 1.5;
+}
+.clicked{
+	border:1px solid #edb94a;
+}
+.a_active{
+	background: url(../imgs/avaliable_coupon1.png) no-repeat;
+	line-height: 1;
+	background-size: 100% 100%;
+	position: relative;
+	top: 0;
+}
+.b_active{
+	border:1px solid #edb94a ;
+	border-top: 0;
+	/*border-bottom: 0;*/
+	background-color: #F7F7F7;
+	line-height: 1.5;
+	/*border-radius:4px ;*/
+	position: relative;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

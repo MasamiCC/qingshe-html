@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>黑卡经纪人详情</title>
+		<!--引入css-->
+		<link rel="stylesheet" href="../static/css/layer.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/layout.css"/>
+		<link rel="stylesheet" href="../css/blackCard_member_details.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="lay_header">
+				<div class="navbar-custom-menu">
+					<span class="custom_icon"></span>
+					<span class="custom_name">管理员</span>
+					<!--操作区域-->
+					<div class="custom_op">
+						<a class="change_password">修改密码</a>
+						<a class="login_out">退出登录</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--左侧-->
+		<div class="lay_left">
+			<a class="logo">
+				<img src="../static/img/logo.png"/>
+			</a>
+			<!--左侧菜单-->
+			<ul class="sidebar-menu">
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_1"></i>
+						<span class="sidebar_category">信息总览</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_2"></i>
+						<span class="sidebar_category">团队管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_3"></i>
+						<span class="sidebar_category">签约商户</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="active">
+						<i class="sidebar_icon icon_4"></i>
+						<span class="sidebar_category">黑卡经纪人</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="sidebar_icon icon_5"></i>
+						<span class="sidebar_category">账号管理</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+	    <!--主体内容区域-->
+	    <div class="lay_body">
+	    	<div class="index_nav">
+	    		<!--详细信息-->
+	    		<div class="black_info_nav">
+	    			<!--个人信息-->
+	    			<div class="member_info">
+	    				<div class="header_info">
+	    					<img src="../static/img/header_default.png">
+	    					<p class="header_name">
+	    						杨颖
+	    					</p>
+	    				</div>
+	    				<div class="info_personal">
+	    					<div class="info_complet">
+    							<span class="info_complet_icon icon_1"></span>
+    							<span class="info_title">联系方式：</span>
+    							<span class="info">1865465254</span>
+    						</div>
+    						<div class="info_complet">
+    							<span class="info_complet_icon icon_2"></span>
+    							<span class="info_title">性   别：</span>
+    							<span class="info">女</span>
+    						</div>
+    						<div class="info_complet">
+    							<span class="info_complet_icon icon_3"></span>
+    							<span class="info_title">推荐人：</span>
+    							<span class="info">张飞</span>
+    						</div>
+    						<div class="info_complet">
+    							<span class="info_complet_icon icon_4"></span>
+    							<span class="info_title">经纪人签约时间：</span>
+    							<span class="info">2015-05-14</span>
+    						</div>
+	    				</div>
+	    			</div>
+	    		
+	    		    <!--个人签约商户信息-->
+	    		    <div class="active_nav">
+	    		    	<div class="active_area">
+	    		    		<span class="data_icon icon_1"></span>
+	    		    		<p class="data_num"><span class="int">255</span>人</p>
+	    		    		<p class="data_intro">
+    							推广人数
+    						</p>
+	    		    	</div>
+	    		    	<div class="active_area right_border">
+	    		    		<span class="data_icon icon_2"></span>
+	    		    		<p class="data_num">￥<span class="float">5888.00</span></p>
+	    		    		<p class="data_intro">
+    							累计推广收益
+    						</p>
+	    		    	</div>
+	    		    	<div class="active_area">
+	    		    		<span class="data_icon icon_3"></span>
+	    		    		<p class="data_num"><span class="int">2</span>家</p>
+	    		    		<p class="data_intro">
+    							签约商户数量
+    						</p>    						
+	    		    	</div>
+	    		    	<div class="active_area">
+	    		    		<span class="data_icon icon_2"></span>
+	    		    		<p class="data_num">￥<span class="float">5888.00</span></p>
+	    		    		<p class="data_intro">
+    							累计业务收益
+    						</p>
+	    		    	</div>
+	    		    </div>
+	    		</div>
+	    		<!--签约商户-->
+	    	    <div class="business_list">
+	    	    	<h4 class="title">签约商户</h4>
+	    	    	<!--列表-->
+	    	    	<ul class="account_list">
+	    	    		<li>
+		                    <div class="acount_area">
+			                    <div class="acount_show">
+			                    	<img class="header_ipc" src="../static/img/header_default.png" alt="">
+			                    	<img class="black_icon" src="../static/img/local01.png" alt="">
+			                        <p class="account_name">小龙坎火锅店</p>
+			                    </div>
+			                    <div class="account_menu">
+			                        <a><img src="../static/img/account02.png" alt=""> 查看详情</a>
+			                    </div>
+		                    </div>
+		                </li>
+	    	    	</ul>
+	    	    </div>
+	    	</div>
+	    </div>
+	<!--引入js-->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/js-plugs.js"></script>
+	<script src="../static/js/layer.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/member_details.js"></script>
+	</body>
+</html>

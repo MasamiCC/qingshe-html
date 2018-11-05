@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>业务收益</title>
+	<!--引入css-->
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap-datetimepicker.min.css"/>
+	<link rel="stylesheet" href="../static/css/layer.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/layout.css" />
+	<link rel="stylesheet" href="../css/BCMemDetail.css" />
+	<link rel="stylesheet" href="../css/businessIncome.css" />
+</head>
+
+<body>
+	<!--头部-->
+	<div class="lay_header">
+		<div class="navbar-custom-menu">
+			<span class="custom_icon"></span>
+			<span class="custom_name">管理员</span>
+			<!--操作区域-->
+			<div class="custom_op">
+				<a class="change_password">修改密码</a>
+				<a class="login_out">退出登录</a>
+			</div>
+		</div>
+	</div>
+
+	<!--左侧-->
+	<div class="lay_left">
+		<a class="logo">
+			<img src="../static/img/logo.png" />
+		</a>
+		<!--左侧菜单-->
+		<ul class="sidebar-menu">
+			<li>
+				<a href="information_view.html">
+					<i class="sidebar_icon icon_1"></i>
+					<span class="sidebar_category">信息总览</span>
+				</a>
+			</li>
+			<li>
+				<a href="#"  class="active">
+					<i class="sidebar_icon icon_6"></i>
+					<span class="sidebar_category">业务收益</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar_icon icon_2"></i>
+					<span class="sidebar_category">黑卡会员详情</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar_icon icon_3"></i>
+					<span class="sidebar_category">本地商户</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar_icon icon_4"></i>
+					<span class="sidebar_category">黑卡经纪人</span>
+				</a>
+			</li>
+			<li>
+				<a href="account.html">
+					<i class="sidebar_icon icon_5"></i>
+					<span class="sidebar_category">账号管理</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--主体内容区域-->
+	<div class="lay_body">
+		<div class="right_mian">
+			<!--顶部一条-->
+			<div class="BCtop">
+				<div class="BCtop_left">
+					<span><img src="../static/img/bIncomeIcon.png"/></span>
+					<span class="people">
+						<p>特约经纪人累计收益</p>
+						<p>￥5000.00</p>
+					</span>
+					<span class="quYu">
+						<p>区域负责人累计收益</p>
+						<p>￥5000.00</p>
+					</span>
+				</div>
+				<div class="BCtop_right">
+					<span>地区筛选</span>
+					<span>
+						<select name="">
+							<option value="">全部</option>
+							<option value="">1</option>
+							<option value="">2</option>
+						</select>
+					</span>
+					<span class="sele_time1">
+						<span>查询日期</span>
+						<span>
+							<label for="startTime">
+								<input type="text" class="form-control"  id='startTime' placeholder="" readonly="readonly" style="display:inline-block;width: 100px;height: 38px;padding: 6px 4px;"/>
+								<span class="startTime_icon time_icon"><img src="../static/img/rili1.png"/></span>
+							</label>
+						</span>
+						<span class="line"></span>
+						<span>
+							<label for="endTime">
+								<input type="text" class="form-control"  id='endTime' placeholder="" readonly="readonly" style="display:inline-block;width: 100px;height: 38px;padding: 6px 4px;"/>
+								<span class="endTime_icon time_icon"><img src="../static/img/rili1.png"/></span>
+							</label>
+						</span>
+					</span>
+					<span  class="input_span left5">
+						<input type="text" name="" id="" value="" placeholder="可输入会员名称或手机号进行搜索"  style="width: 265px;"/>
+					</span>
+					<span class='BCtop_icon left5 hoverColor'>搜索</span>
+					<span class='BCtop_icon left5 hoverColor'>导出表格</span>
+				</div>
+			</div>
+			<!--顶部一条-->
+			<!--表格-->
+				<div class="table_con">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>商户名称</th>
+							<th>商户BOSS</th>
+							<th>商户类型</th>
+							<th>商户签约人</th>
+							<th>所属区域</th>
+							<th>区域负责人</th>
+							<th>商户流水</th>
+							<th>特约经纪人提成</th>
+							<th>特约经纪人收益</th>
+							<th>区域负责人收益提成</th>
+							<th>区域负责人收益</th>
+						</tr>
+						<tr>
+							<td>四季花园酒店</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>小龙坎火锅（星湖101店）</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>四季花园酒店</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>小龙坎火锅（星湖101店）</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>四季花园酒店</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>小龙坎火锅（星湖101店）</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>四季花园酒店</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>小龙坎火锅（星湖101店）</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>四季花园酒店</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+						<tr>
+							<td>小龙坎火锅（星湖101店）</td>
+							<td>胡永飞</td>
+							<td>黑卡商户</td>
+							<td>胡永飞</td>
+							<td>崇川区</td>
+							<td>无</td>
+							<td>￥500.00</td>
+							<td>60%</td>
+							<td>￥500.00</td>
+							<td>0</td>
+							<td>￥100.00</td>
+						</tr>
+					</table>
+				</div>
+			<!--表格-->
+			<!--分页-->
+			<div class="pagenation">
+				<ul>
+					<li class="pagenationactive">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>...</li>
+					<li>上页</li>
+					<li>下页</li>
+				</ul>
+			</div>
+			<!--分页-->
+		</div>
+	</div>
+</body>
+<!--引入js-->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/js-plugs.js"></script>
+	<script src="../static/js/echarts.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../static/js/es5-shim.min.js"></script>
+	<script src="../static/js/es5-sham.min.js"></script>
+	<script src="../static/js/json3.min.js"></script>
+	<![endif]-->
+	<script src="../static/js/layer.js"></script>
+	<script src="../js/common.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.startTime_icon img').click(function(){
+				$('#startTime').datetimepicker('show');
+			})
+			$("#startTime").datetimepicker({  
+				language : 'zh-CN',  
+			    weekStart : 1,  
+			    todayBtn : 0,  
+			    autoclose : 1,  
+			    minView: "month",  
+			    format: 'yyyy-mm-dd',  
+			    forceParse : 0 ,
+			    container: '.lay_body',
+			})
+			
+			$('.endTime_icon img').click(function(){
+				$('#endTime').datetimepicker('show');
+			})
+			
+			$("#endTime").datetimepicker({  
+				language : 'zh-CN',  
+			    weekStart : 1,  
+			    todayBtn : 0,  
+			    autoclose : 1,  
+			    minView: "month",  
+			    format: 'yyyy-mm-dd',  
+			    forceParse : 0,
+			    container: '.lay_body'
+			})
+			
+	});
+	</script>
+</html>

@@ -1,0 +1,151 @@
+/*total*/
+.touristlistcenter{
+	padding-top: 80px;
+	padding-bottom: 20px;
+	background: #F7F7F7;
+}
+.inlineblock_container{
+	line-height: 0;
+	font-size: 0;
+}
+.inlineblock_container>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.touristlistcenter_body_list_middle{
+	vertical-align: top!important;
+	line-height: 1;
+}
+/*total*/
+/*head*/
+.touristlistcenter_header{
+	background: #fff;
+	padding: 15px;
+}
+.touristheader{
+	margin-right: 10px;
+}
+.touristheader img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.touristheader_bigfont{
+	font-size: 24px;
+	color: #333;
+}
+/*head*/
+/*body*/
+.touristlistcenter_body{
+	margin-top: 20px;
+	background: #fff;
+}
+.touristlistcenter_body_list{
+	padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.touristlistcenter_body_list_left img{
+	width: 160px;
+	height: 160px;
+}
+.touristlistcenter_body_list_left{
+	width: 14.7%;
+}
+.touristlistcenter_body_list_middle{
+	width: 59.2%;
+}
+.touristlistcenter_body_list_right{
+	width: 26.1%;
+}
+.touristlistcenter_body_list_left_content{
+	margin-right: 20px;
+}
+.touristlistcenter_body_list_right_content{
+	padding-left: 92px;
+    border-left: 1px solid #eee;
+}
+.touristlistcenter_body_list_left_content_bottom{
+	margin-top: 10px;
+}
+.salecomment{
+	color: #999;
+	border: 1px solid #999;
+	padding: 6px;
+	display: inline-block;
+	line-height: 1;
+	width: 147px;
+}
+.sale{
+	width: 40%;
+}
+.comment{
+	width: 60%;
+	text-align: right;
+}
+.checkroutedetail a{
+	color: #6894f8;
+}
+.touristlistcenter_body_list_middle_content_content_title{
+	font-size: 18px;
+	color: #000;
+	height: 50px;
+}
+.touristlistcenter_body_list_middle_content_content{
+	line-height: 1.8;
+    height: 134px;
+    color: #444;
+}
+.touristlistcenter_prices{
+	color: #ccc;
+	text-decoration: line-through;
+	line-height: 1;
+}
+.touristlistcenter_now_pce{
+	color: #333;
+}
+.touristlistcenter_nowprice{
+		color: #edb94a;
+		font-size: 36px;
+		font-family: arial;
+}
+.touristlistcenter_nowprices{
+	line-height: 2;
+}
+.touristlist_order{
+	display: inline-block;
+	color: #fff;
+	background: #edb94a;
+	padding: 12px 50px;
+	cursor: pointer;
+}
+.touristlistcenter_order{
+	line-height: 1;
+}
+.touristlistcenter_body_list_left_content_top a{
+	text-decoration: none;
+	color: inherit;
+}
+.touristlistcenter_body_list_middle_content a{
+	text-decoration: none;
+}
+/*body*/
+/*footer*/
+.touristlistcenter_footer{
+	background: #fff;
+	text-align: right;
+	padding: 25px;
+	color: #999;
+	margin-bottom: 30px;
+}
+.touristlistcenter_ul li{
+	display: inline-block;
+}
+.touristlistcenter_ul{
+	height: 80px;
+	line-height:80px ;
+}
+.touristlistcenter_footer_left{
+	margin-right: 20px;
+}
+/*footer*/

@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shop_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shetan_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+		    <h1 class="mui-title">视频播放</h1>
+		</header>
+		<div class="mui-content">
+			<div class="index_item" id="shetan_video">
+				<video width="100%" height=""  controls="controls"  preload="auto" poster="http://u0.qiyipic.com/image/20170629/17/fe/uv_3064608623_m_601.jpg" >
+					<source src="http://115.231.32.27/videos/v1/20170629/06/b8/0b8491af2772dd612dde6c9837f50033.mp4?key=09bb58d34f0dac7202732455a26429a67&dis_k=042d270bcfaa101ba311dc70764148cdf&dis_t=1499238291&dis_dz=OTHER-ZheJiang_HangZhou&dis_st=40&src=iqiyi.com&uuid=792894d2-595c8f93-62&qd_src=vcl&qdv=1&v=1017264080&qd_p=792894d2&qd_vip=0&qypid=8167727409_-106218&qd_uid=0&qd_tm=1499238291445&qd_ip=792894d2" type="video/mp4"></source>
+					<source src="myvideo.ogv" type="video/ogg"></source>
+					<source src="myvideo.webm" type="video/webm"></source>
+					<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+						<param name="movie" value="myvideo.swf" />
+						<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<div class="">
+					轻奢点评《奢探》直播之前田日料
+				</div>
+				<p>
+					<span>5月15日</span>
+					<span> <i class="fa fa-eye" style="margin-right: 5px;"></i>1150</span>
+				</p>
+			</div>
+			<div class="index_item" id="shop_card">
+				<div class="shop_card_l">
+					<img src="../image/icon/5.png"/>
+				</div>
+				<div class="shop_card_r">
+					<ul>
+						<li class="shop_card_title">科尔马小镇海湾咖啡厅</li>
+						<li class="shop_card_msg">
+							10.5KM | 西餐
+						</li>
+						<li class="shop_card_pingfen">
+							4.5 <small> 分 </small> <span class="mui-pull-right to_see">进去看看</span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="index_item" id="pingjia_list">
+				<h3 class="cat_sel_title">评价（5.0）</h3>
+				<div class="shop_detail_pj_item">
+	    			<div class="shop_detail_pj_left">
+	    				<img src="../image/nohead.png" onerror="this.src='../image/nohead.png'"/>
+	    			</div>
+	    			<div class="shop_detail_pj_right">
+	    				<ul>
+	    					<li class="user">风吹屁屁凉  <span class="user_lev"><i>V</i><small>1</small></span> </li>
+	    					<li class="user_xinyu">
+	    						<span class="pingjia_time ">发表于12小时前</span>
+	    					</li>
+	    					<li class="pingjia">
+	    						<p>
+	    							非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+	    						</p>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="shop_detail_pj_item">
+	    			<div class="shop_detail_pj_left">
+	    				<img src="../image/nohead.png" onerror="this.src='../image/nohead.png'"/>
+	    			</div>
+	    			<div class="shop_detail_pj_right">
+	    				<ul>
+	    					<li class="user">风吹屁屁凉  <span class="user_lev"><i>V</i><small>1</small></span> </li>
+	    					<li class="user_xinyu">
+	    						<span class="pingjia_time ">发表于12小时前</span>
+	    					</li>
+	    					<li class="pingjia">
+	    						<p>
+	    							非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+	    						</p>
+	    						
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    		<div class="shop_detail_pj_item">
+	    			<div class="shop_detail_pj_left">
+	    				<img src="../image/nohead.png" onerror="this.src='../image/nohead.png'"/>
+	    			</div>
+	    			<div class="shop_detail_pj_right">
+	    				<ul>
+	    					<li class="user">风吹屁屁凉  <span class="user_lev"><i>V</i><small>1</small></span> </li>
+	    					<li class="user_xinyu">
+	    						<span class="pingjia_time ">发表于12小时前</span>
+	    					</li>
+	    					<li class="pingjia">
+	    						<p>
+	    							非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+	    						</p>
+	    						
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <div id="shetan_pj">
+		    	<div  class="mui-input-row" id="shetan_pj_con">
+		    		<i class="fa fa-pencil" aria-hidden="true"></i>
+		        	<input type="text" class="" placeholder="请输入评论" maxlength="50">
+		    	</div>
+		    	
+		    </div>
+		    <span class="mui-pull-right" id="send_btn">
+		    	<i class="fa fa-paper-plane" aria-hidden="true"></i> 
+		    	发送
+		    </span>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+</script>
+<script type="text/javascript">
+	$(function(){
+		$('.mui-content').scroll(function(){
+			var top=$('.mui-content').scrollTop();
+			var height=$('.mui-content').height();
+			var c=$('.mui-content')[0].scrollHeight -top;
+			if (c-44==height) {
+				loadHistory()
+			}
+		})
+	})
+	var pageCount=1;
+	var pageEnd=false;
+	
+	function loadHistory(){
+		
+		if (!pageEnd) {
+			if (pageCount>=2) {
+				pageEnd=true;
+				mui.toast('没有更多数据了')
+			}else{
+				for( var i =0;i<10;i++){
+					var html='<div class="shop_detail_pj_item">'
+				    		+	'<div class="shop_detail_pj_left">'
+				    		+		'<img src="../image/nohead.png" onerror="this.src=\'../image/nohead.png\'">'
+				    		+	'</div>'
+				    		+	'<div class="shop_detail_pj_right">'
+				    		+		'<ul>'
+				    		+			'<li class="user">风吹屁屁凉  <span class="user_lev"><i>V</i><small>1</small></span> </li>'
+				    		+			'<li class="user_xinyu">'
+				    		+				'<span class="pingjia_time ">发表于12小时前</span>'
+				    		+			'</li>'
+				    		+			'<li class="pingjia">'
+				    		+				'<p>'
+				    		+					'非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......'
+				    		+				'</p>'
+				    		+			'</li>'
+				    		+		'</ul>'
+				    		+	'</div>'
+				    		+'</div>'
+					$("#pingjia_list").append(html);
+				}
+				pageCount++;
+			}
+			
+		}else{
+			mui.toast('没有更多数据了')
+		}
+	}
+	
+</script>

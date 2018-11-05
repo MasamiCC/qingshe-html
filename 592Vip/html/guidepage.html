@@ -1,0 +1,450 @@
+<!doctype html>
+
+<html lang="en">
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+   <link href="../css/guide.css" rel="stylesheet"/>
+   <link href="../css/guidepage.css" rel="stylesheet"/>
+   <style type="text/css">
+   	#fp-nav ul li:hover a span,
+	.fp-slidesNav ul li:hover a span{
+	    width: 10px;
+	    height: 10px;
+	    margin: -6px 0px 0px -6px;
+	}
+   </style>
+ </head>
+ <body>
+ 		<div class="page">
+			<!--<span class="sec1_img">-->
+				<!--<img src="../img/pageicons_01.png"/>-->
+				<div id="fp-nav" class="left">
+					<ul>
+					</ul>
+				</div>
+			<!--</span>-->
+		</div>
+		
+		<div class="Tright" style="display: none;">
+	    	<div class="pho1">
+	    		<ul class="sec2_ul">
+	    			<li>
+	    				<img class="pics qslogo1" src="../img/rqslogo.png" />
+	    			</li>
+	    			<li class="" id="randroid" >
+	    				<img class="pics  an1" src="../img/randroid.png" style="cursor: pointer;"/>
+	    			</li>
+	    			<li class="" id="riphone">
+	    				<img class="pics  iph1"  src="../img/riphone.png" style="cursor: pointer;"/>
+	    			</li>
+	    			<li class="mashow " id="maand">
+	    				<img class="pics we1" src="../img/androidshow.png"/>
+	    			</li>
+	    			<li class="mashow " id="maiph">
+	    				<img class="pics we1" src="../img/iphoneshow.png"/>
+	    			</li>
+	    			<li class="">
+	    				<img class="pics we1" src="../img/592vipma.png"/>
+	    			</li>
+	    			<li class="w_font1">
+	    				<img src="../img/triangle.png"/>
+	    				微信服务号 
+	    			</li>
+	    		</ul>
+	    	</div>
+        </div>  
+       
+	<div id="fullpage">
+		<div class="section active" id="section0" data-anchor="firstPage">
+			<!--<div class="content">-->
+					<div class="sec1_left">
+					</div>
+					<div class="sec1_middle">
+					</div>
+					<div class="sec1_right">
+						<div class="right1">
+							<img src="../img/qslogo.png"/>
+						</div>
+						<div class="right2">
+							<ul>
+								<li style="font-size: 32px;">未来生活，由你定义</li>
+								<li style="font-family: '微软雅黑';font-size: 18px; margin-top: 12px;">Future life , you charge</li>
+							</ul>
+						</div>
+						<div class="right3">
+							<div class="pho">
+							<ul>
+								<li>
+									<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jszb.android.app " target="_blank"><img src="../img/android.png"/></a>
+								</li>
+								<li class="iph">
+									<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jszb.android.app " target="_blank">
+									<img src="../img/iphone.png"/>
+									</a>
+								</li>
+							</ul>
+							</div>
+							<div class="ma">
+								<ul>
+									<li class="we">
+										<img src="../img/592vipma.png"/>
+									</li>
+									<li class="w_font">
+										<img src="../img/triangle.png"/>微信服务号
+									</li>
+								</ul>
+							</div>
+							<div class="page_icon dd1">
+								<a href = "#secondPage"><img src="../img/drop.png"/></a>
+							</div>
+						</div>
+					</div>
+			<!--</div>-->
+		</div>
+		<div class="section" id="section1" data-anchor="secondPage">
+			<!--<div class="slide" id="slide1">-->
+				<!--<div class="content">-->
+					<div class="sec2_left">
+						<!--<img src="../img/pageicons_02.png"/>-->
+					</div>
+					<div class="sec2_middle1">
+					</div>
+					<div class="sec2_middle2">
+						<ul>
+							<li class="yellow"><img src="../img/orange1.png"></li>
+							<li class="yellow"><img src="../img/orange2.png"></li>
+							<li>
+								<ul class="ul">
+									<li>点单</li>
+									<li>外卖</li>
+									<li>预约</li>
+									<li>团购</li>
+								</ul>
+							</li>
+							<li class="white w1">丰富的消费模式</li>
+							<li class="white w2">到店、在家均可享受</li>
+							<li class="page_icon1" id="dd2"><a href = "#3rdPage"><img src="../img/drop.png"/></a></li>
+						</ul>
+					</div>
+					<div class="sec2_right">
+					
+				    </div>
+				<!--</div>-->
+			<!--</div>-->
+		</div>
+		<div class="section" id="section2"  data-anchor="3rdPage">
+			<div class="sec3_left">
+						<!--<img src="../img/pageicons_03.png"/>-->
+			</div>
+			<div class="sec3_middle1">
+			</div>
+			<div class="sec3_middle2">
+				<ul>
+					<li class="middle1">
+						<div class="middle_top">
+						<div class="shopicon"><img src="../img/shopicon.png"/></div>
+						<div class="m_fonts fonts1">
+							<ul>
+								<li class="choose">轻奢优选</li>
+								<li class="choose" style="margin-top: 12px;">品质生活</li>
+							</ul>
+						</div>
+						
+						</div>
+					</li>
+					<li class="middle2">
+						<div class="rich m_fonts fonts2">
+							丰富店铺种类
+						</div>
+					</li>
+					<li class="middle3">
+						<ul class="ul3">
+							<li class="icons">
+								<ul>
+									<li><img src="../img/m_icon1.png"/></li>
+									<li class="fonts3">美味</li>
+								</ul>
+							</li>
+							<li class="icons">
+								<ul>
+									<li><img src="../img/m_icon2.png"/></li>
+									<li class="fonts3">酒店</li>
+								</ul>
+							</li>
+							<li class="icons">
+								<ul>
+									<li><img src="../img/m_icon3.png"/></li>
+									<li class="fonts3">定制</li>
+								</ul>
+							</li>
+							<li class="icons">
+								<ul>
+									<li><img src="../img/m_icon4.png"/></li>
+									<li class="fonts3">旅游</li>
+								</ul>
+							</li>
+							<li class="icons">
+								<ul>
+									<li><img src="../img/m_icon5.png"/></li>
+									<li class="fonts3">生活</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="page_icon2" id="dd3"><a href = "#4thpage"><img src="../img/drop.png"/></a></li>
+				</ul>
+			</div>
+			<div class="sec3_right">
+			
+		    </div>
+		</div>
+		<div class="section" id="section3"  data-anchor="4thpage">
+			<div class="sec4_left">
+						<!--<img src="../img/pageicons_04.png"/>-->
+					</div>
+					<div class="sec4_middle1">
+					</div>
+					<div class="sec4_middle2">
+						<ul>
+							<li class="yellow "><img src="../img/orange3.png"></li>
+							<li class="yellow "><img src="../img/orange4.png"></li>
+							<li class="wht w3">专业购物自媒体</li>
+							<li class="wht w4">
+								<ul class="shetan">
+									<li>奢探视频&nbsp;图文资讯</li>
+									<li style="margin-top: 21px;">我们发现&nbsp;你来享用</li>
+								</ul>
+							</li>
+							<li class="page_icon4" id="dd4"><a href = "#5thpage"><img src="../img/drop.png"/></a></li>
+						</ul>
+					</div>
+					<div class="sec2_right">
+				    </div>
+		</div>
+		<div class="section" id="section4" data-anchor="5thpage">
+			<div class="sec5_left">
+					<!--<img src="../img/pageicons_05.png"/>-->
+				</div>
+				<div class="sec5_middle">
+					<div class="top yel">下载APP ,更多精彩内容,等你来发现</div>
+					<div class="bottom">
+						<ul>
+							<li class="lie">
+								<ul>
+									<li><img src="../img/anicon.png"/></li>
+									<li class="yel">安卓版APP下载</li>
+								</ul>
+							</li>
+							<li class="lie ">
+								<ul>
+									<li><img src="../img/IPhicon.png"/></li>
+									<li class="yel">苹果版APP下载</li>
+								</ul>
+							</li>
+							<li class="lie">
+								<ul>
+									<li><img src="../img/maicon.png"/></li>
+									<li class="yel">微信公众二维码</li>
+								</ul>
+							</li>
+							<li class="page_icon5" id="dd5"><a href = "#lastPage"><img src="../img/dropyel.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div class="section" id="section5" data-anchor="lastPage">
+			<div class="sec6_top">
+					<div id="contact">
+						联系我们
+					</div>
+					<div id="dropyel">
+						<img src="../img/dropyel.png"/>
+					</div>
+				</div>
+				<div class="sec6_middle" style="margin-bottom: 267px;">
+					<div class="sec6_middlel">
+						<!--<img src="../img/pageicons_06.png"/>-->
+					</div>
+					<div class="sec6_middlem">
+						<div id="mapContainer"></div>
+					</div>
+					<div class="sec6_middler">
+						<ul>
+							<li>电话：0513-85799999</li>
+							<li>合作邮箱： service@chinajszb.com</li>
+							<li class="last li">公司地址：江苏省南通市经济技术开发区星湖101广场1108号8号楼18F</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sec6_bottom">
+					<footer class="footer" style="height: 100px;">
+						<div class="footer_copyRight">
+							<p>轻奢点评 / 地址：江苏省南通市经济技术开发区星湖101广场1101号8号楼18F</p>
+							<p>苏ICP备15038685号-2 增值电信业务经营许可证：苏B2-20160092</p>
+						</div>
+						<!--<div class="footer_rz">
+							<img src="../img/chengxin.png" alt="" />
+							<img src="../img/kexin.png" alt="" />
+							<img src="../img/chengxin.png" alt="" />
+							<img src="../img/kexin.png" alt="" />
+							<img src="../img/chengxin.png" alt="" />
+							<img src="../img/kexin.png" alt="" />
+							<img src="../img/chengxin.png" alt="" />
+							<img src="../img/kexin.png" alt="" />
+						</div>-->
+					</footer>
+				</div>
+		<!--</div>-->
+</div>
+ </body>
+ <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=5b4c94fd81c57ce0b38c605771edc43a"></script>
+  <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+  <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+	$(function() {
+		$('.mashow').bind({
+			'mouseout':function(){
+				$(".mashow").fadeOut()
+			}
+		})
+    $('#fullpage').fullpage({
+        anchors: ["firstPage","secondPage","3rdPage","4thpage","5thpage","lastPage"],
+        verticalCentered:false,
+        navigation:true,
+        onLeave:function(index,nextIndex,direction){
+        	//console.log(index);console.log(nextIndex);console.log(direction)
+        	if (index==2&&nextIndex==1&&direction=='up') {
+        		$(".Tright").fadeOut();
+        	}else if(index==4&&nextIndex==5&&direction=='down'){
+        		$(".Tright").fadeOut();
+        	}else if(index==6){
+        		$(".Tright").fadeOut();
+        	}else if(index==5&&nextIndex==6&&direction=='down'){
+        		$(".Tright").fadeOut();
+        	}else{
+        		$(".Tright").fadeIn();
+        	}
+        }
+    });
+  		
+		
+//		$('#randroid').bind({
+//			mouseenter:function(){
+//				$("#randroid,#riphone").css("display","none");
+//				$("#maand").css("display","block");
+//			},
+//			
+//			mouseleave:function(){
+//				$("#maand").css("display","none");
+//				$("#randroid,#riphone").css("display","block");
+//			}
+//			
+//		});
+
+	$('#randroid img').bind({
+			mouseover:function(){
+				$("#maand").fadeIn();
+			},
+		});
+    
+
+	$('#riphone img').bind({
+			mouseover:function(){
+				$("#maiph").fadeIn();
+
+			}
+		});
+		
+		});
+	
+	  
+   
+	
+  	    var windowsArr = [];
+	    var marker = [];
+	    var map = new AMap.Map("mapContainer", {
+	            resizeEnable: true,
+	            center: [120.944565,31.90],//地图中心点
+	            zoom: 13,//地图显示的缩放级别
+	            keyboardEnable: false
+	    });
+	        addMarker();
+    //添加marker标记
+    function addMarker() {
+        map.clearMap();
+        var marker = new AMap.Marker({
+            map: map,
+            position: [120.944565, 31.922909]
+        });
+        //鼠标点击marker弹出自定义的信息窗体
+        AMap.event.addListener(marker, 'click', function() {
+            infoWindow.open(map, marker.getPosition());
+        });
+     
+    }
+    
+    
+//infoWindow.open(map, marker.getPosition());
+    //实例化信息窗体
+    var title = '江苏轻奢点评文化科技有限公司',
+        content = [];
+    content.push("地址：江苏省南通市经济技术开发区星湖101广场1101号8号楼18F");
+    content.push("电话：0513-85799999");
+    content.push("合作邮箱： service@chinajszb.com");
+    var infoWindow = new AMap.InfoWindow({
+        isCustom: true,  //使用自定义窗体
+        content: createInfoWindow(title, content.join("<br/>")),
+        offset: new AMap.Pixel(16, -45)
+    });
+    infoWindow.open(map, [120.944565, 31.922909]);
+
+    //构建自定义信息窗体
+    function createInfoWindow(title, content) {
+        var info = document.createElement("div");
+        info.className = "info";
+
+        //可以通过下面的方式修改自定义窗体的宽高
+//      info.style.width = "400px";
+//      info.style.height = "400px";
+        // 定义顶部标题
+        var top = document.createElement("div");
+        var titleD = document.createElement("div");
+        var closeX = document.createElement("img");
+        top.className = "info-top";
+        closeX.className = "close";
+        titleD.innerHTML = title;
+        closeX.src = "https://webapi.amap.com/images/close2.gif";
+        closeX.onclick = closeInfoWindow;
+
+        top.appendChild(titleD);
+        top.appendChild(closeX);
+        info.appendChild(top);
+
+        // 定义中部内容
+        var middle = document.createElement("div");
+        middle.className = "info-middle";
+        middle.style.backgroundColor = 'white';
+        middle.innerHTML = content;
+        info.appendChild(middle);
+
+        // 定义底部内容
+        /*var bottom = document.createElement("div");
+        bottom.className = "info-bottom";
+        bottom.style.position = 'relative';
+        bottom.style.top = '0px';
+        bottom.style.margin = '0 auto';*/
+        return info;
+    }
+
+    //关闭信息窗体
+    function closeInfoWindow() {
+        map.clearInfoWindow();
+    }
+  </script>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢点评个人中心</title>
+	<link href="../css/layout1.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/Wcommon.css" />
+	<link rel="stylesheet" type="text/css" href="../css/new_boss.css" />
+	<style type="text/css">
+		.fee,
+		.fee:hover {
+			color: #D4AC57;
+		}
+
+		.boss_btn_d {
+			background: #ddd;
+			color: #fff;
+			border: 1px solid #ddd;
+			color: #999;
+		}
+
+		.edit_div input[type=radio] {
+			width: inherit;
+		}
+		.pingjia_re_btn:hover{
+			    color: #41a5f2;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="cont" id="index_cont">
+			<div class="content" id="main1">
+				<div id="t1">
+					<div id="pic1">
+						<img id="p1" src="../img/slogo.png" />
+					</div>
+				</div>
+				<div id="t2">
+					<div id="column1" class="columns active">
+						<p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>大生美业(开发区店)</p>
+					</div>
+					<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>大生美业(桃坞路店)</p>
+					</div>
+					<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>大生美业(港闸区店)</p>
+					</div>
+					<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png" />&nbsp;&nbsp;</span>大生美业(新开店)</p>
+					</div>
+				</div>
+			</div>
+			<!--个人中心正文中间部分-->
+			<div class="content" id="main2">
+				<div id="txt">
+					<!--正文部分开始-->
+					<!--头部-->
+					<div id="header">
+						<div id="head">
+							<div id="cl" class="head heade1">
+								<ul>
+									<li class="business"><i>商家中心</i>
+										<i class="shopname">当前商家：大生美业（桃坞路店）</i>
+									</li>
+									<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+								</ul>
+							</div>
+							<div id="cr" class="head head_r">
+								<div class="head heade2">
+									<img src="../img/qvip.png" />
+								</div>
+								<div class="head line">
+									<ul>
+										<li>下午好！13059891234</li>
+										<li>欢迎进入轻奢点评商家中心</li>
+									</ul>
+								</div>
+								<div class="head heade3">
+									<a href="" class="login_out"><img src="../img/esc.png" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--头部-->
+					<!--正文-->
+					<div class="boss_tj_div">
+						<div class="boss_tj_item">
+							<div class="boss_tj_item_l">
+								<ul class="tj_control">
+									<li class="active">本周</li>
+									<li>上周</li>
+									<li>本月</li>
+								</ul>
+								<div class="tj_control_div">
+									<div class="active">
+										<ul>
+											<li>
+												今日收益（元）
+												<span>3000.00</span>
+											</li>
+											<li>
+												今日订单（个）
+												<span>37</span>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												今日实收现金（元）
+												<span>3000.00</span>
+											</li>
+											<li>
+												今日实收黑钻（个）
+												<span>37</span>
+											</li>
+										</ul>
+									</div>
+									<div class="">
+										<ul>
+											<li>
+												本周收益（元）
+												<span>3000.00</span>
+											</li>
+											<li>
+												本周订单（个）
+												<span>37</span>
+											</li>
+										</ul>
+									</div>
+									<div class="">
+										<ul>
+											<li>
+												本月收益（元）
+												<span>3000.00</span>
+											</li>
+											<li>
+												本月订单（个）
+												<span>37</span>
+											</li>
+										</ul>
+									</div>
+									<div class="">
+										<ul>
+											<li>
+												上月收益（元）
+												<span>3000.00</span>
+											</li>
+											<li>
+												上月订单（个）
+												<span>37</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="boss_tj_item">
+							<div class="boss_tj_item_c">
+								<ul>
+									<li>
+										<img src="../img/zongE.png" alt=""><br>
+										<span style="font-size:14px;margin: 8px 0;" class="box2_title">黑钻总额</span>
+										<span>6000.00</span>
+										<span id="tixian_now" class="boss_btn boss_btn_a" onclick="tixian('6228 **** **** **** 0000','2000.00')">
+											立即提现
+										</span>
+									</li>
+									<li>
+											<img src="../img/dongJie.png" alt=""><br>
+											<span style="font-size:14px;margin: 8px 0;" class="box2_title">冻结黑钻</span>
+										<span>6000.00</span>
+										<span class="boss_btn">提现记录</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="boss_tj_item2">
+							<div class="item2_top">
+								<span class="top_title">平台使用费</span>
+								<span class="top_time">到期时间：2018-06-15</span>
+								<span class="top_green">使用中</span>
+								<span>/</span>
+								<span class="top_red">使用中</span>
+								<span class="topay">缴纳费用</span>
+							</div>
+							<div class="item2_bottom">
+								<div>
+									<span class="bottom_title">保证金</span>
+									<span class="jc">基础金额:200000:00</span>
+									<span class="sy">剩余金额:200000:00</span>
+								</div>
+								<div>
+									<button class="bzbzj">补足保证金</button>
+									<button class="ccjl">扣除记录</button>
+								</div>
+							</div>
+						</div>
+						<div class="txt_tongji">
+							<div>
+								<div>
+									<label class="rili_input"><input type="text" name="" id="startTime" value="" readonly="readonly" onclick="WdatePicker()"/><img src="../img/rili.png" class="riliimg"/></label>
+									<div class="heng">—</div>
+									<label class="rili_input"><input type="text" id="endTime"  readonly="readonly"  onclick="WdatePicker()"/><img src="../img/rili.png" class="riliimg"/></label>
+									
+								</div>
+								<span href="javascript:void(0)">筛选</span>
+								
+								<a href="javascript:void(0)" data-type='today'>今日流水</a>
+								<a href="javascript:void(0)" data-type='week'>本周流水</a>
+								<a href="javascript:void(0)" data-type='month'>本月流水</a>
+							</div>
+							
+						</div>
+
+					</div>
+
+					<div class="txt_list">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" class="list_table">
+							<thead>
+								<th>订单号</th>
+								<th>交易号</th>
+								<th>创建时间</th>
+								<th>交易类型</th>
+								<th>交易金额</th>
+
+								<!--<th>操作</th>-->
+
+							</thead>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-success">酒店预订</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-ing">处理中</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-success">美食预定</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-ing">美食预定</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-success">酒店预订</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-ing">美食预定</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-success">酒店预订</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-ing">酒店预订</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-success">已完成</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+							<tr>
+								<td class="list_center">14980340690060848</td>
+								<td class="list_center">QSDP_1245665544444</td>
+
+								<td class="list_center list_time">2017-12-01 12:00</td>
+								<td class="list_center list_status">
+									<span class="font-fail">提现失败</span>
+								</td>
+								<td class="list_center price_u">100.00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="txt_page">
+						<ul>
+							<!--<li class="page_item page_disabled">第一页</li>-->
+							<li class="page_item page_active">1</li>
+							<li class="page_item">2</li>
+							<li class="page_item">3</li>
+							<li class="page_item">4</li>
+							<li class="page_item">...</li>
+							<li class="page_item">7</li>
+							<li class="page_item">8</li>
+							<!--<li class="page_item">下一页</li>-->
+						</ul>
+						<div class="page_total">
+							当前时间段内共有<span style="color: #d4ac57;">12</span>单 收入合计：
+							<span id="" style="font-size: 20px;color: #d4ac57;">
+								5800.00
+							</span>元
+						</div>
+					</div>
+					<!--正文-->
+					<!--正文部分结束-->
+
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/Vlayout.js"></script>
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/vboss.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function () {
+		var now = new Date();
+	})
+
+	function tixianAll(me, totalAmount) {
+		$(me).prev().val(totalAmount)
+	} 
+</script>
+
+</html>

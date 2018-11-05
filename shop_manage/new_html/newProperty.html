@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢点评商品管理</title>
+	<link href="../css/layout1.css" rel="stylesheet" />
+	<link href="../css/Vzizhuanghu.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../css/minimal.css"/>
+	<link rel="stylesheet" href="../css/layer.css">
+	<script type="text/javascript" src="../../592Vip/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/icheck.min.js"></script>
+	<style type="text/css">
+		.use:checked {
+			color: red;
+		}
+		.btn_red {
+			background-color: #fc7875;
+		}
+		.ope{
+			color: white;
+			border-radius: 4px;
+			cursor: pointer;
+			padding: 2px 5px;
+		}
+		tr>td{
+			border: 1px solid #eeeeee;
+		}
+		.txt_list th {
+			height: 50px;
+		}
+		.edit_div {
+			padding: 10px 0;
+		}
+
+		.edit_div li {
+			padding: 10px 0;
+		}
+
+		.edit_div form {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.edit_div form input {
+			border: 1px solid #ccc;
+			padding: 3px;
+			border-radius: 3px;
+			width: 200px;
+		}
+
+		.opeBtn>span {
+			cursor: pointer;
+		}
+		.del_cat_nav{
+			padding: 0 80px;
+		}
+		.del_cat_nav>P{
+			font-size: 18px;
+			text-align: center;
+			margin-top: 47px;
+		}
+		.btn_area{
+			margin-top: 40px;
+			overflow: hidden;	
+		}
+		
+		.btn_area .btn{
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 30px;
+			border: 1px solid #333333;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			-webkit-transition: .5s 0s all;
+		 	-o-transition: .5s 0s all;
+		 	-moz-transition: .5s 0s all;
+		 	-ms-transition: .5s 0s all;
+		 	transition: .5s 0s all;
+		}
+		
+		.btn_area .btn.confirm{
+			background-color: #333333;
+			color: #ffffff;
+		}
+		
+		.btn_area .btn.confirm:hover{
+			opacity: .8;
+		}
+		
+		.btn_area .btn.cancel:hover{
+			background-color: #eaeaea;
+		}
+		.layui-layer{
+			border-radius: 8px;
+		}
+		.fr{
+			float:right;
+		}
+		.txt_list_form select{
+			border: solid 1px #dddddd;height:30px;margin-left: 15px;width: 120px;text-indent: 10px;
+		}
+		.txt_list {
+		    margin: 25px 30px;
+		}
+		.btn_con{
+			display: inline-block;
+			width: 49.5%;
+		}
+		.icheckbox_minimal{
+			margin-right: 7px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="cont" id="index_cont">
+			<div class="content" id="main1">
+				<div id="t1">
+					<div id="pic1">
+						<img id="p1" src="../img/slogo.png" />
+					</div>
+				</div>
+				<div id="t2">
+					<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+					</div>
+					<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+					</div>
+					<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>订单管理</p>
+						<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+					</div>
+					<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png" />&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+					</div>
+				</div>
+			</div>
+			<!--个人中心正文中间部分-->
+			<div class="content" id="main2">
+				<div id="txt">
+					<!--正文部分开始-->
+					<!--头部-->
+					<div id="header">
+						<div id="head">
+							<div id="cl" class="head heade1">
+								<ul>
+									<li class="business"><i>商品管理 > 新增属性 </i>
+										<i class="shopname">当前商家：江南厨房</i>
+									</li>
+								</ul>
+							</div>
+							<div id="cr" class="head head_r">
+								<div class="head heade2">
+									<img src="../img/qvip.png" />
+								</div>
+								<div class="head line">
+									<ul>
+										<li>下午好！13059891234</li>
+										<li>欢迎进入轻奢点评商家中心</li>
+									</ul>
+								</div>
+								<div class="head heade3">
+									<a href="" class="login_out"><img src="../img/esc.png" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--头部-->
+					<!--正文-->
+					<div class="txt_list">
+						<form action="" class="txt_list_form">
+							商户类型（*）：
+							<select name=""  style="" >
+								<option value="">请选择</option>
+							</select>
+							<select name=""  style="" >
+								<option value="">请选择</option>
+							</select>
+							<select name=""  style="" >
+								<option value="">请选择</option>
+							</select>
+							<span class="search_btn" id="save_new_cat" style="padding: 6px 40px;border-radius: 5px;background: #221910;color: #fff;margin-left: 15px;">搜索</span>
+						</form>
+					</div>
+					<div class="txt_list">
+						<table border="0" cellspacing="0" cellpadding="0" class="list_table">
+							<tr>
+								<th width="80px"><input type="checkbox" name="" id="" value=""/>全选</th>
+								<th width="245px">属性名称</th>
+								<th width="320px">属性值</th>
+							</tr>
+							<tr>
+								<td class="list_center "><input type="checkbox" name="" id="" value=""/></td>
+								<td class="list_center ">免费停车 </td>
+								<td class="list_center zn">是</td>
+							</tr>
+						<tr>
+								<td class="list_center "><input type="checkbox" name="" id="" value=""/></td>
+								<td class="list_center ">免费WiFi </td>
+								<td class="list_center zn">否</td>
+							</tr>
+						</table>
+						<div class="" style="margin-top: 75px;width: 650px;text-align: center;">
+							<div class="btn_con">
+								<span class="search_btn"  style="padding: 6px 40px;border-radius: 5px;background: #221910;color: #fff;margin-left: 15px;">保存</span>
+							</div>
+							<div class="btn_con">
+								<span class="search_btn del" style="padding: 6px 40px;border-radius: 5px;background: #cccccc;color: #fff;margin-left: 15px;">取消</span>
+							</div>
+						</div>
+					</div>
+					<!--正文-->
+					<!--正文部分结束-->
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="../js/Vlayout.js"></script>
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var $checkboxAll = $("#checkedAll"),
+	    $checkbox = $(".txt_list_form").find("[type='checkbox']").not("[disabled]"),
+	    length = $checkbox.length,
+	    
+	    i=0;
+	
+		//启动icheck
+		$("input[type='checkbox']").iCheck({
+		    checkboxClass: 'icheckbox_minimal',
+		    increaseArea: '0%' 
+		  });
+		
+		//全选checkbox
+		$checkboxAll.on("ifClicked",function(event){
+		  if(event.target.checked){
+		    $checkbox.iCheck('uncheck');
+		    i=0;
+		  }else{
+		    $checkbox.iCheck('check');
+		    i=length;
+		  }
+		});
+		
+		//监听计数  
+		$checkbox.on('ifClicked',function(event){
+			debugger
+		  event.target.checked ? i-- : i++;
+		  if(i==length){
+		    $checkboxAll.iCheck('check');
+		  }else{
+		    $checkboxAll.iCheck('uncheck');
+		  }
+		})
+	})	
+		
+		var delGoods
+		$(document).on('click', '.del', function () {
+			delGoods = layer.open({
+				type: 1,
+				area: ['500px', '210px'],
+				title: false,
+				closeBtn: 0,
+				shade: 0.5,
+				shadeClose: true,
+				content: "<div class='del_cat_nav'><p class='title'>确定取消添加此新增属性么？</p><div class='btn_area'><a class='btn confirm fl'>确定</a><a class='btn cancel fr'>取消</a></div></div>"
+			});
+		})
+		$(document).on('click', '.del_cat_nav .cancel ', function () {
+            layer.close(delGoods); 
+        })
+</script>
+</html>

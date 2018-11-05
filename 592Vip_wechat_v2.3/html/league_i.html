@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				list-style: none;padding: 0;margin: 0;outline: none;
+				text-align: center;
+			}
+			.mui-content{
+				min-width: 300px;
+			}
+			li{
+				font-size: 0;line-height: 0;position: relative;
+			}
+			li img{
+				max-width: 100%;
+			}
+			button{
+				position: absolute;bottom: 1.8rem;width: 80%;max-width: 534px;left: 0;right: 0;margin: 0 auto;
+				background: #f8a120;color: #fff;
+				border: none;
+				border-radius: 30px;
+				padding: 0.50rem 0;
+			}
+			button:active,button:hover{
+				background: #f8a120;
+			}
+			.sc{
+				line-height: 1.5;
+				position: absolute;bottom: 0.8rem;
+				text-align: center;
+				width: 100%;
+			}
+			.sc a,.sc a:hover{
+				color: #f8a120;text-decoration: underline;line-height: 1.5;
+			}
+			@media only screen and (min-width: 420px)  {
+				.sc{
+					bottom: 1.1rem;
+				}
+				button{
+					bottom: 2rem;
+				}
+			}
+			@media only screen and (min-width: 500px)  {
+				.sc{
+					bottom: 1.6rem;
+				}
+				button{
+					bottom: 2.3rem;
+					line-height: 1.8;
+				}
+			}
+			@media only screen and (min-width: 630px)  {
+				.sc{
+					bottom: 2rem;
+				}
+				button{
+					bottom: 2.8rem;
+					line-height: 2.2;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul>
+				<li><img src="../image/jm_1.png"/></li>
+				<li><img src="../image/jm_2.png"/></li>
+				<li><img src="../image/jm_3.png"/></li>
+				<li><img src="../image/jm_4.png"/></li>
+				<li>
+					<img src="../image/jm_5.png"/>
+				</li>
+				
+				<li><img src="../image/jm_6.png"/></li>
+				<li>
+					<img src="../image/jm_7.png"/>
+					
+					<div class="sc" style="font-size: 0.75rem;text-align: center;">
+						<button id="sq">在线申请</button>
+						<a href="businessDoc.html">渠道招商政策</a>
+					</div>
+				</li>
+			</ul>
+		    
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$("#sq").on('tap',function(){
+			location.href='league.html'
+		})
+	})
+</script>

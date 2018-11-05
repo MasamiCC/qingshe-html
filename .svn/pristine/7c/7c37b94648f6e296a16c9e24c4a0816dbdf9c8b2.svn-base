@@ -1,0 +1,94 @@
+*{
+			moz-user-select: -moz-none;
+			-moz-user-select: none;
+			-o-user-select:none;
+			-khtml-user-select:none;
+			-webkit-user-select:none;
+			-ms-user-select:none;
+			user-select:none;
+			}
+			::-webkit-input-placeholder { /* WebKit browsers */
+		
+		　　color:#ddd;
+		
+		　　}
+		
+		　　:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		
+		　　color:#ddd;
+		
+		　　}
+		
+		　　::-moz-placeholder { /* Mozilla Firefox 19+ */
+		
+		　　color:#ddd;
+		
+		　　}
+		
+		　　:-ms-input-placeholder { /* Internet Explorer 10+ */
+		
+		　　color:#ddd;
+		
+		　　}
+			.form{
+				background: #eee;
+			}
+			.form:before,.form:after{
+				height: 0;
+			}
+			.form>div{background: #fff;margin: 0.5rem 0;}
+			.form>div:first-child{
+				margin-top: 0;
+			}
+			.form .mui-input-row:last-child:after{
+				height: 0;
+			}
+			.sendCode{
+				font-size: 0.875rem;color: #ddd;position: absolute;top: 10px;right: 0;
+				border-left: 1px solid #ddd;
+				padding: 0px 10px;
+				
+			}
+			.sendCode.active{
+				color: #41a5f2;
+			}
+			.mui-input-group .mui-input-row{height: inherit;}
+			.mui-input-row label{
+				color: #999;font-weight:400;
+				font-size: 0.875rem;
+				line-height: 1.3;
+			}
+			input,textarea{
+				color: #ddd;font-size: 0.875rem;
+			}
+			textarea{
+				margin-bottom: 3px;
+			}
+			@media only screen and (min-width:370px)  {
+				.mui-input-row label{
+					width: 25%;
+				}
+				.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+					width: 75%;
+				}
+			}
+			#add_img{
+				max-width: 5rem;float: none;margin: 0.75rem;border:1px dashed #ddd;
+				margin-left:0;
+			}
+			.btn{
+				background: none!important;text-align: center;
+			}
+			.btn span{
+				display: block;
+				width: 84%;
+				margin: 0 auto;
+				background: #f2cd41;
+				color: #fff;
+				border-radius: 2rem;
+				padding: 10px 0;
+			}
+			.btn span:active{
+				background: #e6c23b;
+			}
+			input[type=file]{display: none;}

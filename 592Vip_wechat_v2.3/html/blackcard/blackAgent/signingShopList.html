@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>签约中商户列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/signingShopList.css"/>
+		<style>
+			.mui-content{
+				background: #F4F4F4;
+			}
+			.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+				width: 50%;
+				/*padding: 2px 0;
+				border-right: 1px solid red;*/
+			}
+			#slider{
+				/*top: 83px;*/
+			}
+			.all_ss_title{
+				padding: 45px 0 16px 0;
+				font-size: 1.125rem;
+				font-weight: bold;
+			}
+			.all_ssNew{
+				position: absolute;
+				top: 43px;
+				right: 15px;
+			}
+			.all_ssNew img{
+				width: 23px;
+			}
+			.all_ss_title_con{
+				background: #fff;
+				text-align: center;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div class="all_ss_title_con">
+				<div class="all_ss_title">
+					已签约商户列表
+				</div>
+				<div class="all_ssNew">
+					<img src="../images/signedSNew.png"/>
+				</div>
+			</div>-->
+		<div class="mui-content">
+			
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active " href="#item1mobile">
+							审核中
+						</a>
+						<a class="mui-control-item borderL" href="#item2mobile">
+							审核失败
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view backWhite item1mobileul">
+									<li class="mui-table-view-cell signinglist_con">
+										<div class="signinglist">
+											<div class="signinglist_left">
+												<div class="signinglist_left_title">
+													小龙坎火锅（星湖101）
+												</div>
+												<div class="signinglist_left_font">
+													2015年5月15日 15:30:56提交申请，轻奢点评将在24小时之内进行反馈
+												</div>
+											</div>
+											<div class="signinglist_right">
+												<span class="contant_span">联系客服</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view backWhite">
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../../../js/mui.min.js"></script>
+<script src="../../../js/mui.pullToRefresh.js"></script>
+<script src="../../../js/mui.pullToRefresh.material.js"></script>
+<script>
+	mui.init();
+	(function($) {
+		//阻尼系数
+		var deceleration = mui.os.ios?0.003:0.0009;
+		$('.mui-scroll-wrapper').scroll({
+			bounce: false,
+			indicators: true, //是否显示滚动条
+			deceleration:deceleration
+		});
+		$.ready(function() {
+			$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+				$(pullRefreshEl).pullToRefresh({
+					up: {
+						auto:true,
+						callback: function() {
+							var self = this;
+							setTimeout(function() {
+								var ul = self.element.querySelector('.mui-table-view');
+								ul.appendChild(createFragment(ul, index, 5));
+								self.endPullUpToRefresh(true);
+							}, 1000);
+						}
+					}
+				});
+			});
+			var createFragment = function(ul, index, count, reverse) {
+				var fragment = document.createDocumentFragment();
+				var li;
+				console.log(index)
+				for (var i = 0; i < count; i++) {
+					
+					li = document.createElement('li');
+					li.className = 'mui-table-view-cell signinglist_con';
+					
+					signinglist=document.createElement('div');
+					signinglist.className='signinglist';
+					
+					signinglist_left=document.createElement('div');
+					signinglist_left.className='signinglist_left';
+					
+					signinglist_right=document.createElement('div');
+					signinglist_right.className='signinglist_right';
+					
+					fragment.appendChild(li);
+					li.appendChild(signinglist)
+					signinglist.appendChild(signinglist_left);
+					signinglist.appendChild(signinglist_right);
+					
+					signinglist_left.innerHTML='<div class="signinglist_left_title">'
+									+				'小龙坎火锅（星湖101）'
+									+			'</div>'
+									if(0==index){
+										signinglist_left.innerHTML+='<div class="signinglist_left_font">2015年5月15日 15:30:56提交申请，轻奢点评将在24小时之内进行反馈</div>';
+									}else if(1==index){
+										signinglist_left.innerHTML+='<div class="signinglist_left_font">轻奢点评在2015年5月12日24:25:26 完成审核</div>';
+									}
+									
+						if(0==index){
+							signinglist_right.innerHTML='<span class="contant_span">联系客服</span>';
+						}else if(1==index){
+							signinglist_right.innerHTML='<span class="contant_span">查看原因</span>';
+						}
+						
+				}
+				return fragment;
+			};
+		});
+	})(mui);
+	
+</script>

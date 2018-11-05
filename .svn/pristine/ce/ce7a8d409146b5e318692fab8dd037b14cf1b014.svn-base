@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			body{
+				background: #fff;
+			}
+			.mui-content{
+				padding: 10px;background: #fff;font-size: 0.75rem;
+			}
+			.mui-content h4{
+				font-size: 0.75rem;
+			}
+			.mui-content p{
+				font-size: 0.75rem;color: #666;text-indent: 1.5rem;line-height: 1.5;
+			}
+			.mui-content img{
+				max-width: 100%;margin: 0.5rem auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">商家介绍</h1>
+		</header>
+		<div class="mui-content">
+		    <img src="../image/banner@2X.png"/>
+		    <h4>
+		    	保时捷911
+		    </h4>
+		    <p>
+		    	保时捷911（Porsche 911）是德国斯图加特的保时捷所制造的跑车，由亚历山大·保时捷（Ferdinand Alexander Porsche）亲自设计。自1964年演变至今的911，因其独特的风格与极佳的耐用性享誉国际。不管911如何进化，由金龟车（Volkswagen Beetle）延续至997的后置发动机这种传统从来没有被舍弃过，连空冷发动机也一直坚持到1999年才在全新的996上转用水冷发动机。
+		    </p>
+		    <h4>
+		    	保时捷Boxster
+		    </h4>
+		    <img src="../image/banner@2X.png"/>
+		    <p>
+		    	保时捷Boxster是保时捷公司的一款双门双座敞篷跑车，引擎采中置后驱设计，最早以概念车形式亮相于北美车展展出。第一代量产车（代号986）发布于1996年，第二代产品发布于2004年。[2] 
+		    </p>
+		    <h4>
+		    	保时捷Boxster
+		    </h4>
+		    <p>
+		    	保时捷911（Porsche 911）是德国斯图加特的保时捷所制造的跑车，由亚历山大·保时捷（Ferdinand Alexander Porsche）亲自设计。自1964年演变至今的911，因其独特的风格与极佳的耐用性享誉国际。不管911如何进化，由金龟车（Volkswagen Beetle）延续至997的后置发动机这种传统从来没有被舍弃过，连空冷发动机也一直坚持到1999年才在全新的996上转用水冷发动机。
+		    </p>
+		    <h4>
+		    	保时捷Boxster
+		    </h4>
+		    <img src="../image/banner@2X.png"/>
+		    <p>
+		    	保时捷Boxster是保时捷公司的一款双门双座敞篷跑车，引擎采中置后驱设计，最早以概念车形式亮相于北美车展展出。第一代量产车（代号986）发布于1996年，第二代产品发布于2004年。[2] 
+		    </p>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+</script>

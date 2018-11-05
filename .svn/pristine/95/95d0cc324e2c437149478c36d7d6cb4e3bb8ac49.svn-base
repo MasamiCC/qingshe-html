@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>社会捐赠</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/social_donation.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			body{background: #fff;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="social_item social_pic">
+		    	<img src="../image/social_donation_pic.png"/>
+		    </div>
+		    <div class="social_item social_form">
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell">
+	    	                <input type="text" placeholder="请输入捐赠金额" id="social_price" maxlength="6">
+		    	        </li>
+		    	        <li class="mui-table-view-cell">
+		    	        	<div class="mui-pull-left">
+		    	        		<div class="mui-input-row mui-checkbox mui-left">
+			    	              <label for="niming">匿名捐赠</label>
+			    	              <input name="checkbox1" type="checkbox"  id="niming" >
+			    	            </div>
+		    	        	</div>
+		    	        	<div class="mui-pull-right">
+		    	        		<i class="fa fa-heart-o"></i>您的爱心值将增加  <span id="point">0 </span>分
+		    	        	</div>
+		    	        </li>
+		    	    </ul>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab social_nav">
+		    <div>支付<span id="amount">0.0</span>元 确认捐赠</div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	var reg = /^([1-9]\d{0,9}|0)([.]?|(\.\d{1,2})?)$/;
+	$(function(){
+		$('#social_price').on('input',function(){
+			var val=$(this).val();
+			if (!reg.test(val)) {
+				$("#amount").html('0.00');
+				$("#social_price").val(val.substr(0,val.length-1))
+			} else{
+				$("#amount").html(parseFloat(val).toFixed(2))
+				$("#point").html(parseInt(val/100))
+			}
+		})
+		$(".social_nav").on('tap',function(){
+			var price=parseFloat($('#social_price').val());
+			if(isNaN(price)||price==0){
+				alert('捐赠金额不正确');
+				$('#social_price').focus()
+			}else{
+				price=parseFloat(price).toFixed(2)
+			}
+			var niming=$("#niming").is(":checked");
+			console.log(price,niming)
+		})
+	})
+</script>

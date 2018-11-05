@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/my_collection.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">我收藏的帖子</h1>
+		</header>
+		<div class="mui-content">
+			<!--没有数据-->
+				<!--<div class="nodata">
+					<ul>
+						<li style="font-size: 30px;padding: 5px 0;color: #ccc;">
+							<i class="fa fa-heart"></i>
+						</li>
+						<li style="color: #999999;line-height: 2;font-size: 0.875rem;">您还没有收藏的商品</li>
+						<li>
+							<span class="seesee">去逛逛</span>
+						</li>
+					</ul>
+				</div>-->
+			<!--没有数据-->
+		    <div class="mui-scroll-wrapper" id="pullrefresh">
+		        <div class="mui-scroll">
+		            <ul class="mui-table-view" id="collect_list">
+		            		
+		                    <li class="mui-table-view-cell collect_item">
+		                        <div class="collection_shop">
+		                        	<div class="mui-pull-left">
+		                        		<img src="../image/icon/texuan.png"/>轻奢美食汇
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		<i class="fa fa-heart"></i>
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                        <div class="collection_title">
+		                        	帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊
+		                        </div>
+		                        <div class="collection_intro">
+		                        	　　苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介
+		                        </div>
+		                        <div class="collection_img">
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        </div>
+		                        <div class="collection_count">
+		                        	<div class="mui-pull-left">
+		                        		<span><i class="fa fa-commenting-o"></i>122</span>
+		                        		<span><i class="fa fa-thumbs-o-up"></i>122</span>
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		2017-04-12 15:24
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                    </li>
+		                    <li class="mui-table-view-cell collect_item">
+		                        <div class="collection_shop">
+		                        	<div class="mui-pull-left">
+		                        		<img src="../image/icon/texuan.png"/>轻奢美食汇
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		<i class="fa fa-heart-o"></i>
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                        <div class="collection_title">
+		                        	帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊
+		                        </div>
+		                        <div class="collection_intro">
+		                        	　　苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介
+		                        </div>
+		                        <div class="collection_count">
+		                        	<div class="mui-pull-left">
+		                        		<span><i class="fa fa-commenting-o"></i>122</span>
+		                        		<span><i class="fa fa-thumbs-o-up"></i>122</span>
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		2017-04-12 15:24
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                    </li>
+		                    <li class="mui-table-view-cell collect_item">
+		                        <div class="collection_shop">
+		                        	<div class="mui-pull-left">
+		                        		<img src="../image/icon/texuan.png"/>轻奢美食汇
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		<i class="fa fa-heart"></i>
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                        <div class="collection_title">
+		                        	帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊
+		                        </div>
+		                        <div class="collection_intro">
+		                        	　　苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介
+		                        </div>
+		                        <div class="collection_img">
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        </div>
+		                        <div class="collection_count">
+		                        	<div class="mui-pull-left">
+		                        		<span><i class="fa fa-commenting-o"></i>122</span>
+		                        		<span><i class="fa fa-thumbs-o-up"></i>122</span>
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		2017-04-12 15:24
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                    </li>
+		                    <li class="mui-table-view-cell collect_item">
+		                        <div class="collection_shop">
+		                        	<div class="mui-pull-left">
+		                        		<img src="../image/icon/texuan.png"/>轻奢美食汇
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		<i class="fa fa-heart"></i>
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                        <div class="collection_title">
+		                        	帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊
+		                        </div>
+		                        <div class="collection_intro">
+		                        	　　苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介
+		                        </div>
+		                        <div class="collection_img">
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        </div>
+		                        <div class="collection_count">
+		                        	<div class="mui-pull-left">
+		                        		<span><i class="fa fa-commenting-o"></i>122</span>
+		                        		<span><i class="fa fa-thumbs-o-up"></i>122</span>
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		2017-04-12 15:24
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                    </li>
+		                    <li class="mui-table-view-cell collect_item">
+		                        <div class="collection_shop">
+		                        	<div class="mui-pull-left">
+		                        		<img src="../image/icon/texuan.png"/>轻奢美食汇
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		<i class="fa fa-heart"></i>
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                        <div class="collection_title">
+		                        	帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊
+		                        </div>
+		                        <div class="collection_intro">
+		                        	　　苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介
+		                        </div>
+		                        <div class="collection_img">
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        	<img src="../image/hotel_logo.png"/>
+		                        </div>
+		                        <div class="collection_count">
+		                        	<div class="mui-pull-left">
+		                        		<span><i class="fa fa-commenting-o"></i>122</span>
+		                        		<span><i class="fa fa-thumbs-o-up"></i>122</span>
+		                        	</div>
+		                        	<div class="mui-pull-right">
+		                        		2017-04-12 15:24
+		                        	</div>
+		                        	<div class="clear"></div>
+		                        </div>
+		                    </li>
+		                   
+		                </ul>
+		        </div>
+		    </div>
+		    
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+			container: '#pullrefresh',
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	heartClick();
+	
+	/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('#collect_list');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 3; i < len; i++) {
+						var size=mui('.collect_item').length;
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell collect_item';
+						li.innerHTML = ' <div class="collection_shop">'
+				                    +    	'<div class="mui-pull-left">'
+				                    +    		'<img src="../image/icon/texuan.png">轻奢美食汇'+size
+				                    +    	'</div>'
+				                    +    	'<div class="mui-pull-right">'
+				                    +    		'<i class="fa fa-heart"></i>'
+				                    +    	'</div>'
+				                    +    	'<div class="clear"></div>'
+				                    +    '</div>'
+				                    +    '<div class="collection_title">'
+				                    +    	'帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊'
+				                    +    '</div>'
+				                    +    '<div class="collection_intro">'
+				                    +    	　　'苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介'
+				                    +    '</div>'
+				                    +    '<div class="collection_img">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    '</div>'
+				                    +    '<div class="collection_count">'
+				                    +    	'<div class="mui-pull-left">'
+				                    +    		'<span><i class="fa fa-commenting-o"></i>122</span>'
+				                    +    		'<span><i class="fa fa-thumbs-o-up"></i>122</span>'
+				                    +    	'</div>'
+				                    +    	'<div class="mui-pull-right">'
+				                    +    		'2017-04-12 15:24'
+				                    +    	'</div>'
+				                    +    	'<div class="clear"></div>'
+				                    +    '</div>'
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+						
+					}
+					
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+					heartClick();
+				}, 500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('#collect_list');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 3; i < len; i++) {
+						var size=mui('.collect_item').length;
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell collect_item';
+						li.innerHTML = ' <div class="collection_shop">'
+				                    +    	'<div class="mui-pull-left">'
+				                    +    		'<img src="../image/icon/texuan.png">轻奢美食汇'+size
+				                    +    	'</div>'
+				                    +    	'<div class="mui-pull-right">'
+				                    +    		'<i class="fa fa-heart"></i>'
+				                    +    	'</div>'
+				                    +    	'<div class="clear"></div>'
+				                    +    '</div>'
+				                    +    '<div class="collection_title">'
+				                    +    	'帖子标题好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长啊'
+				                    +    '</div>'
+				                    +    '<div class="collection_intro">'
+				                    +    	　　'苹果MacBook（MC375CH/A）笔记本，采用主频高达2.66GHz的酷睿2双核P8800处理器、NVIDIA GeForce 320M 图形处理器，并搭载了4GB内存与320GB硬盘，整机性能相当强劲。产品介绍概介简介简介简介简介'
+				                    +    '</div>'
+				                    +    '<div class="collection_img">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    	'<img src="../image/hotel_logo.png">'
+				                    +    '</div>'
+				                    +    '<div class="collection_count">'
+				                    +    	'<div class="mui-pull-left">'
+				                    +    		'<span><i class="fa fa-commenting-o"></i>122</span>'
+				                    +    		'<span><i class="fa fa-thumbs-o-up"></i>122</span>'
+				                    +    	'</div>'
+				                    +    	'<div class="mui-pull-right">'
+				                    +    		'2017-04-12 15:24'
+				                    +    	'</div>'
+				                    +    	'<div class="clear"></div>'
+				                    +    '</div>'
+						table.appendChild(li);
+						
+					}
+					heartClick()
+				}, 500);
+			}
+			function heartClick(){
+				mui('.collection_shop').on('tap','i',function(){
+					if (this.classList.contains('fa-heart')) {
+						this.classList.remove('fa-heart')
+						this.classList.add('fa-heart-o')
+						mui.toast('取消收藏成功')
+					} else if(this.classList.contains('fa-heart-o')){
+						this.classList.remove('fa-heart-o')
+						this.classList.add('fa-heart')
+						mui.toast('收藏成功')
+					}
+					
+				})
+			}
+</script>

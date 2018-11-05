@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	*{
+		padding: 0;margin: 0;
+	}
+	ul{
+		font-size: 0;vertical-align: top;
+	}
+	li{
+		display: inline-block;width: 30%;background: #eee;vertical-align: top;margin: 0 1.5%;
+		position: relative;
+		text-align: left;
+		overflow: hidden;
+	}
+	li img{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+</style>
+<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+ <ul>
+ 	<li>
+ 		<img src="../imgs/ad_1.png"/>
+ 	</li>
+ 	<li>
+ 		<img src="../imgs/music.png"/>
+ 	</li>
+ 	<li>
+ 		<img src="../imgs/beauty.png"/>
+ 	</li>
+ </ul>
+
+
+
+</body>
+</html>
+<script>
+$(function(){
+	abc();
+	$(window).resize(function(){
+		abc();
+	})
+	
+})
+function abc(){
+	var liwidth=$("li").width();
+	$("li").css({
+		height:liwidth,
+	})
+	$('img').each(function(){
+		var width=$(this).width();
+		var height=$(this).height();
+		var p=width/height;
+		var fwidth,fheight,ftop,fleft;
+		if (p>=1) {
+				if (height<=liwidth) {
+					ftop=(liwidth-height)/2+'px';
+				}
+			}else{
+				if(width<=liwidth){
+					ftop=(liwidth-width)/2+'px';
+				}
+			}
+			$(this).css({
+				top:ftop,
+				left:fleft,
+				width:fwidth,
+				height:fheight,
+			})
+		$(this).load(function(){
+			
+			if (p>=1) {
+				if (height<=liwidth) {
+					ftop=(liwidth-height)/2+'px';
+				}
+			}else{
+				if(width<=liwidth){
+					ftop=(liwidth-width)/2+'px';
+				}
+			}
+			$(this).css({
+				top:ftop,
+				left:fleft,
+				width:fwidth,
+				height:fheight,
+			})
+		})
+	})
+}
+
+</script>

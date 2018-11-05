@@ -1,0 +1,69 @@
+#tech_popover{width: auto;left: 0;right: 0;top: 0;bottom: 0;background: none;}
+.tech_popover_cont{display: flex;display: -webkit-flex;flex-direction: column;-webkit-flex-direction: column;height: 100%;}
+.tech_popover_cont>div{flex: 1;position: relative;overflow: hidden;color: #fff;text-align: center;font-size: 0.875rem;letter-spacing: 0.1rem;font-weight: normal;}
+.tech_box div{ left: 1.5rem;right: 1.5rem;display: flex;display: -webkit-flex;position: absolute;align-content: center;justify-content: center;height: 100%;align-items: center;}
+.tech_box img{
+	max-width: 100%;height: auto; 
+	transform-origin:50% 50%;
+	-ms-transform-origin:50% 50%; 		/* IE 9 */
+	-webkit-transform-origin:50% 50%;	/* Safari 和 Chrome */
+	-moz-transform-origin:50% 50%;		/* Firefox */
+	-o-transform-origin:50% 50%;		/* Opera */
+}
+.tech_box>div:nth-child(3n+1) img{
+	-webkit-animation:rotater 4s linear infinite;
+	-moz-animation:rotater 4s linear infinite;
+	-ms-animation:rotater 4s linear infinite;
+	animation:rotater 4s linear infinite;
+}
+.tech_box>div:nth-child(3n+2) img{
+	-webkit-animation:rotater2 5s linear infinite;
+	-moz-animation:rotater2 5s linear infinite;
+	-ms-animation:rotater2 5s linear infinite;
+	animation:rotater2 5s linear infinite;
+}
+.tech_box>div:nth-child(3n) img{
+	-webkit-animation:rotater2 4s linear infinite;
+	-moz-animation:rotater2 4s linear infinite;
+	-ms-animation:rotater2 4s linear infinite;
+	animation:rotater2 4s linear infinite;
+}
+.tech_box>div:first-child img,.tech_box>div:last-child img{
+	-webkit-animation:none;
+	-moz-animation:none;
+	-ms-animation:none;
+	animation:none;
+}
+
+@-webkit-keyframes rotater{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(360deg);}
+}
+@-moz-keyframes rotater{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(360deg);}
+}
+@-ms-keyframes rotater{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(360deg);}
+}
+@keyframes rotater{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes rotater2{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(-360deg);}
+}
+@-moz-keyframes rotater2{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(-360deg);}
+}
+@-ms-keyframes rotater2{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(-360deg);}
+}
+@keyframes rotater2{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(-360deg);}
+}

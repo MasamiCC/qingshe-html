@@ -1,0 +1,215 @@
+*{
+	list-style: none;margin: 0;padding: 0;color: #404d57;
+}
+.order_type_grop label{
+	font-size: 0.95rem;padding-left: 0;
+}
+.confirm_item{
+	background: #fff;
+	margin: 10px auto;
+	position: relative;
+	padding: 5px 0;
+	font-size: 1rem;
+}
+.confirm_item:first-child{
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.confirm_item_title{
+	line-height: 30px;
+	font-size: 1rem;
+	text-indent: 20px;
+	border-bottom: 1px solid #ededed;
+}
+.order_type{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 0;
+}
+#order_type{
+	padding-bottom: 5px;
+}
+.order_type label{
+	padding-right: 0;
+	padding-left: 20px;
+	font-size: 14px;
+	position: relative;
+	display: block;
+	padding-left: 0;
+}
+.order_type input:before{
+	font-size: 18px!important;
+}
+.remark{
+	list-style: none;display: inline-block;
+	border: 1px solid #404d57;
+	color: #404D57;
+	border-radius: 20px;
+	padding: 1px 10px;
+	font-size: 0.8rem;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+.remark:active{
+	background: #404D57;color: #fff;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+    color: #404D57;
+}
+.order_type_grop >div{
+	display: none;
+	margin: 0 15px;
+}
+.mui-input-row:after{
+	left: 0!important;background: #ededed!important;
+}
+.mui-input-row:last-child:after{
+	height: 0;
+}
+.order_type_grop .active{
+	display: block;
+}
+.confirm_r{
+	margin-right: 15px;color: #b3c2ca;font-size: 0.9rem;
+}
+.confirm_f_div{
+	padding: 10px 0 0 0 ;margin: 0 15px;
+}
+.confirm_f_div input{
+	font-size: 14px;
+}
+#remark,#taitou,#table_id{
+	background: #ededed;color: #b3c2ca;font-size: 12px;border: none;margin-bottom:5px;
+
+	
+}
+.mui-table-view-cell:after{
+	left: 0;background: #ededed
+}
+.mui-input-group{
+}
+.mui-input-group:before{
+	height: 0;
+}
+.mui-input-group:after{
+	height: 0;
+}
+#address{
+	padding: 5px 0;color: #404d57;
+}
+#address ul{
+	margin: 0 30px 0 0 ;font-size: 0.9rem!important;
+}
+#address a:after{
+	right: 15px;
+}
+.order_goods{
+	display: flex;
+}
+.order_goods span{
+	flex: 1;font-size: 0.9rem;
+}
+.order_goods_p{
+	max-width: 70px;
+}
+.order_goods_n{
+	max-width: 50px;
+}
+.confirm_btn{
+	background: #404d57;
+	color: #fff;
+	display: block;
+	line-height: 44px;
+	padding: 0 10px;
+	margin-right: -10px;
+	font-size: 1rem;
+}
+.bar_left{
+	display: inline-block;
+    color: #e1280a;
+    line-height: 16px;
+    padding: 7px 0;
+}
+.bar_left p{
+	color: #79878f;
+}
+#popover,#popover2{
+	left: 0; right: 0;margin: 0 auto;width: 80%;border-radius: 10px;top: 20%;
+	height: 60%;
+	overflow: hidden;
+	min-height: 20%;
+}
+#popover form,#popover2 form{
+	position: absolute;top: 40px ;bottom: 40px;min-height: 200px;overflow: auto;width: 100%;
+}
+.address_form{
+	position: absolute;top: 40px ;bottom: 40px;min-height: 200px;overflow: auto;width: 100%;
+}
+
+#popover input[type=checkbox],#popover2 input[type=checkbox]{
+	right: 0;
+}
+.address_item{
+	padding-right: 30px;font-size: 0.85rem;
+}
+.address_item li:last-child{
+	white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.add_address{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 80%;
+	margin-bottom: 5px;
+}
+.add_address button{
+	padding: 4px 0;
+	font-size: 0.85rem;
+	letter-spacing: 1px;
+    border: 1px solid #404D57;
+    background-color: #404D57!important;
+}
+.address_title{
+	font-size: 1rem;line-height: 45px;text-indent: 20px;
+	border-bottom: 1px solid #eee;
+}
+.address_li{
+	margin: 3px 10px;
+}
+.add_address_li{
+	text-align: center;
+}
+.add_address_li input,.add_address_li textarea{
+	padding: 0px 10px;
+	margin-bottom: 0;
+	line-height: 30px;
+	height: 30px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.add_address_li div{
+	height: 30px;line-height: 30px;
+	font-size: 1rem;
+	text-align: left;
+	text-indent: 20px;
+}
+#area_list {
+	color: #333333;
+	font-size: 13px;
+	width: 90%;
+	text-align: left;
+	margin: 0 auto;
+	background: #fff;
+	display: none;
+}
+#area_list li{
+	text-indent: 10px;padding: 5px 0 0 0;
+}
+#area_list span{
+	color: #999;
+}

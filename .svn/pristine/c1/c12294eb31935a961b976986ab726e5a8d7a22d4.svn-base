@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css"/>
+		<style type="text/css">
+			#popover{position: a;left: 1rem;top: 1rem;	right: 1rem ;bottom: 1rem;width: auto;background: none;box-shadow: none;}
+			.popover_cont{display: flex;flex-direction: column;position: absolute;height: 100%;width: 100%;justify-content: space-between;}
+			.popover_cont>div{flex: 1;}
+			.count{flex: 0 0 100px!important;background: red;}
+			.close{flex: 0 0 100px!important;background: green;}
+			.swiper-slide{background: #fff;}
+			.content{display: flex;}
+			.swiper-container{/*height: 100%;*/}
+		</style>
+	</head>
+
+	<body>
+		 
+		<div id="popover" class="mui-popover">
+			<div class="popover_cont">
+				<div id="count" class="count">
+
+				</div>
+				 <div class="content">
+				 	<div class="swiper-container">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">slider1</div>
+					    <div class="swiper-slide">slider2</div>
+					    <div class="swiper-slide">slider3</div>
+					    <div class="swiper-slide">slider4</div>
+					    <div class="swiper-slide">slider5</div>
+					    <div class="swiper-slide">slider6</div>
+					    <div class="swiper-slide">slider7</div>
+					    <div class="swiper-slide">slider8</div>
+					    <div class="swiper-slide">slider9</div>
+					    <div class="swiper-slide">slider10</div>
+					    <div class="swiper-slide">slider11</div>
+					    <div class="swiper-slide">slider12</div>
+					  </div>
+					</div>
+				 </div>
+				 <div class="close">
+
+				 </div>
+			</div>
+			
+		</div>
+		 
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('#popover').popover('show')
+	var active='';
+	var mySwiper = new Swiper('.swiper-container', {
+		//autoplay: true,//可选选项，自动滑动
+		slidesPerView:1.3,
+		spaceBetween : 15,
+		slidesOffsetBefore:40
+	})
+	mySwiper.on('slideChangeTransitionEnd',function(){
+		if(this.activeIndex==active){
+			active+=1;
+		}else{
+			active=this.activeIndex
+		}
+		console.log(active)
+	})
+	mySwiper.slideTo(5, 1000, false);//切换到第一个slide，速度为1秒
+</script>

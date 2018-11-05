@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="../../css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/cutscenes.css" />
+	<link rel="stylesheet" type="text/css" href="css/showBo.css" />
+    <title>分叉路线对比</title>	
+	<style type="text/css">
+		.cus_tj:after {
+			background-image: url(./image/tuijian@3x.png);
+		}
+
+		#cus_popover {
+			display: none;
+		}
+
+		#cus_popover.active {
+			display: block;
+		}
+
+		.cus_choose span {
+			padding: 0.6rem 0;
+		}
+
+		#popover_bg {
+			display: none;
+		}
+
+		#popover_bg.active {
+			display: block;
+		}
+
+		.click_msg {
+			color: #666;
+			font-size: 0.75rem;
+			padding-top: 0.5rem;
+			text-align: left;
+			line-height: 1.5;
+			width: 80%;
+			margin: 0 auto;
+			word-break: break-all;
+		}
+
+		.cus_choose span {
+
+			display: inline-block;
+			width: 80%;
+			border-radius: 10rem;
+			line-height: 2;
+			background: #eee;
+			color: #666;
+			font-size: 1rem;
+			/* font-weight: 700; */
+		}
+		.cus-keywords,.cus-name{
+			font-weight: 600;
+		}
+		.cus_choose span.active {
+			background: -webkit-linear-gradient(left, #ffcd48, #f8a120);
+			/* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(right, #ffcd48, #f8a120);
+			/* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(right, #ffcd48, #f8a120);
+			/* Firefox 3.6 - 15 */
+			background: linear-gradient(to right, #ffcd48, #f8a120);
+			/* 标准的语法 */
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<div id="app">
+		<div class="mui-content" id="content">
+			<div id="" class="cus_intro">
+				<img src="./image/cus_01.png">
+				<img src="./image/cus_02.png">
+				<img src="./image/cue_03.png">
+				<img src="./image/cus_04.png">
+			</div>
+			<div class="cus-btns">
+				<div>
+					<span v-on:click="setActive('0')">选择线路A</span>
+					<span class="cus_tj" v-on:click="setActive('1')">选择线路B</span>
+				</div>
+			</div>
+		</div>
+		<div id="cus_popover" :class="{'mui-popover': true, 'active': showFlg}" v-if="showFlg">
+			<div class="close-box" v-on:click="hideCutscenes()">
+				<a href="javascript:void(0)" class="close"></a>
+			</div>
+			<div class="cus-popover-cont">
+				<div class="cus-name"> {{schemes[active].name}} </div>
+				<div class="cus-introduce">{{schemes[active].introduce}}</div>
+				<div class="cus-img">
+					<img v-bind:src="schemes[active].img" alt="">
+				</div>
+				<div class="cus-keywords">{{schemes[active].keyWords}}</div>
+				<div class="cus-table">
+					<div class="sch_table">
+						<table width="90%">
+							<tr>
+								<th>周期</th>
+								<th>{{schemes[active].zhouqi}}</th>
+							</tr>
+							<tr v-for="item in schemes[active].scores">
+								<td>{{item.name}}</td>
+								<td>{{item.score}}红利黑钻</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="cus_msg">{{schemes[active].msg}}</div>
+				<div class="cus_choose">
+					<span v-on:click="chooseScheme" class="active" v-if="clickFlg">确认选择</span>
+					<span v-else>确认选择</span>
+					<div v-if="!clickFlg" class="click_msg">由于您在初心站已经使用了燃油券或者购买了燃料，无法选择路线方案！</div>
+				</div>
+			</div>
+		</div>
+		<div id="popover_bg" :class="{'active': showFlg}" v-if="showFlg"></div>
+	</div>
+</body>
+</html>
+<!--<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js"></script>
+<script src="js/showBo.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var schemes = [{
+		name: '路线A',
+		introduce: '收益周期较长',
+		keyWords: '短期内得不到分红',
+		img: 'image/A@3x.png',
+		scores: {
+			'fendou': {
+				'name': '奋斗站',
+				'score': '4000'
+			},
+			'xingfu': {
+				'name': '幸福站',
+				score: '13100'
+			},
+			'xiaokang': {
+				name: '小康站',
+				score: '16800'
+			}
+		},
+		zhouqi: '是线路B的8倍',
+		msg: '确认选择后，您的红利释放方案和周期将会智能调整。您需要等待该周期内的分红释放完成才可进入下一周期。'
+	}, {
+		name: '线路B',
+		introduce: '收益稳定，且周期较短',
+		keyWords: '短期内可拿到分红',
+		img: 'image/B@3x.png',
+		scores: {
+			'fendou': {
+				'name': '奋斗站',
+				'score': '1920'
+			},
+			'xingfu': {
+				'name': '幸福站',
+				score: '6288'
+			},
+			'xiaokang': {
+				name: '小康站',
+				score: '8064'
+			}
+		},
+		zhouqi: '约常规周期的1/8',
+		msg: '确认选择后，您的红利释放方案和周期将会智能调整。周期收益释放完成后，可以更快的进入进入下一周期获取收益。'
+	}];
+	var app = new Vue({
+		el: '#app',
+		data: {
+			schemes: schemes,
+			active: '0',
+			showFlg: false,
+			clickFlg: true,
+		},
+		methods: {
+			setActive: function (active) {
+				console.log(active)
+				this.active = active;
+				this.showFlg = true;
+			},
+			hideCutscenes: function () {
+				this.showFlg = false;
+			},
+			chooseScheme: function () {
+				var that = this;
+				Showbo.Msg.show({
+					title: '轻奢点评',
+					msg: '选择后您的黑钻红利和任务周期将按照该方案自动进行?',
+					buttons: {
+						yes: '确认选择',
+						no: '取消'
+					},
+					fn: function (btn) {
+						console.log(btn)
+						if (btn == 'yes') {
+
+						}
+					}
+				})
+			}
+		}
+	})
+</script>

@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #fff;
+}
+.memcpimg img{
+	max-width: 100%;
+}
+.memcp_top{
+	text-align: center;
+	background: url(../image/blackcardbg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 10% 0;
+}
+.memcpcon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.memcpconcon{
+	display: flex;
+	text-align: right;
+	margin-right: 15px;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	color: #fdd46b;
+}
+.memcpconcon:last-child{
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+.memcpconconnum{
+	font-size: 1.5625rem;
+}
+.memcpconcon img{
+	width: 55px;
+}
+#order_type .order_type{
+    width: 105%!important;
+    margin: 0 2%;
+    font-size: 0.875rem;
+    border-right: 1px solid #e7e4e2;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+#order_type .order_type:last-child{
+	border-right: 0;
+}
+#order_type .order_type.mui-active{
+	color: #D4AC57;
+}
+.downicon{
+	margin-left: 5px;
+	color: #999;
+}
+.lis{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e7e4e2;
+}
+.type_icons{
+	display: flex;
+	border-bottom: 1px solid #e7e4e2;
+}
+.type_icon{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9375rem;
+	line-height: 1.7;border-right: 1px solid #e7e4e2;margin: 8px 0;
+}
+.memcp_time{
+	color: #fdd46b;
+}
+.liscon_title{
+	font-size: 0.9375rem;
+	color: #333;
+}
+.liscon_time{
+	font-size: 0.75rem;
+	color: #999999;
+}
+.liscon_money{
+	font-size: 0.875rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type_icon_active{
+	color: #fdd46b!important;
+}
+.memcp_type a{
+	color: #666;
+}
+.firstul{
+	padding: 20px 0;
+}
+.lastli:after{
+	height: 0;
+}

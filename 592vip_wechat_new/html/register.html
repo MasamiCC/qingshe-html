@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			label{
+				width: 50px!important;text-align: center;color: #ddd;line-height: 1.3;
+			}
+			label i{
+				margin: 0 auto;
+			}
+			.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+				float: none;font-size: 0.75rem;
+				color: #333;
+			}
+			.mui-input-group{
+				font-size: 0.875rem;
+			}
+			.mui-input-group:before,.mui-input-group:after{
+				height: 0;
+			}
+			.get_code{
+				line-height: 40px;font-size: #666;
+			}
+			.sub_btn{
+				background: #d4ac57;
+				color: #fff;
+				border: 1px solid #d4ac57;
+				width: 50%;
+				margin: 10px auto;
+				border-radius: 50px;
+			}
+			.btn_div a,.btn_div a:hover{
+				color: #d4ac57;
+			}
+		</style>
+	</head>
+
+	<body style="background: #fff;">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content" style="background: none;">
+		    <div class="" style="width: 90%;margin: 10px auto;">
+		    	<form class="mui-input-group">
+		    	    <div class="mui-input-row">
+		    	        <label><i class="fa fa-mobile-phone"></i></label>
+		    	        <input type="tel" class="mui-input" placeholder="手机号码" maxlength="11" id="mobile">
+		    	    </div>
+		    	    <div class="mui-input-row">
+		    	        <label><i class="fa fa-key"></i></label>
+		    	        <input type="text" class="mui-input" placeholder="验证码" style="width: 50%;" maxlength="6">
+		    	        <span class="mui-pull-right get_code send_code"  id="send_code">获取验证码</span>
+		    	    </div>
+		    	    <div class="mui-input-row">
+		    	        <label><i class="fa fa-lock"></i></label>
+		    	        <input type="password" class="mui-input" placeholder="登陆密码（6-18位字母数字组合）" >
+		    	    </div>
+		    	    <div class="mui-input-row">
+		    	        <label><i class="fa fa-lock"></i></label>
+		    	        <input type="password" class="mui-input" placeholder="请再次输入密码">
+		    	    </div>
+		    	</form>
+		    	
+		    	<div class="btn_div" style="text-align: center;">
+		    		<button id="sub_btn" class="sub_btn">注册</button>
+		    		<p>
+		    			注册代表同意<a href="javascript:void(0)">《轻奢点评用户服务协议》</a>
+		    		</p>
+		    	</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+	
+		$("#sub_btn").on('tap',function(){
+			var mobile=$("#mobile").val();
+			if (!(/^1(3|4|5|7|8)\d{9}$/.test(mobile))) {
+				mui.alert('请输入正确的手机号码');
+				return false;
+			}
+		})
+		
+		
+	})
+
+	var timer='';
+	sendCode();
+	function sendCode(){
+		$("#send_code").on('tap',function(){
+			//ajax请求发送短信，成功之后调用倒计时函数
+			var a=$(this).hasClass('clicked');
+			if (!a) {
+				$(this).addClass('clicked')
+				var mobile=$("#mobile").val();
+				if (!(/^1(3|4|5|7|8)\d{9}$/.test(mobile))) {
+					mui.alert('请输入正确的手机号码');
+					$(this).removeClass('clicked')
+					return false;
+				}else{
+					timeChange();
+				}
+			} else{
+				return false;
+			}
+			
+		})
+		
+	}
+	function timeChange(){
+		clearInterval(timer);
+		var time=30;
+		timer=setInterval(function(){
+			if (time>0) {
+				$(".send_code").html(time+"s后重试");
+				time--;
+			} else{
+				$(".send_code").html("获取验证码");
+				$("#send_code").removeClass('clicked')
+				clearInterval(timer);
+			}
+		},1000)
+	}
+//	function shareAction(){
+//		mui("#popover").popover("toggle");
+//	}
+
+</script>

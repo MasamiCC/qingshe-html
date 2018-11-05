@@ -1,0 +1,104 @@
+.center{
+	background: #f1ede2;min-height: 700px;
+}
+.center >div{
+	max-height: 1280px;overflow: hidden;
+}
+.login_item{
+	font-size: 0;width: 1280px;
+}
+.login_d{
+	display: inline-block;vertical-align: top;margin-top: 80px;
+}
+.login_left{
+	width: 75%;
+	text-align: center;
+}
+.login_left img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.login_right{
+	width: 25%;margin-top: 120px;
+}
+.login_right a,.login_right a:hover{
+	color: #999999;text-decoration: none;
+}
+.login_right >div{
+	background: #fff;border: 1px solid #ddd;
+	padding: 20px 15px;
+	box-shadow: 0px 0px 2px #ddd;
+	margin-right: 10px;
+}
+form div{
+	border: 1px solid #ddd;margin: 10px auto;padding: 3px;color: #ccc;
+}
+form div i{
+	margin-right: 5px;font-size: 15px!important;width: 20px;text-align: center;
+}
+input::-webkit-input-placeholder {
+     /* placeholder颜色  */
+     color: #ccc;
+     /* placeholder字体大小  */
+    /* placeholder位置  */
+}
+.login_form input[type=text],.login_form input[type=tel],.login_form input[type=password]{
+	border: none;
+	font-size: 14px;
+	line-height: 2;
+	color: #ccc;
+	　
+}
+.login_btn{
+	text-align: center;
+	
+}
+.login_btn span{
+	display: block;
+	cursor: pointer;
+	background: #333;
+	color: #edb94a;
+	border: 1px solid #ddd;
+	line-height: 2.5;
+	margin: 5px auto;
+}
+.login_title{
+	text-align: center;font-size: 18px;line-height: 2;
+}
+/*
+@media only screen  and (max-width: 900px) {
+	.login_left{
+		display: none;
+	}
+	.login_right{
+		width: 85%;margin: 0 auto;margin-top: 120px;display: block;
+	}
+}
+
+@media only screen  and (min-width: 900px) {
+	.login_left{
+		width: 66%;
+		text-align: center;
+		display: inline-block;
+	}
+	.login_right{
+		width: 33%;margin: 0 auto;margin-top: 120px;display: inline-block;
+	}
+}
+@media only screen  and (min-width: 1280px) {
+	.login_left{
+		width: 75%;
+		text-align: center;
+		display: inline-block;
+	}
+	.login_right{
+		width: 25%;margin: 0 auto;margin-top: 120px;display: inline-block;
+	}
+}*/
+.send_code{
+	border-left: 1px solid #ccc;display: inline-block;padding-left: 5px;float: right;margin-top:5px ;font-size: 12px;
+	cursor: pointer;
+}
+.send_code.active{
+	color: #333;
+}

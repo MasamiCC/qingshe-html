@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/christmas_menu.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  		<link rel="stylesheet" type="text/css" href="../css/number-pb.css">
+		<style type="text/css">
+			input[type=checkbox]{display: none;vertical-align: middle;}
+			label{position: relative;display: block;width: 50px;vertical-align: middle;}
+			input[type=checkbox] + .show-box {
+			    position: absolute;
+			    top: 2px;
+			    right: 4px;
+			    width: 16px;
+			    height: 16px;
+			    border-radius: 2px;
+			    border: 1px solid #808080;
+			    background: white;
+			}
+			input[type=checkbox]:checked + .show-box:after {
+			    position: absolute;
+			    top: -1px;
+			    left: 6px;
+			    width: 5px;
+			    height: 9px;
+			    content: '';
+			    border-bottom: 1px solid #333;
+			    border-right: 1px solid #333;
+			    background: rgba(0,0,0,0);
+			    transform: rotate(45deg);
+				transform-origin:0 40%;
+			
+				-ms-transform: rotate(45deg); 		/* IE 9 */
+				-ms-transform-origin:0 40%; 		/* IE 9 */
+			}
+			input[type=checkbox].dark + .show-box {
+			    position: absolute;
+			    top: 2px;
+			    right: 4px	;
+			    width: 16px;
+			    height: 16px;
+			    border-radius: 2px;
+			    border: 1px solid #808080;
+			    background: rgb(127,127,127);
+			}
+			input[type=checkbox].dark:checked + .show-box:after {
+			    position: absolute;
+			    top: -1px;
+			    right: 6px;
+			    width: 5px;
+			    height: 9px;
+			    content: '';
+			    border-bottom: 1px solid #fff;
+			    border-right: 1px solid #fff;
+			    background: rgba(0,0,0,0);
+			    transform: rotate(45deg);
+				transform-origin:0 40%;
+			
+				-ms-transform: rotate(45deg); 		/* IE 9 */
+				-ms-transform-origin:0 40%; 		/* IE 9 */
+				-webkit-transform: rotate(45deg); 		
+				-webkit-transform-origin:0 40%; 		
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<!--倒数-->
+		<div class="flipUnitContainer" id="ten">
+			<div class="upperCard">
+				<span>?</span>
+			</div>
+			<div class="lowerCard">
+				<span>?</span>
+			</div>
+			<div class="flipCard first fold">
+				<span>?</span>
+			</div>
+			<div class="flipCard second unfold">
+				<span>?</span>
+			</div>
+		</div>
+		<span class="flipUnitContainer" ></span>
+		<div class="flipUnitContainer" id="ge">
+			<div class="upperCard">
+				<span>?</span>
+			</div>
+			<div class="lowerCard">
+				<span>?</span>
+			</div>
+			<div class="flipCard first fold">
+				<span>?</span>
+			</div>
+			<div class="flipCard second unfold">
+				<span>?</span>
+			</div>
+		</div>
+		
+		
+		<!--菜单-->
+		<!--<div class="">
+			<ul class="christmas_menu">
+				<li class="menu_li active">砍初始神券</li>
+				<li class="menu_li">继续砍，赢更低折扣</li>
+				<li class="menu_li">激活后使用</li>
+				<div class="empty"></div>
+			</ul>
+			
+		</div>
+		<div class="">
+			<ul class="christmas_menu">
+				<li class="menu_li ">砍初始神券</li>
+				<li class="menu_li active">继续砍，赢更低折扣</li>
+				<li class="menu_li">激活后使用</li>
+				<div class="empty"></div>
+			</ul>
+			
+		</div>-->
+		
+  
+			
+		<!--进度条-->	
+		<!--<div class="">
+			<div class="bar">
+				<div class="bar_bg">
+					
+				</div>
+				<div class="bar_s" >
+					
+				</div>
+			</div>
+		</div>-->
+		
+		
+		<!--<div class="checkbox">
+			<label for="a">是
+				<input type="checkbox" class="dark"  id="a"/>
+				<div class="show-box">
+				</div>
+			</label>
+			<label for="b">否
+				<input type="checkbox" class="dark" checked="" id="b"/>
+				<div class="show-box">
+					
+				</div>
+			</label>
+			<label for="c">是
+				<input type="checkbox" id="c" />
+				<div class="show-box">
+					
+				</div>
+			</label>
+			<label for="d">否
+				<input type="checkbox"  checked id="d"/>
+				<div class="show-box">
+					
+				</div>
+			</label>
+		</div>-->
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/christmas_year.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+	//进度条
+	$(".bar_s").animate({
+		width:'100%'
+	})
+
+
+	$(function(){
+		var index=99;
+		var end=50;
+		countDown2(99,59,200)
+	})
+	
+	
+</script>

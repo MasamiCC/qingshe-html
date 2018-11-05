@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/apply_card.css"/>
+	</head>
+	<style type="text/css">
+		/*.mui-bar{
+			height: 66px;
+			background: #fff;
+		}*/
+		.mui-popover {
+			left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    top: 40%;
+		}
+		/*.mui-content-padded{
+			margin: 0px;
+		}
+		.mui-table-view-cell:after{
+			left: 0px;
+			background-color: #eee;
+		}*/
+	</style>
+	<body>
+		<div class="mui-content acbody">
+			<div class="achead">
+				<div class="acheaditem1">
+					轻奢点评为您私人定制的实体黑卡，是您尊贵身份的凭证
+				</div>
+				<div class="acheaditem">
+					您可申请实体卡定制配送服务
+				</div>
+			</div>
+			<div class="acmiddle">
+				<img src="../image/applay_card.png"/>
+			</div>
+			<div class="bcfooter">
+				<div class="bcfooter_con">
+						<div class="bcfooterfonts ">
+							<span class="ac_icon bcfooter_conbg1">暂时不用</span>
+						</div>
+				</div>
+				<div class="bcfooter_con">
+						<div class="bcfooterfonts ">
+							<span class="ac_icon bcfooter_conbg2" id="application_now">立即申请</span>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="address_title">
+				选择地址
+			</div>
+			<div class="mui-scroll-wrapper address_form" id="address_list_div" >
+			    <div class="mui-scroll" id="address_list">
+			        <!--这里放置真实显示的DOM内容-->
+			        
+			    </div>
+			    
+			</div>
+			
+			
+			<div class="add_address">
+				<div class="add_address_icons">
+					<button type="button" class="mui-btn mui-btn-blue add_address_icon mui-btn-block" id="add_new_address">使用新地址</button>
+				</div>
+			</div>
+			
+		</div>
+		<div id="popover2" class="mui-popover">
+			<div class="address_title">
+				新增地址
+			</div>
+			
+			<div class="mui-scroll-wrapper address_form" style="" id="address_form_div">
+		        <div class="mui-input-row add_address_li">
+		            <div>收货人</div>
+		            <input type="text" class="mui-input" id="username" placeholder="收货人" required>
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <div>联系电话</div>
+		            <input type="tel" class="mui-input" id="mobile" placeholder="联系电话" maxlength="11" required>
+		        </div>
+		        <div class="mui-input-row add_address_li" style="height: 60px;overflow: visible;z-index: 99;">
+		            <div>小区/大厦/学校</div>
+		            <input type="text" class="mui-input" placeholder="选择地区" id="area">
+	            	<ul id="area_list">
+	            		<li>101商务酒店1 <span>江苏省南通市崇川区1</span></li>
+	            		<li>101商务酒店 2<span>江苏省南通市崇川区2</span></li>
+	            		<li>101商务酒店 3<span>江苏省南通市崇川区3</span></li>
+	            	</ul>
+		        </div>
+		        <div class="mui-input-row add_address_li">
+		            <div>详细地址</div>
+	            	<textarea name="" rows="" cols="" maxlength="30" required id="address_detail"></textarea>
+		        </div>
+		        
+			</div>
+			<div class="add_address">
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="add_address">新增地址</button>
+				</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/apply_card.js"></script>
+

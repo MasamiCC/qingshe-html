@@ -1,0 +1,111 @@
+.mui-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 80px;
+	right: 0;
+	background: url(../image/coupon_bg.png);
+	overflow: auto;
+	background-size: contain;
+	padding-top: 30px!important;
+	
+}
+.coupon_rule{
+	background: rgba(255,255,255,0.1);
+	width: 90%;
+	margin: 10px auto;
+	color: #999!important;
+	padding: 10px 10px;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	border-radius: 8px;
+}
+.coupon_rule p{
+	color: #999!important;
+}
+.coupon_rule h4{
+	text-align: center;line-height: 2;font-size: 0.875rem;
+	background-image: url(../image/c_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.coupon_shop {
+	font-size: 0.75rem;color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+.coupon_shop h4{
+	text-align: center;line-height: 2;font-size: 0.875rem;
+}
+.coupon_shop p{
+	color: #fff;line-height: 1.5;text-indent: 2rem;letter-spacing: 1px;
+}
+.coupon_shop_logo{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+	border-bottom: 1px solid #999;
+	padding-bottom: 10px;
+}
+.coupon_shop_logo h4{
+	font-size: 1.2rem;margin: 8px auto;font-weight: 500;
+}
+.coupon_shop_logo>img{
+	/*border: 1px solid #fff;*/
+	box-shadow: 0px 0px 5px #fff;
+	border-radius: 50%;
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.coupon_form{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.coupon_form input{
+	border-radius: 20px;
+	font-size: 0.75rem;
+}
+.coupon_btn{
+	background: #d4ac57;
+	border-color: #d4ac57;
+	border-radius: 20px;
+	font-size: 0.875rem;
+	padding: 8px 0;
+}
+.coupon_btn:active{
+	background: #c8a04b!important;
+	border-color: #c8a04b!important;
+}
+.coupon-t{
+	width: 80%;margin: 0 auto;
+}
+.coupon-tg{
+	background: url(../image/coupon_bg_r.png);
+	background-repeat: repeat-y;
+	color: #fff;
+	background-size: contain;
+	padding: 10px 20px;
+	background-position: top;
+	font-size: 2.5rem;
+	line-height: 1.5;
+	min-width: 250px;
+}
+.coupon-tg .mui-pull-left h4{
+	font-size: 1rem!important;line-height: 1.5;
+}
+.coupon_res{
+	color: #fff;font-size: 0.75rem;padding: 5px 0;
+}
+.coupon_res a,.coupon_res a:hover{
+	color: #d4ac57;
+}
+.coupon_form_d{
+	display: none;
+}
+.coupon_form_d:first-child{
+	display: block;
+}

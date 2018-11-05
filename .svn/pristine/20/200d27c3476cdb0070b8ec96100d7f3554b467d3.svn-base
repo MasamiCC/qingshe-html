@@ -1,0 +1,65 @@
+/**
+ * 新增签约商户成功
+ */
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+.mui-content{
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+/*标题*/
+.content_title{
+  background: #fff;
+  line-height: 2;
+  padding-top: 30px;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.content_title .contact {
+  position: absolute;
+  top: 34px;
+  right: 15px;
+  color: #f8a120;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+
+
+.success_nav{
+	height: calc(100% - 70px);
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FFFFFF;
+}
+
+.success_nav > img{
+	width: auto;
+	height: 7rem;
+	margin-bottom: 25px;
+}
+
+.success_nav > p{
+	color: #333333;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-top: 25px;
+}

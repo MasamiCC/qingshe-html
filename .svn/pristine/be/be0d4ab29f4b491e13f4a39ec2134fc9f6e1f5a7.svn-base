@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/publicService.css">
+    <title>公益活动</title>
+</head>
+<body>  
+    <div class="container">
+        <div class="article">
+            <p class="title">一场盛典，一个符号，一个历史</p>
+            <div class="l_title">
+                <span class="time">2018年5月28日</span>.
+                <span class="read">阅读194人次</span>.
+                <span class="like">88人点赞</span>.
+                <span class="share">555次分享</span>
+            </div>
+            <div class="txt">
+                <p>1月12日，这是个历史性的时刻。</p>
+                <img src="./images/public01.jpg" alt="">
+                <p>首届轻奢点评慈善盛典在南通隆重举行，并启动成立了轻奢点评慈善基金。<br>
+                        首期获得了字画拍卖及爱心人士捐赠的善款26万元，这些善款将用于健康扶贫人道救助项目。
+                </p>
+                <img src="./images/public02.jpg" alt="">
+                <i class="txt_bottom">南通市副市长**等一行人一同摁下启动球。</i>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_Nav">
+        <div class="bottom_left">
+            <img src="./images/up_org@3x.png" alt="">
+            <img src="./images/up_gray@3x.png" alt="">
+            <span>88人</span>
+        </div>
+        <div class="bottom_right">
+            <img src="./images/share@3x.png" alt="">
+            <span>555次</span>
+        </div>
+    </div>
+</body>
+</html>

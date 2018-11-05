@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>设置交易密码</title>
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.all_sp,body{
+				background: #F4F4F4;
+			}
+			.all_sp_title{
+				margin-top: 12px;
+			}
+			.all_sp_title input[type="tel"]{
+				border: 0;
+				width: 100%;
+				line-height: 2.5!important;
+				border-bottom: 1px solid #eee;
+				text-indent: 25px;
+				outline:none;
+				font-size: 0.9375rem;
+				margin-bottom: 0px;
+				height: auto;
+			}
+			input::-webkit-input-placeholder { /* WebKit browsers */
+			  color: #ccc;
+			}
+			input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			  color: #ccc;
+			}
+			input::-moz-placeholder { /* Mozilla Firefox 19+ */
+			  color: #ccc;
+			}
+			input:-ms-input-placeholder { /* Internet Explorer 10+ */
+			  color: #ccc;
+			}
+			.all_sp_bottom{
+				position: absolute;
+				bottom: 30px;
+				text-align: center;
+				left: 0;
+				right: 0;
+				color: #fff;
+			}
+			.all_sp_btn{
+				display: inline-block;
+			    width: 80%;
+			    background: #f8a120;
+			    height: 50px;
+			    line-height: 50px;
+			    border-radius: 25px;
+			    letter-spacing: 0.1rem;
+			}
+			.error_msg{
+				color: #ff0000;
+				font-size:.8135rem;
+				text-indent: 25px;
+				line-height: 4;
+			}
+			.mui-toast-container{
+				top: 30%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content all_sp">
+			<div class="all_sp_title">
+				<div class="sp_input">
+					<input type="tel" name="paw" id="paw" value="" placeholder="请输入六位数交易密码" maxlength="6"/>
+				</div>
+				<div class="sp_input">
+					<input type="tel" name="pawn" id="pawn" value="" placeholder="请再次输入六位数交易密码" maxlength="6"/>
+				</div>
+				<div class="error_msg">
+					
+				</div>
+			</div>
+			<div class="all_sp_bottom">
+				<span class="all_sp_btn">确认设置</span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.all_sp_btn').click(function(){
+			var pawVal=$('#paw').val();
+			var pawLength=pawVal.length;
+			var pawnVal=$('#pawn').val();
+			var pawnLength=pawnVal.length;
+			if(''!==pawVal&&''!==pawnVal&&'6'==pawnLength&&'6'==pawLength){
+				
+				if(pawVal==pawnVal){
+					mui.toast('交易密码设置成功');
+					$('.error_msg').html('');
+				}else{
+					$('.error_msg').html('密码输入错误，请重新输入')
+				}
+				
+			}else{
+				mui.toast('请输入正确的密码');
+				$('.error_msg').html('');
+			}
+			
+		});
+	});
+</script>

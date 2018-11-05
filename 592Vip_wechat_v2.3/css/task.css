@@ -1,0 +1,155 @@
+*{margin: 0;padding: 0;list-style: none;}
+body,.mui-content{
+	background: #fff;
+}
+.task-header{
+	background:-webkit-gradient(linear, 0 0, right 0, from(#ffda2f), to(#f8a120));  
+	text-align: center;
+	color: #fff;
+	padding-bottom: 1.5rem;
+}
+.task-pic{padding-top: .875rem ;}
+.task-pic img{width: 4rem;}
+.task-name{font-size: .875rem;padding: .3rem 0;}
+.task-star{background:#f8a120 ;width: 30%;margin: 0 auto;border-radius: .3rem;display: flex;align-items: center;overflow: hidden;}
+.task-star span{flex: 1;padding: .4rem .1rem;display: inline-block;line-height: 1;}
+.task-star span:nth-child(1){max-width: 3.5rem;width: 3.5rem;font-size: .8rem;}
+.task-star span:nth-child(2){background: #fff;display: flex;}
+.task-star span img{width: .75rem;height: .75rem;margin: 0 .1rem;}
+.task-items{margin: 0 1rem;margin-top: -1rem;}
+.task-item{
+	box-shadow: .3rem .3rem 0 #dfdfdf;
+	margin-bottom: 1.5rem;
+	border-radius: .5rem;
+	border: .2rem solid #f8a120;
+	padding: .4rem .3rem;
+	background: #fff;
+}
+.task-item:last-child{margin-bottom: .75rem;}
+.task-flex{display: flex; }
+.task-flex>div{flex: 1;background: #fff3d4;}
+.task-flex>div:nth-child(1){
+	max-width: 30%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #f8a120;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 1rem;
+	margin-right: .2rem;
+	border-bottom-left-radius: .3rem;
+	border-top-left-radius: .3rem;
+}
+.task-flex>div:nth-child(2){
+	color: #333;font-weight: 400;font-size: .8rem;
+	padding: .5rem;
+	border-bottom-right-radius: .3rem;
+	border-top-right-radius: .3rem;
+}
+.task_table{
+	width: 100%;background: #fff3d4;text-align: center;
+	overflow: hidden; 
+	
+}
+.task_table:first-child{margin-top: .75rem;border-top-left-radius: .5rem;border-top-right-radius: .5rem;}
+.task_table:last-child{ border-bottom-left-radius: .5rem;border-bottom-right-radius: .5rem;}
+.task_table thead{
+	filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);/*IE8*/	
+    background:red; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, #f8a120, #ffda2f);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#f8a120), to(#ffda2f));  
+    background:-o-linear-gradient(top, #f8a120, #ffda2f); 
+}
+.task_table th{color: #fff;padding: .4rem 0;font-weight: 500;}
+.task_table td{line-height: 2;border-bottom: .1rem solid #ffffff;color: #000000;font-weight: .875rem;}
+.task_table tr:last-child td{
+	border-bottom: none;
+}
+.task_share{text-align: center;padding-bottom: 1rem;}
+.task_share span{
+	background:-moz-linear-gradient(top, #f8a120, #ffda2f);  
+    background:-webkit-gradient(linear, 0 0, right 0, from(#f8a120), to(#ffda2f));  
+    background:-o-linear-gradient(top, #f8a120, #ffda2f);
+    border-radius: 2rem; 
+    padding: .4rem 0;
+    color: #fff;
+    display: inline-block;
+    width: 35%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.task-total{display: flex;align-items: center;justify-content: center;padding-top: .5rem;font-size: 1rem;letter-spacing: .1rem;}
+.task-total img{width: 1rem;height: 1rem;margin-right: .3rem;}
+.task_history{
+	display: flex;align-items: center;align-content: center;justify-content: center;
+	padding: .5rem 1rem;
+	border-bottom: 1px solid #ececec;
+}
+.task_history >div{flex: 1;text-align: center;}
+.task_tabs{border-bottom: 1px solid #cdcdcd;}
+.task_tabs ul{display: flex;align-items: center;padding: .1rem 0;}
+.task_tabs ul li{flex: 1;text-align: center;position: relative;}
+.task_tabs ul li span{display: inline-block;padding: .3rem 0;color: #666;font-size: 1rem;}
+.task_tabs ul li:first-child:after{
+	content: '';
+	position: absolute;
+	top: .3rem;
+	bottom: .3rem;
+	width: 2px;
+	background: #eee;
+	right: 0;
+}
+.task_tabs ul li span{
+	border-bottom: 2px solid #fff;
+}
+.task_tabs ul li.active span{
+	border-bottom: 2px solid #fc7875;
+}
+.task_user_pic{max-width: 4rem;line-height: 0;}
+.task_user_pic img{width: 3.5rem;height: 3.5rem;border-radius: 3.5rem;}
+.task_user_share{max-width: 5rem;}
+.task_user_share .share{
+	background:-moz-linear-gradient(top, #f8a120, #ffda2f);  
+    background:-webkit-gradient(linear, 0 0, right 0, from(#f8a120), to(#ffda2f));  
+    background:-o-linear-gradient(top, #f8a120, #ffda2f);
+    border-radius: 2rem; 
+    padding: .2rem .4rem;
+    color: #fff;
+    display: inline-block;
+    font-size: .75rem;
+    letter-spacing: 1px;
+}
+.task_user_msg{padding: 0 .5rem;}
+.task_user_msg li{text-align: left;color: #666;font-size: 1rem;}
+.task_user_msg li:nth-child(2){display: flex; align-items: center;}
+.task_user_msg li:nth-child(2) >*{flex: 1;}
+.task_user_msg li:nth-child(2)>span{max-width: 2.5rem;color: #999;font-size: .75rem;text-align: center;}
+.history {margin-left: 0;margin-right: 0;}
+.consume_tongji{
+	background: #56adf5;color: #fff;font-size: .75rem;line-height: 2;margin-top: -.6rem;
+	padding: 0 1rem;
+	position: relative;
+	}
+
+.consume_tongji span{padding-right: .5rem;}
+.consume_tongji span:after{top: 12px;color: #fff;right: .5rem;
+    font-size: 1rem;
+}
+.consume_history{
+	padding: .5rem 0;
+	border-bottom: 1px solid #ececec;
+}
+.consume_shop{display: flex;margin: 0 1rem;align-items: center;padding: .3rem 0;}
+.consume_shop img{width: 3rem;height: 3rem;}
+.consume_shop>div{flex: 1;}
+.consume_shop .task_user_pic{max-width: 3.5rem;}
+.consume_shop .task_user_msg{padding-left: 0;}
+.consume_shop .task_user_msg li:nth-child(1) span{font-size: .875rem;position: relative;padding-right: 30px}
+.consume_shop .task_user_msg li:nth-child(1) span:after{color: #666666;}
+.consume_shop .task_user_msg li:nth-child(2){font-size: .75rem;color: #999;}
+.consume_shop .task_user_share{max-width: 3rem;text-align: right;}
+.consume_shop .task_user_share .share{padding: 0 .5rem;line-height: 1.5;}
+.consume_goods{background:#f6f6f6;color: #999;padding-left:4.5rem;padding-top: .5rem;padding-bottom: .5rem;font-size: .75rem;}
+.consume_total{text-align: right;padding: .5rem 1rem;}

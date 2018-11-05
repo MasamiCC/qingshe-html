@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reply.css"/>
+		<style type="text/css">
+			#submit_btn{
+				background: #d4ac57;
+				border-color: #d4ac57;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							意见反馈
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							反馈记录
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group" style="background: #fff;">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper" >
+							<div class="mui-scroll">
+								<form class="mui-input-group" style="margin: 0 10px;">
+								        <textarea name="" rows="" cols="10" placeholder="请填写返回内容"></textarea>
+								    <div class="add_img" id="add_img">
+								        <img src="../image/add.png" class="add_btn"/>
+								    </div>
+								</form>
+								
+								
+							</div>
+							<nav class="mui-bar mui-bar-tab">
+		    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="submit_btn">提交反馈</button>
+		</nav>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="scroll2">
+							<div class="mui-scroll">
+								<ul class="mui-table-view" id="replay_list">
+									<li class="mui-table-view-cell reply_item">
+										<div class="reply_con">
+											反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容
+											<div class="reply_con_img">
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+											</div>
+										</div>
+										
+										<div class="reply_time">
+											2017-01-08 12:12:12
+										</div>
+										<div class="">
+											<span class="reply_title">轻奢回复</span>
+											<div class="reply_con">
+												回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容
+											</div>
+											<div class="reply_time">
+												2017-01-08 12:12:12
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell reply_item">
+										<div class="reply_con">
+											反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容
+											<div class="reply_con_img">
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+											</div>
+										</div>
+										
+										<div class="reply_time">
+											2017-01-08 12:12:12
+										</div>
+										<div class="">
+											<span class="reply_title">轻奢回复</span>
+											<div class="reply_con">
+												回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容
+											</div>
+											<div class="reply_time">
+												2017-01-08 12:12:12
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell reply_item">
+										<div class="reply_con">
+											反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容
+											<div class="reply_con_img">
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+											</div>
+										</div>
+										
+										<div class="reply_time">
+											2017-01-08 12:12:12
+										</div>
+										<div class="">
+											<span class="reply_title">轻奢回复</span>
+											<div class="reply_con">
+												回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容
+											</div>
+											<div class="reply_time">
+												2017-01-08 12:12:12
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell reply_item">
+										<div class="reply_con">
+											反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容
+											<div class="reply_con_img">
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+												<img src="../image/hotel_logo.png"/>
+											</div>
+										</div>
+										
+										<div class="reply_time">
+											2017-01-08 12:12:12
+										</div>
+										<div class="">
+											<span class="reply_title">轻奢回复</span>
+											<div class="reply_con">
+												回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容
+											</div>
+											<div class="reply_time">
+												2017-01-08 12:12:12
+											</div>
+										</div>
+									</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('#scroll2').pullRefresh({
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            });
+    mui("#add_img").on('tap','img',function(){
+    	mui.alert('调取微信的拍照')
+    })
+    /**
+     * 下拉刷新具体业务实现
+     */
+    function pulldownRefresh() {
+        var self = this;
+        setTimeout(function() {
+            self.endPulldownToRefresh(); //refresh completed
+        }, 1500);
+    }
+    var count = 0;
+    /**
+     * 上拉加载具体业务实现
+     */
+    function pullupRefresh() {
+        var self = this;
+        setTimeout(function() {
+        	loadMore()
+            self.endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+        }, 1500);
+    }
+    
+    function loadMore(data){
+    	var html='<li class="mui-table-view-cell reply_item">'
+				+		'<div class="reply_con">'
+				+			'反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容反馈内容'
+				+			'<div class="reply_con_img">'
+				+				'<img src="../image/hotel_logo.png"/>'
+				+				'<img src="../image/hotel_logo.png"/>'
+				+				'<img src="../image/hotel_logo.png"/>'
+				+			'</div>'
+				+		'</div>'
+						
+				+		'<div class="reply_time">'
+				+			'2017-01-08 12:12:12'
+				+		'</div>'
+				+		'<div class="">'
+				+			'<span class="reply_title">轻奢回复</span>'
+				+			'<div class="reply_con">'
+				+			'	回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容回复内容'
+				+			'</div>'
+				+			'<div class="reply_time">'
+				+				'2017-01-08 12:12:12'
+				+			'</div>'
+				+		'</div>'
+				+	'</li>'
+    	$("#replay_list").append(html)
+    }
+            
+</script>

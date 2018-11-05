@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>轻奢号</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="css/qingshehao.css">
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="mui-content qingshehao_all">
+			<div class="qingshehao_all_title">
+				<div class="qs_relative">
+					<div class="qingshehao_head">
+						<div class="qingshehao_all1">
+							<div class="qingshehao_all1_item">
+								<div class="qingshehao_all1_itemitem">
+									<div class="point_icon">
+										<img src="image/point_icon.png"/>
+									</div>
+									<div class="point_font">
+										积分 10000  
+									</div>
+								</div>
+								<div class="qingshehao_all1_itemitem">
+									<div class="point_icon heart_icon">
+										<img src="image/heart_icon.png"/>
+									</div>
+									<div class="point_font">
+										慈善贡献值 10000  
+									</div>
+								</div>
+							</div>
+							<div class="qingshehao_all1_item">
+								<div class="">
+									消费积分数（1/500积分）
+								</div>
+								<div class="">
+									<div class="etr_item_banner_middle">
+										<div class="bar_left"></div>
+										<div class="bar_right"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="qingshehao_all2">
+							<div class="qingshehao_all2_item1">
+								<img src="image/jiuyouzhan.png"/>
+							</div>
+							<!--<div class="qingshehao_all2_item2">
+								<img src="image/room.png"/>
+							</div>-->
+						</div>
+						<div class="qingshehao_all2">
+							<div class="qingshehao_all2_item1">
+								<img src="image/jiuyouzhan.png"/>
+							</div>
+							<!--<div class="qingshehao_all2_item2">
+								<img src="image/room.png"/>
+							</div>-->
+						</div>
+						<div class="qingshehao_all4">
+							<img src="image/train.png"/>
+						</div>
+						<div class="qingshehao_all5">
+							<img src="image/font1.png"/>
+						</div>
+					</div>
+					<div class="qingshehao_all3">
+						<div class="qingshehao_all3_item1">
+							任务倒计时
+						</div>
+						<div class="qingshehao_all3_item2">
+							<div class="etr_item_banner_middle progress">
+								<div class="bar_left"></div>
+								<div class="bar_right"></div>
+							</div>
+						</div>
+						<div class="qingshehao_all3_item1">
+							22h:40m:20s
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="qingshehao_all_gonglue">
+				<div class="gonglue_all_line">
+					<div class="gonglue_line_left">
+						<div class="gonglue_line">
+							<span class="blue_icon icon1"></span><span class="displaylb">加油站</span>
+						</div>
+						<div class="gonglue_line">
+							<span class="blue_icon"></span><span class="displaylb">初心站</span><span class="grey_font">不忘初心，牢记使命</span>
+						</div>
+					</div>
+					<div class="gonglue_line_right">
+						<span class="gonglue_icon">攻略</span>
+					</div>
+				</div>
+			</div>
+			<div class="qingshehao_all_point">
+				<div class="point_title">
+					<span class="point_title_icon"><img src="image/point_no1.png"/></span>积分排行榜	
+				</div>
+				<div class="point_small_table">
+					<div class="point_small_table_head">
+						<div class="">
+							名次
+						</div>
+						<div class="">
+							积分
+						</div>
+					</div>
+					<!--<table border="0" cellspacing="0" cellpadding="0">
+						<tr class="trlist1">
+							<td class="tdlist1">101</td>
+							<td class="tdlist2">
+								<span class="table_head"><img src="image/point_header1.png"/></span><span class="table_name">我</span>
+							</td>
+							<td class="tdlist3">10</td>
+						</tr>
+					</table>-->
+					<div class="point_small_table">
+						<div class="point_small_table_line trlist1">
+							<div class="point_small_table_line1">
+								101	
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								10
+							</div>
+						</div>
+						<div class="point_small_table_line ">
+							<div class="point_small_table_line1">
+								<img src="image/qs_no1.png"/>
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								10
+							</div>
+						</div>
+						<div class="point_small_table_line ">
+							<div class="point_small_table_line1">
+								<img src="image/qs_no2.png"/>
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								10
+							</div>
+						</div>
+						<div class="point_small_table_line ">
+							<div class="point_small_table_line1">
+								<img src="image/qs_no3.png"/>
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								10
+							</div>
+						</div>
+						<div class="point_small_table_line">
+							<div class="point_small_table_line1">
+								4	
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								1000
+							</div>
+						</div>
+						<div class="point_small_table_line ">
+							<div class="point_small_table_line1">
+								5	
+							</div>
+							<div class="point_small_table_line2">
+								<div class="point_small_table_line2img">
+									<img src="image/point_header1.png"/>
+								</div>
+								<div class="">
+									我
+								</div>
+							</div>
+							<div class="point_small_table_line3">
+								10
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/qingshehao.js" type="text/javascript" charset="utf-8"></script>

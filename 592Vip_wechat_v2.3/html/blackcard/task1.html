@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/task.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="task-header">
+		    	<div class="task-pic">
+		    		<img src="images/tuijian_task@3x.png"/>
+		    	</div>
+		    	<div class="task-name">
+		    		推荐任务
+		    	</div>
+		    	<div class="task-star">
+		    		<span>难度</span>
+		    		<span>
+		    			<img src="../../image/smallstar.png"/>
+		    			<img src="../../image/smallstar.png"/>
+		    			<img src="../../image/smallstar.png"/>
+		    			<img src="../../image/smallstar.png"/>
+		    			<img src="../../image/smallstar.png"/>
+		    		</span>
+		    	</div>
+		    	<div class="task-total">
+		    		<img src="images/jiangli@3x.png"/>奖励650积分	32.5善款
+		    	</div>
+		    </div>
+		    <div class="task-items">
+		    	<div class="task-item">
+		    		<div class="task-flex">
+		    			<div>任务目标</div>
+		    			<div>
+		    				7天内成功推荐不低于2名非黑卡会员（含轻奢点评普通会员）注册成为轻奢点评黑卡会员
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="task-item">
+		    		<div class="task-flex">
+		    			<div>红利发放</div>
+		    			<div>
+		    				任务一完成后第二天发放650个消费积分
+		    			</div>
+		    		</div>
+		    		<div class="">
+		    			<table border="0" cellspacing="0" cellpadding="0" class="task_table">
+		    				<thead><th colspan="2">第二天</th></thead>
+		    				<tr>
+		    					<td style="color: #f8a120;line-height: 2.5;">发放时间</td>
+		    					<td style="color: #f8a120;line-height: 2.5;">积分数量</td>
+		    				</tr>
+		    				<tr>
+		    					<td>8:00</td>
+		    					<td>300</td>
+		    				</tr>
+		    				<tr>
+		    					<td>12:00</td>
+		    					<td>200</td>
+		    				</tr>
+		    				<tr>
+		    					<td>18:00</td>
+		    					<td>150</td>
+		    				</tr>
+		    			</table>
+		    		</div>
+		    		
+		    	</div>
+		    	<div class="task-item">
+		    		<div class="task-flex">
+		    			<div>备注</div>
+		    			<div>
+		    				本阶段任务不能如期完成，该会员只能通过黑卡资格复活唯一方式激活自己重新进入消费分红体系，以此类推。完成任务后获消费分红目标币。650积分平台内等同于650元人民币消费价币
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="task_share">
+		    	<span>分享邀请码</span>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$('.task_share').on('tap','span',function(){
+			var code='1234';
+			shareInvitationCode(code);
+		})
+	})
+	function shareInvitationCode(data){
+		callNative('shareInvitationCode','',data)
+	}
+</script>

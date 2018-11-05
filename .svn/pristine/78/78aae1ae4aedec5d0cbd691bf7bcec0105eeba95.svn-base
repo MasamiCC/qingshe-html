@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				list-style: none;padding: 0;margin: 0;list-style: none;
+			}
+			.content{
+				margin: 0 auto;text-align: center;max-width: 200px;
+			}
+			tfooter{
+				border-top: 1px dashed #333;
+			}
+			ul{
+				text-align: left;margin: 10px auto;
+			}
+			li{
+				/*height: 25px;line-height: 25px;*/font-size: 12px;
+			}
+			th{
+				border-bottom: 1px dashed #333;height: 40px; line-height: 40px;font-size: 12px;
+			}
+			td{
+				height: 30px;line-height: 30px;font-size: 10px;
+			}
+			#total{
+				height: 40px;line-height: 40px;font-size: 13px;border-top:  1px dashed #333;border-bottom:  1px dashed #333;text-align: left;
+			}
+			#total span{
+				float: right;
+			}
+			table{
+				margin: 0 auto;border-bottom: 1px dashed #333;
+			}
+			.title{
+				text-align: left;
+			}
+			.money{
+				text-align: right;
+			}
+			.ewm{
+				width: 95%;margin: 0 auto;font-size: 14px;
+			}
+			.ewm img{
+				margin: 10px auto;
+			}
+			.msg{
+				margin: 10px auto;
+			}
+			.print_btn{
+				padding: 3px 10px;
+			}
+			.total{
+				text-align: left;
+			}
+			.total span{
+				float: right;
+			}
+			.order_msg ul{
+				margin-top: 0;
+			}
+			.order_msg li{
+				border-bottom: 1px dashed #ccc;font-size: 10px;padding: 6px 0;
+			}
+			.order_msg label{
+				display: inline-block;width: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--startprint-->
+		<div class="content">
+			<h3>商户名称</h3>
+			<ul>
+				<li>时间：2017/01/02</li>
+				<li>位置：1020包厢</li>
+			</ul>
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr><th>名称</th><th>数量</th><th>单价</th><th>金额</th></tr>
+				<tr><td class="title">人肉叉烧包</td><td>100.12</td><td>500.00</td><td class="money">500.00</td></tr>
+				<tr><td class="title">人肉叉烧包</td><td>100</td><td>500.00</td><td class="money"> 500.00</td></tr>
+				<tr><td class="title">人肉叉烧包</td><td>100</td><td>500.00</td><td class="money">500.00</td></tr>
+				<tr><td class="title">人肉叉烧包</td><td>100</td><td>500.00</td><td class="money">500.00</td></tr>
+				<tr><td class="title">人肉叉烧包</td><td>100</td><td>500.00</td><td class="money">500.00</td></tr>
+				<tr>
+					<td colspan="4" class="total">
+						运费：<span>800.00</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="total">
+						优惠：<span>-800.00</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" id="total" class="total">
+						金额总计：<span>800.00</span>
+					</td>
+				</tr>
+					
+			</table>
+			<div class="order_msg">
+				<h6 style="text-align: left;line-height: 3;">订单信息</h6>
+				<ul>
+					<li>
+						<label for="">用餐人数</label>1
+					</li>
+					<li>
+						<label for="">用餐时间</label>2017-07-18 17:06:00
+					</li>
+					<li>
+						<label for="">联系人</label>张三
+					</li>
+					<li>
+						<label for="">联系人手机</label>18806297146
+					</li>
+					<li>
+						<label for="">车位预留</label>不预留车位
+					</li>
+					<li>
+						<label for="">支付方式</label>在线支付
+					</li>
+					<li>
+						<label for="">订单编号</label>15003688598400824
+					</li>
+					<li>
+						<label for="">订单时间</label>2017-07-18 17:06:00
+					</li>
+					<li>
+						<label for="">订单时间</label>订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间订单时间
+					</li>
+				</ul>
+			</div>
+			<div class="">
+				
+			</div>
+			<div class="ewm">
+				<div style="text-align: left;height: 40px; line-height: 40px;">
+					订单状态 <span style="float: right;">未付款</span>
+				</div>
+				<img src="../img/app_erm.png"/>
+				<p>付款码</p>
+			</div>
+			<div class="msg">
+				<h3>欢迎再次光临</h3>
+				<h4>谢谢惠顾</h4>
+			</div>
+			<!--endprint-->
+			<div class="btn" >
+				<input type="button" name="print_btn" id="print_btn" value="打印小票" class="print_btn" onclick="preview()"/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	
+	function preview() { 
+
+		bdhtml=window.document.body.innerHTML; 
+		
+		sprnstr="<!--startprint-->"; 
+		
+		eprnstr="<!--endprint-->"; 
+		
+		prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+		
+		prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+		
+		window.document.body.innerHTML=prnhtml; 
+		
+		window.print(); 
+	
+	} 
+</script>

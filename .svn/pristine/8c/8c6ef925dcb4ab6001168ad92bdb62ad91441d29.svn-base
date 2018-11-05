@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/blackcardnew.css"/>
+	</head>
+	<body>
+		<div class="blackcardnew">
+			<img src="../../image/blackcardnewbg.png"/>
+		</div>
+		<div class="blackcardnew_bottom">
+			<div class="blackrights">
+				<!--标签-->
+				<div class="blackcard_title">
+					一、黑卡会员权益说明
+				</div>
+				<!--标签-->
+				<!--<div class="">
+					<div class="blackrightline">
+						<div class="blackrightline_left">
+							<img src="../image/blackicon1.png"/>
+						</div>
+						<div class="">
+							共享平台消费分红权益
+						</div>
+					</div>
+					<div class="blackrightline">
+						<div class="blackrightline_left">
+							<img src="../image/blackicon2.png"/>
+						</div>
+						<div class="">
+							尊贵会员身份，优先体验多种店铺特权
+						</div>
+					</div>
+					<div class="blackrightline">
+						<div class="blackrightline_left">
+							<img src="../image/blackicon3.png"/>
+						</div>
+						<div class="">
+							黑卡俱乐部私董会
+						</div>
+					</div>
+					<div class="blackrightline">
+						<div class="blackrightline_left">
+							<img src="../image/blackicon4.png"/>
+						</div>
+						<div class="">
+							平台全部店铺所有优惠开放
+						</div>
+					</div>
+					<div class="blackrightline">
+						<div class="blackrightline_left">
+							<img src="../image/blackicon5.png"/>
+						</div>
+						<div class="">
+							高级体验游艇、高尔夫、私人飞机
+						</div>
+					</div>
+				</div>-->
+				
+				<!--new-->
+					<div class="blackcard_firstitemcon">
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon1.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								尊贵图标
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon2.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								贴心管家
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon3.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								轻奢福利
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon4.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								轻奢沙龙
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon5.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								特权折扣
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon6.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								车位预留
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon7.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								公益慈善
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon8.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								优先体验
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon9.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								定制旅行
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon10.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								酒店特权
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon11.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								私人飞机
+							</div>
+						</div>
+						<div class="blackcard_firstitem">
+							<div class="blackcard_fipic">
+								<img src="../../image/newblackicon12.png"/>
+							</div>
+							<div class="blackcard_fifont">
+								海外专享
+							</div>
+						</div>
+					</div>
+				<!--new-->
+				
+				<div class="blackcard_explanation">
+					<div class="">
+						<img class="smallblackicon" src="../../image/smallblackicon.png"/>
+					</div>
+					<div class="">
+						黑卡权益最终解释权归轻奢点评所有
+					</div>
+				</div>
+				
+			</div>
+			<div class="blackcardfont">
+				<img src="../../image/blackcardfont.png"/>
+			</div>
+			<!--标签-->
+			<div class="blackcard_title">
+				二、平台消费粉红权益任务说明
+			</div>
+			<!--标签-->
+			<div class="blackexplain">
+				<div class="blackexplain_title">
+					任务发放条件
+				</div>
+				<div class="blackmission">
+					<div class="blackmissionleft">
+						<img src="../../image/mission1.png"/>
+					</div>
+					<div class="blackmissionfont">
+						即通过推荐码进入并购买轻奢 自营商品不少于2000元
+					</div>
+				</div>
+				<div class="blackmission">
+					<div class="blackmissionleft">
+						<img src="../../image/mission2.png"/>
+					</div>
+					<div class="blackmissionfont">
+						进行实名认证后获取推荐码
+					</div>
+				</div>
+			</div>
+			
+		<div class="bmission blackexplain">	
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+				<div class="bmission_title blackexplain_title">
+					任务一：推荐任务
+				</div>
+				<div class="bmissionline">
+					<div class="bmissionline_left">
+						难度指数
+					</div>
+					<div class="bmissionline_right">
+						<img src="../../image/smallstar.png"/>
+						<img src="../../image/smallstar.png"/>
+						<img src="../../image/smallstar.png"/>
+						<img src="../../image/smallstar.png"/>
+						<img src="../../image/smallstar.png"/>
+					</div>
+				</div>
+				<div class="bmissionline ">
+					<div class="bmissionline_left">
+						任务内容
+					</div>
+					<div class="bmissionline_right">
+						推荐不低于两人注册轻奢点评并成为黑卡会员
+					</div>
+				</div>
+				<div class="bmissionline">
+					<div class="bmissionline_left">
+						时间限定
+					</div>
+					<div class="bmissionline_right">
+						7天内
+					</div>
+				</div>
+				<div class="bmissionline">
+					<div class="bmissionline_left">
+						积分奖励
+					</div>
+					<div class="bmissionline_right">
+						650积分
+					</div>
+				</div>
+				<div class="bmissionline">
+					<div class="bmissionline_left">
+						慈善贡献
+					</div>
+					<div class="bmissionline_right">
+						32.5元
+					</div>
+				</div>
+			
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<div class="bmission_title blackexplain_title">
+							任务一：推荐任务
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								难度指数
+							</div>
+							<div class="bmissionline_right">
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+							</div>
+						</div>
+						<div class="bmissionline ">
+							<div class="bmissionline_left">
+								任务内容
+							</div>
+							<div class="bmissionline_right">
+								推荐不低于两人注册轻奢点评并成为黑卡会员
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								时间限定
+							</div>
+							<div class="bmissionline_right">
+								7天内
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								积分奖励
+							</div>
+							<div class="bmissionline_right">
+								650积分
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								慈善贡献
+							</div>
+							<div class="bmissionline_right">
+								32.5元
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<div class="bmission_title blackexplain_title">
+							任务二：帮助任务
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								难度指数
+							</div>
+							<div class="bmissionline_right">
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+							</div>
+						</div>
+						<div class="bmissionline ">
+							<div class="bmissionline_left">
+								任务内容
+							</div>
+							<div class="bmissionline_right">
+								系统自动分配任务一无法达成者为帮助对象帮扶目标
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								时间限定
+							</div>
+							<div class="bmissionline_right">
+								7天内
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								积分奖励
+							</div>
+							<div class="bmissionline_right">
+								1760积分
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								慈善贡献
+							</div>
+							<div class="bmissionline_right">
+								88元
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<div class="bmission_title blackexplain_title">
+							任务三：初次消费体验
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								难度指数
+							</div>
+							<div class="bmissionline_right">
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+							</div>
+						</div>
+						<div class="bmissionline ">
+							<div class="bmissionline_left">
+								任务内容
+							</div>
+							<div class="bmissionline_right">
+								在平台内任意商家累计消费不低于500积分或现金
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								时间限定
+							</div>
+							<div class="bmissionline_right">
+								7天内
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								积分奖励
+							</div>
+							<div class="bmissionline_right">
+								4000积分
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								慈善贡献
+							</div>
+							<div class="bmissionline_right">
+								200元
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<div class="bmission_title blackexplain_title">
+							任务四：约束消费体验
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								难度指数
+							</div>
+							<div class="bmissionline_right">
+								<img src="../../image/smallstar.png"/>
+								<img src="../../image/smallstar.png"/>
+							</div>
+						</div>
+						<div class="bmissionline ">
+							<div class="bmissionline_left">
+								任务内容
+							</div>
+							<div class="bmissionline_right">
+								任务指定商户累计消费不低于1000积分或现金
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								时间限定
+							</div>
+							<div class="bmissionline_right">
+								7天内
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								积分奖励
+							</div>
+							<div class="bmissionline_right">
+								13100积分
+							</div>
+						</div>
+						<div class="bmissionline">
+							<div class="bmissionline_left">
+								慈善贡献
+							</div>
+							<div class="bmissionline_right">
+								655元
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- 第五张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+							<div class="bmission_title blackexplain_title">
+								任务五：全开放消费任务
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									难度指数
+								</div>
+								<div class="bmissionline_right">
+									<img src="../../image/smallstar.png"/>
+									<img src="../../image/smallstar.png"/>
+								</div>
+							</div>
+							<div class="bmissionline ">
+								<div class="bmissionline_left">
+									任务内容
+								</div>
+								<div class="bmissionline_right">
+									任务指定商户累计消费不低于2000积分或现金
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									时间限定
+								</div>
+								<div class="bmissionline_right">
+									7天内
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									积分奖励
+								</div>
+								<div class="bmissionline_right">
+									16800积分
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									慈善贡献
+								</div>
+								<div class="bmissionline_right">
+									840元
+								</div>
+							</div>
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+							<div class="bmission_title blackexplain_title">
+								任务一：推荐任务
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									难度指数
+								</div>
+								<div class="bmissionline_right">
+									<img src="../../image/smallstar.png"/>
+									<img src="../../image/smallstar.png"/>
+									<img src="../../image/smallstar.png"/>
+									<img src="../../image/smallstar.png"/>
+									<img src="../../image/smallstar.png"/>
+								</div>
+							</div>
+							<div class="bmissionline ">
+								<div class="bmissionline_left">
+									任务内容
+								</div>
+								<div class="bmissionline_right">
+									推荐不低于两人注册轻奢点评并成为黑卡会员
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									时间限定
+								</div>
+								<div class="bmissionline_right">
+									7天内
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									积分奖励
+								</div>
+								<div class="bmissionline_right">
+									650积分
+								</div>
+							</div>
+							<div class="bmissionline">
+								<div class="bmissionline_left">
+									慈善贡献
+								</div>
+								<div class="bmissionline_right">
+									32.5元
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bottom_nav">
+			<span class="bottom_nav_button">立即加入成为黑卡会员</span>
+		</div>
+			
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		function goToBlackcard(){
+			callNative(toBlackcardMember,weChatUrl,data);
+		}
+		
+	});
+	
+</script>

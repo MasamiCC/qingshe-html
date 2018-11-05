@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>社会捐赠</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/social_donation.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			body{background: #fff;}
+			.mui-content{background: #fff;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content social_apply">
+		    <form class="mui-input-group social_apply_form">
+		    	<div class="" style="font-size: 0.75rem;margin: 1.5rem 0 0.5rem 0;color: #999;">
+		    		<i class="fa fa-exclamation-circle" style="color: #bbb;"></i>请填写您的信息，工作人员稍后与您联系。
+		    	</div>
+		        <div class="mui-input-row form_item">
+		            <label>
+		            	<div class="social_apply_icon">
+		            		<img src="../image/social_donation_apply_username.png"/>
+		            	</div>
+		            </label>
+		            <input type="text" class="" placeholder="您的称呼">
+		        </div>
+		        <div class="mui-input-row form_item">
+		            <label>
+		            	<div class="social_apply_icon">
+		            		<img src="../image/social_donation_apply_mobile.png"/>
+		            	</div>
+		            </label>
+		            <input type="text" class="" placeholder="联系方式"  id="mobile" maxlength="11">
+		            <span id="code">获取验证码</span>
+		        </div>
+		        <div class="mui-input-row form_item">
+		            <label>
+		            	<div class="social_apply_icon">
+		            		<img src="../image/social_donation_apply_code.png"/>
+		            	</div>
+		            </label>
+		            <input type="text" class="" placeholder="验证码">
+		        </div>
+		        <div class="mui-input-row form_item">
+		            <label>
+		            	<div class="social_apply_icon">
+		            		<img src="../image/social_donation_apply_write.png"/>
+		            	</div>
+		            </label>
+		            <textarea name="" rows="5" cols="" placeholder="请填写申请原因"></textarea>
+		        </div>
+		        <div class="mui-input-row apply_btn">
+		        	<span>发起申请</span>
+		        </div>
+		        <div class="mui-input-row apply_msg">
+		        	<img src="../image/social_donation_apply_kefu.png"/>
+		        	联系客服<span> 0513-85799999</span>
+		        </div>
+		    </form>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var pattern = /^((1[3,5,8][0-9])|(14[5,7])|(17[0,6,7,8])|(19[7]))\d{8}$/;
+	var cdTimer;
+	
+	$(function(){
+		$("#code").on('tap',function(){
+			var checked=$(this).hasClass('clicked');
+			if(checked){
+				return false;
+			}else{
+				$(this).addClass('clicked');
+				var mobile=$("#mobile").val();
+				if(!pattern.test(mobile)){
+					mui.alert('手机号码格式不正确');
+					$(this).removeClass('clicked');
+				}else{
+					countDown('#code',10)
+				}
+			}
+			
+		})
+	})
+	function countDown(ele,time){
+		clearInterval(cdTimer);
+		cdTimer=setInterval(function(){
+			if(time>0){
+				$(ele).html(time+'s后重试');
+				time--;
+			}else{
+				$(ele).html('获取验证码');
+				clearInterval(cdTimer);
+				$(ele).removeClass('clicked');
+			}
+		},1000)
+	}
+</script>

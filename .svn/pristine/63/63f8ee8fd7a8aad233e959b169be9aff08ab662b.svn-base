@@ -1,0 +1,272 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,.mui-content{
+	background: #fff;
+}
+.loginedtop{
+	position: relative;
+	background:#fff url(../image/loginedblackbg.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+.loginedfont{
+	font-size: 0.875rem;
+	color: #fff;
+	padding: 10px 40px;
+	background: -moz-linear-gradient(top, #fec530, #fe9d24);
+	background: -o-linear-gradient(top,#fec530, #fe9d24);
+	background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fec530), to(#fe9d24));
+	border-radius: 18px;
+	box-shadow: 1px 1px 1px 1px #ffe4c4;
+}
+.loginedtopfirst{
+	font-size:0.75rem;
+	color: #333;
+	line-height: 2;
+	padding: 10px 0;
+}
+.bcfont{
+	color: #ff7e00;
+	margin-left: 5px;
+}
+.loginedtopcon{
+	display: flex;
+    margin-top: 5%;
+    padding-bottom: 17%;
+}
+.loginedtopconcon2{
+    flex:2.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.loginedtopconcon{
+	flex: 1.2;
+	position: relative;
+}
+.loginedtopconconhead img{
+	width: 60px;
+	height: 60px;
+}
+.loginedtopconconhead,.loginedtopconconfontcon{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.loginedtopconconfont{
+	font-size: 0.75rem;
+	color: #ffc967;
+	background: #000;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 0px 5px;
+	position: absolute;
+	white-space: nowrap;
+}
+.loginedtopconcon2first{
+	font-size: 0.75rem;
+	color: #977945;
+	margin-bottom: 5px;
+}
+.loginedtopconcon2second{
+	font-size: 1.5625rem;
+	color: #ffc967;
+}
+.loginedtopthird{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8%;
+}
+
+
+.blackcard_title{
+	font-size: 0.9375rem;
+	font-weight: 550;
+}
+.myrights{
+	margin: 0 15px;
+}
+.duser{
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	font-weight: normal;
+	font-size: 0.8125rem;
+	color: #999999;
+}
+.duser:after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    margin-left: 3px;
+}
+.name,.liepic,.money{
+	line-height: 1;
+}
+
+.liepic img{
+	width: 50px;
+	height: 50px;
+}
+li{
+	display:inherit;
+}
+.allscroll{
+	/*margin: 0 15px 0 15px;*/
+}
+.blackcard_title{
+	margin: 15px 15px 10px 15px;
+}
+.own .lie{
+	width: 120px;
+	text-align: left;
+}
+.own .liepic img{
+	width: 125px;
+	height: 125px;
+}
+.name{
+	display: inline-block;
+ 	font-size: 0.875rem;
+  	/*text-overflow: ellipsis;*/
+ 	/*overflow: hidden;*/
+ 	font-size: 0.75rem;
+}
+.own .name{ 
+	width: 130px;
+	color: #333333;
+	font-size: 0.875rem;
+	white-space: pre-wrap;
+	line-height: 1.5;
+}
+.money{
+	color: #ce3a26;
+}
+.ziyingyouxuan img{
+	max-width: 100%;
+}
+.ziyingyouxuan{
+	margin: 0 15px 15px 15px;
+}
+.bordertitle{
+	border-top: 1px solid #eee;
+	padding: 15px 0px 10px 0px;
+    margin: 10px 15px 0 15px;
+}
+
+/* 弹窗 */
+.popup{
+	position: fixed;
+	top: 18%;
+	left: 15%;
+	right: 15%;
+	bottom: auto;
+	background: white;
+	z-index: 9;
+	padding: 1rem;
+	border-radius: 6px;
+	overflow: auto;
+}
+.popup_y{
+	display:none;
+}
+.popup_n{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	padding: 2rem 3rem;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.popup_area{
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 99;
+	position: relative;
+	padding: 30px 15px;
+	border-radius: 6px;
+	
+}
+.popup_area_over{
+	height: 80%;
+	overflow: auto;
+}
+.popup_1{
+	position: fixed;
+	top: 20%;
+	left: 15%;
+	right: 15%;
+	bottom: auto;
+}
+
+.popup_title{
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	margin: 15px 0px;
+}
+.popup_b{color: #000}
+.popup_b,.popup_g{
+	margin: 0 0 10px 0!important;
+	font-size: 14px!important;
+	line-height: 1.8;
+}
+.popup_btn{
+	font-size: 14px!important;
+	justify-content: space-between;
+	display: flex;
+	margin: 20px 0 20px 0;
+	
+}
+.popupbtn_g{
+	background: #cdcdcd;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	width: 40%;
+	text-align: center;
+}
+.popupbtn_o{
+	background: #FFB72C;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	width: 55%;
+	text-align: center;
+	margin-left: 10px
+}
+.popup1_btn{
+	width: 100%;
+	background: #FFB72C;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	margin: 10px 0;
+}
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.6);
+	z-index: 7;
+}

@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "微软雅黑";
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background: url(../img/marble_bg.png) no-repeat 0 0px;
+	background-attachment:fixed;
+	background-size:100%;
+	min-height: 100%;
+	padding: 1.5rem;
+	font-family: "微软雅黑";
+}
+
+/*黑卡经纪人合作规则*/
+
+/*合约*/
+.contract_nav{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 0px 10px #efefef;
+	padding: 1.5rem;
+	min-height: 100%;
+}
+
+.contract_title{
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.line_area{
+	margin-bottom: 1rem;
+}
+
+.line_area .line{
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 16px;
+	color: #666666;
+	display: flex;
+	display: -webkit-flex;
+    align-items: center;
+}
+
+.line_area .line > span{
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	border-radius: 1.2rem;
+	background-color: #dddddd;
+	color: #333333;
+	margin-right: .5rem;
+}
+
+.income_area{
+	margin-bottom: 2rem;
+}
+
+.income_area p.text{
+	font-size: 16px;
+	line-height: 1.8;
+	color: #666666;
+}
+
+.income_area p.text > span{
+	color: #333333;
+	font-weight: bold;
+}
+
+.prompt_area{
+	font-size: 15px;
+	color: #0090ff;
+	line-height: 1.5;
+}
+
+/*按钮区域*/
+.btn_area {
+	padding: 0 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.btn_area .prompt{
+	color: #333333;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.btn_area .btn {
+	display: block;
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 3rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #FFFFFF;
+	position: relative;
+	background: -webkit-linear-gradient(left, #ffcd48, #f8a120);
+	background: -o-linear-gradient(right, #ffcd48, #f8a120);
+	background: -moz-linear-gradient(right, #ffcd48, #f8a120);
+	background: linear-gradient(to right, #ffcd48, #f8a120);
+}

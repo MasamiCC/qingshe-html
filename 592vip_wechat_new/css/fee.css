@@ -1,0 +1,52 @@
+	*{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.lies{
+		padding: 5px 10px;
+	}
+	.firstlie{
+		margin-top: 10px;
+	}
+	.mui-active{
+		color: #D4AC57;
+		border-bottom: 2px solid #D4AC57;
+	}
+	#order_type{
+		color: #666;
+		text-align: center;
+		background: #F4F4F4;
+		    padding-bottom: 10px;
+	}
+	.order_type{
+		width: 49%;
+		display: inline-block;
+		font-size: 0.875rem;
+	}
+	.bakg{
+		line-height: 2.625rem;
+		height: 2.625rem;
+		background: #fff;
+	}
+	.fonts{
+		width: 72%;
+	}
+	.title{
+		font-size:0.875rem;
+		color: #333;
+		height: 38px;
+		line-height: 38px;
+		font-weight: bold;
+	}
+	.cont{
+		font-size:0.8125rem;
+		color: #808080;
+		height: 25px;
+		line-height: 25px;
+	}
+	
+

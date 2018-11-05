@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/iconfont.css">
+			<!--<link rel="stylesheet" type="text/css" href="../css/confirm.css"/>-->
+		<style type="text/css">
+			/*总体*/
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			a{
+				text-decoration: none;
+			}
+			.mui-table-view:before,.mui-table-view:after,.mui-table-view-cell:after,.mui-table-view-cell:before{
+				height: 0;
+			}
+			.mui-table-view-cell:after,
+			.mui-content,body{
+				background: #F4F4F4;
+			}
+			.mui-table-view-cell{
+				border-bottom: 1px solid #EDEDED;
+				padding: 15px 0px;
+			}
+			/*总体*/
+			/*订单等待黄*/
+			.header2{
+			display: flex;
+			/*background:url(image/order_bc.png) ;*/
+			padding:40px 0 40px 0;
+			background: #F4F4F4;
+			}
+			.header_left2{
+				flex: 1;
+				text-align: right;
+				padding-right: 15px;
+			}
+			.header_left img,.header_left1 img,.header_left2 img{
+				width: 44px;
+			}
+			.header_right{
+				flex: 2;
+				text-align: left;
+				
+			}
+			.big_font{
+				font-size: 1rem;
+				color: #333;
+				font-weight: bold;
+			}
+			.header_right{
+				flex: 2;
+				text-align: left;
+				
+			}
+			.small_font2{
+				font-size: 0.75rem;
+				margin-top: 8px;
+				color: #999;
+			}
+			.small_font{
+				font-size: 0.75rem;
+				margin-top: 8px;
+				color: #333;
+			}
+			/*订单等待黄*/
+		
+			/*金石酒店*/
+			.confirm_hotel {
+				position: relative;
+			}
+			.in-out-time{
+				font-size: 0.75rem;color: #999;
+			}
+			.confirm_hotel #tongji{
+				position: absolute;
+				top: 35%;
+				right: 20px;
+				color: #333;
+				font-size: 0.8125rem;
+			}
+			.order_goods{
+				display: flex;font-size: 0.875rem;
+			}
+			ul, menu, dir{
+				    list-style-type: none;
+			}
+			
+			.flx{
+				display: flex;
+			}
+			.flx1{
+				flex: 1;
+			}
+			.flx2{
+				flex: 1;
+			}
+			.flx3{
+				flex: 1;
+			}
+			.rgt{
+				text-align: right;
+			}
+			.li1{
+				margin: 0px -12px;
+				text-indent: 12px;
+			}
+			
+			.confirm_total{
+				color: #DAB875;
+			}
+			.small{
+				color: #949494;
+				
+			}
+			
+			/*金石酒店*/
+			
+			.fonts_title{
+				/*display:inline-block;*/ 
+				padding:2px 7px ;
+				font-size: 0.875rem;
+				vertical-align: middle;
+				color: #333;
+			}
+			.fonts_img{
+				width: 18px;
+				vertical-align: middle;
+			}
+			.shop_message{
+				/*margin-top: 11px;*/
+				padding: 0px 12px;
+				background: #fff;
+			}
+			.fonts{
+				color: #6E6E6E;
+				font-size: 0.8125rem;
+				/*display: inline-block;*/
+			}
+			
+			.shop_li{
+				width: 100%;
+			}
+			.shop_sale_left{
+				display: inline-block;
+				width: 49%;
+				text-align: left;
+				color: #9EA3A7;
+				font-size: 0.875rem;
+			}
+			.shop_sale_right{
+				display: inline-block;
+				width: 49%;
+				text-align: right;
+				color: #404D57;
+				font-size: 0.875rem;
+			}
+			.shop_total{
+				display: inline-block;
+				width: 49%;
+				text-align: left;
+				color: #7C8389;
+			}
+			.order_note{
+				font-size: 0.8125rem;
+				background: #FFF;
+				margin-top: 10px;
+				padding: 11px 15px;
+				line-height: 27px;
+			}
+			.order_note_left1{
+				/*width: 20%;*/
+				display: inline-block;
+				/*color: #7D7D7D;*/
+				/*vertical-align: top;*/
+				/*flex: 2;*/
+				color: #333;
+				/*width: 28%;*/
+				font-size: 0.8125rem;
+				/*display: inline-block;*/
+				/*vertical-align: middle;*/
+				flex: 1.7;
+			}
+			.order_note_right1{
+				/*width: 78%;*/
+				display: inline-block;
+				color: #989898;
+				flex: 5;
+				
+			    /*color: #333;*/
+				font-size: 0.8125rem;
+			}
+			.book_notes{
+				margin-top: 10px;
+				background: #fff;
+				padding: 0px 12px;
+			}
+			.book_note_left1{
+				color: #333;
+				width: 100%;
+				/*display: inline-block;*/
+				vertical-align: middle;
+				font-size: 0.875rem;
+				font-weight: bold;
+			}
+			.book_note_left{
+				color: #7D7D7D;
+				/*width: 20%;*/
+				/*display: inline-block;*/
+				font-size: 0.8125rem;
+				color: #333;
+				vertical-align: middle;
+				flex: 1.7;
+			}
+			.book_note_right{
+				color: #808080;
+				/*width: 78%;*/
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 0.8125rem;
+				flex: 5;
+			}
+			.onemore{
+				background: #fff;
+				padding: 11px 15px;
+				text-align: right;
+				margin-top: 10px;
+			}
+			.onemore_button{
+				display: inline-block;
+				border: 1px solid #9FA6AB;
+				border-radius: 50px;
+				color: #656E75;
+				font-size: 0.8125rem;
+				padding: 5px 18px;
+			}
+			.mui-table-view-cell:after{
+				background-color: #EDEDED;
+			}
+			.bottom .mui-table-view{
+				margin-bottom: 59px;
+			}
+			
+		/*footer*/
+			#footer{
+				box-shadow: 0 0 0;
+				border-top: 1px solid #ddd;
+				background-color:#fff;
+				
+				height: 47px;
+				    /*top: 474px;*/
+				position: fixed;
+				text-align: right;
+			}
+			.order{
+				font-size: 0.8125rem;
+				display: inline-block;
+				padding: 6px 95px;
+				margin: 9px 0px;
+				background: #D4AC57;
+				color: white;
+				border-radius: 20px;
+				vertical-align: middle;
+			}
+			.cancel{
+				font-size: 0.8125rem;
+				display: inline-block;
+				padding: 3px 15px;
+				margin: 9px 6px;
+				/*background: #D4AC57;*/
+				color: #989898;
+				border-radius: 20px;
+				border: 1px solid #ddd;
+				vertical-align: middle;
+				
+			}
+			.topay{
+				font-size: 0.8125rem;
+				display: inline-block;
+				padding: 3px 15px;
+				margin: 9px 6px;
+				border: 1px solid #DBBA78;
+				color: #DBBA78;
+				border-radius: 20px;
+				vertical-align: middle;
+			}
+		/*footer*/
+		</style>
+	</head>
+	<body>
+		<!--订单等待黄start-->
+		<div class="header2">
+			<div class="header_left2">
+				<img src="../image/dengdai@2x.png"/>
+			</div>
+			<div class="header_right">
+				<div class="">
+					<span class="big_font">订单等待支付</span>
+					<span><img style="max-width: 7px;" src="../image/jiantou@2x.png"/></span>
+				</div>
+				<div class="small_font2">请在 <span id="timer">15分00秒</span> 内完成付款 </div>
+				
+			</div>
+		</div>
+		<!--订单等待黄end-->
+		
+		
+		<!--金石大酒店信息start-->
+		<div class="mui-content">
+			<div class="shop_message">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell li1">
+		                 <span > <i class="icon iconfont icon-jiudian"></i></span>
+		                 <span class="fonts_title">金石大酒店（中南世纪城）</span>
+		        </li>
+		        <li class="mui-table-view-cell shop_li  flx">
+		            <span class="fonts flx1">高级双床房 </span>
+		            <!--<span class="fonts fonts2">大份、微辣 </span>-->
+		            <span class="fonts flx2 rgt" style="color: #C9C9C9;">x1</span>
+		            <span class="fonts flx3 rgt" style="color: #3C3C3C;">￥600.00</span>
+		        </li>
+		        <li class="mui-table-view-cell shop_li flx">
+		            <span class="fonts flx1">商旅高级商务房</span>
+		            <!--<span class="fonts fonts2">重辣</span>-->
+		            <span class="fonts flx2 rgt" style="color: #C9C9C9;">x1</span>
+		            <span class="fonts flx3 rgt" style="color: #3C3C3C;">￥800.00</span>
+		        </li>
+		        <li class="mui-table-view-cell confirm_hotel shop_li" >
+				       	<span class="in-out-time">
+				       		入住 2017-04-20 <br />
+							离店 2017-04-21
+				       	</span>
+				       	<span id="tongji" class="mui-pull-right" style="">
+				       		1晚
+				       	</span>
+				       </li>
+		        <li class="mui-table-view-cell order_goods shop_li" style="" >
+				        <div class="" style="width: 70%;font-size: 0.75rem;color: #999;">
+				        	总计 <b class="small">￥48.00</b>&nbsp;&nbsp;押金<b class="small">￥48.00</b> <small style="color: #BBBBBB;">(优惠 ￥0)</small>
+				        	
+				        </div>
+				        <div class="" style="text-align: right;width: 30%;font-size: 0.75rem; color:6A6A6A;">实付 <span  class="confirm_total">￥2400.00</span></div>
+				</li>
+	    	</ul>	
+			</div>
+		<!--金石大酒店信息end-->
+		<!--订单信息start-->
+		<div class="order_note flx">
+			<div class="order_note_left1">
+				订单备注
+			</div>
+			<div class="order_note_right1">
+				香菜每道菜都要放，不要辣。香菜每道菜都要放，不要辣。
+			</div>
+		</div>
+		<!--订单信息end-->
+		<!--预订信息start-->
+		<div class="book_notes">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell book_note li1">
+		            <div class="book_note_left1 ">
+						预订信息
+					</div>
+					<!--<div class="book_note_right">
+					</div>-->
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+		            <div class="book_note_left">
+						入住人数
+					</div>
+					<div class="book_note_right">
+						2
+				    </div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+		            <div class="book_note_left">
+						 入住时间   
+					</div>
+					<div class="book_note_right">
+						2017-04-05 10:35  
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+		             <div class="book_note_left">
+						联系人
+					</div>
+					<div class="book_note_right">
+						Mr.吴
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+			        <div class="book_note_left">
+						手机号
+					</div>
+					<div class="book_note_right">
+						13888888888 
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+			        <div class="book_note_left">
+						车位预留
+					</div>
+					<div class="book_note_right">
+						需要
+					</div>
+		        </li>
+	        </ul>	 
+		</div>
+		<!--预订信息end-->
+		<!--订单信息start-->
+		<div class="book_notes bottom">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell book_note li1">
+		            <div class="book_note_left1">
+						订单信息
+					</div>
+					<!--<div class="book_note_right">
+					</div>-->
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+		            <div class="book_note_left">
+						 支付方式   
+					</div>
+					<div class="book_note_right">
+						在线支付  
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+		             <div class="book_note_left">
+						订单号
+					</div>
+					<div class="book_note_right">
+						14975999806706724
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note flx">
+			        <div class="book_note_left">
+					下单时间
+					</div>
+					<div class="book_note_right">
+						 2017-04-05 9:59:48
+					</div>
+		        </li>
+	        </ul>	 
+		</div>
+		
+		<!--订单信息end-->
+		<!--bottom-->
+		<div class="mui-bar mui-bar-footer mui-bar-tab" id="footer">
+			<span class="cancel">取消订单</span><span class="topay">去支付</span>
+		</div>
+		<!--bottom-->
+		
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	
+		var maxtime = 15*60 //一个小时，按秒计算，自己调整!   
+			function CountDown(){   
+		if(maxtime>=0){   
+		minutes = Math.floor(maxtime/60);   
+		seconds = Math.floor(maxtime%60);
+		if(minutes<10){
+			minutes="0"+minutes; 
+		}
+		if(seconds<10){
+			seconds="0"+seconds;
+		}
+		
+		msg = minutes+"分"+seconds+"秒";   
+		document.all["timer"].innerHTML=msg;   
+//		if(maxtime == 5*60) alert('注意，还有5分钟!');   
+		--maxtime;   
+		}   
+		/*else{   
+		clearInterval(timer);   
+		alert("时间到!");   
+		}   */
+		}   
+		timer = setInterval("CountDown()",1000);
+		
+	
+</script>

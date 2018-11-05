@@ -1,0 +1,123 @@
+			/*all*/
+			*{
+				padding: 0;
+				margin:0;
+				font-size: 14px;
+				font-family: "microsoft yahei";
+			}
+			.all{
+				min-width: 1288px;
+			}
+			/*all*/
+			/*head*/
+			.headimg img{
+				max-width: 100%;
+			}
+			.head{
+				position: relative;
+				line-height: 0;
+			}
+			.headfonts>ul>li{
+				display: inline-block;
+				list-style:none;
+				margin: 0 18px;
+				color: #fefefe;
+			}
+			.headfonts>ul>li>a{
+				text-decoration: none;
+				/*color: #fefefe;*/
+				color: inherit;
+				font-size: 18px;
+			}
+			.headfonts>ul>li>a:hover{
+				color: #b39054;
+			}
+			.headfonts{
+				position: absolute;
+				top: 7%;
+				right: 7%;
+			}
+			.homepageactive{
+				color: #b39054!important;
+			}
+			/*head*/
+			/*bottom*/
+			.bottom{
+				text-align: center;
+				color: #FFFFFF;
+				padding-bottom: 50px;
+				background: url(../img/hbottombg.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.bottomul>li{
+				display: inline-block;
+				margin: 0 15px;
+				position: relative;
+				
+			}
+			.bottomul>li:last-child:after{
+				border: 0;
+			}
+			.bottomul>li:after{
+				content: '';
+			    position: absolute;
+			    height: 16px;
+			    right: -18px;
+			    top: 4px;
+			    border-right: 2px solid #dda960;
+			}
+			.bottomul>li>a{
+				text-decoration: none;
+				color: #B39054;
+				font-size: 18px;
+			}
+			.bottom_first{
+				padding-top: 80px;
+			}
+			.erWeiMa{
+				margin: 40px 0 18px 0;
+			}
+			.erWeiMa>div{
+				display: inline-block;
+			}
+			.erWeiMa img{
+				width: 97px;
+				height: 97px;
+			}
+			.erWeiMa>div:first-child{
+				margin-right: 45px;
+			}
+			.marginbottom10{
+				margin-bottom: 10px;
+			}
+			.haddress{
+				font-size: 16px;
+				/*margin-bottom: 25px;*/
+				line-height: 1.9;
+			}
+			.htel{
+				font-size: 16px;line-height: 1.9;
+			}
+			.beianimg img{
+				/*vertical-align: bottom;*/
+			}
+			.beianimg{
+				margin: 0 7px;
+			}
+			.beian_line{
+				font-size: 16px;
+				line-height: 1.9;
+			}
+			.beian_line p{
+				font-size: 16px;
+			}
+			.imgitem{
+				display: inline-block;
+			}
+			.imgitem2{
+				margin: 0 30px;
+			}
+			.imgcon{
+				margin-top: 20px;
+			}
+			/*bottom*/

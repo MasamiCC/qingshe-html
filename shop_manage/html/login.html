@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商户登陆</title>
+	<link href="../css/login.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="header">
+		<div class="headre_img">
+			<img src="../img/logo.png" alt="logo"  style="margin-top: 45px" />
+		<div class="header_right">
+			<p id="cr1" class="top">客服电话&nbsp;&nbsp;&nbsp;<em>4008-288-110</em></p>
+			<span id="cr2" class="top"><img src="../img/ic_ewm.png" class="login_img"/>&nbsp;&nbsp;轻奢APP&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span>
+			<span id="cr3" class="top"><img src="../img/ic_ewm.png" class="login_img"/>&nbsp;&nbsp;轻奢资讯</span>
+		</div>
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="content" style="min-height: 500px;max-height: 600px;">
+			<div id="pic2">
+					<img src="../img/firework.png" alt="" />
+				</div>
+			<div class="login_form">
+				<div class="login_title">
+					用户登录
+				</div>
+				<div class="frm">
+				<form action="" method="post">
+					<ul>
+						<li class="login_li">
+							 <label for="user">
+								<input  class="inp user" type="text" value="" id="user"/>
+								<img id="u" src="../img/user.png"/>
+								</label>
+						</li>
+						<li class="login_li">
+							<label for="pasw">
+								<input class="inp pasw" type="password" name="" id="pasw" value="" />
+								<img id="pa" src="../img/pas.png"/>
+								</label>
+						</li>
+						<!--<li class="yan">
+							<label for="yan">
+								<input class="inp yan" type="password" name="" id="yan" value="" />
+								<img id="ya" src="../img/yan.png" alt="" />
+								</label>
+						</li>-->
+						<li class="login_li">
+							<label for="remember">
+								<input type="checkbox" name="" id="remember" value=""  />&nbsp;<span class="remember">保持登录</span>
+							</label>
+						</li>
+						<li class="login_li">
+							
+								<input type="button" value="登录" id="login" class="login_btn" onclick="dologin()" >
+								
+							
+							</li>
+					</ul>
+				</form>
+				</div>
+				<div class="login_msg" >
+					<span class="forget"><a id="pas" href="forget_password.html">忘记密码</a></span>
+					<span class="re">还没有账号？<a id="re" href="register.html">免费入驻</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="foot">
+				苏ICP备15038685号-2 增值电信业务经营许可证：苏B2-20160092
+		</div>
+	</div>
+</body>s
+<script type="text/javascript">
+	
+	function dologin(){
+		var user=document.getElementById("user").value
+		var pass=document.getElementById("pasw").value
+		if(user==""||pass==""){
+		alert("用户名或密码输入错误，请重新输入");
+	}
+	}
+	
+
+	
+</script>
+</html>

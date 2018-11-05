@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/league.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.poppicker.css"/>
+	</head>
+	<style type="text/css">
+		input[type=text]{
+			height: 44px;
+		}
+		.mui-toast-container{
+				top: 30%;
+			}
+	</style>
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">加盟申请</h1>
+		</header>-->
+		<div class="mui-content">
+		    <div class="league_banner">
+		    	<img src="../image/league_banner.png"/>
+		    </div>
+		    <div class="league_form">
+		    	<ul class="mui-table-view">
+		    		<div class="form_title">公司信息</div>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>公司名称</label>
+			    	        <input type="text" class="" placeholder="请输入公司名称">
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>公司地址</label>
+			    	        <input type="text" class="" placeholder="请输入公司地址">
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row mui-navigate-right">
+			    	        <label>所属行业 </label>
+			    	        <input type="text"  placeholder="请选择所属行业" id="industry" readonly>
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row mui-navigate-right">
+			    	        <label>从业时间 </label>
+			    	        <input type="text"  placeholder="请选择从业时间" id="workingtime" readonly>
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+	    	            	<ul class="img_list">
+	    	            		<li>
+	    	            			<img src="../image/file1_img.jpg" id="img1"/>
+			    	        		<input type="file" id="img1_file" accept="image/*" onchange="change(this)">
+	    	            		</li>
+	    	            		<li>
+	    	            			<img src="../image/file2_img.jpg" id="img2"/>
+			    	        		<input type="file" id="img2_file" accept="image/*" onchange="change(this)">
+	    	            		</li>
+	    	            		<li>
+	    	            			<img src="../image/file3_img.jpg" id="img3"/>
+			    	        		<input type="file" id="img3_file" accept="image/*" onchange="change(this)">
+	    	            		</li>
+	    	            	</ul>
+			    	    </div>
+	    	        </li>
+	    	    </ul>
+	    	    <ul class="mui-table-view">
+	    	    	<div class="form_title">业务负责人</div>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>联系人姓名</label>
+			    	        <input type="text" class="" placeholder="请输入联系人姓名">
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>联系人手机</label>
+			    	        <input type="text" class="" id="mobile" placeholder="请输入联系人手机号码" style="" maxlength="11">
+			    	        <span class="send_code">获取验证码</span>
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>输入验证码 </label>
+			    	        <input type="text" class="" placeholder="请输入验证码">
+			    	    </div>
+	    	        </li>
+	    	        <li class="mui-table-view-cell">
+	    	            <div class="mui-input-row ">
+			    	        <label>联系邮箱</label>
+			    	        <input type="text" class="" placeholder="请输入联系邮箱">
+			    	    </div>
+	    	        </li>
+	    	    </ul>
+		    	
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <div class="mui-pull-right league_btn">
+		    	提交申请
+		    </div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.poppicker.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function($, doc) {
+		$.init();
+		$.ready(function() {
+			//所属行业
+			var userPicker = new $.PopPicker();
+			userPicker.setData([
+				{id: '1',text: '互联网'}, 
+				{id: '2',text: '报纸分类'}, 
+				{id: '3',text: '推广服务'}, 
+				{id: '4',text: '其他'}, 
+				]);
+			var showUserPickerButton = doc.getElementById('industry');
+			showUserPickerButton.addEventListener('tap', function(event) {
+				userPicker.show(function(items) {
+					showUserPickerButton.value = items[0].text;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+			
+//			从业时间
+			var timePicker = new $.PopPicker();
+			timePicker.setData([
+				{id: '1',text: '1年'}, 
+				{id: '2',text: '2年'}, 
+				{id: '3',text: '3年'}, 
+				{id: '4',text: '4年'}, 
+				]);
+			var showTimePickerButton = doc.getElementById('workingtime');
+			showTimePickerButton.addEventListener('tap', function(event) {
+				timePicker.show(function(items) {
+					showTimePickerButton.value = items[0].text;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+			
+
+		});
+	})(mui, document);
+	
+	
+	$(function(){
+		$(".send_code").on('tap',function(){
+			var hasc=$(this).hasClass('clicked');
+			if (!hasc) {
+				$(this).addClass('clicked');
+				var mobile=$("#mobile").val();
+				if (!(/^1(3|4|5|7|8)\d{9}$/.test(mobile))) {
+					mui.alert('请输入正确的手机号码');
+					$(this).removeClass('clicked');
+					return false;
+				}else{
+					countDown('.send_code',10);
+				}
+			}else{
+				return false;
+			}
+		})
+		
+		$(".img_list").on('tap','img',function(){
+			console.log($(this).attr('id'))
+			var id=$(this).attr('id');
+			$("#"+id+'_file').click()
+		})
+		
+		
+		jQuery("body").on("touchend", function() { //body上面绑定touchend事件
+			jQuery("input[type=text]").each(function (i, v) { //自定义一个.input_box classname ，多个时绑定多个，遍历
+			if(jQuery(this).is(":focus") === true){ //如果当前input框获取到了焦点
+			jQuery(this).blur(); // 使其失去即可
+			}
+			});
+		})
+//		 mui.toast('提交申请成功') 
+		
+	})
+	
+	
+		
+	
+
+
+		
+	
+	
+	
+	var timer='';
+	var canvas = document.createElement('canvas'),
+        ctx = canvas.getContext('2d');
+        
+    function compress(img) {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        
+        //利用canvas进行绘图
+        
+        //将原来图片的质量压缩到原先的0.2倍。
+        var data = canvas.toDataURL('image/jpeg', 0.2); //data url的形式
+        
+        return data;
+    }
+    function change (obj) {
+	    if (!obj.files.length) return;
+	    if (obj.files.length > 1) {
+	        mui.alert("只允许上传一张图片!");
+	        return false;
+	    }
+	
+	    var file = obj.files[0];
+	
+	    var reader = new FileReader();
+	    reader.onload = function () {
+	    	  debugger
+	        var result = this.result;    //data:base64     
+	        console.log(result)
+	        $(obj).prev().attr({
+	        	src:result
+	        })
+	        $(obj).prev().css({
+	        	height:$(obj).prev().width()*1.28,
+	        	width:$(obj).prev().width()
+	        })
+	        console.log($(obj).prev().width())
+//	        $.post('/upload', {'base64': result}, function(result) {
+//	        });
+	    };
+	    reader.readAsDataURL(file);
+	}
+	function countDown(ele,time){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if(time>1){
+				time--;
+				$(ele).html(time+'s后重试')
+			}else{
+				$(ele).html('发送验证码').removeClass('clicked');
+				clearInterval(timer);
+			}
+		},1000)
+	}
+</script>

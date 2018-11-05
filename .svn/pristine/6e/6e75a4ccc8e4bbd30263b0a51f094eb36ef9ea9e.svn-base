@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/charity.css"/>
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.charity_title{
+				font-size: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header_l">
+			<!--顶部-->
+			<div class="header_top">
+				<div id="" class="float_left reg_div" >
+					<span style="" class="ic_erm">
+						小康生活一站式消费平台
+					</span>
+				</div>
+				<div class="float_right">
+					<span id="" class="ic_erm">
+						登录
+					</span>
+					<span class="ic_erm">
+						注册
+					</span>
+
+					<span class="ic_erm">轻奢APP </span>
+					<span class="ic_erm">轻奢微信</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_search">
+				<div class="float_left">
+					<img src="../img/logo.png" alt="" />
+				</div>
+				<div class="float_right">
+					<form action="" method="post">
+						
+						<ul>
+							<li>
+								<label for="" class="search_label">
+									<input type="text"  class="keywords" placeholder="请输入关键字"/>
+									<span class="search_btn">搜索</span>
+								</label>
+							</li>
+							<li class="key_words">
+								关键字：<span>膳魔师 </span><span>COACH</span><span>UGG</span><span>GUCCI</span>
+							</li>
+						</ul>
+						
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_nav">
+				<ul class="nav_list">
+					<li class="header_nav_li header_nav_active">首页</li>
+					<li class="header_nav_li ">美食</li>
+					<li class="header_nav_li ">酒店</li>
+					<li class="header_nav_li ">定制</li>
+					<li class="header_nav_li ">旅游</li>
+					<li class="header_nav_li ">生活</li>
+				</ul>
+				<ul style="float: right;" class="nav_list">
+					<li class="header_nav_li ">奢探</li>
+					<li class="header_nav_li ">轻奢资讯</li>
+					<li class="header_nav_li ">慈善基金</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="header" id="header_s">
+			<div class="">
+				<div class="float_left">
+					<img src="../img/logo_s.png" style="vertical-align: middle;"/>
+					<ul style="display: inline-block;">
+						<li class="header_nav_li header_nav_active">首页</li>
+						<li class="header_nav_li ">美食</li>
+						<li class="header_nav_li ">酒店</li>
+						<li class="header_nav_li ">定制</li>
+						<li class="header_nav_li ">旅游</li>
+						<li class="header_nav_li ">生活</li>
+						<li class="header_nav_li ">奢探</li>
+						<li class="header_nav_li ">轻奢资讯</li>
+						<li class="header_nav_li ">慈善基金</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<div class="float_right login_s">
+						<span id="">
+							登录
+						</span>
+						<span>注册</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--正文 -->
+		<div class="content">
+			<!--正文内容部分开始-->
+			<div>
+				<div class="charity charity_left">
+					<div class="charity_detail_title">
+						<div class="charity_title " >
+							首届轻奢点评慈善盛典隆重举行
+						</div>
+						<span id="">
+							时间：2017/1/13   来源：轻奢点评
+						</span>
+					</div>
+					<div class="charity_detail_content">
+						<p>2017年1月12日，由南通市红十字会、江苏中报联合主办的首届轻奢点评慈善盛典在南通绿洲假日酒店隆重举行，并现场启动成立轻奢点评慈善基金。南通市政府副市长朱晋、政协副主席杨展里、徐守铭，南通经济技术开发区党工委书记羌强，南通市各部委办局主要负责人、江苏中报董事长陈建滨致开幕辞，轻奢点评董事任淑芳、执行副总裁徐溪等公司领导和社会爱心人士共300余人参加活动。
+						</p>
+						<img src="../img/charity_big.png"/>
+						<p>轻奢点评为全国首个融合式慈善消费小康生态圈虚拟孵化器互联网平台。在产品上线的同时，启动轻奢点评慈善基金，并举办首届慈善盛典，旨在凝聚小康及以上群体、爱心商家，树立公益慈善意识，改变消费观念、生活方式和经营模式，使慈善行为不再是一种奢侈品，而是逐渐成为人们在日常生活和经营中的一部分。据了解，以后人们和商家只要下载注册轻奢点评APP，或直接登录官网www.592vip.com进行消费和经营，在享受平台各类红利及不增加任何成本的同时，将由平台进行补贴并按照每笔消费额度由系统自动划出相应比例的善款进入轻奢点评慈善基金，长期用于对国家倡导的健康扶贫人道救助项目进行精准扶贫。市领导朱晋、杨展里、徐守铭、南通开发区党工委书记羌强等领导与轻奢点评领导一起按动启动球宣告轻奢点评互联网平台上线和轻奢点评慈善基金正式成立。
+						</p>
+						<img src="../img/charity_big.png"/>
+						<p>南通市红十字会党组书记、常务副会长潘国华在致辞中指出，轻奢点评模式的精准定位和高度融合，完全契合人道博爱奉献的红十字精神，是对精准扶贫、精准脱贫工作做出的有益探索和贡献，为建设全民慈善的爱心南通，为建设强富美高＋爱心的新南通提供了创新思路和拓展平台。轻奢模式的创新之处，在于日常消费和经营与公益慈善的有效融合，一体运行，形成只要在生活，只要在经营，就是在做公益的良性融合机制，让生活有品质的同时，也让社会更加有爱，让小康更俱温度。
+						</p>
+					</div>
+					
+				</div>
+				<div class="charity charity_right">
+					<div class="sk_div" id="amount">
+						<ul class="">
+							<li class="sk_title">累计善款(元)</li>
+							<li class="sk_amount">
+								20,000,00
+							</li>
+							<li class="sk_title">爱心人数(人)</li>
+							<li class="sk_amount">
+								5,123,745
+							</li>
+							<li class="sk_btn_li" id="sk_btn_li">
+								<span class="sk_btn sk_btn_jz" > <img src="../img/ic_jz.png" alt="" />现金捐赠</span>
+								<span class="sk_btn sk_btn_his" ><img src="../img/ic_myhis.png"/>我的捐赠记录</span>
+							</li>
+						</ul>
+					</div>
+					<!--捐赠说明-->
+					<div class="sk_div jj_pro">
+						<div>
+							<h3 class="title" style="text-indent: 20px;font-size: 14px;padding-top: 20px;">轻奢慈善	爱心消费</h3>
+							<p style="color: #fff;text-indent: 20px;font-size: 12px;">在日常消费中，通过轻奢点评可以点滴的积累慈善基金。</p>
+							
+							<ul class="jj_pro_ul">
+								<h3>关于轻奢点评慈善基金</h3>
+								<li>
+									<span>专注于慈善消费的大平台</span>
+									<p>
+										由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因灾致贫、遭遇意外。
+									</p>
+								</li>
+								<li>
+									<span>专注于慈善消费的大平台</span>
+									<p>
+										由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因。
+									</p>
+								</li>
+								<li>
+									<span>专注于慈善消费的大平台</span>
+									<p>
+										由轻奢点评和红十字康因病因灾致贫、遭遇意外等面临生存困难的特殊家庭。
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--正文内容部分结束-->
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<!--footer-heip-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门
+						</span>
+						<li>购买流程</li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../img/app_erm.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../img/wechat_erm.png" alt="" />
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div class="footer_copyRight">
+				<p>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</p>
+			</div>
+			<div class="footer_rz">
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

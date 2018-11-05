@@ -1,0 +1,35 @@
+*{
+	margin: 0;padding: 0;list-style: none;text-align: center;
+}
+body{
+	background:url(../images/bcard@3x.png)  ;
+	background-position: 0 40%;
+	background-size: 100%;
+	background-repeat: repeat-y;
+}
+.mui-content{background: none;}
+.bcard_banner img{max-width: 100%;}
+.bcard_item{margin: 0 1rem;}
+.bcard_title{text-align: left;display: flex;align-items: center;border-bottom: .1rem solid #ccc;line-height: 3;font-size: 1rem;color: #333;font-weight: 500;}
+.bcard_title img{width: 1.5rem;margin: 0 .5rem;}
+.bcard_cont{margin: .5rem 0;}
+.bcard_msg{display: flex;justify-content: flex-end;align-items: center;line-height: 2.5;border-top: .1rem solid #ccc;font-size: .78rem;color: #999;}
+.bcard_msg img{vertical-align: middle;width: .8rem ;height: .8rem;margin-right: .2rem;}
+.bcard_english{text-align: center;color: #e6e6e6;font-size: 2.2rem;line-height: 2;}
+.quanyi_list{display: flex;align-items: center;flex-wrap: wrap;}
+.quanyi_list li{flex: 0 0 25%;display: flex;flex-direction: column;align-content: center;justify-content: center;align-items: center;margin: .3rem 0;}
+.quanyi_list li img{max-width: 65%;}
+.quanyi_list li div{line-height: 2;font-size: .75rem;color: #333;}
+.how_bcard{background: #fff;border-radius: .75rem;padding: .75rem 1rem ;box-shadow: 0 0 .2rem #999;margin-top: 1rem;}
+.how_bcard li{display: flex;align-items: center;padding: .65rem 0;}
+.how_bcard li div:first-child{flex: 0 0 5.1rem;}
+.how_bcard li div:first-child img{max-width: 4.2rem;}
+.how_bcard li div:last-child{text-align: left;font-size: .875rem;line-height: 1.6;color: #333;}
+.bcard_up{background: #fff;border-radius: .75rem;padding: .75rem 1rem  ;box-shadow: 0 0 .2rem #999;margin-top: 1rem;}
+.bcard_up li{display: flex;align-items: center;padding: .65rem 0;}
+.bcard_up li div:first-child{flex: 0 0 4.5rem;}
+.bcard_up li div:first-child img{max-width: 2.3rem;}
+.bcard_up li div:last-child{text-align: left;font-size: .875rem;line-height: 1.6;color: #333;}
+.mui-btn-org{background: #f8a120;color: #fff;border: none;border-radius: .3rem;    padding: 8px 0;}
+.mui-btn-org:active{background: #e48f11!important;color: #fff;}
+.bcard_btn{padding: .5rem 0;}

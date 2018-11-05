@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢力量.影响未来</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xmtej.css"/>
+	</head>
+	<body>
+		<div class="mui-content ejbody">
+			<div class="ejhead">
+				<!--<div class="ejheaditem1 ej_headitem1">
+					 承办单位： 轻奢点评   
+				</div>
+				<div class="ejheaditem1 ej_headitem2">
+					主办单位： 槐树小筑&nbsp;&nbsp;静海美术馆 
+				</div>
+				<div class="ejheaditem3">
+					<div class="ejheaditem2">
+						<img src="../image/banner_icon.png"/>
+					</div>
+					<div class="ejheaditem2">
+						<img src="../image/erj_sfonts.png"/>
+					</div>
+				</div>
+				<div class="ejheaditem4">
+					<img src="../image/ej_sline.png"/>
+				</div>
+				<div class="ejheaditem5">
+					<img src="../image/er_sfonts.png"/>
+				</div>
+				<div class="ejheaditem6">
+					<img src="../image/ej_banner.png"/>
+				</div>-->
+				<div class="ejheaditem"><img src="../image/headpic1.jpg"/></div>
+				<div class="ejheaditem"><img src="../image/headpic2.jpg"/></div>
+				<div class="ejheaditem"><img src="../image/headpic3.jpg"/></div>
+				<div class="ejheaditem"><img src="../image/headpic4.jpg"/></div>
+			</div>
+			<!--<div class="ejmiddle">
+				<div class="ejmiddle1">
+				<div class="ejmiddle1_fonts"><span class="circle"></span>&nbsp;&nbsp;&nbsp;开幕时间：2017.11.12&nbsp;&nbsp;&nbsp;14:00-16:30</div>
+				<div class="ejmiddle1_fonts"><span class="circle"></span>&nbsp;&nbsp;&nbsp;展览时间：2017.11.11-2017.11.20</div>
+				<div class="ejmiddle1_fonts"><span class="circle"></span>&nbsp;&nbsp;&nbsp;展览地点：淘宝城五楼美术馆</div>
+				<div class="ejmiddle1_fonts"><span class="circle"></span>&nbsp;&nbsp;&nbsp;联系人：王树中&nbsp;&nbsp;&nbsp;联系电话：13390969688</div>
+				</div>
+			</div>-->
+			<div class="ejmiddle ">
+				<div class="ejmiddle1 ejmiddle2">
+					<div class="ejmiddle2pic paddleft20">
+						<img src="../image/activity_order.jpg"/>
+					</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts"><span class="circle circle1"></span>&nbsp;&nbsp;&nbsp;14:00 嘉宾签到</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts"><span class="circle circle1"></span>&nbsp;&nbsp;&nbsp;14:30 王茹槟或丁峰</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts"><span class="circle circle1"></span>&nbsp;&nbsp;&nbsp;14:35-15:25</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;张晏老师分享南通书画艺术传承与发扬</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;周时君老师谈书法创作</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;冯艳老师的国画创新之路</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;王树中老师分享青花菩提及青花系列</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;王茹槟老师的艺术缘起</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;孙侠老师谈王奇寅、赵曼、朱建忠老师等新水墨</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;周周谈茶的文化与艺术</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts"><span class="circle circle1"></span>&nbsp;&nbsp;&nbsp;15:30-16:30</div>
+				<div class="ejmiddle1_fonts ejmiddle2_fonts">&nbsp;&nbsp;&nbsp;&nbsp;与开幕商家及轻奢点评的商家分享产品时间</div>
+				</div>
+			</div>
+			<div class="ejmiddle ejmiddletop ">
+				<div class="ejmiddle1 ejmiddle2">
+					<div class="ejmiddle2pic ejmiddle3pic ">
+						<img src="../image/shouyao.jpg"/>
+					</div>
+					<div class="uldiv">
+						<ul>
+							<li class="lis">本清 </li>
+							<li class="lis">陈佩秋 </li>
+							<li class="lis">曹劼 </li>
+							<li class="lis">范曾 </li>
+							<li class="lis">范扬 </li>
+							<li class="lis">冯艳 </li>
+							<li class="lis">顾平 </li>
+							<li class="lis">侯德剑 </li>
+							<li class="lis">康平 </li>
+							<li class="lis">康荣 </li>
+							<li class="lis">钱志扬 </li>
+							<li class="lis">邵连 </li>
+							<li class="lis">孙侠 </li>
+							<li class="lis">王奇寅 </li>
+							<li class="lis">王法 </li>
+							<li class="lis">王汇涛 </li>
+							<li class="lis">王树中 </li>
+							<li class="lis">王茹槟 </li>
+							<li class="lis">张晏 </li>
+							<li class="lis">赵曼 </li>
+							<li class="lis">锥石 </li>
+							<li class="lis">周时君 </li>
+							<li class="lis">周筱君 </li>
+							<li class="lis">朱建忠 </li>
+							<li class="lis">朱彤</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="ejmiddle ejmiddletop ejpics">
+				<div class="ejpic">
+					<div class="ejpic_con">
+						<img src="../image/pic4_1.png"/>
+					</div>
+				</div>
+				<div class="ejpic">
+					<div class="ejpic_con">
+						<img src="../image/pic4_2.png"/>
+					</div>
+				</div>
+				<div class="ejpic">
+					<div class="ejpic_con">
+						<img src="../image/pic4_3.png"/>
+					</div>
+				</div>
+				<div class="ejpic">
+					<div class="ejpic_con">
+						<img src="../image/pic4_4.png"/>
+					</div>
+				</div>
+				<div class="circletop">
+					<img src="../image/circletop.png"/>
+				</div>
+			</div>
+			<div class="ejfooter">
+				轻奢点评诚邀您莅临出席！
+			</div>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>附近</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/find.css"/>
+		<style type="text/css">
+			.shop_list{
+				top: 0;
+			}
+			#header{
+				background: rgba(51,51,51,1);
+			}
+			.keywords{
+				height: 30px!important;border-radius: 20px!important;font-size: 0.95rem;
+			}
+			#header a{
+				color: #fff;
+			}
+			.search_btn {
+			    font-size: 13px;
+			    background: #eee;
+			    width: 15%;
+			    margin: 0 2%;
+			    border-radius: 5px;
+			    height: 27px;
+			    line-height: 27px;
+			    display: inline-block;
+			    box-shadow: 1px 1px 3px #eee;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <a id="menu" class="mui-action-menu mui-icon mui-icon-search mui-pull-right" href="javascript:void(0)">
+		    </a>
+		    <h1 class="mui-title">
+		    	<input type="text" name="" id="keywords" value=""  placeholder="关键字" class="keywords"/>
+		    </h1>
+		</header>
+		<div class="mui-content">
+		    <div class="shop_list">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+				
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell shop_item">
+										<div class="shop_item_i shop_img">
+											<img  class="shop_logo" data-lazyload="image/shop_2.png"/>
+										</div>
+										<div class="shop_item_i shop_msg">
+											<ul>
+												<li class="shop_title">这是一家全部店铺</li>
+												<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+												<li>
+													<span class="shop_status">休息中</span>
+													<span class="shop_juli">11.49km</span>
+												</li>
+												<li>
+													<div class="shop_pingfen">
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon2.png"/>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</li>
+									<li class="mui-table-view-cell shop_item">
+										<div class="shop_item_i shop_img">
+											<img  class="shop_logo" data-lazyload="image/shop_2.png"/>
+										</div>
+										<div class="shop_item_i shop_msg">
+											<ul>
+												<li class="shop_title">这是一家店铺</li>
+												<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>
+												<li>
+													<span class="shop_status shop_on">营业中</span>
+													<span class="shop_juli">11.49km</span>
+												</li>
+												<li>
+													<div class="shop_pingfen">
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon1.png"/>
+														<img src="image/icon2.png"/>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.pullToRefresh.js"></script>
+<script src="js/mui.pullToRefresh.material.js"></script>
+<script src="js/mui.lazyload.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.lazyload.img.js" type="text/javascript" charset="utf-8"></script>
+<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+							up: {
+								auto:true,
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.appendChild(createFragment(ul, index, 5));
+										lazyLoad.refresh(true);
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell shop_item';
+							li.innerHTML = '<div class="shop_item_i shop_img">'
+										+		'<img  class="shop_logo" data-lazyload="image/shop_2.png">'
+										+	'</div>'
+										+	'<div class="shop_item_i shop_msg">'
+										+		'<ul>'
+										+			'<li class="shop_title">这是一家'+index+'店铺'+i+'</li>'
+										+			'<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>'
+										+			'<li>'
+										+				'<span class="shop_status">营业中</span>'
+										+				'<span class="shop_juli">11.49km</span>'
+										+			'</li>'
+										+			'<li>'
+										+				'<div class="shop_pingfen">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon1.png">'
+										+					'<img src="image/icon2.png">'
+										+				'</div>'
+										+			'</li>'
+										+		'</ul>'
+										+	'</div>'
+										+	'<div class="clear"></div>'
+							fragment.appendChild(li);
+							
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+			mui('#scroll1').on('tap','li',function(){
+				location.href="shop_detail.html"
+			})
+			var lazyLoad= mui('.shop_list').imageLazyload({
+		    	placeholder: 'image/index_shop_log.png',
+		        destroy: false
+			});
+			document.getElementById("menu").onclick=function(){
+				//alert(1)
+				var value=document.getElementById("keywords").value;
+				if (value=='') {
+					alert('请输入关键字');
+					return false;
+				}
+			}
+		</script>

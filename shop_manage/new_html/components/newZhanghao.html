@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增子账号</title>
+		<!--引入css-->
+		<link rel="stylesheet" href="../../css/modle_common.css" />
+		<style>
+			.change_password_nav{
+				padding: 30px 70px;
+			}
+			.change_password_nav > .title{
+				font-size: 24px;
+				color: #333333;
+				text-align: center;
+				font-weight: normal;
+			}
+			
+			
+			.error_none {
+			    color: #ce3a26;
+			    font-size: 16px;
+			    text-align: right;
+			    margin: 0px 0px;
+			    display: none;
+			}
+			
+			.input_box {
+			    position: relative;
+			    margin: 40px 0;
+			}
+			
+			.icon_left {
+			    position: absolute;
+			    left: 11px;
+			    top: 11px;
+			    z-index: 5;
+			    background-position: 0px 0px;
+			    width: 30px;
+			    height: 22px;
+			    background-repeat: no-repeat;
+			}
+			.inp {
+			    width: 100%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    padding-left: 45px;
+			    padding-right: 40px;
+			    font-size: 16px;
+			    border-radius: 5px;
+			}
+			
+			.user_icon{
+				background-image: url(../../img/user_icon.png);
+				height: 25px;
+				background-position: 2px 1px;
+			}
+			
+			.phone_icon{
+			    background-image: url(../../img/phone_icon.png);
+			    background-position: 5px 0;
+			}
+			
+			.passowrd_icon{
+			    background-image: url(../../img/wifi_password.png);
+			    background-position: 4px -2px;
+			}
+			.input_code {
+			    width: 60%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    padding-left: 40px;
+			    padding-right: 40px;
+			    font-size: 16px;
+			    border-radius: 5px;
+			}
+			.code_btn {
+			    width: 35%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    font-size: 16px;
+			    background-color: white;
+			    color: #c2a15d;
+			    cursor: pointer;
+			    border-radius: 5px;
+			}
+			
+			.checkbox_area .title{
+				color: #d4ac57;
+				font-size: 16px;
+			}
+			
+			.btn_area{
+				margin-top: 40px;
+			}
+			
+			.radio_area{
+				margin-top: 15px;
+			}
+			
+			.radio_area > span{
+				margin-right: 40px;
+				font-size: 16px;
+				color: #333333;
+			}
+			
+			.radio_area > span input{
+				margin-right: 5px;
+				position: relative;
+				top: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="change_password_nav">
+			<h4 class="title">
+				新增子账号
+			</h4>
+			<form class="change_password_form">
+				<div class="input_box">
+		            <i class="user_icon icon_left"></i>
+		            <input placeholder="请输入真实姓名" class="input_user inp" type="text">
+				</div>
+		        <div class="input_box">
+		            <i class="phone_icon  icon_left"></i>
+		            <input placeholder="请输入真实手机号" class="input_user inp" type="text">
+		        </div>
+		        <div class="input_box">
+		            <i class="passowrd_icon  icon_left"></i>
+		            <input placeholder="请输入登录密码（6位）" class="input_user inp" type="text">
+		        </div>
+		        <div class="input_box">
+		            <i class="passowrd_icon  icon_left"></i>
+		            <input placeholder="请再次输入登录密码（6位）" class="input_user inp" type="text">
+		        </div>
+		        <div class="checkbox_area">
+		        	<p class="title">
+		        		是否启用：
+		        	</p>
+		        	<div class="radio_area">
+		        		<span><input type="radio" name="Sex" value="use" />启用</span>
+		        		<span><input type="radio" checked="checked" name="Sex" value="unUse" />停用</span>
+		        	</div>
+		        </div>
+		        <div class='btn_area'>
+		        	<input class="btn confirm fl" type="submit"  value="确定" />
+		        	<a class='btn cancel fr'>取消</a>
+		        </div>
+			</form>
+		</div>
+		<script src="../../js/jquery-1.8.3.min.js"></script>
+		<script>
+			//点击取消
+			$(document).on('click','.change_password_nav .cancel',function(){
+				var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+			    parent.layer.close(index); //再执行关闭
+			})
+			        
+		 
+			$('.inp').bind('input propertychange', function() {  
+				if($(this).val()){
+					$(this).next().show()
+				}else{
+					$(this).next().hide()
+				}
+			}); 
+			
+			$('.close_icon').click(function(){
+				$(this).prev().val(""); 
+			})
+	       
+
+		   
+			</script>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>签到领取礼包</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/sign_treasure.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="mui-content maincon">
+			<div class="main">
+				<div class="main_top">
+					<img src="../image/signin2_banner.png"/>
+				</div>
+				<div class="main_middle">
+					<div class="main_middle_top">
+						<img src="../image/qiandaotop.png"/>
+					</div>
+					<div class="main_middle_mian">
+						<div class="main_middle_mian_font">
+							本周已签到3天<br />
+							还差
+							<span class="daynum">
+								<em class="num">1</em>
+							</span>
+							天
+						</div>
+						<div class="">
+							<!--<span class="greygeticon">即可领取</span>-->
+						</div>
+						<div class="greygeticonline">
+							<span class=" greygeticon red">立即领取</span>
+						</div>
+					</div>
+				</div>
+				<div class="main_bottom">
+					<div class="main_bottom_top">
+						<img src="../image/activity_rulenew.png"/>
+					</div>
+					<div class="main_bottom_mian">
+						1、本次活动为轻奢点评用户专享。<br />
+						2、活动期间使用任何舞弊行为的用户一经发现，即刻取消活动资格。<br />
+						3、每名用户只可成功参与一次，同个移动端均为无效。<br />
+						4、本活动最终解释权归轻奢点评所有。
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myPopover2" class="mui-popover">
+			<div class="myPopover_top">
+				<div class="popover_header1">
+					<img src="../image/coin.png"/>
+				</div>
+				<div class="popover_header2">
+					<img src="../image/popver_top.png"/>
+				</div>
+				<div class="popover_middle">
+					<div class="couponcon">
+						<div class="coupon_left">
+							<div class="coupon_left_font">
+								￥<span class="bigf">50</span>
+							</div>
+							<div class="coupon_right_font">
+								<div>
+									洗发券
+								</div>
+								<div class="">
+									CMJ美发沙龙
+								</div>
+							</div>
+						</div>
+						<div class="quanwei">
+							<img src="../image/quanwei.png"/>
+							<div class="geticonquan">
+								已领取
+							</div>
+						</div>
+					</div>
+										<div class="couponcon">
+						<div class="coupon_left">
+							<div class="coupon_left_font">
+								￥<span class="bigf">50</span>
+							</div>
+							<div class="coupon_right_font">
+								<div>
+									洗发券
+								</div>
+								<div class="">
+									CMJ美发沙龙
+								</div>
+							</div>
+						</div>
+						<div class="quanwei">
+							<img src="../image/quanwei.png"/>
+							<div class="geticonquan">
+								已领取
+							</div>
+						</div>
+					</div>
+										<div class="couponcon">
+						<div class="coupon_left">
+							<div class="coupon_left_font">
+								￥<span class="bigf">50</span>
+							</div>
+							<div class="coupon_right_font">
+								<div>
+									洗发券
+								</div>
+								<div class="">
+									CMJ美发沙龙
+								</div>
+							</div>
+						</div>
+						<div class="quanwei">
+							<img src="../image/quanwei.png"/>
+							<!--<div class="geticonquan">
+								已领取
+							</div>-->
+							<div class="geticonquan redquan">
+								立即领取
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="popover_bottom">
+					<img src="../image/popver_bottom.png"/>
+				</div>
+			</div>
+			<div class="">
+				<i class="mui-icon mui-icon-close" style="color: #fff;"></i>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/sign_treasure.js"></script>

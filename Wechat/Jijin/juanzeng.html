@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../Public/css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;
+			}
+			body{
+				background: #e4e4e4;
+			}
+			.check_li{
+				border-bottom: 1px solid #ddd;background: #fff;height: 45px;line-height: 45px;
+				padding: 0 15px;
+			}
+			.check_li input{
+				border: none;background: none;padding: 0;margin-bottom: 0;
+				font-size: 14px;
+			}
+			.get_code{
+				float: right;margin-right: 15px;color: #31b8bb;font-size: 14px;
+			}
+			.check_btn{
+				width: 90%;margin: 25px auto;border-radius: 30px;opacity: 0.5;
+			}
+			.check_btn_1{
+				opacity: 1;
+			}
+			.check_li_title{
+				font-size: 14px;
+			}
+			.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{
+				color: #59ce91;
+			}
+			.pay_logo{
+				display: inline-block;float: left;margin: 5px 20px 10px 0;
+			}
+			.pay_item li{
+				list-style: none;font-size: 14px;line-height: 25px;
+			}
+			.pay_msg{
+				color: #ccc;	
+			}
+		</style>
+	</head>
+
+	<body>
+		<form name="mform" id="mform" action="index.php">
+			<ul class="check_ul" style="margin-bottom: 10px;">
+				<li class="check_li check_li_title"> 
+					捐赠金额
+				</li>
+				<li class="check_li"> 
+					<input type="number" name=""  value="" placeholder="请输入金额"  id="number"/>
+				</li>
+			</ul>
+			<ul class="mui-table-view check_ul mui-table-view-radio">
+				<li class="check_li check_li_title"> 
+					支付方式
+				</li>
+				<li class="mui-table-view-cell mui-selected "> 
+					<a class="mui-navigate-right">
+						<!--Item 1-->
+						<img src="../Public/img/weixin.png" class="pay_logo" style="height: 40px" />
+						<ul class="pay_item">
+							<li class="pay_title">微信支付</li>
+							<li class="pay_msg">安全支付</li>
+						</ul>
+					</a>
+				</li>
+				
+			</ul>
+			<div class="" style="text-align: center;">
+				<button type="button" class="mui-btn mui-btn-green check_btn " id="check_btn">确认捐赠</button>
+			</div>
+		</form>
+		
+		<script src="../Public/js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var flg=false;
+			document.getElementById("number").oninput=function(){
+				var length=document.getElementById("number").value.length;
+				if(length>0){
+					document.getElementById("check_btn").style.opacity=1;
+					flg=true;						
+				}else{
+					document.getElementById("check_btn").style.opacity=0.5;
+					flg=false;
+				}
+			}
+			var  check_btn=document.getElementById('check_btn');
+			check_btn.onclick=function(){
+				if (flg) {
+					var num=document.getElementById('number').value;
+					if (isNaN(num)||num.length==0) {
+						mui.alert('捐赠金额格式不正确');
+						return false;
+					}else{
+						document.getElementById('mform').submit();
+					}
+				}else{
+					mui.alert('请输入捐款金额');
+					return false;
+				}
+				
+			}
+		</script>
+	</body>
+
+</html>

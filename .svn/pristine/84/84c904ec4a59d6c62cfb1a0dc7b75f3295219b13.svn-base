@@ -1,0 +1,87 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,
+body,
+.spread_container {
+	height: 100%;
+}
+.spread_nav {
+	min-height: 100%;
+	margin:  0 auto;
+	padding-top: 7%;
+	background: url(../../images/tgbg.png) no-repeat;
+	background-size: 100%  100%;
+}
+.spread_nav.qd_spread{
+	min-height: 100%;
+	height: auto;
+}
+.qd_spread_top,.qd_spread_bottom,.qd_spread_middle{
+	background: #fff;
+	width: 88%;
+    margin: 0 auto;
+}
+.qd_spread_middle{
+	background: none;
+}
+.qd_spread>div{
+	line-height: 0;
+	font-size: 0;
+}
+.qd_spread_middle img{
+	width: 100%;
+}
+.spread_explain{
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #333333;
+	padding-top: 0.75rem;
+	width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.qd_spread_top img{
+	width: 45%;
+	margin: 0 auto;
+}
+/*分享按钮*/
+.share_qd{
+	height: 2rem;
+	line-height: 2rem;
+	width: 30%;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 0.875rem;
+	margin-top: 2rem;
+	display: inline-block;
+	background: #ee9c21;
+}
+.qd_spread_bottom{
+	text-align: center;
+	padding-bottom: 10%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	box-shadow: 0px 0px 1px 4px rgba(0,0,0,0.02);
+}
+.qd_spread_top{
+	text-align: center;
+	padding-top: 11%;
+	padding-bottom: 5%;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: 0px 0px 1px 4px rgba(0,0,0,0.03);
+}
+.spread_explain_title{
+	font-size: 0.9375rem;
+	color: #333;
+	/*font-weight: bold;*/
+}
+.spread_explain_content{
+	color: #333;
+}
+.qd_spread_bottom p{
+	margin-bottom: 0;
+}
+

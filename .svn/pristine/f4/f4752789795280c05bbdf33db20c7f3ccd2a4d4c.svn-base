@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/scheme.css"/>
+	</head>
+	<body >
+		<header class="mui-bar mui-bar-nav">
+		</header>
+		<div class="mui-content" id="app">
+		    <div class="sch_list">
+		    	<ul>
+					<li class="recommend"><span v-if="active.recommend" class="">智能运算推荐：</span>{{active.name}}</li>
+					<li class="introduce">{{active.introduce}}</li>
+					<li class="big_img"><img v-bind:src="active.img" alt=""  ></li>
+					<li class="keyWords">{{active.keyWords}}</li>
+		    	</ul>
+		    </div>
+			<div class="sch_table">
+				<table  width="75%" >
+					<tr><th>周期</th><th>按平台常规周期<span v-if="active.per">{{active.per}}</span></th></tr>
+					<tr v-for="item in active.scores"> 
+						<td>{{item.name}}</td>
+						<td>{{item.score}}红利积分</td>
+					</tr>
+				</table>
+			</div>
+			<div class="sch_btn">
+				<span v-on:click="chooseScheme">选择该方案</span>
+				<p v-on:click="showScheme">看看其他方案</p>
+			</div>
+		</div>
+	 
+		<div id="popover" class="mui-popover">
+			 <div id="">
+				 <div class="popover_title">智能红利释放方案</div>
+			 	<ul>
+					<li v-for="(item, index) in schemes" v-bind:class="{ active: item.recommend,pop_recommend:true }  ">
+						<div id="">
+							<img v-bind:src="item.img" alt="">
+						</div>
+						<div>
+							{{item.keyWords}}
+						</div>
+						<div><span v-on:click="setScheme(index)">查看</span></div>
+					</li>
+				</ul>
+			 </div>
+		</div>
+	</body>
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init();
+	var schemes={
+		schemesA:{
+			name:'方案A',
+			introduce:'常规方案，周期长，收益也高',
+			keyWords:'分红多',
+			img:'image/schemesA@3x.png',
+			scores:{'fendou':{'name':'奋斗站','score':'4000'},'xingfu':{'name':'幸福站',score:'13100'},'xiaokang':{name:'小康站',score:'16800'}},
+			recommend:true,
+			per:''
+		},
+		schemesB:{
+			name:'方案B',
+			introduce:'收益稳定，且周期适中',
+			keyWords:'收益均衡',
+			img:'image/schemesB@3x.png',
+			scores:{'fendou':{'name':'奋斗站','score':'1920'},'xingfu':{'name':'幸福站',score:'6288'},'xiaokang':{name:'小康站',score:'8064'}},
+			per:'1/4',
+			recommend:false,
+		},
+		schemesC:{
+			name:'方案C',
+			introduce:'周期较短，收益也不错',
+			keyWords:'时间短',
+			img:'image/schemesC@3x.png',
+			scores:{'fendou':{'name':'奋斗站','score':'1000'},'xingfu':{'name':'幸福站',score:'3275'},'xiaokang':{name:'小康站',score:'4200'}},
+			per:'1/8',
+			recommend:false,
+		}
+	};
+	var app = new Vue({
+	  el: '#app',
+	  data: {
+		schemes: schemes,
+		active:'',
+	  },
+	  created:function(e){
+		  console.log(e)
+		  var schemes=GetQueryString('schemes')
+		  if(schemes){
+			  this.setActive(schemes);
+		  }
+	  },
+	  methods:{
+		  setActive:function(e){
+			  this.active=this.schemes[e];
+		  },
+		  showScheme:function(){
+			  mui('#popover').popover('show');
+		  },
+		  chooseScheme:function(){
+			var btnArray = ['取消', '确认选择'];
+			mui.confirm('选择后您的积分红利和任务周期将按照该方案自动进行？', '', btnArray, function(e) {
+				if (e.index == 1) {
+					//info.innerText = '确认选择';
+					console.log('确认选择')
+				} 
+			})
+		  }
+	  }
+	})
+	var app2 = new Vue({
+		el: '#popover',
+		data: {
+			schemes: schemes,
+		},
+		methods:{
+			setScheme:function(schemes){
+				console.log(1)
+				app.setActive(schemes)
+				mui('#popover').popover('hide');
+			}
+		}
+	})
+</script>

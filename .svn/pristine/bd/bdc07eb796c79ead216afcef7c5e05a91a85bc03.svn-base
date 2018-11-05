@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/commonnew.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ordernew1.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mebgrowth.css"/>
+		<style type="text/css">
+			.mui-fullscreen .mui-segmented-control~.mui-slider-group{
+				bottom: 50px;
+			}
+			
+			.padtop{
+				/*padding-top: 5px;*/
+			}
+			.padbtm{
+				/*padding-bottom: 5px;*/
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">轻奢俱乐部</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="shop_list">
+		    	<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll " id="order_type">
+						<a class="mui-control-item order_type mui-active" href="#item1mobile">
+							明细
+						</a>
+						<a class="mui-control-item order_type" href="#item2mobile">
+							如何使用
+						</a>
+						<a class="mui-control-item order_type" href="#item3mobile">
+							如何获取
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll ptop" >
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<div class="mui-table-view-cell ">
+											<div class="firstday">
+												<ul>
+													<li class="smallfont">我的成长值</li>
+													<li class="bigfont">10000</li>
+												</ul>
+											</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis">
+											<div class="biaozhi growth">成长值明细</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis lie">
+											<div class="biaozhi">
+												<ul>
+												<li class="padbtm">登录</li>
+												<li class="pad">2017-01-12 14:14:23</li>
+												</ul>
+											</div>
+											<div class="content  red">+2</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis lie">
+											<div class="biaozhi">
+												<ul>
+												<li class="padbtm">订单支付获取</li>
+												<li class="pad">2017-01-12 14:14:23</li>
+												</ul>
+											</div>
+											<div class="content red">+100</div>
+											
+											<div class="clear"></div>
+										</div>
+										<div class="mui-table-view-cell lis lie">
+											<div class="biaozhi">
+												<ul>
+												<li class="padbtm">兑换商家权益</li>
+												<li class="pad">2017-01-12 14:14:23</li>
+												</ul>
+											</div>
+											<div class="content greeen">-100</div>
+											
+											<div class="clear"></div>
+										</div>
+									</li>
+								</ul>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id='scroll2' class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell lies firstlie huoqu">
+										<div class="title">如何使用</div>
+										<div class="cont">订单完成后获得会员成长值（购物成长值=结算金额×系数，结算金额是指以银行卡、支付宝、微信等平台支持支付的金额，不包括使用优惠券、红包、等其他方式支付的金额，入驻卖家商品配送费及运费部分不计入结算金额）</div>
+									</li>
+									
+								</ul>
+								
+							</div>
+							
+							
+						</div>
+							
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id='scroll3' class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell lies firstlie huoqu">
+										<div class="title">如何获取</div>
+										<div class="cont">订单完成后获得会员成长值（购物成长值=结算金额×系数，结算金额是指以银行卡、支付宝、微信等平台支持支付的金额，不包括使用优惠券、红包、等其他方式支付的金额，入驻卖家商品配送费及运费部分不计入结算金额）</div>
+									</li>
+									
+								</ul>
+								
+							</div>
+							
+							
+						</div>
+							
+					</div>
+		
+				</div>
+			</div>
+			
+				
+			
+		    </div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.pullToRefresh.js"></script>
+<script src="../js/mui.pullToRefresh.material.js"></script>
+<script>
+			mui.init();
+			mui('#scroll1').pullRefresh({});
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				
+//				$.ready(function() {
+//					//循环初始化所有下拉刷新，上拉加载。
+//					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+//						$(pullRefreshEl).pullRefresh({
+//							down: {
+//				                callback: function(){
+//				                	var self=this;
+//				                	self.endPulldownToRefresh()
+//				                }
+//				            },
+//				            up: {
+//				                contentrefresh: '正在加载...',
+//				                callback: function(){
+//				                	console.log(1)
+//				                	var self=this;
+//				                	self.endPullupToRefresh(false)
+//				                }
+//				            }
+//						});
+//					});
+//					var createFragment = function(ul, index, count, reverse) {
+//						var length = ul.querySelectorAll('li').length;
+//						var fragment = document.createDocumentFragment();
+//						var li;
+//						for (var i = 0; i < count; i++) {
+//							li = document.createElement('li');
+//							li.className = 'mui-table-view-cell shop_item';
+//							li.innerHTML = '<div class="shop_item_i shop_img">'
+//										+		'<img src="image/shop_2.png" class="shop_logo">'
+//										+	'</div>'
+//										+	'<div class="shop_item_i shop_msg">'
+//										+		'<ul>'
+//										+			'<li class="shop_title">这是一家'+index+'店铺'+i+'</li>'
+//										+			'<li class="shop_pro">这里描述的不多，最多两行，多了这行</li>'
+//										+			'<li>'
+//										+				'<span class="shop_status">营业中</span>'
+//										+				'<span class="shop_juli">11.49km</span>'
+//										+			'</li>'
+//										+			'<li>'
+//										+				'<div class="shop_pingfen">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon1.png">'
+//										+					'<img src="image/icon2.png">'
+//										+				'</div>'
+//										+			'</li>'
+//										+		'</ul>'
+//										+	'</div>'
+//										+	'<div class="clear"></div>'
+//							fragment.appendChild(li);
+//						}
+//						return fragment;
+//					};
+				});
+//			})(mui);
+	
+</script>

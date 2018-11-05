@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../Public/css/mui.min.css"/>
+		<script src="../Public/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.video_li{
+				padding-right: 15px!important;position: relative;
+			}
+			.video_li p{
+				line-height: 30px;line-height: 30px;
+			}
+			.videoCss{
+				font-size: 0;height: 200px;position: relative;
+			}
+			.videoCss >img{
+				width: 100%;height: 200px;
+			}
+			.clear{
+				clear: both;
+			}
+			.video_li center{
+				position: absolute;left: 0;right: 0;top: 0;
+			}
+			center img{
+				max-width: 100px;margin-top: 45px;
+			}
+			.videoCss iframe{
+				width: 100%;height: 200px;
+			}
+			.shetan_list_title{
+				font-size: 14px;text-indent: 15px;height: 30px;line-height: 30px;color: #333333;
+			}
+			.video_his_pic{
+				width: 120px;height: 90px!important;max-width: 120px!important;flex: 1;
+			}
+			.history_list_name{
+				white-space: normal;flex: 1;
+			}
+			.his_a{
+				display: flex!important;align-items:center ;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="mui-table-view mui-table-view-chevron" id="video_list">
+
+			<li class="mui-table-view-cell video_li" data-id="{$video.id}">
+				<!--<p>
+					{$video.title}
+				</p>-->
+				<div id="" class="videoCss" >
+					<center>
+						<iframe height="498" width="510" src="http://player.youku.com/embed/XMTgzMTMzNTQ4OA==" frameborder="0" 'allowfullscreen'=""></iframe>
+					</center>
+				</div>
+			</li>
+
+		</ul>
+		<div class="shetan_list">
+			<div class="shetan_list_title">
+				往期奢探
+			</div>
+			<ul class="mui-table-view"  id="his_list">
+				<li class="mui-table-view-cell mui-media" data-id="11">
+			        <a href="javascript:;" class="his_a">
+			            <img class="mui-media-object mui-pull-left video_his_pic" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+			            <div class="mui-media-body history_list_name">
+			                轻奢点评《奢探》直播之披萨达人			                <!--<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>-->
+			            </div>
+			        </a>
+			    </li>
+			   <li class="mui-table-view-cell mui-media" data-id="12">
+			        <a href="javascript:;" class="his_a">
+			            <img class="mui-media-object mui-pull-left video_his_pic" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+			            <div class="mui-media-body history_list_name">
+			                轻奢点评《奢探》直播之披萨达人			                <!--<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>-->
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media" data-id="13">
+			        <a href="javascript:;" class="his_a">
+			            <img class="mui-media-object mui-pull-left video_his_pic" src="http://www.592vip.com:90/stvideo/12/6e164690-67ff-4145-9c4a-81d829b4f16d.jpg">
+			            <div class="mui-media-body history_list_name">
+			                轻奢点评《奢探》直播之披萨达人			                <!--<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>-->
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	mui("#his_list").on('tap','li',function(){
+		var id = this.getAttribute('data-id'); 
+		//var url="{:U('Home/Shetan/show/id/"+id+"')}";
+		var url="show.html?id="+id;
+		//console.log(id)
+		location.href=url;
+	})
+</script>
+
+
+

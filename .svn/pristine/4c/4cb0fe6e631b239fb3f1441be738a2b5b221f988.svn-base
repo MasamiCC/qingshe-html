@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>黑卡会员详情</title>
+	<!--引入css-->
+	<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-datetimepicker.min.css"/>
+	<link rel="stylesheet" href="../static/css/layer.css" />
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/layout.css" />
+	<link rel="stylesheet" href="../css/BCMemDetail.css" />
+</head>
+
+<body>
+	<!--头部-->
+	<div class="lay_header">
+		<div class="navbar-custom-menu">
+			<span class="custom_icon"></span>
+			<span class="custom_name">管理员</span>
+			<!--操作区域-->
+			<div class="custom_op">
+				<a class="change_password">修改密码</a>
+				<a class="login_out">退出登录</a>
+			</div>
+		</div>
+	</div>
+
+	<!--左侧-->
+	<div class="lay_left">
+		<a class="logo">
+			<img src="../static/img/logo.png" />
+		</a>
+		<!--左侧菜单-->
+		<ul class="sidebar-menu">
+			<li>
+				<a href="information_view.html">
+					<i class="sidebar_icon icon_1"></i>
+					<span class="sidebar_category">信息总览</span>
+				</a>
+			</li>
+			<li>
+				<a href="#"  class="active">
+					<i class="sidebar_icon icon_2"></i>
+					<span class="sidebar_category">黑卡会员详情</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar_icon icon_3"></i>
+					<span class="sidebar_category">本地商户</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar_icon icon_4"></i>
+					<span class="sidebar_category">黑卡经纪人</span>
+				</a>
+			</li>
+			<li>
+				<a href="account.html">
+					<i class="sidebar_icon icon_5"></i>
+					<span class="sidebar_category">账号管理</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--主体内容区域-->
+	<div class="lay_body">
+		<div class="right_mian">
+			<!--顶部一条-->
+			<div class="BCtop">
+				<div class="BCtop_left">
+					<span><img src="../static/img/team_icon.png"/></span>
+					<span class="people">48人</span>
+					<span class="BCLv">黑卡存活率</span>
+					<span>58%</span>
+				</div>
+				<div class="BCtop_right">
+					<!-- 时间选择 -->
+					<div class="time_pick">
+						<span>成为黑卡日期</span>
+						<div class="time_inline">
+							<input type="text" readonly="readonly" class="time_input form-control">
+							<span class="time_icon"></span>
+						</div>
+					</div>
+					<span>任务状态筛选</span>
+					<span>
+						<select name="">
+							<option value="">全部</option>
+							<option value="">1</option>
+							<option value="">2</option>
+						</select>
+					</span>
+					<span  class="input_span">
+						<input type="text" name="" id="" value="" placeholder="可输入会员名称或手机号进行搜索" />
+					</span>
+					<span class='BCtop_icon hoverColor'>搜索</span>
+					<span class='BCtop_icon hoverColor'>导出表格</span>
+				</div>
+			</div>
+			<!--顶部一条-->
+			<!--表格-->
+				<div class="table_con">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>真实姓名</th>
+							<th>手机号码</th>
+							<th>周期</th>
+							<th>邀请码</th>
+							<th>推荐人</th>
+							<th>首发站</th>
+							<th>成为黑卡日期</th>
+							<th>黑卡状态</th>
+							<th>当前任务</th>
+							<th>任务开始日期</th>
+							<th>任务结束日期</th>
+							<th>任务状态</th>
+							<th>任务进度</th>
+							<th>任务剩余天数</th>
+						</tr>
+						<tr>
+							<td>张飞</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>南通站</td>
+							<td>2018-06-06 15:56</td>
+							<td>正常</td>
+							<td>南通站</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>新接任务</td>
+							<td>登录天数（天）：1/2</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>杨颖</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>正常</td>
+							<td>南通站</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>即将到期</td>
+							<td>推荐任务（人）：1/2</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>刘备</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>等待复活</td>
+							<td>无任务</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>正常进行</td>
+							<td>消费任务（元）：1/2000</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>刘备</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>黑卡失效</td>
+							<td>无任务</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>即将到期</td>
+							<td>
+								消费任务（元）：1/2000 <br />
+								评价任务（个）：1/2
+							</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>刘备</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>黑卡失效</td>
+							<td>无任务</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>已完成</td>
+							<td>无</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>刘备</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>等待复活</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>失败</td>
+							<td>无</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>刘备</td>
+							<td>13812345678</td>
+							<td>1</td>
+							<td>HK678R</td>
+							<td>韩硕</td>
+							<td>上海站</td>
+							<td>2018-06-06 15:56</td>
+							<td>正常</td>
+							<td>南通站</td>
+							<td>2018-06-06 15:56</td>
+							<td>2018-06-08 15:56</td>
+							<td>无任务</td>
+							<td>无</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			<!--表格-->
+			<!--分页-->
+			<div class="pagenation">
+				<ul>
+					<li class="pagenationactive">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>...</li>
+					<li>上页</li>
+					<li>下页</li>
+				</ul>
+			</div>
+			<!--分页-->
+		</div>
+	</div>
+</body>
+<!--引入js-->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/js-plugs.js"></script>
+	<script src="../static/js/echarts.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../static/js/es5-shim.min.js"></script>
+	<script src="../static/js/es5-sham.min.js"></script>
+	<script src="../static/js/json3.min.js"></script>
+	<![endif]-->
+	<script src="../static/js/layer.js"></script>
+	<script src="../static/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="../static/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script src="../js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.time_inline .time_icon').click(function(){
+				$('.time_input').datetimepicker('show');
+			})
+			$(".time_input").datetimepicker({  
+				language : 'zh-CN',  
+			    weekStart : 1,  
+			    todayBtn : 0,  
+			    autoclose : 1,  
+			    minView: "month",
+			    endDate: new Date(),  
+			    format: 'yyyy-mm-dd',  
+			    forceParse : 0 ,
+			    container: '.lay_body',
+			})
+		})
+	</script>
+</html>

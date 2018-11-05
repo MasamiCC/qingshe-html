@@ -1,0 +1,102 @@
+body,.mui-content{background: #fff;}
+			.detail_header{
+				text-align: center;line-height: 0;font-size: 0;background-color: #fff;
+			}
+			.detail_header img{
+				max-width: 100%;
+			}
+			.detail_header >div{
+				background: url(../image/month_detail_bg.png) no-repeat  center center;
+				/*margin-top: -50%;*/
+				height: 6rem;
+				width: 6rem;
+				background-size: cover;
+				margin: 0 auto;
+				margin-top: -3rem;
+				position: relative;
+				z-index: 99;
+				
+				
+			}
+			.detail_header >div span{
+				display: block;
+				line-height: 1.3;
+				
+				width: 70%;
+				margin: 0 auto;
+			}
+			.detail_header >div span.year{
+				/*border-bottom: 1px solid #ff8675;*/
+				padding: .3rem 0;
+				padding-top: .8rem;
+				font-size: 1.2rem;
+			}
+			.detail_header >div span.month{
+				font-size: 1.7rem;
+				padding: .3rem 0;
+				line-height: 1.2;
+			}
+			.mui-table-view:before,.mui-table-view:after{
+				height: 0;
+			}
+			.detail_item{
+				display: flex;
+				align-items: center;
+				background: #ffefed;
+				margin: .5rem .8rem;
+				border-radius: .5rem;
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+			.detail_item.mui-active{
+				background: #ffefed;
+			}
+			.detail_item:after{
+				height: 0;
+			}
+			.detail_type{
+				flex: 1;
+				text-align: center;
+				line-height: 0;
+				max-width: 4.5rem;
+			}
+			.detail_type img{
+				width: 4rem;
+			}
+			.detail_con {
+				flex: 2;font-size: 1rem;padding-left: 15px;
+				line-height: 2;
+			}
+			.detail_con span{
+				display: block;
+				font-size: 0.75rem;
+				color: #999;
+				line-height: 1;
+			}
+			.detail_amount{text-align: right;flex: 1;font-size: 1.4rem;min-width: 90px;}
+			.detail_amount small{font-size: .875rem;}
+			.no_more_data{
+				text-align: center;color: #ccc;position: relative;padding: 5px 0;
+				margin-top: 15px;
+			}
+			.no_more_data:after{
+				position: absolute;
+				content: '';
+				width:75%;
+				height: 1px;
+				background: #e0e0e0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 15px;
+				z-index: 1;
+			}
+			.no_more_data span{
+				background: #fff;padding: 0 15px;
+				display: block;
+				width: 30%;
+				margin: 0 auto;
+				z-index: 99;
+				position: relative;
+				font-size: 0.875rem;
+			}

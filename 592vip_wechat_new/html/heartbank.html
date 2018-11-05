@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<!--<script src="http://www.ichartjs.com/js/ichart-1.0.min.js"></script>-->
+ 		<!--<script src="http://www.ichartjs.com/js/ichart.gauge2d.js"></script>-->
+		<meta charset="UTF-8">
+		<title>爱心银行</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/heartbank.css"/>
+		<style type="text/css">
+			.mui-bar-tab{
+				height: 40px;
+			}
+			.point4{
+				border-top: 1px solid #ededed;line-height: 2;text-align: center;
+			}
+			.point4 a{color: #51c9f0;text-decoration: none;}
+			.point4 a:hover{color: #51c9f0;text-decoration: none;}
+			.firstli{width: 20%;}
+			.heartbank_banner{font-size: 0;line-height: 0;text-align: center;}
+			.heartbank_banner img{
+				max-width: 100%;margin: 0 auto;
+			}
+			.uls{padding-bottom: 0.5rem;}
+			.btns{text-align: center;}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content main">
+			<div id='' style="margin: 0 auto;text-align: center;padding-top: 1rem;">
+				<canvas id="canvas-id"></canvas>
+			</div>
+			<div class="btns">
+				<div class="fbtn">
+					捐赠爱心币
+				</div>
+				<!--<div class="sbtn">
+					592慈善基金
+				</div>-->
+			</div>
+		</div>  
+		<div class="charity">
+			<div class="charity_title">
+				<span class="black"></span>&nbsp;&nbsp;<span>我们如何做慈善</span>
+			</div>
+			<div class="uls">
+				<ul class="firstul">
+					<li class="firstli">
+						<ul>
+							<li class="icons"><i class="icon iconfont icon-meishi"></i></li>
+							<li class="fonts">美食</li>
+						</ul>
+						
+					</li>
+					<li class="firstli">
+						<ul>
+							<li class="icons"><i class="icon iconfont icon-dianying"></i></li>
+							<li class="fonts">电影</li>
+						</ul>
+						
+					</li>
+					<li class="firstli">
+						<ul>
+							<li class="icons"><i class="icon iconfont icon-jiudian1"></i></li>
+							<li class="fonts">酒店</li>
+						</ul>
+						
+					</li>
+					<li class="firstli">
+						<ul>
+							<li class="icons"><i class="icon iconfont icon-lvyou2"></i></li>
+							<li class="fonts">旅游</li>
+						</ul>
+						
+					</li>
+					<li class="firstli">
+						<ul>
+							<li class="icons"><i class="icon iconfont icon-shenghuo2"></i></li>
+							<li class="fonts">生活</li>
+						</ul>
+						
+					</li>
+				</ul>
+				<div class="heartbank_banner" >
+					<img src="../image/heartbank_banner@3x.png"/>
+				</div>
+				
+			</div>
+		</div>
+		<div class="charity">
+			<div class="charity_title">
+				<span class="black"></span>&nbsp;&nbsp;<span>爱心专享</span>
+			</div>
+			<div class="coupon">
+				<ul class="coupuls">
+					<li class="coup1">领592福利券 </li>
+					<li class="coup2">满200减20</li>
+				</ul>
+			
+			</div>
+		</div>
+		<div class="charity footprint">
+			<div class="charity_title">
+				<span class=""><i class="icon iconfont icon-jifenzuji"></i></span>&nbsp;&nbsp;<span>积分足迹</span>
+			</div>
+			<div class="point">
+				<ul class="pointuls">
+					<li class="point1">当月信用累计 &nbsp;&nbsp;<span>+100</span></li>
+					<li class="point2">平台消费及捐赠爱心币等</li>
+					
+				</ul>
+				<div class="point4">
+					<span class="order"><a href="heart_bill.html">查看明细</a></span>
+				</div>
+			</div>
+		</div>
+			
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/gauge.min.js"></script>
+<script>
+    var gauge = new RadialGauge({
+        renderTo: 'canvas-id',
+        width: 240,//宽度
+        height: 240,//高度
+        units: '',//单位
+        title: "爱心大使",	//标题
+		colorTitle:"#fff",	//标题颜色
+        startAngle: 45,
+        ticksAngle: 270,
+        colorPlate: "rgba(0,0,0,0)",//北京颜色
+        //colorPlateEnd: "#ffffff",	//背景颜色
+        colorUnits: "#fff",
+        colorNumbers: "#fff",
+        colorNeedle: "#fff",
+        colorNeedleEnd: "#fff",
+        colorNeedleCircleOuter: "#fff",
+        colorNeedleCircleOuterEnd: "#fff",
+        colorNeedleShadowUp: "#fff",
+        colorNeedleShadowDown: "#fff",
+        colorMajorTicks: ["#EBEBEB", "#EBEBEB", "#EBEBEB", "#EBEBEB", "#EBEBEB", "#EBEBEB"],
+        colorMinorTicks: "#EBEBEB",
+        colorBarProgress: 'rgba(255,255,255,1)',//外圈高亮颜色
+        colorBar: 'rgba(255,255,255,0.5)',//外圈颜色
+        minValue: 0,
+        maxValue: 1000,
+        majorTicks: ["0","200","400","600","800","1000"],
+        minorTicks: "10",
+        strokeTicks: true,
+        highlights: [],
+        needleCircleSize:8,
+        highlightsWidth: 25,
+        numbersMargin: 0,//数值距离外边聚
+	    barWidth: 3,
+	    barStrokeWidth: 0,
+	    barProgress: 1,
+	    barShadow: 0,
+        //
+        animation: true,
+        animationDuration: 500,
+        animationRule: "linear",
+        animatedValue: true,
+//      /animateOnInit: true,
+        borders: false,
+        valueBox: true,
+        valueInt: 1,
+    	valueDec: 0,
+	    colorValueText: "#fff",
+	    colorValueBoxRect: "rgba(0,0,0,0)",
+	    colorValueBoxRectEnd: "rgba(0,0,0,0)",
+	    colorValueBoxBackground: "",
+	    colorValueBoxShadow: false,
+	    colorValueTextShadow: false,
+        needleType: "arrow",
+        needleEnd: 50,
+        needleWidth: 3,
+        needleCircleInner: true,
+        needleCircleOuter: true,
+        needleShadow: false,
+        borderShadowWidth: 0
+        
+
+    }).draw();
+
+
+    gauge.value = 56;
+    gauge.update();
+</script>

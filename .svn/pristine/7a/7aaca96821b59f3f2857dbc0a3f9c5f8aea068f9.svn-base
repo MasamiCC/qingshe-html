@@ -1,0 +1,104 @@
+/*all*/
+.lay_body{
+	background: #F4F4F4;
+}
+.right_mian{
+	margin: 30px;
+	min-width: 1480px;
+}
+
+/*table*/
+.table_con{
+	margin-top: 32px;
+}
+.table_con table{
+	text-align: center;
+	font-size: 14px;width: 100%;
+}
+.table_con tr{
+	height: 70px;
+	line-height: 70px;
+}
+.table_con th{
+	background: #cccccc;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	text-align: center;
+}
+.table_con td{
+	background: #fff;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.table_con tr:last-child td {
+	border-bottom:0;
+}
+.table_con tr td:last-child{
+	border-right:0;
+}
+/*分页*/
+.pagenation{
+	text-align: center;
+	margin-top: 40px;
+}
+.pagenation li{
+	display: inline-block;
+	padding: 8px 13px;
+	background: #fff;
+	border: 1px solid #777;
+	margin-right: 10px;
+}
+.pagenation li:last-child{
+	margin-right: 0px;
+}
+.pagenationactive{
+	background: #333!important;
+	color: #fff;
+}
+/*暂无*/
+.no_content{
+	text-align: center;
+	font-size: 18px;
+	color: #666;
+}
+.no_content_img{
+	margin-top: 21%;
+}
+
+.BCtop_right select{
+	margin: 0 15px;
+}
+
+.BCtop_icon{
+	margin: 0 5px;
+}
+
+.BCtop_right input[type='text']{
+	font-size: 14px;
+}
+
+/*日期选择*/
+.time_pick .time_inline{
+	display: inline-block;
+	position: relative;
+}
+
+.BCtop_right .time_pick .time_input{
+	width: 140px;
+	margin-right: 15px;
+	font-size: 14px;
+	padding-left: 10px;
+	background-color: #fff;
+}
+
+.time_inline .time_icon {
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    display: block;
+    width: 18px;
+    height: 15px;
+    background-image: url(../static/img/lay_index.png);
+    background-repeat: no-repeat;
+    background-position: -58px 0;
+}

@@ -1,0 +1,198 @@
+.mui-bar~.mui-content .mui-fullscreen {
+	top: 44px;
+	height: auto;
+}
+.mui-pull-top-tips {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	z-index: 1;
+}
+.mui-bar~.mui-pull-top-tips {
+	top: 24px;
+}
+.mui-pull-top-wrapper {
+	width: 42px;
+	height: 42px;
+	display: block;
+	text-align: center;
+	background-color: #efeff4;
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	background-clip: padding-box;
+	box-shadow: 0 4px 10px #bbb;
+	overflow: hidden;
+}
+.mui-pull-top-tips.mui-transitioning {
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+}
+.mui-pull-top-tips .mui-pull-loading {
+	/*-webkit-backface-visibility: hidden;
+	-webkit-transition-duration: 400ms;
+	transition-duration: 400ms;*/
+	
+	margin: 0;
+}
+.mui-pull-top-wrapper .mui-icon,
+.mui-pull-top-wrapper .mui-spinner {
+	margin-top: 7px;
+}
+.mui-pull-top-wrapper .mui-icon.mui-reverse {
+	/*-webkit-transform: rotate(180deg) translateZ(0);*/
+}
+.mui-pull-bottom-tips {
+	text-align: center;
+	background-color: #efeff4;
+	font-size: 15px;
+	line-height: 40px;
+	color: #777;
+}
+.mui-pull-top-canvas {
+	overflow: hidden;
+	background-color: #fafafa;
+	border-radius: 40px;
+	box-shadow: 0 4px 10px #bbb;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.mui-pull-top-canvas canvas {
+	width: 40px;
+}
+.mui-slider-indicator.mui-segmented-control {
+	background-color: #efeff4;
+}
+@media only screen and (min-width: 100px) and (max-width: 320px) {
+	.shop_list{
+		top: 150px;
+	}
+}
+@media only screen and (min-width: 375px)  {
+	.shop_list{
+		top: 170px;
+	}
+}
+.shop_list{
+	position: absolute;width: 100%;bottom: 0;left: 0;
+}
+#shop_type .shop_type{
+	padding: 0 14px;
+	color: #999;
+	line-height: 39px;
+}
+#shop_type .shop_type.mui-active{
+	color: #333;
+	border-bottom: 1px solid #333;
+	font-weight: bold;
+}
+#sliderSegmentedControl{
+	height: 40px;
+}
+.tuijian_list{
+	background: #fff;
+}
+.find_title{
+	text-align: center;color: #333;font-size: 18px;
+	height: 45px;line-height: 45px;
+}
+.tuijian__ul{
+	font-size: 0;
+}
+.tuijian_item{
+	display: inline-block;width: 33%;
+	vertical-align: top;
+	text-align: center;
+}
+.tuijian_shop_logo{
+	max-width: 100%;width: 112px;
+}
+.tuijian_item  a{
+	/*width: 100%;*/
+	margin: 0 5px;
+	display: block;
+	position: relative;
+}
+.tuijian_juli{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	z-index: 99;
+	padding: 1px 5px;
+	background: rgba(255,255,255,0.8);
+	color: #333;
+	border-radius: 5px;
+	font-size: 12px;
+}
+.tuijian_shop{
+	position: absolute;
+	font-size: 12px;
+	bottom: 10px;
+	width: 100%;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	text-align: left;
+	padding-left: 5px;
+	line-height: 20px;
+	padding-top: 3px;
+}
+.tuijian_shop span{
+	display: block;
+}
+.tuijian_shop span img{
+	width: 15px;
+}
+/*.shop_item_i{
+	display: inline-block;vertical-align: top;
+}
+.shop_logo{
+	max-width: 80px;
+}
+.shop_pro{
+	color: #666;
+}
+.shop_status{
+	background: #bbb;color: #fff;font-size: 12px;padding: 1px 2px;border-radius: 3px;
+}
+.shop_juli{
+	float: right;
+}*/
+.shop_item{
+	display: flex;
+	padding: 7px 15px;
+}
+.shop_img{
+	flex: 1;
+	max-width: 80px;
+	text-align: center;
+}
+.shop_logo{
+	width: 80px!important;
+}
+.shop_msg{
+	flex: 2;padding-left: 10px;
+}
+.shop_pro{
+	color: #666;font-size: 0.8rem;
+}
+.shop_status{
+	background: #bbb;color: #fff;font-size: 0.75rem;padding: 1px 2px;border-radius: 3px;
+}
+.shop_on{
+	background: #1f9b53;
+}
+.shop_juli{
+	float: right;color: #999;
+}
+.shop_pingfen img{
+	width: 15px;
+	display: inline-block;
+	max-width: 15px;
+	margin-top: 2px;
+	margin-right: 1px;
+}

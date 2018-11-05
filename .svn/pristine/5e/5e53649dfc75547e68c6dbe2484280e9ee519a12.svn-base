@@ -1,0 +1,126 @@
+.center{
+	background: #f7f7f7;overflow: hidden;
+}
+.user{
+	margin-top: 70px!important;
+	font-size: 0;
+}
+.user_div{
+	display: inline-block;vertical-align: top;
+}
+
+.user_left{
+	width: 25%;
+}
+.user_right{
+	width: 75%;background: #fff;padding-top: 10px;margin-bottom: 10px;min-height: 500px;
+}
+@media only screen and (max-width: 800px) {
+	.user_left{
+		width: 0;
+		display: none;
+	}
+	.user_right{
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.user_left{
+		width: 18.7%;
+		display: inline-block;
+	}
+	.user_right{
+		width: 81.3%;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.user_left{
+		width: 15%;
+	}
+	.user_right{
+		width: 85%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.user_left{
+		width: 12.5%;
+	}
+	.user_right{
+		width: 87.5%;
+	}
+}
+
+.user_right >div{
+	margin-right: 10px;margin-left: 10px;
+}
+.user_right_top{
+	position: relative;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+.user_right_title{
+	font-size: 18px;
+	text-indent: 10px;
+}
+.user_right_nav{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	line-height: 25px;
+}
+.user_right_middle{
+	margin: 10px auto;
+}
+.table_list td{
+	vertical-align: middle!important;
+}
+.page{
+	text-align: center;
+}
+.table_list .btn{
+	margin-right: 3px;
+}
+.menu_li{
+	line-height: 3;
+}
+.menu_li i{
+	margin-right: 8px;color: #666;
+}
+.menu_title{
+	font-size: 16px;
+	font-weight: 800;
+	cursor: pointer;
+	vertical-align: middle;
+	text-indent: 5px;
+	display: inline-block;
+}
+.menu_title:hover{
+	color: #e8b13f;
+}
+.menu_title >a{
+	color: #333;font-size: 16px;text-decoration: none;
+}
+.menu_title >a:hover{
+	color: #e8b13f;text-decoration: none;
+}
+.menu_li2{
+	text-indent: 30px;
+}
+.menu_li2 a,.menu_li2 a:hover{
+	color: #666;text-decoration: none;
+}
+.menu_li2.active a,.menu_li2.active a:hover{
+	color: #e8b13f;text-decoration: none;
+}
+.menu_li.active{
+	color: #e8b13f;
+}
+.menu_li.active .menu_title a{
+	color: #e8b13f;
+}
+.form-group label{
+	font-weight: 500;
+}
+.menu_li>img{
+	margin-right: 5px;
+}

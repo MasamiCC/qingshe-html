@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>新增账号</title>
+	<!--引入css-->
+	<link rel="stylesheet" href="../../css/common.css" />
+	<style>
+		.change_password_nav{
+				padding: 30px 70px;
+			}
+			.change_password_nav > .title{
+				font-size: 24px;
+				color: #333333;
+				text-align: center;
+				font-weight: normal;
+			}
+			
+			
+			.error_none {
+			    color: #ce3a26;
+			    font-size: 16px;
+			    text-align: right;
+			    margin: 0px 0px;
+                display: none;
+                float: right;
+			}
+			
+			.input_box {
+			    position: relative;
+			    margin: 40px 0;
+			}
+			
+			.icon_left {
+			    position: absolute;
+			    left: 11px;
+			    top: 11px;
+			    z-index: 5;
+			    background-position: 0px 0px;
+			    width: 22px;
+			    height: 22px;
+			}
+			.inp {
+			    width: 100%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    padding-left: 40px;
+			    padding-right: 40px;
+			    font-size: 16px;
+			    border-radius: 5px;
+			}
+			.close_icon{
+				position: absolute;
+			    right: 11px;
+			    top: 50%;
+			    margin-top: -8px;
+			    z-index: 5;
+			    background-image: url(../../static/img/close.png);
+			    background-position: 0px 0px;
+			    width: 11px;
+			    height: 11px;
+			    cursor: pointer;
+			    display: none;
+			}
+			
+			.phone_icon{
+				background-image: url(../../static/img/phone.png);
+				background-repeat: no-repeat;
+				height: 24px;
+			}
+			
+			.passowrd_icon {
+			    background-image: url(../../static/img/password.png);
+            }
+            .user_icon{
+                background-image: url(../../static/img/acc_user.png);
+                width: 24px;
+			    height: 24px;
+
+            }
+            .add_icon{
+                background-image: url(../../static/img/acc_add.png);
+
+			}
+			.mo_icon{
+				background-image: url(../../static/img/mo.png);
+			}
+			.code_icon {
+			    background-image: url(../../static/img/code.png);
+			    position: absolute;
+			    left: 11px;
+			    top: 14px;
+			    width: 20px;
+			    height: 17px;
+			}
+			.input_code {
+			    width: 60%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    padding-left: 40px;
+			    padding-right: 40px;
+			    font-size: 16px;
+			    border-radius: 5px;
+			}
+			.code_btn {
+			    width: 35%;
+			    height: 45px;
+			    border: 1px solid #dddddd;
+			    font-size: 16px;
+			    background-color: white;
+			    color: #c2a15d;
+			    cursor: pointer;
+			    border-radius: 5px;
+			}
+			
+			.btn_area{
+				margin-top: 60px;
+			}
+			.red{
+				color: #ce3a26;
+				font-size: 16px;
+				margin-top: 25px;
+			}
+		</style>
+</head>
+
+<body>
+	<div class="change_password_nav">
+		<h4 class="title">
+			新增账号
+		</h4>
+		<form class="change_password_form">
+			<div class="input_box">
+				<i class="user_icon icon_left"></i>
+				<input placeholder="请输入真实姓名" class="input_user inp" type="text">
+				<i class="close_icon"></i>
+			</div>
+			<div class="input_box">
+				<i class="phone_icon icon_left"></i>
+				<input placeholder="请输入真实手机号" class="input_user inp" type="text">
+				<i class="close_icon"></i>
+				<p class="error_none">手机号不存在</p>
+			</div>
+			<div class="input_box">
+				<i class="passowrd_icon  icon_left"></i>
+				<input placeholder="请输入登录密码（6位）" class="input_user inp" type="password">
+				<i class="close_icon"></i>
+			</div>
+			<div class="input_box">
+				<i class="passowrd_icon  icon_left"></i>
+				<input placeholder="请再次输入登录密码（6位）" class="input_user inp" type="password">
+				<i class="close_icon"></i>
+			</div>
+			<div class="input_box">
+				<i class="add_icon  icon_left"></i>
+				<select id="locallist" class="inp">
+					<option value="" disabled selected style="color:#cccccc">选定负责区域</option>
+					<option>崇川区</option>
+					<option>开发区</option>
+					<option>海门区</option>
+					<option>区区区</option>
+				</select>
+				<p class="error_none">此地区已经设置了负责人</p>
+			</div>
+			<!-- <div class="input_box">
+				<i class="mo_icon  icon_left"></i>
+				<select id="locallist" class="inp" id="editable-select">
+					<option value="" disabled selected style="color:#cccccc">请输入收益提成(0%~100%)</option>
+					<option>10%</option>
+					<option>20%</option>
+					<option>30%</option>
+					<option>40%</option>
+				</select>
+			</div> -->
+
+			<div class="input_box">
+				<i class="mo_icon  icon_left"></i>
+				<input pattern="^([1-9]{1}[0-9]{0,1}|0|100)%$" placeholder="请输入收益提成(0%~100%)" class="input_user inp" type="text">
+				<i class="close_icon"></i>
+			</div>
+
+			<!-- <div class="input_box" style="position:relative;">
+				<span style="margin-left:100px;width:18px;overflow:hidden;">
+				<i class="mo_icon  icon_left"></i>
+
+					<select style="border-radius: 5px;font-size: 16px;width:100%;height:47px;margin-left:-100px" onchange="this.parentNode.nextSibling.value=this.value">
+						<option value="测试1">测试1</option>
+						<option value="测试2">测试2</option>
+						<option value="测试3">测试3</option>
+					</select></span><input name="box" style="border: 0px;border-radius: 5px;font-size: 16px; height:45px;width:95%;position:absolute;left:0px;">
+			</div> -->
+			<div class='btn_area'>
+				<input class="btn confirm fl" type="submit" value="确定" />
+				<a class='btn cancel fr'>取消</a>
+			</div>
+			<p class="red">注意：收益提成设置后，将无法修改；如需修改请联系轻奢客服</p>
+		</form>
+	</div>
+	<script src="../../static/js/jquery.min.js"></script>
+	<script>
+		//点击取消
+		$(document).on('click', '.change_password_nav .cancel', function () {
+			var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+			parent.layer.close(index); //再执行关闭
+		})
+
+		$('.inp').bind('input propertychange', function () {
+			if ($(this).val()) {
+				$(this).next().show()
+			} else {
+				$(this).next().hide()
+			}
+		});
+
+		$('.close_icon').click(function () {
+			$(this).prev().val("");
+		})
+		$(function(){
+            $('#editable-select').editableSelect({
+                effects: 'slide',
+				filter: false
+            });
+        });
+
+	</script>
+</body>
+
+</html>

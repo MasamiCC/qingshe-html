@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.txt_list{
+				padding-top: 10px;
+			}
+			
+			.txt_list th{
+				text-align: center;height: 40px;line-height: 40px;
+				font-size: 14px;
+			}
+			.list_table td{
+				font-size: 14px;line-height: 25px;height: 73px;
+				color: #333;
+				text-align: center;
+			}
+			.list_table1 td{
+				font-size: 14px;line-height: 25px;height: 53px;
+			}
+			.list_left{
+				text-align: left;
+			}
+			.list_center{
+				text-align: center;
+			}
+		
+			.line th{
+				border-bottom: 1px solid #333;
+			}
+			
+			.dash td{
+				border-bottom: 1px dashed #333;
+			}
+			.txt_btn{
+				background: #333;color: #fff;display: inline-block;padding: 6px 16px;cursor: pointer;
+				line-height: 20px;float: right;
+				font-weight: lighter;font-size: 14px;
+			}
+			.c_bc{
+				padding-top:35px;
+				padding-bottom: 30px;
+			}
+			.ticket{
+				padding-top:15px;
+				padding-bottom: 12px;
+			}
+			.lef{
+				width: 90px
+				
+			}
+		.bottom td{
+			padding-top:15px;
+		}
+			.price_u{
+				text-align: center;
+			}
+			.top td{
+				padding-top:15px;
+			}
+			.price_xiao{
+				color:#FF3F3F ;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header_l">
+			<!--顶部-->
+			<div class="header_top">
+				<div id="" class="float_left reg_div">
+					<span style="" class="ic_erm">
+						小康生活一站式消费平台
+					</span>
+				</div>
+				<div class="float_right">
+					<span id="" class="ic_erm">
+						登录
+					</span>
+					<span class="ic_erm">
+						注册
+					</span>
+					<span class="ic_erm">轻奢APP </span>
+					<span class="ic_erm">轻奢微信</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_search">
+				<div class="float_left">
+					<img src="../img/logo.png" alt="" />
+				</div>
+				<div class="float_right">
+					<form action="" method="post">
+						<ul>
+							<li>
+								<label for="" class="search_label">
+									<input type="text"  class="keywords" placeholder="请输入关键字"/>
+									<span class="search_btn">搜索</span>
+								</label>
+							</li>
+							<li class="key_words">
+								关键字：<span>膳魔师 </span><span>COACH</span><span>UGG</span><span>GUCCI</span>
+							</li>
+						</ul>
+						
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_nav">
+				<ul class="nav_list">
+					<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+					<li class="header_nav_li "><a href="">美食</a></li>
+					<li class="header_nav_li "><a href="">酒店</a></li>
+					<li class="header_nav_li "><a href="">定制</a></li>
+					<li class="header_nav_li "><a href="">旅游</a></li>
+					<li class="header_nav_li "><a href="">生活</a></li>
+				</ul>
+				<ul style="float: right;" class="nav_list">
+					<li class="header_nav_li "><a href="">奢探</a></li>
+					<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+					<li class="header_nav_li "><a href="">慈善基金</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="header" id="header_s">
+			<div class="">
+				<div class="float_left">
+					<img src="../img/logo_s.png" style="vertical-align: middle;"/>
+					<ul style="display: inline-block;">
+						<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+						<li class="header_nav_li "><a href="">美食</a></li>
+						<li class="header_nav_li "><a href="">酒店</a></li>
+						<li class="header_nav_li "><a href="">定制</a></li>
+						<li class="header_nav_li "><a href="">旅游</a></li>
+						<li class="header_nav_li "><a href="">生活</a></li>
+						<li class="header_nav_li "><a href="">奢探</a></li>
+						<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+						<li class="header_nav_li "><a href="">慈善基金</a></li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<div class="float_right login_s">
+						<span id="">
+							登录
+						</span>
+						<span>注册</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--正文 -->
+		<div class="content">
+			<!--正文内容部分开始-->
+			<div class="c_bc"><img src="../img/confirm_bc01.png"/></div>
+			<div class="ticket"><img src="../img/icon_book.png"/><span id="">预订信息</span></div>
+                   <div class="txt_list">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%"  class="list_table">
+								<tr class="line">
+									<th>用餐人数</th>
+									<th>用餐时间</th>
+									<th>联系人</th>
+									<th>手机号</th>
+									<th>备注</th>
+									<th>发票抬头</th>
+								</tr>
+								<tr>
+									<td class="list_left">5</td>
+									<td class="list_left price_u">2017-06-08 12:00</td>
+									<td class="list_center list_time">李先生</td>
+									<td class="list_center list_time">13888888888</td>
+									<td class="list_center list_time">不吃香菜很多很多字很多字很多字第二行显示</td>
+									<td class="list_center list_time">江苏轻奢点评网络文化科技有限公司</td>
+								</tr>
+							
+							</table>
+						</div>
+			
+			       <div class="ticket"><img src="../img/icon_book.png"/><span id="">预订信息</span></div>
+                   <div class="txt_list">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%"  class="list_table1">
+								<tr class="line">
+									<th class="lef"></th>
+									<th>商品</th>
+									<th>规格 </th>
+									<th>单价 </th>
+									<th>数量 </th>
+									<th>小计  </th>
+								</tr>
+								<tr class="top">
+									<td class="list_left lef"><img src="../img/fanqieyu.png"/></td>
+									<td class="list_left lef">番茄鱼</td>
+									<td class="list_left price_u">小份-不辣 </td>
+									<td class="list_center price"> 100.00</td>
+									<td class="list_center list_time">1</td>
+									<td class="list_center price_xiao">100.00</td>
+								</tr>
+							    <tr class="bottom">
+									<td class="list_left lef"><img src="../img/fanqieyu.png"/></td>
+									<td class="list_left lef">酸菜鱼</td>
+									<td class="list_left price_u">大份-超辣</td>
+									<td class="list_center price">150.00</td>
+									<td class="list_center list_time">1</td>
+									<td class="list_center price_xiao">150.00</td>
+								</tr>
+								  <tr class="dash">
+									<td class="list_left" id=""></td>
+									<td class="list_left price_u"></td>
+									<td class="list_center list_time"></td>
+									<td class="list_center list_time"></td>
+									<td class="list_center list_time"></td>
+									<td class="list_center">合计
+										&nbsp;&nbsp;&nbsp;
+										<span id="total">100.00</span>
+									</td>
+									
+								</tr>
+								
+							</table>
+							<div class="list" style="text-align: right;overflow: hidden;padding-bottom: 10px;">
+							<span id="" class="btn">
+								<input type="checkbox" name="" id="" value="" /> &nbsp;使用满100减20优惠券
+							</span>
+							</div>
+							<div class="list" style="text-align: right;overflow: hidden;padding-bottom: 10px;">
+							<span id="" class="btn">
+								实付
+							</span>
+							</div>
+							<div class="list" style="text-align: right;overflow: hidden;padding-bottom: 10px;">
+							<span id="" class="txt_btn">
+								确认并打印小票
+							</span>
+						    </div>
+						    <div class="list" style="text-align: right;overflow: hidden;padding-bottom: 10px;">
+							<span id="" class="txt">
+								注：若要取消预约，请提前2小时在订单列表中取消预约，否则将收取一定的违约金
+							</span>
+						    </div>
+						</div>
+						
+						
+			<!--正文内容部分结束-->
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<!--footer-heip-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门
+						</span>
+						<li>购买流程</li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../img/app_erm.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../img/wechat_erm.png" alt="" />
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div class="footer_copyRight">
+				<p>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</p>
+			</div>
+			<div class="footer_rz">
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

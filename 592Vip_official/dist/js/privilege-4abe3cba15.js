@@ -1,0 +1,1 @@
+$(function(){var e=0;$(document).on("click",".more_privilege",function(){$(this).remove(),$(".more_privilege_nav").eq(e).slideDown(3e3),e++})});

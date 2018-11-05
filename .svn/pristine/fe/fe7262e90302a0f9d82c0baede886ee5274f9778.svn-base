@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../Public/css/mui.min.css"/>
+		<style type="text/css">
+			.video_li{
+				padding: 0!important;font-size: 0;line-height: 0;
+			}
+			.video_li img{
+				width: 100%;max-width: 100%;
+			}
+			.jijin_name{
+				/*margin-right: -20px!important;font-size: 15px;*/
+				margin: 0!important;
+				padding: 0!important;
+				margin-right: -15px!important;
+				font-size: 14px;
+				text-indent: 15px;
+				line-height: 35px;
+				
+			}
+			.jijin_name:after{
+				right: 20px;
+			}
+			.sk_btn{
+				display: inline-block;
+				padding: 5px 15px;
+				border-radius: 20px;
+				border:1px solid #ff3f3f;
+				color: #ff3f3f;
+				font-size: 14px;
+				margin: 10px 3px ;
+				
+			}
+			.sk_btn_jz{
+				background: #ff3f3f;color: #fff;
+			}
+			.sk_div{
+				background: #fff;padding: 3px 0;margin: 10px 0;
+			}
+			.sk_div ul{
+				padding: 0;
+			}
+			.sk_div li{
+				list-style: none;text-align: center;
+			}
+			.sk_title{
+				font-size: 14px;
+			}
+			.sk_amount{
+				font-size: 25px;height: 40px;line-height: 40px;color: #ff3f3f;
+			}
+			.jj_pro{
+				background: url(../Public/img/detail_bg3.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-color: #fff;
+			}
+			.jj_pro_ul{
+				    background-image: url(../Public/img/detail_bg2.png);
+				    background-repeat: no-repeat;
+				    background-position-y: 40px;
+				    padding-left: 0;
+				    width: 95%;
+				    margin: 65px auto;
+			}
+			.jj_pro_ul h3{
+				color: #ff3f3f;font-size: 14px;position: relative;
+			}
+			.jj_pro_ul li{
+				text-align: left;padding: 10px 0;padding-left: 50px;
+			}
+			.jj_pro_ul img{
+				float: left;margin-right: 20px;margin-top: 10px;
+			}
+			.jj_pro_ul span{
+				font-size: 14px;
+			}
+			.title{
+				color: #fff;
+			}
+			.sk_btn img{
+				vertical-align: middle;margin-right: 10px;
+			}
+		</style>
+		<script src="../Public/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="">
+			<ul class="mui-table-view mui-table-view-chevron" id="video_list">
+					<li class="mui-table-view-cell video_li " data-id="1" >
+						<img src="../Public/img/jijin_logo.png" onclick="show(1)"/>
+						<a class="mui-navigate-right jijin_name"  >
+							往期慈善活动
+						</a>
+					</li>
+				</ul>
+		</div>
+		
+		<!--累计善款-->
+		<div class="sk_div">
+			<ul class="">
+				<li class="sk_title">累计善款</li>
+				<li class="sk_amount">
+					20000元
+				</li>
+				<li class="sk_btn_li" id="sk_btn_li">
+					<span class="sk_btn sk_btn_jz" > <img src="../Public/img/ic_jz.png" alt="" />现金捐赠</span>
+					<span class="sk_btn sk_btn_his" ><img src="../Public/img/ic_myhis.png"/>我的捐赠记录</span>
+				</li>
+			</ul>
+		</div>
+		<!--捐赠说明-->
+		<div class="sk_div jj_pro">
+			<div>
+				<h3 class="title" style="text-indent: 20px;font-size: 14px;padding-top: 20px;">轻奢慈善	爱心消费</h3>
+				<p style="color: #fff;text-indent: 20px;">在日常消费中，通过轻奢点评可以点滴的积累慈善基金。</p>
+				
+				<ul class="jj_pro_ul">
+					<h3>关于轻奢点评慈善基金</h3>
+					<li>
+						<span>专注于慈善消费的大平台</span>
+						<p>
+							由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因灾致贫、遭遇意外。
+						</p>
+					</li>
+					<li>
+						<span>专注于慈善消费的大平台</span>
+						<p>
+							由轻奢点评和红十字会联合成立，专注健康扶贫，终点救助因病因。
+						</p>
+					</li>
+					<li>
+						<span>专注于慈善消费的大平台</span>
+						<p>
+							由轻奢点评和红十字康因病因灾致贫、遭遇意外等面临生存困难的特殊家庭。
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	mui.init()
+	mui("#video_list").on('tap','.jijin_name',function(){
+		location.href="lists.html";
+	})
+	mui('#sk_btn_li').on('tap','.sk_btn_jz',function(){
+		location.href="juanzeng.html";
+	})
+	mui('#sk_btn_li').on('tap','.sk_btn_his',function(){
+		location.href="history.html";
+	})
+	function show(id){
+		location.href="show.html?id="+id;
+	}
+</script>

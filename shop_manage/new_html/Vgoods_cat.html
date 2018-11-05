@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>轻奢点评商品管理</title>
+	<link href="../css/layout1.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/layer.css">
+	<link rel="stylesheet" href="../css/Wcommon.css" />
+	<style type="text/css">
+		.goods_cat {
+			display: block;
+		}
+
+		.editor {
+			margin-right: 10px;
+		}
+
+		table {
+			border: 1px solid #ddd;
+		}
+
+		th,
+		td {
+			border-right: 1px solid #ddd;
+		}
+
+		td {
+			border-top: 1px solid #ddd;
+		}
+
+		.goods_cat {
+			margin: auto auto;
+			border-radius: 0;
+			padding: 20px;
+		}
+
+		table {
+			color: #666;
+		}
+
+		td:last-child {
+			border-right: 0;
+		}
+
+		.txt_list {
+			padding-bottom: 10px;
+			padding-top: 30px;
+		}
+
+		.edit_div {
+			padding: 10px 0;
+		}
+
+		.edit_div li {
+			padding: 10px 0;
+		}
+
+		.edit_div form {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.edit_div form input {
+			border: 1px solid #ccc;
+			padding: 3px;
+			border-radius: 3px;
+			width: 200px;
+		}
+
+		.opeBtn>span {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="cont" id="index_cont">
+			<div class="content" id="main1">
+				<div id="t1">
+					<div id="pic1">
+						<img id="p1" src="../img/slogo.png" />
+					</div>
+				</div>
+				<div id="t2">
+					<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png" />&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+					</div>
+					<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png" />&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+					</div>
+					<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png" />&nbsp;&nbsp;</span>订单管理</p>
+						<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+					</div>
+					<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png" />&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+					</div>
+					<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+					<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+				</div>
+			</div>
+			<!--个人中心正文中间部分-->
+			<div class="content" id="main2">
+				<div id="txt">
+					<!--正文部分开始-->
+					<!--头部-->
+					<div id="header">
+						<div id="head">
+							<div id="cl" class="head heade1">
+								<ul>
+									<li class="business"><i>商家中心>分类管理</i>
+										<i class="shopname">当前商家：江南厨房</i>
+									</li>
+									<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+								</ul>
+							</div>
+							<div id="cr" class="head head_r">
+								<div class="head heade2">
+									<img src="../img/qvip.png" />
+								</div>
+								<div class="head line">
+									<ul>
+										<li>下午好！13059891234</li>
+										<li>欢迎进入轻奢点评商家中心</li>
+									</ul>
+								</div>
+								<div class="head heade3">
+									<a href="" class="login_out"><img src="../img/esc.png" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--头部-->
+					<!--正文-->
+					<!-- <div class="titleMes" style="font-weight: 600;margin:30px 15px;"><i>个人中心</i>><i>分类管理</i></div> -->
+
+					<!--<div class="txt_title1">
+							<i>	新增分类</i>
+						</div>-->
+					<div class="txt_list">
+						<form action="">
+							分类名称：<input type="text" placeholder="请输入分类名称" class="form_input" id="new_cat_name" style="border: solid 1px #dddddd;height:30px;padding-left: 10px" />
+							<input type="text" placeholder="排序" class="form_input" id="new_cat_name" style="padding-left: 10px;border: solid 1px #dddddd;height:30px;margin-left: 10px;" />
+							<span class="search_btn" id="save_new_cat" style="padding: 5px 40px;border-radius: 5px">添加</span>
+						</form>
+					</div>
+					<div class="txt_list">
+						<table border="0" cellspacing="0" cellpadding="0" width="580px" id="goods_cat_list">
+							<tr id="tab">
+								<th width="80px">排序</th>
+								<th width="300px">分类名称</th>
+								<th width="200px">操作</th>
+							</tr>
+							<tr class="list_center">
+								<td>1</td>
+								<td class="goods_cat ">分类名称</td>
+								<td class="opeBtn"><span class="editor list_orange" data-id="1">编辑</span><span class="del_cat list_red" data-id="1">删除</span></td>
+							</tr>
+							<tr class="list_center">
+								<td>2</td>
+								<td class="goods_cat ">分类名称</td>
+								<td class="opeBtn"><span class="editor list_orange" data-id="2">编辑</span><span class="del_cat list_red" data-id="1">删除</span></td>
+							</tr>
+						</table>
+					</div>
+
+					<!--正文-->
+					<!--正文部分结束-->
+
+				</div>
+			</div>
+		</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/Vlayout.js"></script>
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function () {
+		// 	removeCat();
+		// 	editCat();
+		// 	$("#save_new_cat").click(function () {
+		// 		var new_cat_name = $("#new_cat_name").val();
+		// 		if (!new_cat_name) {
+		// 			alert('请输入分类名称');
+		// 			$("#new_cat_name").focus();
+		// 			return false;
+		// 		}
+		// 		var count = 0;
+		// 		$('.goods_cat').each(function () {
+		// 			if ($(this).text() == new_cat_name) {
+		// 				count++;
+		// 			}
+		// 		})
+
+		// 		if (count == 0) {
+		// 			count++;
+		// 			//这个里边需要先通过ajax处理添加函数，根据处理结果在商品分类列表那边添加内容
+		// 			var tr = '<tr class="list_center"><td >' + count + '</td><td class="goods_cat ">' + new_cat_name + '</td><td class=""><span class="editor list_orange" data-id="3">编辑</span><span class="del_cat list_red" data-id="1">删除</span></td></tr>'
+		// 			$('#goods_cat_list').append(tr);
+		// 			$("#new_cat_name").val('');
+
+		// 			removeCat();
+		// 			editCat()
+		// 		} else {
+		// 			alert('新增分类已经存在，请重新编辑');
+		// 			$("#new_cat_name").focus();
+		// 		}
+		// 	})
+		// })
+		// function removeCat() {
+		// 	$(".del_cat").each(function () {
+		// 		$(this).bind({
+		// 			'click': function () {
+		// 				var id = $(this).attr('data-id');
+		// 				console.log(id);
+		// 				var remove = confirm('确定删除该分类');
+		// 				if (remove) {
+		// 					//console.log()
+		// 					//需要先根据id进行ajax处理删除功能，根据返回更新商品分类列表
+		// 					$(this).parent().parent().remove();
+		// 					//							console.log($(this).parent())
+		// 				}
+		// 			}
+		// 		})
+		// 	})
+		// }
+
+		// function editCat(){
+		// 	$(".editor").each(function(){
+		// 		$(this).bind({
+		// 			'click':function(){
+		// 				var id=$(this).attr('data-id');
+		// 				var cat_order=$(this).parents('.list_center').find('td:nth-child(1)').html();
+		// 				var cat_name=$(this).parents('.list_center').find('td:nth-child(2)').html();
+
+		// 				console.log(id);
+		// 				//页面层
+		// 				layer.open({
+		// 					title:'编辑分类',
+		// 				    type: 1,
+		// 					skin: 'layui-layer-rim', //加上边框
+		// 					area: ['420px', '240px'], //宽高
+		// 					content: '<div class="edit_div" style="" >'
+		// 							+'<form action="" method="post">'
+		// 							+	'<input type="hidden" name="cat_id" value="'+id+'"/>'
+		// 							+	'<ul>'
+		// 							+		'<li>'
+		// 							+			'<label for="">分类名称：</label><input type="text" value="'+cat_name+'" />'
+		// 							+		'</li>'
+		// 							+		'<li>'
+		// 							+			'<label for="">排　　序：</label><input type="text" value="'+cat_order+'"/>'
+		// 							+		'</li>'
+		// 							+		'<li>'
+		// 							+			'<span class="search_btn" id="save_edit_cat" style="padding: 5px 13px;" onclick="saveEdit()"  >修改</span>'
+		// 							+		'</li>'
+		// 							+	'</ul>'
+		// 							+'</form>'
+		// 						+'</div>'
+		// 				});
+		// 			}
+		// 		})
+
+		function saveEdit() {
+			alert('修改操作')
+		}
+		var editorGoods;
+		$(document).on('click', '.editor', function () {
+			editorGoods = layer.open({
+				type: 2,
+				area: ['440px', '450px'],
+				title: false,
+				closeBtn: 0,
+				shade: 0.5,
+				shadeClose: true,
+				content: "../new_html/components/editor.html"
+			});
+		})
+
+		var delGoods
+		$(document).on('click', '.del_cat', function () {
+			delGoods = layer.open({
+				type: 1,
+				area: ['500px', '210px'],
+				title: false,
+				closeBtn: 0,
+				shade: 0.5,
+				shadeClose: true,
+				content: "<div class='del_cat_nav'><p class='title'>确定删除此分类?</p><div class='btn_area'><a class='btn confirm fl'>确定</a><a class='btn cancel fr'>取消</a></div></div>"
+			});
+		})
+		$(document).on('click', '.del_cat .cancel', function () {
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            parent.layer.close(index); //再执行关闭
+        })
+	})
+	// }
+
+</script>
+
+</html>

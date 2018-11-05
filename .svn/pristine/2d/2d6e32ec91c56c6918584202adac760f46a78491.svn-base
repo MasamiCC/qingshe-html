@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/station.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+		    <div class="qsh_header">
+		    	<div class="notice">
+		    		<div id="">
+		    			<ul>
+		    				<li>公告内容1</li>
+		    			</ul>
+		    		</div>
+		    		<!---->
+		    		
+		    		
+		    	</div>
+		    	<!--开往。。。。-->
+		    	<div class="to">
+	    			开往 初心站
+	    		</div>
+	    		<!--<div class="here">
+	    			<img src="image/station_fd@3x_31.png"/>
+	    		</div>-->
+		    	<div class="train">
+	    			<img src="image/train@3x.png"/>
+	    		</div>
+	    		<div class="qsh_scores" data-amount='1000'>
+	    			<img src="image/score@3x.png" alt="" />
+	    			1000
+	    		</div>
+	    		<div class="qsh_love" data-amount='1000'>
+	    			<img src="image/love@3x.png" alt="" />
+	    			1000
+	    		</div>
+	    		<!--<div class="qsh_msg">
+	    			人们对美好生活的向往是我们奋斗的目标!
+	    		</div>-->
+	    		<!--背景-->
+	    		<div class="bg bg_ing "></div>
+		    </div>
+		    <div class="qsh_banner">
+		    	<div class="qsh_station_name">
+		    		<img src="image/qsh_map.png" class="map_p"/>
+		    		<span>加油站</span>
+		    		<img src="image/qsh_p.png" class="qsh_p"/>
+		    	</div>
+		    	<div class="qsh_time">
+		    		<!--任务倒计时 22h:44m:20s-->
+		    	</div>
+		    	<div class="qsh_map">
+		    		<span>站点地图</span>
+		    	</div>
+		    </div>
+		    <div class="qsh_stations">
+		    	<div class="">
+		    		<ul>
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						加油站
+		    					</div>
+		    					<div class="">
+		    						<ul>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									帮助人数
+		    								</div>
+		    								<div class="">
+		    									<div><span style="width: 50%;"></span></div>
+		    								</div>
+		    								<div class="">
+		    									1/2人
+		    								</div>
+		    							</li>
+		    							<li class="qsh_station_l_list">
+		    								<div class="">
+		    									或购买燃料
+		    								</div>
+		    								
+		    							</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+		    			
+		    			<li class="qsh_station">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						初心站（目标站点） 
+		    					</div>
+		    					
+		    				</div>
+		    				
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="qsh_tongji">
+		    	<div class="">
+		    		<ul>
+		    			<li>积分 <img src="image/point_icon.png"/></li>
+		    			<li class="jifen_total">3600</li>
+		    		</ul>
+		    	</div>
+		    	<div class="">
+		    		<ul>
+		    			<li>慈善贡献值 <img src="image/heart_icon.png"/></li>
+		    			<li class="gongxianzhi_total">1000</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="qsh_score">
+		    	<div class="qsh_score_title">
+		    		<img src="image/point_no1.png"/>积分排行榜
+		    	</div>
+		    	<div class="qsh_score_list">
+		    		<ul>
+		    			<li>
+		    				<div>名次</div>
+		    				<div></div>
+		    				<div>积分</div>
+		    			</li>
+		    			<li class="mime">
+		    				<div>101</div>
+		    				<div>
+		    					<img src="image/point_header1.png" class="qsh_user"/>我
+		    				</div>
+		    				<div>10</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no1.png"/></div>
+		    				<div>
+		    					<img src="image/point_header2.png" class="qsh_user"/>一片浮云
+		    				</div>
+		    				<div>3000</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no2.png"/></div>
+		    				<div>
+		    					<img src="image/point_header3.png" class="qsh_user"/>上海次郎
+		    				</div>
+		    				<div>2000</div>
+		    			</li>
+		    			<li>
+		    				<div><img src="image/qs_no3.png"/></div>
+		    				<div>
+		    					<img src="image/point_header4.png" class="qsh_user"/>眉山太子
+		    				</div>
+		    				<div>200</div>
+		    			</li>
+		    			<li>
+		    				<div>4</div>
+		    				<div>
+		    					<img src="image/point_header5.png" class="qsh_user"/>胡子haha
+		    				</div>
+		    				<div>80</div>
+		    			</li>
+		    			<li>
+		    				<div>5</div>
+		    				<div>
+		    					<img src="image/point_header1.png" class="qsh_user"/>一片浮云
+		    				</div>
+		    				<div>5</div>
+		    			</li>
+		    			
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+				    <ul class="mui-table-view">
+				    	<li class="qsh_station passed">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						南通站(始发站)
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    	
+				    	<li class="qsh_station actived">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						加油站
+		    					</div>
+		    				</div>
+		    				<div class="qsh_station_r">
+		    					<span>攻略</span>
+		    				</div>
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						初心站<span>不忘初心，牢记使命</span>
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						奋斗站<span>幸福是奋斗出来的</span>
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    	
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						幸福站<span>小康路上一个都不能掉队</span>
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    	<li class="qsh_station future">
+		    				<div class="qsh_station_l">
+		    					<div class="">
+		    						小康站(终点站)
+		    					</div>
+		    				</div>
+		    				
+		    			</li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	mui('body').on('tap','#popover',function(){
+		console.log(1)
+		mui('#popover').popover('hide');
+	})
+	mui('body').on('tap','.mui-scroll-wrapper',function(e){
+		e.stopPropagation();
+	})
+	mui('.qsh_banner').on('tap','.qsh_map',function(){
+		mui('#popover').popover('show');
+	})
+	countDown(100)
+	function countDown(count){
+		
+		var timer=setInterval(function(){
+			var text='';
+			if(count>=0){
+				var h=parseInt(count/3600);
+				var m=parseInt((count%3600)/60);
+				var s=parseInt((count%60)%60);
+				text="任务倒计时 "+h+"h:"+m+"m:"+s+"s";
+				count--
+			}else{
+				clearInterval(timer)
+				text='';
+			}
+			mui('.qsh_time')[0].innerHTML=text;
+		},1000)
+	}
+	$(function(){
+		$('.qsh_header').on('tap','.qsh_scores',function(){
+			$(this).fadeOut();
+			var count=$(this).attr('data-amount');
+			var timer=setInterval(function(){
+				var a=10;
+				var total=parseInt($('.jifen_total').html());
+				$('.jifen_total').html(total+a);
+				if(count<=a){
+					clearInterval(timer)
+					
+				}
+				count-=a;
+			},20)
+		})
+		$('.qsh_header').on('tap','.qsh_love',function(){
+			$(this).fadeOut();
+			var count=$(this).attr('data-amount');
+			var timer=setInterval(function(){
+				var a=10;
+				var total=parseInt($('.gongxianzhi_total').html());
+				$('.gongxianzhi_total').html(total+a);
+				if(count<=a){
+					clearInterval(timer)
+					
+				}
+				count-=a;
+			},20)
+		})
+	})
+	
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评城市渠道拓展</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.ptjz_con{
+				text-align: center;
+			}
+			.ptjz_con img{
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ptjz_con">
+			<img src="../../image/qdzs.jpg"/>
+		</div>
+	</body>
+</html>

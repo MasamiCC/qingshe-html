@@ -1,0 +1,43 @@
+*{list-style: none;margin: 0;padding: 0;outline: none;}
+.mui-bar-nav{box-shadow: none;background: none;}
+.mui-content{position: absolute;top: 0;bottom: 0;left: 0;right: 0;overflow: auto;text-align: center;background: #fff;
+display: flex;display: -webkit-flex;
+flex-direction: column;-webkit-flex-direction: column;
+justify-content: space-between;-webkit-justify-content: space-between;
+}
+#popover{left: 0;right: 0;top: 50%;bottom: 0;overflow: auto;width: auto;}
+#popover li{display: flex;display: -webkit-flex;align-items: center;}
+#popover li div{flex: 1;}
+#popover li img{max-width: 2rem;}
+.sch_list{line-height: 2;font-size: 0.875rem;}
+.sch_list li{padding: .2rem 0;}
+.big_img{line-height: 0;padding: 1.2rem 0 0.5rem 0!important;}
+.big_img img{width: 23%;}
+.recommend{font-size: 0.88rem;}
+.recommend span{color: #f8a120;}
+.introduce{color: #666;}
+.keyWords{font-size: 1.3rem;font-weight: 500;}
+.sch_table{padding: 0.75rem 0;}
+table{border-collapse: separate;border-spacing:7px;margin: 0 auto; }
+th,td{background-color: #f4f4f4;font-size: 0.75rem;vertical-align: middle;padding: 0.2rem 0;color: #333;}
+.sch_btn{padding: 1rem 0;margin-bottom: 2rem;}
+.sch_btn span{
+	display: inline-block;
+	color: #fff;
+	border-radius: 1rem;padding: .3rem 1rem ;width: 50%;font-size: .875rem;letter-spacing: 1px;
+	background: -webkit-linear-gradient(left, #ffcd48 , #f8a120); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #ffcd48, #f8a120); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #ffcd48, #f8a120); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #ffcd48 , #f8a120); /* 标准的语法 */
+}
+.sch_btn p{margin-bottom: 0;line-height: 2;padding-top: 1rem;}
+.pop_recommend {padding:1rem .875rem;background-color: #c1e0ff;margin: 0.5rem 0;}
+.pop_recommend:first-child{background-color: #ffcccc;}
+.pop_recommend:last-child{background-color: #ccc;}
+.pop_recommend div:first-child{max-width: 3rem; }
+.pop_recommend div:last-child{max-width:4rem;text-align: center;color: #fff;border-radius: 1rem;border:1px solid #fff;padding: 0.2rem 0;font-size: 0.875rem;}
+#popover ul{margin: auto 1rem;}
+.popover_title{text-align: center;line-height: 2;padding-top: 0.75rem;}
+#popover{border-radius: 1rem;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.mui-popup-buttons .mui-popup-button:first-child{color: red;}
+.mui-popup-title{display: none;}

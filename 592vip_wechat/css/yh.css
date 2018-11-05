@@ -1,0 +1,140 @@
+*{
+	padding: 0;margin: 0;list-style: none;
+}
+.yh_title{
+	font-size: 1rem;
+	color: #333;
+	line-height: 30px;
+	border-bottom: 1px solid #ededed;
+	padding: 5px 0;
+	text-indent: 15px;
+}
+.my_yh{
+	color: #f2be41;
+	font-size: 0.95rem;
+	padding-right: 15px;
+}
+.yh_padding{
+	background: #fff;margin: 10px auto;
+}
+.yh_banner img{
+	max-width: 100%;
+}
+.yh_title span{
+	display: inline-block;width: 5px;background: #333;padding: 10px 0;vertical-align: middle; margin-right: 10px;
+}
+.yh_rule{
+	padding: 15px ;
+}
+.yh_rule p{
+	text-indent: 15px;
+}
+.yh_item {
+	display: flex;
+	align-items: center;
+	font-size: 0;
+}
+.yh_item:after{
+	left: 0;
+}
+.yh_item:active{
+	background: #fff;
+}
+.yh_item_l{
+	flex: 2;
+}
+.yh_item_r{
+	max-width: 80px;text-align: right;
+}
+.yh_mobile{
+	color: #f2be41;font-size: 0.9rem;
+}
+.yh_time{
+	color: #999999;font-size: 0.75rem;text-indent: 5px;display: inline-block;
+}
+.yh_name{
+	color: #333;font-size: 0.8rem;
+}
+.yh_amount{
+	color: #ff3f3f;font-size: 1.2rem;
+}
+.yh_first{
+	background: url(../image/yh_bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+.yh_first_con{
+	position: absolute;
+	margin: 0 10px;
+	background: rgba(255,255,255,0.3);
+	left: 0;
+	right: 0;
+	border-radius: 10px;
+	top: 20%;
+	padding: 10px;
+}
+.yh_first_content{
+	display: none;
+}
+#step1{
+	display: block;
+}
+.yh_f_title{
+	font-size: 1rem;color: #fff;text-align: center;font-weight: lighter;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.yh_t{
+	
+	background: url(../image/yh_t_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+}
+.yh_t_item{
+	text-align: center;
+}
+.yh_t_l{
+	flex: 5.5;color: #fff;
+}
+.yh_t_l p{
+	color: #fff;font-size: 0.8rem;margin-bottom: 0;
+}
+.yh_t_r{
+	flex: 11;
+	text-align: left;padding: 10px 0;
+}
+.yh_t_r p{
+	font-size: 0.7rem;margin-bottom: 0;line-height: 25px;color: #fff;
+	
+}
+.yh_count{
+	font-size: 1.5rem;
+}
+#un_registed,#registed{
+	display: none;
+}
+.send_code{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #0172b8;
+	font-size: 0.8rem;
+	line-height: 40px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+#receive_success{
+	font-size: 0;
+}
+#receive_success button{
+	display: inline-block;width: 45%;margin: 0 2.5%;
+}
+#registed p{
+	text-align: center;color: #0172b8;padding: 5px 0;
+}

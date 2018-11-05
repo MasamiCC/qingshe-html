@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{
+				background: #fff;
+			}
+			header.mui-bar{
+				background: #fff;
+			}
+			.mui-bar .mui-title{
+				color: #d4ac57;
+			}
+			header .mui-icon-left-nav{
+				color: #999;
+			}
+			
+			.mui-content{
+				background: #fff;
+				padding:  1rem;
+				margin-top: 0;
+			}
+			h2{
+				font-size: 1rem;text-align: center;line-height: 1.5;
+			}
+			h4{
+				font-size: 0.875rem;text-align: center;
+			}
+			p{
+				color: #333;font-size: 0.75rem;text-indent: 1.5rem;
+			}
+			p.no_indent{
+				text-indent: 0;
+			}
+			strong{
+				margin-right:5px ;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+		    <h2 style="text-align: center;">会员定义的实施细则</h2>
+			<p class="">
+			   会员，指与轻奢点评签订《轻奢点评平台服务协议》并完成注册流程的用户（含商家、消费者、合格资本方）。一个会员可以拥有多个账户，每个账户对应唯一的会员名。
+			</p>
+			<p class="no_indent">
+				<strong>一、用户和会员的关系</strong>
+			</p>
+			<p>
+			    任何具有完全民事行为能力的人，无论是否注册，只要在使用轻奢点评网的任何服务，比如仅仅浏览轻奢点评网页，即视为轻奢点评网用户；但当某个用户与轻奢点评网签订《轻奢点评平台服务及用户注册协议》并完成注册流程，该用户即成为轻奢点评网会员。用户包含会员。具体会员管理规定按照会员手册执行。
+			</p>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>

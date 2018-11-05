@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/donate.css"/>
+		<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#content_money{
+				color: #999;text-indent: 10px;
+			}
+			.content_ewm{
+				display: inline-block;width: 125px;font-size: 13px;text-align: center;display: none;
+			}
+			.zf_active{
+				background: url(../img/choose.png) no-repeat;
+			}
+			.content{
+				min-height: 300px;
+			}
+			.error_msg{
+				font-size: 12px;color: #dd1135;margin-left: 10px;
+			}
+			input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+		</style>
+	</head>
+	<body>
+	<!--头部-->
+		<div class="header" id="header_l">
+			<!--顶部-->
+			<div class="header_top">
+				<div id="" class="float_left reg_div">
+					<span style="" class="ic_erm">
+						小康生活一站式消费平台
+					</span>
+				</div>
+				<div class="float_right">
+					<span id="" class="ic_erm">
+						登录
+					</span>
+					<span class="ic_erm">
+						注册
+					</span>
+					<span class="ic_erm">轻奢APP </span>
+					<span class="ic_erm">轻奢微信</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_search">
+				<div class="float_left">
+					<img src="../img/logo.png" alt="" />
+				</div>
+				<div class="float_right">
+					<form action="" method="post">
+						<ul>
+							<li>
+								<label for="" class="search_label">
+									<input type="text"  class="keywords" placeholder="请输入关键字"/>
+									<span class="search_btn">搜索</span>
+								</label>
+							</li>
+							<li class="key_words">
+								关键字：<span>膳魔师 </span><span>COACH</span><span>UGG</span><span>GUCCI</span>
+							</li>
+						</ul>
+						
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="header_nav">
+				<ul class="nav_list">
+					<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+					<li class="header_nav_li "><a href="">美食</a></li>
+					<li class="header_nav_li "><a href="">酒店</a></li>
+					<li class="header_nav_li "><a href="">定制</a></li>
+					<li class="header_nav_li "><a href="">旅游</a></li>
+					<li class="header_nav_li "><a href="">生活</a></li>
+				</ul>
+				<ul style="float: right;" class="nav_list">
+					<li class="header_nav_li "><a href="">奢探</a></li>
+					<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+					<li class="header_nav_li "><a href="">慈善基金</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="header" id="header_s">
+			<div class="">
+				<div class="float_left">
+					<img src="../img/logo_s.png" style="vertical-align: middle;"/>
+					<ul style="display: inline-block;">
+						<li class="header_nav_li header_nav_active"><a href="">首页</a></li>
+						<li class="header_nav_li "><a href="">美食</a></li>
+						<li class="header_nav_li "><a href="">酒店</a></li>
+						<li class="header_nav_li "><a href="">定制</a></li>
+						<li class="header_nav_li "><a href="">旅游</a></li>
+						<li class="header_nav_li "><a href="">生活</a></li>
+						<li class="header_nav_li "><a href="">奢探</a></li>
+						<li class="header_nav_li "><a href="">轻奢资讯</a></li>
+						<li class="header_nav_li "><a href="">慈善基金</a></li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<div class="float_right login_s">
+						<span id="">
+							登录
+						</span>
+						<span>注册</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--正文 -->
+		<div class="content">
+			<!--正文内容部分开始-->
+			<div class="content_item">
+				<div class="" style="width: 50%;margin: 0 auto;">
+					<div class="content1">
+						<label for="content_money">捐赠金额：</label>	
+						<input type="number" name=""  class="inp" id="content_money" value=""  />
+						<span class="error_msg"></span>
+					</div>
+					<div class="content2">
+						<label for="">支付方式：</label>	
+						<input type="button" name="" class="inp zf " id="content_wx" value="微信支付"/>
+						<input type="button" name="" class="inp zf " id="content_zfb" value="支付宝"/>
+					</div>
+					<div class="content3" style="margin-top: 20px;">
+						<span class="inp" id="content_show" >0.00</span>
+						<span id="yuan">元</span>
+					</div>
+					<div class="content4">
+						<div id="content_wxzf" class="content_ewm" >
+							<img id="" src="../img/wxewm.png"/>
+							微信扫一扫支付
+						</div>
+						<div id="content_zfbzf" class="content_ewm">
+							<img id="" src="../img/wxewm.png"/>
+							支付宝扫一扫支付
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!--正文内容部分结束-->
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<!--footer-heip-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门
+						</span>
+						<li>购买流程</li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../img/app_erm.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../img/wechat_erm.png" alt="" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="footer_copyRight">
+				<p>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</p>
+			</div>
+			<div class="footer_rz">
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+				<img src="../img/chengxin.png" alt="" />
+				<img src="../img/kexin.png" alt="" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+</html>
+<script type="text/javascript">
+	var content_money=document.getElementById("content_money");
+	content_money.oninput=function(){
+		var values=content_money.value;
+		var newvalue='';
+		if (isNaN(values)) {
+			//errorMsg('捐赠金额格式不正确！')
+			newvalue=values.substr(0,values.length-1);
+			document.getElementById("content_money").value=newvalue;
+			if (newvalue.length>0) {
+				newvalue=parseFloat(newvalue).toFixed(2);	
+			}else{
+				newvalue='0.00'
+			}
+		}else{
+			if (values.length>0) {
+				if (values.length>=5) {
+					document.getElementById("content_money").value=values.slice(0,5);
+					newvalue=parseFloat(values.slice(0,5)).toFixed(2);
+				} else{
+					newvalue=parseFloat(values).toFixed(2);
+				}
+			}else if(values.length==0){
+				newvalue='0.00';
+			}
+		}
+		document.getElementById("content_show").innerHTML=newvalue;
+	}
+	$(function(){
+//		$('#content_wx').click(function(){
+//			$('.zf').removeClass('zf_active');
+//			$(this).addClass('zf_active')
+//	         $("#content_wxzf").show();
+//	         $("#content_zfbzf").hide();
+//		});
+//		$('#content_zfb').click(function(){
+//			$('.zf').removeClass('zf_active');
+//			$(this).addClass('zf_active')
+//	         $("#content_zfbzf").show();
+//	         $("#content_wxzf").hide();
+//	    });
+		var timer=''
+	    $('.zf').each(function(){
+	    	$(this).bind({
+	    		click:function(){
+	    			var money=$("#content_money").val();
+	    			if(money>0){
+	    				var index=$(this).index();
+		    			$('.zf').removeClass('zf_active');
+						$(this).addClass('zf_active');
+						$(".content_ewm").hide().eq(index-1).show()
+	    			}else{
+	    				errorMsg('请先输入捐赠金额！')
+	    				$("#content_money").focus();
+	    			}
+	    		}
+	    	})
+	    })
+	})
+	function errorMsg(msg){
+		$(".error_msg").html(msg);
+		timer=setTimeout(function(){
+			$(".error_msg").html('');
+		},2000)
+	}
+</script>

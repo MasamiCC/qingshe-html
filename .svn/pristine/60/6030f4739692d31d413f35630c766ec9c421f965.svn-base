@@ -1,0 +1,29 @@
+			.mui-content{position: absolute;top: 0;bottom: 50px;left: 0;right: 0;overflow: auto;}
+			.order_evaluation{margin:0.5rem;background: #fff;padding: 0.5rem 0.75rem;}
+			.evaluation_item{border-bottom: 1px solid #eee;padding: 5px 0;position: relative;}
+			.evaluation_item:last-child{border-bottom: none;}
+			.order_evaluation_shop{height: 3.8rem;font-size: 0;display: flex;align-items: center;}
+			.order_evaluation_shop >div{display: inline-block;vertical-align: middle;flex: 1;}
+			.evaluation_shop_logo{width: 3.5rem;overflow: hidden;height: 3rem;max-width: 3.5rem;}
+			.evaluation_shop_logo img{width: 3rem;height: 3rem;border-radius: 3rem ;}
+			.evaluation_shop_name{font-size: 1rem;color: #333;font-weight: bold;}
+			.evaluation_title{text-align: center;line-height: 2;font-size: 0.875rem;}
+			.evaluation_pic{font-size: 0;line-height: 0;}
+			.evaluation_pic >div{font-size: 0.75rem;display: inline-block;width: 25%;vertical-align: top;position: relative;text-align: center;}
+			.evaluation_pic img{max-width: 88%;}
+			.evaluation_pic i{position: absolute;right: -2px;top: -7px;font-size: 1rem;border-radius: 30px;z-index: 99;font-size: 0.875rem;color: #999;border: 1px solid #fff;background: #fff;}
+			textarea,input[type=text]{background: #f4f4f4;border: none;color: #ccc;font-size: 0.75rem;}
+			.evaluation_goods{padding: 10px 0;}
+			.evaluation_goods_title{font-size: 0.875rem;font-size: 500;position: relative;padding-bottom: 15px;}
+			.evaluation_goods_title .mui-pull-left{margin-right: 105px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;float: none;}
+			.evaluation_goods_title .mui-pull-right{position: absolute;right: 0;top: 0;}
+			.evaluation_goods_title span{color: #999999;font-size: 0.75rem;border: 1px solid #ddd;border-radius: 2rem;padding: 3px 10px}
+			.evaluation_goods_title i{margin-right: 2px;font-size: 0.875rem;}
+			.z_p.active{color: #edb94b;border-color: #edb94b;}
+			.c_p.active{color: #999;border-color: #999;}
+			.data-score{text-align: center;margin: 0 auto;padding: 5px 0;}
+			.sub_btn{width: 25%;background: #d4ac57;color: #fff;line-height: 50px;font-size: 0.95rem;text-align: center;}
+			.sub_msg{margin-left: 0.5rem;font-size: 0.875rem;line-height: 1.5;padding-top: 5px;color: #333;}
+			.sub_msg p{font-size: 0.75rem;margin-bottom: 0;}
+			.data-score img{width: 25px;}
+			.evaluation_service{padding-bottom: 15px;}

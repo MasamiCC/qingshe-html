@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;list-style: none;}
+body{
+	background: #fff;
+}
+.about{
+	background: #fff;margin: 0 1rem;
+}
+.about-title{text-align: center;font-weight: 500;line-height: 2.3;}
+.about-partner .mui-grid-view.mui-grid-9{background: #fff;border-top: none;border-left: none;}
+.about-partner .mui-grid-view.mui-grid-9 .partner{border-right: none;border-bottom: none;font-size: 0;line-height: 0;}
+.about-partner .mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn){padding: 0;}
+.about-partner .mui-grid-view.mui-grid-9 .mui-active{background: #fff;}
+.partner img{max-width: 100%;}
+.about-box{
+	background: #f4f4f4;padding: .5rem;margin-top: 1.5rem;border-radius: 10px;margin-bottom: .5rem;
+}
+.about-box .title{
+	text-align: center;line-height: 2.2;color: #333;font-size: 1rem;
+}
+.about-box p{
+	text-indent: 2rem;color: #333;font-size: 0.875rem;
+}
+.about-icon{
+	text-align: center;
+}
+.about-icon img{
+	margin: 0 auto;width: 3rem;margin-top: -2rem;
+}
+.clear{clear: both;}
+.partner.mui-active,.partner:active{background: none;}

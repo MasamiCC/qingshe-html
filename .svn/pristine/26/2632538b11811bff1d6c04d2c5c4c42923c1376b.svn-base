@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout_user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+	</head>
+	<body>
+		<div class="user_right_middle" >
+			<div class="address_list" ng-app="myAddress" ng-controller="addressCtrl" ng-init='getAddress()'>
+				<div class="address_item ng-scope" ng-repeat="address in addressLists">
+					<!--<div class="address_item-buttons">
+						<button class="address_item-button" ng-click="editAddress(address)">修改</button> 
+						<button class="address_item-button" ng-click="showMask = true">删除</button>
+					</div>-->
+					<div class="address_item-name ">
+						{{address.name}}
+						<span class="" ng-if="address.sex ==0">先生</span>
+						<span class="" ng-if="address.sex ==1">小姐</span>
+					</div>
+					<div class="address_item-address ng-binding" ng-bind="address.address + ' ' + address.address_detail"></div>
+					<div class="address_item-mobile ng-binding" ng-bind="address.phone"></div>
+					<div class="address_item-mask ng-hide" ng-show="showMask"></div>
+					<div class="address_item-removebuttons ng-hide" ng-show="showMask">
+						<p>确定删除收货地址?</p>
+						<button class="confirmdelete" ng-click="removeAddress(address)">确定</button> 
+						<button class="canceldelete" ng-click="showMask = false">取消</button>
+					</div>
+				</div>
+				
+				<div class="address_item address_add" ng-show="addressLists.length<10" ng-click="addAddress()">
+					<i class="fa fa-plus"></i>添加新地址
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/address.js" type="text/javascript" charset="utf-8"></script>
+</html>

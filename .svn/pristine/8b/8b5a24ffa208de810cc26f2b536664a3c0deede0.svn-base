@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body{
+				background: #fff;
+			}
+			.ds_mian{
+				font-size: 0.875rem;
+				color: #333;
+				text-align: center;
+			}
+			.heart_container{
+				padding-top: 15%;
+			}
+			.hearts{
+				padding-top: 10%;
+				font-size: 0.875rem;
+				color: #999;
+				line-height: 1.7;
+			}
+			.heart_bank_con{
+				padding-top:12%;
+			}
+			.heart_bank{
+				display: inline-block;
+				padding: 5px 11px;
+				color:#f25d5d ;
+				border: 1px solid #f25d5d;
+				border-radius: 50px;
+			}
+			.ds_mian_check{
+				color: #51c9f0;
+				font-size: 5rem;
+			}
+			.service span img{
+				width: 4%;
+			}
+			.service{
+				position: absolute;
+				bottom: -350px;
+				text-align: center;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				font-size: 0.875rem;
+			}
+			body{
+				position: relative;
+			}
+			.ds_mian_blue{
+				color: #51aff0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ds_mian">
+			<div class="heart_container"><i class="fa fa-check-circle ds_mian_check" aria-hidden="true"></i></div>
+			<div class="hearts">您的申请已提交, <br /> 5个工作日之后可重新提交。</div>
+			<div class="service"><span><img src="../image/service.png"/></span>&nbsp;&nbsp;联系客服<span class="ds_mian_blue">&nbsp;&nbsp;0513-85799999</span></div>
+		</div>
+	</body>
+</html>

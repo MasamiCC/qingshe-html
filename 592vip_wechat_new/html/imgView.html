@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评慈善基金活动详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-slider{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+			.mui-slider .mui-slider-group{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+			.mui-slider-title{height: 27%;background: rgba(0,0,0,0.8);color: #fff;padding: 0 0.75rem;}
+			.mui-slider-item img{
+				width: 100%;
+			}
+			.mui-slider-title span{
+				font-size: 1.2rem;margin-right: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div id="slider" class="mui-slider"  style="background: #333;">
+			  <div class="mui-slider-group mui-slider-loop">
+			    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			        <img src="../image/cs_12.jpg"/>
+			        <p class="mui-slider-title">朗嘎拉姆现场献唱</p>
+			    </div>
+			    <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      	<img src="../image/cs_01.jpg"/>
+			      	<p class="mui-slider-title">嘉宾签到现场</p>
+			    </div>
+			    <!-- 第二张 -->
+			    <div class="mui-slider-item">
+			        <img src="../image/cs_02.jpg"/>
+			        <p class="mui-slider-title">轻奢点评慈善盛典开场</p>
+			    </div>
+			    <div class="mui-slider-item">
+			        <img src="../image/cs_03.jpg"/>
+			        <p class="mui-slider-title">首届轻奢点评慈善盛典现场</p>
+			    </div>
+			    <!-- 第三张 -->
+			    <div class="mui-slider-item">
+			        <img src="../image/cs_04.jpg"/>
+			        <p class="mui-slider-title">南通红十字会党组书记潘国华致辞</p>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_05.jpg"/>
+			       <p class="mui-slider-title">轻奢点评董事长陈建滨致辞</p>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_06.jpg"/>
+			       <p class="mui-slider-title">轻奢点评董事任淑芳与南通红十字会党组书记签署轻奢点评慈善基金项目战略合作协议</p>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_07.jpg"/>
+			       <p class="mui-slider-title">成元德先生作品义拍现场</p>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_08.jpg"/>
+			       <p class="mui-slider-title">成元德先生，江苏南通市人，1945年生，中国书法家协会会员，中华书画学会副主席，中国书法研究院艺术委员会理事，世界华人文化艺术研究院副院长，现任崇川区侨之友书画协会副会长，江苏南通狼山风景名胜区美术师，狼山镇侨联分会副会长，狼山镇书法协会会长</p>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_09.jpg"/>
+			       <p class="mui-slider-title">康美国际月子会所 首笔爱心捐赠</p>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_10.jpg"/>
+			       <p class="mui-slider-title">现场抽奖</p>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_11.jpg"/>
+			       <p class="mui-slider-title">明星表演</p>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_12.jpg"/>
+			       <p class="mui-slider-title">朗嘎拉姆现场献唱</p>
+			    </div>
+			    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			        <img src="../image/cs_01.jpg"/>
+			        <p class="mui-slider-title">嘉宾签到现场</p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".mui-slider-item").each(function(){
+			var index=$(this).index();
+			var totalSize=$(".mui-slider-item").size();
+			var str='<span>';
+			if(index==0){
+				str+=totalSize-2;
+			}else if(index==totalSize-1){
+				str+=1;
+			}else{
+				str+=index;
+			}
+			console.log(index,str,str+"/"+(totalSize-2))
+			
+			$(this).find('p').prepend(str+"/"+(totalSize-2)+"</span>")
+		})
+//		$('.mui-slider-item img').each(function(){
+//			$(this).load(function(){
+//				var wHeright=$(window).height();
+//				var imgHeight=$(this).height();
+//				var top=parseInt((wHeright-imgHeight)/2)
+//				top=(top<0)?0:top;
+//				$(this).css('margin-top',top);
+//			})
+//			
+//		})
+		
+	})
+</script>

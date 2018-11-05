@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url(../images/bCJJR_bg.png) no-repeat;
+	background-size: cover;
+	overflow: auto;
+}
+.allcooperate {
+	margin: 25px 15px;
+	box-shadow: 0 0 .5rem #bbb;
+	border-radius: 6px;
+	padding: 20px;
+	background-color: #fff;
+	padding-bottom: 30px;
+}
+
+.title {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.margin_left {
+	margin-left: 20px;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 99rem;
+	line-height: 1.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: #dddddd;
+	margin-right: 0.625rem;
+	color: #333;
+	font-size: 0.75rem;
+}
+
+.banner {
+	font-size: 0.9375rem;
+	line-height: 2.3;
+	margin-top: 10px;
+	color: #666666;
+}
+
+.margintop20 {
+	margin-top: 19px;
+}
+
+.weight {
+	font-weight: bold;
+	color: #333;
+}
+
+.mainfont {
+	font-size: 0.9375rem;
+	margin-top: 12px;
+	line-height: 2;
+	letter-spacing: 0.05rem;
+	color: #666;
+}
+
+.bluefont {
+	font-size: 0.8135rem;
+	color: #0090ff;
+	margin-top: 20px;
+	letter-spacing: 0.08rem;
+	line-height: 1.8;
+}
+
+.fontsize {
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 23px;
+}
+
+.botmButton_con {
+	text-align: center;
+}
+
+.botmButton {
+	font-size: 1.125rem;
+	color: #fffefe;
+	display: inline-block;
+	background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fec531), to(#fe9c24));
+	width: 80%;
+	box-shadow: 1px 1px 1px 1px #ffe4c4;
+	padding: 15px 0;
+	border-radius: 26px;
+	margin-top: 10px;
+}
+.propoverbg{
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    /*display: none;*/
+}
+.propvercon{
+	border-radius: 4px;
+	background: #fff;
+    width: 80%; 
+   	height: 50%; 
+    position: absolute;
+    top: 23%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /*padding: 25px 15px 30px 15px;*/
+    padding: 7.9% 4.7% 9.5% 4.7%;
+}
+.propverconTitle{
+	font-size: 1rem;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.propverconContent{
+	font-size: 0.875rem;
+	line-height: 1.8;
+}
+.propverconBtn{
+	text-align: center;
+	width: 80%;
+	color: #fff;
+	background: #f8a120;
+	margin: 40px auto 0 auto;
+	font-size: 1.125rem;
+	line-height: 2;
+	border-radius: 4px;
+}
+.propverconContent a{
+	text-decoration: none;
+	color: #3da0f1;
+}

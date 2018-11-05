@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/route_details.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../js/Simple-Calendar/stylesheets/simple-calendar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/pgwslideshow.css">
+		<style type="text/css">
+			.route_list_pic_c{position: relative;overflow: hidden;}
+			.route_list_pic_c img{position: absolute;left: 0;top: 0;max-width: initial!important;}
+			.route_line_right>*{margin-left: 10px;}
+			.pgwSlideshow{background: none;}
+			.pgwSlideshow .ps-list{
+				background: #fff;box-shadow: none;
+			}
+			.pgwSlideshow .ps-list li .ps-item.ps-selected {
+				border: none;
+			}
+			.pgwSlideshow .ps-list li .ps-item.ps-selected img{
+				margin: 0;
+			}
+			.pgwSlideshow .ps-list li .ps-item{
+				opacity: 1;margin: 10px 3px;
+			}
+			.pgwSlideshow .ps-list li:first-child .ps-item{
+				margin-left: 0;
+			}
+			.pgwSlideshow .ps-list li:last-child .ps-item{
+				margin-right: 0;
+			}
+			.pgwSlideshow .ps-list li img{
+				border: none;
+			}
+			.pgwSlideshow.narrow .ps-list li img{
+				width: 58px;
+				height: 58px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<div class="">
+								<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+							</div>
+							<!--erweima-->
+							<div class=" header_ma">
+								<div class="white  appcode appmr margintop35 relat">
+									<div class=" " id="qsapp">
+										轻奢APP
+									</div>
+									<div class="mashow" id="maiph">
+										<img class="" src="../imgs/app.png"/>
+									</div>
+								</div>
+								<div class="white wechatcode margintop35 relat">
+									<div class="" id="qswc">
+										轻奢微信
+									</div>
+									<div class="mashow" id="mawechat">
+										<img class="" src="../imgs/592vipma.png"/>
+									</div>
+								</div>
+							</div>
+							<!--erweima-->
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login ">
+									<!--登录前-->
+									
+									<div class="beforelogin">
+										<span class="white"><a href="login.html">登录</a></span>&nbsp;&nbsp;&nbsp;<span class="white"><a href="register.html">注册</a></span>
+									</div>
+									
+									<!--登录后-->
+									<!--<div class="loginmine">
+										<div class="minecon minecontainer relat linefont">
+											<div class="mineconta ">
+												<div class="inline myheader" style="vertical-align: middle;"><img src="../imgs/my.png"/></div>&nbsp;<div class="inline" id="xiala" style="vertical-align: middle;"><img src="../imgs/sel.png"/></div>
+											</div>	
+											<div class="showcon" id="showcon">
+												<div class="mineshow">
+												<div class="">
+													<a href="">
+														我的评价
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														优惠券
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														会员中心
+													</a>
+												</div>
+												<div class="">
+													<a href="">
+														账户设置
+													</a>
+												</div>
+												<div class="" id="out">
+													退出
+												</div>
+											</div>	
+											</div>
+												
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="usercenter.html">
+												我的订单
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="my_collection.html">
+												我的收藏
+												</a>
+											</div>
+										</div>
+										<div class="minecon">
+											<div class="white">
+												<a href="">
+												<div class="inlineblockcon">
+													消息
+												</div>
+												<div class="inlineblockcon num">
+													<div class="inlineblockcon tip_num">
+														122
+													</div>
+												</div>
+												</a>
+											</div>
+										</div>
+									</div>-->
+								</div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center ">
+				<div class="route">
+					<div class="route_item route_line">
+						<div class="route_line_left">
+							<ul class="pgwSlideshow">
+							    <li><img src="https://www.592vip.com:91/shop/10283/5f338c3a-2d2d-47fc-a560-7423fdd07cc8.jpg" alt="" data-description=""></li>
+							    <li><img src="https://www.592vip.com:91/shop/10283/8402a8a9-8b94-42a5-a3b2-c2d451d8cb9e.jpg" alt=""></li>
+							    <li><img src="https://www.592vip.com:91/shop/10283/2973fa46-a9e2-4106-9322-2e735c3ecd58.jpg" alt="" ></li>
+							    <li><img src="https://www.592vip.com:91/shop/10283/5f338c3a-2d2d-47fc-a560-7423fdd07cc8.jpg" alt="" data-description=""></li>
+							    <li><img src="https://www.592vip.com:91/shop/10283/8402a8a9-8b94-42a5-a3b2-c2d451d8cb9e.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="route_line_right">
+							<h2 class="route_title">日本东京4日自由行·热门商圈3晚连住 周末出游 说走就走日本东京4日自由行·热门商圈3晚连住 周末出游 说走就走</h2>
+							<div class="route_hotel">
+								<i class="icon iconfont icon-dianpu"></i>
+								<a href="">畅游国际旅行社</a>
+							</div>
+							<div class="route-pro">
+								<div class="route_title">
+									行程简述
+								</div>
+								<p>★ 丰富附加可选内容，迪士尼乐园门票、西瓜卡、蟹道乐代预订服务，应有尽有！<br />★ 东京热门商铺折扣券免费赠送，药妆、电器、等等全涵盖，千万不要错过哦！</p>
+							</div>
+							<div class="route-price">
+								<p class="old_price">原价￥500.00</p>
+								<p class="now_price">现价<span>￥400.00</span></p>
+							</div>
+							<div class="route_btn_div" style="text-align: right;">
+								<button id="">
+									立即预定
+								</button>
+							</div>
+						</div>
+						
+					</div>
+					<div class="route_item">
+						<div class="route_title">
+							日期及价格
+						</div>
+						<div class="">
+							<div id="J_Calendar" class="calendar"></div>
+						</div>
+						<div class="" style="clear: both;">
+							
+						</div>
+					</div>
+					<div class="route_item">
+						<div class="route_li">
+							<ul>
+								<li class="active">详细行程</li>
+								<li>费用及预定须知</li>
+							</ul>
+						</div>
+						<div class="route_div">
+							<div class="active">
+								<!--富文本内容-->
+								<div class="route_list">
+									<div class="route_list_day">
+										<span>第一天</span>国内 - 东京
+									</div>
+									<ul>
+										<li><i class="fa fa-subway"></i>交通：乘坐舒适的国际航班，从国内抵达日本国内第一大城市——东京都。</li>
+										<li><i class="fa fa-cutlery"></i>餐饮：一兰拉面(新宿中央东口店)</li>
+										<li>
+											<i class="fa fa-university"></i>景点：新宿
+											<div class="route_list_pic">
+												<div class="route_list_pic_c" >
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/black_pay.png"/>
+												</div>
+											</div>
+										</li>
+										<li>
+											<i class="fa fa-hotel"></i>住宿：东京京王广场酒店(Keio Plaza Hotel Tokyo)
+										</li>
+									</ul>
+								</div>
+								<div class="route_list">
+									<div class="route_list_day">
+										<span>第二天</span>国内 - 东京
+									</div>
+									<ul>
+										<li><i class="fa fa-subway"></i>交通：乘坐舒适的国际航班，从国内抵达日本国内第一大城市——东京都。</li>
+										<li><i class="fa fa-cutlery"></i>餐饮：一兰拉面(新宿中央东口店)</li>
+										<li>
+											<i class="fa fa-university"></i>景点：新宿
+											<div class="route_list_pic">
+												<div class="route_list_pic_c" >
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/black_pay.png"/>
+												</div>
+												
+											</div>
+										</li>
+										<li>
+											<i class="fa fa-hotel"></i>住宿：东京京王广场酒店(Keio Plaza Hotel Tokyo)
+										</li>
+									</ul>
+								</div>
+								<div class="route_list">
+									<div class="route_list_day">
+										<span>第三天</span>国内 - 东京
+									</div>
+									<ul>
+										<li><i class="fa fa-subway"></i>交通：乘坐舒适的国际航班，从国内抵达日本国内第一大城市——东京都。</li>
+										<li><i class="fa fa-cutlery"></i>餐饮：一兰拉面(新宿中央东口店)</li>
+										<li>
+											<i class="fa fa-university"></i>景点：新宿
+											<div class="route_list_pic">
+												<div class="route_list_pic_c" >
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/customize.png"/>
+												</div>
+												<div class="route_list_pic_c">
+													<img src="../imgs/black_pay.png"/>
+												</div>
+											</div>
+										</li>
+										<li>
+											<i class="fa fa-hotel"></i>住宿:东京京王广场酒店(Keio Plaza Hotel Tokyo)
+										</li>
+									</ul>
+								</div>
+								<!--富文本内容-->
+							</div>
+							<div class="">
+								<ul class="">
+									<li class=" ">
+										<div class="title">费用包含</div>
+										<div class="cont">1.五星级酒店一晚（含早）</div>
+										<div class="cont">2.第一天和第二天的午餐费用</div>
+										<div class="cont">3.交通费用</div>
+										<div class="cont">4.其他</div>
+									</li>
+									<li class="">
+										<div class="title">自理费用</div>
+										<div class="cont">1.第一天的晚餐</div>
+										<div class="cont">2.其他自由活动时产生的消费</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="route_btn_div">
+						<button id="">
+							立即预定
+						</button>
+					</div>
+				</div>
+				
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="clear">
+					
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/route_detail.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+	<script src="../js/yui_min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/pgwslideshow.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/pgwslideshow.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script>
+	$(function(){
+		$('.route_list_pic_c').css({
+			height:$('.route_list_pic_c').width()*0.64
+		})
+		$(document).ready(function() {
+		    $('.pgwSlideshow').pgwSlideshow({
+		    	transitionEffect:'fading',
+		    	autoSlide:true,
+		    	displayControls:false,
+		    });
+		});
+	})
+	var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+        autoplay:2000,
+        loop:true,
+        loopedSlides: 5, //looped slides should be the same     
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        loop:true,
+        autoplay:2000,
+        loopedSlides: 5, //looped slides should be the same
+        slideToClickedSlide: true
+    });
+    //galleryTop.params.control = galleryThumbs;
+    //galleryThumbs.params.control = galleryTop;
+    
+    
+    //var myCalendar = new SimpleCalendar('#calendar');
+YUI({
+    modules: {
+        'trip-calendar': {
+            fullpath: '../js/calendar_price/trip-calendar.js',
+            type    : 'js',
+            requires: ['trip-calendar-css']
+        },
+        'trip-calendar-css': {
+            fullpath: '../js/calendar_price/trip-calendar.css',
+            type    : 'css'
+        }
+    }
+}).use('trip-calendar', function(Y) {
+
+    /**
+     * 非弹出式日历实例
+     * 直接将日历插入到页面指定容器内
+     */
+    var oCal = new Y.TripCalendar({
+        container   : '#J_Calendar', //非弹出式日历时指定的容器（必选）
+        count:2, //设置显示月历数
+        isHoliday:true,
+        isDateIcon:false,
+        minDate:new Date,//设置开始时间
+        message:1234,
+        afterDays:30,
+        datas:{
+		    "2017-12-27": {
+		        "price"  : "100",
+		        "roomNum": "10"
+		    },
+		    "2017-12-29": {
+		        "price"  : "120",
+		        "roomNum": "1"
+		    },
+		    "2017-10-20": {
+		        "price"  : "150",
+		        "roomNum": "25"
+		    }  
+		}
+    });
+    
+    //日期点击事件
+    oCal.on('dateclick', function(e) {
+    	console.log(e.date);//当前选择日期
+        console.log(e.dateInfo);//当前选择日期的日期信息
+        var selectedDate = this.get('selectedDate');
+        layer.open({
+		  type: 2,
+		  title: '在线预定',
+		  shadeClose: true,
+		  shade: 0.8,
+		  maxmin :true,
+		  resize:false,
+		  area: ['550px', '80%'],
+		  content: 'data_select.html' //iframe的url
+		});
+        //alert(selectedDate + '\u3010' + this.getDateInfo(selectedDate) + '\u3011');
+    });
+    
+    
+    
+    
+});
+</script>

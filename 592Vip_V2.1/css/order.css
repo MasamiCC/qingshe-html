@@ -1,0 +1,118 @@
+.order_btn{
+	display: block;cursor: pointer;
+}
+.order-r{
+	color: #fc463f!important;
+}
+.order-g{
+	color: #666666;
+}
+*{
+	font-family: "微软雅黑";
+}
+.order-y{
+	color: #e0aa58;
+}
+.order-dg{
+	color: #333;
+}
+.order_item{
+	font-size: 0;display: flex;align-items: center;margin-bottom: 0;position: relative;
+	overflow: hidden;
+}
+.order_item:after{
+	height: 1px;
+	left: 150px;
+	content: '';
+	background: #eee;
+	position: absolute;
+	bottom: 0;
+	width: 85%;
+}
+.order_item li{
+	vertical-align: top;font-size: 12px!important;flex: 1;
+}
+.order_item_header{
+	background: #eeeeee;padding: 5px 0;margin: 5px auto;
+}
+.order_item_header li{
+	text-align: center;
+}
+.order_handle{
+	max-width: 80px;text-align: center;
+}
+.order_status{
+	max-width: 100px;text-align: center;
+}
+.order_price{
+	max-width: 100px;text-align: center;
+}
+.order_price p{
+	color: #999;
+}
+.order_time{
+	max-width: 80px;position: relative;text-align: right;padding-right: 10px;font-size: 12px;
+}
+.order_time p{
+	margin: 0;
+}
+.order_time h5{
+	font-weight: bold;font-size: 14px;line-height: 1.5;margin: 0;
+}
+.order_time i{
+	position: absolute;top: 39%;right: -9px;background: #fff;padding: 4px;color: #ddd;
+}
+.order_detail{
+	display: flex;
+	align-items: center;
+	border-left:1px solid #eee ;
+	font-size: 12px;
+	color: #666;
+	
+}
+.tab-pane .order_detail{
+	padding: 15px 0 15px 20px;
+}
+.tab-pane .order_time{
+	color: #999;
+}
+.order_detail h4{
+	font-weight: bold;font-size: 16px;line-height: 2;margin: 0;
+}
+.order_detail p{
+	margin: 0;line-height: 1.5;
+}
+.order_detail_left,.order_detail_right{
+	flex: 1;
+}
+.order_detail_right p{
+	font-size: 12px;
+}
+.order_detail_left{
+	max-width: 90px;
+	text-align: center;
+	min-width: 65px;
+}
+.order_detail_left img{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+.empty{
+	text-align: center;line-height: 10;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	border: none;color: #e0aa58;
+	background: none;
+}
+.nav-tabs>li>a{
+	color: #666;border: none;
+}
+
+.nav-tabs>li>a:hover {
+    border: none;
+    background: none;
+}
+.nav-tabs{
+	border-bottom-color:#f7f7f7 ;
+}

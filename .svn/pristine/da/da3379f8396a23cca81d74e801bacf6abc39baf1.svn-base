@@ -1,0 +1,220 @@
+/*主体*/
+.index_nav{
+	padding: 30px 15px;
+	background-color: #f4f4f4;
+	width: 100%;
+	min-width: 1500px;
+	min-height: 100%;
+}
+
+/*搜索区域*/
+/*top*/
+.BCtop{
+	margin: 0 15px;
+}
+.BCtop div{
+	display: inline-block;
+}
+.BCtop_right{
+	position: absolute;
+	right: 25px;
+	top: 20px;
+	font-size: 14px;
+}
+.BCtop{
+	position: relative;
+	background: #fff;
+	/*padding: 25px;*/
+	color: #333;
+}
+.BCtop span{
+	display: inline-block;
+}
+.BCtop_left span{
+	vertical-align: middle;
+	font-size: 18px;
+}
+.BCtop_left span:first-child{
+	margin-right: 15px;
+}
+.BCtop_left span:first-child img{
+	vertical-align: middle;
+}
+.num{
+	padding-right: 10px;
+	position: relative;
+}
+.BCtop_icon
+.BCLv{
+	color: #666;
+	margin-left: 5px;
+	margin-right: 12px;
+}
+.BCtop_right span:first-child{
+	font-size: 16px;
+	margin-right: 15px;
+}
+.BCtop_right select{
+	width: 125px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	text-indent: 15px;
+}
+.BCtop_right input[type='text']{
+	width: 358px;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding-left: 15px;
+}
+.input_span ::-webkit-input-placeholder{
+	color: #ccc;
+	font-size: 14px;
+}
+.BCtop_icon{
+	padding: 10px 28px;
+	background: #000;
+	border-radius: 4px;
+	color: #fff;
+	border: none;
+	-webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+	cursor: pointer;
+}
+
+.BCtop_icon:hover{
+	opacity: 0.8;
+}
+
+.account_list{
+	overflow: hidden;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.account_list > li{
+	float: left;
+	width: 16.6%;
+	padding: 0 15px;
+	padding: 0 15px;
+	margin-top: 30px;
+}
+
+.account_list .acount_area{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	height: 290px;
+	-webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+}
+
+.acount_area .acount_show{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.acount_area .acount_show .header_ipc{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	-webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+}
+
+.acount_area .acount_show .account_name{
+	color: #333333;
+	font-size: 24px;
+	margin: 40px 0 10px;
+	-webkit-transition: .5s 0s all;
+	-o-transition: .5s 0s all;
+	-moz-transition: .5s 0s all;
+	-ms-transition: .5s 0s all;
+	transition: .5s 0s all;
+}
+
+.acount_area .acount_show .account_phone{
+	color: #666666;
+	font-size: 16px;
+}
+
+.account_menu{
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	-webkit-transition: .5s 0s bottom;
+	-o-transition: .5s 0s bottom;
+	-moz-transition: .5s 0s bottom;
+	-ms-transition: .5s 0s bottom;
+	transition: .5s 0s bottom;
+}
+
+.account_menu > a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	background-color: #333333;
+	text-align: center;
+	color: #dfbd76;
+	font-size: 14px;
+}
+
+.account_menu img{
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
+
+.account_list .acount_area:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.account_list .acount_area:hover .account_menu{
+	bottom: 0px;
+}
+
+.account_list .acount_area:hover .header_ipc{
+	width: 80px;
+	height: 80px;
+}
+
+.account_list .acount_area:hover .account_name{
+	margin: 15px 0 10px;
+}
+
+
+/*分页*/
+.pagenation{
+	text-align: center;
+	margin-top: 40px;
+}
+.pagenation li{
+	display: inline-block;
+	padding: 8px 13px;
+	background: #fff;
+	border: 1px solid #777;
+	margin-right: 10px;
+}
+.pagenation li:last-child{
+	margin-right: 0px;
+}
+.pagenationactive{
+	background: #333!important;
+	color: #fff;
+}

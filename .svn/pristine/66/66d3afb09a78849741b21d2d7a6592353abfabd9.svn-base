@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评个人中心</title>
+		<link href="../css/layout1.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/Vcommon.css" />
+		<style type="text/css">
+			.txt_list td{
+				height: 45px;line-height: 45px;
+			}
+			.txt_yuyue_msg  li{
+				text-indent: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont" id="index_cont">
+				<div class="content" id="main1">
+					<div id="t1">
+						<div id="pic1">
+							<img id="p1" src="../img/slogo.png" />
+						</div>
+					</div>
+					<div id="t2">
+						<div id="column1" class="columns">
+						<p class="tc th"><span><img src="../img/suser.png"/>&nbsp;&nbsp;</span>个人中心</p>
+						<p class="tc tb tb2"><a href="Vbasic.html">基本信息</a></p>
+						<p class="tc tb tb2"><a href="Vzizhanghu.html">子账号管理</a></p>
+						<!--<p class="tc tb tb2"><a href="contract.html">我的合同</a></p>-->
+						</div>
+						<div id="column2" class="columns">
+						<p class="tc th"><span><img src="../img/shop.png"/>&nbsp;&nbsp;</span>商品管理</p>
+						<p class="tc tb tb2"><a href="Vgoods.html">全部商品</a></p>
+						<p class="tc tb tb2"><a href="Vadd_goods.html">新增商品</a></p>
+						<p class="tc tb tb2"><a href="Vgoods_cat.html">分类管理</a></p>
+						</div>
+						<div id="column3" class="columns">
+						<p class="tc th"><span><img src="../img/order.png"/>&nbsp;&nbsp;</span>订单管理</p>
+							<p class="tc tb tb2"><a href="Vorder.html">全部订单</a></p>
+						<!--<p class="tc tb tb2">临时订单</p>
+						<p class="tc tb tb2">在线点单</p>-->
+						<!--<p class="tc tb tb2"><a href="order_in.html">订单收款</a></p>-->
+						<p class="tc tb tb2"><a href="Vorder_check.html">验证订单</a></p>
+						</div>
+						<div id="column4" class="columns">
+						<p class="tc th"><span><img src="../img/editor.png"/>&nbsp;&nbsp;</span>评价管理</p>
+						<p class="tc tb tb2"><a href="Vpingjia.html">订单评价</a></p>
+						</div>
+						<!--<div id="column5" class="columns">
+						<p class="tc th">财务管理</p>
+						<p class="tc tb tb2"><a href="liushui.html">流水统计</a></p>
+						<p class="tc tb tb2"><a href="tixian.html">提现记录</a></p>
+						</div>-->
+						<!--<div id="column6" class="columns">
+						<p class="tc th">活动管理</p>
+						<p class="tc tb tb2">优惠券管理</p>
+						<p class="tc tb tb2">推广管理</p>
+						</div>
+						<div id="column7" class="columns">
+						<p class="tc th">商户社区</p>
+						<p class="tc tb tb2">圈子管理</p>
+						</div>
+						<div id="column8" class="columns">
+						<p class="tc th">帮助中心</p>
+						</div>-->
+					</div>
+				</div>
+				<!--个人中心正文中间部分-->	
+				<div class="content" id="main2">
+					<div id="txt">
+				<!--正文部分开始-->
+					<!--头部-->
+						<div id="header">
+							<div id="head">
+								<div id="cl" class="head heade1">
+									<ul>
+										<li class="business"><i>商家中心</i> 
+											<i class="shopname">当前商家：江南厨房</i>
+										</li>
+										<!--<li><span>个人中心</span>><span>子账号管理</span></li>-->
+									</ul>
+								</div>
+								<div id="cr" class="head head_r">
+									<div class="head heade2">
+										<img src="../img/qvip.png"/>
+									</div>
+									<div class="head line"> 
+										<ul>
+											<li>下午好！13059891234</li>
+											<li>欢迎进入轻奢点评商家中心</li>
+										</ul>
+									</div>
+									<div class="head heade3">
+										<a href="" class="login_out"><img src="../img/esc.png"/></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--头部-->
+						<!--正文-->
+						<div class="titleMes" style="font-weight: 600;margin:30px 10px;"><i>个人中心</i>><i>验证订单</i></div>
+						
+						<div class="txt_search">
+							<label for="" class="order_search">
+								预定码：<input type="text" placeholder="请输入预定码" /><span id="">验证</span>
+							</label>
+						</div>
+						<div class="txt_list txt_yuyue_msg">
+							<div class="msg_title">
+								<i>预约信息</i>
+								<!--<span id="" class="txt_btn">
+									确认并打印小票
+								</span>-->
+							</div>
+							<ul>
+								<li>
+									<label for="">用餐人数</label> 10
+								</li>
+								<li>
+									<label for="">就餐时间</label> 2017-12-01 17:00
+								</li>
+								<li>
+									<label for="">联系人</label> 张三
+								</li>
+								<li>
+									<label for="">联系人手机</label> 15995855970
+								</li>
+								<li>
+									<label for="">预留车位</label> 需要/不需要
+								</li>
+								<li>
+									<label for="">备注</label> 需要一个婴儿座椅
+								</li>
+								<li>
+									<label for="">发票</label> 无需开具发票
+								</li>
+								<li>
+									<label for="">支付方式</label> 在线支付
+								</li>
+								<li>
+									<label for="">订单号码</label> 14962082146957322
+								</li>
+								<li>
+									<label for="">下单时间</label> 2017-12-01 12:00
+								</li>
+							</ul>
+						</div>
+						<div class="txt_list txt_address">
+							<div class="msg_title">
+								选择位置
+							</div>
+							<ul>
+								<li class="active">1#01</li>
+								<li>1#02</li>
+								<li>1#03</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>1#03</li>
+								<li>2#01</li>
+								<li>2#01</li>
+								<li>2#01</li>
+							</ul>
+						</div>
+						<div class="txt_list">
+							<div class="msg_title">
+								商品列表
+							</div>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%"  class="">
+									<tr>
+										<th>名称</th>
+										<th>规格</th>
+										<th>数量</th>
+										<th>合计</th>
+										
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_center">菜品名称</td>
+										<td class="list_center ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									<tr>
+										<td class="list_left">菜品名称</td>
+										<td class="list_left ">规格-规格</td>
+										<td class="list_center list_time">*2</td>
+										<td class="list_center list_status">￥80
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="list_left" colspan="4">
+											合计 ￥360.00 
+											<small style="margin-left: 5px;">优惠0.00 </small>
+											<div class="total">
+												实付<span>￥360.00</span>
+											</div>
+										</td>
+									</tr>
+								</table>
+							
+						</div>
+						
+						
+						<div class="txt_list" style="text-align: center;overflow: hidden;padding-bottom: 10px;">
+							<span id="" class="txt_btn">
+								确认并打印小票
+							</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+						<!--正文-->
+				<!--正文部分结束-->
+					
+				</div>
+	     
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/Vlayout.js"></script>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$('.txt_address li').each(function(){
+			$(this).bind({
+				click:function(){
+					if(!$(this).hasClass('active')){
+						$('.txt_address li').removeClass('active');
+						$(this).addClass('active');
+					}
+				}
+			})
+		})
+	})
+	
+</script>

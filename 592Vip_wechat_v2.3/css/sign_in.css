@@ -1,0 +1,245 @@
+/*all*/
+*{
+	padding: 0;
+	margin: 0;
+}
+.si_banner,.si_banner_item,.si_main_days,.si_main_sign{
+	font-size: 0;
+	line-height: 0;
+}
+.si_banner>div,.si_banner_item>div,.si_main_days>span,.si_main_sign>div{
+	display: inline-block;
+}
+.si_banner_item p{
+	margin-bottom: 0;
+	line-height: 1.8;
+}
+.mhc_num{
+	line-height: 1.2!important;	
+}
+.mui-content{
+	background: #f4f4f4;
+	/*position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;right: 0;*/
+}
+body{
+	background: #fff;
+}
+/*all*/
+/*banner*/
+.si_banner{
+	background: url(../image/sign_bank.png) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	padding: 12% 10px 7% 15px;
+}
+.si_banner_item img{
+	width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+.si_banner_item{
+	vertical-align: middle;
+	width:77.5% ;
+	line-height: 1;
+}
+.si_banner_item:first-child{
+	width:22.5% ;
+}
+.heart_icon{
+	font-size: 0.875rem;
+	color: #333;
+	padding: 10px 19px;
+	background: #fff;
+	border-radius: 20px;
+}
+.my_heart_cion{
+	font-size: 0.875rem;
+	color: #fff;
+}
+.mhc_num{
+	font-size: 1.625rem;
+	color: #fff;
+}
+.heart_icon{
+	    line-height: 4;
+}
+/*banner*/
+.si_main{
+	text-align: center;
+	background: #fff;
+}
+.si_main_title,.si_main_daynam{
+	font-size: 0.875rem;
+	color: #999;
+	padding: 12px 0;
+}
+.si_main_day_icon{
+	width: 13%;
+    height: 50%;
+    line-height: 1.5;
+    background: url(../image/date_bg.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    font-size: 2.5rem;
+    color: #666;
+}
+.si_main_daynam{
+	margin: 0 0 0 5px;
+	vertical-align: bottom;
+	line-height: 1;
+}
+.si_main_days{
+	padding-bottom: 25px;
+	padding-left: 19px;
+}
+.si_main_sign{
+	width: 100%;
+	padding: 0 15px;
+}
+.si_main_sign_item{
+	width: 14.2%;
+}
+.si_main_sign_item_item img{
+	width: 82%;
+}
+.si_main_sign_item_item{
+	font-size: 0.625rem;
+	line-height: 1.8;
+}
+.si_information_icon{
+	display: inline-block;
+	font-size: 0.875rem;
+	padding:7px 15px;
+	color: #fff;
+	border-radius: 20px;
+	background: -moz-linear-gradient(left, #ff5152, #ff7c7f);
+	background: -o-linear-gradient(left,#ff5152, #ff7c7f);
+	background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#ff5152), to(#ff7c7f));
+}
+.si_information{
+	padding: 22px 0 22px 0;
+}
+.sign_remind_title_con{
+	font-size: 0.875rem;
+	color: #999;
+}
+.sign_remind_title{
+	font-size: 0.9375rem;
+	color: #333;
+	padding-top: 3px;
+}
+.sign_remind{
+	text-align: left;
+	padding:10px;
+	margin-top: 10px;
+	background: #fff;
+}
+.sign_remind p{
+	margin-bottom: 0;
+}
+.sign_remind_title_con{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.sign_remind_title_con:last-child{
+	margin-top: 10px;
+}
+.mui-switch.mui-active{
+    border-color: #3cafff;
+	background-color: #3cafff;
+}
+.activity_title{
+	margin-top: 10px;
+	font-size: 1rem;
+	color: #333;
+	text-align: center;
+	padding: 15px 0;
+	background: #fff;
+}
+.activity_content{
+	padding: 0 10px;
+	background: #fff;
+	line-height: 0;
+}
+.activity_content img{
+	max-width: 100%;
+}
+#myPopover div img{
+	max-width: 71%;
+}
+#myPopover,#myPopover1{
+	top: 0;bottom: 0;
+	width: 100%;
+	background: none;
+	text-align: center;
+	padding-top: 38%;
+}
+#myPopover div,#myPopover1 div{
+	margin: 0 auto;width: 66%;
+	position: relative;
+}
+#myPopover .mui-icon{
+	margin-top: 50px;
+}
+#myPopover1 .mui-icon{
+	margin-top: 30px;
+}
+.getcion{
+	position: absolute;
+	bottom: 26%;
+	left: 0;
+	right: 0;
+	color: #fff;
+	font-size: 0.875rem;
+}
+.mui-icon-close{
+	font-size: 38px;
+}
+.popover_top{
+    background: #fff;
+    padding: 15px;
+    height: 60%;
+    border-radius: 6px;
+    width: 88%!important;
+    overflow: auto;
+}
+.popover_bom{
+	text-align: center;
+}
+#myPopover1{
+	text-align: left;
+	padding-top: 30%;
+}
+.rule_title{
+	text-align: center;
+	font-size: 1.1rem;
+	color: #333;
+}
+#myPopover1 p{
+	margin-bottom: 0;
+	line-height: 2;
+}
+@media only screen and  (max-width: 320px) {
+	.sign_remind_title_con p:last-child{
+		font-size: 0.75rem;
+	}
+		.popover_top {
+	    height: 70%;
+	}
+	
+}
+@media only screen and (min-width:414px ) {
+	.rule_item{
+		font-size: 0.9375rem;
+	}
+	.rule_title{
+		font-size: 1.2rem;
+		margin-bottom: 5px!important;
+	}
+	.popover_top {
+	    height: 67%;
+	}
+}

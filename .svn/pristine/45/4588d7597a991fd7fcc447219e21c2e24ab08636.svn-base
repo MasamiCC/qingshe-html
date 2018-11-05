@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/luxury.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<style type="text/css">
+			.swiper-slide{
+				text-align: center;
+			}
+			.video_banner img{
+				margin: 0 auto;
+			}
+			.swiper-pagination-bullet-active{
+	    		background: #f0bb3b;
+	    	}
+	    	.adrsmt img{
+	    		max-width: inherit;
+	    		width: initial;
+	    	}
+	    	.luxury_ads li{
+	    		position: relative;
+	    		font-size: 0;
+	    		line-height: 0;
+	    		width: 49%;
+	    		margin: 0 0.5%;
+	    	}
+	    	.luxury_ads li>div:nth-child(1){
+	    		font-size: 0;line-height: 0;
+	    	}
+	    	.luxury_ads li>div:nth-child(2){
+	    		position: absolute;
+	    		bottom: 0;
+	    		font-size: 13px;
+	    		color: #fff;
+	    		line-height: 1;
+	    		background: rgba(0,0,0,0.5);
+	    		padding: 8px 0;
+	    		text-indent:10px;
+	    		width: 100%;
+	    		
+	    	}
+	    	.luxury_ads li>div:nth-child(3){
+	    		position: absolute;
+	    		right: 0;
+	    		bottom: 0;
+	    	}
+	    	.luxury_ads img{
+	    		    margin: 0 0px;
+    				width: 100%;
+	    	}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						
+						<!--</li>-->
+					 <!--</ul>-->
+						
+					</div>
+					
+					</div>
+				</div>
+		
+			</div>
+			<!--head-->
+			
+			<!--center正文-->
+			<div class="center">
+				
+				<!--banner-->
+				<div class="" style="max-width: 100%;">
+					<div class="swiper-container video_banner">
+						<div class="swiper-wrapper ">
+					        <div class="swiper-slide"><img src="../imgs/video_banner.png" /></div>
+					        <div class="swiper-slide"><img src="../imgs/video_banner1.png" /></div>
+					        <div class="swiper-slide"><img src="../imgs/video_banner.png" /></div>
+					    </div>
+					    <div class="swiper-pagination page1"></div>
+					</div>
+					
+					
+				</div>
+				<!--光影美食-->
+				<div class="luxury_list">
+					<div class="luxury_title">
+						光影美食
+					</div>
+					<div class="luxury_con">
+						<ul>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_0.png"/>
+									<div class="item_start">
+										<img src="../imgs/video_start_btn.png"/>
+									</div>
+								</div>
+								<div class="item_name">
+									爱江山婚庆园
+								</div>
+								<div class="item_intro">
+									爱江山更爱美食，不拘传统的好味道
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_1.png"/>
+								</div>
+								<div class="item_name">
+									Sarah法式西点
+								</div>
+								<div class="item_intro">
+									有种蓝叫蒂凡尼蓝，有种法式西点...
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_2.png"/>
+								</div>
+								<div class="item_name">
+									长坂亭自助炭火烤肉
+								</div>
+								<div class="item_intro">
+									长坂亭的酒肉啊，解千愁
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_5.png"/>
+								</div>
+								<div class="item_name">
+									平壤情中朝百花饮食文化中心
+								</div>
+								<div class="item_intro">
+									不出国门吃遍朝鲜？这里就能做到！
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_6.png"/>
+								</div>
+								<div class="item_name">
+									小海鲜火锅
+								</div>
+								<div class="item_intro">
+									大个头，小价钱，火锅里的新鲜滋味
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_3.png"/>
+								</div>
+								<div class="item_name">
+									寻茶品茗门巷·恬静居
+								</div>
+								<div class="item_intro">
+									褪去繁华，静心习茶
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_4.png"/>
+								</div>
+								<div class="item_name">
+									伴个月亮烘焙
+								</div>
+								<div class="item_intro">
+									伴个月亮，伴你品烘焙好滋味~
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="clear">
+						
+					</div>
+				</div>
+				<!--banner-->
+				<div class="">
+					<div class="luxury_ads" style="margin: 0 6px;">
+						<ul>
+							<li>
+								<div class="">
+									<img src="../imgs/ad_1.png"/>
+								</div>
+								<div class="">
+									暮色音乐酒吧 喧嚣城市中的一块净土
+								</div>
+								<div class="adrsmt">
+									<img src="../imgs/adrsmt.png"/>	
+								</div>
+							</li>
+							<li>
+								<div class="">
+									<img src="../imgs/ad_2.png"/>
+								</div>
+								
+								<div class="">
+									暮色音乐酒吧 喧嚣城市中的一块净土
+								</div>
+								<div class="adrsmt">
+									<img src="../imgs/adrsmt.png"/>	
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--生活档-->
+				<div class="luxury_list">
+					<div class="luxury_title">
+						生活档
+					</div>
+					<div class="luxury_con">
+						<ul>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_0.png"/>
+									<div class="item_start">
+										<img src="../imgs/video_start_btn.png"/>
+									</div>
+								</div>
+								<div class="item_name">
+									爱江山婚庆园
+								</div>
+								<div class="item_intro">
+									爱江山更爱美食，不拘传统的好味道
+								</div>
+							</li>
+							
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_3.png"/>
+								</div>
+								<div class="item_name">
+									寻茶品茗门巷·恬静居
+								</div>
+								<div class="item_intro">
+									褪去繁华，静心习茶
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_4.png"/>
+								</div>
+								<div class="item_name">
+									伴个月亮烘焙
+								</div>
+								<div class="item_intro">
+									伴个月亮，伴你品烘焙好滋味~
+								</div>
+							</li>
+							
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_2.png"/>
+								</div>
+								<div class="item_name">
+									长坂亭自助炭火烤肉
+								</div>
+								<div class="item_intro">
+									长坂亭的酒肉啊，解千愁
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_1.png"/>
+								</div>
+								<div class="item_name">
+									Sarah法式西点
+								</div>
+								<div class="item_intro"> 
+									有种蓝叫蒂凡尼蓝，有种法式西点...
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_5.png"/>
+								</div>
+								<div class="item_name">
+									平壤情中朝百花饮食文化中心
+								</div>
+								<div class="item_intro">
+									不出国门吃遍朝鲜？这里就能做到！
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_6.png"/>
+								</div>
+								<div class="item_name">
+									小海鲜火锅
+								</div>
+								<div class="item_intro">
+									大个头，小价钱，火锅里的新鲜滋味
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="clear">
+						
+					</div>
+				</div>
+				<!--其它-->
+				<div class="luxury_list">
+					<div class="luxury_title">
+						其它
+					</div>
+					<div class="luxury_con">
+						<ul>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_0.png"/>
+									<div class="item_start">
+										<img src="../imgs/video_start_btn.png"/>
+									</div>
+								</div>
+								<div class="item_name">
+									爱江山婚庆园
+								</div>
+								<div class="item_intro">
+									爱江山更爱美食，不拘传统的好味道
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_1.png"/>
+								</div>
+								<div class="item_name">
+									Sarah法式西点
+								</div>
+								<div class="item_intro">
+									有种蓝叫蒂凡尼蓝，有种法式西点...
+								</div>
+							</li>
+							
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_4.png"/>
+								</div>
+								<div class="item_name">
+									伴个月亮烘焙
+								</div>
+								<div class="item_intro">
+									伴个月亮，伴你品烘焙好滋味~
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_5.png"/>
+								</div>
+								<div class="item_name">
+									平壤情中朝百花饮食文化中心
+								</div>
+								<div class="item_intro">
+									不出国门吃遍朝鲜？这里就能做到！
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_2.png"/>
+								</div>
+								<div class="item_name">
+									长坂亭自助炭火烤肉
+								</div>
+								<div class="item_intro">
+									长坂亭的酒肉啊，解千愁
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_3.png"/>
+								</div>
+								<div class="item_name">
+									寻茶品茗门巷·恬静居
+								</div>
+								<div class="item_intro">
+									褪去繁华，静心习茶
+								</div>
+							</li>
+							<li class="luxury_item">
+								<div class="item_img">
+									<img src="../imgs/video_6.png"/>
+								</div>
+								<div class="item_name">
+									小海鲜火锅
+								</div>
+								<div class="item_intro">
+									大个头，小价钱，火锅里的新鲜滋味
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="clear">
+						
+					</div>
+				</div>
+			</div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+				<div class="footer_lcd">
+			<!--footer-help-->
+			<div class="footer_help">
+				<div class="float_left">
+					<ul class="footer_item">
+						<span>
+							新手入门  
+						</span>
+						<li>购物流程 </li>
+						<li>会员制度</li>
+						<li>订单查询</li>
+						<li>常见问题</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							支付方式
+						</span>
+						<li>微信支付</li>
+						<li>网银支付</li>
+						<li>支付宝支付</li>
+					</ul>
+					<ul class="footer_item">
+						<span>
+							商户合作
+						</span>
+						<li>商家入驻</li>
+						<li>区域代理</li>
+						<li>平台规则</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="float_right">
+					<ul>
+						<li class="erm_li">
+							APP更优惠 <br />
+							<img src="../imgs/app.png" alt="" />
+						</li>
+						<li class="erm_li">
+							微信服务号 <br />
+							<img src="../imgs/592vipma.png" alt="" />
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<div class="" style="margin-top: 33px;">
+				<div class="footer_rz">
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+					<img src="../imgs/kexin.png" alt="" />
+					<img src="../imgs/ypcx.png" alt="" />
+				</div>
+			</div>
+			<p class="footer_copyRight">
+				<span>
+					苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+						COPYRIGHT 2016-2017 592VIP. all rights reserved.
+				</span>
+			</p></div>
+		</div>
+			<!--footer-->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script type="text/javascript">
+	$(function(){
+		var mySwiper = new Swiper ('.swiper-container', {
+		    autoplay: 2000,//可选选项，自动滑动
+		    pagination: '.page1',
+		    paginationClickable :true,
+		    loop: true,
+		    autoplayDisableOnInteraction : false, 
+		    grabCursor : true,
+		})
+		$('.swiper-slide').mouseover(function(){
+			mySwiper.stopAutoplay();
+		}).mouseleave(function(){
+			mySwiper.startAutoplay();
+		})
+	})
+</script>

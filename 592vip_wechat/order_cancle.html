@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			/*总体*/
+			*{
+				padding: 0px;
+				margin: 0px;
+				font-family: "华文细黑";
+			}
+			.mui-table-view:before,.mui-table-view:after{
+				height: 0;
+			}
+			/*总体*/
+			/*头部订单已取消*/
+		.header{
+			display: flex;
+			background:url(image/order_bc.png) ;
+			padding:50px 0;
+		}
+		.header_left{
+			flex: 1.2;
+			text-align: right;
+			padding-right: 22px;
+		}
+		.header_left img{
+			width: 44px;
+		}
+		.big_font{
+			font-size: 1.125rem;
+		}
+		.header_right{
+			flex: 2;
+			text-align: left;
+			color: #F0F3F4;
+		}
+		.small_font{
+			font-size: 0.875rem;
+			margin-top: 4px;
+		}
+		/*头部订单已取消*/
+		
+		/*头部绿色已完成*/
+		.header_all1{
+			background:#54A547;
+			padding:31px 0 21px 0;
+		}
+		.header1{
+			display: flex;
+			padding-bottom: 25px;
+		}
+		.header_left1{
+			flex: 1.2;
+			text-align: right;
+			padding-right: 22px;
+		}
+		.header_left1 img{
+			width: 44px;
+		}
+		.big_font1{
+			font-size: 0.875rem;
+		}
+		.header_right1{
+			flex: 2;
+			text-align: left;
+			color: #F0F3F4;
+		}
+		.small_font1{
+			font-size: 0.875rem;
+			/*margin-top: 4px;*/
+		}
+		.header_button1{
+			/*flex: 3;*/
+			 /*flex-wrap: wrap;*/
+			width: 100%;
+			text-align: center;
+			/*padding: 2px 9px;*/
+		}
+		.h_b1{
+			display: inline-block;
+			color: #4A923E;
+			background: #fff;
+			border: 1px solid #fff;
+			border-radius: 50px;
+			font-size: 0.8125rem;
+			padding: 2px 8px;
+		}
+		/*头部绿色已完成*/
+		
+		/*头部黄色已完成*/
+		.header_all2{
+			background:#FFD46E;
+			padding:31px 0 21px 0;
+		}
+		.h_b2{
+			display: inline-block;
+			color: #fff;
+			/*background: #fff;*/
+			border: 1px solid #fff;
+			border-radius: 50px;
+			font-size: 0.8125rem;
+			padding: 2px 8px;
+		}
+		
+		/*头部黄色已完成*/
+		
+		/*头部灰色已完成*/
+		.header_all3{
+			background:#B3C2CA;
+			padding:31px 0 21px 0;
+		}
+		
+		/*头部灰色已完成*/
+		
+		.fonts_title{
+			/*display:inline-block;*/ 
+			padding:2px 7px ;
+			font-size: 0.9375rem;
+			vertical-align: middle;
+			color: #AAAFB2;
+		}
+		.fonts_img{
+			width: 18px;
+			vertical-align: middle;
+		}
+		.shop_message{
+			margin-top: 11px;
+			
+		}
+		.fonts{
+			color: #B4BBBF;
+			font-size: 0.875rem;
+			display: inline-block;
+		}
+		
+		.font1{
+			width: 22%;
+			text-align: left;
+		}
+		.fonts2{
+			width: 38%;
+			text-align: center;
+		}
+		.fonts3{
+			width: 24%;
+			text-align: center;
+		}
+		.fonts4{
+			width: 17%;
+			text-align: right;
+		}
+		.shop_li{
+			width: 100%;
+		}
+		.shop_sale_left{
+			display: inline-block;
+			width: 49%;
+			text-align: left;
+			color: #9EA3A7;
+			font-size: 0.875rem;
+		}
+		.shop_sale_right{
+			display: inline-block;
+			width: 49%;
+			text-align: right;
+			color: #404D57;
+			font-size: 0.875rem;
+		}
+		.shop_total{
+			display: inline-block;
+			width: 49%;
+			text-align: left;
+			color: #7C8389;
+		}
+		.order_note{
+			font-size: 0.875rem;
+			background: #FFF;
+			margin-top: 10px;
+			padding: 11px 15px;
+			line-height: 27px;
+		}
+		.order_note_left{
+			width: 20%;
+			display: inline-block;
+			color: #9EA3A7;
+			vertical-align: top;
+		}
+		.order_note_right{
+			width: 78%;
+			display: inline-block;
+			color: #B1B8BD;
+		}
+		.book_notes{
+			margin-top: 10px;
+			font-size: 0.875rem;
+		}
+		.book_note_left{
+			color: #838A8F;
+			width: 20%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.book_note_right{
+			color: #B1B8BD;
+			width: 78%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.onemore{
+			background: #fff;
+			padding: 11px 15px;
+			text-align: right;
+			margin-top: 10px;
+		}
+		.onemore_button{
+			display: inline-block;
+			border: 1px solid #9FA6AB;
+			border-radius: 50px;
+			color: #656E75;
+			font-size: 0.8125rem;
+			padding: 5px 18px;
+		}
+		.li:after{
+			left: 0px;
+		}
+		.li1:after{
+			height: 0px;
+		}
+		.mui-table-view-cell:after{
+			background-color: #EDEDED;
+		}
+		/*外卖*/
+		.book_note_right1{
+			color: #B1B8BD;
+			width: 78%;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: right;
+			
+		}
+		.address{
+			display: inline-block;
+			padding: 0px 0px;
+			font-size: 0.8125rem;
+			width: 95%;
+			color: #B1B8BD;
+		}
+		.mui-table-view-cell>a:not(.mui-btn){
+			white-space:initial;
+		}
+		/*外卖*/
+		</style>
+	</head>
+	<body>
+		<!--头部订单已取消start-->
+		<div class="header">
+			<div class="header_left">
+				<img src="image/warning.png"/>
+			</div>
+			<div class="header_right">
+				<div class="big_font">您已取消订单 </div>
+				<div class="small_font">理由：临时有事</div>
+			</div>
+		</div>
+		<!--头部订单已取消end-->
+		
+		<!--头部订单绿已完成start-->
+		<div class="header_all1">
+			<div class="header1">
+				<div class="header_left1">
+					<img src="image/right.png"/>
+				</div>
+				<div class="header_right1">
+					<div class="big_font1">感谢使用轻奢点评  </div>
+					<div class="small_font1">期待再次光临</div>
+				</div>
+			</div>
+			<div class="header_button1">
+					<div class="h_b1">抽取优惠 </div>
+			</div>
+		</div>
+		<!--头部订单绿已完成end-->
+		
+		<!--头部订单黄已完成start-->
+		<div class="header_all2">
+			<div class="header1">
+				<div class="header_left1">
+					<img src="image/right.png"/>
+				</div>
+				<div class="header_right1">
+					<div class="big_font1">感谢使用轻奢点评  </div>
+					<div class="small_font1">期待再次光临</div>
+				</div>
+			</div>
+			<div class="header_button1">
+					<div class="h_b2">抽取优惠 </div>
+			</div>
+		</div>
+		
+		<!--头部订单黄已完成end-->
+		
+		<!--头部订单灰已完成start-->
+		<div class="header_all3">
+			<div class="header1">
+				<div class="header_left1">
+					<img src="image/right.png"/>
+				</div>
+				<div class="header_right1">
+					<div class="big_font1">感谢使用轻奢点评  </div>
+					<div class="small_font1">期待再次光临</div>
+				</div>
+			</div>
+			<div class="header_button1">
+					<div class="h_b2">抽取优惠 </div>
+			</div>
+		</div>
+		<!--头部订单灰已完成end-->
+		
+		<!--好又多商家信息start-->
+		<div class="mui-content">
+			<div class="shop_message">
+			<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right">
+	                 <span ><img src="image/shop.png"  class="fonts_img" /></span>
+	                 <span class="fonts_title">好又多家常菜馆</span>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell shop_li li1">
+	            <span class="fonts fonts1">鱼香肉丝 </span>
+	            <span class="fonts fonts2">大份、微辣 </span>
+	            <span class="fonts fonts3">x1</span>
+	            <span class="fonts fonts4">￥24.00 </span>
+	        </li>
+	        <li class="mui-table-view-cell shop_li">
+	            <span class="fonts fonts1">宫保鸡丁</span>
+	            <span class="fonts fonts2">重辣</span>
+	            <span class="fonts fonts3">x1</span>
+	            <span class="fonts fonts4">￥24.00</span>
+	        </li>
+	        <li class="mui-table-view-cell">
+	        <div class="shop_sale_left">商家优惠</div>
+	        <div class="shop_sale_right">-￥0.00</div>
+	        </li>
+	        <li class="mui-table-view-cell">
+	        <div class="shop_total " style="font-size: 0.875rem;"> 总计 ￥48.00 <span style="font-size: 0.75rem;">(优惠 ￥0)</span> </div>
+	        <div class="shop_sale_right">实付<span style="color: #E9796F;">￥48.00</span></div>
+	        </li>
+	    	</ul>	
+			</div>
+		<!--好又多商家信息end-->
+		<!--订单信息start-->
+		<div class="order_note">
+			<div class="order_note_left">
+				订单备注
+			</div>
+			<div class="order_note_right">
+				香菜每道菜都要放，不要辣。香菜每道菜都要放，不要辣。
+			</div>
+		</div>
+		<!--订单信息end-->
+		<!--预订信息start-->
+		<div class="book_notes">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell book_note li">
+		            <div class="book_note_left ">
+						预订信息
+					</div>
+					<div class="book_note_right">
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		            <div class="book_note_left">
+						用餐人数
+					</div>
+					<div class="book_note_right">
+						2
+				    </div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		            <div class="book_note_left">
+						 就餐时间   
+					</div>
+					<div class="book_note_right">
+						2017-04-05 10:35  
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		             <div class="book_note_left">
+						联系人
+					</div>
+					<div class="book_note_right">
+						Mr.吴
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+			        <div class="book_note_left">
+						手机号
+					</div>
+					<div class="book_note_right">
+						13888888888 
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+			        <div class="book_note_left">
+						车位预留
+					</div>
+					<div class="book_note_right">
+						需要
+					</div>
+		        </li>
+	        </ul>	 
+		</div>
+		<!--预订信息end-->
+		<!--订单信息start-->
+		<div class="book_notes">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell book_note li">
+		            <div class="book_note_left">
+						订单信息
+					</div>
+					<div class="book_note_right">
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		            <div class="book_note_left">
+						 支付方式   
+					</div>
+					<div class="book_note_right">
+						在线支付  
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		             <div class="book_note_left">
+						订单号
+					</div>
+					<div class="book_note_right">
+						时间戳13随机2用户编号n
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+			        <div class="book_note_left">
+					下单时间
+					</div>
+					<div class="book_note_right">
+						 2017-04-05 9:59:48
+					</div>
+		        </li>
+	        </ul>	 
+		</div>
+		
+		<!--订单信息end-->
+		<!--再来一单start-->
+		<div class="onemore">
+			<div class="onemore_button">
+				再来一单
+			</div>
+		</div>
+		<!--再来一单start-->
+		<!--我的评价start-->
+		<div class="evaluate" style="margin-top: 10px;">
+		<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	            <div class="mui-navigate-right">
+	                 <span class="" style="font-size: 0.875rem;color: #979DA1;">我的评价</span>
+	            </div>
+	        </li>
+	    </ul>
+	    </div>
+		<!--我的评价start-->
+		<!--我的评价去评价start-->
+		<div class="evaluate" style="margin-top: 10px;">
+		<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	            <div class="mui-navigate-right">
+	                 <span class="" style="font-size: 0.875rem;color: #979DA1;">我的评价</span>
+	                 <span class="mui-pull-right" style="font-size: 0.875rem;color: #979DA1;margin-right: 22px;">去评价</span>
+	            </div>
+	        </li>
+	    </ul>
+	    </div>
+		<!--我的评价start-->
+		
+		<!--外卖信息start-->
+		<div class="book_notes">
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell book_note li">
+		            <div class="book_note_left ">
+						外卖信息
+					</div>
+					<div class="book_note_right">
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note li">
+		        	<a class="mui-navigate-right">
+	                    <div class=" ">
+						  <div class="book_note_left" style="color: #A3ACB1;font-size: 0.8125rem;">Mr.hu</div>
+						  <div class="book_note_right1" style="padding-right: 23px;font-size: 0.8125rem;">13812345678</div>
+						</div>
+						
+						<div class="address">
+							江苏省南通市经济技术开发区星湖101 8幢设计创意中心 18楼最多两行
+						</div>
+	           		   </a>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		            <div class="book_note_left">
+						用餐人数
+					</div>
+					<div class="book_note_right">
+						2
+				    </div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+		            <div class="book_note_left">
+						 送餐时间   
+					</div>
+					<div class="book_note_right">
+						2017-04-05 10:35  
+					</div>
+		        </li>
+		        <li class="mui-table-view-cell book_note">
+			        <div class="book_note_left">
+						配送费
+					</div>
+					<div class="book_note_right1">
+						免费配送
+					</div>
+		        </li>
+	        </ul>	 
+		</div>
+		<!--外卖信息end-->
+		</div>
+	</body>
+</html>

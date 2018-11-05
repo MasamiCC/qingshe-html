@@ -1,0 +1,245 @@
+.shop_card{
+	position: relative;
+}
+.score{
+	left: 10px;
+	bottom: 10px;
+	right: inherit;
+	top: inherit;
+}
+.media1{
+	width: 100%;
+	display: flex;
+	padding: 5px 0;
+	border-bottom: 1px solid #eee;
+}
+.media1 >div{
+	flex: 1;margin: 0;
+}
+.media1 >div:first-child{
+	max-width: 25%;
+	width: 25%;
+	line-height: 0;
+}
+.media1 >div:last-child{
+	max-width: 75%;
+	width: 75%;
+}
+.media1 >div:last-child div{
+	margin:0 5px 0 5px;
+}
+.vip span{
+	border-radius: 3px;padding: 0.1rem 0.5rem;
+}
+.vip_592 span{
+	background: #d4ac57;color: #fff;
+}
+.vip_black span{
+	background: #333;color: #fad484;
+}
+.last_line_intro{
+	line-height: 1.8;
+}
+.media1 .line_p{
+	line-height: 1.8;
+}
+.discount{
+	font-size: 0.875rem;
+}
+.yuding—btn{
+	position: absolute;
+	right: 0.5rem;
+	top: 3rem;
+	color: #d4ac57;
+	border-color: #d4ac57;
+	border-radius: 2rem;
+	padding: 0.2rem 0.75rem;
+}
+.more{
+	top: 0;overflow: hidden;line-height: 1.8;
+	
+}
+.more a{
+	width: 100%;line-height: 1.5;color: #999;display: inline-block;
+	margin-bottom: 8px;
+}
+.biaozhi{
+	left:0;right: 0;margin: 0 auto;text-align: center;
+}
+.biaozhi img{
+	margin: 0 auto;
+}
+
+.hotel_night{
+	font-size: 0.875rem;color: #999999;
+	line-height: 2.5;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	padding: 0 0.75rem;
+}
+.hotel_night >div>span{
+	color: #333;
+}
+.hotel_night .mui-pull-right{
+	color: #d4ac57;
+}
+
+
+
+#t_popover{
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background: #fff;
+	top: 20%;
+	bottom: 20%;
+	
+}
+
+#t_popover .mui-scroll-wrapper{
+	margin-top: 0;
+}
+#t_popover .ticket_list{
+	background:rgb(211,38,20) ;overflow: hidden;
+	padding: 0 0.7rem;
+}
+#t_popover .ticket_title{
+	font-size: 0.875rem;color: #333;font-weight: 500;line-height: 2.2;
+}
+#t_popover .ticket_item{
+	background: #fff;margin: 0.5rem 0;font-size: 0.75rem;
+	text-align: center;
+	color: #666;
+}
+
+#t_popover .ticket_beizhu{
+	text-align: left;
+	border-top: 1px dashed #eee;
+	position: relative;
+	text-indent: 0.75rem;
+	line-height: 2;
+}
+#t_popover .point{
+	background: rgb(211,38,20);width: 1rem;height: 1rem;
+	border-radius: 1rem;
+	position: absolute;
+	top: -0.5rem;
+}
+#t_popover .point_left{
+	left: -0.5rem;
+}
+#t_popover .point_right{
+	right: -0.5rem;
+}
+#t_popover .ticket_msg{
+	padding: 0 0.7rem;font-size: 0.75rem;
+	color: #999;
+	line-height: 1.0rem;
+}
+#t_popover .ticket_msg li{
+	margin-bottom: 5px ;
+}
+#t_popover .ticket_msg span{
+	background: #ccc;color: #fff;font-size: 0.6rem;border-radius: 3px;
+	width: 1.0rem;
+	height: 1.0rem;
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.0rem;
+	
+}
+#t_popover .ticket_msg span.hui{background: #ff0206;}
+#t_popover .ticket_msg span.zeng{background: #f99665;}
+#t_popover .ticket_msg span.minu{background: #05cfff;}
+#t_popover .ticket_btn{
+	text-align: center;color: #fff;
+}
+#t_popover .ticket_btn span{background: #cd9900;display: inline-block;border-radius: 1rem;padding: 3px 0;width: 90%;
+margin-bottom: 10px;font-size: 0.875rem;font-weight: 500;}
+#t_popover .ticket_c{display: flex;align-items: center;}
+.ticket_c{
+	padding: 0.3rem 0;
+}
+.ticket_s{margin-left: 0.75rem;}
+.ticket_s span{
+	display: block;color:rgb(211,38,20) ;font-size: 1rem;
+}
+.ticket_content{
+	margin-right: 0.75rem;margin-left: 0.75rem;
+}
+.ticket_content div{
+	font-weight: 500;text-align: left;
+}
+.ticket_content div span{
+	background: #fc8380;
+	color: #fff;
+	margin-right: 5px;
+	border-radius: 10px;
+	font-size: 0.6rem;
+	padding: 2px 5px;
+}
+
+
+
+
+
+/*2017.11.29*/
+#t_popover .ticket_list{background: #fcd7a1;}
+#t_popover .point{background: #fcd7a1;}
+
+#t_popover .ticket_item{margin: 0.75rem 0;}
+#t_popover .ticket_c{padding-top: 10px;}
+.ticket_c{position: relative;}
+.ticket_s{position: absolute;width: 30%;margin-left: 0;}
+.ticket_content{margin-left: 30%;width: 70%;text-align: left;}
+.ticket_content div{font-weight: bold;font-size: 0.875rem;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.ticket_content div span{font-weight: normal;font-size: 0.75rem;}
+.ticket_content div span.org{background: #f79833;}
+.ticket_content div span.blue{background: #6bbcf5;}
+#t_popover .ticket_btn span{background: #333;width: 65%;}
+#t_popover .mui-icon{position: absolute;z-index: 999;left: 0;right: 0;margin: 0 auto;text-align: center;bottom: -100px;color: #fff;font-size: 1.5rem;}
+
+
+
+/*2017.12.12*/
+.newYear{background: url(../image/newyear_bg.png);background-repeat: no-repeat;background-size: contain;background-color: #fff;}
+.newYear_title{position: absolute;left: 0;right: 0;text-align: center;top: 1.8rem;color: #fff;font-size:0.875rem;}
+@media only screen  and (max-width: 320px) {
+	.newYear_title{top: 1.5rem;}
+}
+@media only screen  and (min-width: 414px) {
+	.newYear_title{top: 2rem;}
+}
+.newYear_shake {
+	position: absolute;right: 1.5rem;top: 1rem;
+	animation: myfirst 2s infinite alternate;
+	-moz-animation: myfirst 2s infinite alternate;	/* Firefox */
+	-webkit-animation: myfirst 2s infinite alternate;	/* Safari 和 Chrome */
+	-o-animation: myfirst 2s infinite alternate;
+}
+.newYear_shake img{width: 90%;}
+@keyframes myfirst
+{
+	from {top: 0.5rem;}
+	to {top: 2rem;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {top: 0.5rem;}
+	to {top: 2rem;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {top: 0.5rem;}
+	to {top: 2rem;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {top: 0.5rem;}
+	to {top: 2rem;}
+}

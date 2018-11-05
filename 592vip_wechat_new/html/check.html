@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/check.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">签到</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="index_item" id="check_calendar">
+		    	<div class=" " id="calendar"></div>
+		    	<div style="text-align: center;font-size: 0.875rem;color: #333;">
+		    		签到成功！已领取<span id="check_count">3</span>个爱心币
+		    	</div>
+		    </div>
+		    <div class="index_item check_notice">
+		    	注：任意中断，连续签到的奖励都不能得到哦！
+		    </div>
+		    <div class="index_item" style="margin: 0 10px;" id="check_rule">
+		    	<div class="index_item_title">
+		    		签到规则
+		    	</div>
+		    	<p>
+		    		1.规则规则规则规则规则规则规则规则则规则规则规则规则则规则规则规则规则则规则规则规则规则则规则规则规则规则
+		    	</p>
+		    	<p>
+		    		2.规则规则规则规则规则则规则规则规则规则则规则规则规则规则则规则规则规则规则则规则规则规则规则
+		    	</p>
+		    	<p>
+		    		3.规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则
+		    	</p>
+		    </div>
+		    
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jqmobi.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/calendar.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+        swipeBack: false
+    });
+    /**/
+	(function() {
+        var markData=[
+            {date:'2017-07-11',price:''},
+            {date:'2017-07-21',price:''},
+            {date:'2017-07-22'}
+        ]
+        var now=new Date();
+        calendarIns = new calendar.calendar( {
+            count: 1,
+            selectDate: 'new Date()',
+            selectDateName: '预定',
+            minDate: new Date(now.getFullYear(),now.getMonth(),1),
+            maxDate: new Date(now.getFullYear(),now.getMonth(),31),
+            isShowHoliday: false,
+            isShowWeek: true,
+            isShowMarker:true,
+            markData:markData
+        } );
+
+        $.bind( calendarIns, 'afterSelectDate', function( event ) {
+        	return false;
+//          console.log( 'after select date' );
+//          console.log(event)
+//          var curItem = event.curItem,
+//              date = event.date,
+//              dateName = event.dateName,
+//              datePrice=event.price;
+//              if (datePrice) {
+//              	datePrice=datePrice.split('-');
+//              	console.log(datePrice);
+//              }
+//              
+//
+//          calendarIns.setSelectDate( date );
+//          var arr=date.split('-');
+//          $("#sel_date").html(arr[0]+'年'+arr[1]+"月"+arr[2]+'日行程');
+//          
+//          
+        } );
+        
+        
+    })();
+  
+        
+    
+    
+</script>

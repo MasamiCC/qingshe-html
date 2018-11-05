@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>社会捐赠</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/social_donation.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="social_item social_pay">
+		    	<img src="../image/social_donation_pay_logo.png"/>
+		    	<p style="color: #333;">轻奢点评慈善基金</p>
+		    	<p>订单编号：56589454521212</p>
+		    </div>
+		    <div class="social_item social_donation_pay_form">
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell">
+		    	            <div class="mui-input-row mui-checkbox  ">
+					    	    <label><img src="../image/ali_pay.png"/>支付宝</label>
+					    	    <input name="Checkbox" type="checkbox" >
+					    	</div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell">
+		    	            <div class="mui-input-row mui-checkbox  ">
+					    	    <label><img src="../image/wechat_pay.png"/>微信</label>
+					    	    <input name="Checkbox" type="checkbox" >
+					    	</div>
+					    	
+		    	        </li>
+		    	       
+		    	    </ul>
+		    	
+		    	
+		    		
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab social_pay_nav">
+			<div class="mui-pull-left">
+				总计<span class="social_pay_total"> <small>￥</small>500</span>
+			</div>
+			<div class="mui-pull-right">
+				<span>确认支付</span>
+			</div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$("input[name=Checkbox]").each(function(){
+			$(this).bind({
+				'click':function(){
+					var checked=$(this).is(":checked");
+					console.log(checked)
+					if(checked){
+						$("input[name=Checkbox]").removeProp('checked');
+						$(this).prop('checked',true)
+					}else{
+						
+					}
+				}
+			})
+		})
+	})
+</script>

@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			.mui-content{
+				background: url(../image/yao_bg.png);
+				background-repeat: no-repeat;
+				background-position: top;
+				background-size: cover;
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				overflow: auto;
+			}
+			.mui-bar-tab{
+				background: rgba(255,255,255,0.15);color: #fff;height: 2.5rem;
+				line-height: 3.5;font-size: 0.75rem;
+				padding: 0 0.5rem;
+			}
+			.yao_item{
+				text-align: center;
+			}
+			.yao_banner{
+				max-width: 100%;margin-top: 4rem;
+			}
+			.mobile{
+				width: 46%;
+				background: rgba(255,255,255,0.3);
+				text-align: center;
+				margin: 2rem auto;
+				overflow: hidden;
+				border-radius: 100%;
+			}
+			.mobile_n{
+				width: 80%;
+				background: rgba(255,255,255,0.3);
+				margin: 0 auto;
+				border-radius: 100%;
+			}
+			.mobile_m{
+				width: 100%;
+				vertical-align: middle;
+				margin: 0 auto;
+			}
+			.mobile_a{
+	            animation: shake 1s;
+			    -o-animation: shake 1s;
+			    -webkit-animation: shake 1s;
+			    -moz-animation: shake 1s;
+			    -o-animation-interation-count:3;
+			    -webkit-animation-interation-count:3;
+			    -moz-animation-interation-count:3;
+			    
+			    animation-interation-count:3;
+			}
+			@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-5px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(5px);
+    }
+}
+@-o-keyframes shake {
+    /* Opera */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-5px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(5px);
+    }
+}
+@-webkit-keyframes shake {
+    /* Safari 和 Chrome */
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%,30%,50%,70%,90% {
+	    -webkit-transform: translateX(-5px);
+	}
+    20%,40%,60%,80% {
+	    -webkit-transform: translateX(5px);
+	}
+}
+@-moz-keyframes shake {
+    /* Firefox */
+    0%, 100% {
+        -moz-transform: translateX(0);
+    }
+    10%,    30%,    50%,    70%,    90% {
+        -moz-transform: translateX(-5px);
+    }
+    20%,40%,60%, 80% {
+        -moz-transform: translateX(5px);
+    }
+}
+
+
+			.yao_rule{
+				color:#d1ac54 ;text-decoration: underline;
+			}
+			.yao_count{
+				background: rgba(255,255,255,0.3);
+				width: 20%;
+				border-radius: 3rem;
+				padding: 0.5rem 1rem;
+				margin: 1.2rem auto;
+				color: #d1ac54;
+				min-width: 13rem;
+			}
+			.mui-popover{
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+			}
+			.img_logo{
+				max-width: 100%;
+				border-top-left-radius: 7px;
+				border-top-right-radius: 7px;
+				margin: 0 auto;
+			}
+			.shop_s img{
+				margin-right: 3px;
+			}
+			.yao_btn{
+				padding: 5px 10px;
+				background: #ccc;
+				display: inline-block;
+				color: #fff;
+				border-radius: 4px;
+				font-size: 0.75rem;
+				text-align: center;
+				margin: 0 5px;
+			}
+			.yao_btn_active{
+				background: #d1ac54;
+			}
+			.yao_btn_div{
+				margin: 0 auto;width: 90%;text-align: justify;
+				display:-webkit-box;
+			    display:-webkit-flex;
+			    display:-ms-flexbox;
+			    display:flex;
+			    -webkit-box-pack:justify;
+			    -webkit-justify-content:space-between;
+			    -ms-flex-pack:justify;
+			    justify-content:space-between;
+			}
+			.yao_name{
+				width:85%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;-webkit-text-overflow: ellipsis;
+			}
+			.pingjia{
+				position: absolute;top: 0.5rem;right: 0.5rem;
+				background: rgba(0,0,0,0.5);
+				color: #D4AC57;
+				padding: 5px;
+				font-size: 0.875rem;
+			}
+			.pingjia span{
+				display: block;border-bottom: 1px solid #d4ac57;
+				padding: 3px 3px;
+			}
+		</style>
+	</head>
+
+	<body >  
+		<!--<header class="mui-bar  mui-bar-transparent">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">摇一摇</h1>
+		</header>-->
+		<div class="mui-content">
+		    <div class="yao_item">
+		    	<img src="../image/yao_02.png" class="yao_banner"/>
+		    </div>
+		    <div class="yao_item">
+		    	<div class="mobile">
+		    		<div class="mobile_n">
+		    			<img src="../image/yao_05.png" class="mobile_m"/>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="yao_item">
+		    	<div class="yao_rule">活动规则</div>
+		    	<div class="yao_count">今日剩余次数：<span class="count">3</span></div>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab" id="yao_list" style="overflow: hidden;height: 40px;">
+			<div class="">
+				<div class="mui-pull-left yao_name" style="">
+					福禄小金刚 摇到了 江南厨房8.5折优惠买单机会.8.5折优惠买单机会.8.5折优惠买单机会.8.5折优惠买单机会...
+				</div>
+			    <span class="mui-pull-right yao_time" >3分钟前</span>
+			</div>
+			
+		</nav>
+		
+		<div id="popover" class="mui-popover" style="margin-top: 40%;">
+			<div class="" style="line-height: 2;font-size: 1rem;background: #d1ac54;text-align: center;color: #fff;border-top-left-radius: 7px;border-top-right-radius: 7px;">
+				活动规则
+				<span class="mui-icon mui-icon-close mui-pull-right" style="margin-right: 0.5rem;margin-top: 0.2rem;" id="popover_close"></span>
+			</div>
+			<div class="" style="padding: 10px;font-size: 0.875rem;">
+				<p>
+					1.摇动手机进行活动；
+				</p>
+				<p>
+					2.摇到的商户优惠需要领取后才可以使用，仅限当天使用，隔日后将过期；
+				</p>
+				<p>
+					3.每天可以摇三次；
+				</p>
+				<p>
+					4.本活动最终解释权归江苏轻奢点评文化科技有限公司所有。
+				</p>
+			</div>
+		</div>
+		<div id="popover2" class="mui-popover" style="margin-top: 40%;">
+			
+		</div>
+	<!--<p>用力摇一摇你手机</p>-->  
+	<audio style="display:none" id="musicBox" preload="metadata" controls src="../video/5018.mp3"  >  
+	</audio>  
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+    	init();
+    	loadImg()
+    	
+    }
+	var SHAKE_THRESHOLD = 800;  
+    var last_update = 0;  
+    var x = y = z = last_x = last_y = last_z = 0;  
+    var shaked=false;
+    var timer=''
+    function init() {  
+        if (window.DeviceMotionEvent) {  
+            window.addEventListener('devicemotion', deviceMotionHandler, false);  
+        } else {  
+            alert('not support mobile event');  
+       	}  
+    }  
+    
+    function deviceMotionHandler(eventData) {  
+        var acceleration = eventData.accelerationIncludingGravity;  
+        var curTime = new Date().getTime();  
+        var media=document.getElementById("musicBox")
+        if ((curTime - last_update) > 800) {  
+            var diffTime = curTime - last_update;  
+            last_update = curTime;  
+            x = acceleration.x;  
+            y = acceleration.y;  
+            z = acceleration.z;  
+            var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;  
+            if (speed > SHAKE_THRESHOLD) { 
+            	clearTimeout(timer);
+		        if(shaked){
+		        	media.setAttribute("src", "../video/5018.mp3");
+		        }
+		        media.play();  
+		        $(".mobile_m").addClass('mobile_a')
+		        
+		        timer=setTimeout(function(){
+			        media.setAttribute("src", "../video/5012.mp3");  
+			        media.play();
+			        shaked=true;
+			        $(".mobile_m").removeClass('mobile_a');
+			        var data={
+			        	shopTitle:'豪食间中西餐厅（星湖店1）',
+			        	id:'12',
+			        	shopImage:'../image/icon/'+parseInt(Math.random()*4+1)+'.png'
+			        }
+			        loadShop(data);
+			        mui("#popover2").popover('show');
+			        clearTimeout(timer);
+		        },2000)
+ 
+	        } 
+	    }
+        last_x = x;  
+        last_y = y;  
+        last_z = z;  
+    }  
+    function loadImg(){
+    	var width=document.body.clientWidth;
+    	console.log(width)
+    	$('.mobile').css({
+    		height:$('.mobile').width()
+    	})
+    	$('.mobile_n').css({
+    		height:$('.mobile_n').width(),
+    		'margin-top':parseInt(($('.mobile').width()-$('.mobile_n').width())/2)
+    	})
+    }
+    $(function(){
+    	
+    	$(window).resize(function(){
+    		loadImg()
+    	})
+    	$(".yao_rule").on('tap',function(){
+    		mui("#popover").popover('toggle')
+    	})
+    	$("#popover_close").on('tap',function(){
+    		mui("#popover").popover('toggle')
+    	})
+    	$(".yao_btn_div").on('tap','#popover2_close',function(){
+    		mui("#popover2").popover('toggle')
+    	})
+    	$(".yao_btn_div").on('tap','#to_shop',function(){
+    		location.href='shop_detail.html'
+    	})
+    	loadList()
+    })
+    var timer2='';
+    function loadList(){
+    	var name=['赵','钱','孙','李','周','吴','陈','汪','王','欧阳','诸葛'];
+    	var yao=['江南厨房8.5折优惠买单机会','100元现金券','500元江南厨房代金券','ipad3','50元电话充值卡','易洗护免预约券'];
+    	clearInterval(timer2);
+    	timer2=setInterval(function(){
+    		var html=name[parseInt(Math.random()*name.length-1)]+'**&nbsp; 摇到了&nbsp;';
+    		html+=yao[parseInt(Math.random()*yao.length-1)]
+    		$(".yao_name").fadeOut(300,function(){
+    			$(".yao_name").html(html).fadeIn()
+    		})
+    		var time=parseInt(Math.random()*30);
+    		$(".yao_time").fadeOut(300,function(){
+    			$(".yao_time").html(time+'分钟前').fadeIn()
+    		})
+    	},2000)
+    }
+    function loadShop(data){
+    	var html='<div class=" " style="text-align:center">'
+				+	'<img src="'+data.shopImage+'" class="img_logo"/>'
+				+'<div class="pingjia">'
+				+	'<span>评分</span>4.5'
+				+'</div>'
+				+'</div>'
+				+'<div class="" style="padding-bottom: 10px;">'
+				+	'<div style="text-align: center;font-weight: 500;">'
+				+		data.shopTitle
+				+	'</div>'
+				+	'<div class="shop_s" style="text-align: center;font-size: 0;margin-top: 5px;" >'
+				+		'<img src="../image/icon1.png"/>'
+				+		'<img src="../image/icon1.png"/>'
+				+		'<img src="../image/icon1.png"/>'
+				+		'<img src="../image/icon2.png"/>'
+				+		'<img src="../image/icon2.png"/>'
+				+	'</div>'
+				+	'<div class="yao_btn_div" style="">'
+				+		'<span id="popover2_close" class="yao_btn" style="flex: 1;" >'
+				+			'不需要'
+				+		'</span>'
+				+		'<span class="yao_btn yao_btn_active" style="flex: 2;" id="to_shop">'
+				+			'8.5折优惠买单'
+				+		'</span>'
+				+	'</div>'
+				+'</div>';
+		$("#popover2").html(html);
+		$(".yao_btn_div").on('tap','#popover2_close',function(){
+    		mui("#popover2").popover('toggle')
+    	})
+		
+    }
+    
+</script>

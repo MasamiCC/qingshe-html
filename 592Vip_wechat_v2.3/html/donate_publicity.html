@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>捐赠公示</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body{
+				font-size: 0.875rem;
+				color: #333;
+				background: #fff;
+			}
+			.topbg{
+				background: #F4F4F4;
+			}
+			.dpmain{
+				background: #fff;
+			}
+			.date{
+				text-align: left;
+				margin-right: 0.9375rem;
+				margin-left: 0.9375rem;
+				line-height: 2.5;
+			}
+			.time,.time_choose{
+				line-height: 2.5;
+			}
+			.time{
+				color: #999999;
+			}
+			.time img{
+				max-width: 7%;
+				vertical-align: middle;
+				margin-left: 8px;
+			}
+			.dp_banner{
+				font-size: 0;
+				line-height: 0;
+			}
+			.dp_banner{
+				padding: 5% 0;
+				/*border-top: 1px solid #eeeeee;
+				border-bottom: 1px solid #eeeeee;*/
+			}
+			.date>div,.dp_banner>div{
+				display: inline-block;
+			}
+			.dpmaintop{
+				padding-top: 5px;
+			}
+			.dp_banner_con{
+				width: 33%;
+				text-align: center;
+			}
+			.dp_banner_con_fonts{
+				font-size: 1.125rem;
+				font-family: arial;
+				color: #6bbcf5;
+				border-right: 1px solid #ddd;
+			}
+			.dp_banner_con_con{
+				line-height: 1;
+				margin: 8px 0;
+			}
+			.dp_banner_con_con img{
+				width: 16%;
+			}
+			.dp_banner_con_con_btfonts{
+				font-size: 0.75rem;
+				color: #999;
+			}
+			.fonts_red{
+				color: #fc7875;
+			}
+			.fonts_green{
+				color: #70c38e;
+				border-right: 0;
+			}
+			.dpmainbottom{
+				margin-top: 10px;
+				background: #fff;
+				margin-bottom: 43px;
+				text-align: center;
+			}
+			.date>div{
+				display: inline-block;
+			}
+			.firsttime span img{
+				max-width: 19%;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			.firsttime{
+				width: 40%;
+				font-weight: bold;
+				font-size: 0.9375rem;
+			}
+			.ytj,.time_time{
+				vertical-align: middle;
+			}
+			/*item5*/
+			.last_title{
+				text-align: center;
+				font-size: 0.9375rem;
+				font-weight: bold;
+			}
+			.img_icon img{
+				width: 16px;
+				margin-right: 5px;
+			}
+			.last_content_inline{
+				text-align: center;
+				width: 33%;
+				vertical-align: middle;
+			}
+			.last_content_inline>img,.img_con>img,.last_content_inline>a>img{
+				border-radius: 50%;
+				/*width: 75%;*/
+				width:50px;
+			}
+			.img_rel{
+				position: relative;
+			}
+			.etr_first>img,.etr_second>img,.etr_third>img{
+			    position: absolute;
+			    top: 10px;
+			    left: 1px;
+			    right: 1px;
+			    bottom: 1px;
+			}
+			.img_rel>img{
+				/*width:92%;*/
+				border-radius:0 ;
+				width:62px;
+			}
+			.last_content,.content_all{
+				font-size: 0;
+				line-height: 0;
+			}
+			.last_content>div,.content_all>div{
+				display: inline-block;
+			}
+			.content_left{
+				width: 25%;
+			}
+			.content_all{
+				width: 75%;
+			}
+			.no_font{
+				font-size: 0.625rem;
+				line-height: 1;
+				color: #999999;
+				padding: 2px 11px;
+				background: #eeeeee;
+				border-radius: 10px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				display: inline-block;
+			}
+			.type_icon{
+				padding: 4px 13px;
+				border-radius: 20px;
+				background: #fe854f;
+				line-height: 1;
+				display: inline-block;
+				font-size: 0.875rem;
+				color: #fff;
+			}
+			.last_content_inline_con{
+				margin: 0 20px;
+			}
+			.etr_item{
+				padding: 18px 0;
+			}
+			.yellow_icon{
+				background: #feb330;
+			}
+			/*item5*/
+			.content_all{
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topbg">
+			<div class="dpmain">
+				<div class="dpmaintop">
+					<div class="date">
+						<div class="firsttime">
+							<span><img src="../image/month_count.png"/></span><span class="ytj">月统计</span>
+						</div>
+						<div class="time show_m time_choose">
+							<span class="time_time">2018年02月</span><span><img src="../image/triangle_right.png"/></span>
+						</div>
+					</div>
+					<div class="dp_banner">
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/liushuizhuanhua.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts">528.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">流水转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/red_bill.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_red">520.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">爱心币转化</div>
+						</div>
+						<div class="dp_banner_con">
+							<div class="dp_banner_con_con"><img src="../image/social_danate.png"/></div>
+							<div class="dp_banner_con_con dp_banner_con_fonts fonts_green">525.10</div>
+							<div class="dp_banner_con_con dp_banner_con_con_btfonts">社会捐赠</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dpmainbottom">
+				<div class="date">
+					<div class="firsttime">
+						<span><img src="../image/heart_bang.png"/></span><span class="ytj">月爱心榜</span>
+					</div>
+				</div>
+				<div class="etr_item">
+					<div class="etr_item_content last_content img_rel">
+						<div class="content_left">
+							<div class="">
+								<span class="type_icon">用户</span>
+							</div>
+						</div>
+						<div class="content_all">
+							<div class="last_content_inline">
+								<div class="last_content_inline_con">
+									<div class="last_content_inline_img img_rel">
+										<img src="../image/no1.png"/>
+										<div class="etr_first img_con">
+											<img src="../image/head1.png"/>
+										</div>
+									</div>
+									<div class="no_font">
+										NO.1
+									</div>
+								</div>
+							</div>
+							<div class="last_content_inline">
+								<div class="last_content_inline_con">
+									<div class="last_content_inline_img img_rel">
+										<img src="../image/no2.png"/>
+										<div class="etr_first img_con">
+											<img src="../image/head2.png"/>
+										</div>
+									</div>
+									<div class="no_font">
+										NO.2
+									</div>
+								</div>
+							</div>
+							<div class="last_content_inline">
+								<div class="last_content_inline_con">
+									<div class="last_content_inline_img img_rel">
+										<img src="../image/no3.png"/>
+										<div class="etr_first img_con">
+											<img src="../image/head3.png"/>
+										</div>
+									</div>
+									<div class="no_font">
+										NO.3
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="etr_item">
+					<div class="etr_item_content last_content img_rel">
+						<div class="content_left">
+							<div class="">
+								<span class="type_icon yellow_icon">商户</span>
+							</div>
+						</div>
+						<div class="content_all">
+							<div class="last_content_inline">
+								<div class="last_content_inline_con">
+									<div class="last_content_inline_img img_rel">
+										<img src="../image/no1.png"/>
+										<div class="etr_first img_con">
+											<img src="../image/head1.png"/>
+										</div>
+									</div>
+									<div class="no_font">
+										NO.1
+									</div>
+								</div>
+							</div>
+							<div class="last_content_inline">
+								<div class="last_content_inline_con">
+									<div class="last_content_inline_img img_rel">
+										<img src="../image/no2.png"/>
+										<div class="etr_first img_con">
+											<img src="../image/head2.png"/>
+										</div>
+									</div>
+									<div class="no_font">
+										NO.2
+									</div>
+								</div>
+							</div>
+							
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+	
+	$(".time_choose").bind({
+		'click':function(e){
+			e.preventDefault();
+			var now=new Date();
+			var picker = new mui.DtPicker({
+				endDate:new Date(),
+				type:'month',
+			});
+			picker.show(function(rs){
+				console.log(rs.value)
+				var time=new Date(rs.value);
+				var year=time.getFullYear();
+				var month=time.getMonth()+1;
+				month=(month<10)?'0'+month:month;
+				console.log(month)
+				console.log(year)
+				$(".show_m").html('<span class="time_time">'+year+'年'+month+'月'+'</span>'+'<span><img src="../image/triangle_right.png"/></span>');
+			})
+			return false;
+		}
+		
+	})
+	
+	
+//	var html='<div class="etr_item">'
+//			+		'<div class="etr_item_content last_content img_rel">'
+//			+			'<div class="last_content_inline">'
+//			+				'<div class="last_content_inline_con">'
+//			+					'<span class="type_icon">用户</span>'
+//			+				'</div>'
+//			+			'</div>'
+//			+			'<div class="last_content_inline">'
+//			+				'<div class="last_content_inline_con">'
+//			+					'<div class="last_content_inline_img img_rel">'
+//			+						'<img src="../image/no1.png"/>'
+//			+						'<div class="etr_first img_con">'
+//			+							'<img src="../image/head1.png"/>'
+//			+						'</div>'
+//			+					'</div>'
+//			+					'<div class="no_font">'
+//			+						'NO.1'
+//			+					'</div>'
+//			+				'</div>'
+//			+			'</div>'
+//			+			'<div class="last_content_inline">'
+//			+				'<div class="last_content_inline_con">'
+//			+					'<div class="last_content_inline_img img_rel">'
+//			+						'<img src="../image/no2.png"/>'
+//			+						'<div class="etr_first img_con">'
+//			+							'<img src="../image/head2.png"/>'
+//			+						'</div>'
+//			+					'</div>'
+//			+					'<div class="no_font">'
+//			+						'NO.2'
+//			+					'</div>'
+//			+				'</div>'
+//			+			'</div>'
+//			+			'<div class="last_content_inline">'
+//			+				'<div class="last_content_inline_con">'
+//			+					'<div class="last_content_inline_img img_rel">'
+//			+						'<img src="../image/no3.png"/>'
+//			+						'<div class="etr_first img_con">'
+//			+							'<img src="../image/head3.png"/>'
+//			+						'</div>'
+//			+					'</div>'
+//			+					'<div class="no_font">'
+//			+						'NO.3'
+//			+					'</div>'
+//			+				'</div>'
+//			+			'</div>'
+//			+		'</div>'
+//			+	'</div>'
+//	
+// $('.dpmainbottom').append(html)
+//
+//
+})
+</script>

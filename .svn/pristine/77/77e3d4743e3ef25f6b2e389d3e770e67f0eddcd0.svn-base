@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.pay{
+				font-size:14px ;
+				text-align: center;
+			}
+			
+			li{
+				list-style: none;
+			}
+			.saoyisao>div,.saoyisao{
+				display: inline-block;
+			}
+			.pay1{
+				padding-top: 10px;
+			}
+			.pay3{
+				height: 0;
+				line-height: 0;
+			}
+			.sao{
+				margin-right: 10px;
+			}
+			.saoyisao{
+				background: #00a1e9;
+				padding: 20px 55px;
+			}
+			.sao_font li{
+				line-height: 1.5;
+			}
+			.sao_font{
+				color: #fff;
+			}
+			.pay1{
+				padding-bottom: 20px;
+			
+			}
+			.pay2{
+				padding-bottom: 25px;
+			
+			}
+			.layui-layer-title{
+	background: none;
+}
+		</style>
+	</head>
+	<body>
+		<!--540 450-->
+		<div class="pay">
+			<div class="pay1">
+				<span style="vertical-align: middle;font-size: 18px;color: #333;">使用支付宝支付</span>
+				<span style="vertical-align: middle;color: #f84242;font-size: 24px;">￥32.00</span>
+			</div>
+			<div class="pay2"><img src="../imgs/zhifubaozhhifu.png"/></div>
+			<div class="pay3">
+				<div class="saoyisao">
+					<div class="sao">
+					<img src="../imgs/saoyisao.png"/>
+					</div>
+					<div class="sao_font">
+						<ul>
+							<li>请使用支付宝扫一扫</li>
+							<li>扫描二维码完成支付</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			* {
+		        padding: 0;
+		        margin: 0;
+		        list-style: none;
+		        outline: none;
+		        /*font-size: 0;*/
+		    }
+		    
+			.mui-content{
+				margin:  0 auto;
+			}
+			.bless_show{text-align: center;width:82%;margin: 0 auto;line-height: 0;}
+			.bless_show img{
+				max-width: 100%;margin-top: .875rem;
+			}
+			.save-btn{text-align: center;color: #fff;padding: 8px ;background: #f8a120;font-size: 1rem;line-height: 1.8;width: 90%;margin: .75rem auto;}
+			.save-btn img{vertical-align:top; margin: 0 5px;width: 25px;}
+			.save-btn a{color: #fff;text-decoration: none;}
+			.save-btn a:hover{color: #fff;text-decoration: none;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="bless_show">
+		    	<img src="../image/bless_show.png"/>
+		    </div>
+		    <div class="">
+		    	<div class="save-btn">
+		    		<a href="../image/bless_show.png" download="../image/bless_show.png"><img src="../image/bless_down.png"/> 保存并分享</a>
+		    	</div>
+		    </div>
+		    
+		    
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+</script>

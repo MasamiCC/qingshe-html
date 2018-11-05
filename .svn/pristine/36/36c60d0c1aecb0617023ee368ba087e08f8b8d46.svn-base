@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>轻奢点评慈善基金活动详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-slider{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+			.mui-slider .mui-slider-group{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+			.mui-slider-title{height: 31%;overflow:auto;background: rgba(0,0,0,0.8);color: #fff;padding: 0 0.75rem;}
+			.mui-slider-item {
+				background-position: center;background-size: contain;background-repeat: no-repeat;
+			}
+			.mui-slider-title span{
+				font-size: 1.2rem;position: relative;
+			}
+			.mui-slider-title span:before{
+				content: '';
+				width: 15px;
+				height: 1px;
+				background: #fff;
+				position: absolute;
+				left: -25px;
+				top: 50%;
+			}
+			.mui-slider-title span:after{
+				content: '';
+				width: 15px;
+				height: 1px;
+				background: #fff;
+				position: absolute;
+				right: -25px;
+				top: 50%;
+			}
+			.mui-slider-title p{
+				position: absolute;top: 30px;bottom: 0px;left: 8px;overflow: auto;right: 8px;color: #fff;
+			}
+			.title{
+				text-align: center;
+			}
+			.action_title{text-align: center;color: #fff;z-index: 99;position: relative;width: 80%;margin: 0 auto;padding: 1.5rem 0;}
+			.action_title h4{font-weight: normal;font-size: 1.2rem;line-height: 1.5;padding-bottom: 1rem;padding-top: 2rem;}
+			.action_title p{color: #999999;font-size: 1rem;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="action_title">
+				<h4>第一届慈善盛典成功举办，市领导及各界爱心企业家参与</h4>
+				<p>2018年1月8日</p>
+			</div>
+		    <div id="slider" class="mui-slider"  style="background: #333;">
+			  <div class="mui-slider-group mui-slider-loop">
+			    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			        <img src="../image/cs_12.jpg"/>
+			        <div class="mui-slider-title"><p>朗嘎拉姆现场献唱</p></div>
+			    </div>
+			    <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      	<img src="../image/cs_002.png"/>
+			      	<div class="mui-slider-title"><p>嘉宾签到现场</p></div>
+			    </div>
+			    <!-- 第二张 -->
+			    <div class="mui-slider-item" >
+			        <img src="../image/cs_02.jpg"/>
+			        <div class="mui-slider-title"><p>轻奢点评慈善盛典开场</p></div>
+			    </div>
+			    <div class="mui-slider-item" style="background-image: url(../image/1.png);">
+			        <div class="mui-slider-title"><p>首届轻奢点评慈善盛典现场</p></div>
+			    </div>
+			    <!-- 第三张 -->
+			    <div class="mui-slider-item">
+			        <img src="../image/cs_04.jpg"/>
+			        <div class="mui-slider-title"><p>南通红十字会党组书记潘国华致辞</p></div>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_05.jpg"/>
+			       <div class="mui-slider-title"><p>轻奢点评董事长陈建滨致辞</p></div>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_06.jpg"/>
+			       <div class="mui-slider-title"><p>轻奢点评董事任淑芳与南通红十字会党组书记签署轻奢点评慈善基金项目战略合作协议</p></div>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item"><img src="../image/cs_07.jpg"/><div class="mui-slider-title"><p>成元德先生作品义拍现场</p></div></div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_08.jpg"/>
+			       <div class="mui-slider-title"><p>成元德先生，江苏南通市人，1945年生，中国书法家协会会员，中华书画学会副主席，中国书法研究院艺术委员会理事，世界华人文化艺术研究院副院长，现任崇川区侨之友书画协会副会长，江苏南通狼山风景名胜区美术师，狼山镇侨联分会副会长，狼山镇书法协会会长成元德先生，江苏南通市人，1945年生，中国书法家协会会员，中华书画学会副主席，中国书法研究院艺术委员会理事，世界华人文化艺术研究院副院长，现任崇川区侨之友书画协会副会长，江苏南通狼山风景名胜区美术师，狼山镇侨联分会副会长，狼山镇书法协会会长</p></div>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_09.jpg"/>
+			       <div class="mui-slider-title"><p>康美国际月子会所 首笔爱心捐赠</p></div>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_10.jpg"/>
+			       <div class="mui-slider-title"><p>现场抽奖</p></div>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_11.jpg"/>
+			       <div class="mui-slider-title"><p>明星表演</p></div>
+			    </div>
+			    <div class="mui-slider-item">
+			       <img src="../image/cs_12.jpg"/>
+			       <div class="mui-slider-title"><p>朗嘎拉姆现场献唱</p></div>
+			    </div>
+			    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			        <img src="../image/cs_01.jpg"/>
+			        <div class="mui-slider-title"><p>嘉宾签到现场</p></div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		loadItem()
+//		$(".mui-slider-item").each(function(){
+//			if($(this).find('img').size()>0){
+//				$(this).css({
+//					'background-image':'url('+$(this).find('img').attr('src')+')'	
+//				})
+//				$(this).find('img').remove()
+//			}
+//			var index=$(this).index();
+//			var totalSize=$(".mui-slider-item").size();
+//			var str='<div class="title"><span>';
+//			if(index==0){
+//				str+=totalSize-2;
+//			}else if(index==totalSize-1){
+//				str+=1;
+//			}else{
+//				str+=index;
+//			}
+//			console.log(index,str,str+"/"+(totalSize-2))
+//			
+//			$(this).find('.mui-slider-title').prepend(str+"/"+(totalSize-2)+"</span></div>")
+//		})
+		
+		
+	})
+	
+	function loadItem(){
+		var first=$(".mui-slider .mui-slider-item:first-child").clone();
+		var last=$(".mui-slider .mui-slider-item:last-child").clone();
+		$(".mui-slider .mui-slider-group").append(first).prepend(last);
+		$(".mui-slider-item").each(function(){
+			if($(this).find('img').size()>0){
+				$(this).css({
+					'background-image':'url('+$(this).find('img').attr('src')+')'	
+				})
+				$(this).find('img').remove()
+			}
+			var index=$(this).index();
+			var totalSize=$(".mui-slider-item").size();
+			var str='<div class="title"><span>';
+			if(index==0){
+				str+=totalSize-2;
+			}else if(index==totalSize-1){
+				str+=1;
+			}else{
+				str+=index;
+			}
+			console.log(index,str,str+"/"+(totalSize-2))
+			
+			$(this).find('.mui-slider-title').prepend(str+"/"+(totalSize-2)+"</span></div>")
+		})
+	}
+</script>

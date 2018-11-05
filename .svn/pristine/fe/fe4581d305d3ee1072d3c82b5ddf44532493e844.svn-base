@@ -1,0 +1,139 @@
+			*{
+				list-style: none;padding: 0;margin: 0;outline: none;
+			}
+			.video{
+				text-align: center;
+			}
+			.doshop{
+				display: none;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				bottom: 0;
+				text-align: left;
+				z-index: 99;
+				background: url(../image/lovers_linebg.png) no-repeat;
+				background-size:100% 100%;
+			}
+			.shopline_list{
+				background: url(../image/left_love3.png) no-repeat;
+				background-size: 100% 100%;
+				margin: 5%  0.75rem;
+				/*border-radius: 0.75rem;*/
+				position: relative;
+				overflow: hidden;
+				padding:1.5625rem 1.125rem 1.875rem 0.75rem;
+				line-height: 0;font-size: 0;
+			}
+			.odd_shopline_list{
+				background: url(../image/right_lovebg.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.shop_l{
+				width: 49.1%;
+				/*width: 47%;*/
+			}
+			.shop_r{
+				width: 50.9%;
+				/*width: 53%;*/
+			}
+			.shop_r_con{
+				margin-left: 10px;
+			}
+			.shop_r_con2{
+				margin-right: 10px;
+				margin-left: 0;
+			}
+			.shop_name{
+				font-size: 0.9375rem;
+				color: #333;
+			}
+			.lists div{
+				vertical-align: middle;
+				display: inline-block;
+			}
+			.lists div img,.shop_r_con_l_con img,.shop_r_con_r_con img{
+				width: 100%;
+			}
+			.lists div:first-child{
+					width: 15%;
+					line-height: 1.5;
+			}
+			.lists div:last-child{
+					width: 85%;
+					line-height: 1.5;
+			}
+			.list_icon{
+				display: inline-block;
+				margin-right: 5px;
+			}
+			.shop_r_con{
+				line-height: 0;
+				font-size: 0;
+			}
+			.shop_r_con>div{
+				display: inline-block;vertical-align: top;
+			}
+			.shopline_list a>div{
+				display: inline-block;vertical-align: top;line-height: 0;font-size: 0;
+			}
+			.lists>div{
+				display: inline-block;
+			}
+			.secondlist{
+				/*padding: 16px 0;*/
+				
+				padding: 15px 0;
+			}
+			.secondlist>div>div:last-child{
+				line-height: 2!important;
+			}
+			.secondlist>div>div:first-child{
+				line-height: 1.5!important;
+			}
+			.secondlist div:last-child,.thirdlist div:last-child{
+				font-size: 0.75rem;
+				color: #666;
+			}
+			.ele_a{
+				font-size: 0.625rem;
+				border-radius: 5px;
+				color: #fff;
+				padding: 1px 6px;
+				filter:alpha(opacity=100 finishopacity=25 style=1 startx=0,starty=0,finishx=0,finishy=70) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+			    -ms-filter:alpha(opacity=100 finishopacity=25 style=1 startx=0,starty=0,finishx=0,finishy=70) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);/*IE8*/	
+			    background:red; /* 一些不支持背景渐变的浏览器 */  
+			    background:-moz-linear-gradient(left, #8593fa, rgba(39, 119, 254, 0.98));  
+			    background:-webkit-gradient(linear, 0 0, right 0, from(#8894fa), to(rgba(39, 119, 254, 0.98)));  
+			    background:-o-linear-gradient(left,  #8593fa, rgba(39, 119, 254, 0.98));
+			}
+			
+
+			.shop_r_con_l{
+				width: 68%;
+				line-height: 1;
+			}
+			.shop_r_con_r{
+				width: 32%;
+				line-height: 1;
+			}
+			.miandan{
+				display: inline-block;
+				line-height: 1;
+				font-size: 0.625rem;
+				/*padding: 11px 0;*/
+				padding: 10px 0;
+				background: #fb893c;
+				color: #fff;
+				text-align: center;
+				margin-bottom: 5px;
+				height: 40px;
+			}
+			.shop_r_con_r_con{
+				margin-left: 0.1875rem;
+			}
+			.shop_r_con_r_con div:first-child{
+				min-height: 50%;
+				width: 100%;
+				padding-bottom: 0.1875rem;
+			}

@@ -1,0 +1,935 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.mui-content{position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+			.page{background-repeat: no-repeat;background-position: center;background-size: cover;position: relative;}
+			.page_1{background-image: url(../image/newYear/page1/bg.jpg);}
+			.page_2{background-image: url(../image/newYear/page2/bg.jpg);}
+			.page_3{background-image: url(../image/newYear/page3/tree.jpg);background-size: 38.8%;background-position: 100% 0;background-repeat: repeat-y;}
+			.page_4 .bg{background-image: url(../image/newYear/page4/bg1.png);position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;}
+			.page_5{background-image: url(../image/newYear/page5/bg.jpg);background-position: center;}
+			.page_6{background-image: url(../image/newYear/page6/bg.png);}
+			.page_7{background-image: url(../image/newYear/page7/bg.jpg);}
+			.snow img{max-width: 100%;}
+			.snow{
+				left: 0;
+				position: absolute;
+				opacity: 0;
+				z-index: 99;
+			}
+			.snow.show{
+				opacity: 1;
+				transition: opacity 4s;
+				-moz-transition: opacity 4s;	/* Firefox 4 */
+				-webkit-transition: opacity 4s;	/* Safari 和 Chrome */
+				-o-transition: opacity 4s;	/* Opera */
+				animation: snow 10s infinite alternate;
+				-moz-animation: snow 10s infinite alternate;	/* Firefox */
+				-webkit-animation: snow 10s infinite alternate;	/* Safari 和 Chrome */
+				-o-animation: snow 10s infinite alternate;	/* Opera */	
+			}
+			.snow.show:nth-child(2){
+				margin-left: 40px;
+				animation-delay:2s;
+				-webkit-animation-delay:2s; /* Safari 和 Chrome */
+			}
+			.page_1_second{
+				opacity: 0;
+			}
+			.page_1_second.show{
+				opacity: 1;
+				transition: opacity 1s;
+				-moz-transition: opacity 1s;	/* Firefox 4 */
+				-webkit-transition: opacity 1s;	/* Safari 和 Chrome */
+				-o-transition: opacity 1s;	/* Opera */
+			}
+			@keyframes snow
+			{
+			from {right: 0;top:0}
+			to {right: 20px;top: 10px;}
+			}
+			
+			@-moz-keyframes snow /* Firefox */
+			{
+			from {right: 0;top:0}
+			to {right: 20px;top: 10px;}
+			}
+			
+			@-webkit-keyframes snow /* Safari 和 Chrome */
+			{
+			from {right: 0;top:0}
+			to {right: 20px;top: 10px;}
+			}
+			
+			@-o-keyframes snow /* Opera */
+			{
+			from {right: 0;top:0}
+			to {right: 20px;top: 10px;}
+			}
+			.light{position: absolute;right: 10%;width: 34%;top: 7.5rem;}
+			.light img{max-width: 100%;}
+			.txt{
+				transform:rotate(90deg);
+				-ms-transform:rotate(90deg); 	/* IE 9 */
+				-moz-transform:rotate(90deg); 	/* Firefox */
+				-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+				-o-transform:rotate(90deg); 	/* Opera */
+				position: absolute;
+				z-index: 99;
+				top: 14rem;
+				right: -1rem;
+				
+			}
+			.txt img{
+				vertical-align: middle;width: 40px;
+			}
+			.page_1  .txt p {
+			    position: relative;
+			    opacity: 0;
+			    -webkit-transform: translate3d(0,.2rem,0);
+			    -webkit-transition: all 1s;
+			    color: #5c4f3c;
+			    font-size: .6rem;
+			    margin-bottom: 0;
+			}
+			
+			.page_1   .txt p.show {
+			    opacity: 1;
+			    -webkit-transform: translate3d(0,0,0)
+			}
+			.page_1   .txt p.show:nth-child(2){
+				transition-delay: .5s;
+				-moz-transition-delay: .5s; /* Firefox 4 */
+				-webkit-transition-delay: .5s; /* Safari 和 Chrome */
+				-o-transition-delay: .5s; /* Opera */
+			}
+			.page_1   .txt p.show:nth-child(3){
+				transition-delay: 1s;
+				-moz-transition-delay: 1s; /* Firefox 4 */
+				-webkit-transition-delay: 1s; /* Safari 和 Chrome */
+				-o-transition-delay: 1s; /* Opera */
+			}
+			.page_1   .txt p.show:nth-child(4){
+				transition-delay: 1.5s;
+				-moz-transition-delay: 1.5s; /* Firefox 4 */
+				-webkit-transition-delay: 1.5s; /* Safari 和 Chrome */
+				-o-transition-delay: 1.5s; /* Opera */
+			}
+			.person{
+				width: 50%;padding-top: 10rem;
+			}
+			.person img{max-width: 100%;}
+			.page_2 .step{
+				position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+			}
+			.page_2 .step_1,.page_2 .step_2,.page_2 .step_3,.page_2 .step_4,.page_2 .step_5{
+				opacity: 0;
+			}
+			.page_2 .step_1 div{
+				position: absolute;left: 20%;
+				
+			}
+			.page_2 .step_1.show,.page_2 .step_2.show,.page_2 .step_3.show,.page_2 .step_4.show,.page_2 .step_5.show{
+				opacity: 1;
+				transition: opacity 2s;
+				-moz-transition: opacity 2s;	/* Firefox 4 */
+				-webkit-transition: opacity 2s;	/* Safari 和 Chrome */
+				-o-transition: opacity 2s;	/* Opera */
+			}
+			
+			.page_2 .step_4.show{
+				transition-delay: 1s;
+				-moz-transition-delay: 1s; /* Firefox 4 */
+				-webkit-transition-delay: 1s; /* Safari 和 Chrome */
+				-o-transition-delay: 1s; /* Opera */
+			}
+			.page_2 .step_5.show{
+				transition-delay: 2s;
+				-moz-transition-delay: 2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			.page_2 .step img{display: block;position: absolute;}
+			.page_2 .txt{
+				top: 3rem;left: 39%;right: auto;
+			}
+			.page_2 .txt p{
+				opacity: 0;
+				margin-bottom: 0;line-height: 1.5;
+			}
+			.page_2  .txt p.show {
+			    opacity: 1;
+			    transition: opacity 2s;
+				-moz-transition: opacity 2s;	/* Firefox 4 */
+				-webkit-transition: opacity 2s;	/* Safari 和 Chrome */
+				-o-transition: opacity 2s;	/* Opera */
+			    /*-webkit-transform: translate3d(0,0,0)*/
+			}
+			.page_2   .txt p.show:nth-child(2){
+				transition-delay: 2s;
+				-moz-transition-delay: 2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			.page_2   .txt p.show:nth-child(3){
+				transition-delay: 3s;
+				-moz-transition-delay: 3s; /* Firefox 4 */
+				-webkit-transition-delay: 3s; /* Safari 和 Chrome */
+				-o-transition-delay: 3s; /* Opera */
+			}
+			.page_3.show{
+				overflow: hidden;
+				animation: train 50s infinite   ;
+				-moz-animation: train 50s infinite   ;	/* Firefox */
+				-webkit-animation: train 50s infinite   ;	/* Safari 和 Chrome */
+				-o-animation: train 50s infinite   ;	/* Opera */	
+			}
+			.page_3 .bg{
+				width: 100%;
+				text-align: right;
+				position: absolute;
+				top: 0;
+				
+			}
+			@keyframes train
+			{
+			from { background-position-y: 0;}
+			to { background-position-y:1500px;}
+			}
+			
+			@-moz-keyframes train /* Firefox */
+			{
+			from { background-position-y: 0;}
+			to { background-position-y:1500px;}
+			}
+			
+			@-webkit-keyframes train /* Safari 和 Chrome */
+			{
+			from { background-position-y: 0;}
+			to { background-position-y:1500px;}
+			}
+			
+			@-o-keyframes train /* Opera */
+			{
+			from { background-position-y: 0;}
+			to { background-position-y:1500px;}
+			}
+			.page_3 .bg img{
+				width: 38.8%;
+			}
+			.page_3 .train{
+				position: absolute;top: 0;
+			}
+			.page_3 .train img{max-width: 100%;}
+			.page_3 .train_in{
+				position: absolute;max-width: 84%;height: 70%;top: 16%;
+			}
+			.page_3 .train_in img{max-width: 100%;}
+			.page_3 .txt{
+				top: 3.5rem;
+   				left: 20%;
+   				right: auto;
+			}
+			.page_3 .txt p{
+				color: #fff;margin-bottom: 0;line-height: 2;font-style: italic;font-size: .75rem;
+				opacity: 0;
+			}
+			
+			.page_3  .txt p.show {
+			    opacity: 1;
+			    transition: opacity 2s;
+				-moz-transition: opacity 2s;	/* Firefox 4 */
+				-webkit-transition: opacity 2s;	/* Safari 和 Chrome */
+				-o-transition: opacity 2s;	/* Opera */
+			    /*-webkit-transform: translate3d(0,0,0)*/
+			}
+			.page_3   .txt p.show:nth-child(2){
+				transition-delay: 2s;
+				-moz-transition-delay: 2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			
+			.duilian{
+				position: absolute;top: 1.7rem;left: 0;right: 0;text-align: center;margin: 0 !important;
+			}
+			.duilian img{max-width: 54.6%;margin-left: 30px;}
+			.page_4 .door{text-align: center;font-size: 0;line-height: 0;position: absolute;width: 100%;top: 34.5%;height: 31%;background: #fffbeb;}
+			.page_4 .door img{width: 41.5%;display: block;margin: 0 auto;position: absolute;left: 25.5%;}
+			.page_4 .door img:nth-child(2){bottom: 0;
+			transition: bottom 2s;
+			-moz-transition: bottom 2s;	/* Firefox 4 */
+			-webkit-transition: bottom 2s;	/* Safari 和 Chrome */
+			-o-transition: bottom 2s;	/* Opera */
+			transition-delay: 1.5s;
+				-moz-transition-delay: 1.5s; /* Firefox 4 */
+				-webkit-transition-delay:1.5s; /* Safari 和 Chrome */
+				-o-transition-delay: 1.5s; /* Opera */
+			}
+			.page_4 .door img:nth-child(1){top: 0;
+				transition: top 2s;
+			-moz-transition: top 2s;	/* Firefox 4 */
+			-webkit-transition: top 2s;	/* Safari 和 Chrome */
+			-o-transition: top 2s;	/* Opera */
+			transition-delay: 1.5s;
+				-moz-transition-delay:1.5s; /* Firefox 4 */
+				-webkit-transition-delay:1.5s; /* Safari 和 Chrome */
+				-o-transition-delay: 1.5s; /* Opera */
+			}
+			.page_4 .door img:nth-child(2).show{
+				bottom: -110px;
+				transition: bottom 2s;
+			-moz-transition: bottom 2s;	/* Firefox 4 */
+			-webkit-transition: bottom 2s;	/* Safari 和 Chrome */
+			-o-transition: bottom 2s;	/* Opera */
+			}
+			.page_4 .door img:nth-child(1).show{
+				top: -110px;
+				transition: top 2s;
+			-moz-transition: top 2s;	/* Firefox 4 */
+			-webkit-transition: top 2s;	/* Safari 和 Chrome */
+			-o-transition: top 2s;	/* Opera */
+			}
+			 .wdoor,.screen2{
+				text-align: center;
+				opacity: 0;
+				font-size: 0;
+				line-height: 0;
+				position: absolute;
+				width: 50%;
+				top: 14rem;
+				height: 32%;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+				background:#fffbeb ;
+				background-size: cover;
+				z-index: 9;
+				overflow: hidden;
+				border-radius: 10px;
+				transition: width 2s,height 2s,top 2s,opacity 2s;
+				-moz-transition: width 2s,height 2s,top 2s,opacity 2s;	/* Firefox 4 */
+				-webkit-transition: width 2s,height 2s,top 2s,opacity 2s;	/* Safari 和 Chrome */
+				-o-transition: width 2s,height 2s,top 2s,opacity 2s;	/* Opera */
+				
+			}
+			 .wdoor.show,.screen2.show{
+				width:100%;
+				top:0;
+				height:100%;
+				opacity: 1;
+				border-radius: 0;
+				transition: width 2s,height 2s,top 2s,opacity 2s,border-radius 2s;
+				-moz-transition: width 2s,height 2s,top 2s,opacity 2s,border-radius 2s;	/* Firefox 4 */
+				-webkit-transition: width 2s,height 2s,top 2s,opacity 2s,border-radius 2s;	/* Safari 和 Chrome */
+				-o-transition: width 2s,height 2s,top 2s,opacity 2s,border-radius 2s;	/* Opera */
+				transition-delay: 2s;
+				-moz-transition-delay: 2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			#screen2{display: none;opacity: 0;position: fixed;}
+			#screen2.show{
+				display: block;
+				opacity: 1;
+				transition:  opacity 5s;
+				-moz-transition:   opacity 5s;	/* Firefox 4 */
+				-webkit-transition:  opacity 5s;	/* Safari 和 Chrome */
+				-o-transition:  opacity 5s;	/* Opera */
+				transition-delay: 2s;
+				-moz-transition-delay: 2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			.page_5 .person{
+				position: absolute;left: 0;right: 0;padding-top: 0;width: 100%;top:5rem;z-index: 99;
+				text-align: left;
+			}
+			.page_5 .person img{
+				width: 72.4%;
+			}
+			.wind{position: absolute;width: 100%;height: 100%;left: 0;right: 0;top: 0;bottom: 0;}
+			.wind_S{
+				position: absolute;
+				bottom: 20px;
+				opacity: 0;
+				width: 40%;
+				right: 20px;
+				
+			}
+			.wind_S:nth-child(2){
+				animation: wind 8s infinite    ;
+				-moz-animation: wind 8s infinite   ;	/* Firefox */
+				-webkit-animation: wind 8s infinite   ;	/* Safari 和 Chrome */
+				-o-animation: wind 8s infinite   ;	/* Opera */	
+				transition-delay: 4s;
+				-moz-transition-delay: 4s; /* Firefox 4 */
+				-webkit-transition-delay:4s; /* Safari 和 Chrome */
+				-o-transition-delay: 4s; /* Opera */
+				margin-left: 20px;
+			}
+			.wind_S:nth-child(3){
+				animation: wind 10s infinite    ;
+				-moz-animation: wind 10s infinite   ;	/* Firefox */
+				-webkit-animation: wind 10s infinite   ;	/* Safari 和 Chrome */
+				-o-animation: wind 10s infinite   ;	/* Opera */	
+				
+			}
+			@keyframes wind
+			{
+			0% {right: 25px;bottom: 25px;opacity: 0;}
+			20%{right: 20px;bottom: 15px;opacity: .6;}
+			40%{right: 15px;bottom: 5px;opacity: 1;}
+			60%{right:10px;bottom: -5px;opacity: 0.6;}
+			80%{right:5px;bottom:-15px;opacity: 0.3;}
+			100%{right:0px;bottom: -25px;opacity: 0;}
+			}
+			
+			@-moz-keyframes wind /* Firefox */
+			{
+			0% {right: 25px;bottom: 25px;opacity: 0;}
+			20%{right: 20px;bottom: 15px;opacity: .6;}
+			40%{right: 15px;bottom: 5px;opacity: 1;}
+			60%{right:10px;bottom: -5px;opacity: 0.6;}
+			80%{right:5px;bottom:-15px;opacity: 0.3;}
+			100%{right:0px;bottom: -25px;opacity: 0;}
+			}
+			
+			@-webkit-keyframes wind /* Safari 和 Chrome */
+			{
+			0% {right: 25px;bottom: 25px;opacity: 0;}
+			20%{right: 20px;bottom: 15px;opacity: .6;}
+			40%{right: 15px;bottom: 5px;opacity: 1;}
+			60%{right:10px;bottom: -5px;opacity: 0.6;}
+			80%{right:5px;bottom:-15px;opacity: 0.3;}
+			100%{right:0px;bottom: -25px;opacity: 0;}
+			}
+			
+			@-o-keyframes wind /* Opera */
+			{
+			0% {right: 25px;bottom: 25px;opacity: 0;}
+			20%{right: 20px;bottom: 15px;opacity: .6;}
+			40%{right: 15px;bottom: 5px;opacity: 1;}
+			60%{right:10px;bottom: -5px;opacity: 0.6;}
+			80%{right:5px;bottom:-15px;opacity: 0.3;}
+			100%{right:0px;bottom: -25px;opacity: 0;}
+			}
+			.page_5 .txt{
+				top: -1rem;
+   				/*right:35%;*/
+   				line-height: 1;
+   				/*right: auto;*/
+   				left: 43%;
+			    
+			}
+			.page_5 .txt p{
+				color: #fff;margin-bottom: 0;line-height: 1.5;font-style: italic;font-size: .75rem;
+				writing-mode: tb-rl;
+				display: inline-block;
+				vertical-align: top;
+				font-style: normal;
+				opacity: 0;
+			}
+			.page_5  .txt p.show {
+			    opacity: 1;
+			    transition: opacity 1s;
+				-moz-transition: opacity 1s;	/* Firefox 4 */
+				-webkit-transition: opacity 1s;	/* Safari 和 Chrome */
+				-o-transition: opacity 1s;	/* Opera */
+			}
+			.page_5  .txt p.show:nth-child(1){
+				transition-delay: 1s;
+				-moz-transition-delay: 1s; /* Firefox 4 */
+				-webkit-transition-delay: 1s; /* Safari 和 Chrome */
+				-o-transition-delay: 1s; /* Opera */
+			}
+			.page_5 .txt p:nth-child(1){
+				text-indent: 32px;
+			}
+			.home{position: absolute;width: 100%;z-index: 100;height: 100%;overflow: hidden;display: none;}
+			.home img{max-width: 100%;position: absolute;}
+			.home_begin{top: 0;}
+			.home_begin img{ top: -3%;}
+			.home_begin img.show{ 
+				top: -25.5%;
+				transition: all 2s;
+			-moz-transition: all 2s;	/* Firefox 4 */
+			-webkit-transition: all 2s;	/* Safari 和 Chrome */
+			-o-transition: all 2s;	/* Opera */
+			}
+			.home_end{bottom: 0;}
+			.home_end img{ bottom: -25.5%;}
+			.home_end img.show{ 
+				bottom: -3%;
+				transition: all 2s;
+			-moz-transition: all 2s;	/* Firefox 4 */
+			-webkit-transition: all 2s;	/* Safari 和 Chrome */
+			-o-transition: all 2s;	/* Opera */
+			}
+			.denglong {
+				position: absolute;top: 0;bottom: 0;left: 0;right: 0;
+			}
+			.denglong img{position: absolute;opacity: 0;}
+			.denglong img.show{
+				opacity: 0;
+				animation: denglong 15s infinite ;
+				-moz-animation: denglong 15s infinite ;	/* Firefox */
+				-webkit-animation: denglong 15s infinite ;	/* Safari 和 Chrome */
+				-o-animation: denglong 15s infinite ;	/* Opera */	
+			}
+			@keyframes denglong
+			{
+			 0%{
+			 	opacity: 0;margin-right: 0;
+			 }
+			 50%{
+			 	opacity: 1;margin-right: -5rem;
+			 }
+			 100%{
+			 	opacity: 0;margin-right: -5rem;
+			 }
+			}
+			
+			@-moz-keyframes denglong /* Firefox */
+			{
+			 0%{
+			 	opacity: 0;margin-right: 0;
+			 }
+			 50%{
+			 	opacity: 1;margin-right: -5rem;
+			 }
+			 100%{
+			 	opacity: 0;margin-right: -5rem;
+			 }
+			}
+			
+			@-webkit-keyframes denglong /* Safari 和 Chrome */
+			{
+			 0%{
+			 	opacity: 0;margin-right: 0;
+			 }
+			 50%{
+			 	opacity: 1;margin-right: -5rem;
+			 }
+			 100%{
+			 	opacity: 0;margin-right: -5rem;
+			 }
+			}
+			
+			@-o-keyframes denglong /* Opera */
+			{
+			 0%{
+			 	opacity: 0;margin-right: 0;
+			 }
+			 50%{
+			 	opacity: 1;margin-right: -5rem;
+			 }
+			 100%{
+			 	opacity: 0;margin-right: -5rem;;
+			 }
+			}
+			.denglong img.show:nth-child(2){
+				opacity: 0;
+				animation-delay:   2s     ;
+				-moz-animation-delay: 2s   ;	/* Firefox */
+				-webkit-animation-delay: 2s   ;	/* Safari 和 Chrome */
+				-o-animation-delay: 2s  ;	/* Opera */	
+			}
+			.yanhua{position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+			.yanhua img{
+				position: absolute;right: 0;display: block;opacity: 0;
+			}
+			
+			.yanhua img.show{
+				animation: yanhua 5s infinite ;
+				-moz-animation: yanhua 5s infinite ;	/* Firefox */
+				-webkit-animation: yanhua 5s infinite ;	/* Safari 和 Chrome */
+				-o-animation: yanhua 5s infinite ;	/* Opera */	
+			}
+			.yanhua img.show:nth-child(1){
+				animation-delay:   2s     ;
+				-moz-animation-delay: 2s   ;	/* Firefox */
+				-webkit-animation-delay: 2s   ;	/* Safari 和 Chrome */
+				-o-animation-delay: 2s  ;	/* Opera */	
+			}
+			@keyframes yanhua
+			{
+			 0%{
+			 	opacity: 0; 
+			 }
+			 60%{
+			 	opacity: 1;
+			 }
+			 100%{
+			 	opacity: 0;
+			 }
+			}
+			
+			@-moz-keyframes yanhua /* Firefox */
+			{
+			 0%{
+			 	opacity: 0; 
+			 }
+			 60%{
+			 	opacity: 1;
+			 }
+			 100%{
+			 	opacity: 0;
+			 }
+			}
+			
+			@-webkit-keyframes yanhua /* Safari 和 Chrome */
+			{
+			 0%{
+			 	opacity: 0; 
+			 }
+			 60%{
+			 	opacity: 1;
+			 }
+			 100%{
+			 	opacity: 0;
+			 }
+			}
+			
+			@-o-keyframes yanhua /* Opera */
+			{
+			 0%{
+			 	opacity: 0; 
+			 }
+			 60%{
+			 	opacity: 1;
+			 }
+			 100%{
+			 	opacity: 0;
+			 }
+			}
+			.page_7 .txt{
+				left: -34px;
+			    right: auto;
+			    text-align: right;
+			    line-height: 1.2;
+			    bottom: 9rem;
+			    top: auto;
+			}
+			.page_7 .txt p{
+				color: #4b2b05;opacity: 0;
+			}
+			.page_7  .txt p.show {
+			    opacity: 1;
+			    transition: opacity 1s;
+				-moz-transition: opacity 1s;	/* Firefox 4 */
+				-webkit-transition: opacity 1s;	/* Safari 和 Chrome */
+				-o-transition: opacity 1s;	/* Opera */
+			    /*-webkit-transform: translate3d(0,0,0)*/
+			}
+			.page_7   .txt p.show:nth-child(2){
+				transition-delay: 1s;
+				-moz-transition-delay: 1s; /* Firefox 4 */
+				-webkit-transition-delay: 1s; /* Safari 和 Chrome */
+				-o-transition-delay: 1s; /* Opera */
+			}
+			.page_7   .txt p.show:nth-child(3){
+				transition-delay: 2s;
+				-moz-transition-delay:2s; /* Firefox 4 */
+				-webkit-transition-delay: 2s; /* Safari 和 Chrome */
+				-o-transition-delay: 2s; /* Opera */
+			}
+			.page_7 .upload{
+				position: absolute;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.3);display: flex;align-items: center;text-align: center;
+			}
+			.page_7 .upload img{margin: 0 auto;width: 22.7%;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="mui-scroll-wrapper" id="screen1">
+		        <div class="mui-scroll">
+		            <!--这里放置真实显示的DOM内容-->
+		            <ul>
+		            	<li class="page page_1" > 
+		            		<div class="snow ">
+		            			<img src="../image/newYear/page1/snow.png"/>
+		            		</div>
+		            		<div class="snow ">
+		            			<img src="../image/newYear/page1/snow.png"/>
+		            		</div>
+		            		<div class="page_1_second">
+		            			<div class="light">
+		            				<img src="../image/newYear/page1/light.png"/>
+		            			</div>
+		            			<div class="txt">
+		            				<p>有一条路，也许你一年只走一次，但是却再熟悉不过。</p>
+		            				<p>有一条路，也许不比城市的热闹繁华，但却从不寂寞。</p>
+		            				<!--<p>&nbsp;</p>-->
+		            				<p>「因为那条路的尽头是 <img src="../image/newYear/page1/home.png"/>」</p>
+		            			</div>
+		            			<div class="person">
+		            				<img src="../image/newYear/page1/girl.png" style="width: 90%;"/>
+		            				<img src="../image/newYear/page1/boy.png" style="margin-left: 10px;"/>
+		            			</div>
+		            			
+		            		</div>
+		            		<div class="home home_end">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            	</li>
+		            	<li class="page page_2" > 
+		            		<div class="home home_begin">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            		<div class="step step_1">
+		            			<img src="../image/newYear/page2/left_1.png" style="width:39.87% ;left: 10%;top: 2.8rem;"/>
+		            			<img src="../image/newYear/page2/right_1.png" style="width: 38.9%;left: 13.6%;bottom: 3rem;"/>
+		            		</div>
+		            		<div class="step step_2">
+		            			<img src="../image/newYear/page2/left_3.png" style="width:42.8%;top: 0;left: 0;"/>
+		            			<img src="../image/newYear/page2/right_2.png" style="width:34.5%;left: 7%;bottom: .5rem;"/>
+		            		</div>
+		            		<div class="step step_3">
+		            			<img src="../image/newYear/page2/left_2.png" style="width: 33.73%;left: 0;top: 6rem;"/>
+		            		</div>
+		            		<div class="step step_4">
+		            			<img src="../image/newYear/page2/center_girl.png" style="width: 44.67%;left: 0;top:46%"/>
+		            			<img src="../image/newYear/page2/center_boy.png" style="width: 45.3%;left: 0;top:56%"/>
+		            		</div>
+		            		<div class="step step_5">
+		            			<div class="txt">
+		            				<p>行色匆匆，</p>
+		            				<p>只为离家更近一些，</p>
+		            				<p>再近一些。</p>
+		            			</div>
+		            		</div>
+		            		<div class="home home_end">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            	</li>
+		            	<li class="page page_3" >
+		            		<div class="home home_begin">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            		<div class="bg">
+		            		</div>
+		            		<div id="" class="train">
+		            			<img src="../image/newYear/page3/bg.png" />
+		            		</div>
+		            		<div class="train_in">
+		            			<div id="">
+		            				<img src="../image/newYear/page3/girl.png" style="width: 88%;margin-left: 10px;margin-bottom: -27%;"/>
+		            			</div>
+		            			<div class="">
+		            				<img src="../image/newYear/page3/table.png" style="width: 26%;margin-left: 40%;"/>
+		            			</div>
+		            			<div class="">
+		            				<img src="../image/newYear/page3/boy.png" style="margin-left: 10px;margin-top: -43%;"/>
+		            			</div>
+		            			
+		            		</div>
+		            		<div class="txt">
+	            				<p>窗外疾驰的风景，</p>
+	            				<p>也快不过回家的心。</p>
+	            			</div>
+	            			<div class="home home_end">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            		
+		            	</li>
+		            	<li class="page page_4" > 
+		            		<div class="home home_begin">
+		            			<img src="../image/newYear/home.png"/>
+		            		</div>
+		            		<div class="" style="display: flex;align-items: center;height: 100%;top: 0;position: absolute;left: 0;right: 0;">
+		            			<div class="door">
+			            			<img src="../image/newYear/page4/door_left.png"/>
+			            			<img src="../image/newYear/page4/door_right.png"/>
+			            		</div>
+		            		</div>
+		            		
+		            		<div class="bg">
+		            			
+		            		</div>
+		            		<!--<div class="wdoor">
+		            			
+		            		</div>-->
+		            	</li>
+		            	
+		            </ul>
+		        </div>
+		    </div>
+		    <div class="screen2">
+		    	<div class="mui-scroll-wrapper" id="screen2">
+			        <div class="mui-scroll">
+			            <ul>	
+			            	<li class="page page_5" > 
+			            		<div class="duilian">
+			            			<img src="../image/newYear/page5/duilian.png"/>
+			            		</div>
+			            		<div class="person">
+			            			<img src="../image/newYear/page5/person.png"/>
+			            		</div>
+			            		<div class="wind">
+			            			<img src="../image/newYear/page5/wind1.png"/>
+			            			<img src="../image/newYear/page5/wind2.png" class="wind_S"/>
+			            			<img src="../image/newYear/page5/wind3.png" class="wind_S"/>
+			            		</div>
+			            		<div class="txt" style="width: 5rem;">
+			            			<p>终于能吃上妈妈烧的菜。</p>
+			            			<p>吃了一整年的外卖，</p>
+			            		</div>
+			            	</li>
+			            	<li class="page page_6" > </li>
+			            	<li class="page page_7" > 
+			            		<div class="denglong">
+			            			<img src="../image/newYear/page7/denglong1.png" style="right: .5rem;top:16rem"/>
+			            			<img src="../image/newYear/page7/denglong2.png" style="right: 1.5rem;top: 18rem;"/>
+			            		</div>
+			            		<div class="denglong">
+			            			<img src="../image/newYear/page7/denglong4.png"style="right: 1rem;top:25rem"/>
+			            			<img src="../image/newYear/page7/denglong3.png "style="right: 2rem;top:21rem"/>
+			            			
+			            		</div>
+			            		<div class="yanhua">
+			            			<img src="../image/newYear/page7/yanhua_1.png" style="width: 32.53%;right: 0;top: 39%;"/>
+			            			<img src="../image/newYear/page7/yanhua_2.png" style="width: 7.2%;right: 0;top: 36%;"/>
+			            			<img src="../image/newYear/page7/yanhua_3.png" style="width: 12.67%;top:52%;right:26%"/>
+			            		</div>
+			            		<div class="txt">
+			            			<p>一年又一年，</p>
+			            			<p>增长的是岁月的年轮，</p>
+			            			<p>不变的是记忆里年的味道。</p>
+			            		</div>
+			            		<div class="upload">
+			            			<img src="../image/newYear/page7/upload.png" />
+			            		</div>
+			            	</li>
+			            </ul>
+			        </div>
+			    </div>
+		    </div>
+		    
+		    
+		    
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.upload ').on('tap','img',function(){
+		location.href='http://wx.592vip.com/mindfulNewYear/toBless'
+	})
+	var myscroll1=mui('#screen1').scroll({
+		deceleration: 12, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,
+		indicators: false,
+		scrollY: true,
+	});
+	var myscroll2=mui('#screen2').scroll({
+		deceleration: 12, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,
+		indicators: false,
+		scrollY: true,
+	});
+	var timer;
+	var pre=0;
+	
+	var height=$(window).height();
+	$(function(){
+		
+		var begin='';
+		var beginS=1;
+		var h=height*382/750;
+		showPage(1)
+		document.querySelector('#screen1' ).addEventListener('scrollstart', function (e ) { 
+			
+	      begin=Math.abs(myscroll1.y);
+	      var y=Math.abs(myscroll1.y);
+	      beginS=parseInt(y/height)+1;
+	    }) 
+		document.querySelector('#screen1' ).addEventListener('scroll', function (e ) { 
+	      var y=Math.abs(myscroll1.y);
+	      pre=(y-begin)/height;
+	      if(parseInt(y/height)+1!=beginS){
+	      	showPage(parseInt(y/height)+1);
+	      }
+	      
+	    }) 
+	    
+		$('.page').css({
+			height:$('body').width()*1334/750
+		})
+		
+	})
+	
+	function showPage(number){
+		console.log(number)
+		clearTimeout(timer)
+		switch (number){
+			case 1:
+				$('.snow').addClass('show');
+				$('.page_1_second').addClass('show');
+				$('.page_1 .txt p').addClass('show');
+				
+				break;
+			case 2:
+				$('.page_2 .step').addClass('show');
+				$('.page_2 .txt p').addClass('show')
+				break;
+			case 3:
+				$('.page_3').addClass('show');
+				$('.page_3 .txt p').addClass('show');
+				$('.screen2' ).removeClass('show');
+		      	$('#screen2' ).fadeOut().removeClass('show');
+		      	$('.page_4 .door img').removeClass('show')
+				break;
+			case 4:
+				$('.door img').addClass('show');
+				$('.screen2').addClass('show');
+				
+				timer=setTimeout(function(){
+					$("#screen2").fadeIn().addClass('show');
+					scrol2();
+					myscroll2.scrollTo(0, 1, 0)
+				},500)
+				break;
+			case 5:
+				timer=setTimeout(function(){
+					$('.page_5 .txt p').addClass('show')
+				},3000)
+				  
+				break;
+			case 6:
+				 
+				break;
+			case 7:
+				 $('.denglong img').addClass('show');
+				 $('.yanhua img').addClass('show');
+				 $('.page_7 .txt p').addClass('show');
+				break;
+			default:
+				break;
+		}
+	}
+	function scrol2(){
+		document.querySelector('#screen2' ).addEventListener('scroll', function (e ) { 
+	      var y=Math.abs(myscroll2.y);
+	      if(y==0){
+	      	$('.screen2' ).removeClass('show');
+	      	$('#screen2' ).fadeOut().removeClass('show');
+	      	$('.page_4 .door img').removeClass('show')
+	      }else{
+	      	showPage(parseInt(y/height)+5);
+	      }
+	    }) 
+	}
+</script>

@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<!--<script src="http://www.ichartjs.com/js/ichart-1.0.min.js"></script>-->
+ 		<!--<script src="http://www.ichartjs.com/js/ichart.gauge2d.js"></script>-->
+		<meta charset="UTF-8">
+		<title>爱心银行</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/heartbank.css"/>
+		<style type="text/css">
+			.mui-bar-tab{
+				height: 40px;
+			}
+			.point4{
+				border-top: 1px solid #ededed;line-height: 2;text-align: center;
+			}
+			.point4 a{text-decoration: none;}
+			.point4 a:hover{color: #51c9f0;text-decoration: none;}
+			.heartbank_banner{font-size: 0;line-height: 0;text-align: center;}
+			.heartbank_banner img{
+				max-width: 100%;margin: 0 auto;
+			}
+			.uls{padding-bottom: 0.5rem;}
+			.btns{text-align: center;}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content hb_main_con">
+			
+			<div class="main">
+				<div id='' style="margin: 0 auto;text-align: center;padding-top: 1rem;">
+					<canvas id="canvas-id"></canvas>
+				</div>
+				<div class="btns">
+					<div class="fbtn">
+						晒晒爱心
+					</div>
+					<!--<div class="sbtn">
+						592慈善基金
+					</div>-->
+				</div>
+			</div>
+			<div class="charity footprint">
+				<div class="charity_title">
+					<span class=""><i class="icon iconfont icon-jifenzuji"></i></span>&nbsp;&nbsp;<span>爱心足迹</span><!--06.26积分足迹改为爱心足迹-->
+				</div>
+				<div class="point">
+					<ul class="pointuls">
+						<li class="point1">当月信用累计 &nbsp;&nbsp;<span>+100</span></li>
+						<li class="point2">平台消费及捐赠爱心币等</li>
+						
+					</ul>
+					<div class="point4">
+						<span class="order"><a href="heart_bill.html">查看明细</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="charity">
+				<div class="charity_title">
+					<span class="black"></span>&nbsp;&nbsp;<span>慈善消费</span>
+				</div>
+				<div class="uls">
+					<ul class="firstul">
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-meishi"></i></li>
+								<li class="fonts">美食</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-dianying"></i></li>
+								<li class="fonts">电影</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-jiudian1"></i></li>
+								<li class="fonts">酒店</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-lvyou2"></i></li>
+								<li class="fonts">旅游</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-shenghuo2"></i></li>
+								<li class="fonts">生活</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-shalong"></i></li>
+								<li class="fonts">沙龙</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><i class="icon iconfont icon-shenghuo2"></i></li>
+								<li class="fonts">圈子</li>
+							</ul>
+							
+						</li>
+						<li class="firstli">
+							<ul>
+								<li class="icons"><img src="../image/qidai.png"/></li>
+								<li class="fonts">敬请期待</li>
+							</ul>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="charity">
+				<div class="heartbank_banner" >
+						<img src="../image/heartbank_banner.png"/>
+					</div>
+			</div>
+			<div class="charity">
+				<div class="charity_title">
+					<span class="black"></span>&nbsp;&nbsp;<span>爱心专享</span>
+				</div>
+				<div class="coupon">
+					<ul class="coupuls">
+						<li class="coup1">领592福利券 </li>
+						<li class="coup2">满200减20</li>
+					</ul>
+					<div class="get">
+						立即领取
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			       <div class="popover_middle">
+			       		<!--<img src="../image/shai.png"/>
+			       		<span class="shai_fonts">750</span>-->
+			       		<div id="div">
+						</div>
+			       		<p><img id="ringoImage" alt="" src="../image/shai.png"  style="max-width: 100%;"/></p>
+			       </div>
+			    </div>
+			</div>
+		</div>	
+	</body>
+
+</html>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/mui.min.js"></script>
+<script src="../js/gauge.min.js"></script>
+<script src="../js/heartbank.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var img=document.getElementById("ringoImage"),canvas ;
+		img.onload=function(){
+			canvas =convertImageToCanvas(img)
+			document.getElementById("div").appendChild(convertCanvasToImage(canvas))
+		}
+		
+	})
+	
+	function convertImageToCanvas(image){
+		var width=$(window).width();
+		var canvas = document.createElement("canvas");
+		canvas.width=parseInt(width*0.8);
+		canvas.height=parseInt(width*0.8*1.7);
+		var ctx=canvas.getContext("2d");
+		ctx.drawImage(image,0,0,parseInt(width*0.8),parseInt(width*0.8*1.7));
+		ctx.font="32px Arial";
+		ctx.strokeStyle = "red";
+		ctx.fillStyle = '#fff';  
+		ctx.fillText("200",parseInt(width*0.8*0.425),parseInt(width*0.8*0.70));
+		return canvas;
+	}
+	
+	function convertCanvasToImage(canvas) {
+		var image = new Image();
+		image.src = canvas.toDataURL("image/png");
+		return image;
+	}
+</script>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>轻奢点评</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/icons-extra.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.mui-bar-nav~.mui-content {
+			    position: absolute;
+			    top: 44px;
+			    bottom: 0;
+			    width: 100%;
+			    background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">高端分类</h1>
+		</header>
+		<div class="mui-content">
+			<!-- 高端分类开始 -->
+			
+			
+			<div class="index_item" id="">
+				<div class="mui-scroll-wrapper" id="scroll2">
+				    <div class="mui-scroll" id="">
+				        <!--这里放置真实显示的DOM内容-->
+				        <ul id="list">
+				        	<li>
+				        		<div class="height_cat">
+									<div id="" class="height_cat_img">
+										<img src="../image/icon/2.png"/>
+									</div>
+									<div class="height_cat_content">
+										<ul>
+											<li class="height_cat_title">品牌汽车汇</li>
+											<li class="height_cat_pro">爱车养护，细致入微</li>
+											<li class="mui-table-view-cell height_cat_count">
+												<a href="#" class="mui-navigate-right">3个商户 </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+				        	</li>
+				        	<li>
+				        		<div class="height_cat">
+									<div id="" class="height_cat_img">
+										<img src="../image/icon/3.png"/>
+									</div>
+									<div class="height_cat_content">
+										<ul>
+											<li class="height_cat_title">假日休闲集结号</li>
+											<li class="height_cat_pro">星期天，高尔夫和游艇更配！</li>
+											<li class="mui-table-view-cell height_cat_count">
+												<a href="#" class="mui-navigate-right">3个商户 </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+				        	</li>
+				        	<li>
+				        		<div class="height_cat">
+									<div id="" class="height_cat_img">
+										<img src="../image/icon/4.png"/>
+									</div>
+									<div class="height_cat_content">
+										<ul>
+											<li class="height_cat_title">海鲜大派对</li>
+											<li class="height_cat_pro">躲不掉的海鲜大狂欢！</li>
+											<li class="mui-table-view-cell height_cat_count">
+												<a href="#" class="mui-navigate-right">3个商户 </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+				        	</li>
+				        </ul>
+				        
+					
+					
+			    </div>
+			</div>
+				
+			</div>
+			<!-- 高端分类结束 -->
+		</div>
+	</body>
+</html>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('#scroll2').pullRefresh({
+                up: {
+                    contentrefresh: '正在加载...',
+                    callback: pullupRefresh
+                }
+            });
+    var count=1;
+	
+    /**
+     * 上拉加载具体业务实现
+     */
+    function pullupRefresh() {
+        var self = this;
+        setTimeout(function() {
+        	loadMore()
+            self.endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+        }, 1500);
+    }
+    function loadMore(data){
+    	var html='<li><div class="height_cat">'
+				+	'<div id="" class="height_cat_img">'
+				+		'<img src="../image/icon/4.png"/>'
+				+	'</div>'
+				+	'<div class="height_cat_content">'
+				+		'<ul>'
+				+			'<li class="height_cat_title">海鲜大派对</li>'
+				+			'<li class="height_cat_pro">躲不掉的海鲜大狂欢！</li>'
+				+			'<li class="mui-table-view-cell height_cat_count">'
+				+				'<a href="#" class="mui-navigate-right">3个商户 </a>'
+				+			'</li>'
+				+		'</ul>'
+				+	'</div>'
+				+'</div></li>'
+    	$("#list").append(html)
+    }
+            
+</script>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+        <link href="../../css/mui.min.css" rel="stylesheet"/>
+        <link href="../../css/swiper.min.css" rel="stylesheet"/>
+        <link href="../../css/promotion.css" rel="stylesheet"/>
+        <style type="text/css">
+		   .mui-popover .mui-scroll-wrapper{
+		   		margin: 0;
+		   		border-radius: 0;
+		   }
+		   .mui-popover{
+		   		border-radius: 0;
+		   		border-top-left-radius: 7px;
+		   		border-top-right-radius: 7px;
+		   }
+        </style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="tab-contain">
+				<ul id="tabs">
+			      <li class="current"><a href="#" title="tab1">软文/影像推广</a></li>
+			      <li><a href="#" title="tab2">展位推广</a></li>
+			    </ul>
+			    <div id="content">
+			    	<!--part1-->
+				    <div id="tab1" class="item show">
+				    	<div class="">
+						    <div class="xingxianglei">
+								影像类
+							</div>
+							<!--video-->
+						 	<div class="videoitems">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="firstlineitem2_title ">
+						 					奢探视频
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3">
+						 				<div class="knowmore partFknowmore">
+						 					了解详情 >
+						 				</div>
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 		<div class="secondline">
+						 			你可以胖、也可以丑，前提你得有这口锅
+						 		</div>
+						 		<div class="thirdline">
+						 			<video width="100%" height="200px"  controls="controls"  preload="auto" poster="http://u0.qiyipic.com/image/20170629/17/fe/uv_3064608623_m_601.jpg" >
+										<source src="" type="video/mp4"></source>
+										<!--<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+											<param name="movie" value="myvideo.swf" />
+											<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+										</object>-->
+										当前浏览器不支持 video直接播放，点击这里下载视频： <a href="">下载视频</a>
+									</video>
+						 		</div>
+						 		<div class="fourthline">
+						 			<div>
+						 				<span class="marginright5">2017-08-02</span><span>14:22</span>
+						 			</div>
+						 			<div>
+						 				<span class="marginright5"><img src="../../image/eyes.png"/></span><span>20</span>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<!--video-->
+						 	<!--video-->
+						 	<div class="videoitems">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="firstlineitem2_title ">
+						 					奢探视频
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3">
+						 				<div class="knowmore partFknowmore">
+						 					了解详情 >
+						 				</div>
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 		<div class="secondline">
+						 			你可以胖、也可以丑，前提你得有这口锅
+						 		</div>
+						 		<div class="thirdline">
+						 			<video width="100%" height="200px"  controls="controls"  preload="auto" poster="http://u0.qiyipic.com/image/20170629/17/fe/uv_3064608623_m_601.jpg" >
+										<source src="" type="video/mp4"></source>
+										<!--<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+											<param name="movie" value="myvideo.swf" />
+											<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+										</object>-->
+										当前浏览器不支持 video直接播放，点击这里下载视频： <a href="">下载视频</a>
+									</video>
+						 		</div>
+						 		<div class="fourthline">
+						 			<div>
+						 				<span class="marginright5">2017-08-02</span><span>14:22</span>
+						 			</div>
+						 			<div>
+						 				<span class="marginright5"><img src="../../image/eyes.png"/></span><span>20</span>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<!--video-->
+						 	<div class="smalltitle">
+						 		<div class="blackfont">广告片宣传片</div>
+						 		<div class="knowmore partFknowmore">了解详情 ></div>
+						 	</div>
+						 	<div class="swipercon secondswiper firstsecondswiper">
+						 		<!-- Swiper -->
+							    <div class="swiper-container">
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							        </div>
+							    </div>
+						   	</div>
+						   	<div class="smalltitle">
+						 		<div class="blackfont">推广渠道</div>
+						 	</div>
+						 	<div class="promote">
+						 		<div class="promoteitem">
+						 			<div class="promoteitem1">
+						 				<div class="promoteitem1item">
+						 					<img src="../../image/morentouxiang1.png"/>
+						 				</div>
+						 				<div class="promoteitem1item2">
+						 					<div class="promoteitem1item2_title">
+						 						轻奢点评服务号
+						 					</div>
+						 					<div class="heartbussiness">
+						 						<img src="../../image/heartbussiness.png"/>
+						 					</div>
+						 				</div>
+						 			</div>
+						 			<div class="promoteitem2">
+						 				<span class="redfontcon"><span class="redfont">4888</span>元/分钟</span>
+						 			</div>
+						 			<div class="promoteitem3">
+						 				<span class="underlinefont">9888元/分钟</span>
+						 			</div>
+						 		</div>
+						 		<div class="promoteitem">
+						 			<div class="promoteitem1">
+						 				<div class="promoteitem1item">
+						 					<img src="../../image/morentouxiang1.png"/>
+						 				</div>
+						 				<div class="promoteitem1item2">
+						 					<div class="promoteitem1item2_title">
+						 						轻奢点评服务号
+						 					</div>
+						 					<div class="heartbussiness">
+						 						<img src="../../image/heartbussiness.png"/>
+						 					</div>
+						 				</div>
+						 			</div>
+						 			<div class="promoteitem2">
+						 				<span class="redfontcon"><span class="redfont">4888</span>元/分钟</span>
+						 			</div>
+						 			<div class="promoteitem3">
+						 				<span class="underlinefont">9888元/分钟</span>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="firstline_con">
+						 		<div class="firstline">
+						 			<div class="firstlineitem promoteitem1item" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="promoteitem1item2_title ">
+						 					轻奢点评pc端(首页)
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3 firstlineitem3line">
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="firstlinecon_last">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="firstlineitem2_title ">
+						 					商家店铺采拍(产品图片)
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3">
+						 				<div class="knowmore partFknowmore">
+						 					了解详情 >
+						 				</div>
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="swipercon secondswiper">
+						 		<!-- Swiper -->
+							    <div class="swiper-container">
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide">
+							            	<img src="../../image/height_tuijina_1.png"/>
+							            </div>
+							            <div class="swiper-slide">
+							            	<img src="../../image/height_tuijina_2.png"/>
+							            </div>
+							            <div class="swiper-slide">
+							            	<img src="../../image/height_tuijina_3.png"/>
+							            </div>
+							        </div>
+							    </div>
+						   	</div>
+						   	<div class="xingxianglei">
+								软文类
+							</div>
+							<div class="firstlinecon_last">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="firstlineitem2_title ">
+						 					软文采写
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3">
+						 				<div class="knowmore partFknowmore">
+						 					了解详情 >
+						 				</div>
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="firstlinecon_last">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="firstlineitem2_title ">
+						 					软文推广
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3">
+						 				<div class="knowmore partFknowmore">
+						 					了解详情 >
+						 				</div>
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="swipercon secondswiper">
+						 		<!-- Swiper -->
+							    <div class="swiper-container">
+							        <div class="swiper-wrapper">
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							            <div class="swiper-slide">
+							            	<div class="slidecon">
+								            	<img src="../../image/height_tuijina_1.png"/>
+								            	<div class="slider_title">
+								            		披萨好吃到飞起是什么感觉？来来来 我告诉你！
+								            	</div>
+							            	</div>
+							            </div>
+							        </div>
+							    </div>
+						   	</div>
+						   	<div class="smalltitle">
+						 		<div class="blackfont blackfont_margin">推广渠道</div>
+						 	</div>
+						 	<div class="promote">
+						 		<div class="promoteitem">
+						 			<div class="promoteitem1">
+						 				<div class="promoteitem1item">
+						 					<img src="../../image/morentouxiang1.png"/>
+						 				</div>
+						 				<div class="promoteitem1item2">
+						 					<div class="promoteitem1item2_title">
+						 						轻奢点评服务号
+						 					</div>
+						 					<div class="heartbussiness">
+						 						<img src="../../image/heartbussiness.png"/>
+						 					</div>
+						 				</div>
+						 			</div>
+						 			<div class="promoteitem2">
+						 				<span class="redfontcon"><span class="redfont">4888</span>元/分钟</span>
+						 			</div>
+						 			<div class="promoteitem3">
+						 				<span class="underlinefont">9888元/分钟</span>
+						 			</div>
+						 		</div>
+						 		<div class="promoteitem">
+						 			<div class="promoteitem1">
+						 				<div class="promoteitem1item">
+						 					<img src="../../image/morentouxiang1.png"/>
+						 				</div>
+						 				<div class="promoteitem1item2">
+						 					<div class="promoteitem1item2_title">
+						 						轻奢点评服务号
+						 					</div>
+						 					<div class="heartbussiness">
+						 						<img src="../../image/heartbussiness.png"/>
+						 					</div>
+						 				</div>
+						 			</div>
+						 			<div class="promoteitem2">
+						 				<span class="redfontcon"><span class="redfont">4888</span>元/分钟</span>
+						 			</div>
+						 			<div class="promoteitem3">
+						 				<span class="underlinefont">9888元/分钟</span>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="firstline_con">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="promoteitem1item2_title ">
+						 					轻奢点评pc端(首页)
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3 firstlineitem3line">
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="firstline_con">
+						 		<div class="firstline">
+						 			<div class="firstlineitem firstlineitem_head" >
+						 				<img src="../../image/morentouxiang1.png"/>
+						 			</div>
+						 			<div class="firstlineitem2 ">
+						 				<div class="promoteitem1item2_title ">
+						 					轻奢点评pc端(首页)
+						 				</div>
+						 				<div class="flexcon">
+						 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+						 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+						 				</div>
+						 			</div>
+						 			<div class="firstlineitem3 firstlineitem3line">
+						 				<div class="">
+						 					<span class="underlinefont">9888元/分钟</span>
+						 				</div>
+						 			</div>
+						 		</div>
+						 	</div>
+				    	</div>
+				    </div>
+				    <!--part1-->
+				    <!--part2-->
+				    <div id="tab2" class="item partTwo">
+				    	<div class="">
+				    		<div class="xingxianglei">
+								轻奢点评PC端
+							</div>
+							<div class="partTwo_firstLineCon">
+					    		<div class="firstline">
+							 		<div class="firstlineitem firstlineitem_head" >
+							 			<img src="../../image/morentouxiang1.png"/>
+							 		</div>
+							 		<div class="firstlineitem2 ">
+							 			<div class="partTwo_fItem2">
+								 			<div class="firstlineitem2_title ">
+								 				首页头图轮播
+								 			</div>
+								 			<div class="knowmore partTknowmore">
+								 				了解详情 >
+								 			</div>
+							 			</div>
+							 			<div class="firstlineitem3 partTwo_fItem3">
+								 			<div class="flexcon">
+								 				<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+								 				<span class="redfontcon flexcenter"><span class="redfont">888</span>元/天</span>
+								 				<span class="underlinefont flexcenter marginleft15">1500元/天</span>
+								 			</div>
+								 		</div>
+							 		</div>
+					    		</div>
+				    		</div>
+				    		<div id="slider" class="mui-slider" >
+								<div class="mui-slider-group mui-slider-loop">
+									<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="../../image/banner.png">
+										</a>
+									</div>
+									<!-- 第一张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="../../image/banner.png">
+										</a>
+									</div>
+									<!-- 第二张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="../../image/newYear_shop_2.png">
+										</a>
+									</div>
+									<!-- 第三张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="../../image/newYear_shop_3.png">
+										</a>
+									</div>
+									<!-- 第四张 -->
+									<div class="mui-slider-item">
+										<a href="#">
+											<img src="../../image/banner.png">
+										</a>
+									</div>
+									<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+									<div class="mui-slider-item mui-slider-item-duplicate">
+										<a href="#">
+											<img src="../../image/banner.png">
+										</a>
+									</div>
+								</div>
+							</div>
+				    		<div class="xingxianglei">
+								轻奢点评APP端
+							</div>
+							<div class="greybg">
+								<div class="firstline">
+									<div class="firstlineitem firstlineitem_head" >
+								 		<img src="../../image/morentouxiangy.png"/>
+								 	</div>
+								 	<div class="firstlineitem2 ">
+								 		<div class="partTwo_fItem2">
+									 			<div class="firstlineitem2_title ">
+									 				开机画面
+									 			</div>
+									 			<div class="knowmore partTknowmore">
+									 				了解详情 >
+									 			</div>
+								 		</div>
+								 		<div class="firstlineitem3 partTwo_fItem3">
+									 			<div class="flexcon">
+									 				<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+									 				<span class="redfontcon flexcenter"><span class="redfont">888</span>元/天</span>
+									 				<span class="underlinefont flexcenter marginleft15">1500元/天</span>
+									 			</div>
+									 		</div>
+								 	</div>
+							 	</div>
+								<div class="company_font">
+									江苏轻奢点评文化科技有限公司坐后台录入的简介江苏轻奢点评文化科技有限公司坐后台录入的简介
+								</div>
+							</div>
+							<div class="greybg">
+								<div class="firstline">
+									<div class="firstlineitem firstlineitem_head" >
+								 		<img src="../../image/morentouxiangy.png"/>
+								 	</div>
+								 	<div class="firstlineitem2 ">
+								 		<div class="partTwo_fItem2">
+									 			<div class="firstlineitem2_title ">
+									 				头图轮播
+									 			</div>
+									 			<div class="knowmore partTknowmore">
+									 				了解详情 >
+									 			</div>
+								 		</div>
+								 		<div class="firstlineitem3 partTwo_fItem3">
+									 			<div class="flexcon">
+									 				<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+									 				<span class="redfontcon flexcenter"><span class="redfont">888</span>元/天</span>
+									 				<span class="underlinefont flexcenter marginleft15">1500元/天</span>
+									 			</div>
+									 		</div>
+								 	</div>
+							 	</div>
+								<div class="company_font">
+									江苏轻奢点评文化科技有限公司坐后台录入的简介江苏轻奢点评文化科技有限公司坐后台录入的简介
+								</div>
+							</div>
+							<div class="greybg">
+								<div class="firstline">
+									<div class="firstlineitem firstlineitem_head" >
+								 		<img src="../../image/morentouxiangy.png"/>
+								 	</div>
+								 	<div class="firstlineitem2 ">
+								 		<div class="partTwo_fItem2">
+									 			<div class="firstlineitem2_title ">
+									 				首页图片
+									 			</div>
+									 			<div class="knowmore partTknowmore">
+									 				了解详情 >
+									 			</div>
+								 		</div>
+								 		<div class="firstlineitem3 partTwo_fItem3">
+									 			<div class="flexcon">
+									 				<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+									 				<span class="redfontcon flexcenter"><span class="redfont">888</span>元/天</span>
+									 				<span class="underlinefont flexcenter marginleft15">1500元/天</span>
+									 			</div>
+									 		</div>
+								 	</div>
+							 	</div>
+								<div class="company_font">
+									江苏轻奢点评文化科技有限公司坐后台录入的简介江苏轻奢点评文化科技有限公司坐后台录入的简介
+								</div>
+							</div>
+							<div class="greybg">
+								<div class="firstline">
+									<div class="firstlineitem firstlineitem_head" >
+								 		<img src="../../image/morentouxiangy.png"/>
+								 	</div>
+								 	<div class="firstlineitem2 ">
+								 		<div class="partTwo_fItem2">
+									 			<div class="firstlineitem2_title ">
+									 				行业置顶
+									 			</div>
+									 			<div class="knowmore partTknowmore">
+									 				了解详情 >
+									 			</div>
+								 		</div>
+								 		<div class="firstlineitem3 partTwo_fItem3">
+									 			<div class="flexcon">
+									 				<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+									 				<span class="redfontcon flexcenter"><span class="redfont">888</span>元/天</span>
+									 				<span class="underlinefont flexcenter marginleft15">1500元/天</span>
+									 			</div>
+									 		</div>
+								 	</div>
+							 	</div>
+								<div class="company_font">
+									江苏轻奢点评文化科技有限公司坐后台录入的简介江苏轻奢点评文化科技有限公司坐后台录入的简介
+								</div>
+							</div>
+							<div class="xingxianglei">
+								轻奢点评活动
+							</div>
+							<div class="">
+								<div class="pT_firstlinecon_last">
+							 		<div class="firstline">
+							 			<div class="firstlineitem firstlineitem_head" >
+							 				<img src="../../image/advertisement1.png"/>
+							 			</div>
+							 			<div class="firstlineitem2 ">
+							 				<div class="firstlineitem2_title ">
+							 					轻奢沙龙广告位
+							 				</div>
+							 				<div class="flexcon">
+							 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+							 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+							 				</div>
+							 			</div>
+							 			<div class="firstlineitem3">
+							 				<div class="knowmore partTknowmore">
+							 					了解详情 >
+							 				</div>
+							 				<div class="">
+							 					<span class="underlinefont">9888元/分钟</span>
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="thirdswiper">
+							 		<!-- Swiper -->
+								    <div class="swiper-container">
+								        <div class="swiper-wrapper">
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								            
+								        </div>
+								    </div>
+							   	</div>
+						   	</div>
+						   	<div class="">
+							   	<div class="pT_firstlinecon_last">
+							 		<div class="firstline">
+							 			<div class="firstlineitem firstlineitem_head" >
+							 				<img src="../../image/header.png"/>
+							 			</div>
+							 			<div class="firstlineitem2 ">
+							 				<div class="firstlineitem2_title ">
+							 					慈善盛典广告位、冠名、赞助
+							 				</div>
+							 				<div class="flexcon">
+							 					<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+							 					<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+							 				</div>
+							 			</div>
+							 			<div class="firstlineitem3">
+							 				<div class="knowmore partTknowmore">
+							 					了解详情 >
+							 				</div>
+							 				<div class="">
+							 					<span class="underlinefont">9888元/分钟</span>
+							 				</div>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div class="thirdswiper">
+							 		<!-- Swiper -->
+								    <div class="swiper-container">
+								        <div class="swiper-wrapper">
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								            <div class="swiper-slide">
+								            	<img src="../../image/advertisement1.png"/>
+								            </div>
+								        </div>
+								    </div>
+							   	</div>
+							   
+						   	</div>
+					    </div>
+	      			</div>
+      			 <!--part2-->
+				</div>
+			</div>
+		</div>
+		<!--first popover-->
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			        <div class="popover_title">
+			        	<span class="popover_icon" id="close">
+				        	<i class="mui-icon mui-icon-closeempty close_icon"></i>
+				        </span>
+				       		详情
+			        </div>
+			        <div class="popover_title_title">
+			        	<div class="shetan_header">
+			        		<img src="../../image/shetan_header.png"/>
+			        	</div>
+			        	<div class="">
+			        		奢探视频
+			        	</div>
+			        </div>
+			        <div class="video">
+			        	<video width="100%" height="200px"  controls="controls"  preload="auto" poster="http://u0.qiyipic.com/image/20170629/17/fe/uv_3064608623_m_601.jpg" >
+							<source src="" type="video/mp4"></source>
+							<!--<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+								<param name="movie" value="myvideo.swf" />
+								<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+							</object>-->
+							<!--当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>-->
+						</video>
+			        </div>
+			        <div class="grey_title">
+			        	简介
+			        </div>
+			       <div class="xq_content">
+			       	会员制尊享沙龙体验、精英思维线下汇聚、我们将定 期为轻奢会员举办尊享线下沙龙体验活动、至尊品牌  至尊享受 !
+			       </div>
+			       <div class="grey_title">
+			        	价格
+			        </div>
+			       <div class="xq_content">
+			       		<div class="flexcon">
+							<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+							<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+							<span class="underlinefont flexcenter marginleft15">9888元/分钟</span>
+						</div>
+			       </div>
+			       <div class="grey_title">
+			        	使用标准
+			        </div>
+			       <div class="xq_content">
+			       		3分钟起播放
+			       </div>
+			       <div class="grey_title">
+			        	结算方式
+			        </div>
+			       <div class="xq_content">
+			       		后台填写，不填写则展示“详情请致电客服”
+			       </div>
+			    </div>
+			    <div class="popover_bottom">
+			    	<div class="kefutel">
+			    		<img src="../../image/kf_telicon.png"/>
+			    	</div>
+			    	<div class="kefufont">
+			    		客服电话：0513-85799999
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<!--first popover-->
+		<!--second popover-->
+		<div id="popover1" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!--这里放置真实显示的DOM内容-->
+			        <div class="popover_title">
+			        	<span class="popover_icon" id="close1">
+				        	<i class="mui-icon mui-icon-closeempty close_icon"></i>
+				        </span>
+				       		详情
+			        </div>
+			        <div class="popover_title_title">
+			        	<div class="shetan_header">
+			        		<img src="../../image/morentouxiang1.png"/>
+			        	</div>
+			        	<div class="">
+			        		首页头图轮播
+			        	</div>
+			        </div>
+			        <div class="popover2pic">
+			        	<img src="../../image/banner.png"/>
+			        </div>
+			        <div class="grey_title">
+			        	简介
+			        </div>
+			       <div class="xq_content">
+			       	会员制尊享沙龙体验、精英思维线下汇聚、我们将定 期为轻奢会员举办尊享线下沙龙体验活动、至尊品牌  至尊享受 !
+			       </div>
+			       <div class="grey_title">
+			        	价格
+			        </div>
+			       <div class="xq_content">
+			       		<div class="flexcon">
+							<span class="heartbussiness flexcenter"><img src="../../image/heartbussiness.png"/></span>
+							<span class="redfontcon flexcenter"><span class="redfont">4888</span>元/分钟</span>
+							<span class="underlinefont flexcenter marginleft15">9888元/分钟</span>
+						</div>
+			       </div>
+			       <div class="grey_title">
+			        	使用标准
+			        </div>
+			       <div class="xq_content">
+			       		7天起投
+			       </div>
+			       <div class="grey_title">
+			        	结算方式
+			        </div>
+			       <div class="xq_content">
+			       		后台填写，不填写则展示“详情请致电客服”
+			       </div>
+			    </div>
+			    <div class="popover_bottom">
+			    	<div class="kefutel">
+			    		<img src="../../image/kf_telicon.png"/>
+			    	</div>
+			    	<div class="kefufont">
+			    		客服电话：0513-85799999
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<!--second popover-->
+	</body>
+</html>
+<script src="../../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/promotion.js"></script>
+<script type="text/javascript">
+    	
+</script>

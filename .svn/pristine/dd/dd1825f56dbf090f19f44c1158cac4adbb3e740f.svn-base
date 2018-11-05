@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.packet_header img{
+	max-width: 100%;
+}
+.bigfont{
+	font-size: 24px;
+	color: #333;
+}
+.packet_con,.packet_header{
+	text-align: center;
+}
+.red{
+	color: #BF312B;
+}
+.font{
+	color: #999;
+}
+.margintop12{
+	margin-top: 12px;
+}
+.margintop20{
+	margin-top: 20px;
+}
+.inline{
+	font-size: 0;
+	line-height: 0;
+}
+.inline>div{
+	display: inline-block;
+}
+.packet_icons_bg img{
+	width: 30px;
+}
+.packet_icons_bg{
+	text-align: center;background: #fff;
+	 display: inline-block;
+	 padding: 15px;
+	 border-radius: 50%;
+	 border: 1px solid #eee;
+}
+.packet_icons{
+	width: 20% ;
+}
+.msb_network_button:hover{
+	cursor: pointer;
+}
+.icons_fonts{
+	color: #999;
+	font-size: 16px;
+	line-height: 3;
+}

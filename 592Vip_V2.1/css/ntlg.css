@@ -1,0 +1,87 @@
+*{margin: 0;padding: 0;list-style: none;outline: none;}
+			body{background: url(../imgs/ntlg_bg.png);width: 1048px;margin: 0 auto;background-repeat: no-repeat;background-position: top;text-align: center;}
+			/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+			::-webkit-scrollbar  
+			{  
+			    width: 8px;  
+			    height: 8px;  
+			    background-color: none;  
+			    display: none;
+			}  
+			  
+			/*定义滚动条轨道 内阴影+圆角*/  
+			::-webkit-scrollbar-track  
+			{  
+			    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+			    border-radius: 10px;  
+			    background-color: none;  
+			}  
+			  
+			/*定义滑块 内阴影+圆角*/  
+			::-webkit-scrollbar-thumb  
+			{  
+			    border-radius: 10px;  
+			    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+			    background-color: rgba(0,0,0,.3);  
+			}  
+			.ntlg_border{border:1px solid #f6cd63}
+			.ntlg_left,.ntlg_right{display: inline-block;width: 461px;vertical-align: top;}
+			.ntlg_right{width: 463px;margin-left: 35px;}
+			.left_list{margin: 28px;border: 1px solid #7c5d21;height: 650px;overflow: auto;}
+			.right_list{height: 325px;overflow: auto;}
+			.user_list li{color: #f1cd93;height: 64px;line-height: 64px;font-size: 32px;border-bottom:1px solid #524632 ;}
+			.user_list li:last-child{border-bottom: none;}
+			.choujiang_list li{font-size: 32px;padding: 0 10px;}
+			.ntlg_title1{
+				background: url(../imgs/ntlg_title1.png) no-repeat scroll top left;
+				height: 74px;margin-top: -1px;margin-left: -1px;width: 463px;
+				color: #ffcc2f;
+				font-size: 40px;
+				line-height: 74px;
+				text-align: right;
+			}
+			.ntlg_title1 span{margin-right: 20px;}
+			.ntlg_title2{background: url(../imgs/ntlg_title2.png) no-repeat scroll top left;height: 74px;width: 463px;
+			color: #fff;
+				font-size: 32px;
+				line-height: 74px;
+				text-align: left;
+			}
+			.ntlg_title2 span{margin-left: 125px;margin-left: 125px;
+    width: 317px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;}
+			.text-0{color: #fffa6f;}
+			.text-1{color: #efb345;}
+			.text-2{color: #ff7800;}
+			.theader{background: #524632;font-size: 24px;color: #fee2b6;height: 60px;line-height: 60px;}
+			.jx,.name,.mobile{display: inline-block;vertical-align: top;text-align: center;}
+			.jx{font-size: 24px;width: 75px;}
+			.name{width: 128px;
+    overflow: hidden;
+    height: 60px;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+			.mobile{width: 190px;}
+			.select{width: 197px;height: 48px;border: 1px solid #7c5d21;
+				  appearance:none;
+				  -moz-appearance:none;
+				  -webkit-appearance:none;
+				background:url(../imgs/ntlg_select_bg.png);
+				color: #e1a048;background-repeat: no-repeat;background-position: right;font-size: 22px;
+				margin: 10px 0  50px 0;
+				text-indent: 5px;
+				line-height: 48px;
+				position: relative;
+			}
+			.jx_list{border: 1px solid #7c5d21;position: absolute;width: 100%;left: -1px;display: none;}
+			.jx_list li{border-bottom: 1px solid #7c5d21;background: #524632;color: #e1a048;text-align: center;}
+			.jx_list li:last-child{border-bottom: none;}
+			.jx_list li:hover{background: #c9a262;color: #000;}
+			.ntlg_form{font-size: 0;padding-top: 50px;}
+			.ntlg_form>div{display: inline-block;vertical-align: top;width: 50%;}
+			.ntlg_form>div:first-child{text-align: left;}
+			.ntlg_form>div:last-child{text-align: right;}
+			#ntlg_end{display: none;}

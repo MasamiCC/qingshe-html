@@ -1,0 +1,50 @@
+.mui-content{
+				background: url(../image/check_bg.png);
+				background-size: 100% 100%;
+				bottom: 0!important;
+				overflow: auto;
+				background-repeat: no-repeat;
+			}
+			.mui-control-content{
+				display: block;
+			}
+			.cal-wrap{
+				top: 0;margin-bottom: 0;padding-bottom: 0;
+			}
+			.cal-wrap ul.day li.dl{
+			    line-height: 38px;
+			    padding:8px 0;
+			    font-size: inherit;
+			    text-align: center;
+			    
+			}
+			.dl.jr i:first-child{
+				background: #daba75;
+			    border-radius: 50px;
+			    color: #fff;
+			    width: 25px;height: 25px;text-align: center;
+			    margin:0 auto;vertical-align: middle;
+			    line-height: 1.7;
+			    font-size: 0.875rem;
+			}
+			.index_item{
+				background: none;
+			}
+			#check_calendar{
+				margin: 10px;background: #fff;border-radius: 10px;overflow: hidden;padding-top: 0;
+			}
+			.check_notice{
+				text-indent: 10px;font-size: 0.75rem;padding: 0;
+			}
+			#check_count{
+				color: #f50909;
+			}
+			.index_item_title{
+				text-align: left;line-height: 2;font-size: 0.75rem;font-weight: bold;
+			}
+			#check_rule p{
+				color: #333;margin-bottom: 0;line-height: 2;font-size: 0.75rem;
+			}
+			.cal-wrap h2{
+				padding-top: 8px!important;
+			}

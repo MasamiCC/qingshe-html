@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css"/>
+		<style type="text/css">
+			.mui-bar-nav~.mui-content{
+				overflow: auto;
+			}
+			.cal-wrap{
+				top: 0;margin-bottom: 0;
+			}
+			.rc_sel{
+				font-size: 0.75rem;text-indent: 15px;color: #999;padding-top: 0.4rem;
+			}
+			.rc_sel span{
+				color: #333;font-weight: 500;margin-left: 0.2rem;
+			}
+			.index_item{
+				padding-bottom: 0;
+			}
+			.index_item:first-child{
+				padding-top: 0;padding-bottom: 10px;
+			}
+			.shop_list{
+				border-bottom: 1px solid #eee;
+			}
+			.index_item_title{
+				text-align: left;text-indent: 15px;font-size: 0.875rem;color: #333;
+				padding-bottom: 10px;font-weight: 500;
+			}
+			.easy_btn{
+				background: #d4ac57;color: #fff;line-height: 50px;
+				padding: 0 15px;
+				font-size: 1rem;
+			}
+			.easy_total{
+				font-size:0.875rem ;line-height: 3.6;
+				text-indent: 1rem;
+			}
+			.easy_total span{
+				color: #d91a1a;
+			}
+			.total_amount{
+				color: #d91a1a;font-weight: 500;
+				font-size: 1.3rem;line-height: 1.2;
+			}
+			.travel_li{
+				font-size: 0.75rem;color: #333;
+			}
+			.travel_li:after{
+				left: 0;
+			}
+			.travel_li.mui-active{
+				background: #fff;
+			}
+			.travel_li img{
+			    max-width: 22px;
+    			vertical-align: middle;
+			}
+			.travel_li input[type=checkbox]{
+				left: 0!important;top: 0!important;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+				color: #d4ac57;
+			}
+			.travel_li input[type=checkbox]:before{
+				font-size: 20px;
+			}
+			.travel_li label{
+				padding-left: 25px!important;padding-top: 0;padding-bottom: 0;
+			}
+			.price{
+				padding: 0 10px;color: #000;font-weight: 500;
+			}
+			.travel_notice,.travel_count{
+				color: #999;
+			}
+			.mui-switch .mui-switch-handle{
+				width: 23px;height: 23px;
+			}
+			.mui-switch-mini{
+				height: 25px;width: 40px;
+			}
+			.mui-switch.mui-active{
+			    border-color: #d4ac57;
+    			background-color: #d4ac57;
+			}
+			.travel_notice i{
+				font-size: 1rem ;vertical-align: middle;margin-right: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">填写预定信息</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="index_item">
+		    	<div class="shop_list">
+			    	<div id="slider" class="mui-slider ">
+						<div class="mui-slider-group" id="calendar">
+						</div>
+					</div>
+			    </div>
+			    <div class="rc_sel">
+			    	您已选择<span id="sel_date"></span> 
+			    </div>
+		    </div>
+		    <div class="index_item">
+		    	<div class="index_item_title">
+		    		出行人数
+		    	</div>
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-pull-left">
+		    	            	<div class="">
+		    	            		<span id="">
+		    	            			成人
+		    	            		</span>
+		    	            		<span class="price" >
+		    	            			￥600
+		    	            		</span>
+		    	            	</div>
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+		    	            	<span class="mui-input-numbox" data-price="600.00">20</span>
+		    	            	<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+		    	            </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-pull-left">
+		    	            	<div class="">
+		    	            		<span id="" >
+		    	            			成人
+		    	            		</span>
+		    	            		<span  class="price" > 
+		    	            			￥600
+		    	            		</span>
+		    	            	</div>
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+		    	            	<span class="mui-input-numbox" data-price="600.00">20</span>
+		    	            	<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+		    	            </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-pull-left">
+		    	            	<div class="">
+		    	            		携带婴儿（0-2岁）
+		    	            	</div>
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<div class="mui-switch mui-switch-mini">
+		    	            	  <div class="mui-switch-handle"></div>
+		    	            	</div>
+		    	            </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell travel_li travel_notice">
+		    	            <i class="mui-icon mui-icon-info"></i>预订须知：禁止携带宠物
+		    	        </li>
+		    	    </ul>
+		    </div>
+		    <div class="index_item">
+		    	<div class="index_item_title">
+		    		保险
+		    	</div>
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-input-row mui-checkbox mui-left mui-pull-left">
+		    	              <label>意外险</label>
+		    	              <input name="checkbox1" type="checkbox" checked  data-price="600.00">
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<div class="">
+		    	            		<span id="" class="price">
+		    	            			￥600
+		    	            		</span>
+		    	            		<span class="travel_count">
+		    	            			&times;1
+		    	            		</span>
+		    	            	</div>
+		    	            </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-input-row mui-checkbox mui-left mui-pull-left">
+		    	              <label>不知道什么险</label>
+		    	              <input name="checkbox1" type="checkbox"  data-price="600.00">
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<div class="">
+		    	            		<span id="" class="price">
+		    	            			￥600
+		    	            		</span>
+		    	            		<span class="travel_count">
+		    	            			&times;1
+		    	            		</span>
+		    	            	</div>
+		    	            </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell travel_li travel_notice">
+		    	           <i class="mui-icon mui-icon-info"></i>预订须知：禁止携带宠物
+		    	        </li>
+		    	    </ul>
+		    </div>
+		    <div class="index_item">
+		    	<div class="index_item_title">
+		    		单房差
+		    	</div>
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell travel_li">
+		    	            <div class="mui-pull-left">
+		    	            	<div class="">
+		    	            		<span id="">
+		    	            			成人
+		    	            		</span>
+		    	            		<span class="price">
+		    	            			￥600
+		    	            		</span>
+		    	            	</div>
+		    	            </div>
+		    	            <div class="mui-pull-right">
+		    	            	<img src="../image/hotel_m.png" class="cart-btn cart-btn-numbox-minus">
+		    	            	<span class="mui-input-numbox" data-price="600.00">20</span>
+		    	            	<img src="../image/hotel_p.png" class="cart-btn cart-btn-numbox-plus">
+		    	            </div>
+		    	        </li>
+		    	        
+		    	        <li class="mui-table-view-cell travel_li travel_notice">
+		    	           <i class="mui-icon mui-icon-info"></i>单房差说明
+		    	        </li>
+		    	    </ul>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<div class="mui-pull-left">
+				<div id="easy_total" class="easy_total">
+					 总计<span><small>￥</small></span><span class="total_amount">30000.00</span>
+				</div>
+			</div>
+			<div class="mui-pull-right easy_btn">
+				提交订单
+			</div>
+		</nav>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+
+<script src="../js/jqmobi.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!--<script src="../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="../js/calendar.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+        swipeBack: false
+    });
+    /**/
+	(function() {
+        var markData=[
+            {date:'2017-07-20',price:'￥12.00',pd:'12-13'},
+            {date:'2017-07-21',price:'￥22.00',pd:'121-133'}
+        ]
+        calendarIns = new calendar.calendar( {
+            count: 4,
+            selectDate: new Date(),
+            selectDateName: '预定',
+            minDate: new Date(),
+            maxDate: new Date( +new Date() + 100 * 86400000 ),
+            isShowHoliday: true,
+            isShowWeek: true,
+            isShowMarker:true,
+            markData:markData
+        } );
+
+        $.bind( calendarIns, 'afterSelectDate', function( event ) {
+            console.log( 'after select date' );
+            console.log(event)
+            var curItem = event.curItem,
+                date = event.date,
+                dateName = event.dateName,
+                datePrice=event.price;
+                if (datePrice) {
+                	datePrice=datePrice.split('-');
+                	console.log(datePrice);
+                }
+                
+
+            calendarIns.setSelectDate( date );
+            var arr=date.split('-');
+            $("#sel_date").html(arr[0]+'年'+arr[1]+"月"+arr[2]+'日行程');
+            
+            
+        } );
+		$(".travel_li").on('tap','.cart-btn-numbox-plus',function(e){
+    		console.log(1)
+			$(this).prev().html(parseInt($(this).prev().html())+1);
+			loadTotal()
+		})
+        
+        
+    })();
+  
+        
+    
+    $(function(){
+		$(".travel_li").each(function(){
+			$(this).on('tap','.cart-btn-numbox-plus',function(){
+				var a=parseInt($(this).parent().find('.mui-input-numbox').html());
+				$(this).parent().find('.mui-input-numbox').html(a+1)
+				loadTotal()
+			})
+			$(this).on('tap','.cart-btn-numbox-minus',function(){
+				
+				var a=parseInt($(this).parent().find('.mui-input-numbox').html());
+				if (a>0) {
+					$(this).parent().find('.mui-input-numbox').html(a-1)
+				}
+				loadTotal()
+			})
+		})
+		
+		
+		$("input[name=checkbox1]").each(function(){
+			$(this).bind({
+				'click':function(){
+					loadTotal()
+				}
+			})
+		})
+//		$(".travel_li").each(function(){
+//			var _this=$(this)
+//			_this.on('tap','.cart-btn-numbox-plus',function(e){
+//				console.log($(this))
+//				$(this).prev().html(parseInt($(this).prev().html())+1);
+//				loadTotal()
+//			})
+//		})
+    })
+    loadTotal()
+    function loadTotal(){
+    	var total=0;
+    	$(".mui-input-numbox").each(function(){
+    		var temp=parseInt($(this).html());
+    		var price=parseFloat($(this).attr('data-price'))
+    		total+=temp*price;
+    	})
+    	$('input[type=checkbox]:checked').each(function(){
+    		var price=parseFloat($(this).attr('data-price'))
+    		total+=price;
+    	})
+    	$(".total_amount").html(parseFloat(total).toFixed(2))
+    	//console.log(total)
+    }
+</script>

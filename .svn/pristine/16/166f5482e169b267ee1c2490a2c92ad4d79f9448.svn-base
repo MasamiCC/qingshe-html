@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>轻奢点评</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				font-size: 0.825rem;
+			}
+			
+			body{
+				background: #fff;
+			}
+			.content{
+				text-align: center;
+				background: #fff;
+			}
+			.divs img{
+				max-width: 20%;
+			}
+			.div1{
+				margin-top: 20%;
+			}
+			.div2{
+				color: #7D7D7D;
+			 	margin-top: 10px;
+			}
+			.div3{
+				color: #C6C6C6;
+				
+				
+				margin-top: 56px;
+			}
+			.back{
+				display: inline-block;
+				padding: 0px 17px;
+				border: 1px solid #E4E4E4;
+				border-radius: 50px;
+				height: 20px;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content main">
+			<div class="content">
+				<div class="divs div1"><img src="../image/success.png"></div>
+				<div class="divs div2">恭喜您购买成功!</div>
+				<div class="divs div3">
+					<span class="back">返回</span>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>

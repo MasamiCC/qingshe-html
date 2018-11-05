@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>爱心足迹</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/loveBankFootMark.css"/>
+		<style type="text/css">
+			.mui-pull-caption-nomore{
+				color: #cccccc;font-weight: normal;
+			}
+			.mui-pull-caption.mui-pull-caption-nomore{
+				position: relative;width: 60%;
+				
+			}
+			.mui-pull-caption.mui-pull-caption-nomore:after{
+				position: absolute;content: '';
+				height: 1px;
+				width: 100%;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				background: #ccc;
+				bottom: 50%;
+				z-index: 9;
+			}
+			.no_more{background: #fff;    position: relative;    z-index: 10;width: 40%;margin: 0 auto;}
+		</style>
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+				</ul>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh,
+						contentnomore:'<div class="no_more">没有更多啦</div>',
+						auto:true
+					}
+				}
+			});
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 2; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell mark-item';
+						li.innerHTML='<div class="mark-div">'
+						          	+	'<div class="mark-title">本月的爱心银行爱心钻更新啦！</div>'
+						          	+	'<div class="mark-time">2017-12-01</div>'
+						          	+	'<div class="mark-content">'
+						          	+		'您现在的爱心钻为750颗，评估时间为2017-01-01,多使用轻奢点评，同时选择爱心商户消费，可以更好的积累爱心，【慈善消费，让爱成为习惯】'//06 26 分改为颗 积分改为爱心钻
+						          	+	'</div>'
+						          	+'</div>'
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+		</script>
+	</body>
+
+</html>

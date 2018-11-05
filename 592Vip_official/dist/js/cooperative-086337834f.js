@@ -1,0 +1,1 @@
+$(function(){for(var o=[],i=1;i<33;i++)o.push("../static/img/cooperative_"+i+".png");$(".cooperate_ul").discrete({collums:8,rows:4,imgList:o})});

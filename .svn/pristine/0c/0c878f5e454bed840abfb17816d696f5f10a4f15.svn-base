@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/guide_first.css" rel="stylesheet" />
+		<style type="text/css">
+			.item_content{
+				/*padding: 10px 8px;*/
+				padding: 10px 2.4%;
+			}
+			.gonglue_item_bottom{
+				margin-right: 11%;
+			}
+			.gonglue_item_bottom_left{
+				width: 37%;
+			}
+			.last_font{
+				font-size: 0.75rem;
+				margin: 10px 35px 0 55px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="">
+				<div class="guide_top">
+					<div class="guide_top_title">
+						目标站点&nbsp;——&nbsp;初心站
+					</div>
+					<div class="guide_top_time">
+						目标剩余时间：<span id="cutdown" count="86399">23:59:59</span>
+					</div>
+				</div>
+				<!--third-->
+				<div class="gonglue_item margintop60">
+					<div class="gonglue_item_title">
+						<!--<img src="images/gonglue_icon.png"/>-->
+						<span class="gl_icon">攻略一</span>
+					</div>
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/help.png"/>
+							</div>
+							<div class="login_font">
+								帮助好友
+							</div>
+						</div>
+						<div class="item_content">
+							可以帮助至少两名自主推荐 的好友完成通过“开往加油 站”任务
+						</div>
+						<div class="item_icon">
+							<span class="know_icon">去帮助</span>
+						</div>
+					</div>
+					<div class="gonglue_item_bottom">
+						<div class="gonglue_item_bottom_left">
+							<div class="etr_item_banner_middle progress">
+								<div class="bar_left" style="width: 25%;"></div>
+								<div class="bar_right"></div>
+							</div>
+						</div>
+						<div class="gonglue_item_bottom_right">
+							1/4人
+						</div>
+					</div>
+				</div>
+				
+				<div class="gonglue_item margintop15 paddingbottom10">
+					<div class="gonglue_item_title">
+						<!--<img src="images/gonglue_icon.png"/>-->
+						<span class="gl_icon">攻略二</span>
+						<span class="gonglue_font">完成攻略一有困难？试试攻略二</span>
+					</div>
+					<div class="gonglue_item_middle">
+						<div class="login">
+							<div class="login_icon">
+								<img src="images/gouwuche.png"/>
+							</div>
+							<div class="login_font">
+								购买燃料
+							</div>
+						</div>
+						<div class="item_content">
+							可以花费7888元购买专列 燃料
+						</div>
+						<div class="item_icon item_icon_flex4">
+							<!--<span class="know_icon">领燃油券</span>-->
+							<span class="know_icon">确认购买</span>
+							<!--<span class="know_icon">查看油券</span>-->
+						</div>
+					</div>
+				</div>
+				<!--third-->
+				<div class="small_font">
+					<div class="tip_icon">
+						<img src="images/tip_icon.png"/>	
+					</div>
+					<div class="tip_font">
+						完成以上任一攻略均可通过初心站
+					</div>
+				</div>
+				<div class="small_font">
+					<div class="tip_icon">
+						<img src="images/tip_icon.png"/>	
+					</div>
+					<div class="tip_font">
+						由攻略一通过初心站后可获取该阶段奖励1760黑钻；
+						由攻略二通过初心站后则可该阶段奖励不变，但之后三个
+						站点的收益=预期收益*0.48；
+					</div>
+				</div>
+				<!--<div class="last_font">
+						使用燃油优惠券完成攻略二的用户在第二轮黑卡注册购物时需消费不低于500积分。
+				</div>-->
+			</div>
+				
+		</div>
+	</body>
+
+</html>

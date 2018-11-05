@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layout_user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+			#save{
+			    background-color: #edb94a;
+   				border: none;
+   				border-radius: 0;
+   				padding-left: 20px;
+   				padding-right: 20px;
+			}
+			#save:hover{
+				background: #d3a749;
+			}
+			#reset{
+				border: none;
+				border-radius: 0;
+				
+			}
+			#reset:hover{
+				background: none;border: none;
+			}
+		</style>
+		<script type="text/javascript">
+			var isUser=true,key='my_account';
+		</script>
+		<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<script src="../js/address.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=5b4c94fd81c57ce0b38c605771edc43a"></script>
+    	
+	</head>
+	<body>
+		<div class="main">
+			<div class="user_div user_right" ng-app="addAddress" ng-controller="addCtrl" ng-init='loadAddress()'>
+						<div class="">
+							<div class="user_right_middle" >
+								<div class="" >
+									<form class="form-horizontal" role="form" style="width: 80%;margin-left:20px ;">
+									  <div class="form-group">
+									    <label for="name" class="col-sm-2 control-label">姓名</label>
+									    <div class=" col-sm-10">
+									      <input type="text" class="form-control" id="name" placeholder="请输入您的姓名" ng-model='address.userName'>
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="sex" class="col-sm-2 control-label">性别</label>
+									    <div class="col-sm-10">
+								    		<input type="radio" name="sex" id="sex_0" value="0" ng-checked="address.sex==0" ng-model="address.sex"/>先生
+								      		<input type="radio" name="sex" id="sex_1" value="1" ng-checked="address.sex==1" ng-model="address.sex"/>女士
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="address" class="col-sm-2 control-label">位置</label>
+									    <div class="col-sm-10">
+									      <input type="text" class="form-control" id="address" placeholder="请输入小区、大厦或学校" ng-model='address.area' >
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="full_address" class="col-sm-2 control-label">详细地址</label>
+									    <div class="col-sm-10">
+									      <input type="text" class="form-control" id="full_address" placeholder="单元、门牌号" ng-model='address.address'  > 
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="mobile" class="col-sm-2 control-label">手机号码</label>
+									    <div class="col-sm-10">
+									      <input type="tel" class="form-control" id="mobile" placeholder="请输入您的手机号码" ng-model='address.mobile' maxlength="11">
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <label for="idDefault" class="col-sm-2 control-label">设为默认</label>
+									    <div class="col-sm-10" style="padding-top: 5px;">
+									    	<input type="checkbox" class="" id="idDefault" placeholder=""  ng-checked='address.isDefault'  ng-model='address.isDefault'>
+									    </div>
+									  </div>
+									  <div class="form-group">
+									    <div class="col-sm-offset-2 col-sm-10">
+									    	<input type="hidden" name="" id="" value=""  ng-model='address.addressId'/>
+									      <button type="button" class="btn btn-primary" ng-click="submitAddress(address)" id="save">保存</button>
+									      <button type="reset" class="btn  btn-default " ng-click="formReset()" id="reset">取消</button>
+									    </div>
+									  </div>
+									</form>
+								</div>
+								
+							</div>
+							
+							<div class="user_right_footer">
+								
+							</div>
+						</div>
+					</div>
+
+			
+			
+			
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script src="../js/user.js" type="text/javascript" charset="utf-8"></script>
+</html>
+<script type="text/javascript">
+	
+    var windowsArr = [];
+    var marker = [];
+    var map = new AMap.Map("mapContainer", {
+            resizeEnable: true,
+            center: [120.944565, 31.922909],//地图中心点
+            zoom: 13,//地图显示的缩放级别
+            keyboardEnable: false
+    });
+    AMap.plugin(['AMap.Autocomplete','AMap.PlaceSearch'],function(){
+      var autoOptions = {
+        city: "南通", //城市，默认全国
+        input: "address"//使用联想输入的input的id
+      };
+      autocomplete= new AMap.Autocomplete(autoOptions);
+      var placeSearch = new AMap.PlaceSearch({
+            city:'南通',
+            map:map
+      })
+      AMap.event.addListener(autocomplete, "select", function(e){
+         //console.log(e)
+//       placeSearch.search(e.poi.name)
+       	console.log(e)
+       	$("#address").val(e.poi.district)
+       	$("#full_address").val(e.poi.address)
+       	
+      });
+    });
+</script>

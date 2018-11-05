@@ -1,0 +1,143 @@
+			*{
+				margin: 0px;
+				padding: 0px;
+				outline: none;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			body{
+				width: 100%;
+				height: 140%;
+				line-height: 140%
+			}
+			
+/*个人中心主体*/
+			.cont{
+				width:100%;
+				/*max-width: 1200px;*/
+				margin: 0 auto;
+			}
+			.content{
+				display: inline-block;
+				font-size: 14px;
+			}
+			#main1{
+				width:12.6%;
+				/*width: 241px;*/
+				height: 100%;
+				background-color: #221910;
+				/*text-align: center;*/
+				/*magin: -9999999999999px*/
+				
+			}
+			#main2{
+				width: 87.4%;
+				/*width: 100%;*/
+				/*min-height: 943px;*/
+				height: 100%;
+				vertical-align: top;
+			}
+			#txt{
+				/*border: 1px solid #ACACAC;*/
+				font-size: 14px;
+				/*min-height: 943px;*/
+				/*height: 100%;*/
+				}
+			/*上部分*/
+			#t1{
+				height: 105px;
+				margin: 0px 31px;
+				border-bottom: 1px solid #584525;
+			}
+			.te{
+				color: white;
+				height: 33px;
+				line-height: 40px;
+			}
+			.te2{
+				margin-left: 30px;
+			}
+			.te3{
+				margin-left: 30px;
+			}
+			#pic1{
+				text-align: center;
+			}
+			#p1{
+			    text-align: center;
+				margin-top: 30px;
+				max-width: 100%;
+			}
+			/*上部分*/
+			/*下半部分*/
+			#t2{
+				height:auto;
+				/*height: 100%;*/
+				min-height: 868px;
+				/*height: 868px;*/
+			}
+			#t2 a{
+				text-decoration: none;
+				color: #D4AC57;
+			}
+			.th{
+				/*font-weight:bolder;*/
+				font-size: 14px;
+				color: #D4AC57;
+				line-height: 53px;
+				height:53px;
+				padding-left: 42px;
+				margin-top: 15px;
+			}
+			.tb{
+				font-size: 13px;
+				color: white;
+				line-height: 33px;
+				height:33px;
+				padding-left: 65px;
+			}
+			.tc:hover{
+				background:#655E58 ;
+			}
+			#index_cont{
+				font-size: 0
+			}
+			/*头部*/
+			.head{
+				display: inline-block;
+			}
+			#header{
+				padding: 22px 0px 21px 0px;
+				margin: 0px 30px;
+				border-bottom: 1px solid #ddd;
+				/*height: 68px;
+				line-height: 68px;*/
+				line-height: 1;
+				overflow: hidden;
+			}
+			.shopname{
+				font-size: 16px;
+				margin-left: 16px;
+			}
+			.business{
+				font-size: 36px;
+			}
+			.heade2{
+				vertical-align: top;
+				padding: 0px 20px;
+			}
+			.heade3{
+				padding: 0px 0px 0px 37px;
+			}
+			.head_r{
+				float: right;
+			}
+			.line li{
+				line-height: 30px;
+			}
+			#cl li{
+				line-height: 32px;
+			}
+			/*头部*/
+		
+			

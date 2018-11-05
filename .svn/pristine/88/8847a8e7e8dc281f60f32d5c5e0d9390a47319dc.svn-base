@@ -1,0 +1,145 @@
+	*{
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		list-style-type: none;
+	}
+	.mui-content,body{
+		background: #fff;
+	}
+	.bacg{
+		/*background: #fff;*/
+		background: url(../image/huiyuanzhongxinbg.png) no-repeat;
+		    background-size: cover;
+    background-position: bottom;
+	}
+	.blur{
+		
+		display: flex;
+		padding-top: 0.875rem;
+		text-align: center;
+		/*position: relative;*/
+	}
+	.header1{
+		flex: 1;
+	}
+	.header2{
+		flex: 2;
+		padding-bottom: 0.875rem;
+	}
+	.header3{
+		flex: 1;
+	}
+	.imgs1 img{
+		width: 4.125rem;
+		border-radius: 3rem;
+	}
+	.imgs3 img{
+		width: 3.875rem;
+	}
+	.imgs2{
+		font-size: 0.8125rem;
+		color: white;
+		/*margin: 2px 0px 0px 0px;*/
+	}
+	.num{
+		font-size: 0.8125rem;
+		color: #D4AC57;
+	}
+	.con{
+		font-size: 0.75rem;
+		color: #D4AC57;
+	}
+	.header3,.header1{
+		margin-top: 1rem;
+	}
+	.huiyuan2{
+		font-size: 0.75rem;
+		color: #D4AC57;
+	}
+	.imgs3{
+		line-height: 1;
+	}
+	.backg{
+		background: url(../image/huiyuanquanyibg.png) no-repeat;
+		background-size: 100%;
+		border-radius: 5px;
+		margin: 0 0.625rem;
+	}
+	/*.iconlis{
+		display: inline-block;
+		width: 20%;
+	}*/
+	.icons{
+		/*padding: 0.625rem 0.625rem;*/
+		font-size:0 ;
+		line-height: 0;
+		text-align: center;
+	}
+	.iicon,.name{
+		line-height: 1.5;
+		color: #857546;
+	}
+	.name{
+		font-size: 0.75rem;
+	}
+	.right{
+		/*position: fixed;*/
+		bottom: 0px;
+	}
+	.hyfl{
+		text-align: center;
+		font-size: 0.875rem;
+	}
+	.couponbg img{
+		width: 100%;
+	}
+	.couponbg{
+		
+	}
+	
+	.coup1,.coup2{
+		background: url(../image/youhuiquanbg.png) no-repeat center;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+	}
+	.coup3{
+		background: url(../image/youhuiquanbg1.png) no-repeat center;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+	}
+	
+	.coupl{
+		/*position: absolute;
+		left: 6%;*/
+		flex: 11;
+		text-indent: 1rem;
+		/*top: 13%;*/
+	}
+	.coupr{
+		flex: 2;
+		/*position: absolute;
+		top: 34%;
+    	left: 85%;*/
+	}
+	.coup{
+		margin: 0.625rem 0.625rem;
+		color: white;
+		font-size: 0.75rem;
+		padding: 3px 0;
+		line-height: 1.5;
+		/*padding: 10px 0;*/
+		position: relative;
+		/*margin: 0 auto;*/
+	}
+	.big{
+		font-size: 1rem;
+	}
+	.hyfl{
+		margin-top: 0.875rem;
+		margin-bottom: 0.75rem;
+	}
+
+

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* 标题 */
+.title{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+/* 油桶 */
+.bucket{
+    width:180px;
+    height: 242px;
+    margin: 0 auto;
+    /*position: fixed;*/
+    top: 20%;
+    left: -190px;
+    right: -190px;
+    
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    color: #f5d74f;
+    text-align: center;
+}
+
+.bucketTxt{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: 1.5rem;
+
+
+    border-bottom: 1px solid #444;
+    padding: 5px;
+    transform: scale(0.90);/*字体小于12px*/
+    transform-origin:0 0;
+
+    -ms-transform: scale(0.90);         /* IE 9 */
+    -ms-transform-origin:0 0;       /* IE 9 */
+
+    -webkit-transform: scale(0.90); /* Safari 和 Chrome */
+    -webkit-transform-origin:0 0;   /* Safari 和 Chrome */
+
+    -moz-transform: scale(0.90);        /* Firefox */
+    -moz-transform-origin:0 0;      /* Firefox */
+
+    -o-transform: scale(0.90);      /* Opera */
+    -o-transform-origin:0 0;        /* Opera */
+    left: 0.4rem;
+}
+ .num{
+    color: #f5d74f;
+    font-size:35px;
+    position: relative;
+    top: 1.5rem;
+    
+}
+.btnImg{
+    width: 6rem;
+    position: relative;
+    top: 1.5rem;
+    left: 0.1rem;
+} 
+
+/* 剩余 */
+
+.surplus{
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration:underline;
+
+    /*position: fixed;*/
+    top: 60%;
+    width: 200px;
+    left: -200px;
+    right: -200px;
+}
+
+/* 提示 */
+.text{
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 0.8rem;
+    /*position: fixed;*/
+    bottom: 10px;
+    /* safari 浏览器不可选中   */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+     /* firefox 浏览器不可选中  */
+    -moz-user-select: none;
+     /* microsoft IE浏览器不可选中   */
+    -ms-user-select: none;
+     /* chrome 浏览器不可选中  */
+    user-select: none;
+}
+.text>p{
+    margin-top: 6px;
+    color: white;
+}
+
+.img{
+    width: 55%;
+    max-width: 280px;
+
+}
+.mui-content{position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-position: center;background-size: 100% 100%;background-repeat: no-repeat;
+  	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ 
+  	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ 
+  	display: -ms-flexbox; /* TWEENER - IE 10 */ 
+  	display: -webkit-flex; /* NEW - Chrome */ 
+  	display: flex;
+  	-webkit-flex-direction:column;
+	flex-direction:column;
+	-webkit-justify-content: space-around; /* Safari 6.1+ */
+	justify-content: space-around;
+	padding-top: 25%;
+}

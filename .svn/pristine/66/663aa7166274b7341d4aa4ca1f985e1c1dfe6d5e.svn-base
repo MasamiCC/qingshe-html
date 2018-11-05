@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账号管理</title>
+    <!--引入css-->
+    <link rel="stylesheet" href="../static/css/layer.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+
+<body>
+    <!--头部-->
+    <div class="lay_header">
+        <div class="navbar-custom-menu">
+            <span class="custom_icon"></span>
+            <span class="custom_name">管理员</span>
+            <!--操作区域-->
+            <div class="custom_op">
+                <a>修改密码</a>
+                <a>退出登录</a>
+            </div>
+        </div>
+    </div>
+
+    <!--左侧-->
+    <div class="lay_left">
+        <a class="logo">
+            <img src="../static/img/logo.png" />
+        </a>
+        <!--左侧菜单-->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#">
+                    <i class="sidebar_icon icon_1"></i>
+                    <span class="sidebar_category">信息总览</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sidebar_icon icon_2"></i>
+                    <span class="sidebar_category">团队管理</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sidebar_icon icon_3"></i>
+                    <span class="sidebar_category">签约商户</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sidebar_icon icon_4"></i>
+                    <span class="sidebar_category">黑卡经纪人</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+                    <i class="sidebar_icon icon_5"></i>
+                    <span class="sidebar_category">账号管理</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--主体内容区域-->
+    <div class="lay_body">
+        <div class="index_nav">
+            <div class="accout_nav">
+                <div class="nav_left">
+                    <img src="../static/img/account01.png" alt="">
+                    <span class="accout_num"><span>2</span>个</span>
+                </div>
+
+                <div class="nav_right">
+                    <span>账号类型:</span>
+                    <select id="itemlist">
+                        <option>区域一</option>
+                        <option>区域二</option>
+                        <option>区域三</option>
+                    </select>
+                    <input class="searchBox" placeholder="输入账号姓名进行搜索" type="text">
+                    <button>搜索</button>
+                    <button class="add_tenant">新建账号</button>
+                </div>
+            </div>
+
+            <ul class="account_list">
+                <li>
+                    <img class="account_list_img" src="../static/img/header_default.png" alt="">
+                    <p class="account_name">顾小白</p>
+                    <p class="account_address">黄山区</p>
+                    <p class="account_phone">17601525654</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border details_user"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../static/img/header_default.png" alt="">
+                    <p class="account_name">蓝金</p>
+                    <p class="account_phone">1349527951</p>
+                    <div class="account_menu">
+                        <p class="border user_details"><img src="../static/img/account02.png" alt=""> 查看详情</p>
+                        <p class="border change_user"><img src="../static/img/account03.png" alt=""> 修改信息</p>
+                        <p class="del_user"><img src="../static/img/account04.png" alt=""> 删除团队</p>
+                    </div>
+                </li>
+            </ul>
+             <!--分页-->
+				<div class="pagenation">
+					<ul>
+						<li class="pagenationactive">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>...</li>
+						<li>上页</li>
+						<li>下页</li>
+					</ul>
+				</div>
+				<!--分页-->
+        </div>
+
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/js/js-plugs.js"></script>
+        <script src="../static/js/layer.js"></script>
+        <script src="../js/common.js"></script>
+
+</body>
+
+</html>

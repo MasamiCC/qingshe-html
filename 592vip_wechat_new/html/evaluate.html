@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reply.css"/>
+		<style type="text/css">
+			*{
+				list-style: none;padding: 0;margin: 0;
+			}
+			#submit_btn{
+				background: #d4ac57;
+				border-color: #d4ac57;
+			}
+			.shop_detail_pj_item{
+	display: flex;padding-top: 10px;margin: 0 0.5em;
+}
+.shop_detail_pj_left{
+	flex: 1;
+	width: 60px;
+	max-width: 60px;
+	text-align: left;
+}
+.shop_detail_pj_left img{
+	max-width: 3rem;width: 3rem;height: 3rem;
+	border-radius: 3rem;
+}
+.shop_detail_pj_right{
+	flex: 2;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.pingjia{
+	font-size: 0.75rem;color: #666;
+}
+.user{
+	font-size: 0.75rem ;font-weight: 500;
+}
+.user_lev{
+	color: #ff9600;
+}
+.pingjia_time{
+	color: #999999;float: right;padding-right: 10px;font-weight: lighter;
+}
+.user_xinyu img{
+	width: 15px!important;padding: 1px;
+}
+.pingjia div{
+	font-size: 0;line-height: 0;
+}
+.pingjia img {
+    width: 24%!important;
+    display: inline-block;
+    margin: 5px 2px 3px 0;
+}
+.pingjia_huifu {
+    font-size: 0.75rem;
+    color: #666;
+    border-top: 1px dashed #ddd;
+    padding: 3px 0;
+}
+.pingjia_huifu p {
+    color: #999;
+    margin-bottom: 0;
+    text-align: right;
+}
+.shop_detail_pj_right {
+    padding-bottom: 0;
+}
+.mui-slider-item{
+	background: #fff;
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							全部（53）
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							带图（10）
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							评价低（9）
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group" style="background: #fff;">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper" >
+							    <div class="mui-scroll" id="pingjia_list_1">
+							        <!--这里放置真实显示的DOM内容-->
+							       <div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    		<div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    		<div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    		<div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+							    </div>
+							
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="scroll2">
+							<div class="mui-scroll" id="pingjia_list_2">
+							        <!--这里放置真实显示的DOM内容-->
+							       <div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    		<div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+							    </div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="scroll3">
+							<div class="mui-scroll" id="pingjia_list_3">
+							        <!--这里放置真实显示的DOM内容-->
+							       <div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+									<div class="shop_detail_pj_item">
+						    			<div class="shop_detail_pj_left">
+						    				<img src="../image/ali_pay.png"/>
+						    			</div>
+						    			<div class="shop_detail_pj_right">
+						    				<ul>
+						    					<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>
+						    					<li class="user_xinyu">
+						    						<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon1.png" alt="" />
+								    				<img src="../image/icon2.png" alt="" />
+						    					</li>
+						    					<li class="pingjia">
+						    						非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......
+						    						
+						    						<div>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    							<img src="../image/hotel_logo.png"/>
+						    						</div>
+						    					</li>
+						    					<li class="pingjia_huifu">
+						    						感谢您的回复，我们会尽快处理问题
+						    						<p>2017-01-12 12:00</p>
+						    						
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('#scroll1').pullRefresh({
+        up: {
+            contentrefresh: '正在加载...',
+            callback: pullupRefresh
+        }
+    });
+	mui('#scroll2').pullRefresh({
+        up: {
+            contentrefresh: '正在加载...',
+            callback: pullupRefresh
+        }
+    });
+    mui('#scroll3').pullRefresh({
+        up: {
+            contentrefresh: '正在加载...',
+            callback: pullupRefresh
+        }
+    });
+   
+    /**
+     * 下拉刷新具体业务实现
+     */
+    function pulldownRefresh() {
+        var self = this;
+        setTimeout(function() {
+            self.endPulldownToRefresh(); //refresh completed
+        }, 1500);
+    }
+    var count = 0;
+    /**
+     * 上拉加载具体业务实现
+     */
+    function pullupRefresh() {
+        var self = this;
+        var id=self.element.id;
+        
+        setTimeout(function() {
+        	loadMore(id)
+            self.endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+        }, 1500);
+    }
+    
+    function loadMore(id,data){
+    	var html='<div class="shop_detail_pj_item">'
+		    	+		'<div class="shop_detail_pj_left">'
+		    	+			'<img src="../image/ali_pay.png">'
+		    	+		'</div>'
+		    	+		'<div class="shop_detail_pj_right">'
+		    	+			'<ul>'
+		    	+				'<li class="user">李梓萌  <span class="user_lev"><i>V</i><small>1</small></span> <span class="pingjia_time">2017-03-21 15:56:25</span></li>'
+		    	+				'<li class="user_xinyu">'
+		    	+					'<img src="../image/icon1.png" alt="">'
+				+    				'<img src="../image/icon1.png" alt="">'
+				+    				'<img src="../image/icon1.png" alt="">'
+				+    				'<img src="../image/icon1.png" alt="">'
+				+    				'<img src="../image/icon2.png" alt="">'
+		    	+				'</li>'
+		    	+				'<li class="pingjia">'
+		    	+					'非常满意看起来感觉很好线条流畅用了感觉也很不错，不用再担心收到假币了，而且快递非常快，前一天下单第二天早上就收到......'
+		    	+					'<div>'
+		    	+						'<img src="../image/hotel_logo.png">'
+		    	+						'<img src="../image/hotel_logo.png">'
+		    	+						'<img src="../image/hotel_logo.png">'
+		    	+						'<img src="../image/hotel_logo.png">'
+		    	+					'</div>'
+		    	+				'</li>'
+		    	+				'<li class="pingjia_huifu">'
+		    	+					'感谢您的回复，我们会尽快处理问题'
+		    	+					'<p>2017-01-12 12:00</p>'
+		    	+				'</li>'
+		    	+			'</ul>'
+		    	+		'</div>'
+		    	+	'</div>'
+    	if (id=='scroll1') {
+    		$("#pingjia_list_1 .mui-block").before(html)
+    	}else if(id=='scroll2'){
+    		$("#pingjia_list_2 .mui-block").before(html)
+    	}else if(id=='scroll3'){
+    		$("#pingjia_list_3 .mui-block").before(html)
+    	}
+    	
+    	
+    }
+            
+</script>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.plus_sub_btn{
+				text-align: center;font-size: 0.875rem;
+			}
+			.plus_sub_btn button{
+				width: 80%;margin: 0.5rem auto;
+				padding: 0.3rem 0;
+				border-radius: 1rem;
+				background: #d1ac54;
+				border: 1px solid #d1ac54;
+				font-size: 0.875rem!important;
+			}
+			.plus_sub_btn button:active{
+				background: #a18030!important;
+				border: 1px solid #d1ac54!important;
+			}
+			.plus_sub_btn a,.plus_sub_btn a:hover{
+				color: #d1ac54;
+				text-decoration: none;
+				font-size: 0.75rem;
+			}
+			.othor_m{
+				margin-top: 0.5rem;
+			}
+			.othor_m input{
+				border: none;font-size: 0.8rem;
+			}
+			.quick_list{
+				font-size: 0.875rem;margin-top: 0!important;
+			}
+			.quick_list span{
+				font-size: 0.875rem;color: #999;line-height: 3;border-bottom: 1px solid #eee;display: block;
+				text-indent: 1rem;
+			}
+			.mui-table-view-cell{
+				padding: 0.3rem 0;
+			}
+			.mui-table-view-cell:after{
+				background-color: #ededed;
+			}
+			.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+				font-size: 1.5rem;color: #70c38e;
+			}
+			.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+				color: #70c38e;
+			}
+			.mui-title{
+				color: #d4ac57;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+		    <h1 class="mui-title">充值积分</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view quick_list" >
+				<span>快速购买</span>
+		        <li class="mui-table-view-cell">
+		             <div class="mui-input-row mui-checkbox ">
+			            <label>20000积分</label>
+			            <input name="Checkbox" type="checkbox" checked data-amount='20000'>
+			        </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-input-row mui-checkbox ">
+			            <label>100000积分</label>
+			            <input name="Checkbox" type="checkbox" data-amount='100000'>
+			        </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		             <div class="mui-input-row mui-checkbox ">
+			            <label>500000积分</label>
+			            <input name="Checkbox" type="checkbox" data-amount='500000'>
+			        </div>
+		        </li>
+		    </ul>
+		    <div class="mui-input-row othor_m">
+	            <input type="tel" placeholder="其他金额充值每次不得小于20000积分" >
+	        </div>
+	        <div class="plus_sub_btn">
+	        	<button type="button" class="mui-btn mui-btn-blue mui-btn-block">￥<span>2000.00</span>  立即充值</button>
+	        	<a href="plus_cz_sm.html">《轻奢点评积分充值说明》</a>
+	        </div>
+		    
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$(".quick_list input[type=checkbox]").each(function(){
+			$(this).bind({
+				'click':function(e){
+					var checked=$(this).is(":checked");
+					var amount=$(this).attr('data-amount');
+					console.log(checked)
+					if (checked) {
+						$(".quick_list input[type=checkbox]").removeAttr('checked');
+						$(this).prop({
+							'checked':'checked'
+						})
+						$(".othor_m input").val('')
+					}else{
+						amount=0;
+					}
+					$(".plus_sub_btn span").html(amount)
+				}
+			})
+		})
+		
+		$(".othor_m input").on('input',function(){
+			//console.log($(this).val())
+			var value=$(this).val();
+			var nvalue=value;
+			if (value.length>0) {
+				$(".quick_list input[type=checkbox]").removeAttr('checked');
+			}
+			if(isNaN(value)){
+				nvalue=value.substr(0,value.length-1);
+				$(this).val(nvalue)
+			}else{
+				if (value.length>10) {
+					nvalue=value.substr(0,10);
+					$(this).val(nvalue);
+				} 
+			}
+			$(".plus_sub_btn span").html(nvalue)
+		})
+	})
+</script>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<script src="../css/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.qr_btn{
+			    border: 1px solid #d4ac57;
+			    border-radius: 20px;
+			    padding: 4px 20px;
+			    font-size: 0.90rem;
+			    color: #fff;
+			    /*float: right;*/
+			    margin-right: 10px;
+			    line-height: 2;
+			    margin-top: 10px;
+			    background: #d4ac57;
+			    width: 100%;
+			}
+			li{
+				font-size: 0.95rem;color: #333;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.buy_item{
+				margin: 10px auto;
+			}
+			.buy_item li{
+				font-size: 0.875rem;
+			}
+			.pay_money {
+				margin-bottom: 0px!important;font-size: 0.75rem;
+				background: #eee!important;color: #bbb;border: none!important;
+				height: 33px!important;
+				padding: 5px 10px!important;
+				
+			}
+			.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+				padding-left: 25px;
+			}
+			.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{
+				left: 0;
+			}
+			input{
+				height: 30px;
+			}
+			.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+				font-size: 20px!important;top: 10px!important;
+				color: #d4ac57!important;
+			}
+			.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+				top: 7px;
+			}
+			#n_fee_m{
+				display: none;
+			}
+			.mui-bar-tab{
+				font-size: 0;line-height: 0;
+			}
+			#pay_type img{
+				vertical-align: middle;max-width: 1.5rem;margin-right: 0.5rem;width: 1.5rem;
+			}
+			.mui-table-view:before,.mui-table-view:after{
+				height: 0;
+			}
+			.mui-table-view-cell:first-child:after{
+				height: 0;
+			}
+			.shop_logo{
+				border-radius: 50px;width: 3rem;height: 3rem;
+			}
+			.mui-table-view-cell:first-child div{
+				font-weight: 500;font-size: 0.875rem;
+			}
+			#not:after{
+				height: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">买单</h1>
+		</header>-->
+		<div class="mui-content">
+		    <ul class="mui-table-view buy_item" >
+		    	<li class="mui-table-view-cell" style="text-align: center;">
+		    		<img src="../image/ali_pay.png" class="shop_logo"/>
+		    		<div class="">
+		    			江南厨房（测试）
+		    		</div>
+		    		<!--<svg class="icon" aria-hidden="true" style="height: 20px;width: 20px;vertical-align: bottom;margin-right: 5px;">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-dianpu"></use>
+                    </svg>江南厨房（测试）-->
+		    	</li>
+		        <li class="mui-table-view-cell">
+		            <a class="">
+		                <div class="mui-input-row">
+		                    <input type="number" placeholder="输入消费金额" class="pay_money" maxlength="6">
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell" style="padding: 0 0 0 15px;" id="not">
+	                <div class="mui-input-row mui-checkbox mui-left">
+	                  <label>不参与优惠的金额</label>
+	                  <input name="checkbox1" type="checkbox"  id="fee">
+	                </div>
+	                
+		        </li>
+		        <li class="mui-table-view-cell" id="n_fee_m" style="padding-top: 0;">
+		            <a class="" style="padding-top: 11px;">
+		                <div class="mui-input-row">
+		                    <input type="number" placeholder="请询问店家不参与优惠的金额" class="pay_money" maxlength="6">
+		                </div>
+		            </a>
+		        </li>
+		    </ul>
+		    <ul class="mui-table-view buy_item">
+	            <li class="mui-table-view-cell">
+	                <a class="" >
+	                     9.5折<span class="mui-pull-right personal_right" style="margin-right: 0;color: #d4ac57;">-￥30.00</span>
+	                </a>
+	            </li>
+	        </ul>
+	        
+	        <div class=" " style="width: 80%;margin: 0 auto;text-align: center;">
+	        	<button type="button" class="mui-btn mui-btn-blue  mui-btn-mini qr_btn " style="border-radius: 50px;">
+	        		<span>230.00</span>元，确认买单
+	        	</button>
+	        </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab" >
+			
+			<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jszb.android.app"><img src="../image/buy_banner.png" style="max-width: 100%;"/></a>
+			<span class="mui-icon mui-icon-close-filled " style="position: absolute;right: 0;top: 0;color:rgba(255,255,255,0.5);font-size: 25px;"></span>
+		</nav>
+		
+		
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	
+	$(function(){
+		$("#qr_btn").click(function(){
+			var val=$("#pay_money").val();
+			if (val) {
+				if (isNaN(val)) {
+					mui.alert('消费金额格式不对')
+				}else{
+					//
+				}
+			}else{
+				mui.alert('请输入消费金额')
+			}
+		})
+		$("#pay_money").on('input',function(){
+			var val=$(this).val(),total;
+			if (val=='') {
+				total="0";
+			}else{
+				if (isNaN(val)) {
+					val=val.substr(0,val.length-1);
+					total=val;
+				}else{
+					if (val.length>6) {
+						val=val.substr(0,6);
+					}
+					total=val;
+				}
+				$("#pay_money").val(val)
+			}
+			total=parseFloat(total);
+			$('.amount span').text(total.toFixed(2));
+		})
+		$('#fee').change(function(){
+			console.log($(this).is(':checked'))
+			var checked=$(this).is(':checked');
+			if (checked) {
+				$("#n_fee_m").slideDown()
+			} else{
+				$("#n_fee_m").slideUp()
+			}
+		})
+		$(".mui-icon-close-filled").on('tap',function(){
+			$('nav').remove()
+		})
+		
+		var browerType=BrowserType();
+		if (!browerType.isAliApp&&!browerType.isWechat) {
+			var html='<div class="mui-table-view" id="pay_type">'
+		            +    '<li class="mui-table-view-cell mui-checkbox">'
+		            +        '<label for="Checkbox1"><img src="../image/ali_pay.png"/>支付宝</label>'
+		            +        '<input name="Checkbox" type="checkbox" id="Checkbox1">'
+		            +    '</li>'
+		            +    '<li class="mui-table-view-cell mui-checkbox">'
+		            +        '<label for="Checkbox2"><img src="../image/wechat_pay.png"/>微信</label>'
+		            +        '<input name="Checkbox" type="checkbox" checked id="Checkbox2">'
+		            +    '</li>'
+		            +'</div>';
+		    $(".qr_btn").parent().before(html)
+		    chooseType()
+		}
+		console.log(browerType)
+	})
+	function BrowserType(){
+		var data={};
+		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+		data.isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+		data.isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
+		data.isEdge = userAgent.indexOf("Edge") > -1; //判断是否IE的Edge浏览器
+		data.isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
+		data.isWechat = userAgent.indexOf("MicroMessenger") > -1; //判断是否微信浏览器
+		data.isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器
+		data.isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器
+		data.isAliApp=userAgent.indexOf("AliApp") > -1//判断是否为支付宝浏览器
+		return data;
+	}
+	function chooseType(){
+//		$("#pay_type li").each(function(){
+//			$(this).bind({
+//				'tap':function(){
+//					$("#pay_type input[type=checkbox]").removeProp('checked');
+//					$(this).find('input[type=checkbox]').prop({
+//						checked:'checked'
+//					})
+//				}
+//			})
+//		})
+		$("input[name=Checkbox]").each(function(){
+			$(this).bind({
+				'click':function(){
+					var checked=$(this).prop('checked');
+					if (checked) {
+						$("input[name=Checkbox]").prop({
+							'checked':false,
+						})
+						$(this).prop({
+							'checked':true,
+						});
+					}
+				}
+			})
+		})
+	}
+</script>

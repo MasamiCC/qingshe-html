@@ -1,0 +1,96 @@
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body,.mui-content,.mui-bar{
+		background: #fff;
+	}
+	header .mui-title{
+		color: #d4ac57;
+		font-size: 1rem;
+	}
+	header .mui-icon-left-nav{
+		color: #666;
+	}
+	#mobile_div{
+		text-align: center;margin: 5px 0;
+	}
+	.yh_first_con{
+		margin: 0.375rem 0.25rem;
+		padding: 0.75rem;
+		background: #fff;
+	}
+	#mobile,#code{
+		background: none;border: none;
+		/*border-bottom: 1px solid #eee;*/
+		width: 80%;margin:0 auto;
+		border-radius: 0;
+		display: block;
+		/*margin-bottom: 5px;*/
+		font-size: 0.8rem;
+		width: 91%;
+		/*color: #ccc;*/
+	}
+	.send_code {
+	    position: absolute;
+	    right: 0.25rem;
+	    top: 0;
+	    color: #d4ac57;
+	    font-size: 0.8rem;
+	    line-height: 40px;
+	    /*padding-right: 40px;*/
+	    cursor: pointer;
+	}
+		::-webkit-input-placeholder { /* WebKit browsers */ 
+		color: #ccc; 
+		} 
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+		color: #ccc; 
+		} 
+		::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+		color: #ccc; 
+		} 
+		:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+		color: #ccc; 
+		} 
+		.mui-input-row label{
+			width: 9%;
+			text-align: center; 
+			padding: 11px 0px;
+		}
+		label img{
+			width: 0.75rem;
+		} 
+		.mui-input-row{
+			border-bottom: 1px solid #eee;
+			line-height: 38px;
+    		height: 38px;
+		}
+		.mui-bar-nav{
+			box-shadow:0 0 0;
+			border-bottom: 1px  solid #ddd;
+		}
+		.tips{
+			font-size: 0.75rem;
+			color: #666;
+			margin: 0.375rem 0.875rem;
+		}
+		.center span{
+			display: inline-block;
+		}
+		#step1_btn{
+			font-size: 0.875rem;
+			padding: 0.125rem 6.625rem;
+			background: #D1AC54;
+			border-radius: 50px;
+			color: white;
+		}
+		#step1_btn:hover,.jump:hover{
+			cursor: pointer;
+		}
+		.jump{
+			font-size: 0.875rem;
+			padding: 0.7rem 0rem;
+			color: #7D7D7D;
+		}
+		

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style type="text/css">
+			label{
+				text-align: right;
+			}
+			.do_div{
+				text-align: center;overflow: hidden;
+			}
+			input{
+				font-size: 0.9rem;
+			}
+			.do_btn{
+				margin: 10px auto;padding: 5px 0;width: 80%;background: #333333;color: #fff;display: block;
+				border-radius: 20px;
+				font-size: 1rem;
+				letter-spacing: 2px;
+			
+			}
+		</style>
+	</head>
+
+	<body>
+		<form class="mui-input-group">
+		    <div class="mui-input-row">
+		        <input type="text" class="mui-input-clear" placeholder="请输入昵称">
+		    </div>
+		    
+		</form>
+		<div class="do_div">
+		    	<span class="do_btn">保存</span>
+		    </div>
+		
+		
+	</body>
+
+</html>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('body').on('tap', '.mui-popover-action li>a', function() {
+			var a = this,
+				parent;
+			//根据点击按钮，反推当前是哪个actionsheet
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+			}
+			//关闭actionsheet
+			mui('#' + parent.id).popover('toggle');
+			info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
+		})
+</script>

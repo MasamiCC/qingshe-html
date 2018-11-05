@@ -1,0 +1,171 @@
+		*{
+			padding: 0;margin: 0
+		}
+		html{
+		    height: 100%;
+		}
+		body{
+		    /*display: flex;*/
+		    /*flex-direction: column;*/
+		    height: 100%;
+		    /*background: #333;*/
+		    /*background:#2A2D2E;*/
+		}
+		.header{
+		   /* 我们希望 header 采用固定的高度，只占用必须的空间 */
+		   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+		   /*flex: 0 0 auto;*/
+		  width: 100%;
+		   height: 180px;
+		   background:#4b4b4b ;
+		   /*position:relative;*/
+		   /*width: 100%;*/
+		   /*overflow: hidden;*/
+		}
+		.headre_img{
+			max-width: 1200px;width: 100%;
+			margin-left:125px;
+			/*margin: 0 auto;*/
+			height: 180px;
+			line-height:180px;
+			position: relative;
+		}
+		.header_right{
+			/*width: 100%;*/
+			/*display:inline-block;*/
+			/*float: right;*/
+			height:43px; 
+			line-height:43px;
+			position:absolute;
+		    top: 45px;
+		    right: -110px;
+		    text-align: center;
+		   
+		}
+		#pic2{
+			margin-left: -280px;
+			padding-top: 10px;
+		}
+		#cr1{
+			color: white;
+			font-size: 15px;
+		}
+		#cr2,#cr3{
+			color: #DBBC66;
+			font-size: 15px;
+		}
+		.main-content{
+		   /* 将 flex-grow 设置为1，该元素会占用全部可使用空间 
+		      而其他元素该属性值为0，因此不会得到多余的空间*/
+		   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+		   /*flex: 1 0 auto;*/
+		 background:#2A2D2E;
+		 height: 752px;
+		}
+		.login_form{
+			width: 335px;
+			height: 407px;
+			background: url(../img/login.png) no-repeat;
+			position: relative;
+			right: -880px;
+			top: -590px;
+	}
+	#u{
+		position: relative;
+		top:-53px
+		
+	}
+	.user,.pasw{
+		margin-left: 40px;
+	}
+	#pa{
+		position: relative;
+		top:-53px
+	}
+		.login_title{
+			line-height: 60px;
+			height:60px;
+			color:#555555;
+			font-weight:600;
+			font-size: 20px;
+		}
+		.user,.pasw{
+			width: 237px;
+			margin-top: 1px;
+			line-height: 39px;
+			height:39px;
+			outline: none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			/*border: 1px solid;*/
+			background: none;
+			font-size: 15px;
+		}
+		
+		.login_form li{
+			list-style: none;
+			line-height: 50px;
+			height:50px;
+			
+		}
+		#re,#pas{
+			text-decoration: none;
+		}
+		#pas{
+			color: #D88D23;
+			/*margin-top: 20px;*/
+		}
+		#re{
+			color: #FD4F4F;
+		}
+		.yan{
+			width: 190px;
+		}
+		#ya{
+			position: relative;
+			left: 100px;
+			top: 0px;
+		}
+		.login_title,.frm{
+			padding-left: 25px;
+		}
+		#login{
+			width: 280px;
+			background: #5C5C5C;
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+		}
+		.remember{
+			font-size: 15px;
+		}
+		.login_msg{
+			text-decoration: none;
+			line-height: 50px;
+			height:50px;
+			font-size: 15px;
+		}
+		.forget{
+			margin-left: 25px;
+		}
+		.re{
+			margin-left:65px;
+			}
+		.footer{
+		   /* 和 header 一样，footer 也采用固定高度*/
+		   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+		   /*flex: 0 0 auto;*/
+		   width: 100%;
+		   margin: 0 auto;
+		   text-align: center;color: #fff;
+		   background: #4b4b4b;
+		}
+		.foot{
+			font-size: 13px;font-weight: lighter;height: 40px;line-height: 40px
+		}
+		.content{
+			max-width: 1200px;margin: 0 auto;width: 100%;position: relative;
+		}

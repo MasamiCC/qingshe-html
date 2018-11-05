@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style type="text/css">
+			.personal_right{
+				margin-right: 20px;color: #999;font-size: 0.75rem;
+			}
+			.amount{
+				color: #d82828;font-size: 1.2rem;line-height: 50px;text-indent: 10px;
+			}
+			.amount small{
+				color: #999;
+			}
+			.qr_btn{
+			    border: 1px solid #d4ac57;
+			    border-radius: 20px;
+			    padding: 1px 13px;
+			    font-size: 0.75rem;
+			    color: #fff;
+			    /*float: right;*/
+			    margin-right: 10px;
+			    line-height: 2;
+			    margin-top: 10px;
+			    background: #d4ac57;
+			}
+			li{
+				font-size: 0.95rem;color: #333;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.buy_item{
+				margin: 10px auto;
+			}
+			.buy_item li{
+				font-size: 0.8rem;
+			}
+			#pay_money {
+				margin-bottom: 0;height: 35px;font-size: 0.9rem;line-height: 35px;
+				background: #eee;color: #bbb;border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <ul class="mui-table-view buy_item" >
+		        <li class="mui-table-view-cell">
+		            <a class="">
+		                <div class="mui-input-row">
+		                    <input type="number" placeholder="输入消费金额" id="pay_money" maxlength="6">
+		                </div>
+		            </a>
+		        </li>
+		    </ul>
+		    <ul class="mui-table-view buy_item">
+	            <li class="mui-table-view-cell">
+	                <a class="" >
+	                     支付方式<span class="mui-pull-right personal_right" style="margin-right: 0;">在线支付（默认）</span>
+	                </a>
+	            </li>
+	            
+	        </ul>
+		    <ul class="mui-table-view buy_item">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right ">
+	                   商家折扣券<span class="mui-pull-right personal_right">无可用</span>
+	                </a>
+	            </li>
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right" href="tickets_ky.html">
+	            活动优惠券<span class="mui-pull-right personal_right">暂无优惠</span>
+	                </a>
+	            </li>
+	        </ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab" >
+			<div class="mui-pull-left amount" >
+				￥<span>0.00</span> <small>优惠￥22.00</small>
+			</div>
+		    <span class="mui-pull-right qr_btn"  id="qr_btn">确认买单</span>
+		</nav>
+		
+		
+		
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	$(function(){
+		$("#qr_btn").click(function(){
+			var val=$("#pay_money").val();
+			if (val) {
+				if (isNaN(val)) {
+					mui.alert('消费金额格式不对')
+				}else{
+					//
+				}
+			}else{
+				mui.alert('请输入消费金额')
+			}
+		})
+		$("#pay_money").on('input',function(){
+			var val=$(this).val(),total;
+			if (val=='') {
+				total="0";
+			}else{
+				if (isNaN(val)) {
+					val=val.substr(0,val.length-1);
+					total=val;
+				}else{
+					if (val.length>6) {
+						val=val.substr(0,6);
+					}
+					total=val;
+				}
+				$("#pay_money").val(val)
+			}
+			total=parseFloat(total);
+			$('.amount span').text(total.toFixed(2));
+		})
+	})
+</script>

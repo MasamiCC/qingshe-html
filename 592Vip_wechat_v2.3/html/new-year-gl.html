@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			*{padding: 0;margin: 0;outline: none;list-style: none;text-align: center;}
+			body{background: #e84747;max-width: 640px;margin: 0 auto;}
+			.mui-content{background: none;margin-bottom: 2rem;}
+			.mui-content>div{font-size: 0;line-height: 0;overflow: hidden;letter-spacing: 0;position: relative;}
+			.mui-content>div img{
+				max-width: 100%;
+			}
+			.showbtn{
+				background: rgba(253,70,132,0.85);
+				font-size: 1.2rem;
+				position: absolute;
+				color: #fff;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				overflow: hidden;
+				width: 3.5rem;
+				bottom: 1rem;
+				z-index: 99;
+				height: 2rem;
+				border-radius: 2rem;
+				line-height: 1.6;
+			}
+			.showbtn span{margin-left: 15px;}
+			.showbtn span:after{
+				color: #fff;right: 5px;
+			}
+			.countDown{
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				bottom: 1.5rem;
+				width: 55%;
+				margin: 0 auto;
+				font-size: 1rem;
+				left: 0;
+				right: 0;
+				color: #fff;
+				height: 2rem;
+				line-height: 2rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="">
+		    	<img src="../image/newYear_gl_01.png"/>
+		    	<img src="../image/newYear_gl_05.png"/>
+		    </div>
+		    <div class="">
+		    	<img src="../image/newYear_gl_06.png"/>
+		    	<div class="countDown" id="countDown">
+		    		<!--36小时28分 后开启  -->
+		    	</div>
+		    </div>
+		    <div class="">
+		    	<img src="../image/newYear_gl_07.png"/>
+		    </div>
+		    <div class="">
+		    	<img src="../image/newYear_gl_08.png"/>
+		    	<div class="showbtn"  data-url='new-year.html'>
+		    		GO <span class="mui-navigate-right"></span>
+		    	</div>
+		    </div>
+		    <div class="">
+		    	<img src="../image/newYear_gl_09.png"/>
+		    </div>
+		    <div class="">
+		    	<img src="../image/newYear_gl_10.png"/>
+		    	<div class="showbtn" data-url='Christmas_year.html'>
+		    		GO <span class="mui-navigate-right"></span>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-content').on('tap','.showbtn',function(){
+		var url=this.getAttribute('data-url');
+		location.href=url;
+	})
+	var timer='';
+	window.onload=function(){
+		loadTime()
+		timer=setInterval(function(){
+			loadTime()
+		},5000)
+	}
+	function loadTime(){
+		var now=Date.parse(new Date())/1000;
+		var nBegin=1513526400;
+		var hours=parseInt((nBegin-now)/3600);
+		var mins=parseInt(parseInt((nBegin-now)%3600)/60);
+		document.getElementById("countDown").innerHTML=hours+'小时'+mins+'分 后开启'
+	}
+</script>

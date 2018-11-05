@@ -1,0 +1,56 @@
+.remind_item{
+    margin: 20px 15px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 1px 1px 3px 3px #ededed;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+.remind_all,body{
+	background: #fff;
+}
+.remind_item_icon_icon{
+	display: inline-block;
+	background: -moz-linear-gradient(top, #f8a120, #ffda2f);
+	background: -o-linear-gradient(top,#f8a120, #ffda2f);
+	background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#f8a120), to(#ffda2f));
+	/*padding: 4px 26px;*/
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 0.8125rem;
+	color: #fff;	
+	border-radius: 15px;
+}
+.remind_item_content{
+	font-size: 0.875rem;
+    color: #333;
+    margin: 10px 15px;
+    text-align: left;
+}
+.remind_item_time{
+	font-size: 0.75rem;
+	color: #666;
+	padding-top: 10px;
+}
+.remind_item_icon{
+	border-top: 1px solid #e6e6e6;
+	margin:0 25px;
+	padding-top: 10px;
+	text-align: right;
+}
+
+.remind_img img{
+	width: 30px;
+}
+.remind_img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.remind_item1 .remind_item_content{
+	text-align: center;
+}

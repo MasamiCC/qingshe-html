@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layer.css"/>
+		<!--<link rel="stylesheet" href="../css/share.css" type="text/css" />-->
+		<!--<link rel="stylesheet" href="../css/share.css">-->
+		<link rel="stylesheet" type="text/css" href="../css/business_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/business_share.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/jiathis_share.css"/>-->
+		<style type="text/css">
+			.pagination>li>a, .pagination>li>span{
+				color: #edb94a;
+				border: 0;
+				font-size: 18px;
+			}
+			 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+			 	color: #666;
+			 	border: 0;
+			 	background: none;
+			 } 
+			 .nav-tabs{
+			 	border: 0;
+			 }
+			 .nav-tabs>li>a{
+			 	line-height: 3;
+			 	border: 0;
+			 }
+			 .nav-tabs>li>a:hover{
+			 	background: none;
+			 	border: 0;
+			 }
+			 img {
+			    vertical-align: initial;
+			}
+			/*share*/
+			/*.weixin{
+				left: 0px!important;
+			    top: -62px!important;
+			}
+			*/
+			.swipercontainer2 .preview .arrow-right{
+				right:0;
+			}
+			.swipercontainer2 .preview .arrow-left{
+				left: 5px;
+			}
+			.social-share a{
+				margin: 6px 0 6px 0;
+			}
+			.shareout{
+				padding-left: 24px;
+				top: 58px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--head-->
+			<div class="top">
+				<div class="header">
+					<div class="maxwidth">
+						<div class="header_left">
+							<span class="address white">南通-开发区-星湖101</span><span class="switch">[切换]</span>
+						</div>
+						<div class="header_center">
+							<!--<img src="../imgs/qshead.png"/>-->
+							<span><img src="../imgs/qsdp1.png"/><img class="qsdp2" src="../imgs/qsdp2.png"/></span>
+							<span></span>
+						</div>
+						<div class="header_right">
+							<div>
+								<div class="login"><span class="white">登录</span>&nbsp;&nbsp;&nbsp;<span class="white">注册</span></div>
+								<div class="inp">
+									<div class="inp_div">
+										<input type="" name="" id="selectinput" value="" />
+										<img src="../imgs/select.png" style="width: 10%;"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transparent">
+					<div class="">
+					  <div class="transparent_left">
+						<ul class="ul">
+							<li class="lis active">首页</li>
+							<li class="lis">黑卡俱乐部</li>
+							<li class="lis">奢探</li>
+							<li class="lis">沙龙</li>
+							<li class="lis">慈善基金</li>
+							<li class="lis">轻奢资讯</li>
+						</ul>
+					 </div>
+					<div class="transparent_right">
+					 <!--<ul>-->
+					 	<!--<li class="type">-->
+					 		<div class="type">
+						 		<span>全部分类</span>
+								&nbsp;
+								<span><img src="../imgs/type.png"/></span>
+								<!--2017-08-28-->
+								<div class="nav" style="display: none;">
+									<ul class="lies">
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/movie.png"></span>&nbsp;
+													<span class="yellow">生活</span>
+													<span class="navright">
+														<img src="../imgs/right.png">
+													</span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">KTV</a></li>
+														<li><a href="Marchat_list.html">电影</a></li>
+														<li><a href="Marchat_list.html">电玩/游乐场</a></li>
+														<li><a href="Marchat_list.html">高档会所</a></li>
+														<li><a href="Marchat_list.html">棋牌</a></li>
+														<li><a href="Marchat_list.html">网咖</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/laihuicui.png"></span>&nbsp;<span class="yellow">美食</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">中餐</a></li>
+														<li><a href="Marchat_list.html">西餐</a></li>
+														<li><a href="Marchat_list.html">特色餐</a></li>
+														<li><a href="Marchat_list.html">自助餐</a></li>
+														<li><a href="Marchat_list.html">亚洲菜系</a></li>
+														<li><a href="Marchat_list.html">甜品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/hotel.png"></span>&nbsp;<span class="yellow">酒店</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">星级酒店</a></li>
+														<li><a href="Marchat_list.html">商务型</a></li>
+														<li><a href="Marchat_list.html">度假型</a></li>
+														<li><a href="Marchat_list.html">会议型</a></li>
+														<li><a href="Marchat_list.html">观光型</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/tourist.png"></span>&nbsp;<span class="yellow">旅游</span><span class="navright"><img src="../imgs/right.png"></span>
+													
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">商游</a></li>
+														<li><a href="Marchat_list.html">特色游</a></li>
+														<li><a href="Marchat_list.html">度假</a></li>
+														<li><a href="Marchat_list.html">温泉</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navlis">
+											<ul class="ul_bottom">
+												<li class="paddingli">
+													<span><img src="../imgs/shoe.png"></span>&nbsp;<span class="yellow">定制</span><span class="navright"><img src="../imgs/right.png"></span>
+												</li>
+												<li class="paddingli li2">
+													<ul class="inlineli">
+														<li><a href="Marchat_list.html">珠宝玉石</a></li>
+														<li><a href="Marchat_list.html">工艺品</a></li>
+														<li><a href="Marchat_list.html">服饰</a></li>
+														<li><a href="Marchat_list.html">出行</a></li>
+														<li><a href="Marchat_list.html">化妆品</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!--2017-08-28-->
+					 	</div>
+						<!--</li>-->
+					 <!--</ul>-->
+					</div>
+					</div>
+				</div>
+			</div>
+			<!--head-->
+			<!--center正文-->
+			<div class="center center_pad">
+				<div class="">
+					
+				<div class="center_title">
+					全部分类&nbsp;>&nbsp;美食&nbsp;>&nbsp;中餐
+				</div>
+				<div class="center_middle">
+					<!--part1 left-->
+					<div class="center_middle_left">
+						 <div class="center_middle_left_inline">
+							<div class="center_middle_title borderbotm">
+								<div class="center_middle_title_left marb head">
+									<div class="center_middle_title_left_left">
+										<div class="center_middle_title_left_lefticon ">
+											<span class="shop_img"><img src="../imgs/business_touxiang.png"/></span>
+										</div>
+									</div>
+									<div class="center_middle_title_left_right">
+										<div class="center_middle_title_left_righticon">
+										   <div class="business_title marginbom">1921法式铁板烧（星湖店）</div>
+										   <div class="shop_star" style="margin-bottom: 5px;" data-score="2">
+										   	
+										   </div>
+										   <div class="">评分：<span class="biggoldfont">4.5分</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="center_middle_title_right middle shoucang_icon">
+									<div class="collect scicon" id="collect">
+										  <div class=""><i class="fa fa-star-o collectimg" aria-hidden="true"></i></div>
+										  <div class="shoucang">
+										  	收藏
+										  </div>
+									</div>
+								  	<div class="scicon fenx">
+										  <div id="socialShare"><img src="../imgs/share.png"/></div>
+										  <div class="">
+										  	分享
+										  </div>
+										  <div class="shareout" style="">
+										  	<div class="bdsharebuttonbox" data-tag="share_1">
+										  		<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+										  		<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+										  		<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+										  		<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+										  		<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+												<!--<a class="bds_mshare" data-cmd="mshare"></a>
+												<a class="bds_qzone" data-cmd="qzone" href="#"></a>
+												<a class="bds_tsina" data-cmd="tsina"></a>
+												<a class="bds_baidu" data-cmd="baidu"></a>
+												<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>-->
+												<!--<a class="bds_douban" data-cmd="douban"></a>-->
+											</div>
+												<ol>
+												    <!--<li class="row">
+												    	<div id="share-2"></div>
+												 	</li>-->
+												    <!--<li class="row">
+												     	<div id="share-1"></div>
+												   	</li>-->
+												</ol>	
+										 </div>
+									</div>
+								</div>
+							</div>
+							<div class="center_middle_title borderbotm part1_top">
+								<div class="center_middle_title_left lineheg">
+									  <div class="">
+										  <div class="">地址：开发区新开南路星湖广场101广场2号楼118-1&nbsp;&nbsp;<span class="lookmap" id="">查看地图</span></div>
+										   <div class="" style="">
+											 	 电话：0513-88888888
+										   </div>
+										  <div class="">营业时间：09:00-12:00 / 13:00-18:00&nbsp;&nbsp;<span class="gold">营业中</span></div>
+									  </div>
+								</div>
+							</div>
+							<div class="center_middle_title paddtop iconstop">
+								<div class="center_middle_title_left linehegt inlinediv">
+									 <div class="icons">
+									 	<div class="iconstop paddle">
+									 		<i class="iconfont icon-diandan"></i>
+									 	</div>
+									 	<div class="">
+									 		购买
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="iconstop " style="padding-left: 8px;">
+									 		<i class="iconfont icon-yixihu"></i>
+									 	</div>
+									 	<div class="" >
+									 		易洗护
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="marginbom8 paddle">
+									 		<img src="../imgs/yuyue.png"/>
+									 	</div>
+									 	<div class="">
+									 		预约
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="marginbom8 paddle">
+									 		<img src="../imgs/waimai.png"/>
+									 	</div>
+									 	<div class="">
+									 		外卖
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="iconstop paddle">
+									 		<i class="iconfont icon-dingfang"></i>
+									 	</div>
+									 	<div class="">
+									 		订房
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="iconstop paddle">
+									 		<i class="iconfont icon-dingzhi2"></i>
+									 	</div>
+									 	<div class="">
+									 		定制
+									 	</div>
+									 </div>
+									 <div class="icons">
+									 	<div class="iconstop paddle">
+									 		<i class="iconfont icon-lvyou1"></i>
+									 	</div>
+									 	<div class="">
+									 		旅游
+									 	</div>
+									 </div>
+								</div>
+							</div>
+						  </div>	
+					</div>
+					<!--part1 left-->
+					<!--part1 right-->
+					<div class="center_middle_right">
+						<!--<div class="center_middle_title ">-->
+							<!--<div class="">-->
+							<!--</div>-->
+						<!--</div>-->
+						<div class="swipercontainer2">
+									
+							<div class="pc-slide">
+										<div class="view">
+											<div class="swiper-container">
+												<!--<a class="arrow-left" href="#"></a>
+												<a class="arrow-right" href="#"></a>-->
+												<div class="swiper-wrapper">
+													<div class="swiper-slide bigpic">
+														<a href="javascript:void(0);" ><img src="https://www.592vip.com:91/shop/10283/5f338c3a-2d2d-47fc-a560-7423fdd07cc8.jpg" alt=""></a>
+													</div>
+													<div class="swiper-slide bigpic">
+														<a href="javascript:void(0);" ><img src="https://www.592vip.com:91/shop/10283/8402a8a9-8b94-42a5-a3b2-c2d451d8cb9e.jpg" alt=""></a>
+													</div>
+													<div class="swiper-slide bigpic">
+														<a href="javascript:void(0);" ><img src="https://www.592vip.com:91/shop/10283/2973fa46-a9e2-4106-9322-2e735c3ecd58.jpg" alt=""></a>
+													</div>
+													<div class="swiper-slide bigpic">
+														<a href="" ><img src="../imgs/Benefits_4.png" alt=""></a>
+													</div>
+													<div class="swiper-slide bigpic">
+														<a href="javascript:void(0);" ><img src="../imgs/Benefits_5.png" alt=""></a>
+													</div>
+													<div class="swiper-slide bigpic">
+														<a href="javascript:void(0);" ><img src="../imgs/Benefits_6.png" alt=""></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="preview">
+											<a class="arrow-left" href="#"></a>
+											<a class="arrow-right" href="#"></a>
+											<div class="swiper-container">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide smallpic active-nav">
+														<img src="https://www.592vip.com:91/shop/10283/5f338c3a-2d2d-47fc-a560-7423fdd07cc8.jpg" alt="">
+													</div>
+													<div class="swiper-slide smallpic">
+														<img src="https://www.592vip.com:91/shop/10283/8402a8a9-8b94-42a5-a3b2-c2d451d8cb9e.jpg" alt="">
+													</div>
+													<div class="swiper-slide smallpic">
+														<img src="https://www.592vip.com:91/shop/10283/2973fa46-a9e2-4106-9322-2e735c3ecd58.jpg" alt="">
+													</div>
+													<div class="swiper-slide smallpic">
+														<img src="../imgs/Benefits_4.png" alt="">
+													</div>
+													<div class="swiper-slide smallpic">
+														<img src="../imgs/Benefits_5.png" alt="">
+													</div>
+													<div class="swiper-slide smallpic slide6">
+														<img src="../imgs/Benefits_6.png" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							  </div>
+							  
+							  
+					</div>
+					<!--part1 right-->
+				
+			 </div>
+		<!--part2-->
+			<div class="part2 margintop ">
+				<div class="part2left">
+					<!--part2 left-->
+					<!--优惠券一排显示-->
+					<div class="part2leftcon coupon_part2 marginbom">
+						<div class="coupon_part2_lef">
+							<div class="coupon_part2_lef_con">
+								<div class="coupon borerright padright20 marginright20">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<img src="../imgs/coupondab.png"/>
+										</div>
+									</div>
+									<div class="coupon_right paddtop9 gold">
+										领取优惠券
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="coupon_part2_right">
+							<div class="coupon_part2_right_con">
+								<div class="coupon ">
+								<div class="coupon_lef">
+									<div class="coupon_lef_con marginright10">
+										<div class="spanicons">
+											赠
+										</div>
+									</div>
+								</div>
+								<div class="coupon_right">
+									消费满20000赠送保时捷敞篷车一辆
+								</div>
+								</div>
+								<div class="coupon padleft10 ">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons zhe">
+												折
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+										买单享9折优惠
+									</div>
+								</div>
+								<div class="coupon padleft10">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons quan">
+												券
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+											可领满200减20券一张
+									</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+					 <!--优惠券一排显示-->
+					 <!--优惠券两排显示-->
+					 <div class="part2leftcon marginbom coupon_part2">
+						<div class="coupon_part2_lef">
+							<div class="coupon_part2_lef_con">
+								<div class="coupon borerright padright20 ">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<img src="../imgs/coupondab.png"/>
+										</div>
+									</div>
+									<div class="coupon_right paddtop9 gold">
+										领取优惠券
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="coupon_part2_right">
+							<div class="coupon_part2_right_con">
+								<div class="coupon ">
+								<div class="coupon_lef">
+									<div class="coupon_lef_con marginright10">
+										<div class="spanicons">
+											赠
+										</div>
+									</div>
+								</div>
+								<div class="coupon_right">
+									消费满20000赠送保时捷敞篷车一辆
+								</div>
+								</div>
+								<div class="coupon padleft10 ">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons zhe">
+												折
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+										买单享9折优惠
+									</div>
+								</div>
+								<div class="coupon padleft10">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons quan">
+												券
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+											可领满200减20券一张
+									</div>
+								</div>
+								<div class="coupon padleft10">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons mai">
+												买
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+											买单活动
+									</div>
+								</div>
+								<div class="coupon padleft10">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons hui">
+												会
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+											会员享受8.8折优惠
+									</div>
+								</div>
+								<div class="coupon padleft10">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons jian">
+												减
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+											满100元减20元
+									</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+					 <!--优惠券两排显示-->
+					 <!--无优惠券-->
+					 <div class="part2leftcon  coupon_part2 marginbom">
+						<div class="coupon_part2_lef">
+							<div class="coupon_part2_lef_con">
+								<div class="coupon borerright padright20 marginright20">
+									<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<img src="../imgs/coupondisab.png"/>
+										</div>
+									</div>
+									<div class="coupon_right paddtop9 grey9">
+										领取优惠券
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="coupon_part2_right">
+							<div class="coupon_part2_right_con">
+								<div class="coupon padright20 grey9">
+									<!--<div class="coupon_lef">
+										<div class="coupon_lef_con marginright10">
+											<div class="spanicons">
+												赠
+											</div>
+										</div>
+									</div>
+									<div class="coupon_right">
+										消费满20000赠送保时捷敞篷车一辆
+									</div>-->
+									<div class="">
+										该商家暂无优惠活动
+									</div>
+									
+								</div>
+								
+								
+							</div>
+						</div>
+					 </div>
+					 <!--无优惠券-->
+					<div class="part2leftcon  alink marginbom">
+						<div class="recommend_title">店铺推荐</div>
+						<div class="recommend">
+						<div class="rec">
+							<a href="">
+								<div class="rec_left">
+									<div class="rec_left_con">
+										<img src="../imgs/rec.png"/>
+									</div>
+								</div>
+								<div class="rec_right">
+									<div class="rec_right_title">
+										黑椒牛排
+									</div>
+									<div class="grey">
+										<span>月售 12份</span>&nbsp;&nbsp;<span>好评率 100%</span>
+									</div>
+									<div class="balckcard_only">
+										黑卡专享会员
+									</div>
+									<div class="">
+										<span class="line_through old_price">￥3600</span><span class="biggoldfont">￥400.00</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rec">
+							<a href="">
+								<div class="rec_left">
+									<div class="rec_left_con">
+										<img src="../imgs/rec.png"/>
+									</div>
+								</div>
+								<div class="rec_right">
+									<div class="rec_right_title">
+										黑椒牛排
+									</div>
+									<div class="grey">
+										<span>月售 12份</span>&nbsp;&nbsp;<span>好评率 100%</span>
+									</div>
+									<div class="balckcard_only" style="font-size: 13px;color: #FBD585;background: #323232;border-radius: 6px;display: inline-block;padding: 1px 10px;margin: 3px 0;">
+										黑卡专享会员
+									</div>
+									<div class="line_through">
+										<span>原价</span>&nbsp;&nbsp;<span>￥500.00</span>	 
+									</div>
+									<div class="">
+										<span>折后价 </span>&nbsp;&nbsp;<span class="biggoldfont">￥400.00</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rec">
+							<a href="">
+								<div class="rec_left">
+									<div class="rec_left_con">
+										<img src="../imgs/rec.png"/>
+									</div>
+								</div>
+								<div class="rec_right">
+									<div class="rec_right_title">
+										黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排黑椒牛排
+									</div>
+									<div class="grey">
+										<span>月售 12份</span>&nbsp;&nbsp;<span>好评率 100%</span>
+									</div>
+									<div class="line_through mt">
+										<span>原价</span>&nbsp;&nbsp;<span>￥500.00</span>	 
+									</div>
+									<div class="">
+										<span>折后价 </span>&nbsp;&nbsp;<span class="biggoldfont">￥400.00</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rec">
+							<a href="">
+								<div class="rec_left">
+									<div class="rec_left_con">
+										<img src="../imgs/rec.png"/>
+									</div>
+								</div>
+								<div class="rec_right">
+									<div class="rec_right_title">
+										黑椒牛排
+									</div>
+									<div class="grey">
+										<span>月售 12份</span>&nbsp;&nbsp;<span>好评率 100%</span>
+									</div>
+									<div class="line_through mt">
+										<span>原价</span>&nbsp;&nbsp;<span>￥500.00</span>	 
+									</div>
+									<div class="">
+										<span>折后价 </span>&nbsp;&nbsp;<span class="biggoldfont">￥400.00</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					 </div>
+					</div>
+					<div class="part2leftcon margintop comt">
+						<div class="recommend_title">评价</div>
+						<div class="p_icons martop">
+							<ul class="nav nav-tabs">
+								<li  class="active"><a data-toggle="pill" href="#total"><span class="p_icon pactive">全部(5000)</span></a></li>
+								<li><a data-toggle="pill" href="#good"><span class="p_icon">好评(4500)</span></a></li>
+								<li><a data-toggle="pill" href="#bad"><span class="p_icon">差评(500)</span></a></li>
+								<li><a data-toggle="pill" href="#havepics"><span class="p_icon">有图(1500)</span></a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+								<div class="tab-pane fade in active" id="total">
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="3">
+													
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+													
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="4">
+													
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="tab-pane" id="good">
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="4">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="tab-pane" id="bad">
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="3">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="tab-pane" id="havepics">
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="5">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment martop">
+										<div class="comment_left">
+											<div class="comment_left_con">
+												<div class="">
+													<span class="comment_detail1_span1"><img src="../imgs/user2.png"/></span>
+												</div>
+											</div>
+										</div>
+										<div class="comment_right">
+											<div class="comment_right_con borderbotm">
+												<div class="comment_detail2">
+													福禄小金刚
+												</div>
+												<div class="comment_detail2 margintop com_score" data-score="4">
+												</div>
+												<div class="comment_detail3">
+													店里到7号以前都有活动，四个人就是可以对折的，可惜我们是三个人，只能用美团的划算。二百多的就只能用两张券，哪怕是290也是用两张，其余90只能现金也不能再团一张抵用。味道还行吧，但是里面真的是太呛了，一个劲打喷嚏咳嗽，吃完感觉像是重感冒
+												</div>
+												<div class="comment_detail4 inline_container">
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp1.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp2.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp3.png"/>
+													</div>
+													<div class="comment_detail4_pic">
+														<img src="../imgs/comp4.png" />
+													</div>
+												</div>
+												<div class="comment_detail5 gold">
+													商家回复：谢谢惠顾
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+						
+						<div class="more">
+							<div class="">
+									<ul class="pagination">
+									    <li><a href="#">&laquo;</a></li>
+									    <li><a href="#">1</a></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li><a href="#">&raquo;</a></li>
+									</ul>
+							</div>
+						</div>
+					</div>
+					<!--part2 left-->
+				</div>
+				<div class="part2right alink">
+					<div class="part2rightcon middle">
+						<div class="">
+							<!--<div class="marb"></div>-->
+							<div class="marb ellipsis">1921法式铁板烧（星湖店）1921法式铁板烧（星湖店）1921法式铁板烧（星湖店）</div>
+							<div class="marginbom"><img src="../imgs/vedio.png"/></div>
+							<div class="tet_left iconstop part2top_con">
+								铁板烧的名气来自它的亲切感，由西式用餐环境、法式特色口味、到中式餐具、贴心服务，都令人感到舒适。走进凯萨，大厅的现代气息、厅廊吊灯、时尚温馨的座椅、明快洁净的大理石台面，使人感受一种潮流、一种尊贵。
+							</div>
+						</div>
+					</div>
+					<div class="part2rightcon margintop middle">
+						<div class="">
+							<div class="recommend_title marginbom2">为您推荐</div>
+							<div class="">
+								<a href="">
+									<div class="relat marginbom">
+										<img src="../imgs/noddle.png"/>
+										<div class="score">
+								  			<ul>
+								  				<li class="score1">评分</li>
+								  				<li class="score2">4.5</li>
+								  			</ul>
+								  		</div>
+									</div>
+									<div class="tet_left rec_right_title marginbom" >
+										1921法式铁板烧（星湖店）1921法式铁板烧（星湖店）1921法式铁板烧（星湖店）1921法式铁板烧（星湖店）
+									</div>
+									<div class="tet_left txt_con txt_concon">
+										地址：开发区开发区开发区新开南路星湖广场101广场2号 楼118-1 
+									</div>
+									<div class="tet_left txt_con marginbom">
+										1km / 西餐
+									</div>
+								</a>
+							</div>
+							<div class="">
+								<a href="">
+									<div class="relat marginbom">
+										<img src="../imgs/noddle.png"/>
+										<div class="score">
+								  			<ul>
+								  				<li class="score1">评分</li>
+								  				<li class="score2">4.5</li>
+								  			</ul>
+								  		</div>
+									</div>
+									<div class="tet_left rec_right_title marginbom" >
+										1921法式铁板烧（星湖店）
+									</div>
+									<div class="tet_left txt_con txt_concon">
+										地址：开发区开发区开发区新开南路星湖广场101广场2号 楼118-1 
+									</div>
+									<div class="tet_left txt_con marginbom">
+										1km / 西餐
+									</div>
+								</a>
+							</div>
+							<div class="">
+								<a href="">
+									<div class="relat marginbom">
+										<img src="../imgs/noddle.png"/>
+										<div class="score">
+								  			<ul>
+								  				<li class="score1">评分</li>
+								  				<li class="score2">4.5</li>
+								  			</ul>
+								  		</div>
+									</div>
+									<div class="tet_left rec_right_title marginbom" >
+										1921法式铁板烧（星湖店）
+									</div>
+									<div class="tet_left txt_con txt_concon">
+										地址：开发区开发区开发区新开南路星湖广场101广场2号 楼118-1 
+									</div>
+									<div class="tet_left txt_con marginbom">
+										1km / 西餐
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		<!--part2-->
+			</div>
+		   </div>
+			<!--center正文-->
+			
+			<!--footer-->
+			<div class="footer">
+			<!--footer-help-->
+			<div class="footer_lcd">
+				<div class="footer_help">
+					<div class="float_left">
+						<ul class="footer_item">
+							<span>
+								新手入门  
+							</span>
+							<li>购物流程 </li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>常见问题</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								支付方式
+							</span>
+							<li>微信支付</li>
+							<li>网银支付</li>
+							<li>支付宝支付</li>
+						</ul>
+						<ul class="footer_item">
+							<span>
+								商户合作
+							</span>
+							<li>商家入驻</li>
+							<li>区域代理</li>
+							<li>平台规则</li>
+							<li>联系客服</li>
+						</ul>
+					</div>
+					<div class="float_right">
+						<ul>
+							<li class="erm_li">
+								APP更优惠 <br />
+								<img src="../imgs/app.png" alt="" />
+							</li>
+							<li class="erm_li">
+								微信服务号 <br />
+								<img src="../imgs/592vipma.png" alt="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear">
+				</div>
+				<div class="" style="margin-top: 33px;">
+					<div class="footer_rz">
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+						<img src="../imgs/kexin.png" alt="" />
+						<img src="../imgs/ypcx.png" alt="" />
+					</div>
+				</div>
+				<p class="footer_copyRight">
+					<span>
+						苏ICP备15038685号-2  增值电信业务经营许可证：苏B2-20160092  电子邮箱 qingshe@592vip.top<br/>
+							COPYRIGHT 2016-2017 592VIP. all rights reserved.
+					</span>
+				</p>
+		</div>
+		</div>
+			<!--footer-->
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+	<script type="text/javascript" src="../js/business_detail.js"></script>
+	<script type="text/javascript" src="../js/layer/layer.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/share.js" type="text/javascript"></script>-->
+	<script src="../js/idangerous.swiper.min.js" type="text/javascript"></script>
+	<script src="../js/baidusharenew.js" type="text/javascript"></script>
+	<!--<script src="../js/jquery.share.min.js" type="text/javascript"></script>-->
+</html>
+<script>
+    var viewSwiper = new Swiper('.view .swiper-container', {
+	onSlideChangeStart: function() {
+		updateNavPosition()
+	},
+	onInit: function(swiper){
+      //Swiper初始化了
+      loadPic()
+      //alert(swiper.activeIndex);//提示Swiper的当前索引
+    }
+})
+
+$('.view .arrow-left,.preview .arrow-left').on('click', function(e) {
+	e.preventDefault()
+	if (viewSwiper.activeIndex == 0) {
+		viewSwiper.swipeTo(viewSwiper.slides.length - 1, 1000);
+		return
+	}
+	viewSwiper.swipePrev()
+})
+$('.view .arrow-right,.preview .arrow-right').on('click', function(e) {
+	e.preventDefault()
+	if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
+		viewSwiper.swipeTo(0, 1000);
+		return
+	}
+	viewSwiper.swipeNext()
+})
+
+var previewSwiper = new Swiper('.preview .swiper-container', {
+	visibilityFullFit: true,
+	slidesPerView: 'auto',
+	onlyExternal: true,
+	onSlideClick: function() {
+		viewSwiper.swipeTo(previewSwiper.clickedSlideIndex)
+	}
+})
+
+function updateNavPosition() {
+		$('.preview .active-nav').removeClass('active-nav')
+		var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
+		if (!activeNav.hasClass('swiper-slide-visible')) {
+			if (activeNav.index() > previewSwiper.activeIndex) {
+				var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
+				previewSwiper.swipeTo(activeNav.index() - thumbsPerNav)
+			} else {
+				previewSwiper.swipeTo(activeNav.index())
+			}
+		}
+	}
+
+
+//分享
+
+
+
+window._bd_share_config={
+	"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},
+	"share":{},"image":{"viewList":["qzone","tsina","weixin","sqq","douban"],
+	"viewText":"分享到：","viewSize":"24"},
+	"selectShare":{"bdContainerClass":null,
+	"bdSelectMiniList":["qzone","tsina","weixin","sqq","douban"]}};
+
+
+//分享
+
+
+$(function(){
+	var w=$('.swiper-container').width();
+	console.log(w)
+	$('.bigpic').css({
+		'height':w*0.75
+	})
+})
+function loadPic(){
+	var w=$('.swiper-container').width();
+	console.log(w)
+//	$('.bigpic').css({
+//		'height':w*0.6
+//	})
+	$('.swiper-wrapper').css({
+		'height':w*0.58
+	})
+}
+</script>

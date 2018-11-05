@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/monthDetail.css"/>
+		<style type="text/css">
+			#pullrefresh{top:150px}
+			.detail_item{
+			    padding-right: 8px!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		    <div class="detail_header">
+		    	<img src="../image/monthdetail_banner.png"/>
+		    	<div class="">
+		    		<span class="year">2017</span>
+		    		<span class="month">12月</span>
+		    	</div>
+		    </div>
+	    	<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell  detail_item">
+		    	           <div class="detail_type">
+		    	           		<span>
+		    	           			<img src="../image/lovedetail_pingtai.png"/>
+		    	           		</span>
+		    	           </div>
+		    	           <div class="detail_con">
+		    	           		平台消费
+		    	           		<span>2017-11-01</span>
+		    	           </div>
+		    	           <div class="detail_amount">
+		    	           	275.00 <small>元</small>
+		    	           </div>
+		    	        </li>
+					</ul>
+				</div>
+			</div>
+		    
+		    <!--<div class="">
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell  detail_item">
+		    	           <div class="detail_type">
+		    	           		<span>
+		    	           			<img src="../image/lovedetail_pingtai.png"/>
+		    	           		</span>
+		    	           </div>
+		    	           <div class="detail_con">
+		    	           		平台消费
+		    	           		<span>2017-11-01</span>
+		    	           </div>
+		    	           <div class="detail_amount">
+		    	           	275.00 <small>元</small>
+		    	           </div>
+		    	        </li>
+		    	       <li class="mui-table-view-cell detail_item">
+		    	           <div class="detail_type">
+		    	           		<span>
+		    	           			<img src="../image/monthdetail_love.png"/>
+		    	           		</span>
+		    	           </div>
+		    	           <div class="detail_con">
+		    	           		爱心捐赠
+		    	           		<span>2017-11-01</span>
+		    	           </div>
+		    	           <div class="detail_amount">
+		    	           	275.00 <small>元</small>
+		    	           </div>
+		    	        </li>
+		    	        <li class="mui-table-view-cell detail_item">
+		    	           <div class="detail_type">
+		    	           		<span>
+		    	           			<img src="../image/monthdetail_love.png"/>
+		    	           		</span>
+		    	           </div>
+		    	           <div class="detail_con">
+		    	           		爱心捐赠
+		    	           		<span>2017-11-01</span>
+		    	           </div>
+		    	           <div class="detail_amount">
+		    	           	275.00 <small>元</small>
+		    	           </div>
+		    	        </li>
+		    	    </ul>
+		    	    <div class="no_more_data">
+		    	    	<span>没有更多啦</span>
+		    	    </div>
+		    </div>-->
+		</div>
+	</body>
+
+</html>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh,
+						auto:true
+					}
+				}
+			});
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 2; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell detail_item';
+						li.innerHTML='<div class="detail_type">'
+					    	        +   		'<span>'
+					    	        +   			'<img src="../image/monthdetail_love.png"/>'
+					    	        +   		'</span>'
+					    	        +   '</div>'
+					    	        +   '<div class="detail_con">'
+					    	        +   		'爱心捐赠'
+					    	        +   		'<span>2017-11-01</span>'
+					    	        +   '</div>'
+					    	        +   '<div class="detail_amount">'
+					    	        +   	'275.00 <small>元</small>'
+					    	        +   '</div>'
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+</script>

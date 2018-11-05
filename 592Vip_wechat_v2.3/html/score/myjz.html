@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>慈善捐赠</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				background:#fff ;
+			}
+			.mui-content{background: #fff;}
+			.js_list{display: flex;align-items: center;justify-content: space-between;color: #999999;padding-right: 15px!important;font-size: .875rem;}
+			.js_list div{flex:2;text-align: center;}
+			.js_list div:first-child{
+				text-align: left;
+				flex: 3;
+			}
+			.js_list div:last-child{text-align: right;flex: 3;}
+			.mui-table-view-cell:after{right: 15px;}
+			.tongji{padding: 1rem 0;background: #F4F4F4;padding-top: 45px;}
+			.tongji li{
+				background: #fff;
+			}
+			.mui-table-view:after,.mui-table-view:before{height: 0;}
+			.js_list:after, .js_list:before{
+				height: 1px!important;
+			}
+			.js_list.mui-active{
+				background: #fff;
+			}
+			h4{font-size: 1rem;color: #333;padding-left: 15px;line-height: 2.5;position: relative;}
+			h4:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 1px;
+				background: #ddd;
+				bottom: 0;
+			}
+			.tongji img{width: 15px;height: 15px;vertical-align: inherit;margin-right: .3rem;}
+			.tongji span{color: #f8a120;font-size: 1.2rem;}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+		   
+	        <!--下拉刷新容器-->
+	        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+	          <div class="mui-scroll">
+	            <!--数据列表-->
+	             <ul class="mui-table-view tongji">
+		            <li class="mui-table-view-cell">
+		                <div class="mui-pull-left" style="font-size: 1rem;">
+		                	累计捐赠
+		                </div>
+		                <div class="mui-pull-right">
+		                	<img src="../../image/icon_s.png"/><span>1000.00元</span>
+		                </div>
+		            </li>
+		        </ul>
+	            <ul class="mui-table-view mui-table-view-chevron">
+	            	<h4>历史捐赠</h4>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		平台直捐
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		平台直捐
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		白血病人项目
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		白血病人项目
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		平台直捐
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		平台直捐
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	              <li class="mui-table-view-cell js_list">
+	              	<div id="">
+	              		平台直捐
+	              	</div>
+	              	<div class="">
+	              		100.0元
+	              	</div>
+	              	<div class="">
+	              		2018-11-10
+	              	</div>
+	              </li>
+	            </ul>
+	          </div>
+	        </div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		pullRefresh: {
+			container: '#refreshContainer',
+			up: {
+				contentrefresh: '正在加载...',
+				callback: pullupRefresh
+			}
+		}
+	});
+	var count=0
+	function pullupRefresh() {
+		setTimeout(function() {
+			mui('#refreshContainer').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+			var table = document.body.querySelector('.mui-table-view-chevron');
+			var cells = document.body.querySelectorAll('.mui-table-view-cell ');
+			for (var i = cells.length, len = i + 2; i < len; i++) {
+				var li = document.createElement('li');
+				li.className = 'mui-table-view-cell js_list';
+				li.innerHTML = '<div id="">'
+			              	+	'平台直捐'
+			              	+'</div>'
+			              	+'<div class="">'
+			              	+	'100.0元'
+			              	+'</div>'
+			              	+'<div class="">'
+			              	+	'2018-11-10'
+			              	+'</div>';
+				table.appendChild(li);
+			}
+		}, 1500);
+	}
+</script>

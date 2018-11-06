@@ -1,0 +1,77 @@
+/*all*/
+*{
+	padding: 0;
+	margin: 0;
+}
+.container,body{
+	background: #fff0da!important;
+	text-align: center;
+}
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*head*/
+.price_head img{
+	max-width: 100%;
+}
+.price_head{
+	margin-top: 0.23rem;
+	line-height: 0;
+}
+/*content*/
+.recordContainer{
+	margin: 0 0.39rem;
+   
+}
+.flexItem{
+	display: flex;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #EEEEEE;
+	padding: 0.23rem 0;
+	margin: 0 0.23rem;
+}
+.flexItem>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	line-height: 2;
+}
+.flexItem>div:first-child{
+	text-align: left;
+	justify-content: flex-start;
+	padding-left: 0.23rem;
+}
+.tableHead{
+	font-size: 16px;
+	color: #f8a120;
+}
+.price_btn{
+	width: 2.7rem;
+	height: 0.85rem;
+	line-height: 0.85rem;
+	background: #f8a120;
+	color: #fff;
+	border-radius: 4px;
+}
+.grey{
+	background: #ccc;
+}
+.signed_item{
+	top: 2.1rem!important;
+	 background: #fff url(../../img/experience/shadow.png) no-repeat top !important;
+    background-size: 100% auto;
+    margin-top: -0.42rem;
+    padding: 0.31rem 0 0rem 0;
+    box-shadow: 0 0px 5px 0px #ccc;
+    width: 92.5%!important;
+    bottom: 0.62rem!important;
+}
+.mui-pull-caption{
+	font-size: 14px!important;
+}

@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>攻略-抽取奖励</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="css/guide_first.css" rel="stylesheet" />
+		<style type="text/css">
+			.item_content{
+				/*padding: 10px 8px;*/
+				padding: 10px 2.4%;
+			}
+	
+			.gonglue_item_bottom_left{
+				width: 37%;
+			}
+			.last_font{
+				font-size: 0.75rem;
+				margin: 10px 35px 0 55px;
+			}
+			.gonglue_item_middle{
+				padding-bottom: 15px; 
+			}
+			.item_icon{
+				flex: 1;
+				padding: 0 5px;
+				text-align: center;
+			}
+			.know_icon{
+				float: none;
+			}
+
+			/*模态框*/
+			.modle_bg{
+				position: fixed;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    overflow: hidden;
+			    background: rgba(0, 0, 0, 0.5);
+			    height: 100%;
+			    width: 100%;
+			    z-index: 100;
+			    padding-top: 40%;
+			    display: none;
+			}
+
+			.modle_content{
+				width: 80%;
+				margin: 0 auto;
+				padding: 20px 30px;
+				background-color: #fff;
+				border-radius: 10px;
+				position: relative;
+			}
+
+			.modle_content .title{
+				font-size: 1.25rem;
+				color: #333;
+				text-align: center;
+				position: relative;
+			}
+
+			.modle_content .close{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			    z-index: 999;
+			    width: 20px;
+			    height: 20px;
+			    z-index: 99;
+			}
+
+			.modle_content .close .close_btn {
+			    display: inline-block;
+			    width: 20px;
+			    height: 2px;
+			    background: #333;
+			    font-size: 0;
+			    -webkit-transform: rotate(45deg);
+			}
+
+			.modle_content .close .close_btn:after {
+			    content: '/';
+			    display: block;
+			    width: 20px;
+			    height: 2px;
+			    background: #333;
+			    -webkit-transform: rotate(-90deg);
+			}
+
+
+			.modle_content .time_random{
+				display: -webkit-flex; /* Safari */
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				margin-top: 2rem;
+			}
+
+			.modle_content .time_random .time{
+				width: 4rem;
+				height: 5rem;
+				background-color: #ece6dc;
+				border-radius: 8px;
+				margin: 0 10px;
+				background-position: top center;
+			    background-repeat: repeat-y;
+			    background-image: url(images/extract_num.png);
+			    background-position-y: .5rem;
+			    background-size: 2.8rem 39.77rem;
+			}
+			.modle_content .btn_area{
+				margin-top: 2rem;
+			}
+			.modle_content .btn_area .btn {
+				padding: .8rem 0;
+				background-color: #f8a120;
+				color: #fff; 
+				display: block;
+				border-radius: 10px;
+				text-align: center;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="">
+				<div class="guide_top">
+					<div class="guide_top_title">
+						目标站点&nbsp;——&nbsp;初心站
+					</div>
+					<div class="guide_top_time">
+						目标剩余时间：<span id="cutdown" count="86399">23:59:59</span>
+					</div>
+				</div>
+				<!--third-->
+				<div class="gonglue_item margintop60">
+					<div class="gonglue_item_title">
+						<!--<img src="images/gonglue_icon.png"/>-->
+						<span class="gl_icon">奖励发放时间</span>
+					</div>
+					<div class="gonglue_item_middle">
+						<div class="item_content">
+							恭喜您完成本站任务，获取的任务奖励为10黑钻，快来抽取奖励发放时间吧！
+						</div>
+						<div class="item_icon">
+							<span class="know_icon extract">去抽取</span>
+						</div>
+					</div>
+				</div>
+				
+				<!--third-->
+				<div class="small_font">
+					<div class="tip_icon">
+						<img src="images/tip_icon.png"/>	
+					</div>
+					<div class="tip_font">
+						任务奖励将根据您抽取的时间来进行发放，如您抽取的时间为2天，则从次日开始定时发放，每天发放的额度相同。
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 抽奖模态框 -->
+		<div class="extract_modle modle_bg">
+			<div class="modle_content">
+				<div class="close">
+					<span class="close_btn"></span>
+				</div>
+				<h4 class="title">
+					抽取奖励发放天数
+				</h4>
+				<div class='time_random'>
+					<div class="time">
+						
+					</div>
+					<div class="time">
+						
+					</div>
+					<div style="color: #f8a120">
+						天
+					</div>
+				</div>
+				<div class="btn_area">
+					<span class="btn extract_btn">
+						抽取
+					</span>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+			var isBegin = false;
+			//定义slot函数
+			jQuery.fn.extend({
+			    slots: function(a, d) {
+			        if (isBegin) {
+			            return false
+			        }
+			        isBegin = true;
+			        var c = (a + "").split("");
+			        $(this).css("backgroundPositionY", 0);
+			        var arr = [80,76.09,72.09,68.09,64.13,60.13,56.13,52.19,48.19,44.25]
+			        $(this).each(function(e) {
+			            var f = $(this);
+			            setTimeout(function() {
+			                f.animate({
+			                    backgroundPositionY: arr[c[e]] + 'rem'
+			                },
+			                {
+			                    duration: 3000,
+			                    // easing: "easeInOutCirc",
+			                    complete: function() {
+			                        if (e == 1) {
+			                            isBegin = false;
+			                            d()
+			                        }
+			                    }
+			                })
+			            },
+			            e * 300)
+			        })
+			    }
+			});
+			//去抽取按钮被点击
+			$('.item_icon .extract').click(function(){
+				$('.extract_modle').show();
+			})
+
+			//关闭按钮被点击
+			$('body').on('click', '.extract_modle .close',function(){
+				$(this).closest('.extract_modle').hide();
+			})
+
+			//抽取按钮被点击
+			$('body').on('click', '.btn_area .extract_btn',function(){
+				//定义一个随机数
+				var num = '09';
+				$(".time_random .time").slots(num,function () {
+					$('.extract_modle .close').remove();
+					$('.extract_modle .title').html('您的奖励发放时间为');
+					$('.btn_area .extract_btn').html('确定');
+					$('.btn_area .extract_btn').attr('class','btn confirm_btn');
+				});
+			})
+
+		</script>
+	</body>
+
+</html>

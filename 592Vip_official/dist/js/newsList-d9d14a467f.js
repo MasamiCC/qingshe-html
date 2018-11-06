@@ -1,1 +1,0 @@
-$(function(){$(".paging_ul").paging({url:"http://www.592vip.top/api/news/getNewsQsdp",pageSize:5,list:".newsList_ul",template:"news"})});var formatterDateTime=function(e){return(e=new Date(e)).getFullYear()+"年"+(e.getMonth()+1)+"月"+e.getDate()+"日"};

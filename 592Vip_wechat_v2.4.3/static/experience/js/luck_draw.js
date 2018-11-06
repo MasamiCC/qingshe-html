@@ -1,19 +1,13 @@
 $(function(){
-    //抽奖规则
-    $('.rule_icon').click(function(){
-       var html = document.getElementById("rule_modle").innerHTML;
-       $('body').append(html);
-    })
-
-
 	//轮盘抽奖
+	
 	//抽奖次数
 	var num = 3;
 	$('.pointer').click(function (){
 		if(num <= 0){
 			return false;
 		}
-
+		
 		//定义一个随机数
 		var item = 0;
 		switch (item) {
@@ -44,7 +38,7 @@ $(function(){
 		}
 
 	});
-
+	
 	//旋转函数
 	var rotateFn = function (awards, angles, txt){
 		$('.rotate').stopRotate();
@@ -59,32 +53,32 @@ $(function(){
 			}
 		})
 	};
-
+	
 	//模态框出现函数
 	var showModle = function(awards,txt){
 		var html = document.getElementById("success_modle").innerHTML;
 		var reg = new RegExp("\\[([^\\[\\]]*?)\\]", 'igm'); //i g m是指分别用于指定区分大小写的匹配、全局匹配和多行匹配。
 		var imgSrc;
 		if(awards <= 3){
-			imgSrc = '../img/experience/tips_blackcard_img.png'
+			imgSrc = '../static/experience/img/tips_blackcard_img.png'
 		}
-		var modleHtml = html.replace(reg, function(node, key) {
-			return {
+		var modleHtml = html.replace(reg, function(node, key) {  
+			return {  
 				'tips': txt,
 				'img': imgSrc,
-			}[key];
+			}[key];  
 		});
 		$('body').append(modleHtml);
 	}
-
+	
 	//关闭弹框
 	$('body').on('click','.modle_nav .close', function(){
 		$(this).closest('.modle_nav').remove();
 	})
+	
+	
 
-
-
-
+	
 
     //中奖信息轮播
     var scrollUp = function(){

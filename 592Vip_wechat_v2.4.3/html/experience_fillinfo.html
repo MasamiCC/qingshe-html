@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>填写信息</title>
+    <!--引入flexible布局-->
+    <script src="../static/experience/js/flexible.js"></script>
+    <!--引入css-->
+    <link rel="stylesheet" type="text/css" href="../css/experience/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/experience/fillinfo.css" />
+</head>
+
+<body>
+    <div class="choose_mode">
+        <input type="radio" name="sex" value="sjyj" id="sjyj" checked>
+        <label for="sjyj">商家邮寄</label>
+        <input type="radio" name="sex" value="khzt" id="khzt">
+        <label for="khzt">客户自提</label>
+    </div>
+    <div class="choose_add">
+            <span>必须添加收货地址</span><i class="right_icon float_right"></i>
+        </div>
+    <div class="order_info">
+        <div class="order_title">
+            <p>订单信息</p>
+        </div>
+        <div class="order_form">
+            <form action="">
+                <div>
+                    <span>联系人</span><input type="text" class="inp" value="张三">
+                    <i class="close_icon"></i>
+                </div>
+                <div>
+                    <span>联系人手机</span><input type="number" class="inp" value="13694444677">
+                    <i class="close_icon"></i>
+                </div>
+                <div>
+                    <span>收货地址</span><input type="text" class="inp" value="南通市通州区川姜镇将中村10组">
+                    <i class="close_icon"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="shop_list">
+        <div class="shop_title">
+            <p>订单信息</p>
+        </div>
+        <div class="list_box">
+            <div>
+                <img src="../img/experience/fillinfo_shop.png" alt="">
+                <div class="shop_name">Iphone XR 一部 <span class="float_right">×1</span></div>
+                <div class="shop_spec">规格：黑色 258G</div>
+                <div class="shop_fare">免运费</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="dis_money">
+            <span>配送费</span><span class="red_right">￥ <span>25</span> </span>
+        </div>
+    </div>
+    <div class="confirm">
+        <span>确认信息</span>
+    </div>
+</body>
+<script src="../static/experience/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('.inp').bind('input propertychange', function () {
+            if ($(this).val()) {
+                $(this).next().show()
+            } else {
+                $(this).next().hide()
+            }
+        });
+         $(".close_icon").click(function () {
+            $(this).prev("input").val("")
+        })
+    })
+</script>
+
+</html>

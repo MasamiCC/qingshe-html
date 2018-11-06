@@ -138,6 +138,11 @@ gulp.task('mvNotDealAsset', function () {
 
 
 
+
+
+
+
+
 //启动项目
 gulp.task('dev',['cleanConnect', 'css', 'html', 'js', 'static', 'serve']);
 

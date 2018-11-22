@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>黑钻捐赠</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/blackDonate.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/password.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css"/>
+		<style type="text/css">
+		.mui-content{
+			position: absolute;
+			bottom: 50px;                              
+			top: 0;
+		}
+		.hd_header{
+			position: relative;
+		}
+		.hd_font{
+			position: absolute;
+			top: 35%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: 0 auto;
+			color: #fff;
+			font-size: 1.125rem;
+			line-height: 1.8;
+		}
+		.hd_num{
+			font-size: 1.875rem;
+			line-height: 1.5;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="hd_header">
+				<img src="../image/heart_coin_bg.png"/>
+				<div class="hd_font">
+					需要帮助人群 <br /> <span class="hd_num">1000+</span>
+				</div>
+			</div>
+			<div class="hd_main">
+				<div class="hd_main_bottom">
+					<div id="content">
+				      <div id="tab1" class="item show">
+				        <input type="number" name="" id="hd_money" value=""  placeholder="请输入捐赠金额"/>
+				        <span class="all_donate" data-num="10">全部捐赠</span>
+				      </div>
+				    </div>
+				</div>
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-footer hd_nav_fisrt" id="hd_footer">
+				<div class="hd_bottom_nav">支付<span class="hd_nums" id="bottom_money" >0</span><span class="type">元现金</span>， 确认捐赠</div>
+		</nav>
+		
+		<div id="popover" class="mui-popover">
+			<div class="">
+				<div id="" class="pass-title">
+					<i class="fa fa-angle-left" ></i>请输入支付密码
+				</div>
+				<table id="number_input" border="0" cellspacing="0" cellpadding="0">
+		            <tbody>
+		                <tr>
+		                    <td class="input-item"></td>
+		                    <td class="input-item"></td>
+		                    <td class="input-item"></td>
+		                    <td class="input-item"></td>
+		                    <td class="input-item"></td>
+		                    <td class="input-item"></td>
+		                </tr>
+		            </tbody>
+		        </table>
+		        <div class="wrong_tip" id="wrong_tip"></div>
+		        <table id="keyboard" border="0" cellspacing="0" cellpadding="0">
+		            <tbody>
+		                <tr>
+		                    <td class="keyboard-number">1</td>
+		                    <td class="keyboard-number">2</td>
+		                    <td class="keyboard-number">3</td>
+		                </tr>
+		                <tr>
+		                    <td class="keyboard-number">4</td>
+		                    <td class="keyboard-number">5</td>
+		                    <td class="keyboard-number">6</td>
+		                </tr>
+		                <tr>
+		                    <td class="keyboard-number">7</td>
+		                    <td class="keyboard-number">8</td>
+		                    <td class="keyboard-number">9</td>
+		                </tr>
+		                <tr>
+		                    <td class="keboard-action greyicon"><span class="pascricle">.</span></td>
+		                    <td class="keyboard-number">0</td>
+		                    <td class="keboard-action greyicon" data-action="cancel"><img class="num_del" src="../image/num_del.png"/></td>
+		                </tr>
+		            </tbody>
+		        </table>
+			</div>
+				
+		</div>
+	</body>
+</html>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			formSubmit();
+			
+			function formSubmit(){
+				$('.hd_bottom_nav').on('tap',function(){
+					var donate_money=$('#hd_money').val();
+					console.log('donate_money='+donate_money)
+					if(donate_money<=0){
+						mui.alert("请输入一个大于0的数字，谢谢！");
+					}else{
+						$(this).addClass('sure');
+					}
+					var hasclass=$(this).hasClass('sure');
+					if(hasclass){
+						mui.confirm('','您还未设置支付密码？', ['取消', '去设置'],function(e) {
+							if (e.index == 1) {
+								//alert("去设置")
+								mui("#popover").popover('show')
+							} else {
+								alert("取消")
+							}
+						})
+					}
+					
+				})
+			}
+
+
+
+			$('.all_donate').click(function(){
+				var datanum=$(this).attr('data-num');
+				console.log(datanum);
+				$(this).prev().val(datanum);
+				$('.hd_bottom_nav').find('.hd_nums').html(datanum)
+			});
+			$('.pass-title').on('tap','i',function(){
+				mui("#popover").popover('hide')
+			})
+			$("#hd_money").keyup(function () {
+                var reg = $(this).val().match(/^([1-9]\d{0,9}|0)([.]?|(\.\d{1,2})?)$/);
+                var txt = '';
+                var bottom_money='0.00'
+                if (reg != null) {
+                    txt = parseFloat(reg[0]).toFixed(2);
+                    bottom_money=parseFloat(reg[0]).toFixed(2);
+                }else{
+                	
+                	$(this).val(txt);
+                }
+                $("#bottom_money").html(bottom_money)
+                
+                
+            }).change(function () {
+                $(this).keypress();
+                var v = $(this).val();
+                console.log('v='+v)
+                if (/\.$/.test(v))
+                {
+                    $(this).val(v.substr(0, v.length - 1));
+                }
+            });
+			$("#hd_coin").keyup(function () {
+                var reg = $(this).val().match(/^([1-9]\d{0,9}|0)([.]?|(\.\d{1,2})?)$/);
+                var txt = '';
+                if (reg != null) {
+                    txt = reg[0];
+                }
+                $(this).val(txt);
+            }).change(function () {
+                $(this).keypress();
+                var v = $(this).val();
+                if (/\.$/.test(v))
+                {
+                    $(this).val(v.substr(0, v.length - 1));
+                }
+            });
+			
+			
+		});
+		mui.ready(function() {
+        	var timer;
+        	//yanzhengma();
+        	
+            // 数字索引
+            var activeIndex = 0;
+            // 密码结果
+            var resultValue = "";
+            // 所有输入框
+            var inputList = mui(".input-item");
+            // 所有数字键
+            var numberList = mui(".keyboard-number");
+            // 数字键盘点击事件
+            mui("#keyboard").on("tap", ".keyboard-number", function() {
+                if(activeIndex == 6) {
+                    return;
+                }
+                var num = this.innerText;
+                console.log('num='+num)
+                addNumber(num);
+            });
+            mui("#keyboard").on("tap", ".keboard-action", function() {
+                var value = this.getAttribute("data-action");
+                switch(value) {
+                    case "cancel":
+                        if(activeIndex == 0) {
+                            return;
+                        }
+                        cancelNumber();
+                        break;
+                    case "reset":
+                        resetInput();
+                        break;
+                    default:
+                        break;
+                }
+            });
+            // 添加数字
+            function addNumber(num) {
+            	
+                inputList[activeIndex].innerText = "*";
+                resultValue+= num;
+                activeIndex++;
+                // 检测密码长度
+                console.log('resultValue='+resultValue)
+                if(activeIndex == 6) {
+                    // 假定123456是正确密码
+                    
+                    if(resultValue != "123456") {
+                        wrongPassword();
+                    } else {
+                        mui.toast("密码正确，然后跳转到下一个页面");
+                        mui("#check_success").popover("show");
+                        
+                        
+                    }
+                }
+            }
+            // 撤销数字
+            function cancelNumber() {
+                activeIndex--;
+                inputList[activeIndex].innerText = "";
+                resultValue = resultValue.substring(0, resultValue.length - 1);
+            }
+            // 密码框置空
+            function resetInput() {
+                activeIndex = 0;
+                resultValue = "";
+                mui(".input-item").each(function(index, element) {
+                    element.innerText = "";
+                });
+            }
+            
+//             密码错误
+            function wrongPassword() {
+                mui.confirm("密码错误", "验证结果", ["再来一次", "忘记密码"], function(event) {
+                    var index = event.index;
+                    if(index == 0) {
+                        mui.toast("请再次输入");
+                    } else {
+                        mui.toast("下一步跳转到忘记密码的页面");
+//                      location.href="";
+                    }
+                    resetInput();
+                });
+            }
+
+
+			
+		});	
+	</script>

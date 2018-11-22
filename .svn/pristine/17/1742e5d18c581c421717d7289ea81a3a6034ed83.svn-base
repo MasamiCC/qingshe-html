@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>7从初心站到奋斗站</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/css_2.5.0/mui.min.css" rel="stylesheet" />
+		<link href="../../css/css_2.5.0/station.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<div class="qsh_header">
+				<!--公告-->
+				<div class="qsh_header_top">
+					<div class="notice">
+						<div id="">
+							<ul>
+								<li>公告内容</li>
+							</ul>
+						</div>
+					</div>
+					<!--邀请好友-->
+					<a class="invite_friend"></a>
+				</div>
+				<div class="here here_1">
+					<img src="../../img/img_2.5.0/to_fendou.png" />
+				</div>
+				<div class="train">
+					<img src="../../img/img_2.5.0/train@3x.png" />
+				</div>
+				<div class="qsh_scores" data-amount='1000'>
+					<img src="../../img/img_2.5.0/score@3x.png" alt="" /> 1000
+				</div>
+				<!--背景-->
+				<div class="bg bg_ing "></div>
+			</div>
+			<div class="qsh_banner">
+				<div class="qsh_station_name active">
+					<img src="../../img/img_2.5.0/qsh_map.png" class="map_p" />
+					<span>初心站</span>
+					<img src="../../img/img_2.5.0/qsh_p.png" class="qsh_p" />
+				</div>
+				<div class="qsh_time">
+					<!--任务倒计时 22h:44m:20s-->
+				</div>
+				<div class="qsh_station_right">
+					<div class="qsh_stop">
+						<span>终止轻奢号任务</span>
+					</div>
+					<div class="qsh_map">
+						<span>站点地图</span>
+					</div>
+				</div>
+			</div>
+
+			<!--快速路径攻略-->
+			<div class="guide_nav">
+				<!--攻略-->
+				<div class="guide_area step_1">
+					<ul>
+						<li class="qsh_station">
+							<div class="qsh_station_l">
+								<div class="">
+									初心站
+								</div>
+								<div class="qsh_station_prompt">
+									在轻奢点评平台指定板块/商户进行任意消费并进行品质点评
+								</div>
+							</div>
+							<div class="qsh_station_r">
+								<span>攻略</span>
+								<!--<span class="qsh_station_end">已完成</span>-->
+							</div>
+						</li>
+
+						<li class="qsh_station">
+							<div class="qsh_station_l">
+								<div class="">
+									奋斗站（目标站）
+								</div>
+
+							</div>
+
+						</li>
+					</ul>
+				</div>
+				<!--获取黑钻区域-->
+				<div class="blackcard_area">
+					<img src="../../img/img_2.5.0/point_icon.png" class="blackcard_img" />
+					<div>
+						<p class="blackcard_content">
+							已获取黑钻： <span>2500.00</span>
+						</p>
+						<p class="blackcard_prompt">
+							初心站红利释放完毕，快去完成攻略吧
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="member_allcontainer">
+				<div class="member_title">
+					<span class="noticeimg"><img src="../../img/img_2.5.0/memberNotice.png"/></span>
+					<span class="member_title_font">黑卡会员即时动态</span>
+				</div>
+				<div class="member_all" id="news">
+					<ul class="member_ul">
+						<li class="member_li">
+							<div class="flexcon">
+								<div class=" peopleimg">
+									<img src="../../img/img_2.5.0/people.png" />
+								</div>
+								<div class="inline_content">
+									<span>
+			    						恭喜吴亦凡完成小康站任务，获得红利释放50黑钻！zszzszszszszszzszszszs
+			    					</span>
+									<span class="happyimg">
+				    					<img src="../../img/img_2.5.0/happy.png"/>
+				    				</span>
+								</div>
+							</div>
+						</li>
+						<li class="member_li">
+							<div class="flexcon">
+								<div class=" peopleimg">
+									<img src="../../img/img_2.5.0/people.png" />
+								</div>
+								<div class="inline_content">
+									<span>
+			    						2
+			    					</span>
+									<span class="happyimg">
+				    					<img src="../../img/img_2.5.0/happy.png"/>
+				    				</span>
+								</div>
+							</div>
+						</li>
+						<li class="member_li">
+							<div class="flexcon">
+								<div class=" peopleimg">
+									<img src="../../img/img_2.5.0/people.png" />
+								</div>
+								<div class="inline_content">
+									<span>
+			    						3
+			    					</span>
+									<span class="happyimg">
+				    					<img src="../../img/img_2.5.0/happy.png"/>
+				    				</span>
+								</div>
+							</div>
+						</li>
+						<li class="member_li">
+							<div class="flexcon">
+								<div class=" peopleimg">
+									<img src="../../img/img_2.5.0/people.png" />
+								</div>
+								<div class="inline_content">
+									<span>
+			    						4
+			    					</span>
+									<span class="happyimg">
+				    					<img src="../../img/img_2.5.0/happy.png"/>
+				    				</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="qsh_score">
+				<!-- 黑钻排行榜 -->
+				<div class="scoretitle">
+					<span class="scoreimg"><img src="../../img/img_2.5.0/jifen.png"/></span>
+					<span class="scoretitle_font">黑钻即时排行总榜</span>
+				</div>
+				<div class="qsh_score_list">
+					<ul>
+						<li>
+							<div>名次</div>
+							<div></div>
+							<div>积分</div>
+						</li>
+						<li class="active">
+							<div>101</div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header1.png" class="qsh_user" />我
+							</div>
+							<div>10</div>
+						</li>
+						<li>
+							<div><img src="../../img/img_2.5.0/qs_no1.png" /></div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header2.png" class="qsh_user" />一片浮云
+							</div>
+							<div>3000</div>
+						</li>
+						<li>
+							<div><img src="../../img/img_2.5.0/qs_no2.png" /></div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header3.png" class="qsh_user" />上海次郎
+							</div>
+							<div>2000</div>
+						</li>
+						<li>
+							<div><img src="../../img/img_2.5.0/qs_no3.png" /></div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header4.png" class="qsh_user" />眉山太子
+							</div>
+							<div>200</div>
+						</li>
+						<li>
+							<div>4</div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header5.png" class="qsh_user" />胡子haha
+							</div>
+							<div>80</div>
+						</li>
+						<li>
+							<div>5</div>
+							<div>
+								<img src="../../img/img_2.5.0/point_header1.png" class="qsh_user" />一片浮云
+							</div>
+							<div>5</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="qsh_station passed">
+							<div class="qsh_station_l">
+								<div class="">
+									南通站(始发站)
+								</div>
+							</div>
+						</li>
+						<li class="qsh_station passed">
+							<div class="qsh_station_l">
+								<div class="">
+									加油站
+								</div>
+							</div>
+						</li>
+						<li class="qsh_station actived">
+							<div class="qsh_station_l">
+								<div class="">
+									初心站<span>不忘初心，牢记使命</span>
+								</div>
+							</div>
+							<div class="qsh_station_r">
+								<span>攻略</span>
+							</div>
+						</li>
+						<li class="qsh_station future">
+							<div class="qsh_station_l">
+								<div class="">
+									奋斗站<span>幸福是奋斗出来的</span>
+								</div>
+							</div>
+						</li>
+						<li class="qsh_station future">
+							<div class="qsh_station_l">
+								<div class="">
+									幸福站<span>小康路上一个都不能掉队</span>
+								</div>
+							</div>
+						</li>
+						<li class="qsh_station future">
+							<div class="qsh_station_l">
+								<div class="">
+									小康站(终点站)
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script src="../../js/js_2.5.0/mui.min.js"></script>
+<script src="../../js/js_2.5.0/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init()
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+	});
+	mui('body').on('tap', '#popover', function() {
+		console.log(1)
+		mui('#popover').popover('hide');
+	})
+	mui('body').on('tap', '.mui-scroll-wrapper', function(e) {
+		e.stopPropagation();
+	})
+	mui('.qsh_banner').on('tap', '.qsh_map', function() {
+		mui('#popover').popover('show');
+	})
+
+	countDown(100)
+
+	function countDown(count) {
+
+		var timer = setInterval(function() {
+			var text = '';
+			if(count >= 0) {
+				var h = parseInt(count / 3600);
+				var m = parseInt((count % 3600) / 60);
+				var s = parseInt((count % 60) % 60);
+				text = "任务倒计时 " + h + "h:" + m + "m:" + s + "s";
+				count--
+			} else {
+				clearInterval(timer)
+				text = '';
+			}
+			mui('.qsh_time')[0].innerHTML = text;
+		}, 1000)
+	}
+	$(function() {
+
+		$('.qsh_header').on('tap', '.qsh_scores', function() {
+			$(this).fadeOut();
+			var count = $(this).attr('data-amount');
+			var timer = setInterval(function() {
+				var a = 10;
+				var total = parseInt($('.jifen_total').html());
+				$('.jifen_total').html(total + a);
+				if(count <= a) {
+					clearInterval(timer)
+
+				}
+				count -= a;
+			}, 20)
+		})
+		$('.qsh_header').on('tap', '.qsh_love', function() {
+			$(this).fadeOut();
+			var count = $(this).attr('data-amount');
+			var timer = setInterval(function() {
+				var a = 10;
+				var total = parseInt($('.gongxianzhi_total').html());
+				$('.gongxianzhi_total').html(total + a);
+				if(count <= a) {
+					clearInterval(timer)
+
+				}
+				count -= a;
+			}, 20)
+		})
+
+		//		会员动态
+		// fanGun();
+		//       var scrollTimer;
+		//       function fanGun(){
+		//           scrollTimer = setInterval(function() {
+		//               scrollNews();
+		//           }, 3000);
+		//       };
+
+		//       function scrollNews() {
+		//           var $self = $("#news").find(".member_ul");
+		//           var lineHeight = $self.find(".member_li:first").height();
+
+		//           $self.animate({
+		//               "marginTop": -lineHeight + "px"
+		//           }, 500, function() {
+		//               $self.css({
+		//                   marginTop: 0
+		//               }).find(".member_li:first").appendTo($self);
+		//           })
+		//       }
+		// var top = 0;
+		// var $self = $("#news").find(".member_ul");
+		// var ulHeight = $self.height();
+		// var lineHeight = $(".member_li:first").height();
+		// var size = $(".member_li").length;
+		// var cloneHtml = $("#news").find(".member_ul .member_li").clone();
+		// $self.append(cloneHtml);
+		// var bar = setInterval(function() {
+		//   top = top - lineHeight;
+		//   $self.animate({
+		//   	"marginTop": top + "px"
+		//   },785,function(){
+		//   	if(-top >= ulHeight + lineHeight){
+		//   		$self.css('margin-top',-(size-3)*lineHeight + 'px');
+		//   		top = -(size-3)*lineHeight;
+		//   	}
+		//   })         
+		// }, 1500);
+
+		//翻滚
+		var top = 0;
+		var $self = $("#news").find(".member_ul");
+		var ulHeight = $self.height();
+		var cloneHtml = $("#news").find(".member_ul .member_li").clone();
+		$self.append(cloneHtml);
+		var newHeight = $self.height();
+		var scrollTop = 0;
+		$self.scrollTop(0);
+		var myScroll = setInterval(function() {
+			scrollUp()
+		}, 50);
+
+		var scrollUp = function() {
+			if(scrollTop >= ulHeight + 50) {
+				scrollTop = 0;
+				$self.scrollTop(0);
+			} else {
+				scrollTop++;
+				$self.scrollTop(scrollTop);
+			}
+		}
+
+		//排名li被点击
+		$(document).on('click', '.qsh_score_list li', function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+
+		//	点击	
+		$('.reward').on('click', 'img', function() {
+			alert(1)
+		})
+
+	})
+</script>

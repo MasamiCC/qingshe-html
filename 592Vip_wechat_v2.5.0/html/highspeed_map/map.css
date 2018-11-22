@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+body{
+    background: rgb(244, 244, 244);
+}
+.container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;    
+    margin-left: 2rem;margin-right: 0.5rem
+}
+.box{
+    position: relative;padding: 10px;flex: 1;
+}
+
+.box:before{
+    position: absolute;
+    content: '';
+    left: -0.55rem;
+    top:2rem;
+    height: 100%;
+    border-left: 1px dashed #fde6ae;
+}
+.box:after{
+    position: absolute;
+    content: '';
+    left: -.875rem;
+    top:2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #f8a322;
+    border-radius: 1rem
+}
+.box:last-child::before{display: none;}
+.box_g:before{
+    border-left: 1px dashed #cccccc;
+}
+.box_g:after{
+    background: #cccccc;
+}
+.box_a:before{
+    border-left: 1px dashed #cccccc;
+}
+.box_a:after{
+    background: #f8a322;
+}
+.card{background: #fff;border-radius: 4px;font-size: .875rem;line-height: 1.8;overflow: hidden;border: 1px solid #eee;}
+.card>div{margin-left: 0.75rem;margin-right: 0.7rem;}
+.card_top{padding: .5rem 0;    margin-left: 0.75rem;
+    margin-right: 0.7rem;}
+.card_shifang .nums span{font-weight: bold;font-size: .875rem;color: #333;margin-right: 10px;}
+.card_shifang{
+	padding-bottom: .5rem;
+}
+.card_title{font-size: 0.975rem;}
+.box_g .card_title{
+	display: flex;
+	display: -webkit-flex;
+    align-items: baseline;
+    font-size: 1.1rem;
+	}
+.box .card_title span{margin-left: 0.8rem;}
+.box_g .card_title span{margin-left: 1.2rem;}
+.card_title span{font-size: 0.75rem;color: #999;}
+.card_bonus{border-top: 1px solid #eee;padding: .5rem 0rem;}
+.card_bonus .title,.card_Strategy .title{color: #333;line-height: 1;font-weight: 400;padding: .3rem 0;}
+.expect{display: flex;display: -webkit-flex;}
+.expect>div{flex: 1;}
+.expect_title{font-size: .75rem;color: #999999;line-height: 3;}
+.expect_num{font-weight: bold;}
+.card_Strategy{border-top: 1px solid #f1f1f1;padding-bottom: 1rem;padding-top: .5rem;}
+.strategy{font-size: .75rem;color: #999;}
+.img_bz{    width: 0.8rem; margin-right: 0.5rem;}
+.card_bottom{background: rgb(235,235,235);padding: .3rem .75rem;    margin: 0!important;}
+.bottom_btn{
+	border: 0px;
+    font-size: 0.8rem;
+    background: linear-gradient(-70deg, rgb(248,161,32), rgb(255,202,69));
+    color: white;
+    letter-spacing: 1px;
+    padding: 7px 16px;
+    border-radius: 99px;
+    display: block;margin-top: .3rem;margin-bottom: .3rem;
+}
+.bottom_txt{color: #999;    word-break: break-all;line-height: 1.8;}
+
+.bottom_txt.red{color: red;}
+.org_title{color: rgb(248, 162, 35);font-size: 1.8rem;}
+.card_title_active{
+	color: #f8a120;
+	font-size:1.4rem!important;
+}
+
+
+/*bar*/
+.etr_item_banner_middle{
+	position: relative;
+	width: 95%;
+	text-align:center;
+	height: 10px;
+}
+.bar_left{
+	position: absolute;
+	width: 0;
+	height: 8px;
+	background: #f8a120;
+	border-radius: 5px;
+	/*border-bottom-right-radius: 0;
+	border-top-right-radius: 0;*/
+	left: 0;
+	transition: width 2s;
+	-moz-transition: width 2s;	/* Firefox 4 */
+	-webkit-transition: width 2s;	/* Safari 和 Chrome */
+	-o-transition: width 2s;
+	z-index: 2;
+}
+.bar_right{
+	position: absolute;
+	width: 100%;
+	height: 8px;
+	background: #eee;
+	border-radius: 5px;
+}
+.gonglue_item_bottom{
+	display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    color: #999;
+    line-height: 1.8;
+}
+.gonglue_item_bottom>div{
+	/*display: inline-block;*/
+}
+.gonglue_item_bottom_left,.gonglue_item_bottom_right,.gonglue_icon{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.gonglue_item_bottom_right{
+	font-size: 0.75rem;
+	display: flex;
+	flex-wrap: nowrap ;
+}
+.gonglue_item_bottom_left{
+	width: 35%;
+	margin-right:20px;
+	margin-left: 2px;
+}
+/*bar*/
+
+
+
+.strategy{
+	display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.cancle{
+	font-size: 0.875rem;
+	color: #333;
+	margin: 10px 0px;
+}
+
+.card_font{
+	line-height: 1.5;
+}
+
+

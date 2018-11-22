@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../../css/css_2.5.0/guide_first.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../static/css/layer.css">
+    <style type="text/css">
+        .item_content {
+            /*padding: 10px 8px;*/
+            padding: 10px 9px 10px 8px;
+        }
+
+        .gonglue_item_bottom {
+            /* margin-left: 58px; */
+            margin-right: 0px;
+        }
+
+        .gonglue_item_bottom_left {
+            width: 100%;
+        }
+
+        .gonglue_item_middle {
+            position: relative;
+        }
+
+        .login {
+            flex: 1;
+            position: absolute;
+            top: 10px;
+        }
+        .item_content_noleft {
+            padding: 10px 10px 10px 0px;
+            margin-left: 0px;
+            flex: 3.8;
+        }
+        .know_icon_two{
+	        padding: 7px 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mui-content">
+        <div class="">
+            <div class="guide_top">
+                <div class="guide_top_title">
+                    目标站点&nbsp;——&nbsp;小康站
+                </div>
+                <div class="guide_top_time">
+                    目标剩余时间：<span id="cutdown" count="86399">23:59:59</span>
+                </div>
+            </div>
+
+            <!--second-->
+            <div class="gonglue_item margintop60">
+                <div class="gonglue_item_title">
+                    <!--<img src="images/gonglue_icon.png"/>-->
+                    <span class="gl_icon">任务</span>
+                </div>
+                <div class="gonglue_item_middle">
+                    <div class="login">
+                        <div class="login_icon">
+                            <img src="../../img/img_2.5.0/ax_icon.png" />
+                        </div>
+                        <div class="login_font">
+                            爱心援助
+                        </div>
+                    </div>
+                    <div class="item_content">
+                        <p>在平台慈善模块，使用黑钻在线捐赠自己的爱心（没有上下限）。</p>
+                    </div>
+                    <div class="item_icon">
+                        <span class="know_icon">去捐款</span>
+                    </div>
+                </div>
+                <div class="small_font">
+                    <div class="tip_icon">
+                        <img src="../../img/img_2.5.0/tip_icon.png" />
+                    </div>
+                    <div class="tip_font">
+                            黑卡会员在轻奢点评平台使用黑钻捐款后，平台将会返还6倍黑钻，最高返还3900黑钻。
+                    </div>
+                </div>
+            </div>
+            <div class="gonglue_item margintop80">
+                <div class="gonglue_item_title">
+                    <!--<img src="images/gonglue_icon.png"/>-->
+                    <span class="gl_icon">终止轻奢号任务</span>
+                </div>
+                <div class="gonglue_item_middle">
+                    <div class="item_content item_content_noleft">
+                        <p>选择此路径将不需再进行本站任务以及接下来的轻奢号站点任务，并放弃剩余站点的红利收益。</p>
+                    </div>
+                    <div class="item_icon">
+                        <span class="know_icon know_icon_two choose_btn">选择</span>
+                    </div>
+                </div>
+                <div class="small_font">
+                    <div class="tip_icon">
+                        <img src="../../img/img_2.5.0/tip_icon.png" />
+                    </div>
+                    <div class="tip_font">
+                        您可以选择终止轻奢号任务快速完成红利收益周期，系统自动扣减已消耗的能量总值，同时您会失去本站点及剩余站点的红利收益，请慎重选择。
+                    </div>
+                </div>
+            </div>
+            <!--second-->
+        </div>
+    </div>
+</body>
+<script src="../../static/js/jquery.min.js"></script>
+<script src="../../static/js/layer.js"></script>
+<script>
+    $(function () {
+        var choose
+        $(document).on('click', '.choose_btn', function () {
+            choose = layer.open({
+                type: 1,
+                area: ['80%', 'auto'],
+                title: false,
+                closeBtn: 0,
+                shade: 0.5,
+                shadeClose: true,
+                content: "<div class='site_pop'><p>选择此路径，将不再进行轻奢号站点任务，并放弃剩余站点的的红利收益，将快速完成本阶段红利收益周期，确定选择此路径吗？</p><div class='pop_bot'><span class='close_pop'>取消</span><span class='close_pop'>确定</span><div/></div>"
+            });
+        })
+        $(document).on('click','.close_pop',function(){
+		layer.close(choose);
+	})
+    })
+</script>
+</html>
